@@ -1,6 +1,6 @@
 ---
 title: Shopify Internationalization
-description: Multi-currency, multi-language, and region-specific checkout setup.
+description: "Multi-currency, multi-language and region-specific checkout setup for Shopify stores selling across borders, carried through to your mobile app."
 slug: internationalization
 heroImage:
   src: /images/services/servicessi.jpg

@@ -1,6 +1,6 @@
 ---
 title: App Store Optimization for Shopify Brands
-description: ASO fundamentals and what most Shopify app listings overlook.
+description: "App store optimization fundamentals for Shopify brands: titles, keywords, screenshots and ratings, plus what most store listings overlook."
 slug: app-store-optimization-shopify-brands
 heroImage:
   src: /images/blogs/ASO.jpg

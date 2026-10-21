@@ -1,6 +1,6 @@
 ---
 title: Shopify Store Optimization and CRO
-description: Conversion rate optimization targeting checkout and mobile page speed.
+description: "Conversion rate optimization for Shopify, targeting checkout friction and mobile page speed, with changes measured against your own store data."
 slug: store-optimization-cro
 heroImage:
   src: /images/services/servicesssoc.jpg

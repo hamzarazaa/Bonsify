@@ -1,6 +1,6 @@
 ---
 title: Shopify Subscription and Recurring Revenue
-description: Subscribe-and-save and replenishment program setup.
+description: "Subscribe-and-save and replenishment program setup for Shopify, connected to Recharge, Skio and your mobile app for steady recurring revenue."
 slug: subscription-recurring-revenue
 heroImage:
   src: /images/services/ServicesREV.jpg

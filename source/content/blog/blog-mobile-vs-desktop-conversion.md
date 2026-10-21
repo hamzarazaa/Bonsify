@@ -1,6 +1,6 @@
 ---
 title: Mobile vs Desktop Conversion on Shopify
-description: Why phones leak sales despite carrying most of the traffic.
+description: "Phones carry most Shopify traffic but convert far less than desktop. Why mobile web leaks sales, what the data shows, and how a native app closes the gap."
 slug: mobile-vs-desktop-conversion-shopify
 heroImage:
   src: /images/blogs/MVD.png

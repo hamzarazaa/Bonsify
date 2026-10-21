@@ -1,0 +1,7 @@
+.card { display: inline-flex; align-items: center; gap: 16px; padding: 12px 18px 12px 12px; border-radius: 18px; background: #fff; border: 1px solid var(--line, rgba(20,20,20,.12)); color: var(--ink, #14171a); text-align: left; max-width: 100%; }
+.card.dark { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; backdrop-filter: blur(8px); }
+.copy { display: grid; gap: 4px; font-size: 13px; line-height: 1.4; max-width: 190px; }
+.copy b { font-size: 15px; }
+.copy span { opacity: .7; }
+.ph { display: block; border-radius: 12px; background: rgba(0,0,0,.06); }
+@media (max-width: 760px) { .card { display: none; } }

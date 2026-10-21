@@ -1,6 +1,6 @@
 ---
 title: "The 3-Month Content Cliff: Why \"We Have an App\" Isn't a Strategy"
-description: Why app engagement drops after launch without an ongoing push strategy.
+description: "Why Shopify app engagement drops about three months after launch, and the ongoing content and push strategy that keeps installs active."
 slug: 3-month-content-cliff-shopify-app
 heroImage:
   src: /images/blogs/Strat.jpg

@@ -15,12 +15,12 @@ Shopify PWA development is the process of turning a Shopify store into a progres
 - PWA build with home-screen install prompt
 - Push notification setup, supported on PWAs with some platform limitations
 - Install-to-purchase attribution, so the impact of the PWA is measurable
-- Discount-based install incentive setup, the same mechanic behind Dockify
+- Discount-based install incentive setup, the same install-and-reward mechanic we use in native apps
 - Optional support retainer for ongoing updates
 
 ## Why a PWA over a native app
 
-A PWA skips app store review entirely, so it can go live faster than a native build, days rather than weeks. It works well as a first step for a store that hasn't validated app demand yet, or as a standing option alongside a native app for customers who won't download from a store but will tap "add to home screen." Dockify, Bonsify's own Shopify App Store product, is built on exactly this model: a home-screen install prompt that rewards the install with a discount code and tracks install-to-purchase attribution from there.
+A PWA skips app store review entirely, so it can go live faster than a native build, days rather than weeks. It works well as a first step for a store that hasn't validated app demand yet, or as a standing option alongside a native app for customers who won't download from a store but will tap "add to home screen." The install side runs on exactly this model: a home-screen install prompt that rewards the install with a discount code and tracks install-to-purchase attribution from there.
 
 A PWA does have real limits compared to native. Offline functionality is more limited, push notification control is less granular, and performance, while faster than a standard mobile site, doesn't fully match native software. The free audit weighs those tradeoffs against the store's actual traffic and repeat purchase data rather than assuming a PWA fits every case.
 
@@ -48,9 +48,6 @@ A PWA can go live in days since there's no app store submission or review proces
 
 **Can a PWA send push notifications?**
 Yes, though with more platform limitations than native push notification control.
-
-**Is Dockify the same as a custom PWA build?**
-Dockify is Bonsify's own Shopify App Store product, built on the PWA install-and-reward model, while a custom PWA build is scoped specifically to an individual store's needs.
 
 **Can I have both a PWA and a native app?**
 Yes. Some stores run both, depending on what the audit recommends for their traffic and repeat purchase behavior.

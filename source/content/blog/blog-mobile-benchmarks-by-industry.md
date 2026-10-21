@@ -1,6 +1,6 @@
 ---
 title: Shopify Mobile Conversion Benchmarks by Industry
-description: Full data compilation of mobile-to-desktop conversion gaps by category.
+description: "Mobile-to-desktop conversion gaps for Shopify stores compiled by category, from fashion to electronics, with sources and what the gaps mean for apps."
 slug: shopify-mobile-conversion-benchmarks-by-industry
 ---
 Mobile conversion rates on Shopify vary significantly by industry, from a 71 percent mobile-to-desktop gap in food and beverage to a 180 percent gap in furniture (Eevy AI, 2026), which means a single store-wide conversion benchmark tells a merchant far less than a category-specific one does.

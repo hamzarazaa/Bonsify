@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { isClientVisible } from "@/lib/clients";
 
 export const metadata = pageMetadata({
-  title: "Shopify Services - Mobile Apps, PWAs, Stores & Migrations | Bonsify",
+  title: "Shopify Services: Mobile Apps, PWAs & Migrations | Bonsify",
   description:
     "Full service list spanning mobile apps, PWAs, store builds, migrations, and custom Shopify development.",
   path: "/services",

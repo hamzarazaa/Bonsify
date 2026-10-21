@@ -7,7 +7,7 @@ A PWA (progressive web app) is a website that behaves like an app once added to 
 
 ## What a PWA does
 
-A PWA lives at a URL, gets added to a phone's home screen with an icon like any other app, and can send push notifications and work offline in a limited way, all without an app store listing or review process. Dockify, Bonsify's own Shopify App Store product, is built on this model: it prompts customers to add the store to their home screen and rewards the install with a discount code, tracking install-to-purchase attribution along the way. A PWA can be live within days, since there is no app store submission or review to wait on.
+A PWA lives at a URL, gets added to a phone's home screen with an icon like any other app, and can send push notifications and work offline in a limited way, all without an app store listing or review process. Bonsify builds PWAs on this model: we prompt customers to add the store to their home screen and reward the install with a discount code, tracking install-to-purchase attribution along the way. A PWA can be live within days, since there is no app store submission or review to wait on.
 
 ## What a native app does
 
@@ -54,9 +54,6 @@ No. PWAs are installed directly from the browser via "add to home screen," not t
 
 **Does a PWA support push notifications?**
 Yes, though with more limitations than a native app's push capabilities.
-
-**What is Dockify?**
-Bonsify's own Shopify App Store product, a PWA home-screen install prompt that rewards the install with a discount code and tracks install-to-purchase attribution.
 
 **How do I know which one my store needs?**
 The free audit reviews the store's actual mobile data and recommends PWA, native, or both, scoped to that store specifically.

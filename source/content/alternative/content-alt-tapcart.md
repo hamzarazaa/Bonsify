@@ -1,6 +1,6 @@
 ---
 title: Tapcart Alternative
-description: Why merchants move from Tapcart to a done-for-you native build.
+description: "Looking for a Tapcart alternative? Why Shopify merchants move from the builder to a done-for-you native app, with ownership, pricing and migration covered."
 slug: tapcart
 ---
 A Tapcart alternative is any other way to get a mobile app for your Shopify store.
@@ -38,7 +38,7 @@ an install strategy and attribution layer.
 
 Bonsify is not another builder. There is no editor, no template and no SaaS login.
 We audit your store, build a native app (or PWA) to your brand, submit it, launch an
-install campaign with Dockify (install reward + attribution), and maintain everything
+install campaign (install reward + attribution), and maintain everything
 on a retainer.
 
 | Complaint | Another builder | Bonsify (done-for-you) |

@@ -55,7 +55,7 @@ Highfy (highfy.pk) runs a native iOS and Android app built and maintained this w
 Yes. Shopify subscription and recurring revenue setup is part of the broader service list.
 
 **How is install-to-purchase attribution tracked?**
-Through Dockify, Bonsify's own attribution setup, which ties app installs to actual purchase behavior.
+Through Bonsify's own attribution setup, which ties app installs to actual purchase behavior.
 
 **How long does the free audit take?**
 A few days, based on the store's real mobile conversion data.

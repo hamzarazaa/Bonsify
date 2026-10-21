@@ -44,24 +44,11 @@ For native apps, yes: Apple ($99 per year) and Google Play ($25 one-time). We ha
 We do, on an optional monthly retainer covering OS updates, Shopify API changes, fixes and new features. Cancel anytime; the app keeps running but stops receiving updates from us.
 
 **How do customers find out the app exists?**
-Install strategy ships with launch. Typically a reward-on-install prompt on your storefront (our Dockify app): the customer adds your store to their home screen, gets a discount code instantly, and the install is attributed to the order it produces. "We have an app" is not an install strategy; a reason to install is.
+Install strategy ships with launch. Typically a reward-on-install prompt on your storefront: the customer adds your store to their home screen, gets a discount code instantly, and the install is attributed to the order it produces. "We have an app" is not an install strategy; a reason to install is.
 
 **What results can I expect?**
 We do not promise numbers we have not measured on your store. The published benchmarks: apps convert around 130% higher than mobile web, app users spend 6.4 times more session time, and mobile web cart abandonment runs about 85% versus roughly 20% in apps (Venn Apps; Barilliance). Your audit establishes your baseline; attribution measures the change.
 
-## Dockify
-
-**What is Dockify?**
-Dockify is Bonsify's own Shopify app. It adds a home screen install prompt to your store, delivers a discount code the moment a customer installs, and links each install to the purchase it produces in a merchant dashboard.
-
-**Is Dockify on the Shopify App Store?**
-Submitted and in review. [update when live with link]
-
-**Does Dockify work on iOS and Android?**
-Yes. Android shows the native install banner; iOS uses an add-to-home-screen instruction flow. Both paths deliver the reward code.
-
-**Can I use Dockify without a full Bonsify engagement?**
-Yes. It installs standalone from the Shopify App Store like any app. It is also the install layer inside full engagements.
 
 ## Practical
 

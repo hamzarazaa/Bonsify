@@ -1,6 +1,6 @@
 ---
 title: Shopify B2B and Wholesale Setup
-description: Tiered pricing, bulk ordering, and payment terms for business buyers.
+description: "B2B and wholesale setup on Shopify: tiered pricing, bulk ordering, payment terms and a wholesale experience your business buyers can use on mobile."
 slug: b2b-wholesale-setup
 heroImage:
   src: /images/services/servicesws.jpg

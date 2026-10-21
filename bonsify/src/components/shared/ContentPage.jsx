@@ -8,34 +8,43 @@ import JsonLd from "@/components/shared/JsonLd";
 import StickyMobileCTA from "@/components/shared/StickyMobileCTA";
 import ContentPhone from "@/components/shared/ContentPhone";
 import LaptopMockup from "@/components/shared/LaptopMockup";
-import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqPageSchema, ORG_ID } from "@/lib/schema";
 import { SERVICE_VISUALS } from "@/lib/serviceVisuals";
 import { isClientVisible } from "@/lib/clients";
 import styles from "./ContentPage.module.css";
 
 const SITE_URL = "https://bonsify.io";
 
-function articleSchema({ title, description, path }) {
+function articleSchema({ title, description, path, image, datePublished, dateModified }) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${SITE_URL}${path}#article`,
     headline: title,
     description,
     url: `${SITE_URL}${path}`,
-    dateModified: "2026-07-01",
-    author: { "@type": "Organization", name: "Bonsify", url: SITE_URL },
-    publisher: { "@type": "Organization", name: "Bonsify", url: SITE_URL },
+    mainEntityOfPage: `${SITE_URL}${path}`,
+    inLanguage: "en",
+    ...(image ? { image: image.startsWith("http") ? image : `${SITE_URL}${image}` } : {}),
+    datePublished: datePublished || "2026-07-01",
+    dateModified: dateModified || datePublished || "2026-07-01",
+    author: { "@type": "Organization", "@id": ORG_ID, name: "Bonsify", url: SITE_URL },
+    publisher: { "@type": "Organization", "@id": ORG_ID, name: "Bonsify", url: SITE_URL },
   };
 }
 
-function serviceSchema({ title, description }) {
+function serviceSchema({ title, description, path }) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${SITE_URL}${path}#service`,
     name: title,
+    serviceType: title,
     description,
-    provider: { "@type": "Organization", name: "Bonsify", url: SITE_URL },
+    url: `${SITE_URL}${path}`,
+    provider: { "@type": "Organization", "@id": ORG_ID, name: "Bonsify", url: SITE_URL },
     areaServed: "Worldwide",
+    audience: { "@type": "Audience", audienceType: "Shopify merchants" },
   };
 }
 
@@ -71,10 +80,10 @@ export default function ContentPage({
     <main>
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
       {schemaType === "Article" && (
-        <JsonLd data={articleSchema({ title, description, path })} />
+        <JsonLd data={articleSchema({ title, description, path, image: entry.heroImage?.src, datePublished: entry.date, dateModified: entry.updated })} />
       )}
       {schemaType === "Service" && (
-        <JsonLd data={serviceSchema({ title, description })} />
+        <JsonLd data={serviceSchema({ title, description, path })} />
       )}
       {faqItems.length > 0 && <JsonLd data={faqPageSchema(faqItems)} />}
 

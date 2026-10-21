@@ -1,6 +1,6 @@
 ---
 title: Fashion
-description: Mobile app strategy and benchmarks for fashion Shopify stores.
+description: "Mobile app strategy and conversion benchmarks for fashion Shopify stores: size and fit, drops, wishlists, push and the install strategy that gets apps used."
 slug: fashion
 ---
 A Shopify mobile app for fashion is a native iOS or Android app (or PWA) that gives
@@ -81,7 +81,7 @@ to manage the app.
    Design matched to the brand's visual identity, not a shared template. Variant UX,
    collection navigation and push setup are part of the build scope.
 3. **Launch.** App Store and Play Store submission handled. Install prompt with reward
-   (Dockify) deployed so customers have a reason to install.
+   deployed so customers have a reason to install.
 4. **Support.** Ongoing maintenance, push strategy iteration and feature updates on
    retainer.
 

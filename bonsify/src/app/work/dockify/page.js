@@ -9,7 +9,8 @@ import JsonLd from "@/components/shared/JsonLd";
 import LaptopShowcase from "@/components/work/LaptopShowcase";
 import { breadcrumbSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/metadata";
-import { getNextClient, getPrevClient } from "@/lib/clients";
+import { notFound } from "next/navigation";
+import { getNextClient, getPrevClient, isClientVisible } from "@/lib/clients";
 
 export const metadata = pageMetadata({
   title: "Dockify - Home Screen Install & Reward App | Bonsify",
@@ -85,6 +86,7 @@ const serviceSchema = {
 };
 
 export default function DockifyProductPage() {
+  if (!isClientVisible("dockify")) notFound();
   const next = getNextClient("dockify");
   const prev = getPrevClient("dockify");
 

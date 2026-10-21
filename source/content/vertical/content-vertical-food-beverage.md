@@ -1,6 +1,6 @@
 ---
 title: Food & Beverage
-description: Mobile app strategy and benchmarks for food and beverage stores.
+description: "Mobile app strategy and conversion benchmarks for food and beverage Shopify stores: reorder, subscriptions, delivery updates and push that drives repeat orders."
 slug: food-beverage
 ---
 A mobile app for a food and beverage Shopify store shortens the path from craving to reorder, the behavior that drives most repeat revenue in the category. Food and beverage converts at 2.1 percent on mobile versus 3.6 percent on desktop, a 71 percent gap, with an average order value of $55 (Eevy AI, 2026). Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more.

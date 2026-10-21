@@ -4,7 +4,7 @@ import p from "./HomeProcess.module.css";
 const STEPS = [
   ["Audit", "We review your store and customer flow to find exactly where mobile is leaking sales."],
   ["Build", "Native app or PWA, matched to what your store needs. Nothing bloated, nothing generic."],
-  ["Launch", "Live on the App Store and Google Play, or on the home screen through Dockify."],
+  ["Launch", "Live on the App Store and Google Play, or on the home screen as a PWA."],
   ["Support", "We maintain and improve the app after launch, so it keeps earning its place."],
 ];
 

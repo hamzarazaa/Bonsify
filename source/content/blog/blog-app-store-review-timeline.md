@@ -1,6 +1,6 @@
 ---
 title: 'Shopify App Store Review: Timeline and What Gets Rejected'
-description: Common rejection causes and how to prepare a clean first submission.
+description: "How long Apple and Google take to review a Shopify app, the common rejection causes, and how to prepare a clean first submission."
 slug: shopify-app-store-review-timeline
 heroImage:
   src: /images/blogs/Timeline.png

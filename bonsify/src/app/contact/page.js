@@ -83,16 +83,6 @@ export default function ContactPage() {
                   sense for your store.
                 </p>
               </div>
-              <div className={styles.block}>
-                <p className={styles.sideLabel}>Already sure?</p>
-                <p style={{ opacity: 0.75, fontSize: 15, lineHeight: 1.65 }}>
-                  If you just want Dockify live on your store, you can skip
-                  the call.
-                </p>
-                <a href="/work/dockify" style={{ color: "var(--jade)", marginTop: 8 }}>
-                  Explore Dockify →
-                </a>
-              </div>
             </RevealOnScroll>
           </div>
         </div>

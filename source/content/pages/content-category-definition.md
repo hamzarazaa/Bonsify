@@ -47,7 +47,7 @@ At Bonsify the scope runs in four phases, which is representative of the model:
 3. **Launch.** App Store and Google Play submission, listing copy and screenshots, and the review process handled. Apple review alone typically takes 1 to 3 days and can stretch to two weeks for first submissions, and rejections are common for first-timers. This step is where DIY merchants most often stall.
 4. **Support.** OS updates, Shopify API changes, feature iteration and push strategy on a retainer. Apps that stop being updated decay; app maintenance is not optional, only deferred.
 
-The install layer is part of the scope too. An app nobody installs earns nothing, so engagements include an install strategy, typically a reward-on-install prompt with attribution, which is the job of our own Shopify app, Dockify.
+The install layer is part of the scope too. An app nobody installs earns nothing, so engagements include an install strategy, typically a reward-on-install prompt with attribution.
 
 ## How to choose between the three models
 
@@ -74,9 +74,6 @@ Yes. The app, the listings and the customer relationship belong to the merchant.
 
 **Is a done-for-you service the same as a Shopify Plus agency?**
 No. Plus agencies build storefronts and themes. A done-for-you app service is specialized in the mobile app layer: native builds, PWAs, push, app store operations and install attribution.
-
-**What is Dockify and how does it relate?**
-Dockify is Bonsify's own Shopify app. It adds a home screen install prompt to a store, gives the customer a discount code on install, and attributes each install to the order it produces. It works standalone or as the install layer of a full engagement.
 
 ---
 

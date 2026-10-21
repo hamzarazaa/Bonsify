@@ -1,16 +1,165 @@
+# Bonsify welcomes search engines and AI assistants. Public pages are open;
+# private proposal pages, the admin area and the API are not.
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
 
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Applebot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
+
+User-agent: YouBot
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /for/
+Disallow: /status
 
 Sitemap: https://bonsify.io/sitemap.xml

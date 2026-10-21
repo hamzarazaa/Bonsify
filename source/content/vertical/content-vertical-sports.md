@@ -1,6 +1,6 @@
 ---
 title: Sports & Fitness
-description: Mobile app strategy and benchmarks for sports and fitness stores.
+description: "Mobile app strategy and conversion benchmarks for sports and fitness Shopify stores: loyalty, drops, subscriptions and push built around training habits."
 slug: sports-fitness
 ---
 A mobile app for a sports and fitness Shopify store is built around a customer base that already lives on their phone for training, tracking, and community, and a mobile web checkout that doesn't match that behavior. Sports and fitness stores see a median mobile conversion rate of 1.4 percent, with an average order value of $110 (Eevy AI, 2026). Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more.

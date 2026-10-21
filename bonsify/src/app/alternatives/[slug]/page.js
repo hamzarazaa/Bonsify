@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   const entry = getContentEntry("alternatives", slug);
   if (!entry) return {};
   return pageMetadata({
-    title: `${entry.title} | Bonsify`,
+    title: `${entry.title}: A Done-For-You Native App Instead | Bonsify`,
     description: entry.description,
     path: `/alternatives/${slug}`,
   });

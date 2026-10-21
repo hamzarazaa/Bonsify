@@ -12,6 +12,9 @@ import "@/styles/tokens.css";
 import "./globals.css";
 import "@/styles/lab-theme.css";
 import LabMotion from "@/components/lab/LabMotion";
+import Analytics from "@/components/shared/Analytics";
+import JsonLd from "@/components/shared/JsonLd";
+import { siteGraph } from "@/lib/schema";
 
 // Display face: condensed, heavy headlines and wide numerals from one family.
 const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-display", display: "swap" });
@@ -109,7 +112,9 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://embed.figma.com" />
         <link rel="dns-prefetch" href="https://www.figma.com" />
         <PrototypeWarmer urls={protoUrls} />
+        <JsonLd data={siteGraph()} />
         <LabMotion />
+        <Analytics />
         <PageTransition>{children}</PageTransition>
         <SiteChrome>
           <Footer />

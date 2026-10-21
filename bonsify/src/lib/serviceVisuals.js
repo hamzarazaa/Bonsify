@@ -10,11 +10,13 @@ export const SERVICE_VISUALS = {
   "pwa-development": {
     type: "phone",
     src: "/images/dockify/install-banner.webp",
+    requiresClient: "dockify",
     imgPosition: "bottom center",
   },
   "install-to-purchase-attribution": {
     type: "laptop",
     src: "/images/dockify/dashboard-overview-crop.webp",
+    requiresClient: "dockify",
     width: 810,
     height: 150,
   },

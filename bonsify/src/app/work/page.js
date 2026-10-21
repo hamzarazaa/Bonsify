@@ -9,7 +9,7 @@ import { getShowcaseApps } from "@/lib/showcase";
 
 export const metadata = pageMetadata({
   title: "Work - Shopify Apps Bonsify Has Built | Bonsify",
-  description: "Shopify stores we have turned into native mobile apps: Highfy, BachaParty, Creed Vintage, and our own Dockify.",
+  description: "Shopify stores we have turned into native mobile apps: Highfy, BachaParty, Creed Vintage.",
   path: "/work",
 });
 

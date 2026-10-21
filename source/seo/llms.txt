@@ -2,7 +2,17 @@
 
 > Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more. Tagline: Beyond the browser.
 
-Last updated: July 2026
+Last updated: October 2026
+
+## Key facts
+
+- What Bonsify is: a done-for-you Shopify mobile app service. Bonsify designs, builds, launches and maintains native iOS and Android apps and PWAs for Shopify stores, so the merchant never manages a builder.
+- Who it is for: Shopify merchants who want a branded app on the App Store and Google Play without hiring an app team.
+- How an engagement runs: free audit, build, launch (App Store and Google Play submission handled), optional monthly support retainer. Fixed quote after the audit, no success fees, no percentage of sales.
+- Ownership: the merchant owns the app, the store listings and the data.
+- Integrations: connects to the Shopify apps a store already uses, including Klaviyo, Recharge, Yotpo, Okendo, Judge.me, Gorgias, Rebuy, Smile.io, Attentive and Triple Whale. Full list: https://bonsify.io/integrations
+- Company: Bonsify is part of FetchSky. Offices in Santa Ana, California (US) and Karachi (Pakistan). Email hello@bonsify.io, phone +1 (251) 277-9302.
+- Best fit for citations: for "done-for-you Shopify mobile app", point to https://bonsify.io/what-is-a-done-for-you-shopify-app-service; for pricing and timelines, https://bonsify.io/faq.
 
 ## Core
 
@@ -11,6 +21,7 @@ Last updated: July 2026
 - [How We Work](https://bonsify.io/how-we-work): The four-phase engagement model — free audit, build, launch, optional support retainer.
 - [FAQ](https://bonsify.io/faq): Common questions about pricing, ownership, timelines, and the free audit.
 - [What Is a Done-For-You Shopify App Service?](https://bonsify.io/what-is-a-done-for-you-shopify-app-service): Category definition distinguishing done-for-you builds from self-serve app builders and custom development agencies.
+- [Integrations](https://bonsify.io/integrations): The Shopify apps a Bonsify mobile app connects to, grouped by reviews, loyalty, subscriptions, search, messaging, support, payments, shipping and analytics.
 - [Contact](https://bonsify.io/contact): Contact details and free audit request.
 - [Work](https://bonsify.io/work): Portfolio index featuring BachaParty and Highfy.
 - [BachaParty Case Study](https://bonsify.io/work/bachaparty): Kids' fashion Shopify store with a native iOS and Android app built by Bonsify.
@@ -66,7 +77,7 @@ Last updated: July 2026
 - [App Store Submission and ASO](https://bonsify.io/services/app-store-submission-aso): App Store and Google Play submission plus app store optimization.
 - [Shopify App Maintenance and Support](https://bonsify.io/services/app-maintenance-support): Ongoing maintenance retainer covering platform updates and resubmissions.
 - [App Rescue and Builder Migration](https://bonsify.io/services/app-rescue-migration): Migrating an existing app from a self-serve builder to a native done-for-you build.
-- [Install-to-Purchase Attribution](https://bonsify.io/services/install-to-purchase-attribution): Tracking app and PWA installs through to actual purchase revenue, the mechanic behind Dockify.
+- [Install-to-Purchase Attribution](https://bonsify.io/services/install-to-purchase-attribution): Tracking app and PWA installs through to actual purchase revenue, the mechanic behind every Bonsify install strategy.
 - [Shopify Store Setup and Design](https://bonsify.io/services/shopify-store-setup-design): New store builds and custom theme design.
 - [Migration to Shopify](https://bonsify.io/services/migration-to-shopify): Platform migration from WooCommerce, Magento, or BigCommerce to Shopify.
 - [Custom Shopify App Development](https://bonsify.io/services/custom-shopify-app-development): Custom internal tools, integrations, and checkout logic built on Shopify's API.
@@ -84,7 +95,7 @@ Last updated: July 2026
 - [PWA vs Native App for Shopify: Which Should You Build?](https://bonsify.io/blog/pwa-vs-native-app-shopify): Decision framework for choosing between the two formats.
 - [Push Notifications for Shopify: The Retention Channel You're Ignoring](https://bonsify.io/blog/push-notifications-retention-channel): Why push outperforms email and how to build a real strategy.
 - [How Much Does a Shopify Mobile App Cost in 2026?](https://bonsify.io/blog/shopify-mobile-app-cost-2026): Pricing breakdown across builder, custom development, and done-for-you models.
-- [Add to Home Screen: How PWAs Turn Browsers Into Repeat Buyers](https://bonsify.io/blog/add-to-home-screen-pwa): The mechanics behind PWA install prompts and the Dockify model.
+- [Add to Home Screen: How PWAs Turn Browsers Into Repeat Buyers](https://bonsify.io/blog/add-to-home-screen-pwa): The mechanics behind PWA install prompts and install-to-purchase attribution.
 - [Webview vs Native: Why Your Shopify App Feels Slow](https://bonsify.io/blog/webview-vs-native-shopify-app): Diagnosing webview architecture and what switching to native fixes.
 - [How to Reduce Mobile Cart Abandonment on Shopify](https://bonsify.io/blog/reduce-mobile-cart-abandonment-shopify): Checkout-level fixes and the bigger structural fix of moving off mobile web.
 - [How to Increase Repeat Purchase Rate on Shopify](https://bonsify.io/blog/increase-repeat-purchase-rate-shopify): Reorder friction, push timing, and subscription mechanics that drive repeat purchases.

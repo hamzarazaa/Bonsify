@@ -1,6 +1,6 @@
 ---
 title: 'PWA vs Native App for Shopify: Which Should You Build?'
-description: Decision framework for choosing between the two formats.
+description: "PWA or native app for your Shopify store? A decision framework covering speed to launch, push notifications, performance and cost, with benchmarks."
 slug: pwa-vs-native-app-shopify
 heroImage:
   src: /images/blogs/PWSvsNat.jpg
@@ -12,7 +12,7 @@ Choosing between a PWA and a native app for a Shopify store comes down to one re
 
 A PWA installs from the browser, add to home screen, no App Store or Google Play review. That means it can go live in days rather than weeks, which matters for a store that hasn't validated whether an app changes its numbers at all. It also captures customers who are willing to tap "add to home screen" but wouldn't go through a full app store download, a real segment for most stores.
 
-Dockify, Bonsify's own Shopify App Store product, runs on exactly this model, an install prompt paired with a discount reward and install-to-purchase attribution, which makes the PWA route not just fast but measurable from day one.
+Bonsify builds PWAs on exactly this model, an install prompt paired with a discount reward and install-to-purchase attribution, which makes the PWA route not just fast but measurable from day one.
 
 ## The case for going native first
 

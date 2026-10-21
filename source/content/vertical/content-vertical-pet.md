@@ -1,6 +1,6 @@
 ---
 title: Pet Supplies
-description: Mobile app strategy and benchmarks for pet supply stores.
+description: "Mobile app strategy and conversion benchmarks for pet supply Shopify stores: subscriptions, reorder reminders, push and loyalty that build repeat buyers."
 slug: pet-supplies
 ---
 A mobile app for a pet supplies Shopify store is built around the category's core behavior: recurring purchases of food, litter, and supplies on a schedule set by the pet, not the customer. Pet supply stores see a median mobile conversion rate of 1.8 percent, with an average order value of $70 (Eevy AI, 2026). Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more.

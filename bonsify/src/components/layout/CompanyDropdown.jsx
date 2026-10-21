@@ -7,6 +7,7 @@ import styles from "./CompanyDropdown.module.css";
 const ITEMS = [
   { href: "/about", title: "About" },
   { href: "/how-we-work", title: "How We Work" },
+  { href: "/integrations", title: "Integrations" },
   { href: "/faq", title: "FAQ" },
   { href: "/contact", title: "Contact" },
   { href: "/vs", title: "Competitors" },

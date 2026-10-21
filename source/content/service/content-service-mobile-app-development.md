@@ -1,6 +1,6 @@
 ---
 title: Shopify Mobile App Development
-description: Flagship done-for-you native iOS, Android, and PWA development service.
+description: "Done-for-you native iOS, Android and PWA development for Shopify stores: designed, built, launched and maintained by Bonsify, with a free audit first."
 slug: mobile-app-development
 heroImage:
   src: /images/services/servicesmad.jpg

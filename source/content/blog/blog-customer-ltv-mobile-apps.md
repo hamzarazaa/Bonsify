@@ -1,6 +1,6 @@
 ---
 title: 'Customer LTV and Mobile Apps: The Retention Math'
-description: How app mechanics compound customer lifetime value over time.
+description: "How mobile app mechanics such as push, loyalty and one-tap reorder compound customer lifetime value for Shopify stores over time, with benchmarks."
 slug: customer-ltv-mobile-apps
 heroImage:
   src: /images/blogs/LTV.jpg

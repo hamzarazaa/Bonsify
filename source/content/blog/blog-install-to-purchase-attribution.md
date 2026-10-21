@@ -1,6 +1,6 @@
 ---
 title: 'Install-to-Purchase Attribution: Measuring What Your App Is Worth'
-description: Why most app builders don't track this and what it actually enables.
+description: "Why most app builders don't track install-to-purchase attribution, what it actually enables, and how to tie every app install to the revenue it produces."
 slug: install-to-purchase-attribution
 heroImage:
   src: /images/blogs/Measure.png
@@ -16,7 +16,7 @@ Most app builders and PWA install prompts report installs as a standalone number
 
 Install-to-purchase attribution connects an individual install to a specific customer account, then tracks whether and when that customer completes a purchase after installing, whether that's the same session, a week later, or a habitual repeat customer months in. It also attributes revenue reasonably when a customer interacts with multiple channels, so the app gets credit proportional to its actual role rather than either full credit or none.
 
-For install incentive programs specifically, discount-code-based installs like the ones Dockify runs, attribution ties the code redemption directly to the resulting order, giving a clean, direct revenue number tied to the install mechanism itself.
+For install incentive programs specifically, discount-code-based installs, attribution ties the code redemption directly to the resulting order, giving a clean, direct revenue number tied to the install mechanism itself.
 
 ## Why most tools don't do this
 

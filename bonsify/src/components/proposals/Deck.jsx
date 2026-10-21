@@ -233,7 +233,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
         <div className={styles.plan}>
           {[
             ["A native app, iOS and Android", `Your full ${brand.platform === "shopify" ? "Shopify " : ""}catalogue, checkout and accounts, in both stores under ${brand.name}'s name.`],
-            ["Installs from your own site", "Dockify, our Shopify app, invites mobile visitors to install and rewards them when they do."],
+            ["Installs from your own site", "An install prompt on your storefront invites mobile visitors to add the app and rewards them when they do."],
             ["Push that sells", "Restock alerts, drops, abandoned carts and order updates, straight to the lock screen."],
             ["A portal your team runs", "Change banners, collections and offers yourselves. No release, no ticket."],
           ].map(([h, p]) => (
@@ -281,26 +281,6 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
               </span>
             </button>
           ))}
-          <div className={`${styles.workCard} ${styles.workDockify}`}>
-            <span className={styles.homeGrid} aria-hidden="true">
-              {Array.from({ length: 6 }, (_, n) => (
-                <span key={n} />
-              ))}
-              <span className={styles.homeIcon}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                {brand.icon && <img src={brand.icon} alt="" />}
-              </span>
-              <span />
-            </span>
-            <span className={styles.dockReward}>
-              <b>{brand.name} added to home screen</b>
-              Your code WELCOME10 is ready
-            </span>
-            <span className={styles.workMeta}>
-              <strong>Dockify</strong>
-              <small>Our app on the Shopify App Store. It turns browser visits into home screen installs.</small>
-            </span>
-          </div>
         </div>
       </div>
     ),
@@ -314,7 +294,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           {[
             ["Audit", `We go through ${brand.domain} on a phone and mark where shoppers drop off.`],
             ["Build", "We design and build the app around your catalogue, in your branding throughout."],
-            ["Launch", "We handle App Store and Google Play submission and switch on Dockify installs."],
+            ["Launch", "We handle App Store and Google Play submission and switch on the install prompt on your storefront."],
             ["Grow", "We keep the app updated, watch the numbers and improve it every month."],
           ].map(([h, p], n) => (
             <li key={h}>

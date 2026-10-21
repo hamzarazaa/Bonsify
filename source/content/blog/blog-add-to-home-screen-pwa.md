@@ -1,6 +1,6 @@
 ---
 title: 'Add to Home Screen: How PWAs Turn Browsers Into Repeat Buyers'
-description: The mechanics behind PWA install prompts and the Dockify model.
+description: The mechanics behind PWA install prompts and install-to-purchase attribution.
 slug: add-to-home-screen-pwa
 heroImage:
   src: /images/blogs/PWA_Add.jpg
@@ -16,7 +16,7 @@ Cart abandonment runs around 85 percent on mobile web versus roughly 20 percent 
 
 ## The install-to-purchase gap most PWAs never close
 
-Getting the add to home screen tap is only half the mechanism. Most PWA install prompts across the industry stop there, tracking that an install happened but not whether it led to anything. Dockify, Bonsify's own Shopify App Store product, is built specifically to close that gap: it prompts the install, rewards it with a discount code, and tracks install-to-purchase attribution from that point forward, giving a store an actual revenue number tied to the install rather than an install count sitting disconnected from sales data.
+Getting the add to home screen tap is only half the mechanism. Most PWA install prompts across the industry stop there, tracking that an install happened but not whether it led to anything. Bonsify closes that gap: we prompt the install, reward it with a discount code, and track install-to-purchase attribution from that point forward, giving a store an actual revenue number tied to the install rather than an install count sitting disconnected from sales data.
 
 ## What makes an add-to-home-screen prompt actually convert
 
@@ -35,9 +35,6 @@ No. It installs a PWA icon directly from the browser without an App Store or Goo
 
 **Does add to home screen work on both iPhone and Android?**
 Yes, both major mobile browsers support adding a PWA to the home screen, with some differences in the exact install flow.
-
-**What is Dockify?**
-Bonsify's own Shopify App Store product, a PWA home-screen install prompt that rewards the install with a discount code and tracks install-to-purchase attribution.
 
 **When should a store prompt customers to add to home screen?**
 Timing the prompt to a moment of engagement, after a product view or cart add, tends to convert better than prompting immediately on page load.

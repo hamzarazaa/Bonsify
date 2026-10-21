@@ -1,6 +1,6 @@
 ---
 title: App Store Submission and ASO
-description: App Store and Google Play submission plus app store optimization.
+description: "App Store and Google Play submission plus app store optimization for Shopify apps: listing copy, screenshots, review prep and a clean first submission."
 slug: app-store-submission-aso
 heroImage:
   src: /images/services/servicesasso.jpg

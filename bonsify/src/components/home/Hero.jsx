@@ -124,12 +124,6 @@ export default function Hero() {
               <Link className={`${styles.btn} ${styles.btnClay}`} href="#process">
                 See how it works
               </Link>
-              <Link
-                className={`${styles.btn} ${styles.btnGhost}`}
-                href="#dockify"
-              >
-                Explore Dockify
-              </Link>
             </div>
           </div>
           <div className={styles.visual}>

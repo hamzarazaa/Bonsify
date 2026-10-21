@@ -20,8 +20,6 @@ The fix has existed for years. Apps convert around 130% higher than the mobile w
 
 Bonsify is a product of FetchSky, a software company that has spent ten years building and operating products used by real businesses. That matters for one practical reason: we run apps after launch, not just before it. OS updates, Shopify API changes, push infrastructure, app store policies. A decade of operating software is the difference between a launch partner and a long-term one.
 
-We also build our own products on the same stack we sell. Dockify, our Shopify App Store app, adds a home screen install prompt with a reward and install-to-purchase attribution. We built it because we kept watching well-made apps fail at the install step. When we recommend an install strategy to a client, it is one we run ourselves.
-
 ## Section 3: How we work (short version, links to How We Work page)
 
 Audit, build, launch, support. One team, one accountable party, from the first review of your store to the update that ships two years later. No handoffs, no half-finished apps. The full engagement model is on the How We Work page.
@@ -35,7 +33,7 @@ Audit, build, launch, support. One team, one accountable party, from the first r
 
 ## Section 5: Proof strip
 
-BachaParty (fashion, iOS + Android, live) · Highfy (beauty, iOS + Android, live) · Dockify (Shopify App Store, in review) · [testimonial placeholder: replace with real quote when received]
+BachaParty (fashion, iOS + Android, live) · Highfy (beauty, iOS + Android, live) · [testimonial placeholder: replace with real quote when received]
 
 ## CTA band
 

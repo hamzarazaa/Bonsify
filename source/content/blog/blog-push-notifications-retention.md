@@ -1,6 +1,6 @@
 ---
 title: 'Push Notifications for Shopify: The Retention Channel You''re Ignoring'
-description: Why push outperforms email and how to build a real strategy.
+description: "Why push notifications outperform email for Shopify retention, with open-rate benchmarks and a practical strategy for restocks, carts and delivery updates."
 slug: push-notifications-retention-channel
 heroImage:
   src: /images/blogs/Not.jpg

@@ -59,6 +59,9 @@ export default function MobileMenu() {
           <Link href="/how-we-work" onClick={close}>
             How We Work
           </Link>
+          <Link href="/integrations" onClick={close}>
+            Integrations
+          </Link>
           <Link href="/faq" onClick={close}>
             FAQ
           </Link>

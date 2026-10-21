@@ -1,7 +1,6 @@
 ---
 title: Install-to-Purchase Attribution
-description: Tracking app and PWA installs through to actual purchase revenue,
-  the mechanic behind Dockify.
+description: "Track app and PWA installs through to actual purchase revenue, so a Shopify store can measure what its mobile app earns instead of guessing."
 slug: install-to-purchase-attribution
 heroImage:
   src: /images/services/servicesitp.jpg
@@ -9,7 +8,7 @@ heroImage:
   width: 600
   height: 500
 ---
-Install-to-purchase attribution is the practice of tracking which app installs actually lead to a purchase, so a Shopify store can measure what the app is worth instead of assuming it. Most PWA and app install prompts stop at getting the install, with nothing connecting that install to whether the customer bought anything afterward. Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more, and this attribution gap is the core problem Dockify, Bonsify's own Shopify App Store product, was built to solve.
+Install-to-purchase attribution is the practice of tracking which app installs actually lead to a purchase, so a Shopify store can measure what the app is worth instead of assuming it. Most PWA and app install prompts stop at getting the install, with nothing connecting that install to whether the customer bought anything afterward. Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more, and this attribution gap is the core problem our install strategy is built to solve.
 
 ## What's included
 
@@ -23,11 +22,11 @@ Install-to-purchase attribution is the practice of tracking which app installs a
 
 Existing PWA and app install prompts, across most of the category, handle getting the install itself but stop there. A merchant can see how many customers added the app to their home screen or downloaded it, but not whether that install actually drove a purchase, or how much revenue is fairly attributed to the app rather than to other channels. Without that link, it's difficult to know whether an app investment is paying off, or which install incentives are actually working.
 
-Dockify closes that gap specifically: it prompts customers to add the store to their home screen, rewards the install with a discount code, and tracks install-to-purchase attribution from there, giving a direct revenue number tied to the install rather than a vague engagement metric.
+Bonsify closes that gap: we prompt customers to add the store to their home screen, reward the install with a discount code, and track install-to-purchase attribution from there, giving a direct revenue number tied to the install rather than a vague engagement metric.
 
 ## How the process works
 
-Attribution setup is built into every Bonsify app engagement as part of the launch phase, using the store's order and customer data to connect installs to purchases. For merchants using Dockify specifically as a standalone PWA install-and-reward tool, the same attribution tracking runs through the Shopify App Store listing.
+Attribution setup is built into every Bonsify app engagement as part of the launch phase, using the store's order and customer data to connect installs to purchases.
 
 BachaParty (bachaaparty.com) and Highfy (highfy.pk) both run apps with install-to-purchase attribution tracked this way.
 
@@ -49,14 +48,11 @@ It's the practice of tracking whether a specific app or PWA install actually lea
 **Why don't most app builders track this?**
 Most focus on the install prompt itself and stop there, without connecting that install to downstream purchase behavior.
 
-**Is Dockify a standalone product or part of a full app build?**
-Dockify is Bonsify's own Shopify App Store product, usable as a standalone PWA install-and-reward tool, and the same attribution approach is built into full native app engagements.
-
 **How does the discount-based install incentive work?**
 Customers who add the store to their home screen receive a discount code, and that install is then tracked through to any resulting purchase.
 
 **Does attribution work for native apps, PWAs, or both?**
-Both. Attribution tracking is built into native app builds and available through Dockify for PWA-based installs.
+Both. Attribution tracking is built into native app builds and PWA-based installs.
 
 **How long does the free audit take?**
 A few days, based on the store's current app and tracking setup.

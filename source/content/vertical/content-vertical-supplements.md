@@ -1,6 +1,6 @@
 ---
 title: Health & Supplements
-description: Mobile app strategy and benchmarks for supplement and wellness stores.
+description: "Mobile app strategy and conversion benchmarks for supplement and wellness Shopify stores: subscriptions, reorder prompts, loyalty and compliant push."
 slug: health-supplements
 ---
 A mobile app for a health and supplements Shopify store is built around the category's defining behavior: scheduled, repeat reorders as a customer works through a bottle or a subscription cycle. Health and supplements stores see a median mobile conversion rate of 2.0 percent, with an average order value of $90 (Eevy AI, 2026). Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more.

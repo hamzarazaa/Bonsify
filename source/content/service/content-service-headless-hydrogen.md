@@ -1,6 +1,6 @@
 ---
 title: Shopify Headless and Hydrogen Development
-description: Custom storefront development on Shopify's Hydrogen framework.
+description: "Custom headless storefront development on Shopify's Hydrogen framework: when headless pays off, what it costs and how it connects to a mobile app."
 slug: headless-hydrogen-development
 heroImage:
   src: /images/services/serviceshy.jpg

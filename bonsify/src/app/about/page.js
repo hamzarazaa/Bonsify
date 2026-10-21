@@ -11,7 +11,6 @@ import { isClientVisible } from "@/lib/clients";
 const ROSTER = [
   { slug: "bachaparty", label: "BachaParty (fashion, iOS + Android, live)" },
   { slug: "highfy", label: "Highfy (beauty, iOS + Android, live)" },
-  { slug: "dockify", label: "Dockify (Shopify App Store, in review)" },
 ];
 
 export const metadata = pageMetadata({
@@ -106,14 +105,6 @@ export default function AboutPage() {
               changes, push infrastructure, app store policies. A decade of
               operating software is the difference between a launch partner
               and a long-term one.
-            </RevealOnScroll>
-            <RevealOnScroll as="p">
-              We also build our own products on the same stack we sell.
-              Dockify, our Shopify App Store app, adds a home screen install
-              prompt with a reward and install-to-purchase attribution. We
-              built it because we kept watching well-made apps fail at the
-              install step. When we recommend an install strategy to a
-              client, it is one we run ourselves.
             </RevealOnScroll>
           </div>
         </div>

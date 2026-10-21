@@ -1,6 +1,6 @@
 ---
 title: 'Webview vs Native: Why Your Shopify App Feels Slow'
-description: Diagnosing webview architecture and what switching to native fixes.
+description: "Is your Shopify app just a webview? How to diagnose a webview architecture, why it feels slow, and what switching to a native build actually fixes."
 slug: webview-vs-native-shopify-app
 heroImage:
   src: /images/blogs/WebVSNat.webp

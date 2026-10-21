@@ -6,8 +6,7 @@
 // "true" -> Redeploy) instead of a code edit. This is a static export with
 // no backend, so there's no way to flip this live for visitors without a
 // rebuild either way - env var + redeploy is the lowest-friction version of
-// that rebuild. See .env.example. Dockify is Bonsify's own product (already
-// live on the Shopify App Store), so it's never gated by this.
+// that rebuild. See .env.example. Dockify is hidden everywhere until NEXT_PUBLIC_SHOW_DOCKIFY=true.
 export const CLIENTS = [
   {
     slug: "bachaparty",
@@ -19,7 +18,7 @@ export const CLIENTS = [
     name: "Highfy",
     visible: process.env.NEXT_PUBLIC_SHOW_HIGHFY === "true",
   },
-  { slug: "dockify", name: "Dockify", visible: true },
+  { slug: "dockify", name: "Dockify", visible: process.env.NEXT_PUBLIC_SHOW_DOCKIFY === "true" },
 ];
 
 export function isClientVisible(slug) {

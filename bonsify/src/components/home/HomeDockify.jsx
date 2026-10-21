@@ -1,9 +1,12 @@
 import Link from "next/link";
 import styles from "./HomeServices.module.css";
+import { isClientVisible } from "@/lib/clients";
 import d from "./HomeDockify.module.css";
 
+const SHOW_DOCKIFY = isClientVisible("dockify");
 // Dockify, our Shopify app: turns mobile visits into home screen installs.
 export default function HomeDockify() {
+  if (!SHOW_DOCKIFY) return null;
   return (
     <section className={d.section} id="dockify">
       <div className={`wrap ${d.panel}`}>

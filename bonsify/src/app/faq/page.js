@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "FAQ - Shopify Apps, PWAs & Pricing | Bonsify",
   description:
-    "Common questions about pricing, ownership, timelines, PWAs vs native apps, and Dockify - answered straight.",
+    "Common questions about pricing, ownership, timelines, PWAs vs native apps, and ownership - answered straight.",
   path: "/faq",
 });
 
@@ -69,32 +69,11 @@ const groups = [
       },
       {
         q: "How do customers find out the app exists?",
-        a: 'Install strategy ships with launch. Typically a reward-on-install prompt on your storefront (our Dockify app): the customer adds your store to their home screen, gets a discount code instantly, and the install is attributed to the order it produces. "We have an app" is not an install strategy; a reason to install is.',
+        a: 'Install strategy ships with launch. Typically a reward-on-install prompt on your storefront: the customer adds your store to their home screen, gets a discount code instantly, and the install is attributed to the order it produces. "We have an app" is not an install strategy; a reason to install is.',
       },
       {
         q: "What results can I expect?",
         a: "We do not promise numbers we have not measured on your store. The published benchmarks: apps convert around 130% higher than mobile web, app users spend 6.4 times more session time, and mobile web cart abandonment runs about 85% versus roughly 20% in apps (Venn Apps; Barilliance). Your audit establishes your baseline; attribution measures the change.",
-      },
-    ],
-  },
-  {
-    heading: "Dockify",
-    items: [
-      {
-        q: "What is Dockify?",
-        a: "Dockify is Bonsify's own Shopify app. It adds a home screen install prompt to your store, delivers a discount code the moment a customer installs, and links each install to the purchase it produces in a merchant dashboard.",
-      },
-      {
-        q: "Is Dockify on the Shopify App Store?",
-        a: "Submitted and in review.",
-      },
-      {
-        q: "Does Dockify work on iOS and Android?",
-        a: "Yes. Android shows the native install banner; iOS uses an add-to-home-screen instruction flow. Both paths deliver the reward code.",
-      },
-      {
-        q: "Can I use Dockify without a full Bonsify engagement?",
-        a: "Yes. It installs standalone from the Shopify App Store like any app. It is also the install layer inside full engagements.",
       },
     ],
   },

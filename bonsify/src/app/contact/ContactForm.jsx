@@ -2,6 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import Turnstile from "@/components/shared/Turnstile";
+import { getAttribution, track } from "@/lib/track";
 import styles from "./Contact.module.css";
 
 // Cloudflare's published "always passes" test site key - safe to ship as a
@@ -36,6 +37,9 @@ export default function ContactForm() {
 
     const formData = new FormData(formRef.current);
     formData.set("cf-turnstile-response", token);
+    const att = getAttribution();
+    if (att) formData.set("first_touch_source", JSON.stringify(att));
+    formData.set("submitted_from", window.location.pathname);
 
     try {
       const res = await fetch("/api/contact", {
@@ -46,6 +50,7 @@ export default function ContactForm() {
       if (!res.ok) {
         throw new Error(data.error || "Something went wrong. Please try again.");
       }
+      track("generate_lead", { form: "contact", value: 1 });
       setStatus("success");
       formRef.current.reset();
       setToken(null);

@@ -1,6 +1,6 @@
 ---
 title: Shopify Store Setup and Design
-description: New store builds and custom theme design.
+description: "New Shopify store builds and custom theme design: fast, on-brand storefronts built to convert on mobile and ready to extend into a native app."
 slug: shopify-store-setup-design
 heroImage:
   src: /images/services/servicessssd.jpg

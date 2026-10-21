@@ -1,6 +1,6 @@
 ---
 title: Home & Furniture
-description: Mobile app strategy and benchmarks for home and furniture stores.
+description: "Mobile app strategy and conversion benchmarks for home and furniture Shopify stores: AR previews, saved rooms, high-ticket checkout and delivery tracking."
 slug: home-furniture
 ---
 A mobile app for a home and furniture Shopify store is built around the most considered purchase path in ecommerce, one where a slow mobile experience costs the most relative to any other category. Furniture converts at 0.5 percent on mobile versus 1.4 percent on desktop, a 180 percent gap, the widest of any benchmarked category, with an average order value of $200 (Eevy AI, 2026). Home is also one of the largest categories on Shopify, making up roughly 15 percent of top stores by category (Eevy AI, 2026). Bonsify is a Shopify services company by FetchSky that builds native iOS and Android apps, PWAs, new Shopify stores, platform migrations, custom apps, and more.

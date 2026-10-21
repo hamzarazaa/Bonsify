@@ -1,7 +1,6 @@
 ---
 title: App Rescue and Builder Migration
-description: Migrating an existing app from a self-serve builder to a native
-  done-for-you build.
+description: "Migrate an existing Shopify app from a self-serve builder to a native build you own, with your data, listings, reviews and users carried across safely."
 slug: app-rescue-migration
 heroImage:
   src: /images/services/servicesarbm.jpg

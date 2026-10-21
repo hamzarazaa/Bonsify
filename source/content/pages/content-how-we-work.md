@@ -29,7 +29,7 @@ Native iOS and Android apps, or a PWA, synced to your live Shopify catalog, chec
 Typical duration: PWA in days to two weeks; native builds in several weeks depending on catalog complexity.
 
 ### 03: Launch
-App Store and Google Play submission, listing copy, screenshots, and the review process handled end to end. First Apple submissions can take up to two weeks in review and rejections are routine for first-timers; we have been through it and budget for it. Install strategy ships with launch: a reward-on-install prompt (Dockify) so the app reaches phones instead of waiting on them.
+App Store and Google Play submission, listing copy, screenshots, and the review process handled end to end. First Apple submissions can take up to two weeks in review and rejections are routine for first-timers; we have been through it and budget for it. Install strategy ships with launch: a reward-on-install prompt so the app reaches phones instead of waiting on them.
 
 ### 04: Support (optional retainer)
 OS updates, Shopify API changes, bug fixes, new features, push strategy. Monthly retainer, cancel anytime. Apps that stop being maintained decay within a couple of OS cycles; this phase is why our clients' apps are still live years later.

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { INTEGRATION_COUNT } from "@/lib/integrations";
 import Phone from "@/components/proposals/Phone";
 import BrandApp from "@/components/proposals/BrandApp";
 import BrandMark from "@/components/shared/BrandMark";
@@ -673,6 +674,7 @@ export default function LabHome({ brands, apps, proof }) {
           <Link href="/work">Work</Link>
           <Link href="/services">Services</Link>
           <Link href="/how-we-work">How we work</Link>
+          <Link href="/integrations">Integrations</Link>
           <Link href="/about">About</Link>
         </nav>
         <Link href="/contact" className={styles.cta} data-cursor="Go">
@@ -971,6 +973,11 @@ export default function LabHome({ brands, apps, proof }) {
               <WorkCard key={a.slug} app={a} on={act === i} onActivate={() => setAct(i)} />
             ))}
           </div>
+          <Link href="/integrations" className={styles.intg} data-cursor="Go">
+            <b>Works with the apps you already run</b>
+            <span>Klaviyo, Recharge, Yotpo, Gorgias, Triple Whale, Judge.me, Rebuy and {INTEGRATION_COUNT - 7}+ more.</span>
+            <i aria-hidden="true">&rarr;</i>
+          </Link>
           <Link href="/contact" className={styles.bcta} data-cursor="Go">
             <b>Yours next?</b>
             <span>Send us your store. We will show you the app before you decide.</span>
@@ -981,6 +988,7 @@ export default function LabHome({ brands, apps, proof }) {
             <nav aria-label="More">
               <Link href="/services">Services</Link>
               <Link href="/work">Work</Link>
+              <Link href="/integrations">Integrations</Link>
               <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
             </nav>

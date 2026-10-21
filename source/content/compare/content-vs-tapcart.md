@@ -23,7 +23,7 @@ marketing page.
 | Pricing model | Fixed scoped quote after free audit | From $200/month + performance fees at higher tiers |
 | Success / GMV fees | None | Yes, on higher plans |
 | Push notifications | Setup and strategy included | Self-serve; advanced segmentation is limited |
-| Install strategy | Included (Dockify: reward on install + attribution) | Not included; install is your problem |
+| Install strategy | Included (reward on install + attribution) | Not included; install is your problem |
 | App Store submission | Handled | Handled |
 | Ongoing maintenance | Optional retainer | Included in SaaS subscription |
 | Design | Custom to brand | Template-based blocks |
@@ -69,7 +69,7 @@ scope; your revenue growth does not trigger a pricing event.
 
 **Install strategy is part of the build.** Tapcart builds the app and stops. Getting
 customers to actually install it is left to you. Bonsify includes the install layer
-(Dockify: reward on install, install-to-purchase attribution) because an app with no
+(reward on install, install-to-purchase attribution) because an app with no
 installs earns nothing. This is the gap that separates "app exists" from "app works."
 
 **The full Shopify stack.** Beyond mobile apps, Bonsify builds new Shopify stores,
@@ -109,8 +109,6 @@ operates for you. They solve the same end goal through different models. Some me
 start on Tapcart and migrate to done-for-you later; the two are sequential as often as
 they are alternatives.
 
-**Can I use Dockify alongside a Tapcart app?**
-Yes. Dockify adds an install prompt and reward layer to your storefront regardless of
 how the app itself was built. It works with builder apps, native apps and standalone PWAs.
 
 **Is a Tapcart app native?**

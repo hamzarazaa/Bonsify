@@ -15,7 +15,7 @@ const steps = [
   },
   {
     title: "Launch",
-    desc: "Live on the App Store and Google Play, or installed straight to the home screen with Dockify.",
+    desc: "Live on the App Store and Google Play, or installed straight to the home screen as a PWA.",
   },
   {
     title: "Support",
