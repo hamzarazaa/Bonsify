@@ -842,3 +842,12 @@
   .stepNum { font-size: 64px; }
   .ctaBtn { font-size: 15px; padding: 14px 22px; }
 }
+
+/* Apps the store already runs, kept in the mobile app */
+.appsSlide { display: flex; flex-direction: column; gap: clamp(18px, 3vh, 34px); justify-content: center; }
+.appChips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.appChips li { display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: clamp(15px, 1.5vw, 20px); font-weight: 600; }
+.appChips i { width: 20px; height: 20px; border-radius: 50%; background: var(--brand); position: relative; flex: none; }
+.appChips i::after { content: ""; position: absolute; left: 6px; top: 3px; width: 5px; height: 9px; border: solid var(--brand-ink, #fff); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.appChips li { color: #14171a; }
+.appsSlide .aside { color: rgba(255, 255, 255, 0.78); }

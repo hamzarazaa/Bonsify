@@ -4,6 +4,7 @@
 // falling back to the product sitemap when those are rate-limited); other platforms
 // get name, logo, colours, fonts and banners from the homepage only.
 
+import { detectStoreApps } from './detect-apps.mjs';
 import * as cheerio from 'cheerio';
 
 const UA =
@@ -587,6 +588,7 @@ export async function crawlBrand(inputUrl, opts = {}) {
   ].join('\n');
   const features = FEATURE_RULES.filter((r) => r.re.test(technical)).map(({ id, label }) => ({ id, label }));
   if (/cash on delivery/i.test($('body').text())) features.push({ id: 'cod', label: 'Cash on delivery' });
+  const storeApps = detectStoreApps(technical);
 
   // Store size (Shopify sitemap gives a rough product count)
   let productCount = null;
@@ -619,6 +621,7 @@ export async function crawlBrand(inputUrl, opts = {}) {
     products,
     productCount,
     features,
+    storeApps,
     crawledAt: new Date().toISOString(),
     warnings,
   };

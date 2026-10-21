@@ -377,5 +377,12 @@
   ],
   "crawledAt": "2026-10-20T15:10:42.554Z",
   "warnings": [],
-  "overrides": {}
+  "overrides": {},
+  "storeApps": [
+    "Judge.me",
+    "Growave",
+    "PageFly",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+  ]
 }

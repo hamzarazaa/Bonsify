@@ -22,5 +22,5 @@ module.exports = {
   outDir: 'public',
   generateRobotsTxt: false,
   // /for/* are private, one-to-one proposal pages (noindex), never listed.
-  exclude: ['/apple-icon.png', '/admin', '/status', '/for/*', ...HIDDEN_CLIENT_PATHS],
+  exclude: ['/apple-icon.png', '/admin', '/status', '/for/*', '/try/*', ...HIDDEN_CLIENT_PATHS],
 };

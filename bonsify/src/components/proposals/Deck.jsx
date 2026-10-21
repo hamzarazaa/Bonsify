@@ -3,6 +3,7 @@
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import BrandApp from "./BrandApp";
 import Phone from "./Phone";
+import { INTEGRATION_COUNT } from "@/lib/integrations";
 import styles from "./Deck.module.css";
 
 // The pitch deck tab. One template; every slide fills in from the brand file,
@@ -10,7 +11,7 @@ import styles from "./Deck.module.css";
 // apps their site already runs) instead of generic claims. Slide ids are
 // stable so the video recorder can say "go to plan" rather than "go to 4".
 
-export const SLIDE_IDS = ["cover", "today", "why", "plan", "work", "process", "next"];
+export const SLIDE_IDS = ["cover", "today", "why", "plan", "apps", "work", "process", "next"];
 
 const FEATURE_NOTES = {
   reviews: "Your product reviews show on every product page",
@@ -114,6 +115,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
 
   const proofApp = apps.find((a) => a.proof);
   const proof = proofApp ? { name: proofApp.name, items: proofApp.proof } : null;
+  const storeApps = brand.storeApps || [];
   const featureNotes = brand.features.map((f) => FEATURE_NOTES[f.id]).filter(Boolean);
   const productLabel = formatCount(brand.productCount || brand.products.length);
   const addressee = brand.contact ? `${brand.contact} and the ${brand.name} team` : `the ${brand.name} team`;
@@ -244,6 +246,42 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           ))}
         </div>
         <p className={styles.note}>Built, launched and maintained by Bonsify. No developers to hire on your side.</p>
+      </div>
+    ),
+    apps: (
+      <div className={`${styles.slide} ${styles.brandSlide} ${styles.appsSlide}`}>
+        <div className={styles.headRow}>
+          <h2 className={styles.title}>The apps {brand.name} runs, kept in your app.</h2>
+          <p className={styles.aside}>
+            {storeApps.length > 0
+              ? `Found on ${brand.domain}. We connect each one before launch.`
+              : `We map every app on ${brand.domain} in the audit.`}
+          </p>
+        </div>
+        {storeApps.length > 0 ? (
+          <ul className={styles.appChips} aria-label={`Shopify apps used by ${brand.name}`}>
+            {storeApps.map((n) => (
+              <li key={n}>
+                <i aria-hidden="true" />
+                {n}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <ul className={styles.appChips} aria-label="Examples of Shopify apps we connect">
+            {["Klaviyo", "Recharge", "Yotpo", "Judge.me", "Gorgias", "Rebuy", "Smile.io", "Triple Whale"].map((n) => (
+              <li key={n}>
+                <i aria-hidden="true" />
+                {n}
+              </li>
+            ))}
+          </ul>
+        )}
+        <p className={styles.note}>
+          Reviews, loyalty, subscriptions, search, messaging and support carry over, so shoppers see the same
+          points, prices and reviews in the app as on the site. Bonsify apps connect to {INTEGRATION_COUNT}+ Shopify
+          apps; we check each one in your audit and tell you what works on day one.
+        </p>
       </div>
     ),
     work: (

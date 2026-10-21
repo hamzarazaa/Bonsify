@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { INTEGRATION_COUNT } from "@/lib/integrations";
+import AppQr from "@/components/proposals/AppQr";
+import { enterFullscreen, exitFullscreen, isFullscreen, onFullscreenChange } from "@/lib/fullscreen";
 import Phone from "@/components/proposals/Phone";
 import BrandApp from "@/components/proposals/BrandApp";
 import BrandMark from "@/components/shared/BrandMark";
@@ -622,17 +624,31 @@ export default function LabHome({ brands, apps, proof }) {
 
   /* full screen app on phones */
   const [fsBox, setFsBox] = useState({ s: 1, x: 0, y: 0 });
+  const fsEntered = useRef(false);
   const openFs = () => {
     const s = Math.min(window.innerWidth / 390, window.innerHeight / 844);
     setFsBox({ s, x: (window.innerWidth - 390 * s) / 2, y: (window.innerHeight - 844 * s) / 2 });
     setFs(true);
     buzz(22);
+    // Desktop: also ask the browser for full screen (needs this click).
+    if (!window.matchMedia("(pointer: coarse)").matches) {
+      fsEntered.current = false;
+      enterFullscreen().then((ok) => (fsEntered.current = ok));
+    }
   };
   useEffect(() => {
     if (!fs) return;
     const esc = (e) => e.key === "Escape" && setFs(false);
     window.addEventListener("keydown", esc);
-    return () => window.removeEventListener("keydown", esc);
+    // Leaving browser full screen (Escape, or the browser's own control) closes the view too.
+    const off = onFullscreenChange((on) => {
+      if (!on && fsEntered.current) setFs(false);
+    });
+    return () => {
+      window.removeEventListener("keydown", esc);
+      off();
+      if (isFullscreen()) exitFullscreen();
+    };
   }, [fs]);
   useEffect(() => {
     if (!fs) return;
@@ -642,6 +658,8 @@ export default function LabHome({ brands, apps, proof }) {
       document.body.style.overflow = prev;
     };
   }, [fs]);
+
+  const qrPath = brand.slug === "yours" ? `/try/custom?store=${encodeURIComponent(brand.domain || "")}` : `/try/${brand.slug}`;
 
   const appEl = useMemo(() => <BrandApp key={brand.slug} ref={appRef} brand={brand} liveReviews />, [brand]);
 
@@ -885,6 +903,12 @@ export default function LabHome({ brands, apps, proof }) {
             )}
             {arMsg && <p className={styles.arNote}>{arMsg}</p>}
 
+            {!touch && (
+              <div className={styles.qrWrap}>
+                <AppQr path={qrPath} size={120} title="Try it on your phone" hint="Scan to open this app full screen on your own phone." />
+              </div>
+            )}
+
             {needsTiltTap && (
               <button className={styles.tiltBtn} onClick={enableTilt}>
                 Enable tilt
@@ -1032,6 +1056,9 @@ export default function LabHome({ brands, apps, proof }) {
               <Phone statusBar label={`${brand.name} app, full screen`}>
                 <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews />
               </Phone>
+            </div>
+            <div className={styles.fsQr}>
+              <AppQr path={qrPath} tone="dark" size={124} />
             </div>
             </>
           )}

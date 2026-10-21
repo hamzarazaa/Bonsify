@@ -205,6 +205,7 @@ const out = {
   products: keepOld('products') ? existing.products : products,
   productCount: brand.productCount,
   features: brand.features,
+  storeApps: brand.storeApps || [],
   crawledAt: brand.crawledAt,
   warnings: brand.warnings,
   overrides: existing?.overrides || {},

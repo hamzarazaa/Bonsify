@@ -65,6 +65,16 @@ function safeUrl(input) {
   }
 }
 
+// Phones that scan the demo's QR code load the store from the same one-day
+// cache, so no second crawl or check is needed.
+export async function GET(request) {
+  if (!ON) return Response.json({ error: "Not found." }, { status: 404 });
+  const host = String(new URL(request.url).searchParams.get("host") || "").toLowerCase().replace(/^www\./, "").slice(0, 120);
+  const hit = host ? cached(host) : null;
+  if (!hit) return Response.json({ error: "expired" }, { status: 404 });
+  return Response.json({ brand: hit });
+}
+
 export async function POST(request) {
   if (!ON) return Response.json({ error: "Not found." }, { status: 404 });
   let body;

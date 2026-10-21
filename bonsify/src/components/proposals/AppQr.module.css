@@ -5,3 +5,4 @@
 .copy span { opacity: .7; }
 .ph { display: block; border-radius: 12px; background: rgba(0,0,0,.06); }
 @media (max-width: 760px) { .card { display: none; } }
+@media (pointer: coarse) { .card { display: none; } }

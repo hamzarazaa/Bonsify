@@ -1,5 +1,5 @@
 /* "Your app": the prospect's launch page. Light paper, a glow in their brand
-   colour behind three phones, the live one in the middle. */
+   colour behind one large live phone, copy and a QR code beside it. */
 
 .launch {
   position: relative;
@@ -8,25 +8,31 @@
   overflow: hidden;
   isolation: isolate;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  justify-items: center;
-  padding: 34px 32px 0;
+  grid-template-columns: minmax(320px, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(20px, 4vw, 72px);
+  align-items: stretch;
+  padding: 28px clamp(20px, 4vw, 64px) 0;
   border-radius: 22px;
   background:
-    radial-gradient(48% 62% at 50% 100%, color-mix(in oklab, var(--brand) 55%, transparent) 0%, transparent 72%),
-    radial-gradient(30% 40% at 18% 90%, color-mix(in oklab, var(--brand-accent, var(--brand)) 30%, transparent) 0%, transparent 70%),
+    radial-gradient(46% 70% at 74% 60%, color-mix(in oklab, var(--brand) 50%, transparent) 0%, transparent 72%),
+    radial-gradient(30% 40% at 12% 95%, color-mix(in oklab, var(--brand-accent, var(--brand)) 26%, transparent) 0%, transparent 70%),
     var(--bone);
   color: var(--ink);
 }
 
-.intro {
+.copy {
+  align-self: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
-  text-align: center;
-  max-width: 760px;
+  min-height: 0;
+  max-height: 100%;
+  overflow: auto;
+  padding: 6px 4px 22px;
+  scrollbar-width: none;
 }
+.copy::-webkit-scrollbar { display: none; }
 
 .made {
   display: inline-flex;
@@ -49,6 +55,7 @@
 }
 
 .headline {
+  text-align: left;
   font-family: var(--font-display), var(--sans);
   font-size: clamp(38px, 4.4vw, 68px);
   line-height: 0.94;
@@ -69,7 +76,7 @@
 .actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   margin-top: 4px;
 }
@@ -120,145 +127,70 @@
   outline-offset: 3px;
 }
 
-/* Three phones; the middle one is live and fully visible. */
-.phones {
+
+.qrRow { margin-top: 6px; }
+
+.stage {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
-  height: 100%;
   min-height: 0;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1.25fr 1fr;
-  grid-template-rows: minmax(0, 1fr);
-  align-items: end;
-  padding-top: 22px;
+  place-items: end center;
 }
 
-.center {
+.phone {
   position: relative;
-  z-index: 2;
   height: 100%;
-  min-height: 0;
-  padding-bottom: 18px;
+  width: 100%;
+  max-width: 560px;
+  padding-bottom: 16px;
 }
 
-.side {
-  position: relative;
-  z-index: 1;
-  height: 80%;
-  min-height: 0;
-  opacity: 0.96;
-  pointer-events: none;
-}
-
-.sideLeft {
-  transform: translate(14%, 6%) rotate(-7deg);
-}
-
-.sideRight {
-  transform: translate(-14%, 6%) rotate(7deg);
-}
-
-/* What came from their store, as a spec strip down the left edge. */
-.spec {
+.fsIcon {
   position: absolute;
-  left: 32px;
-  bottom: 28px;
+  top: 8px;
+  right: 6px;
   z-index: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 210px;
-  padding: 16px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 50%;
   border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--ink);
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s, background 0.2s;
 }
+.fsIcon:hover, .fsIcon:focus-visible { background: #fff; transform: scale(1.07); }
 
-.spec > div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.spec dt {
-  font-size: 12px;
-  color: #6a7075;
-}
-
-.spec dd {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.spec dd small {
-  font-weight: 400;
-  color: #6a7075;
-}
-
-.logo {
-  height: 26px;
-  max-width: 140px;
-  object-fit: contain;
-}
-
-.swatches {
+/* spec strip becomes a compact row under the buttons */
+.spec {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px 26px;
+  margin-top: 6px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
+  width: 100%;
 }
+.spec > div { display: flex; flex-direction: column; gap: 4px; }
+.spec dt { font-size: 12px; color: #6a7075; }
+.spec dd { font-size: 14px; font-weight: 600; }
+.spec dd small { font-weight: 400; color: #6a7075; }
+.logo { height: 26px; max-width: 140px; object-fit: contain; }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.swatches span { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.swatches i { width: 16px; height: 16px; border-radius: 5px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12); }
+.small { font-size: 11.5px; line-height: 1.45; color: #6a7075; }
 
-.swatches span {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12.5px;
-  font-variant-numeric: tabular-nums;
-}
-
-.swatches i {
-  width: 16px;
-  height: 16px;
-  border-radius: 5px;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
-}
-
-.small {
-  font-size: 11.5px;
-  line-height: 1.45;
-  color: #6a7075;
-}
-
-@media (max-width: 1240px) {
-  .spec {
-    display: none;
-  }
-}
-
-@media (max-width: 860px) {
-  .launch {
-    height: auto;
-    padding: 26px 16px 0;
-    border-radius: 18px;
-  }
-
-  .phones {
-    grid-template-columns: 1fr;
-    height: 560px;
-  }
-
-  .side {
-    display: none;
-  }
-
-  .spec {
-    display: flex;
-    position: static;
-    width: auto;
-    margin: 0 0 18px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px 22px;
-  }
+@media (max-width: 900px) {
+  .launch { height: auto; grid-template-columns: 1fr; padding: 22px 16px 0; border-radius: 18px; }
+  .copy { max-height: none; overflow: visible; align-items: center; text-align: center; }
+  .actions { justify-content: center; }
+  .headline { text-align: center; }
+  .stage { height: 640px; }
+  .spec { justify-content: center; }
 }

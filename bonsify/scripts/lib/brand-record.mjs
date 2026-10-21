@@ -103,6 +103,7 @@ export async function buildRemoteBrand(url, opts = {}) {
     products,
     productCount: brand.productCount,
     features: brand.features,
+    storeApps: brand.storeApps || [],
     crawledAt: brand.crawledAt,
     warnings: brand.warnings,
   };

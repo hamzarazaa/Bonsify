@@ -41,6 +41,7 @@ export function trimBrand(b, maxProducts = 8, maxBanners = 3) {
     products,
     productCount: b.productCount,
     features: b.features || [],
+    storeApps: b.storeApps || [],
   };
 }
 

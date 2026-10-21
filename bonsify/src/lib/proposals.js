@@ -65,5 +65,6 @@ export function getProposal(slug) {
     collections: merged.collections || [],
     banners: merged.banners || [],
     features: merged.features || [],
+    storeApps: merged.storeApps || [],
   };
 }
