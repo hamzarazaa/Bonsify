@@ -1,0 +1,43 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 365px;
+  height: 751px;
+  z-index: 5;
+  pointer-events: none;
+  transform: perspective(1300px) rotateY(-8deg);
+  opacity: 0;
+  will-change: left, top, width, height, opacity;
+}
+
+/* Reduced-motion only: this component's fixed-position phone is replaced
+   by a portal straight into the (otherwise visibility:hidden) Hero/Gap
+   placeholder slots, so it needs to opt back into being visible itself. */
+.staticSlotContent {
+  position: absolute;
+  inset: 0;
+  visibility: visible;
+}
+
+/* Hero's phone slot (hero-phone-slot) is hidden on mobile (see
+   Hero.module.css), which makes the *slot* collapse to a 0×0 rect - but
+   Phone3D's onResize bails out early on a 0×0 container ("if (width === 0
+   || height === 0) return") specifically to avoid handing Three.js an
+   invalid size, so the WebGL canvas just keeps rendering at whatever size
+   it last had (set via an inline style that wins over any CSS), while
+   this wrapper still sits pinned at left:0/top:0 - the result is a
+   full/oversized phone anchored to the screen's top-left corner instead
+   of actually disappearing. Hiding the wrapper itself is the reliable fix,
+   independent of whatever size the canvas last happened to be. */
+@media (max-width: 900px) {
+  .wrapper {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper {
+    display: none;
+  }
+}

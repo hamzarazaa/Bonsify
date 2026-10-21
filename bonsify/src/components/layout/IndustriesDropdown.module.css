@@ -1,0 +1,81 @@
+.wrap {
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--nav-fg, var(--sand));
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.trigger:hover,
+.open .trigger {
+  opacity: 1;
+}
+
+.caret {
+  width: 9px;
+  height: 9px;
+  transition: transform 0.2s ease;
+}
+
+.open .caret {
+  transform: rotate(180deg);
+}
+
+.panel {
+  position: absolute;
+  top: calc(100% + 22px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  width: 460px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px 20px;
+  background: rgba(20, 23, 26, 0.97);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--line-dark);
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 50;
+}
+
+.open .panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.panel a {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--sand);
+  opacity: 0.78;
+  padding: 6px 0;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.panel a:hover {
+  opacity: 1;
+  color: var(--moss-light);
+}
+
+@media (max-width: 900px) {
+  .panel {
+    display: none;
+  }
+}

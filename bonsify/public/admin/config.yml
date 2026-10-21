@@ -1,0 +1,208 @@
+backend:
+  name: gitlab
+  repo: hamzaraza/bonsify.io
+  branch: main
+  auth_type: pkce
+  app_id: f76eecaf3111d7eae222b9b9fb9bc1dbcee7d9258ba9c6ed8b94b02ebc0aca05
+
+media_folder: "bonsify/public/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "source/content/blog"
+    create: true
+    slug: "{{fields.slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "URL Slug",
+          name: "slug",
+          widget: "string",
+          hint: "Used in the page URL, e.g. mobile-app-development. Lowercase, hyphens only.",
+        }
+      - {
+          label: "Hero Image",
+          name: "heroImage",
+          widget: "object",
+          required: false,
+          hint: "Shown on the blog card and at the top of the article. Leave blank to fall back to the generated cover art.",
+          fields:
+            [
+              {
+                label: "Image",
+                name: "src",
+                widget: "image",
+                required: false,
+                media_folder: "/bonsify/public/images/blogs",
+                public_folder: "/images/blogs",
+              },
+              { label: "Alt text", name: "alt", widget: "string", required: false },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "comparisons"
+    label: "Comparisons (vs)"
+    folder: "source/content/compare"
+    create: true
+    slug: "{{fields.slug}}"
+    format: "frontmatter"
+    fields: &content_fields
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "URL Slug",
+          name: "slug",
+          widget: "string",
+          hint: "Used in the page URL, e.g. mobile-app-development. Lowercase, hyphens only.",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "alternatives"
+    label: "Alternative Pages"
+    folder: "source/content/alternative"
+    create: true
+    slug: "{{fields.slug}}"
+    format: "frontmatter"
+    fields: *content_fields
+
+  - name: "industries"
+    label: "Industries"
+    folder: "source/content/vertical"
+    create: true
+    slug: "{{fields.slug}}"
+    format: "frontmatter"
+    fields: *content_fields
+
+  - name: "services"
+    label: "Services"
+    folder: "source/content/service"
+    create: true
+    slug: "{{fields.slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "URL Slug",
+          name: "slug",
+          widget: "string",
+          hint: "Used in the page URL, e.g. mobile-app-development. Lowercase, hyphens only.",
+        }
+      - {
+          label: "Hero Image",
+          name: "heroImage",
+          widget: "object",
+          required: false,
+          hint: "Shown at the top of the service page.",
+          fields:
+            [
+              {
+                label: "Image",
+                name: "src",
+                widget: "image",
+                required: false,
+                media_folder: "/bonsify/public/images/services",
+                public_folder: "/images/services",
+              },
+              { label: "Alt text", name: "alt", widget: "string", required: false },
+              {
+                label: "Width",
+                name: "width",
+                widget: "number",
+                value_type: "int",
+                required: false,
+              },
+              {
+                label: "Height",
+                name: "height",
+                widget: "number",
+                value_type: "int",
+                required: false,
+              },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Standalone Pages"
+    files:
+      - file: "source/content/pages/content-category-definition.md"
+        label: "Done-For-You Category Definition"
+        name: "category-definition"
+        fields: *content_fields
+
+  - name: "hero_screens"
+    label: "Homepage Hero — Phone Screens"
+    description: "The screens that cycle on the spinning phone at the top of the homepage."
+    folder: "source/content/hero-screens"
+    create: true
+    delete: true
+    slug: "{{fields.title}}"
+    format: "frontmatter"
+    fields:
+      - {
+          label: "Internal label",
+          name: "title",
+          widget: "string",
+          hint: "For finding this entry in the list below only - not shown on the site.",
+        }
+      - { label: "Screenshot", name: "image", widget: "image" }
+      - {
+          label: "Alt text",
+          name: "alt",
+          widget: "string",
+          hint: "Describes the screenshot for accessibility/SEO.",
+        }
+      - {
+          label: "Client gate",
+          name: "client",
+          widget: "select",
+          options: ["none", "highfy", "bachaparty"],
+          default: "none",
+          hint: "Leave as \"none\" for Bonsify's own screens (always shown). Only set this to a client name if that client's case study is gated - it then only appears once NEXT_PUBLIC_SHOW_<CLIENT> is turned on. Ask before changing this on an existing gated entry.",
+        }
+      - {
+          label: "Display order",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 10,
+          hint: "Lower numbers appear earlier in the rotation.",
+        }
+
+  - name: "proposals"
+    label: "Brand Proposals"
+    description: "One entry per brand. Paste the store address, press Fetch from store, then Publish. The page appears at /for/<name> after the site redeploys (about a minute)."
+    folder: "bonsify/content/proposals"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{fields.name}}"
+    identifier_field: "name"
+    summary: "/for/{{name}}  |  contact: {{contact}}"
+    sortable_fields: ["name", "contact", "commit_date", "commit_author"]
+    view_filters:
+      - { label: "Has a contact person", field: "contact", pattern: ".+" }
+      - { label: "Fetched from /admin", field: "brandJson", pattern: "^\\{" }
+    fields:
+      - label: "Page address (e.g. glow-co gives /for/glow-co)"
+        name: "name"
+        widget: "string"
+        pattern: ["^[a-z0-9]+(-[a-z0-9]+)*$", "Lowercase letters, numbers and single hyphens only, e.g. glow-co"]
+      - { label: "Contact person", name: "contact", widget: "string", required: false }
+      - { label: "Store", name: "brandJson", widget: "brandJson" }
+      - label: "Hand fixes (optional)"
+        name: "overrides"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "Brand name shown on the page (if the store name is wrong)", name: "name", widget: "string", required: false }
+          - { label: "Main colour (hex)", name: "primary", widget: "string", required: false }

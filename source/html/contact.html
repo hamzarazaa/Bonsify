@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Bonsify</title>
+<meta name="description" content="Tell us about your Shopify store and we'll show you what going native would change." />
+<script>document.documentElement.className+=' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bonsify.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header id="hdr">
+  <a class="brand" href="index.html"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M22 22 L60 22 L80 42 L80 82 L22 82 Z" stroke="#F4EFE4" stroke-width="6" stroke-linejoin="round"/><path d="M60 22 L80 42 L60 42 Z" fill="#8AA394" stroke="#F4EFE4" stroke-width="5" stroke-linejoin="round"/></svg><span class="name">Bonsify</span></a>
+  <nav>
+    <a class="nav-link" href="work.html">Work</a>
+    <a class="nav-link" href="services.html">Services</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+    <a class="btn btn-clay nav-cta" href="contact.html">Book a call</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="ph-glow"></div><div class="ph-crease"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+    <h1>Let's put your store on the home screen</h1>
+    <p class="lede">Tell us about your Shopify store — what you sell, how much of your traffic is mobile, and where it's leaking. We'll come back with an honest read on whether an app is worth it for you.</p>
+  </div>
+</section>
+
+<section class="section section-ink">
+  <div class="wrap">
+    <div class="contact-grid">
+      <form class="contact-form reveal" name="contact" method="POST" action="#" onsubmit="return false;">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jordan Rivera" /></div>
+        <div class="field"><label for="store">Store URL</label><input id="store" name="store" type="url" placeholder="yourstore.myshopify.com" /></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@yourstore.com" /></div>
+        <div class="field"><label for="msg">What are you hoping an app fixes?</label><textarea id="msg" name="message" placeholder="e.g. Most of our traffic is mobile but repeat purchases are low…"></textarea></div>
+        <button class="btn btn-clay" type="submit" style="align-self:flex-start;padding:13px 28px">Send it over</button>
+        <p class="form-note">This form is a front-end placeholder — wire it to Formspree, a Shopify contact endpoint, or your own API to receive submissions.</p>
+      </form>
+      <div class="contact-side reveal">
+        <div class="cs-block">
+          <h4>Prefer email?</h4>
+          <a href="mailto:hello@bonsify.io">hello@bonsify.io</a>
+        </div>
+        <div class="cs-block">
+          <h4>What happens next</h4>
+          <p style="opacity:.75;font-size:15px;line-height:1.65">We read every message ourselves. Within a day or two you'll get a real reply — not a calendar link and a bot — with a straight answer on whether going native makes sense for your store.</p>
+        </div>
+        <div class="cs-block">
+          <h4>Already sure?</h4>
+          <p style="opacity:.75;font-size:15px;line-height:1.65">If you just want Dockify live on your store, you can skip the call.</p>
+          <a href="work-dockify.html" style="color:var(--moss-light);margin-top:8px">Explore Dockify →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-col"><div class="foot-brand"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M22 22 L60 22 L80 42 L80 82 L22 82 Z" stroke="#F4EFE4" stroke-width="6" stroke-linejoin="round"/><path d="M60 22 L80 42 L60 42 Z" fill="#8AA394" stroke="#F4EFE4" stroke-width="5" stroke-linejoin="round"/></svg><span class="name">Bonsify</span></div><p>Done-for-you Shopify mobile apps. We take stores beyond the browser and onto the home screen.</p></div>
+      <div class="foot-col"><h4>Explore</h4><a href="work.html">Work</a><a href="services.html">Services</a><a href="work-dockify.html">Dockify</a><a href="blog.html">Blog</a></div>
+      <div class="foot-col"><h4>Get in touch</h4><a href="contact.html">Book a call</a><a href="mailto:hello@bonsify.io">hello@bonsify.io</a></div>
+    </div>
+    <div class="foot-bottom"><span class="foot-tag">Beyond the browser.</span><span class="foot-copy">© 2026 Bonsify</span></div>
+  </div>
+</footer>
+<script src="bonsify.js"></script>
+</body>
+</html>

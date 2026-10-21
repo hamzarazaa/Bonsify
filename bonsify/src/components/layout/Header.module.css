@@ -1,0 +1,128 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 40px;
+  /* padding intentionally left out of this list - animating it forces a
+     layout recalc on every frame of the scroll-driven shrink (a
+     non-composited property, unlike background/border-color). The size
+     change now happens instantly instead of over 0.4s; only the fade
+     still animates. */
+  transition: background 0.4s, border-color 0.4s;
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background: rgba(244, 239, 228, 0.88);
+  backdrop-filter: blur(14px);
+  padding: 14px 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 20px;
+  height: 26px;
+  flex: none;
+  object-fit: contain;
+}
+
+.name {
+  font-family: var(--sans);
+  font-size: 25px;
+  font-weight: var(--font-weight-heading);
+  color: var(--ink);
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navLink {
+  font-size: 14px;
+  color: var(--nav-fg);
+  text-decoration: none;
+  opacity: 0.78;
+  transition: opacity 0.2s;
+}
+
+.navLink:hover {
+  opacity: 1;
+}
+
+.btn {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: var(--font-weight-label);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+}
+
+.btnClay {
+  background: var(--clay);
+  color: #fff;
+}
+
+.btnClay:hover {
+  background: var(--clay-hover);
+  transform: translateY(-1px);
+}
+
+.btnClay:active {
+  transform: scale(0.97);
+}
+
+.navCta {
+  padding: 14px 18px;
+}
+
+@media (max-width: 820px) {
+  /* Hide the whole nav, not just .navLink - the "Book a free audit" button
+     isn't a .navLink, so it stayed visible right next to the hamburger
+     (MobileMenu's .toggle, shown at this same breakpoint) with only ~295px
+     to share between logo + button text + hamburger on a typical phone.
+     MobileMenu's slide-out panel already has its own CTA, so nothing is
+     lost by hiding this one too. */
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Matches .wrap's own 640px padding reduction, so the fixed header's
+     brand mark lines up with the content edge below it instead of sitting
+     more indented than everything else on the page. */
+  .header {
+    padding: 18px 24px;
+  }
+  .scrolled {
+    padding: 12px 24px;
+  }
+}
+
+.onDark {
+  --nav-fg: #ffffff;
+}
+
+.onDark .name {
+  color: var(--bone);
+}

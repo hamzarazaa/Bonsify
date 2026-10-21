@@ -1,0 +1,123 @@
+/* Defaults assume a dark (section-ink/section-soft) parent, matching the
+   rest of the site's convention; :global(.section-bone) overrides below
+   handle the light-section case (e.g. ContentPage, how-we-work). */
+
+.faq {
+  border-top: 1px solid var(--line-dark);
+}
+
+:global(.section-bone) .faq {
+  border-top: 1px solid var(--line);
+}
+
+.item {
+  border-bottom: 1px solid var(--line-dark);
+}
+
+:global(.section-bone) .item {
+  border-bottom: 1px solid var(--line);
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: var(--font-weight-heading);
+  color: var(--bone);
+  transition: color 0.2s;
+}
+
+:global(.section-bone) .question {
+  color: var(--ink);
+}
+
+.question:hover {
+  color: var(--moss-light);
+}
+
+:global(.section-bone) .question:hover {
+  color: var(--jade);
+}
+
+.icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  background: var(--moss-light);
+  transition: transform 0.25s ease;
+}
+
+:global(.section-bone) .icon::before,
+:global(.section-bone) .icon::after {
+  background: var(--jade);
+}
+
+.icon::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  transform: translateY(-50%);
+}
+
+.icon::after {
+  top: 0;
+  left: 50%;
+  width: 1.5px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.open .icon::after {
+  transform: translateX(-50%) scaleY(0);
+}
+
+/* grid-template-rows 0fr/1fr instead of max-height:0/600px - max-height
+   forced the browser to lay out toward an arbitrary 600px ceiling on every
+   frame regardless of the answer's real length; this only ever measures
+   the row's own content size. */
+.answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.open .answer {
+  grid-template-rows: 1fr;
+}
+
+.answerInner {
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--sand);
+  opacity: 0.82;
+  max-width: 60ch;
+}
+
+.open .answerInner {
+  padding: 0 0 24px;
+}
+
+:global(.section-bone) .answerInner {
+  color: #41474b;
+  opacity: 1;
+}

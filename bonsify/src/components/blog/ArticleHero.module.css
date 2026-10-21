@@ -1,0 +1,72 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: clamp(340px, 42vw, 560px);
+  overflow: hidden;
+  background: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    height: 280px;
+  }
+}
+
+.titleBar {
+  background: var(--bone);
+  border-bottom: 1px solid var(--line);
+  padding: 34px 0 38px;
+}
+
+/* No .hero image band above to clear the fixed header - give this its own
+   top clearance instead, matching PageHero's top padding for the same
+   no-image-above-the-fold situation. */
+.titleBarNoImage {
+  padding-top: 190px;
+}
+
+@media (max-width: 900px) {
+  .titleBarNoImage {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .titleBarNoImage {
+    padding-top: 100px;
+  }
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clay);
+  transition: gap 0.2s;
+}
+
+.back:hover {
+  gap: 10px;
+}
+
+.backIcon {
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
+.title {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-heading);
+  font-size: clamp(30px, 4.4vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  max-width: 22ch;
+  margin-top: 16px;
+}

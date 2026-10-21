@@ -1,0 +1,485 @@
+/* "Our apps": each app gets its own stage in its brand colour (--app), its
+   name set huge and faint behind everything, and the phone in front with two
+   still screens fanned behind it. Switching apps recolours the stage. */
+
+.stage {
+  position: relative;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  column-gap: 40px;
+  row-gap: 18px;
+  padding: 26px 40px 0 48px;
+  border-radius: 22px;
+  background:
+    radial-gradient(60% 70% at 72% 55%, color-mix(in oklab, var(--app) 70%, white) 0%, transparent 70%),
+    var(--app);
+  color: #fff;
+  transition: background-color 0.6s ease;
+}
+
+.bigName {
+  position: absolute;
+  left: 32px;
+  bottom: -0.16em;
+  z-index: -1;
+  font-family: var(--font-display), var(--sans);
+  font-size: clamp(120px, 17vw, 280px);
+  line-height: 1;
+  font-weight: 900;
+  font-stretch: 62%;
+  font-variation-settings: "wdth" 62;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.11);
+  pointer-events: none;
+  animation: nameIn 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes nameIn {
+  from { opacity: 0; transform: translateY(0.12em); }
+  to { opacity: 1; transform: none; }
+}
+
+/* App switcher */
+.switch {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.appBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 15px 6px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(0, 0, 0, 0.12);
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.appBtn img,
+.iconFallback {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+}
+
+.iconFallback {
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.appBtn:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.appOn,
+.appOn:hover {
+  background: #fff;
+  color: var(--ink);
+  border-color: #fff;
+}
+
+/* Left column */
+.info {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 32px;
+  max-width: 520px;
+  min-height: 0;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tags li {
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.headline {
+  font-family: var(--font-display), var(--sans);
+  font-size: clamp(40px, 4.6vw, 72px);
+  line-height: 0.92;
+  font-weight: 800;
+  font-stretch: 70%;
+  font-variation-settings: "wdth" 70;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+.summary {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+  max-width: 46ch;
+}
+
+.modes {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 4px;
+  gap: 4px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.mode {
+  padding: 8px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: rgba(255, 255, 255, 0.82);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modeOn {
+  background: #fff;
+  color: var(--ink);
+}
+
+.hint {
+  margin-top: -8px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 44ch;
+}
+
+.screens {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+  gap: 10px;
+  max-width: 440px;
+}
+
+.screenBtn {
+  width: 100%;
+  display: grid;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.75);
+  font: inherit;
+  font-size: 11.5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.screenBtn img {
+  width: 100%;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  opacity: 0.7;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.screenBtn:hover img {
+  opacity: 1;
+}
+
+.screenOn {
+  color: #fff;
+  font-weight: 600;
+}
+
+.screenOn img {
+  opacity: 1;
+  border-color: #fff;
+}
+
+.link {
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:hover {
+  text-decoration-color: #fff;
+}
+
+.appBtn:focus-visible,
+.screenBtn:focus-visible,
+.link:focus-visible,
+.mode:focus-visible,
+.badge:focus-visible,
+.restart:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Right column: phone with two screens fanned behind it */
+.phoneArea {
+  position: relative;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.phoneCol {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  padding: 18px 0 26px;
+}
+
+.fan {
+  position: absolute;
+  z-index: 1;
+  top: 16%;
+  width: min(24%, 180px);
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 22px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5);
+  opacity: 0.94;
+}
+
+.fanLeft {
+  right: calc(50% + 110px);
+  transform: rotate(-9deg);
+}
+
+.fanRight {
+  left: calc(50% + 110px);
+  transform: rotate(9deg);
+}
+
+.scrollNote {
+  position: absolute;
+  z-index: 3;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.empty {
+  color: var(--moss-light);
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* Restart sits beside the hint, outside the phone, so it never covers the
+   prototype's own buttons. */
+.hintRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: -8px;
+}
+
+.hintRow .hint {
+  margin-top: 0;
+}
+
+.restart {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: none;
+  color: #fff;
+  font: 600 12.5px/1 var(--sans);
+  cursor: pointer;
+}
+
+.restart:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Get the app: store buttons and QR */
+.get {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 16px 9px 13px;
+  border-radius: 12px;
+  background: #0d0f11;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.badge:hover {
+  background: #000;
+}
+
+.badge small {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.badgeSoon,
+.badgeSoon:hover {
+  background: rgba(0, 0, 0, 0.22);
+  cursor: default;
+}
+
+.qr {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qrCode {
+  flex: none;
+  width: 76px;
+  height: 76px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.qrCode svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.qr p {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 17ch;
+}
+
+/* Phones can't scan their own screen: buttons only. */
+@media (hover: none) and (pointer: coarse) {
+  .qr {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .fan {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .stage {
+    height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    row-gap: 24px;
+    padding: 18px 18px 0;
+    border-radius: 18px;
+  }
+
+  .info {
+    padding-bottom: 0;
+    min-width: 0;
+  }
+
+  .screens {
+    grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+    max-width: 100%;
+  }
+
+  .phoneArea {
+    height: 560px;
+  }
+
+  .phoneCol {
+    padding-bottom: 18px;
+  }
+
+  .bigName {
+    font-size: 110px;
+    left: 10px;
+    bottom: -0.12em;
+  }
+}
+
+/* Laptop-height screens: tighten the left column so it never runs into
+   the app switcher. */
+@media (min-width: 861px) and (max-height: 940px) {
+  .info {
+    gap: 14px;
+    padding-bottom: 24px;
+  }
+
+  .headline {
+    font-size: clamp(36px, 3.8vw, 58px);
+  }
+
+  .summary {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .screens {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    max-width: 380px;
+  }
+
+  .qrCode {
+    width: 64px;
+    height: 64px;
+  }
+}

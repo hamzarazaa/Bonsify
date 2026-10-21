@@ -1,0 +1,118 @@
+.fanSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 12px;
+}
+
+.fanOuter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fanLayout {
+  position: relative;
+  width: 100%;
+  height: 46rem;
+}
+
+@media (max-width: 1024px) {
+  .fanLayout {
+    height: 39rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fanLayout {
+    height: 33rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .fanLayout {
+    height: 29rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fanLayout {
+    height: 25rem;
+  }
+}
+
+.shotCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(9rem, 19vw, 14rem);
+  aspect-ratio: 393 / 852;
+  cursor: pointer;
+}
+
+.bezel {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  background: var(--ink);
+  border-radius: 22px;
+  box-shadow: 0 22px 44px -20px rgba(20, 23, 26, 0.5), 0 0 0 1px rgba(20, 23, 26, 0.05);
+  position: relative;
+}
+
+.shotImg {
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.caption {
+  margin-top: 26px;
+  min-height: 20px;
+  max-width: 46ch;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #5b6167;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: #41474b;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.arrow:hover {
+  border-color: var(--clay);
+  color: var(--ink);
+}
+
+.arrow:active {
+  transform: scale(0.94);
+}
+
+.chevron {
+  width: 15px;
+  height: 15px;
+}

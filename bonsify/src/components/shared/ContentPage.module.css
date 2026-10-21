@@ -1,0 +1,64 @@
+.laptopVisual {
+  margin-bottom: 48px;
+}
+
+.withVisual {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: start;
+}
+
+.articleCol {
+  min-width: 0;
+}
+
+.visualCol {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.highlightCard {
+  width: 100%;
+  max-width: 300px;
+  padding: 22px 24px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 40px -28px rgba(20, 23, 26, 0.2);
+}
+
+.highlightLabel {
+  display: block;
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 10px;
+}
+
+.highlightCard p {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .withVisual {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .visualCol {
+    position: static;
+    order: -1;
+  }
+}

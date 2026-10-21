@@ -1,0 +1,113 @@
+.loader {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  background:
+    radial-gradient(70% 50% at 50% 42%, color-mix(in oklab, var(--app, #2F6B4F) 70%, white) 0%, transparent 75%),
+    var(--app, #2F6B4F);
+  color: #fff;
+}
+
+.mark {
+  width: 92px;
+  height: auto;
+  overflow: visible;
+}
+
+/* 2.6s loop: outline draws, bag fills, bars slide in, everything settles,
+   then fades out and starts again. */
+.bag {
+  fill: currentColor;
+  fill-opacity: 0;
+  stroke: currentColor;
+  stroke-width: 7;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 2.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.bar {
+  fill: currentColor;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: bar 2.6s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.barBottom {
+  animation-delay: 0.12s;
+}
+
+@keyframes draw {
+  0% { stroke-dashoffset: 1; fill-opacity: 0; opacity: 1; }
+  38% { stroke-dashoffset: 0; fill-opacity: 0; }
+  55% { fill-opacity: 1; }
+  86% { stroke-dashoffset: 0; fill-opacity: 1; opacity: 1; }
+  100% { stroke-dashoffset: 0; fill-opacity: 1; opacity: 0; }
+}
+
+@keyframes bar {
+  0%, 44% { opacity: 0; transform: translateX(-38%) scaleX(0.6); }
+  62% { opacity: 1; transform: none; }
+  86% { opacity: 1; transform: none; }
+  100% { opacity: 0; transform: none; }
+}
+
+.track {
+  position: relative;
+  width: 120px;
+  height: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.track i {
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  border-radius: 3px;
+  background: #fff;
+  animation: slide 1.3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes slide {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(250%); }
+}
+
+.label {
+  animation: phraseIn 0.5s ease both;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@keyframes phraseIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bag {
+    animation: none;
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+
+  .bar {
+    animation: none;
+    opacity: 1;
+  }
+
+  .track i {
+    animation-duration: 3s;
+  }
+}

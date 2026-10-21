@@ -1,0 +1,264 @@
+/* "Your app": the prospect's launch page. Light paper, a glow in their brand
+   colour behind three phones, the live one in the middle. */
+
+.launch {
+  position: relative;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  justify-items: center;
+  padding: 34px 32px 0;
+  border-radius: 22px;
+  background:
+    radial-gradient(48% 62% at 50% 100%, color-mix(in oklab, var(--brand) 55%, transparent) 0%, transparent 72%),
+    radial-gradient(30% 40% at 18% 90%, color-mix(in oklab, var(--brand-accent, var(--brand)) 30%, transparent) 0%, transparent 70%),
+    var(--bone);
+  color: var(--ink);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  max-width: 760px;
+}
+
+.made {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px 5px 6px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 500;
+  color: #3b4146;
+}
+
+.made img {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.headline {
+  font-family: var(--font-display), var(--sans);
+  font-size: clamp(38px, 4.4vw, 68px);
+  line-height: 0.94;
+  font-weight: 800;
+  font-stretch: 72%;
+  font-variation-settings: "wdth" 72;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+.lede {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #474d52;
+  max-width: 54ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.primary,
+.secondary,
+.plain {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.primary {
+  border: 0;
+  background: var(--brand);
+  color: var(--brand-ink, #fff);
+}
+
+.primary:hover {
+  filter: brightness(1.08);
+}
+
+.secondary {
+  border: 1px solid var(--ink);
+  background: #fff;
+  color: var(--ink);
+}
+
+.secondary:hover {
+  background: var(--sand);
+}
+
+.plain {
+  border: 0;
+  background: none;
+  color: #474d52;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.primary:focus-visible,
+.secondary:focus-visible,
+.plain:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Three phones; the middle one is live and fully visible. */
+.phones {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  align-items: end;
+  padding-top: 22px;
+}
+
+.center {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  min-height: 0;
+  padding-bottom: 18px;
+}
+
+.side {
+  position: relative;
+  z-index: 1;
+  height: 80%;
+  min-height: 0;
+  opacity: 0.96;
+  pointer-events: none;
+}
+
+.sideLeft {
+  transform: translate(14%, 6%) rotate(-7deg);
+}
+
+.sideRight {
+  transform: translate(-14%, 6%) rotate(7deg);
+}
+
+/* What came from their store, as a spec strip down the left edge. */
+.spec {
+  position: absolute;
+  left: 32px;
+  bottom: 28px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 210px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--line);
+}
+
+.spec > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec dt {
+  font-size: 12px;
+  color: #6a7075;
+}
+
+.spec dd {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.spec dd small {
+  font-weight: 400;
+  color: #6a7075;
+}
+
+.logo {
+  height: 26px;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.swatches span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.swatches i {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.small {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #6a7075;
+}
+
+@media (max-width: 1240px) {
+  .spec {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .launch {
+    height: auto;
+    padding: 26px 16px 0;
+    border-radius: 18px;
+  }
+
+  .phones {
+    grid-template-columns: 1fr;
+    height: 560px;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .spec {
+    display: flex;
+    position: static;
+    width: auto;
+    margin: 0 0 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 22px;
+  }
+}

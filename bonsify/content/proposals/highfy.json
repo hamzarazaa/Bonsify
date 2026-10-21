@@ -1,0 +1,381 @@
+{
+  "slug": "highfy",
+  "name": "Highfy",
+  "url": "https://highfy.pk/",
+  "platform": "shopify",
+  "currency": "PKR",
+  "contact": "Ali",
+  "logo": "/proposals/highfy/logo.webp",
+  "icon": "/proposals/highfy/icon.webp",
+  "colors": {
+    "primary": "#781890",
+    "accent": "#ff9048",
+    "background": "#ffffff",
+    "text": "#000000",
+    "found": [
+      "#e8580c",
+      "#f7c9a6",
+      "#fa541c",
+      "#f3aadc",
+      "#aee9d1",
+      "#6016eb"
+    ],
+    "weights": [
+      {
+        "hex": "#e8580c",
+        "w": 9
+      },
+      {
+        "hex": "#f7c9a6",
+        "w": 6
+      },
+      {
+        "hex": "#fa541c",
+        "w": 6
+      },
+      {
+        "hex": "#f3aadc",
+        "w": 5
+      },
+      {
+        "hex": "#aee9d1",
+        "w": 5
+      },
+      {
+        "hex": "#6016eb",
+        "w": 4
+      }
+    ],
+    "source": "logo",
+    "onPrimary": "#ffffff"
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter",
+    "found": [
+      "Inter",
+      "Poppins",
+      "Nunito",
+      "LeagueSpartan-Bold",
+      "FontsFree-Net-LeagueSpartan-Medium",
+      "GothamMedium"
+    ],
+    "headingGoogle": true,
+    "bodyGoogle": true
+  },
+  "banners": [
+    "/proposals/highfy/banner-1.webp",
+    "/proposals/highfy/banner-2.webp",
+    "/proposals/highfy/banner-3.webp",
+    "/proposals/highfy/banner-4.webp"
+  ],
+  "collections": [
+    {
+      "title": "11 11 Deals",
+      "handle": "11-11-deals",
+      "image": null,
+      "count": 8
+    },
+    {
+      "title": "11 Deals Collection",
+      "handle": "11-deals-collection",
+      "image": null,
+      "count": 35
+    },
+    {
+      "title": "1111 bundle",
+      "handle": "1111-bundle",
+      "image": null,
+      "count": 15
+    },
+    {
+      "title": "12.12 Bargains",
+      "handle": "12-12-bargains",
+      "image": null,
+      "count": 312
+    },
+    {
+      "title": "14th Oct - Test product",
+      "handle": "14th-oct-test-product",
+      "image": null,
+      "count": 3
+    },
+    {
+      "title": "18 - 34 Y/O QUIZ LINK",
+      "handle": "18-34-y-o-quiz-link",
+      "image": null,
+      "count": 1513
+    },
+    {
+      "title": "2X BUNDLE",
+      "handle": "2x-bundle",
+      "image": null,
+      "count": 15
+    },
+    {
+      "title": "3 for 1500",
+      "handle": "3-for-1500",
+      "image": null,
+      "count": 2314
+    },
+    {
+      "title": "35+ Y/O QUIZ LINK",
+      "handle": "35-y-o-quiz-link",
+      "image": null,
+      "count": 1541
+    },
+    {
+      "title": "48 Hours - 48 Products",
+      "handle": "48-hours-48-products",
+      "image": null,
+      "count": 52
+    }
+  ],
+  "products": [
+    {
+      "title": "Anua - PDRN Hyaluronic Acid Hydrating Capsule Mist 100ml",
+      "handle": "anua-pdrn-hyaluronic-acid-hydrating-capsule-mist-100ml",
+      "type": "Face Serum",
+      "vendor": "Anua",
+      "price": 6999,
+      "compareAt": 7999,
+      "available": true,
+      "image": "/proposals/highfy/product-1.webp",
+      "images": [
+        "/proposals/highfy/product-1.webp",
+        "/proposals/highfy/product-1-2.webp",
+        "/proposals/highfy/product-1-3.webp"
+      ],
+      "options": [],
+      "description": "The Anua PDRN Hyaluronic Acid Hydrating Capsule Mist is a revitalizing face mist designed to deliver instant hydration, enhanced firmness, and a glass-skin glow. Formulated with 2,000ppm PDRN, Hyaluronic Acid, and Hydrolyzed Collagen, this mist deeply moisturizes while supporting the skin’s natural barrier. Infused with emerald-hued PDRN capsules, the ultra-fine oil–essence mist absorbs effortless"
+    },
+    {
+      "title": "One Step Hot Air Brush (Dryer + Styler)",
+      "handle": "one-step-hot-air-brush-dryer-straightener",
+      "type": "Hot Brushes",
+      "vendor": "onestep",
+      "price": 2799,
+      "compareAt": 4499,
+      "available": true,
+      "image": "/proposals/highfy/product-2.webp",
+      "images": [
+        "/proposals/highfy/product-2.webp",
+        "/proposals/highfy/product-2-2.webp"
+      ],
+      "options": [],
+      "description": "One Step Hot Air Brush Dryer Straightener Price in Pakistan The One Step Hot Air Brush, a combined dryer and styler, is priced at Rs. 3,199 in Pakistan, down from Rs. 4,499. It's built as a budget-friendly two-in-one tool that dries and styles hair in a single pass rather than requiring a separate dryer and round brush. What This Brush Dryer Offers Hot airflow moves through the round brush barrel "
+    },
+    {
+      "title": "Jenpharm Maxdif Brightening Gel Face Wash 100Ml",
+      "handle": "jenpharm-maxdif-brightening-gel-face-wash-100ml",
+      "type": "Face Wash",
+      "vendor": "jenpharm",
+      "price": 1098,
+      "compareAt": 1098,
+      "available": true,
+      "image": "/proposals/highfy/product-3.webp",
+      "images": [
+        "/proposals/highfy/product-3.webp",
+        "/proposals/highfy/product-3-2.webp",
+        "/proposals/highfy/product-3-3.webp"
+      ],
+      "options": [],
+      "description": "Maxdif Brightening Gel Face Wash is a clinically formulated brightening cleanser with Glutathione, Vitamin C (Sodium Ascorbyl Phosphate), and Niacinamide to revive dull skin, reduce dark spots, and exfoliate dead skin cells for a radiant, even-toned complexion.How it helps ✔97% saw even skin tone and brighter skin; 93% saw reduced post-breakout dark spots with consistent use ✔Glutathione, Vitamin "
+    },
+    {
+      "title": "Dove - Deep Repair Hair Mask - 250ml",
+      "handle": "dove-deep-repair-hair-mask-250ml",
+      "type": "Hair Masks",
+      "vendor": "Dove- Unilever Pakistan",
+      "price": 1575,
+      "compareAt": 2100,
+      "available": true,
+      "image": "/proposals/highfy/product-4.webp",
+      "images": [
+        "/proposals/highfy/product-4.webp",
+        "/proposals/highfy/product-4-2.webp",
+        "/proposals/highfy/product-4-3.webp"
+      ],
+      "options": [],
+      "description": "Dove Deep Repair Hair Mask is an intensive treatment formulated with 1/4 moisturizing cream and Keratin Actives to deeply restore damaged hair, delivering 5x smoother results and reducing breakage and split ends by up to 98% with regular use.How it helps ✔5x Smoother Hair: Rich, creamy formula instantly softens and smooths damaged hair from the very first use. ✔Reduces Breakage by 98%: Keratin Act"
+    },
+    {
+      "title": "Dr.Althea - 345 Relief Cream",
+      "handle": "dr-althea-345-relief-cream",
+      "type": "Moisturizers",
+      "vendor": "Dr Althea",
+      "price": 2749,
+      "compareAt": 3509,
+      "available": true,
+      "image": "/proposals/highfy/product-5.webp",
+      "images": [
+        "/proposals/highfy/product-5.webp",
+        "/proposals/highfy/product-5-2.webp",
+        "/proposals/highfy/product-5-3.webp"
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "values": [
+            "15ML",
+            "50ML"
+          ]
+        }
+      ],
+      "description": "What It Is:Clinically tested as non-comedogenic, 345 Relief Cream (Ver.2) is safe and gentle for acne-prone skin, making it ideal for daily use in your acne care routine. It is a nutrient-rich, regenerating ointment vegan gel cream formulated to target blemishes, nourish the skin, and deliver soothing care for a complete skincare solution. Benefits:- Lightweight Post-Acne Care- Daily Relief & Soot"
+    },
+    {
+      "title": "Lux - Body Wash Magical Orchid Loofah - 520Ml",
+      "handle": "lux-body-wash-magical-orchid-black-orchid-with-loofah-520ml-cp",
+      "type": "Shower Gel & Body Wash",
+      "vendor": "Lux- Unilever Pakistan",
+      "price": 850,
+      "compareAt": 850,
+      "available": true,
+      "image": "/proposals/highfy/product-6.webp",
+      "images": [
+        "/proposals/highfy/product-6.webp"
+      ],
+      "options": [],
+      "description": "Lux - Body Wash Magical Orchid Loofah - 520Ml"
+    },
+    {
+      "title": "Axis-Y Dark Spot Correcting Glow Serum 50Ml",
+      "handle": "axis-y-dark-spot-correcting-glow-serum-50ml",
+      "type": "Face Serums",
+      "vendor": "Axis-Y",
+      "price": 2799,
+      "compareAt": 4999,
+      "available": true,
+      "image": "/proposals/highfy/product-7.webp",
+      "images": [
+        "/proposals/highfy/product-7.webp",
+        "/proposals/highfy/product-7-2.webp"
+      ],
+      "options": [],
+      "description": "A bestselling serum with 5% Niacinamide to help correct dark spots, hyperpigmentation, and uneven tone. Squalane, Rice Bran, Papaya, Sea Buckthorn, and Acerola extracts provide hydration and antioxidant support for a brighter glow. How it helps Helps fade dark spots with regular use Boosts radiance and evens skin tone Lightweight and suitable for daily use"
+    },
+    {
+      "title": "Facial Beauty - 5 in 1 Blackhead Remover Machine",
+      "handle": "facial-beauty-5-in-1-blackhead-remover-machine",
+      "type": "Beauty Tools",
+      "vendor": "Facial Beauty",
+      "price": 1299,
+      "compareAt": 1759,
+      "available": true,
+      "image": "/proposals/highfy/product-8.webp",
+      "images": [
+        "/proposals/highfy/product-8.webp",
+        "/proposals/highfy/product-8-2.webp",
+        "/proposals/highfy/product-8-3.webp"
+      ],
+      "options": [],
+      "description": "A rechargeable 5-in-1 vacuum suction blackhead remover machine with interchangeable suction heads and adjustable power levels, designed for deep pore cleansing and blackhead extraction at home.How it helps ✔5 Interchangeable Heads: Multiple probe shapes target different facial areas and skin concerns, from blackhead extraction to pore tightening and skin lifting. ✔Adjustable Suction Levels: Multip"
+    },
+    {
+      "title": "IKT - Hair Wax Stick",
+      "handle": "ikt-hair-wax-stick-75gm",
+      "type": "Wax & Gels",
+      "vendor": "IKT",
+      "price": 699,
+      "compareAt": 999,
+      "available": true,
+      "image": "/proposals/highfy/product-9.webp",
+      "images": [
+        "/proposals/highfy/product-9.webp",
+        "/proposals/highfy/product-9-2.webp",
+        "/proposals/highfy/product-9-3.webp"
+      ],
+      "options": [],
+      "description": "The IKT Hair Wax Stick is a nourishing, travel-friendly styling stick infused with natural plant ingredients that tames flyaways, repairs hair scales, and locks in moisture for a frizz-free, clean look that lasts all day.How it helps ✔Nourishing & Repairing: Enriched with beeswax and avocado oil to nourish damaged hair scales and restore natural luster. ✔Frizz & Flyaway Control: Smooths loose stra"
+    },
+    {
+      "title": "POND's - Super Light Gel - 50ml",
+      "handle": "ponds-super-light-gel-50g",
+      "type": "Moisturizers",
+      "vendor": "Ponds- Unilever Pakistan",
+      "price": 749,
+      "compareAt": 999,
+      "available": true,
+      "image": "/proposals/highfy/product-10.webp",
+      "images": [
+        "/proposals/highfy/product-10.webp",
+        "/proposals/highfy/product-10-2.webp",
+        "/proposals/highfy/product-10-3.webp"
+      ],
+      "options": [],
+      "description": "POND'S Super Light Gel is a lightweight, non-sticky gel moisturiser enriched with Hyaluronic Acid and Vitamin C that delivers 200% instant hydration and a radiant glow lasting up to 72 hours, suitable for all skin types in every season. How it helps ✔Hyaluronic Acid Hydration: Enhances the skin's natural moisture retention for plump, soft, and bouncy skin from within. ✔Vitamin C Brightening: Comba"
+    },
+    {
+      "title": "Estelin - All In One Multi Defense Tinted Sunscreen Spf 70 Pa+++ 50G",
+      "handle": "estelin-all-in-one-multi-defense-tinted-sunscreen-spf-70-pa-50g",
+      "type": "Sunscreen",
+      "vendor": "ESTELIN",
+      "price": 1239,
+      "compareAt": 1239,
+      "available": true,
+      "image": "/proposals/highfy/product-11.webp",
+      "images": [
+        "/proposals/highfy/product-11.webp",
+        "/proposals/highfy/product-11-2.webp"
+      ],
+      "options": [],
+      "description": "Estelin All In One Multi Defense Tinted Sunscreen SPF 70 PA Plus Plus Plus 50g Price in Pakistan Rs. 999 on Highfy for Estelin All-In-One Multi Defense Tinted Sunscreen, SPF70 PA+++, 50g. SKU TG-002647. 317 reviews on file, 78% five-star. A self-adjusting tinted sunscreen that blends into all skin tones while reducing dark spots and blemishes. Water-resistant, non-greasy, works standalone or under"
+    },
+    {
+      "title": "L'Oréal Paris - Glycolic Bright Melasyl Anti Dark Spot Serum",
+      "handle": "maybelline-glyco-serum-melasyl",
+      "type": "Face Serum",
+      "vendor": "L'Oreal Skincare",
+      "price": 900,
+      "compareAt": 1800,
+      "available": true,
+      "image": "/proposals/highfy/product-12.webp",
+      "images": [
+        "/proposals/highfy/product-12.webp",
+        "/proposals/highfy/product-12-2.webp",
+        "/proposals/highfy/product-12-3.webp"
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "values": [
+            "15ml",
+            "30ml"
+          ]
+        }
+      ],
+      "description": "The L'Oréal Paris Glycolic-Bright Anti-Dark Spot Brightening Serum is formulated with an 8% brightening complex of Melasyl™, Glycolic Acid, and Niacinamide, clinically proven to visibly reduce 77% of spots including sun spots, age spots, and post-acne marks across all skin tones. How it helps ✔ Melasyl™ Technology: L'Oréal's multi-patented molecule developed over 18 years of research intercepts ex"
+    }
+  ],
+  "productCount": 5000,
+  "features": [
+    {
+      "id": "reviews",
+      "label": "Product reviews"
+    },
+    {
+      "id": "loyalty",
+      "label": "Loyalty points"
+    },
+    {
+      "id": "bnpl",
+      "label": "Pay in instalments"
+    },
+    {
+      "id": "wishlist",
+      "label": "Wishlist"
+    },
+    {
+      "id": "push",
+      "label": "Web push"
+    },
+    {
+      "id": "multicurrency",
+      "label": "Multi-currency"
+    }
+  ],
+  "crawledAt": "2026-10-20T15:10:42.554Z",
+  "warnings": [],
+  "overrides": {}
+}

@@ -1,0 +1,160 @@
+.head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.head h2 {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-heading);
+  font-size: clamp(30px, 4vw, 46px);
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-top: 14px;
+}
+
+.head p {
+  font-size: 15px;
+  color: #41474b;
+  margin-top: 14px;
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  letter-spacing: 0.03em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gridSingle {
+  grid-template-columns: 1fr;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 34px 34px 30px;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  border-color: var(--moss);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -20px rgba(20, 23, 26, 0.25);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.logo {
+  font-family: var(--sans);
+  font-size: 24px;
+  font-weight: var(--font-weight-heading);
+  color: var(--ink);
+}
+
+.tag {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--jade);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.cardLink {
+  display: block;
+  text-decoration: none;
+}
+
+.desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #41474b;
+  margin-bottom: 14px;
+  min-height: 48px;
+}
+
+.more {
+  display: block;
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--clay);
+  margin-bottom: 20px;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 13px;
+  flex: 1;
+  transition: background 0.25s;
+  text-decoration: none;
+}
+
+.badge:hover {
+  background: var(--sand);
+}
+
+.badge svg {
+  width: 19px;
+  height: 19px;
+  flex: none;
+  color: var(--ink);
+}
+
+.bt {
+  line-height: 1.1;
+}
+
+.bt .s {
+  font-size: 9px;
+  color: #41474b;
+  display: block;
+}
+
+.bt .l {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,476 @@
+/* ─── PageHero ─────────────────────────────────────────────────────────────
+   Cinematic full-bleed hero: image lives behind everything, content sits
+   inside a diagonal gradient veil. For pages without an image the veil
+   becomes a solid ink surface and the layout shifts to a centred column.
+   ──────────────────────────────────────────────────────────────────────── */
+
+/* Section shell ---------------------------------------------------------- */
+.pageHero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background: var(--paper);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.pageHero.noImage {
+  min-height: 0;
+  background: var(--paper);
+}
+
+/* Cream surface: the folded dark plane is retired. */
+.fold {
+  display: none;
+}
+
+/* Folded-plane background - ported from the homepage Hero (Hero.module.css)
+   so every page's hero reads as the same surface instead of a flat grey
+   box. Hero drives .planeBottom's clip-path and .crease/.creaseGlow's
+   opacity/height from scroll progress; the values below are exactly its
+   progress-0 (resting) state, so this reproduces that look with no JS -
+   only .sheen's sweep keeps moving, via a plain CSS animation. */
+.fold {
+  position: absolute;
+  inset: -12% -6%;
+  z-index: 0;
+}
+
+.planeTop {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #1c2024 0%, #141719 55%, #0e1113 100%);
+}
+
+.planeBottom {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 60%, 100% 30%, 100% 100%, 0 100%);
+  background: linear-gradient(160deg, #0c0f11 0%, #090b0d 100%);
+}
+
+.crease {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  top: 45%;
+  height: 2px;
+  transform: rotate(-9deg);
+  transform-origin: center;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(138, 163, 148, 0) 15%,
+    var(--moss-light) 50%,
+    rgba(138, 163, 148, 0) 85%,
+    transparent
+  );
+  opacity: 0.35;
+}
+
+.creaseGlow {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  top: 45%;
+  height: 60px;
+  transform: translateY(-30px) rotate(-9deg);
+  transform-origin: center;
+  background: radial-gradient(
+    60% 100% at 50% 50%,
+    rgba(47, 107, 79, 0.3),
+    transparent 70%
+  );
+  opacity: 0.5;
+  filter: blur(7px);
+}
+
+.sheen {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  transform: translateY(-1px) rotate(-9deg);
+  transform-origin: left center;
+  background: linear-gradient(90deg, transparent, var(--moss-light), transparent);
+  opacity: 0.5;
+  animation: sweep 7s ease-in-out infinite;
+}
+
+@keyframes sweep {
+  0% {
+    left: -30%;
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Full-bleed background image layer -------------------------------------- */
+.imageLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Diagonal gradient veil + glow ------------------------------------------ */
+/*
+  The veil is a hard-edged diagonal cut (clip-path polygon) rather than a
+  plain horizontal fade. This gives a kinetic, intentional feel — the image
+  "breaks through" the ink at an angle instead of dissolving softly.
+  The diagonal is 6 ° which echoes typical rule-of-thirds oblique layouts.
+*/
+.veil {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  /* Solid ink on the left, fully transparent on the right.
+     clip-path cuts a diagonal edge at ~58 % width at top, ~68 % at bottom. */
+  background: linear-gradient(
+    100deg,
+    var(--paper) 0%,
+    var(--paper) 42%,
+    color-mix(in srgb, var(--paper) 72%, transparent) 56%,
+    color-mix(in srgb, var(--paper) 22%, transparent) 68%,
+    transparent 78%
+  );
+}
+
+/* Subtle green atmospheric glow bleeding from the image side */
+.veilGlow {
+  position: absolute;
+  right: 22%;
+  top: 10%;
+  width: 40%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--moss) 14%, transparent) 0%,
+    transparent 70%
+  );
+  filter: blur(32px);
+}
+
+/* No-image variant: full ink surface, no veil needed --------------------- */
+.noImage .veil {
+  background: none;
+}
+
+.noImage .veilGlow {
+  display: none;
+}
+
+/* Content inner ---------------------------------------------------------- */
+/*
+  .inner sits above the veil (z-index 2).
+  On image heroes it occupies the left ≈ 55 % naturally (the gradient
+  veil ensures readability — no explicit max-width clamp needed here,
+  the content's own max-widths do the work).
+  On noImage heroes it centres itself within .wrap's max-width.
+*/
+.inner {
+  position: relative;
+  z-index: 3;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  max-width: 680px; /* keeps text from stretching into the unmasked image */
+}
+
+.pageHero.noImage .inner {
+  max-width: 760px;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Breadcrumb ------------------------------------------------------------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: var(--font-weight-label, 500);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--jade);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.breadcrumb a:hover {
+  opacity: 1;
+}
+
+.sep {
+  opacity: 0.35;
+}
+
+/* Title ------------------------------------------------------------------ */
+.title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 78%;
+  font-size: clamp(46px, 6.4vw, 96px);
+  line-height: 0.96;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  max-width: 16ch;
+  margin: 0;
+}
+
+/* Compact variant for long service names */
+.titleCompact {
+  font-size: clamp(34px, 4.5vw, 62px);
+  max-width: 22ch;
+}
+
+/* Centred alignment on noImage */
+.pageHero.noImage .title {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* Lede ------------------------------------------------------------------- */
+/*
+  A 2 px left border in moss-light gives the lede a deliberate accent
+  without adding any extra colour to a potentially busy hero image area.
+  On noImage heroes the border is hidden (text is centred).
+*/
+.lede {
+  margin: 28px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--clay);
+  font-size: clamp(16px, 1.8vw, 20px);
+  line-height: 1.6;
+  color: var(--ink);
+  opacity: 0.78;
+  max-width: 48ch;
+}
+
+.pageHero.noImage .lede {
+  padding-left: 0;
+  border-left: none;
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+/* Meta ------------------------------------------------------------------- */
+/*
+  Each meta item is a frosted-glass pill: a thin moss border, slightly
+  translucent ink fill, label stacked above value.
+*/
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 44px 0 0;
+  padding: 0;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.metaKey {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: var(--font-weight-label, 500);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--jade);
+  margin: 0;
+}
+
+.metaVal {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: var(--font-weight-heading);
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .pageHero {
+    min-height: 520px;
+  }
+
+  .veil {
+    /* On tablet the image is still visible but the gradient becomes more
+       of a top-to-bottom veil so portrait images read properly */
+    background: linear-gradient(
+      160deg,
+      var(--paper) 0%,
+      var(--paper) 30%,
+      color-mix(in srgb, var(--paper) 80%, transparent) 52%,
+      color-mix(in srgb, var(--paper) 40%, transparent) 68%,
+      transparent 82%
+    );
+  }
+
+  .inner {
+    padding-top: 130px;
+    padding-bottom: 70px;
+    max-width: 100%;
+  }
+
+  .pageHero.noImage .inner {
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
+  .meta {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pageHero {
+    min-height: 480px;
+  }
+
+  /* On mobile the image hides and the full surface becomes ink */
+  .imageLayer {
+    display: none;
+  }
+
+  .veil {
+    background: none;
+  }
+
+  .veilGlow {
+    display: none;
+  }
+
+  .inner {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  .pageHero.noImage .inner {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .title {
+    font-size: clamp(34px, 9vw, 56px);
+  }
+
+  .titleCompact {
+    font-size: clamp(28px, 8vw, 46px);
+  }
+
+  .lede {
+    margin-top: 20px;
+    border-left-width: 2px;
+    font-size: 16px;
+  }
+
+  .meta {
+    margin-top: 36px;
+  }
+
+  .metaItem {
+    padding: 12px 18px;
+  }
+
+  .metaVal {
+    font-size: 17px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 24px;
+  }
+}
+
+/* Reduced-motion: strip backdrop blur which can be a perf concern */
+@media (prefers-reduced-motion: reduce) {
+  .metaItem {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--card);
+  }
+
+  .sheen {
+    animation: none;
+    opacity: 0;
+  }
+}
+/* Heroes that carry a (dark) illustration keep the dark surface so the image
+   edge stays clean; text-only heroes use the cream surface above. */
+.pageHero:not(.noImage) {
+  background: var(--ink);
+}
+.pageHero:not(.noImage) .fold {
+  display: block;
+}
+.pageHero:not(.noImage) .veil {
+  background: linear-gradient(
+    100deg,
+    var(--ink) 0%,
+    var(--ink) 42%,
+    color-mix(in srgb, var(--ink) 72%, transparent) 56%,
+    color-mix(in srgb, var(--ink) 22%, transparent) 68%,
+    transparent 78%
+  );
+}
+.pageHero:not(.noImage) .title,
+.pageHero:not(.noImage) .metaVal {
+  color: var(--bone);
+}
+.pageHero:not(.noImage) .lede {
+  color: var(--sand);
+  border-left-color: var(--moss-light);
+}
+.pageHero:not(.noImage) .breadcrumb,
+.pageHero:not(.noImage) .metaKey {
+  color: var(--moss-light);
+}
+.pageHero:not(.noImage) .metaItem {
+  background: color-mix(in srgb, var(--ink) 64%, transparent);
+  border-color: color-mix(in srgb, var(--moss-light) 28%, transparent);
+}
+@media (max-width: 900px) {
+  .pageHero:not(.noImage) .veil {
+    background: linear-gradient(
+      160deg,
+      var(--ink) 0%,
+      var(--ink) 30%,
+      color-mix(in srgb, var(--ink) 80%, transparent) 52%,
+      color-mix(in srgb, var(--ink) 40%, transparent) 68%,
+      transparent 82%
+    );
+  }
+}
+@media (max-width: 640px) {
+  .pageHero:not(.noImage) .veil {
+    background: none;
+  }
+}

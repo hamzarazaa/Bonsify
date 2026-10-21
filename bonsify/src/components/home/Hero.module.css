@@ -1,0 +1,448 @@
+.heroWrap {
+  position: relative;
+}
+
+:global(.js) .heroWrap {
+  /* Was 190vh — the sticky hero (100vh) only needed ~830px of visible
+     content, so ~53% of this extra scroll distance was dead space before
+     the next section. 120vh keeps the fold/rotate/reward scroll sequence
+     intact but compresses the runway closer to what the animation needs. */
+  height: 120vh;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--ink);
+  /* Header is fixed/transparent-until-scrolled and sits above this
+     vertically-centered content in the stacking order - without this, a
+     tall centered row (esp. the 751px phone slot below) reaches above the
+     header's own ~90px height on any viewport shorter than ~850px
+     (1366x768, 1440x900, etc. - extremely common laptop heights), which
+     reads as the phone/text overlapping the nav. */
+  padding-top: 100px;
+}
+
+:global(.js) .hero {
+  position: sticky;
+  top: 0;
+}
+
+.fold {
+  position: absolute;
+  inset: -12% -6%;
+  z-index: 1;
+}
+
+.planeTop {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #1c2024 0%, #141719 55%, #0e1113 100%);
+}
+
+.planeBottom {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 60%, 100% 30%, 100% 100%, 0 100%);
+  background: linear-gradient(160deg, #0c0f11 0%, #090b0d 100%);
+}
+
+.crease {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  top: 45%;
+  height: 2px;
+  transform: rotate(-9deg);
+  transform-origin: center;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(138, 163, 148, 0) 15%,
+    var(--moss-light) 50%,
+    rgba(138, 163, 148, 0) 85%,
+    transparent
+  );
+  opacity: 0.35;
+}
+
+.creaseGlow {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  top: 45%;
+  height: 60px;
+  transform: translateY(-30px) rotate(-9deg);
+  transform-origin: center;
+  background: radial-gradient(
+    60% 100% at 50% 50%,
+    rgba(47, 107, 79, 0.3),
+    transparent 70%
+  );
+  opacity: 0.5;
+  filter: blur(7px);
+}
+
+.sheen {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 30%;
+  height: 3px;
+  transform: translateY(-1px) rotate(-9deg);
+  transform-origin: left center;
+  background: linear-gradient(90deg, transparent, var(--moss-light), transparent);
+  opacity: 0.5;
+  animation: sweep 7s ease-in-out infinite;
+}
+
+@keyframes sweep {
+  0% {
+    left: -30%;
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(
+    120% 90% at 20% 40%,
+    transparent 30%,
+    rgba(9, 11, 13, 0.62) 100%
+  );
+}
+
+.inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.06fr 0.94fr;
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.content {
+  position: relative;
+  z-index: 5;
+  will-change: transform, opacity;
+}
+
+.content h1 {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-heading);
+  font-size: clamp(38px, 6.4vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  color: var(--bone);
+  max-width: 16ch;
+  margin: 20px 0 0;
+}
+
+.accent {
+  font-style: italic;
+  color: var(--moss-light);
+}
+
+.lineMask {
+  display: block;
+  overflow: hidden;
+}
+
+.lineInner {
+  display: block;
+}
+
+.sub {
+  font-size: clamp(16px, 1.7vw, 20px);
+  line-height: 1.55;
+  color: var(--sand);
+  max-width: 46ch;
+  margin: 26px 0 0;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 14px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 14px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+}
+
+.btnClay {
+  background: var(--clay);
+  color: #fff;
+}
+
+.btnClay:hover {
+  background: var(--clay-hover);
+  transform: translateY(-1px);
+}
+
+.btnClay:active {
+  transform: scale(0.97);
+}
+
+.btnGhost {
+  background: transparent;
+  color: var(--bone);
+  border: 1px solid var(--line-dark);
+}
+
+.btnGhost:hover {
+  background: rgba(244, 239, 228, 0.06);
+}
+
+.btnGhost:active {
+  transform: scale(0.97);
+}
+
+:global(.js) .content :global(.eyebrow),
+:global(.js) .sub,
+:global(.js) .ctaRow {
+  opacity: 0;
+}
+
+:global(.js) .content h1 .lineInner {
+  transform: translateY(105%);
+}
+
+:global(.js) .hero.intro :global(.eyebrow) {
+  animation: fadeUp 0.7s 0.15s ease-out forwards;
+}
+
+:global(.js) .hero.intro h1 .lineInner {
+  animation: lineUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+:global(.js) .hero.intro h1 .lm1 .lineInner {
+  animation-delay: 0.3s;
+}
+
+:global(.js) .hero.intro h1 .lm2 .lineInner {
+  animation-delay: 0.42s;
+}
+
+:global(.js) .hero.intro .sub {
+  animation: fadeUp 0.8s 0.7s ease-out forwards;
+}
+
+:global(.js) .hero.intro .ctaRow {
+  animation: fadeUp 0.7s 0.9s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes lineUp {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.scrollCue {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--moss-light);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.7;
+}
+
+.scrollCue .bar {
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(var(--moss-light), transparent);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scaleY(0.5);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1300px;
+  /* Mirrors .hvRig's own budget below (100vh minus the header's
+     padding-top and a matching bottom margin) - a fixed 720px floor here
+     would keep forcing this row to full height even once the phone
+     itself has shrunk to fit a short viewport, undoing that fix. */
+  min-height: min(720px, calc(100vh - 140px));
+}
+
+.hvGlow {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47, 107, 79, 0.22), transparent 65%);
+  z-index: 0;
+}
+
+/* Invisible layout placeholder - see the id="hero-phone-slot" element in
+   Hero.jsx. PhoneJourney.jsx renders the real phone in a fixed-position
+   overlay and reads this element's rect to know where to sit while in the
+   Hero section; nothing is ever drawn inside it. */
+.hvRig {
+  position: relative;
+  /* Width is the controlling dimension (height follows via aspect-ratio)
+     so the phone never gets stretched off-ratio. The third min() term
+     converts the same vertical budget as .hero's padding-top/.visual's
+     min-height (100vh - 140px) into an equivalent width via the phone's
+     own aspect ratio (365/751 ~= 0.486), so on short viewports the phone
+     shrinks to fit instead of poking up past the header. */
+  width: min(365px, 100%, calc((100vh - 140px) * 0.486));
+  aspect-ratio: 365 / 751;
+  height: auto;
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  /* The sticky-hero + 120vh-runway trick exists so the phone can spin in
+     place for a scroll-linked "dead zone" before its journey starts - it
+     assumes the hero's own content height stays under 120vh. Stacked to a
+     single column, hero's real content (text + a portrait phone) runs
+     taller than that, and a position:sticky child does NOT get clipped to
+     a shorter fixed-height parent - it just paints past the parent's
+     bottom edge, which is what put the (fixed-position, z-index:5) phone
+     visually on top of ProblemSection's text below. ProblemSection's own
+     phone slot is already hidden under 1100px, so the phone never leaves
+     the hero on mobile anyway (see PhoneJourney.jsx's !gapAvailable
+     branch) - there's nothing for sticky+extra-scroll to actually buy
+     here, so drop both and let the hero be a plain auto-height block.
+  */
+  :global(.js) .heroWrap {
+    height: auto;
+  }
+  /* Only cancelling .js's position:sticky, not the base rule's
+     position:relative below - a position:static .hero with overflow:hidden
+     does NOT reliably clip .fold's absolutely-positioned bleed once .fold's
+     containing block escapes to .heroWrap (the next positioned ancestor).
+     Verified in a real headless-Chromium render: with .hero static, .fold's
+     background painted (and hit-tested) well past .hero's own bottom edge,
+     over TrustStrip below, despite overflow:hidden being applied. Staying
+     "relative" here keeps .hero itself as .fold's containing block, so the
+     clip actually holds. */
+  :global(.js) .hero {
+    position: relative;
+  }
+  .hero {
+    height: auto;
+    min-height: 0;
+    /* .fold (the diagonal background panel) uses inset:-12% -6% on purpose,
+       bleeding past .hero's own box - overflow:hidden on the base rule
+       normally clips that bleed to .hero's height. With overflow:visible
+       here, that same bleed painted past this now-shorter auto-height box
+       and over TrustStrip's section below it. */
+    overflow: hidden;
+    align-items: flex-start;
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  /* Drop the phone entirely rather than shrink it - hvRig collapses to a
+     0×0 rect once hidden, and PhoneJourney's fixed-position phone just
+     tracks whatever rect hero-phone-slot reports (there's no separate
+     "is the hero slot available" check the way ProblemSection/
+     ServicesOverview/DockifySpotlight have one, since Hero is always the
+     fallback target) - so hiding this is enough to make the tracked phone
+     disappear too, with no JS changes needed. */
+  .visual {
+    display: none;
+  }
+  /* .scrollCue is bottom:30px relative to .hero - fine when .hero is a
+     100vh sticky panel with real empty space below the CTA row, but once
+     .hero shrinks to an auto-height block wrapping just the text, 30px from
+     the bottom lands right on top of the CTA row instead of below it. The
+     "scroll" hint also means less on a page that no longer locks the hero
+     in place while scrolling. */
+  .scrollCue {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Matches Header's own 640px padding reduction (see Header.module.css)
+     and the global .wrap convention, so the hero's text lines up with the
+     brand mark above it instead of sitting more indented. */
+  .inner {
+    padding: 0 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.js) .content :global(.eyebrow),
+  :global(.js) .sub,
+  :global(.js) .ctaRow {
+    opacity: 1;
+  }
+  :global(.js) .content h1 .lineInner {
+    transform: none;
+  }
+}

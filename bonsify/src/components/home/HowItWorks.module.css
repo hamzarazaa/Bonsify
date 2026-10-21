@@ -1,0 +1,153 @@
+.card {
+  margin-top: 40px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 64px 6% 56px;
+  box-shadow: 0 30px 60px -34px rgba(20, 23, 26, 0.18);
+}
+
+.track {
+  position: relative;
+  display: flex;
+}
+
+.line,
+.fill {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 2px;
+  margin-top: -1px;
+  border-radius: 2px;
+}
+
+.line {
+  background: var(--line);
+}
+
+.fill {
+  background: var(--clay);
+}
+
+.step {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.dotInner {
+  grid-area: 1 / 1;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(20, 23, 26, 0.22);
+  transition: background 0.3s, transform 0.3s, opacity 0.25s;
+}
+
+.check {
+  grid-area: 1 / 1;
+  width: 17px;
+  height: 17px;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.step.current .dot {
+  border-color: var(--clay);
+}
+
+.step.current .dotInner {
+  background: var(--clay);
+  transform: scale(1.1);
+}
+
+.step.done .dot {
+  background: var(--clay);
+}
+
+.step.done .dotInner {
+  opacity: 0;
+}
+
+.step.done .check {
+  opacity: 1;
+}
+
+.label {
+  margin-top: 18px;
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(20, 23, 26, 0.4);
+  transition: color 0.3s;
+}
+
+.step.current .label,
+.step.done .label {
+  color: var(--clay);
+}
+
+.desc {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #41474b;
+  opacity: 0.55;
+  max-width: 28ch;
+  transition: opacity 0.3s;
+}
+
+.step.current .desc,
+.step.done .desc {
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  .card {
+    padding: 40px 16px 32px;
+  }
+
+  .desc {
+    display: none;
+  }
+
+  .label {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+
+  .step {
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dot {
+    width: 26px;
+    height: 26px;
+  }
+
+  .check {
+    width: 14px;
+    height: 14px;
+  }
+}

@@ -1,0 +1,72 @@
+.cover {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  isolation: isolate;
+}
+
+.cover svg {
+  position: relative;
+  z-index: 1;
+  width: 56%;
+  height: 56%;
+}
+
+.lg {
+  aspect-ratio: 16 / 10;
+}
+
+.lg svg {
+  width: 46%;
+  height: 46%;
+}
+
+.md {
+  aspect-ratio: 4 / 3;
+}
+
+.dark {
+  background: linear-gradient(160deg, var(--ink), var(--ink-soft));
+}
+
+.light {
+  background: linear-gradient(160deg, var(--bone), var(--sand));
+}
+
+.glow {
+  position: absolute;
+  z-index: 0;
+  width: 70%;
+  height: 70%;
+  top: -20%;
+  right: -15%;
+  background: radial-gradient(circle, var(--glow-color), transparent 70%);
+  opacity: 0.35;
+  filter: blur(18px);
+}
+
+.dark .glow {
+  opacity: 0.28;
+}
+
+.light .glow {
+  opacity: 0.22;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: radial-gradient(rgba(20, 23, 26, 0.5) 1px, transparent 1px);
+  background-size: 16px 16px;
+  opacity: 0.04;
+}
+
+.dark .grain {
+  background-image: radial-gradient(rgba(244, 239, 228, 0.6) 1px, transparent 1px);
+  opacity: 0.05;
+}

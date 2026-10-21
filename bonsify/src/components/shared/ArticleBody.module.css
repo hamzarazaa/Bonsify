@@ -1,0 +1,148 @@
+.article {
+  max-width: 68ch;
+}
+
+.article h2 {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-heading);
+  font-size: 30px;
+  color: var(--ink);
+  margin: 44px 0 18px;
+  letter-spacing: -0.01em;
+}
+
+.article h3 {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-heading);
+  font-size: 22px;
+  color: var(--ink);
+  margin: 34px 0 14px;
+}
+
+.article p {
+  color: #41474b;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.article ul,
+.article ol {
+  margin: 0 0 22px;
+  padding-left: 22px;
+  color: #41474b;
+}
+
+.article li {
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.article li strong {
+  color: var(--ink);
+}
+
+.checkmarks ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checkmarks ul li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.checkmarks ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--jade);
+}
+
+.checkmarks ul li::after {
+  content: "";
+  position: absolute;
+  left: 5.5px;
+  top: 9.5px;
+  width: 8px;
+  height: 4.5px;
+  border-left: 2px solid var(--bone);
+  border-bottom: 2px solid var(--bone);
+  transform: rotate(-45deg);
+}
+
+.article a {
+  color: var(--jade);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article a:hover {
+  color: var(--clay-hover);
+}
+
+.article strong {
+  color: var(--ink);
+}
+
+.article blockquote {
+  border-left: 2px solid var(--jade);
+  padding-left: 24px;
+  margin: 30px 0;
+  font-family: var(--sans);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--jade);
+  max-width: 56ch;
+}
+
+.article hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 44px 0;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin: 30px 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.table th {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-label);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--jade);
+  background: var(--sand);
+}
+
+.table td {
+  color: #41474b;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}

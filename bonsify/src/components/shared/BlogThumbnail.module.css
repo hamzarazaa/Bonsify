@@ -1,0 +1,22 @@
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+
+.thumb svg {
+  width: 62%;
+  height: 62%;
+}
+
+.bone {
+  background: var(--bone);
+}
+
+.sand {
+  background: var(--sand);
+}

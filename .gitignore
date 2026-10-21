@@ -1,0 +1,9 @@
+# internal planning docs, not part of the deployable site
+/reference/
+
+# local Claude Code tooling config (skills, local settings) - not project code
+/.claude/
+
+# OS
+.DS_Store
+Thumbs.db

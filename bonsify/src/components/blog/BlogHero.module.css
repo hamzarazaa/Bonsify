@@ -1,0 +1,13 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: clamp(380px, 46vw, 640px);
+  overflow: hidden;
+  background: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    height: 320px;
+  }
+}

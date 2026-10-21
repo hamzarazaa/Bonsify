@@ -1,0 +1,18 @@
+.wrap {
+  position: relative;
+  width: 250px;
+  height: 510px;
+  margin: 0 auto;
+}
+
+.glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 340px;
+  height: 340px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47, 107, 79, 0.14), transparent 65%);
+  z-index: 0;
+}

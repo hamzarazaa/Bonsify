@@ -1,0 +1,63 @@
+.stage {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  perspective: 1400px;
+}
+
+.stage::before {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47, 107, 79, 0.14), transparent 65%);
+  z-index: 0;
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  width: 264px;
+  height: 540px;
+  background: var(--ink);
+  border-radius: 38px;
+  padding: 11px;
+  box-shadow: 0 40px 80px -30px rgba(20, 23, 26, 0.5),
+    0 0 0 1px rgba(20, 23, 26, 0.06);
+}
+
+.light {
+  box-shadow: 0 40px 80px -30px rgba(20, 23, 26, 0.35);
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(175deg, #fbfaf7, #f0ece2);
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 24px;
+  background: var(--ink);
+  border-radius: 0 0 16px 16px;
+  z-index: 3;
+}

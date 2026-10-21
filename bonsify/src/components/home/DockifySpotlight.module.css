@@ -1,0 +1,126 @@
+.dockify {
+  background: var(--sand);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.copy :global(.eyebrow) {
+  /* --clay measures 4.05:1 on this section's --sand background, just under
+     the 4.5:1 WCAG AA minimum; --clay-hover clears it at 4.85:1. */
+  color: var(--clay-hover);
+}
+
+
+/* Hidden anchor for the 3D phone to land into (portrait) */
+.phoneSlot {
+  width: 220px;
+  height: 449px;
+  visibility: hidden;
+  margin-left: auto;
+  /* Nudge the final 3D phone landing slightly up and to the left */
+  transform: translate(-100px, -150px);
+}
+.copy h2 {
+  font-family: var(--sans);
+  font-weight: var(--font-weight-heading);
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.03;
+  letter-spacing: -0.02em;
+  margin: 18px 0 22px;
+  color: var(--ink);
+}
+
+.lead {
+  font-size: 19px;
+  line-height: 1.65;
+  color: #33383c;
+  margin-bottom: 28px;
+  max-width: 44ch;
+}
+
+.feat {
+  list-style: none;
+  margin: 0 0 34px;
+}
+
+.feat li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-top: 1px solid rgba(20, 23, 26, 0.1);
+  font-size: 15.5px;
+  color: #2a2f33;
+  line-height: 1.5;
+}
+
+.feat li:last-child {
+  border-bottom: 1px solid rgba(20, 23, 26, 0.1);
+}
+
+.fi {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  margin-top: 2px;
+  color: var(--jade);
+}
+
+.btn {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: var(--font-weight-label);
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  background: var(--clay);
+  color: #fff;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: var(--clay-hover);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  .copy {
+    order: 2;
+  }
+  /* .phoneSlot is visibility:hidden, not display:none - it still occupies
+     its full 220x449 box in normal flow. Unlike ProblemSection's
+     .phoneCol (display:none under 1100px), nothing here removed that
+     placeholder from the stacked mobile layout, leaving a tall blank gap
+     above the copy. */
+  .phoneCol {
+    display: none;
+  }
+}
+
+/* Below ~360px the -100px/-150px nudge (tuned for wider columns) can push
+   the slot's left edge past the viewport's true left edge - PhoneJourney
+   measures this rect directly, so a smaller nudge here keeps the real
+   phone it lands on fully on-screen down to a 320px viewport. */
+@media (max-width: 480px) {
+  .phoneSlot {
+    transform: translate(-40px, -110px);
+  }
+}

@@ -1,0 +1,29 @@
+:root {
+  --ink: #14171A;
+  --ink-soft: #1E2226;
+  --jade: #2F6B4F;
+  --moss: #6B8F71;
+  --moss-light: #8AA394;
+  --sand: #EDE6D8;
+  --bone: #F4EFE4;
+  --clay: #A85A36;
+  --clay-hover: #96502F;
+  /* Same clay hue, lightened ~20% toward bone — for clay-colored text that
+     sits directly on a dark background (nav chrome, dark cards). The base
+     --clay measures 3.58:1 on --ink, under the 4.5:1 WCAG AA minimum for
+     normal text; this measures 5.0:1. */
+  --clay-on-dark: #B77859;
+  --line: rgba(20,23,26,0.12);
+  --line-dark: rgba(244,239,228,0.14);
+  --serif: var(--font-sans), system-ui, sans-serif;
+  --sans: var(--font-sans), system-ui, sans-serif;
+  --mono: var(--font-sans), system-ui, sans-serif;
+  --font-weight-heading: 700;
+  --font-weight-body: 400;
+  --font-weight-label: 600;
+  --paper: #F4EFE4;
+  --paper-deep: #EAE3D3;
+  --card: #FBF8F1;
+  --display: var(--font-display), var(--font-sans), system-ui, sans-serif;
+  --nav-fg: var(--ink);
+}

@@ -1,0 +1,35 @@
+.art { position: absolute; inset: 0; overflow: hidden; pointer-events: none; color: var(--fsc, #9bd); }
+
+.tree { position: absolute; height: 100%; width: auto; max-width: 48vw; overflow: visible; }
+.treeA { left: -1vw; bottom: 0; }
+.treeB { right: -1vw; top: 0; transform: scaleX(-1); transform-origin: center; }
+
+.sway { transform-origin: 50% 100%; animation: sway 14s ease-in-out 5s infinite alternate; }
+.treeB .sway { transform-origin: 50% 0; animation-duration: 17s; }
+@keyframes sway { from { transform: rotate(-0.5deg); } to { transform: rotate(0.6deg); } }
+
+.branch { fill: none; stroke: currentColor; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: grow ease-out forwards; }
+@keyframes grow { to { stroke-dashoffset: 0; } }
+
+.petal, .petalW { transform-box: fill-box; transform-origin: center; opacity: 0; animation: bloom 1.6s cubic-bezier(0.22, 1.4, 0.36, 1) forwards; }
+.petal { fill: currentColor; }
+.petalW { fill: #fff; }
+@keyframes bloom { from { opacity: 0; scale: 0.2; } to { opacity: 0.5; scale: 1; } }
+.petalW { --o: 0.22; }
+
+.fall { position: absolute; top: -2vh; border-radius: 60% 40% 60% 40%; background: currentColor; opacity: 0; animation: fall linear infinite; }
+@keyframes fall {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+  8% { opacity: 0.4; }
+  50% { transform: translate3d(var(--sway), 55vh, 0) rotate(180deg); }
+  92% { opacity: 0.3; }
+  100% { transform: translate3d(calc(var(--sway) * -0.6), 108vh, 0) rotate(360deg); opacity: 0; }
+}
+
+@media (max-width: 900px) { .tree { opacity: 0.55; max-width: 60vw; } }
+@media (prefers-reduced-motion: reduce) {
+  .branch { animation: none; stroke-dashoffset: 0; }
+  .petal, .petalW { animation: none; opacity: 0.4; }
+  .sway, .fall { animation: none; }
+  .fall { display: none; }
+}

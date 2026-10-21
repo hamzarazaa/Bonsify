@@ -1,0 +1,76 @@
+.arrowBtn {
+  position: fixed;
+  top: 50%;
+  z-index: 40;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--clay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px -18px rgba(20, 23, 26, 0.4);
+  opacity: 1;
+  transition: background 0.2s, transform 0.2s, opacity 0.3s;
+}
+
+.arrowHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrowBtn:hover {
+  background: var(--clay-hover);
+}
+
+.prevBtn {
+  left: 32px;
+}
+
+.prevBtn:hover {
+  transform: translateY(-50%) translateX(-4px);
+}
+
+.nextBtn {
+  right: 32px;
+}
+
+.nextBtn:hover {
+  transform: translateY(-50%) translateX(4px);
+}
+
+.arrowBtn:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+.arrowIcon {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1200px) {
+  .arrowBtn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrowIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .prevBtn {
+    left: 16px;
+  }
+
+  .nextBtn {
+    right: 16px;
+  }
+}
+
+@media (max-width: 860px) {
+  .arrowBtn {
+    display: none;
+  }
+}

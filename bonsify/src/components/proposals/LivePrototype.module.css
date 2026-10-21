@@ -1,0 +1,22 @@
+.live {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.live[hidden] {
+  display: none;
+}
+
+.frame {
+  position: absolute;
+  transform-origin: 0 0;
+  border: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.frameOn {
+  opacity: 1;
+}

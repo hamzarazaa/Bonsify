@@ -1,0 +1,58 @@
+.bar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    z-index: 90;
+    background: var(--ink);
+    border: 1px solid var(--line-dark);
+    border-radius: 12px;
+    padding: 10px 10px 10px 18px;
+    box-shadow: 0 20px 40px -16px rgba(0, 0, 0, 0.5);
+    transform: translateY(120%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .bar.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cta {
+  flex: 1;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: var(--font-weight-label);
+  color: #fff;
+  background: var(--clay);
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.close {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--sand);
+  opacity: 0.6;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}

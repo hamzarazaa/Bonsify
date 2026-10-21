@@ -1,0 +1,49 @@
+.phaseItem {
+  transition: background 0.25s;
+  border-radius: 12px;
+}
+
+.phaseItem:hover {
+  background: rgba(244, 239, 228, 0.03);
+}
+
+.phaseHead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.phaseIcon {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* --clay-on-dark, not --clay - this sits on --ink same as .si-num, and
+     tokens.css notes plain --clay only measures 3.58:1 there (under the
+     4.5:1 WCAG AA minimum); -on-dark is the variant made for this case. */
+  background: rgba(183, 120, 89, 0.14);
+  color: var(--clay-on-dark);
+  border: 1px solid rgba(183, 120, 89, 0.3);
+  transition: transform 0.25s, background 0.25s, border-color 0.25s;
+}
+
+.phaseItem:hover .phaseIcon {
+  transform: translateY(-3px);
+  background: rgba(183, 120, 89, 0.22);
+  border-color: var(--clay-on-dark);
+}
+
+.phaseIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 720px) {
+  .phaseHead {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,67 @@
+.grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 70px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.phoneCol {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Invisible layout placeholder - see the id="gap-phone-slot" element in
+   ProblemSection.jsx. Sized to the phone's resting footprint here (smaller
+   than in Hero - a supporting visual in a text-heavy section, not the
+   dominant one). Nudged up/left of its column via transform - PhoneJourney
+   reads this element's rect each frame, so the offset carries straight
+   through to the actual phone's landing position. */
+.phoneSlot {
+  width: 220px;
+  height: 449px;
+  visibility: hidden;
+  transform: translate(-34px, -50px);
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .phoneCol {
+    display: none;
+  }
+}
+
+.body p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #33383c;
+  margin-bottom: 22px;
+  max-width: 52ch;
+}
+
+.body p:first-child {
+  font-family: var(--sans);
+  font-size: 26px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-weight: var(--font-weight-heading);
+}
+
+.question {
+  font-family: var(--sans);
+  font-style: italic;
+  font-size: 24px;
+  color: var(--jade);
+  line-height: 1.5;
+  margin-top: 12px;
+  max-width: 40ch;
+}
+
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,94 @@
+.section {
+  background: var(--paper);
+  padding: 50px 0 100px;
+  color: var(--ink);
+}
+.panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 50px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 56px;
+  max-width: 1160px;
+}
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--jade);
+}
+.lede {
+  margin: 18px 0 20px;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 48ch;
+  color: rgba(20, 23, 26, 0.76);
+}
+.points {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.points li {
+  padding-left: 22px;
+  position: relative;
+  font-weight: 500;
+}
+.points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--clay);
+}
+.visual {
+  position: relative;
+  background: var(--paper-deep);
+  border-radius: 22px;
+  padding: 34px 30px 110px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.grid span {
+  aspect-ratio: 1;
+  border-radius: 20%;
+  background: rgba(20, 23, 26, 0.12);
+}
+.grid .icon {
+  background: var(--clay);
+  box-shadow: 0 0 0 3px var(--paper-deep), 0 0 0 5px var(--jade);
+}
+.toast {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 26px;
+  background: var(--ink);
+  color: var(--bone);
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.toast b {
+  display: block;
+  color: #c9a2e0;
+  font-size: 15px;
+}
+@media (max-width: 860px) {
+  .panel {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+}

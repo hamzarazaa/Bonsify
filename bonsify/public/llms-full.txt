@@ -1,0 +1,105 @@
+# Bonsify - Full Page Index
+
+> Extended companion to llms.txt: one-line summary for every page on bonsify.io.
+
+Last updated: July 2026
+
+## Core
+
+- [Home](https://bonsify.io/): Overview of Bonsify's done-for-you Shopify mobile app and services model, proof points, and the free audit.
+- [About](https://bonsify.io/about): Who Bonsify is, the FetchSky relationship, and the team behind the builds.
+- [How We Work](https://bonsify.io/how-we-work): The four-phase engagement model - free audit, build, launch, optional support retainer.
+- [FAQ](https://bonsify.io/faq): Common questions about pricing, ownership, timelines, and the free audit.
+- [What Is a Done-For-You Shopify App Service?](https://bonsify.io/what-is-a-done-for-you-shopify-app-service): Category definition distinguishing done-for-you builds from self-serve app builders and custom development agencies.
+- [Contact](https://bonsify.io/contact): Contact details and free audit request.
+- [Work](https://bonsify.io/work): Portfolio index featuring BachaParty, Highfy, and Dockify.
+- [BachaParty Case Study](https://bonsify.io/work/bachaparty): Kids' fashion Shopify store with a native iOS and Android app built by Bonsify.
+- [Highfy Case Study](https://bonsify.io/work/highfy): Beauty and skincare retail Shopify store with a native iOS and Android app built by Bonsify.
+- [Dockify](https://bonsify.io/work/dockify): Bonsify's own Shopify App Store app: home-screen install prompt with reward and install-to-purchase attribution.
+- [Services](https://bonsify.io/services): Full service list spanning mobile apps, PWAs, store builds, migrations, and custom Shopify development.
+- [Blog](https://bonsify.io/blog): Articles on Shopify mobile conversion, app strategy, and retention.
+- [Compare](https://bonsify.io/vs): Index of honest comparisons between Bonsify's done-for-you model and self-serve Shopify app builders.
+- [Alternatives](https://bonsify.io/alternatives): Index of why merchants move from specific self-serve Shopify app builders to Bonsify.
+- [Industries](https://bonsify.io/industries): Index of mobile app strategy and benchmarks by Shopify store category.
+
+## Comparisons
+
+- [Bonsify vs Tapcart](https://bonsify.io/vs/tapcart): Done-for-you native build compared to Tapcart's self-serve webview builder.
+- [Bonsify vs Vajro (Superfans)](https://bonsify.io/vs/vajro): Done-for-you native build compared to Vajro/Superfans' self-serve template builder.
+- [Bonsify vs Plobal Apps](https://bonsify.io/vs/plobal-apps): Done-for-you native build compared to Plobal Apps' enterprise-focused webview builder.
+- [Bonsify vs Shopney](https://bonsify.io/vs/shopney): Done-for-you native build compared to Shopney's low-entry-price template builder.
+- [Bonsify vs MobiLoud](https://bonsify.io/vs/mobiloud): Shopify-native app compared to MobiLoud's platform-agnostic website wrapper.
+- [Bonsify vs Appbrew](https://bonsify.io/vs/appbrew): Done-for-you native build compared to Appbrew's newer self-serve native builder.
+- [Bonsify vs MageNative](https://bonsify.io/vs/magenative): Done-for-you native build compared to MageNative's low-cost template webview builder.
+- [Bonsify vs StoreLab](https://bonsify.io/vs/storelab): Done-for-you native build compared to StoreLab's budget-tier basic builder.
+- [PWA vs Native App for Shopify](https://bonsify.io/vs/pwa-vs-native-app): Concept comparison of progressive web apps and native apps for Shopify stores.
+- [App Builder vs Custom Dev vs Done-For-You](https://bonsify.io/vs/app-builder-vs-custom-dev-vs-done-for-you): Category explainer comparing the three ways to get a Shopify mobile app.
+
+## Alternatives
+
+- [Tapcart Alternative](https://bonsify.io/alternatives/tapcart): Why merchants move from Tapcart to a done-for-you native build.
+- [Vajro Alternative](https://bonsify.io/alternatives/vajro): Why merchants move from Vajro/Superfans to a done-for-you native build.
+- [Plobal Apps Alternative](https://bonsify.io/alternatives/plobal-apps): Why merchants move from Plobal Apps to a done-for-you native build.
+- [Shopney Alternative](https://bonsify.io/alternatives/shopney): Why merchants move from Shopney to a done-for-you native build.
+- [MobiLoud Alternative](https://bonsify.io/alternatives/mobiloud): Why Shopify-only merchants move from MobiLoud's generic wrapper to a Shopify-native build.
+- [Appbrew Alternative](https://bonsify.io/alternatives/appbrew): Why merchants move from Appbrew to a done-for-you native build with an established track record.
+- [MageNative Alternative](https://bonsify.io/alternatives/magenative): Why merchants move from MageNative to a done-for-you native build.
+- [Best Shopify App Builder Alternatives](https://bonsify.io/alternatives/best-shopify-app-builder-alternatives): Roundup comparing all major Shopify app builders against the done-for-you model.
+
+## Industries
+
+- [Fashion](https://bonsify.io/industries/fashion): Mobile app strategy and benchmarks for fashion Shopify stores.
+- [Beauty & Cosmetics](https://bonsify.io/industries/beauty-cosmetics): Mobile app strategy and benchmarks for beauty and skincare stores, proof: Highfy.
+- [Kids & Baby](https://bonsify.io/industries/kids-baby): Mobile app strategy and benchmarks for kids and baby stores, proof: BachaParty.
+- [Food & Beverage](https://bonsify.io/industries/food-beverage): Mobile app strategy and benchmarks for food and beverage stores.
+- [Health & Supplements](https://bonsify.io/industries/health-supplements): Mobile app strategy and benchmarks for supplement and wellness stores.
+- [Pet Supplies](https://bonsify.io/industries/pet-supplies): Mobile app strategy and benchmarks for pet supply stores.
+- [Jewelry & Accessories](https://bonsify.io/industries/jewelry-accessories): Mobile app strategy and benchmarks for jewelry stores, the widest mobile-desktop gap of any category.
+- [Electronics & Gadgets](https://bonsify.io/industries/electronics-gadgets): Mobile app strategy and benchmarks for electronics stores.
+- [Home & Furniture](https://bonsify.io/industries/home-furniture): Mobile app strategy and benchmarks for home and furniture stores.
+- [Sports & Fitness](https://bonsify.io/industries/sports-fitness): Mobile app strategy and benchmarks for sports and fitness stores.
+- [Footwear](https://bonsify.io/industries/footwear): Mobile app strategy for footwear stores, focused on size-specific restock alerts.
+- [Streetwear & Drops](https://bonsify.io/industries/streetwear-drops): Mobile app strategy for drop-based and hype brands, focused on push notification speed.
+
+## Services
+
+- [Shopify Mobile App Development](https://bonsify.io/services/mobile-app-development): Flagship done-for-you native iOS, Android, and PWA development service.
+- [Shopify iOS App Development](https://bonsify.io/services/ios-app-development): Native iPhone app development and App Store submission for Shopify stores.
+- [Shopify Android App Development](https://bonsify.io/services/android-app-development): Native Android app development and Google Play submission for Shopify stores.
+- [Shopify PWA Development](https://bonsify.io/services/pwa-development): Progressive web app builds with home-screen install and attribution tracking.
+- [Push Notification Setup and Strategy](https://bonsify.io/services/push-notification-setup): Trigger, segmentation, and send-cadence strategy tied to real Shopify events.
+- [App Store Submission and ASO](https://bonsify.io/services/app-store-submission-aso): App Store and Google Play submission plus app store optimization.
+- [Shopify App Maintenance and Support](https://bonsify.io/services/app-maintenance-support): Ongoing maintenance retainer covering platform updates and resubmissions.
+- [App Rescue and Builder Migration](https://bonsify.io/services/app-rescue-migration): Migrating an existing app from a self-serve builder to a native done-for-you build.
+- [Install-to-Purchase Attribution](https://bonsify.io/services/install-to-purchase-attribution): Tracking app and PWA installs through to actual purchase revenue, the mechanic behind Dockify.
+- [Shopify Store Setup and Design](https://bonsify.io/services/shopify-store-setup-design): New store builds and custom theme design.
+- [Migration to Shopify](https://bonsify.io/services/migration-to-shopify): Platform migration from WooCommerce, Magento, or BigCommerce to Shopify.
+- [Custom Shopify App Development](https://bonsify.io/services/custom-shopify-app-development): Custom internal tools, integrations, and checkout logic built on Shopify's API.
+- [Shopify Theme Development](https://bonsify.io/services/shopify-theme-development): Custom, mobile-first theme development built around the brand and catalog.
+- [Shopify Store Optimization and CRO](https://bonsify.io/services/store-optimization-cro): Conversion rate optimization targeting checkout and mobile page speed.
+- [Shopify Headless and Hydrogen Development](https://bonsify.io/services/headless-hydrogen-development): Custom storefront development on Shopify's Hydrogen framework.
+- [Shopify Internationalization](https://bonsify.io/services/internationalization): Multi-currency, multi-language, and region-specific checkout setup.
+- [Shopify Subscription and Recurring Revenue](https://bonsify.io/services/subscription-recurring-revenue): Subscribe-and-save and replenishment program setup.
+- [Shopify B2B and Wholesale Setup](https://bonsify.io/services/b2b-wholesale-setup): Tiered pricing, bulk ordering, and payment terms for business buyers.
+
+## Blog
+
+- [Mobile vs Desktop Conversion on Shopify](https://bonsify.io/blog/mobile-vs-desktop-conversion-shopify): Why phones leak sales despite carrying most of the traffic.
+- [Do Shopify Mobile Apps Actually Increase Sales?](https://bonsify.io/blog/do-shopify-mobile-apps-increase-sales): The data behind app conversion lift, and where it doesn't apply automatically.
+- [PWA vs Native App for Shopify: Which Should You Build?](https://bonsify.io/blog/pwa-vs-native-app-shopify): Decision framework for choosing between the two formats.
+- [Push Notifications for Shopify: The Retention Channel You're Ignoring](https://bonsify.io/blog/push-notifications-retention-channel): Why push outperforms email and how to build a real strategy.
+- [How Much Does a Shopify Mobile App Cost in 2026?](https://bonsify.io/blog/shopify-mobile-app-cost-2026): Pricing breakdown across builder, custom development, and done-for-you models.
+- [Add to Home Screen: How PWAs Turn Browsers Into Repeat Buyers](https://bonsify.io/blog/add-to-home-screen-pwa): The mechanics behind PWA install prompts and the Dockify model.
+- [Webview vs Native: Why Your Shopify App Feels Slow](https://bonsify.io/blog/webview-vs-native-shopify-app): Diagnosing webview architecture and what switching to native fixes.
+- [How to Reduce Mobile Cart Abandonment on Shopify](https://bonsify.io/blog/reduce-mobile-cart-abandonment-shopify): Checkout-level fixes and the bigger structural fix of moving off mobile web.
+- [How to Increase Repeat Purchase Rate on Shopify](https://bonsify.io/blog/increase-repeat-purchase-rate-shopify): Reorder friction, push timing, and subscription mechanics that drive repeat purchases.
+- [App Store Optimization for Shopify Brands](https://bonsify.io/blog/app-store-optimization-shopify-brands): ASO fundamentals and what most Shopify app listings overlook.
+- [Done-For-You vs DIY: Build Your App or Hire It Out?](https://bonsify.io/blog/done-for-you-vs-diy-shopify-app): Honest cost and bandwidth comparison between self-serve and done-for-you.
+- [Install-to-Purchase Attribution: Measuring What Your App Is Worth](https://bonsify.io/blog/install-to-purchase-attribution): Why most app builders don't track this and what it actually enables.
+- [Customer LTV and Mobile Apps: The Retention Math](https://bonsify.io/blog/customer-ltv-mobile-apps): How app mechanics compound customer lifetime value over time.
+- [How Long Does It Take to Launch a Shopify Mobile App?](https://bonsify.io/blog/how-long-to-launch-shopify-mobile-app): Timeline comparison across builder, custom development, and done-for-you models.
+- [Shopify Mobile Conversion Benchmarks by Industry](https://bonsify.io/blog/shopify-mobile-conversion-benchmarks-by-industry): Full data compilation of mobile-to-desktop conversion gaps by category.
+- [The 3-Month Content Cliff: Why "We Have an App" Isn't a Strategy](https://bonsify.io/blog/3-month-content-cliff-shopify-app): Why app engagement drops after launch without an ongoing push strategy.
+- [Drops, Restocks, and Push: What Hype Brands Do Differently on Mobile](https://bonsify.io/blog/drops-restocks-push-hype-brands): Notification speed and checkout speed as competitive advantages for drop-based brands.
+- [Shopify App Store Review: Timeline and What Gets Rejected](https://bonsify.io/blog/shopify-app-store-review-timeline): Common rejection causes and how to prepare a clean first submission.
+- [Migrating from Tapcart to a Native Shopify App: What to Expect](https://bonsify.io/blog/migrating-from-tapcart-to-native-app): What carries over, what gets rebuilt, and how to manage the customer transition.
