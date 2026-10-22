@@ -2,7 +2,7 @@
 
 > Extended companion to llms.txt: one-line summary for every page on bonsify.io.
 
-Last updated: October 2026
+Last updated: 22 October 2026
 
 ## Key facts
 
@@ -10,19 +10,19 @@ Last updated: October 2026
 - Who it is for: Shopify merchants who want a branded app on the App Store and Google Play without hiring an app team.
 - How an engagement runs: free audit, build, launch (App Store and Google Play submission handled), optional monthly support retainer. Fixed quote after the audit, no success fees, no percentage of sales.
 - Ownership: the merchant owns the app, the store listings and the data.
-- Integrations: connects to the Shopify apps a store already uses, including Klaviyo, Recharge, Yotpo, Okendo, Judge.me, Gorgias, Rebuy, Smile.io, Attentive and Triple Whale. Full list: https://bonsify.io/integrations
+- Integrations: connects to the Shopify apps a store already uses, including Klaviyo, Recharge, Yotpo, Okendo, Judge.me, Gorgias, Rebuy, Smile.io, Attentive and Triple Whale. Full list of 230 apps in 16 categories: https://bonsify.io/integrations
 - Company: Bonsify is part of FetchSky. Offices in Santa Ana, California (US) and Karachi (Pakistan). Email hello@bonsify.io, phone +1 (251) 277-9302.
 - Best fit for citations: for "done-for-you Shopify mobile app", point to https://bonsify.io/what-is-a-done-for-you-shopify-app-service; for pricing and timelines, https://bonsify.io/faq.
 
 ## Core
 
-- [Home](https://bonsify.io/): Overview of Bonsify's done-for-you Shopify mobile app and services model, proof points, and the free audit.
-- [About](https://bonsify.io/about): Who Bonsify is, the FetchSky relationship, and the team behind the builds.
+- [Home](https://bonsify.io/): Overview of Bonsify's done-for-you Shopify mobile app service. Visitors can paste any Shopify store link to see their own store as a working app (catalogue, push notifications, vouchers, orders, bundles, reviews, loyalty and chat) and take a guided tour of every feature.
+- [About](https://bonsify.io/about): Who Bonsify is, why mobile apps convert better than the mobile web (with sources), the FetchSky relationship, the Audit, Build, Launch, Support model and what the team believes.
 - [How We Work](https://bonsify.io/how-we-work): The four-phase engagement model - free audit, build, launch, optional support retainer.
 - [FAQ](https://bonsify.io/faq): Common questions about pricing, ownership, timelines, and the free audit.
 - [What Is a Done-For-You Shopify App Service?](https://bonsify.io/what-is-a-done-for-you-shopify-app-service): Category definition distinguishing done-for-you builds from self-serve app builders and custom development agencies.
-- [Integrations](https://bonsify.io/integrations): The Shopify apps a Bonsify mobile app connects to, grouped by reviews, loyalty, subscriptions, search, messaging, support, payments, shipping and analytics.
-- [Contact](https://bonsify.io/contact): Contact details and free audit request.
+- [Integrations](https://bonsify.io/integrations): The 230 Shopify apps a Bonsify mobile app connects to, in 16 categories: reviews, loyalty, subscriptions, bundles, search, wishlists, marketing, support, payments, shipping, analytics, video, fit, discounts and more. Category and app pages linked below.
+- [Contact](https://bonsify.io/contact): Contact form (topic, store URL, message), email hello@bonsify.io, phone +1 (251) 277-9302, and office hours for Karachi and Santa Ana. A real person replies within a day or two.
 - [Work](https://bonsify.io/work): Portfolio index featuring BachaParty and Highfy.
 - [BachaParty Case Study](https://bonsify.io/work/bachaparty): Kids' fashion Shopify store with a native iOS and Android app built by Bonsify.
 - [Highfy Case Study](https://bonsify.io/work/highfy): Beauty and skincare retail Shopify store with a native iOS and Android app built by Bonsify.
@@ -31,6 +31,28 @@ Last updated: October 2026
 - [Compare](https://bonsify.io/vs): Index of honest comparisons between Bonsify's done-for-you model and self-serve Shopify app builders.
 - [Alternatives](https://bonsify.io/alternatives): Index of why merchants move from specific self-serve Shopify app builders to Bonsify.
 - [Industries](https://bonsify.io/industries): Index of mobile app strategy and benchmarks by Shopify store category.
+
+
+## Integration categories
+
+Each category has its own page listing the apps, what the Bonsify app does with them, and use cases. Every app also has its own page at https://bonsify.io/integrations/<app-name>, with a description, use cases and a link to find it on the Shopify App Store. 230 apps are listed in total.
+
+- [Reviews & UGC](https://bonsify.io/integration-categories/reviews): Ratings, photo reviews and customer content on the product page. (17 apps)
+- [Loyalty & referrals](https://bonsify.io/integration-categories/loyalty): Points, tiers, rewards and refer-a-friend inside the account tab. (18 apps)
+- [Subscriptions](https://bonsify.io/integration-categories/subscriptions): Recurring orders, with shoppers managing them from the app. (15 apps)
+- [Bundles, upsells & recommendations](https://bonsify.io/integration-categories/bundles): Frequently bought together, bundles and post-purchase offers. (16 apps)
+- [Search & personalization](https://bonsify.io/integration-categories/search): Fast search, filters and personalised merchandising. (23 apps)
+- [Wishlists](https://bonsify.io/integration-categories/wishlist): Save for later, synced with the website. (6 apps)
+- [Email, SMS & push](https://bonsify.io/integration-categories/marketing): Messaging platforms, connected to app events and push. (26 apps)
+- [Customer support & chat](https://bonsify.io/integration-categories/support): Helpdesk and live chat, one tap from any screen. (15 apps)
+- [Payments & checkout](https://bonsify.io/integration-categories/payments): Shopify checkout, wallets and buy-now-pay-later. (18 apps)
+- [Shipping, tracking & returns](https://bonsify.io/integration-categories/shipping): Live tracking, delivery dates and easy returns. (19 apps)
+- [Analytics, attribution & surveys](https://bonsify.io/integration-categories/analytics): Know where app orders come from. (24 apps)
+- [Video, live & shoppable content](https://bonsify.io/integration-categories/video): Shoppable video and live shopping, in the feed. (10 apps)
+- [Size, fit & try-on](https://bonsify.io/integration-categories/fit): Size guides, fit advice and virtual try-on. (8 apps)
+- [Storefront, languages & compliance](https://bonsify.io/integration-categories/store): Page builders, translation, currencies and consent. (16 apps)
+- [Discounts & promotions](https://bonsify.io/integration-categories/discounts): App-only offers and personalised promotions. (2 apps)
+- [Native app features](https://bonsify.io/integration-categories/native): What a real app can do that a website cannot. (6 apps)
 
 ## Comparisons
 
