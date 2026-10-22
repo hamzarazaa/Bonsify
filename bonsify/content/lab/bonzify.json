@@ -1,0 +1,215 @@
+{
+ "slug": "bonzify",
+ "name": "Bonzify",
+ "url": "https://bonzify.example/",
+ "domain": "bonzify.example",
+ "platform": "shopify",
+ "currency": "USD",
+ "logo": "/lab/bonzify/logo.svg",
+ "icon": "/lab/bonzify/logo.svg",
+ "colors": {
+  "primary": "#2F6B4F",
+  "accent": "#A85A36",
+  "background": "#F6F1E6",
+  "text": "#1B2420",
+  "onPrimary": "#F6F1E6"
+ },
+ "fonts": {
+  "heading": "Fraunces",
+  "body": "Inter",
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "/lab/bonzify/banner-1.svg",
+  "/lab/bonzify/banner-2.svg",
+  "/lab/bonzify/banner-3.svg"
+ ],
+ "collections": [],
+ "products": [
+  {
+   "title": "Kaze Juniper Bonsai",
+   "handle": "kaze-juniper-bonsai",
+   "type": "Bonsai",
+   "vendor": "Bonzify",
+   "price": 68,
+   "compareAt": 84,
+   "available": true,
+   "image": "/lab/bonzify/kaze-juniper-bonsai-1.svg",
+   "images": [
+    "/lab/bonzify/kaze-juniper-bonsai-1.svg",
+    "/lab/bonzify/kaze-juniper-bonsai-2.svg",
+    "/lab/bonzify/kaze-juniper-bonsai-3.svg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    }
+   ],
+   "description": "A four-year-old juniper trained into a windswept shape. Arrives potted in its own clay drum with a care card."
+  },
+  {
+   "title": "Clay Drum Pot",
+   "handle": "clay-drum-pot",
+   "type": "Pots",
+   "vendor": "Bonzify",
+   "price": 34,
+   "compareAt": null,
+   "available": true,
+   "image": "/lab/bonzify/clay-drum-pot-1.svg",
+   "images": [
+    "/lab/bonzify/clay-drum-pot-1.svg",
+    "/lab/bonzify/clay-drum-pot-2.svg",
+    "/lab/bonzify/clay-drum-pot-3.svg"
+   ],
+   "options": [
+    {
+     "name": "Finish",
+     "values": [
+      "Terracotta",
+      "Sage",
+      "Ivory"
+     ]
+    }
+   ],
+   "description": "Hand-thrown stoneware with a drainage hole and matching saucer. Frost safe."
+  },
+  {
+   "title": "Moss Kokedama Trio",
+   "handle": "moss-kokedama-trio",
+   "type": "Bonsai",
+   "vendor": "Bonzify",
+   "price": 42,
+   "compareAt": 52,
+   "available": true,
+   "image": "/lab/bonzify/moss-kokedama-trio-1.svg",
+   "images": [
+    "/lab/bonzify/moss-kokedama-trio-1.svg",
+    "/lab/bonzify/moss-kokedama-trio-2.svg",
+    "/lab/bonzify/moss-kokedama-trio-3.svg"
+   ],
+   "options": [],
+   "description": "Three moss-wrapped plants, ready to hang or set on a saucer. Water by dunking once a week."
+  },
+  {
+   "title": "Carbon Steel Pruning Shears",
+   "handle": "carbon-pruning-shears",
+   "type": "Tools",
+   "vendor": "Bonzify",
+   "price": 38,
+   "compareAt": 46,
+   "available": true,
+   "image": "/lab/bonzify/carbon-pruning-shears-1.svg",
+   "images": [
+    "/lab/bonzify/carbon-pruning-shears-1.svg",
+    "/lab/bonzify/carbon-pruning-shears-2.svg",
+    "/lab/bonzify/carbon-pruning-shears-3.svg"
+   ],
+   "options": [],
+   "description": "Hardened 7-inch blade, clay-red and green handles. Clean cuts without crushing stems."
+  },
+  {
+   "title": "Brass Plant Mister",
+   "handle": "brass-plant-mister",
+   "type": "Tools",
+   "vendor": "Bonzify",
+   "price": 29,
+   "compareAt": null,
+   "available": true,
+   "image": "/lab/bonzify/brass-plant-mister-1.svg",
+   "images": [
+    "/lab/bonzify/brass-plant-mister-1.svg",
+    "/lab/bonzify/brass-plant-mister-2.svg",
+    "/lab/bonzify/brass-plant-mister-3.svg"
+   ],
+   "options": [],
+   "description": "A fine, even mist for ferns, moss and young bonsai. Refillable and built to last."
+  },
+  {
+   "title": "Ceramic Watering Can",
+   "handle": "ceramic-watering-can",
+   "type": "Care",
+   "vendor": "Bonzify",
+   "price": 46,
+   "compareAt": null,
+   "available": true,
+   "image": "/lab/bonzify/ceramic-watering-can-1.svg",
+   "images": [
+    "/lab/bonzify/ceramic-watering-can-1.svg",
+    "/lab/bonzify/ceramic-watering-can-2.svg",
+    "/lab/bonzify/ceramic-watering-can-3.svg"
+   ],
+   "options": [],
+   "description": "A one litre glazed can with a long spout for precise watering at the root."
+  },
+  {
+   "title": "Akadama Soil Mix 2L",
+   "handle": "akadama-soil-mix",
+   "type": "Care",
+   "vendor": "Bonzify",
+   "price": 18,
+   "compareAt": 22,
+   "available": true,
+   "image": "/lab/bonzify/akadama-soil-mix-1.svg",
+   "images": [
+    "/lab/bonzify/akadama-soil-mix-1.svg",
+    "/lab/bonzify/akadama-soil-mix-2.svg",
+    "/lab/bonzify/akadama-soil-mix-3.svg"
+   ],
+   "options": [],
+   "description": "The free-draining blend bonsai growers use: akadama, pumice and lava rock."
+  },
+  {
+   "title": "Ficus Ginseng Bonsai",
+   "handle": "ficus-ginseng-bonsai",
+   "type": "Bonsai",
+   "vendor": "Bonzify",
+   "price": 79,
+   "compareAt": 99,
+   "available": true,
+   "image": "/lab/bonzify/ficus-ginseng-bonsai-1.svg",
+   "images": [
+    "/lab/bonzify/ficus-ginseng-bonsai-1.svg",
+    "/lab/bonzify/ficus-ginseng-bonsai-2.svg",
+    "/lab/bonzify/ficus-ginseng-bonsai-3.svg"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium"
+     ]
+    }
+   ],
+   "description": "A thick-rooted ficus that forgives forgetful watering. Great first bonsai."
+  }
+ ],
+ "productCount": 8,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  },
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "LiveChat",
+  "Klaviyo"
+ ],
+ "crawledAt": "2026-10-23T00:00:00Z",
+ "warnings": []
+}

@@ -56,13 +56,17 @@ const COLOUR_FIX = {
 // Stores made for one prospect's demo page. They open at /try/<slug> and
 // /demo/<slug> but are not offered in the lab home brand switcher.
 const HIDDEN = new Set(["gulahmed"]);
+const SHOW_HIGHFY = false;
 
 export function getLabBrands({ all = false } = {}) {
   const out = [];
-  const highfy = getProposal("highfy");
+  // Highfy is a real client, so it no longer fronts the lab. Bonzify is a made-up
+  // store (content/lab/bonzify.json) and leads the switcher. Set SHOW_HIGHFY to
+  // bring the real one back.
+  const highfy = SHOW_HIGHFY ? getProposal("highfy") : null;
   if (highfy) out.push(trimBrand({ ...highfy, slug: "highfy" }));
   if (fs.existsSync(DIR)) {
-    for (const f of fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort()) {
+    for (const f of fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort((a, b) => (a.startsWith("bonzify") ? -1 : b.startsWith("bonzify") ? 1 : a.localeCompare(b)))) {
       const slug = f.replace(/\.json$/, "");
       if (!all && HIDDEN.has(slug)) continue;
       try {
