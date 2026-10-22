@@ -15,6 +15,31 @@ import styles from "./BrandApp.module.css";
 
 // Prices can be missing when a store limited the crawl; show nothing rather
 // than a made-up or zero price.
+/* The store logo, with a retry and then the site icon, then the store name,
+   so a blocked or broken image never leaves a blank header. */
+function LogoImg({ brand, className, fallback = true }) {
+  const srcs = [brand.logo, brand.icon].filter(Boolean);
+  const [n, setN] = useState(0);
+  const [tries, setTries] = useState(0);
+  if (n >= srcs.length) return fallback ? <strong className={styles.wordmark}>{brand.name}</strong> : null;
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      key={`${n}-${tries}`}
+      src={srcs[n]}
+      alt={brand.name}
+      className={className}
+      onError={() => {
+        if (tries < 1) setTimeout(() => setTries(tries + 1), 600);
+        else {
+          setTries(0);
+          setN(n + 1);
+        }
+      }}
+    />
+  );
+}
+
 function moneyFormatter(currency) {
   let fmt;
   try {
@@ -284,7 +309,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
       {splash && (
         <div className={styles.splash} aria-label={`${brand.name} app opening`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          {brand.logo && <img src={brand.logo} alt={brand.name} className={styles.splashLogo} />}
+          {brand.logo && <LogoImg brand={brand} className={styles.splashLogo} fallback={false} />}
         </div>
       )}
 
@@ -312,7 +337,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
           </button>
         )}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        {brand.logo ? <img src={brand.logo} alt={brand.name} className={styles.logo} /> : <strong className={styles.wordmark}>{brand.name}</strong>}
+        {brand.logo ? <LogoImg brand={brand} className={styles.logo} /> : <strong className={styles.wordmark}>{brand.name}</strong>}
         <button className={`${styles.iconBtn} ${skin ? styles.bagHf : ""}`} ref={bagRef} onClick={() => go("cart")} aria-label={`Cart, ${cartCount} items`}>
           <Svg name="bag" />
           {cartCount > 0 && (

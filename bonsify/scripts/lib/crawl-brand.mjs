@@ -612,6 +612,7 @@ export async function crawlBrand(inputUrl, opts = {}) {
     platform: isShopify ? 'shopify' : 'other',
     currency: cur,
     logo,
+    logoCandidates: scored.filter((c) => c.u && c.s >= 4).slice(0, 5).map((c) => c.u),
     logoSvg,
     icon,
     colors,

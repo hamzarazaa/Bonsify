@@ -45,7 +45,7 @@ export default function Header({ serviceGroups, industries }) {
   }, []);
 
   return (
-    <header className={`${styles.header} ${scrolled && !labHome ? styles.scrolled : ""} ${onDark && (!scrolled || labHome) ? styles.onDark : ""}`}>
+    <header data-site-header className={`${styles.header} ${scrolled && !labHome ? styles.scrolled : ""} ${onDark && (!scrolled || labHome) ? styles.onDark : ""}`}>
       <Link className={styles.brand} href="/">
         <BrandMark variant={onDark && (!scrolled || labHome) ? "light" : "dark"} />
         <span className={styles.name}>Bonsify</span>

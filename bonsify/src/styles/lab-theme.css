@@ -142,3 +142,6 @@ html[data-lab] .lab-hero > .wrap, html[data-lab] .lab-hero > [class*="inner"] { 
   .lab-progress { display: none; }
   .lab-branches { transition: none; }
 }
+
+/* Full screen app: the site header would sit over the close button. */
+body[data-lab-fs] header[data-site-header] { display: none !important; }

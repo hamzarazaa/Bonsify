@@ -16,6 +16,60 @@ const sized = (u, w) => {
   return u;
 };
 
+
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Fetch an image; one retry on a network error, timeout or 5xx/429. A 404 or a
+// non-image answer moves straight on to the next candidate.
+async function tryImage(url, referer) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 5000);
+    try {
+      const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'image/*,*/*;q=0.8', referer }, redirect: 'follow', signal: ctrl.signal });
+      if (r.ok) {
+        const type = (r.headers.get('content-type') || '').toLowerCase();
+        const buf = Buffer.from(await r.arrayBuffer());
+        if ((type.startsWith('image/') || /\.(png|jpe?g|webp|svg|ico|gif)(\?|$)/i.test(url)) && buf.length > 200) return buf;
+        return null;
+      }
+      if (r.status < 429 || (r.status > 429 && r.status < 500)) return null;
+    } catch {}
+    finally {
+      clearTimeout(t);
+    }
+    await wait(500 + attempt * 500);
+  }
+  return null;
+}
+
+async function resolveLogo(brand) {
+  let origin = null;
+  try {
+    origin = new URL(brand.url).origin;
+  } catch {}
+  const host = origin ? new URL(origin).hostname : null;
+  const list = [
+    brand.logo && sized(brand.logo, 600),
+    ...(brand.logoCandidates || []).map((u) => sized(u, 600)),
+    brand.icon && sized(brand.icon, 600),
+    origin && `${origin}/apple-touch-icon.png`,
+    host && `https://www.google.com/s2/favicons?domain=${host}&sz=256`,
+    origin && `${origin}/favicon.ico`,
+  ].filter(Boolean);
+  const seen = new Set();
+  const started = Date.now();
+  for (const u of list) {
+    if (seen.has(u)) continue;
+    seen.add(u);
+    if (Date.now() - started > 20000) break;
+    const buf = await tryImage(u, origin || undefined);
+    if (buf) return { logo: u, buf };
+  }
+  return { logo: null, buf: null };
+}
+
 // sharp is loaded on demand: if the host cannot load its native library, the
 // crawl still works and colours come from the store's theme instead.
 async function logoPalette(buf) {
@@ -38,18 +92,13 @@ async function logoPalette(buf) {
 export async function buildRemoteBrand(url, opts = {}) {
   const brand = await crawlBrand(url, { name: opts.name, slug: opts.slug });
 
-  let logo = brand.logo ? sized(brand.logo, 600) : null;
-  let logoBuf = null;
-  if (logo) {
-    try {
-      const r = await fetch(logo, { headers: { 'user-agent': 'Mozilla/5.0 BonsifyProposalBot' } });
-      if (r.ok) logoBuf = Buffer.from(await r.arrayBuffer());
-    } catch {}
-  } else if (brand.logoSvg) {
+  // The logo is checked, not trusted: stores block hotlinking, move files and
+  // serve odd formats. Each candidate gets a retry, then the next one is tried.
+  let { logo, buf: logoBuf } = await resolveLogo(brand);
+  if (!logo && brand.logoSvg) {
     logoBuf = Buffer.from(brand.logoSvg);
     logo = 'data:image/svg+xml;utf8,' + encodeURIComponent(brand.logoSvg.replace(/currentColor/g, '#141414'));
   }
-  if (!logo && brand.icon) logo = sized(brand.icon, 600);
 
   // Same rules as the CLI: the logo's colours win over theme CSS.
   const hue = (h) => rgbToHsl(hexToRgb(h))[0];

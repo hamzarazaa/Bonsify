@@ -19,18 +19,18 @@ export const TOUR = [
   { screen: "home", t: "That is the app", p: "Open it full screen, or scan the code to hold it in your hand. Checkout opens in Shopify, so payments stay safe." },
 ];
 
-export default function Tour({ step, onStep, onClose, name, onFull }) {
+export default function Tour({ step, onStep, onClose, name, onFull, inFull }) {
   const n = TOUR.length;
   const s = TOUR[step];
   useEffect(() => {
     const key = (e) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") { if (!inFull) onClose(); }
       else if (e.key === "ArrowRight") onStep(Math.min(n - 1, step + 1));
       else if (e.key === "ArrowLeft") onStep(Math.max(0, step - 1));
     };
     window.addEventListener("keydown", key);
     return () => window.removeEventListener("keydown", key);
-  }, [step, n, onStep, onClose]);
+  }, [step, n, onStep, onClose, inFull]);
 
   return (
     <aside className={styles.card} role="dialog" aria-label={`Tour of the ${name} app`} aria-live="polite">
@@ -52,8 +52,8 @@ export default function Tour({ step, onStep, onClose, name, onFull }) {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M15 5l-7 7 7 7" /></svg>
         </button>
         {step === n - 1 ? (
-          <button className={styles.primary} onClick={onFull}>
-            Open full screen
+          <button className={styles.primary} onClick={inFull ? onClose : onFull}>
+            {inFull ? "Finish tour" : "Open full screen"}
           </button>
         ) : (
           <button className={styles.primary} onClick={() => onStep(step + 1)}>

@@ -180,6 +180,7 @@ export default function LabHome({ brands, apps, proof }) {
   const [lead, setLead] = useState({ name: "", email: "", brandName: "", url: "", website: "" });
   const [note, setNote] = useState("");
   const [tip, setTip] = useState(false);
+  const fsAppRef = useRef(null);
   const [tour, setTour] = useState(null); // step number while the tour runs
   const leadSent = useRef(false);
 
@@ -447,9 +448,10 @@ export default function LabHome({ brands, apps, proof }) {
 
   useEffect(() => {
     if (tour == null) return;
-    const t = setTimeout(() => appRef.current?.show(TOUR[tour].screen), 120);
+    // The tour drives whichever app is on screen: the full screen one when it is open.
+    const t = setTimeout(() => (fs ? fsAppRef : appRef).current?.show(TOUR[tour].screen), fs ? 450 : 120);
     return () => clearTimeout(t);
-  }, [tour]);
+  }, [tour, fs]);
 
   /* haptic taps as notifications land */
   useEffect(() => {
@@ -783,6 +785,13 @@ export default function LabHome({ brands, apps, proof }) {
   }, [fs]);
   useEffect(() => {
     if (!fs) return;
+    document.body.dataset.labFs = "1";
+    return () => {
+      delete document.body.dataset.labFs;
+    };
+  }, [fs]);
+  useEffect(() => {
+    if (!fs) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
@@ -790,6 +799,7 @@ export default function LabHome({ brands, apps, proof }) {
     };
   }, [fs]);
 
+  const startFsTour = () => setTour(0);
   const startTour = () => {
     goRef.current?.(0);
     setTimeout(() => setTour(0), 500);
@@ -1270,7 +1280,7 @@ export default function LabHome({ brands, apps, proof }) {
         <div className={styles.fs} role="dialog" aria-label={`${brand.name} app, full screen`}>
           {touch ? (
             <div className={styles.fsApp} style={{ transform: `scale(${fsBox.s})`, left: fsBox.x, top: fsBox.y }}>
-              <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews />
+              <BrandApp key={`fs-${brand.slug}`} ref={fsAppRef} brand={brand} liveReviews />
             </div>
           ) : (
             // On a computer the app sits in a phone shell. On a phone, the phone is the shell.
@@ -1285,7 +1295,7 @@ export default function LabHome({ brands, apps, proof }) {
             </div>
             <div className={styles.fsShell}>
               <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app, full screen`}>
-                <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews />
+                <BrandApp key={`fs-${brand.slug}`} ref={fsAppRef} brand={brand} liveReviews />
               </Phone>
             </div>
             {brand.slug === "yours" && (
@@ -1294,6 +1304,11 @@ export default function LabHome({ brands, apps, proof }) {
               </div>
             )}
             </>
+          )}
+          {!tourOn && (
+            <button className={styles.fsTour} onClick={startFsTour}>
+              Take the tour
+            </button>
           )}
           <button className={styles.fsClose} onClick={() => setFs(false)}>
             Close
@@ -1305,7 +1320,7 @@ export default function LabHome({ brands, apps, proof }) {
         <StoreModal kind={modal === "notshop" ? "notshopify" : "intake"} values={lead} onChange={setLead} onClose={closeModal} onSubmit={submitModal} busy={busy} />
       )}
 
-      {tourOn && <Tour step={tour} onStep={(n) => setTour(Math.max(0, Math.min(TOUR.length - 1, n)))} onClose={() => setTour(null)} name={brand.name} onFull={() => { setTour(null); openFs(); }} />}
+      {tourOn && <Tour step={tour} onStep={(n) => setTour(Math.max(0, Math.min(TOUR.length - 1, n)))} onClose={() => setTour(null)} inFull={fs} name={brand.name} onFull={() => { setTour(null); openFs(); }} />}
 
       <div className={styles.cursor} ref={cursorRef} aria-hidden="true" />
     </div>
