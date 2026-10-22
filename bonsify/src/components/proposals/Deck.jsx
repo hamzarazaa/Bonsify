@@ -150,7 +150,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           )}
         </div>
         <div className={styles.coverPhone}>
-          <Phone statusBar label={`${brand.name} app preview`}>
+          <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app preview`}>
             <BrandApp brand={brand} autoSplash={false} interactive={false} />
           </Phone>
         </div>
@@ -358,7 +358,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           </p>
           <div className={styles.ctaRow}>
             <a className={styles.ctaBtn} href={`/contact?ref=${brand.slug}`}>
-              Book a free audit
+              Get your app now
             </a>
             <span className={styles.contact}>
               <a href={`mailto:hello@bonsify.io?subject=${encodeURIComponent(`${brand.name} app`)}`}>hello@bonsify.io</a>

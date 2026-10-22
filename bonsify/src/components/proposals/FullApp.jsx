@@ -63,7 +63,7 @@ export default function FullApp({ brand, qrPath, onClose, liveReviews = false })
             <span className={styles.cap}>{brand.name} app, made with Bonsify</span>
           </div>
           <div className={styles.shell}>
-            <Phone statusBar label={`${brand.name} app, full screen`}>
+            <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app, full screen`}>
               <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews={liveReviews} />
             </Phone>
           </div>

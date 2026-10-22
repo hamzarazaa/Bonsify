@@ -224,7 +224,7 @@ export default async function CaseStudy({ slug }) {
       <CTABand
         heading="Want an app like this?"
         subtext="Tell us about your Shopify store. We will show you what going native would change."
-        buttonText="Book a free audit"
+        buttonText="Get your app now"
         buttonHref="/contact"
       />
     </main>

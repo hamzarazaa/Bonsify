@@ -28,6 +28,7 @@ export const Icon = {
   clock: <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2" />,
   pin: <path d="M12 21s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10zm0-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />,
   chev: <path d="m9 5 7 7-7 7" />,
+  menu: <path d="M4 7h16M4 12h16M4 17h16" />,
   tag: <path d="M3 12V4h8l10 10-8 8zM7.5 8.5h.01" />,
   box: <path d="m3 7 9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10" />,
   ruler: <path d="M3 17 17 3l4 4L7 21zM8 12l2 2M11 9l2 2M14 6l2 2" />,

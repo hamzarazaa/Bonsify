@@ -125,4 +125,4 @@ in-app GMV at the Ultimate and Enterprise levels (Tapcart pricing page; Head Wes
 
 *Bonsify is a Shopify services company by FetchSky. Mobile apps are the specialty;
 migration, store builds, custom development and optimization are the full stack.
-[Book a free audit](contact.html).*
+[Get your app now](contact.html).*

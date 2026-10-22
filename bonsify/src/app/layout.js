@@ -1,5 +1,6 @@
 import { Inter, Archivo } from "next/font/google";
 import Script from "next/script";
+import MobileNotice from "@/components/layout/MobileNotice";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/shared/SmoothScroll";
@@ -106,7 +107,7 @@ export default function RootLayout({ children }) {
         <SiteChrome>
           <SmoothScroll />
         </SiteChrome>
-        <SiteChrome>
+        <SiteChrome keepOnLabHome>
           <Header serviceGroups={serviceGroups} industries={industries} />
         </SiteChrome>
         <link rel="preconnect" href="https://embed.figma.com" />
@@ -115,8 +116,9 @@ export default function RootLayout({ children }) {
         <JsonLd data={siteGraph()} />
         <LabMotion />
         <Analytics />
+        <MobileNotice />
         <PageTransition>{children}</PageTransition>
-        <SiteChrome>
+        <SiteChrome keepOnLabHome>
           <Footer />
         </SiteChrome>
       </body>

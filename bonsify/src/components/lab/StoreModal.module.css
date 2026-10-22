@@ -1,0 +1,19 @@
+.back { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 16px; background: rgba(12, 14, 16, 0.58); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); animation: fade 0.2s ease both; overflow-y: auto; }
+.card { position: relative; width: min(480px, 100%); display: grid; gap: 14px; padding: 28px 26px 22px; border-radius: 22px; background: #f6f1e6; color: #14171a; box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.55); animation: rise 0.28s cubic-bezier(0.22, 1, 0.36, 1) both; text-align: left; }
+.card h2 { margin: 0; padding-right: 30px; font-size: clamp(22px, 3vw, 28px); line-height: 1.1; letter-spacing: -0.02em; }
+.lede { margin: 0; font-size: 14.5px; line-height: 1.5; color: rgba(20, 23, 26, 0.74); }
+.lede b { word-break: break-all; color: #14171a; }
+.card label { display: grid; gap: 6px; font-size: 12.5px; font-weight: 600; letter-spacing: 0.02em; color: rgba(20, 23, 26, 0.72); }
+.card input:not(.hp) { height: 46px; padding: 0 14px; border-radius: 12px; border: 1.5px solid rgba(20, 23, 26, 0.18); background: #fff; font: inherit; font-size: 15px; color: #14171a; width: 100%; }
+.card input:not(.hp):focus { outline: none; border-color: #14171a; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.check { min-height: 4px; }
+.err { margin: 0; padding: 10px 12px; border-radius: 10px; background: #fdeceb; color: #9b1c1c; font-size: 13.5px; }
+.go { height: 50px; border-radius: 999px; border: 0; background: #14171a; color: #f6f1e6; font: inherit; font-size: 15.5px; font-weight: 700; cursor: pointer; }
+.go:disabled { opacity: 0.6; cursor: default; }
+.fine { margin: 0; text-align: center; font-size: 12px; color: rgba(20, 23, 26, 0.6); }
+.x { position: absolute; top: 12px; right: 14px; width: 34px; height: 34px; border-radius: 50%; border: 0; background: rgba(20, 23, 26, 0.07); font-size: 22px; line-height: 1; cursor: pointer; color: #14171a; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes rise { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
+@media (max-width: 520px) { .two { grid-template-columns: 1fr; } .card { padding: 24px 18px 18px; } }

@@ -8,14 +8,14 @@ import { enterFullscreen, exitFullscreen, isFullscreen, onFullscreenChange } fro
 import Phone from "@/components/proposals/Phone";
 import BrandApp from "@/components/proposals/BrandApp";
 import BrandMark from "@/components/shared/BrandMark";
-import Turnstile from "@/components/shared/Turnstile";
+import StoreModal from "./StoreModal";
+import Tour, { TOUR } from "./Tour";
+import { saveLead, brandGuess } from "@/lib/leads";
 import BonsifyLoader from "@/components/proposals/BonsifyLoader";
 import BonsaiArt from "./BonsaiArt";
 import { curateBrand } from "@/lib/curate";
 import { makeScreenTexture } from "@/lib/arTexture";
 import styles from "./LabHome.module.css";
-
-const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "1x00000000000000000000AA";
 
 /* ---------- small helpers ---------- */
 const buzz = (p = 20) => {
@@ -66,9 +66,27 @@ function moneyFor(currency) {
 
 const PHRASES = ["Bonsifying your store", "Working the magic", "Polishing the pixels", "Stitching the screens", "Tuning every tap"];
 
-const NAMES = ["Start", "Catalogue", "Push", "Wallet", "Proof", "Work"];
+// Each chapter shows one screen of the app. `screen` is what BrandApp.show() takes.
+const CH = [
+  { n: "Start", screen: "home" },
+  { n: "Catalogue", screen: "shop" },
+  { n: "Push", screen: "notifications" },
+  { n: "Offers", screen: "vouchers" },
+  { n: "Orders", screen: "orders" },
+  { n: "Bundles", screen: "fbt" },
+  { n: "Reviews", screen: "reviews" },
+  { n: "Loyalty", screen: "rewards" },
+  { n: "Support", screen: "chat" },
+  { n: "Proof" },
+  { n: "Work" },
+];
+const NAMES = CH.map((c) => c.n);
+const PROOF = 9;
+const WORK = 10;
 // 1 means the phone sits left of the copy, so floating pieces fly to its right.
-const SIDE = [-1, 1, -1, 1, -1, 1];
+const SIDE = [-1, 1, -1, 1, -1, 1, -1, 1, -1, -1, 1];
+// The first five palettes are used in turn; proof and work keep their own.
+const palFor = (pal, ch) => (ch === 0 ? pal[0] : ch === PROOF ? pal[4] : ch === WORK ? pal[5] : pal[1 + ((ch - 1) % 3)]);
 
 /* ---------- counters ---------- */
 function Counter({ value }) {
@@ -148,8 +166,6 @@ export default function LabHome({ brands, apps, proof }) {
   const [wipe, setWipe] = useState(null);
   const [navLight, setNavLight] = useState(true);
   const [url, setUrl] = useState("");
-  const [token, setToken] = useState(null);
-  const [asked, setAsked] = useState(false);
   const [busy, setBusy] = useState(false);
   const [phrase, setPhrase] = useState(0);
   const [err, setErr] = useState("");
@@ -160,8 +176,15 @@ export default function LabHome({ brands, apps, proof }) {
   const [arMsg, setArMsg] = useState("");
   const [fs, setFs] = useState(false);
   const [act, setAct] = useState(0);
+  const [modal, setModal] = useState(null); // "intake" | "notshop"
+  const [lead, setLead] = useState({ name: "", email: "", brandName: "", url: "", website: "" });
+  const [note, setNote] = useState("");
+  const [tip, setTip] = useState(false);
+  const [tour, setTour] = useState(null); // step number while the tour runs
+  const leadSent = useRef(false);
 
   const brand = (custom && slug === "yours" ? custom : brands.find((b) => b.slug === slug)) || brands[0];
+  const tourOn = tour != null;
   const pal = useMemo(() => palette(brand), [brand]);
   const money = useMemo(() => moneyFor(brand.currency), [brand.currency]);
 
@@ -210,7 +233,7 @@ export default function LabHome({ brands, apps, proof }) {
   const goRef = useRef(null);
   useEffect(() => {
     const fine = window.matchMedia("(pointer: fine)").matches;
-    const secs = () => [...rootRef.current.querySelectorAll("main [data-ch]")];
+    const secs = () => [...rootRef.current.querySelectorAll("main [data-ch]"), ...document.querySelectorAll("footer.lab-footer")];
     let target = null;
     let busyUntil = 0;
     let lastScroll = 0;
@@ -356,9 +379,36 @@ export default function LabHome({ brands, apps, proof }) {
     };
   }, []);
 
+  /* the site header and footer are shared, so tell the header which tone the page is in */
+  useEffect(() => {
+    document.body.dataset.labHome = "1";
+    return () => {
+      delete document.body.dataset.labHome;
+      delete document.body.dataset.heroDark;
+    };
+  }, []);
+  useEffect(() => {
+    if (navLight) delete document.body.dataset.heroDark;
+    else document.body.dataset.heroDark = "1";
+  }, [navLight]);
+
+  /* "Get your app now" in the header links here */
+  const inputRef = useRef(null);
+  useEffect(() => {
+    const check = () => {
+      if (window.location.hash === "#start") {
+        goRef.current?.(0);
+        setTimeout(() => inputRef.current?.focus({ preventScroll: true }), 700);
+      }
+    };
+    check();
+    window.addEventListener("hashchange", check);
+    return () => window.removeEventListener("hashchange", check);
+  }, []);
+
   /* colour wipe from the phone whenever the chapter or the store changes */
   useEffect(() => {
-    const next = pal[ch];
+    const next = palFor(pal, ch);
     setNavLight(!!next.light);
     if (firstWipe.current) {
       firstWipe.current = false;
@@ -379,25 +429,27 @@ export default function LabHome({ brands, apps, proof }) {
     buzz(14);
   }, [ch, pal]);
 
-  /* drive the phone through the story */
+  /* drive the phone through the story. While the tour runs, the tour is in charge. */
   useEffect(() => {
+    if (tourOn) return;
     const changed = lastBrand.current !== brand.slug;
     lastBrand.current = brand.slug;
     const t = setTimeout(
       () => {
         const a = appRef.current;
         if (!a) return;
-        if (ch === 1) a.show("shop");
-        else if (ch === 3) {
-          a.add(0);
-          a.show("cart");
-        } else if (ch === 4) a.show("account");
-        else a.show("home");
+        a.show(CH[ch]?.screen || "home");
       },
       changed ? 1900 : 650
     );
     return () => clearTimeout(t);
-  }, [ch, brand.slug]);
+  }, [ch, brand.slug, tourOn]);
+
+  useEffect(() => {
+    if (tour == null) return;
+    const t = setTimeout(() => appRef.current?.show(TOUR[tour].screen), 120);
+    return () => clearTimeout(t);
+  }, [tour]);
 
   /* haptic taps as notifications land */
   useEffect(() => {
@@ -414,7 +466,29 @@ export default function LabHome({ brands, apps, proof }) {
     const base = { b: null, g: null };
     let raf;
     let gyro = false;
+    // The phone holds still while the visitor is over it or using it, and leans
+    // again once they scroll or press anything outside it.
+    let hold = false;
+    const inPhone = (t) => !!(t && t.closest && t.closest("[data-phone]"));
+    const onDown = (e) => {
+      hold = inPhone(e.target);
+    };
+    const onWheelTilt = (e) => {
+      hold = inPhone(e.target);
+    };
+    const onScrollTilt = () => {
+      hold = false;
+    };
+    const onKeyTilt = () => {
+      hold = false;
+    };
     const onMove = (e) => {
+      if (inPhone(e.target)) hold = true;
+      if (hold) {
+        tgt.rx = 0;
+        tgt.ry = 0;
+        return;
+      }
       if (gyro || reduced.current) return;
       tgt.ry = (e.clientX / window.innerWidth - 0.5) * 2 * 13;
       tgt.rx = -(e.clientY / window.innerHeight - 0.5) * 2 * 9;
@@ -422,6 +496,11 @@ export default function LabHome({ brands, apps, proof }) {
     const onOrient = (e) => {
       if (e.gamma == null || e.beta == null) return;
       gyro = true;
+      if (hold) {
+        tgt.rx = 0;
+        tgt.ry = 0;
+        return;
+      }
       if (base.b == null) {
         base.b = e.beta;
         base.g = e.gamma;
@@ -439,6 +518,10 @@ export default function LabHome({ brands, apps, proof }) {
       raf = requestAnimationFrame(loop);
     };
     window.addEventListener("pointermove", onMove, { passive: true });
+    window.addEventListener("pointerdown", onDown, { passive: true });
+    window.addEventListener("wheel", onWheelTilt, { passive: true });
+    window.addEventListener("scroll", onScrollTilt, { passive: true });
+    window.addEventListener("keydown", onKeyTilt);
     const D = window.DeviceOrientationEvent;
     if (D) {
       if (typeof D.requestPermission === "function") {
@@ -462,6 +545,10 @@ export default function LabHome({ brands, apps, proof }) {
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerdown", onDown);
+      window.removeEventListener("wheel", onWheelTilt);
+      window.removeEventListener("scroll", onScrollTilt);
+      window.removeEventListener("keydown", onKeyTilt);
       window.removeEventListener("deviceorientation", onOrient);
     };
   }, []);
@@ -519,12 +606,45 @@ export default function LabHome({ brands, apps, proof }) {
     return () => clearInterval(t);
   }, [busy]);
 
-  const submit = async (e) => {
+  /* The store form. The hero field only asks for the address; the pop-up takes the rest. */
+  const openIntake = (e) => {
     e.preventDefault();
     if (busy) return;
-    setErr("");
     if (!url.trim()) return setErr("Type your store address first, like yourstore.com.");
-    if (!token) return setErr("Tick the small check box below first.");
+    setErr("");
+    setNote("");
+    leadSent.current = false;
+    setLead((l) => ({ ...l, url: url.trim(), brandName: l.brandName && l.url === url.trim() ? l.brandName : brandGuess(url) }));
+    setModal("intake");
+  };
+
+  // Closing the form half way still keeps the address.
+  const closeModal = useCallback(() => {
+    if (!leadSent.current) {
+      leadSent.current = true;
+      saveLead({ stage: modal === "notshop" ? "not_shopify" : "abandoned", ...lead, source: "lab-home" });
+    }
+    setModal(null);
+  }, [modal, lead]);
+
+  const submitModal = async (tk) => {
+    if (modal === "notshop") {
+      leadSent.current = true;
+      saveLead({ stage: "not_shopify", ...lead, source: "lab-home" });
+      setModal(null);
+      setNote(`Thanks ${lead.name.split(" ")[0] || ""}. We will check ${lead.url} by hand and email you.`.replace("  ", " "));
+      return;
+    }
+    leadSent.current = true;
+    saveLead({ stage: "submitted", ...lead, source: "lab-home" });
+    setUrl(lead.url);
+    setModal(null);
+    run(lead.url, tk);
+  };
+
+  const run = async (target, tk) => {
+    if (busy) return;
+    setErr("");
     setBusy(true);
     setPhrase(0);
     buzz(22);
@@ -534,11 +654,15 @@ export default function LabHome({ brands, apps, proof }) {
       const r = await fetch("/api/demo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url: url.trim(), token }),
+        body: JSON.stringify({ url: target.trim(), token: tk }),
         signal: ctl.signal,
       });
       const d = await r.json().catch(() => ({}));
-      if (!r.ok) throw new Error(d.error || "Could not read that store.");
+      if (!r.ok) {
+        const e = new Error(d.error || "Could not read that store.");
+        e.code = d.code;
+        throw e;
+      }
       // Drop look-alike products and lead with photos that have people in them.
       let made = d.brand;
       try {
@@ -549,12 +673,19 @@ export default function LabHome({ brands, apps, proof }) {
       setCustom(made);
       setSlug("yours");
       buzz([24, 50, 36]);
+      goRef.current?.(0);
+      setTip(true);
     } catch (x) {
-      setErr(x.name === "AbortError" ? "That store took too long to read. Try again, or book a call and we will show yours." : x.message);
+      if (x.code === "not_shopify") {
+        // Keep the address, name and email before showing the notice.
+        leadSent.current = true;
+        saveLead({ stage: "not_shopify", ...lead, url: target, source: "lab-home" });
+        setLead((l) => ({ ...l, url: target }));
+        setModal("notshop");
+      } else setErr(x.name === "AbortError" ? "That store took too long to read. Try again, or book a call and we will show yours." : x.message);
     } finally {
       clearTimeout(to);
       setBusy(false);
-      setToken(null);
     }
   };
 
@@ -659,6 +790,11 @@ export default function LabHome({ brands, apps, proof }) {
     };
   }, [fs]);
 
+  const startTour = () => {
+    goRef.current?.(0);
+    setTimeout(() => setTour(0), 500);
+  };
+
   const qrPath = brand.slug === "yours" ? `/try/custom?store=${encodeURIComponent(brand.domain || "")}` : `/try/${brand.slug}`;
 
   const appEl = useMemo(() => <BrandApp key={brand.slug} ref={appRef} brand={brand} liveReviews />, [brand]);
@@ -667,7 +803,7 @@ export default function LabHome({ brands, apps, proof }) {
   const stage = { "--ch": ch, "--sg": SIDE[ch] };
 
   return (
-    <div className={`${styles.root} ${navLight ? styles.light : styles.dark}`} ref={rootRef}>
+    <div className={`${styles.root} ${navLight ? styles.light : styles.dark} ${tourOn ? styles.touring : ""}`} ref={rootRef}>
       {/* background layers */}
       <div className={styles.bg} style={{ background: base || pal[0].bg }} />
       {wipe && (
@@ -682,24 +818,6 @@ export default function LabHome({ brands, apps, proof }) {
         />
       )}
 
-      {/* top bar */}
-      <header className={styles.nav}>
-        <Link href="/" className={styles.logo} aria-label="Bonsify home">
-          <BrandMark variant={navLight ? "dark" : "light"} />
-          <span>Bonsify</span>
-        </Link>
-        <nav className={styles.links} aria-label="Main">
-          <Link href="/work">Work</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/how-we-work">How we work</Link>
-          <Link href="/integrations">Integrations</Link>
-          <Link href="/about">About</Link>
-        </nav>
-        <Link href="/contact" className={styles.cta} data-cursor="Go">
-          Free audit
-        </Link>
-      </header>
-
       <ol className={styles.dots} aria-label="Sections">
         {NAMES.map((n, i) => (
           <li key={n}>
@@ -711,11 +829,11 @@ export default function LabHome({ brands, apps, proof }) {
       </ol>
 
       {/* persistent phone and the pieces that fly in and out of it */}
-      <div className={styles.stage} data-ch={ch} style={stage}>
+      <div className={styles.stage} data-ch={ch} data-side={SIDE[ch] < 0 ? "r" : "l"} data-work={ch === WORK ? "1" : undefined} style={stage}>
         <div className={styles.rig} ref={rigRef}>
           <div className={styles.tilt} ref={tiltRef}>
-            <div className={styles.phoneWrap} ref={phoneRef} data-phone="" data-cursor={ch < 4 ? "Tap" : undefined}>
-              <Phone statusBar label={`${brand.name} app, interactive preview`}>
+            <div className={styles.phoneWrap} ref={phoneRef} data-phone="" data-cursor={ch < PROOF ? "Tap" : undefined}>
+              <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app, interactive preview`}>
                 {appEl}
                 {busy && (
                   <div style={{ "--app": brand.colors.primary }}>
@@ -724,11 +842,24 @@ export default function LabHome({ brands, apps, proof }) {
                 )}
               </Phone>
               {!busy && (
-                <button className={styles.fsIcon} onClick={openFs} aria-label="Open the app full screen" title="Full screen">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
-                  </svg>
-                </button>
+                <>
+                  <button className={styles.fsIcon} onClick={() => { setTip(false); openFs(); }} aria-label="Open the app full screen" title="Full screen">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
+                    </svg>
+                  </button>
+                  <button className={styles.tourIcon} onClick={() => { setTip(false); startTour(); }} aria-label="Take the full tour" title="Take the full tour">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 4l14 8-14 8z" /></svg>
+                  </button>
+                  {tip && !tourOn && (
+                    <div className={styles.tip} role="status">
+                      <button className={styles.tipX} onClick={() => setTip(false)} aria-label="Dismiss">&times;</button>
+                      <b>Your app is ready</b>
+                      <span>Take the full tour to see every feature.</span>
+                      <button className={styles.tipGo} onClick={() => { setTip(false); startTour(); }}>Take the full tour</button>
+                    </div>
+                  )}
+                </>
               )}
             </div>
 
@@ -787,7 +918,7 @@ export default function LabHome({ brands, apps, proof }) {
             ))}
 
             {/* wallet: voucher and tracking */}
-            <Piece show={[3]} ch={ch} x={0.66} y={-0.22} mx={-0.2} my={-0.62} r={-6} z={80} delay={80}>
+            <Piece show={[3]} ch={ch} x={0.78} y={-0.22} mx={-0.2} my={-0.62} r={-6} z={80} delay={80}>
               <div className={styles.voucher}>
                 <div>
                   <small>Welcome offer</small>
@@ -802,7 +933,7 @@ export default function LabHome({ brands, apps, proof }) {
                 </div>
               </div>
             </Piece>
-            <Piece show={[3]} ch={ch} x={0.6} y={0.24} mx={0.26} my={-0.5} r={3} z={55} delay={260}>
+            <Piece show={[4]} ch={ch} x={0.66} y={-0.05} mx={0} my={-0.55} r={3} z={55} delay={260}>
               <div className={styles.track}>
                 <b>Order #4821</b>
                 <div className={styles.rail}>
@@ -818,6 +949,77 @@ export default function LabHome({ brands, apps, proof }) {
                 </div>
               </div>
             </Piece>
+
+            {/* bundles */}
+            {[0, 1].map((i) =>
+              prods[i + 1] ? (
+                <Piece key={`b${i}`} show={[5]} ch={ch} x={0.82 - i * 0.05} y={-0.2 + i * 0.34} mx={i ? 0.3 : -0.3} my={-0.56} r={i ? 3 : -4} z={60 + i * 30} delay={i * 160}>
+                  <div className={styles.pcard}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={prods[i + 1].image} alt="" />
+                    <span>
+                      <b>+ {prods[i + 1].title}</b>
+                      <small>Added together</small>
+                    </span>
+                  </div>
+                </Piece>
+              ) : null
+            )}
+
+            {/* reviews */}
+            <Piece show={[6]} ch={ch} x={0.82} y={-0.22} mx={-0.2} my={-0.6} r={-3} z={70} delay={100}>
+              <div className={`${styles.note} ${styles.noteWide}`}>
+                <NoteIcon brand={brand} />
+                <span>
+                  <b>&#9733;&#9733;&#9733;&#9733;&#9733; Worth it</b>
+                  <small>Verified buyer</small>
+                </span>
+              </div>
+            </Piece>
+            <Piece show={[6]} ch={ch} x={0.78} y={0.22} mx={0.2} my={-0.46} r={3} z={50} delay={320}>
+              <div className={`${styles.note} ${styles.noteWide}`}>
+                <NoteIcon brand={brand} />
+                <span>
+                  <b>4.8 average</b>
+                  <small>From your reviews app</small>
+                </span>
+              </div>
+            </Piece>
+
+            {/* loyalty */}
+            <Piece show={[7]} ch={ch} x={0.8} y={-0.2} mx={-0.2} my={-0.6} r={-5} z={80} delay={100}>
+              <div className={styles.voucher}>
+                <div>
+                  <small>Your points</small>
+                  <b>1,240</b>
+                  <code>Insider tier</code>
+                </div>
+                <div className={styles.stub}>
+                  <small>Next reward</small>
+                  <b>260 to go</b>
+                </div>
+              </div>
+            </Piece>
+
+            {/* support */}
+            <Piece show={[8]} ch={ch} x={0.88} y={-0.24} mx={-0.2} my={-0.62} r={-3} z={70} delay={100}>
+              <div className={`${styles.note} ${styles.noteWide}`}>
+                <NoteIcon brand={brand} />
+                <span>
+                  <b>Where is my order?</b>
+                  <small>Shopper</small>
+                </span>
+              </div>
+            </Piece>
+            <Piece show={[8]} ch={ch} x={0.84} y={0.16} mx={0.24} my={-0.5} r={3} z={50} delay={700}>
+              <div className={`${styles.note} ${styles.noteWide}`}>
+                <NoteIcon brand={brand} />
+                <span>
+                  <b>Out for delivery today</b>
+                  <small>{brand.name}</small>
+                </span>
+              </div>
+            </Piece>
           </div>
         </div>
       </div>
@@ -830,36 +1032,36 @@ export default function LabHome({ brands, apps, proof }) {
             <h1 className={styles.h1}>Your Shopify store, as an app.</h1>
             <p className={styles.lede}>Pick a store, or type yours. The phone becomes that app, and you can use it.</p>
 
-            <div className={styles.chips} role="group" aria-label="Choose a store">
-              {brands.map((b) => (
-                <button
-                  key={b.slug}
-                  className={`${styles.chip} ${slug === b.slug ? styles.chipOn : ""}`}
-                  onClick={() => {
-                    buzz(18);
-                    setSlug(b.slug);
-                  }}
-                  data-cursor="Show"
-                >
-                  <i style={{ background: b.colors.accent || b.colors.primary }} />
-                  {b.name}
-                </button>
-              ))}
-              {custom && (
+            {custom && (
+              <div className={styles.chips} role="group" aria-label="Choose a store">
+                {brands.map((b) => (
+                  <button
+                    key={b.slug}
+                    className={`${styles.chip} ${slug === b.slug ? styles.chipOn : ""}`}
+                    onClick={() => {
+                      buzz(18);
+                      setSlug(b.slug);
+                    }}
+                    data-cursor="Show"
+                  >
+                    <i style={{ background: b.colors.accent || b.colors.primary }} />
+                    {b.name}
+                  </button>
+                ))}
                 <button className={`${styles.chip} ${slug === "yours" ? styles.chipOn : ""}`} onClick={() => setSlug("yours")}>
                   <i style={{ background: custom.colors.accent || custom.colors.primary }} />
                   {custom.name}
                 </button>
-              )}
-            </div>
+              </div>
+            )}
 
-            <form className={styles.form} onSubmit={submit}>
+            <form className={styles.form} onSubmit={openIntake}>
               <label className={styles.field}>
                 <span className={styles.sr}>Your store address</span>
                 <input
+                  ref={inputRef}
                   value={url}
                   onChange={(e) => setUrl(e.target.value)}
-                  onFocus={() => setAsked(true)}
                   placeholder="yourstore.com"
                   inputMode="url"
                   autoCapitalize="none"
@@ -881,12 +1083,12 @@ export default function LabHome({ brands, apps, proof }) {
                   {err}
                 </p>
               )}
-              {asked && !busy && (
-                <div className={styles.check}>
-                  <Turnstile siteKey={SITE_KEY} onVerify={setToken} onExpire={() => setToken(null)} onError={() => setToken(null)} />
-                </div>
+              {note && (
+                <p className={styles.ok} role="status">
+                  {note}
+                </p>
               )}
-              {!asked && <p className={styles.fine}>Reads only your public store pages. Nothing is saved.</p>}
+              {!busy && !note && <p className={styles.fine}>Reads only your public store pages.</p>}
             </form>
 
             {touch && (
@@ -903,7 +1105,7 @@ export default function LabHome({ brands, apps, proof }) {
             )}
             {arMsg && <p className={styles.arNote}>{arMsg}</p>}
 
-            {!touch && (
+            {!touch && custom && slug === "yours" && (
               <div className={styles.qrWrap}>
                 <AppQr path={qrPath} size={120} title="Try it on your phone" hint="Scan to open this app full screen on your own phone." />
               </div>
@@ -958,19 +1160,58 @@ export default function LabHome({ brands, apps, proof }) {
           </div>
         </section>
 
-        {/* 3 wallet */}
         <section className={`${styles.sec} ${styles.copyR}`} data-ch="3">
           <div className={styles.copy}>
-            <p className={styles.kicker}>03 Wallet</p>
-            <h2 className={styles.h2}>Vouchers and tracking in one place.</h2>
-            <p className={styles.p}>Codes save themselves to the app, and every order shows where it is. Customers stop digging through email.</p>
+            <p className={styles.kicker}>03 Offers</p>
+            <h2 className={styles.h2}>Vouchers shoppers actually find.</h2>
+            <p className={styles.p}>Welcome codes, free shipping and gifts live in an Offers tab, one tap from the home screen. No more digging through email.</p>
+          </div>
+        </section>
+
+        <section className={`${styles.sec} ${styles.copyL}`} data-ch="4">
+          <div className={styles.copy}>
+            <p className={styles.kicker}>04 Orders</p>
+            <h2 className={styles.h2}>Every order, tracked in the app.</h2>
+            <p className={styles.p}>Packed, shipped, out today. Customers see where the parcel is without writing to support.</p>
+          </div>
+        </section>
+
+        <section className={`${styles.sec} ${styles.copyR}`} data-ch="5">
+          <div className={styles.copy}>
+            <p className={styles.kicker}>05 Bundles</p>
+            <h2 className={styles.h2}>Frequently bought together, one tap.</h2>
+            <p className={styles.p}>The product page suggests what goes with it and adds the whole set to the cart at once. Bigger baskets, no discount needed.</p>
+          </div>
+        </section>
+
+        <section className={`${styles.sec} ${styles.copyL}`} data-ch="6">
+          <div className={styles.copy}>
+            <p className={styles.kicker}>06 Reviews</p>
+            <h2 className={styles.h2}>Reviews right on the product.</h2>
+            <p className={styles.p}>Ratings and written reviews from your reviews app sit where the decision is made, so fewer shoppers leave to check elsewhere.</p>
+          </div>
+        </section>
+
+        <section className={`${styles.sec} ${styles.copyR}`} data-ch="7">
+          <div className={styles.copy}>
+            <p className={styles.kicker}>07 Loyalty</p>
+            <h2 className={styles.h2}>Points that bring people back.</h2>
+            <p className={styles.p}>Tiers, points and rewards sit in the Account tab. Shoppers see what they have earned and what comes next.</p>
+          </div>
+        </section>
+
+        <section className={`${styles.sec} ${styles.copyL}`} data-ch="8">
+          <div className={styles.copy}>
+            <p className={styles.kicker}>08 Support</p>
+            <h2 className={styles.h2}>Chat with your store, in the app.</h2>
+            <p className={styles.p}>One tap opens a chat with your team, with quick answers for delivery, returns and orders. WhatsApp can sit behind it.</p>
           </div>
         </section>
 
         {/* 4 proof */}
-        <section className={`${styles.sec} ${styles.copyL}`} data-ch="4">
+        <section className={`${styles.sec} ${styles.copyL}`} data-ch="9">
           <div className={styles.copy}>
-            <p className={styles.kicker}>04 Proof</p>
+            <p className={styles.kicker}>09 Proof</p>
             <h2 className={styles.h2}>Real apps, real installs.</h2>
             <p className={styles.p}>Numbers from the live store listings, checked on 20 October 2026.</p>
             <ul className={styles.counters}>
@@ -987,9 +1228,9 @@ export default function LabHome({ brands, apps, proof }) {
         </section>
 
         {/* 5 work */}
-        <section className={`${styles.sec} ${styles.wide}`} data-ch="5">
+        <section className={`${styles.sec} ${styles.wide}`} data-ch="10">
           <div className={styles.workHead}>
-            <p className={styles.kicker}>05 Work</p>
+            <p className={styles.kicker}>10 Work</p>
             <h2 className={styles.h2}>Apps we built and still run.</h2>
           </div>
           <div className={styles.row}>
@@ -1007,16 +1248,6 @@ export default function LabHome({ brands, apps, proof }) {
             <span>Send us your store. We will show you the app before you decide.</span>
             <i aria-hidden="true">&rarr;</i>
           </Link>
-          <footer className={styles.foot}>
-            <span>Bonsify, by FetchSky. Shopify apps, built and run for you.</span>
-            <nav aria-label="More">
-              <Link href="/services">Services</Link>
-              <Link href="/work">Work</Link>
-              <Link href="/integrations">Integrations</Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/contact">Contact</Link>
-            </nav>
-          </footer>
         </section>
 
       </main>
@@ -1053,13 +1284,15 @@ export default function LabHome({ brands, apps, proof }) {
               <span className={styles.fsCap}>{brand.name} app, made with Bonsify</span>
             </div>
             <div className={styles.fsShell}>
-              <Phone statusBar label={`${brand.name} app, full screen`}>
+              <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app, full screen`}>
                 <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews />
               </Phone>
             </div>
-            <div className={styles.fsQr}>
-              <AppQr path={qrPath} tone="dark" size={124} />
-            </div>
+            {brand.slug === "yours" && (
+              <div className={styles.fsQr}>
+                <AppQr path={qrPath} tone="dark" size={124} />
+              </div>
+            )}
             </>
           )}
           <button className={styles.fsClose} onClick={() => setFs(false)}>
@@ -1067,6 +1300,12 @@ export default function LabHome({ brands, apps, proof }) {
           </button>
         </div>
       )}
+
+      {modal && (
+        <StoreModal kind={modal === "notshop" ? "notshopify" : "intake"} values={lead} onChange={setLead} onClose={closeModal} onSubmit={submitModal} busy={busy} />
+      )}
+
+      {tourOn && <Tour step={tour} onStep={(n) => setTour(Math.max(0, Math.min(TOUR.length - 1, n)))} onClose={() => setTour(null)} name={brand.name} onFull={() => { setTour(null); openFs(); }} />}
 
       <div className={styles.cursor} ref={cursorRef} aria-hidden="true" />
     </div>

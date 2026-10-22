@@ -4,7 +4,7 @@ import { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRe
 import { sampleReviews, ago } from "@/lib/reviews";
 import { storeProfile } from "@/lib/storeProfile";
 import { buzz, Svg } from "./appUi";
-import { SizeSheet, AlertSheet, ChatSheet, FilterSheet, CompleteLook, StoresScreen, RewardsScreen, InviteScreen, GiftCardScreen, CardsScreen, CheckoutOptions, Suggest, applyFilters, activeCount, pointsFor, storesFor, EMPTY_FILTERS, SORTS } from "./BrandFeatures";
+import { SizeSheet, AlertSheet, ChatSheet, FilterSheet, CompleteLook, StoresScreen, RewardsScreen, InviteScreen, GiftCardScreen, CheckoutOptions, Suggest, applyFilters, activeCount, pointsFor, storesFor, EMPTY_FILTERS, SORTS } from "./BrandFeatures";
 import fx from "./BrandFeatures.module.css";
 import styles from "./BrandApp.module.css";
 
@@ -61,7 +61,6 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
   const [filters, setFilters] = useState(EMPTY_FILTERS);
   const [sort, setSort] = useState("featured");
   const [store, setStore] = useState(0);
-  const [pay, setPay] = useState("visa");
   const [favBad, setFavBad] = useState(false);
   const scrollRef = useRef(null);
   const rootRef = useRef(null);
@@ -213,7 +212,21 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
         openProduct(Math.min(index, products.length - 1));
       } else if (screen === "splash") {
         setSplash(true);
-      } else go(screen);
+      } else if (screen === "vouchers") go("offers");
+      else if (screen === "chat") {
+        go("home");
+        setModal({ type: "chat" });
+      } else if (screen === "fbt" || screen === "reviews") {
+        go("home");
+        setTab("home");
+        openProduct(Math.min(index, products.length - 1));
+        setTimeout(() => {
+          const el = rootRef.current?.querySelector(`[data-feature="${screen}"]`);
+          const sc = scrollRef.current;
+          if (el && sc) sc.scrollTo({ top: Math.max(0, el.offsetTop - 70), behavior: "smooth" });
+        }, 520);
+      } else if (["notifications", "rewards", "invite", "giftcards", "wishlist", "stores", "addresses"].includes(screen)) openSub(screen);
+      else go(screen);
     },
     add(index = 0) {
       addToCart(Math.min(index, products.length - 1), undefined, undefined, true);
@@ -257,13 +270,12 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
     "--b-body": brand.fonts?.body ? `"${brand.fonts.body}", var(--sans)` : "var(--sans)",
   };
 
-  const visibleProducts = collection
-    ? products.filter((p) => (p.type || "").toLowerCase() === collection.toLowerCase())
-    : products;
+  const skin = brand.slug === "highfy";
+  const visibleProducts = collection ? matchCollection(products, collection) : products;
 
   return (
     <div
-      className={styles.app}
+      className={`${styles.app} ${skin ? styles.hf : ""}`}
       style={theme}
       ref={rootRef}
       data-interactive={interactive ? "true" : "false"}
@@ -276,8 +288,12 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
         </div>
       )}
 
-      <header className={styles.top}>
-        {productIdx != null || collection || sub ? (
+      <header className={`${styles.top} ${skin ? styles.topHf : ""}`}>
+        {skin && productIdx == null && !collection && !sub ? (
+          <button className={styles.iconBtn} aria-label="Menu" onClick={() => go("account")}>
+            <Svg name="menu" />
+          </button>
+        ) : productIdx != null || collection || sub ? (
           <button className={styles.iconBtn} onClick={() => {
               setDir("back");
               buzz(16);
@@ -297,7 +313,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
         )}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         {brand.logo ? <img src={brand.logo} alt={brand.name} className={styles.logo} /> : <strong className={styles.wordmark}>{brand.name}</strong>}
-        <button className={styles.iconBtn} ref={bagRef} onClick={() => go("cart")} aria-label={`Cart, ${cartCount} items`}>
+        <button className={`${styles.iconBtn} ${skin ? styles.bagHf : ""}`} ref={bagRef} onClick={() => go("cart")} aria-label={`Cart, ${cartCount} items`}>
           <Svg name="bag" />
           {cartCount > 0 && (
             <span key={bump} className={styles.badge}>
@@ -305,6 +321,12 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
             </span>
           )}
         </button>
+        {skin && tab === "home" && productIdx == null && !collection && !sub && (
+          <button className={styles.hfSearch} onClick={() => { go("shop"); setFocusSearch((n) => n + 1); }}>
+            <Svg name="search" size={20} />
+            <span>What can we help you find</span>
+          </button>
+        )}
       </header>
 
       <div
@@ -341,6 +363,8 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
           />
         ) : tab === "home" ? (
           <HomeScreen
+            hf={skin}
+            onGo={go}
             brand={brand}
             auto={interactive}
             onSearch={() => {
@@ -392,7 +416,6 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
             onClear={() => setCart([])}
             profile={profile}
             store={store}
-            pay={pay}
             onPlaced={(lines, total, mode) => setOrders((o) => [{ id: 1000 + Math.floor(Math.random() * 8999), at: Date.now(), lines, total, mode }, ...o])}
             onOrders={() => openSub("orders")}
           />
@@ -400,7 +423,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
           <AccountScreen
             brand={brand}
             money={money}
-            sub={sub}
+            sub={tab === "offers" ? "vouchers" : tab === "orders" ? "orders" : sub}
             onSub={openSub}
             wished={wished}
             onWish={toggleWish}
@@ -412,8 +435,6 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
             alerts={alerts}
             store={store}
             setStore={setStore}
-            pay={pay}
-            setPay={setPay}
             onAddGift={addGift}
           />
         )}
@@ -423,25 +444,37 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
       {productIdx == null && (
         <nav className={styles.tabs} aria-label="App sections">
           {[
-            ["home", "Home", "home"],
             ["shop", "Shop", "grid"],
-            ["cart", "Cart", "bag"],
+            ["offers", "Offers", "tag"],
+            ["home", "Home", "home"],
+            ["orders", "Orders", "box"],
             ["account", "Account", "user"],
-          ].map(([id, label, icon]) => (
-            <button key={id} className={`${styles.tab} ${tab === id ? styles.tabOn : ""}`} onClick={() => { if (id !== tab) buzz(16); go(id); }} aria-current={tab === id ? "page" : undefined}>
-              <span className={styles.tabIco}>
-                {id === "shop" && brand.icon && !favBad ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={brand.icon} alt="" className={styles.tabFav} onError={() => setFavBad(true)} />
-                ) : (
+          ].map(([id, label, icon]) => {
+            const on = tab === id && !(id === "account" && false);
+            if (id === "home")
+              return (
+                <button key={id} className={`${styles.tab} ${styles.tabHome} ${on ? styles.tabOn : ""}`} onClick={() => { if (id !== tab) buzz(16); go(id); }} aria-current={on ? "page" : undefined} aria-label="Home">
+                  <span className={styles.homeBtn}>
+                    {brand.icon && !favBad ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={brand.icon} alt="" onError={() => setFavBad(true)} />
+                    ) : (
+                      <Svg name="home" size={26} />
+                    )}
+                  </span>
+                  <span>{label}</span>
+                </button>
+              );
+            return (
+              <button key={id} className={`${styles.tab} ${on ? styles.tabOn : ""}`} onClick={() => { if (id !== tab) buzz(16); go(id); }} aria-current={on ? "page" : undefined}>
+                <span className={styles.tabIco}>
                   <Svg name={icon} size={22} />
-                )}
-                {id === "cart" && cartCount > 0 && <b className={styles.tabBadge}>{cartCount}</b>}
-                {id === "account" && wished.length > 0 && <i className={styles.tabDot} />}
-              </span>
-              <span>{label}</span>
-            </button>
-          ))}
+                  {id === "account" && wished.length > 0 && <i className={styles.tabDot} />}
+                </span>
+                <span>{label}</span>
+              </button>
+            );
+          })}
         </nav>
       )}
 
@@ -479,7 +512,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
       {!modal && !splash && tab !== "cart" && !sub && (
         <button
           className={`${fx.fab} ${profile.whatsapp ? fx.fabWa : ""} ${productIdx != null ? fx.fabPdp : ""}`}
-          aria-label={profile.whatsapp ? "Chat on WhatsApp" : "Chat with us"}
+          aria-label={`Chat with ${brand.name}`}
           onClick={() => (buzz(16), setModal({ type: "chat" }))}
         >
           <Svg name={profile.whatsapp ? "phone" : "chat"} size={24} />
@@ -523,6 +556,30 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
 });
 
 export default BrandApp;
+
+// Highfy's home categories are broader than the product types, so each maps to a few.
+const HF_CATS = [
+  ["Skincare", "skincare", /serum|moistur|sunscreen|face|cream|skin|toner|cleans/i],
+  ["Makeup", "makeup", /make|lip|foundation|mascara|kajal|blush/i],
+  ["Haircare", "haircare", /hair mask|hair|shampoo|oil|conditioner/i],
+  ["Fragrance", "fragrance", /perfume|fragrance|mist|deo|scent/i],
+  ["Bodycare", "bodycare", /body|shower|wash|lotion|scrub/i],
+  ["Hair Tools", "hair-tools", /brush|tool|dryer|straight|curl|iron/i],
+  ["Nail Care", "nail-care", /nail|polish/i],
+  ["K-Beauty", "k-beauty", /korea|k-?beauty|cosrx|anua|beauty of joseon|skin1004/i],
+];
+
+function matchCollection(products, collection) {
+  const c = collection.toLowerCase();
+  const exact = products.filter((p) => (p.type || "").toLowerCase() === c);
+  if (exact.length) return exact;
+  const cat = HF_CATS.find(([name]) => name.toLowerCase() === c);
+  if (cat) {
+    const hit = products.filter((p) => cat[2].test(`${p.type || ""} ${p.title || ""}`));
+    if (hit.length) return hit;
+  }
+  return products;
+}
 
 // Same-type products first, so "You may also like" feels related.
 function relatedFor(products, idx) {
@@ -609,7 +666,7 @@ function SecHead({ title, onAll, children }) {
   );
 }
 
-function HomeScreen({ brand, money, onOpen, onCollection, onSearch, auto, wished, onWish, recent, onSeeAll }) {
+function HomeScreen({ hf, onGo, brand, money, onOpen, onCollection, onSearch, auto, wished, onWish, recent, onSeeAll }) {
   const [slide, setSlide] = useState(0);
   const bannersRef = useRef(null);
   const touched = useRef(false);
@@ -655,12 +712,16 @@ function HomeScreen({ brand, money, onOpen, onCollection, onSearch, auto, wished
 
   return (
     <div className={styles.home}>
-      <button className={styles.search} onClick={onSearch}>
-        <Svg name="search" size={18} />
-        <span>Search {brand.name}</span>
-      </button>
+      {!hf && (
+        <button className={styles.search} onClick={onSearch}>
+          <Svg name="search" size={18} />
+          <span>Search {brand.name}</span>
+        </button>
+      )}
 
-      {brand.banners.length > 0 ? (
+      {hf && <HighfyTop products={products} onCollection={onCollection} onGo={onGo} />}
+
+      {!hf && brand.banners.length > 0 ? (
         <div className={styles.bannerWrap}>
           <div
             className={styles.banners}
@@ -682,7 +743,7 @@ function HomeScreen({ brand, money, onOpen, onCollection, onSearch, auto, wished
             </div>
           )}
         </div>
-      ) : (
+      ) : hf ? null : (
         products[0] && (
           <button className={styles.hero} onClick={() => onOpen(0)}>
             <span>
@@ -695,15 +756,15 @@ function HomeScreen({ brand, money, onOpen, onCollection, onSearch, auto, wished
         )
       )}
 
-      <div className={styles.reward}>
+      {!hf && <div className={styles.reward}>
         <Svg name="gift" size={26} />
         <span>
           <strong>10% off your first app order</strong>
           <small>Unlocked when you install the app. Code APP10</small>
         </span>
-      </div>
+      </div>}
 
-      {circles.length > 0 && (
+      {!hf && circles.length > 0 && (
         <section>
           <SecHead title="Shop by category" />
           <div className={styles.circles} data-lenis-prevent>
@@ -784,6 +845,49 @@ function HomeScreen({ brand, money, onOpen, onCollection, onSearch, auto, wished
       )}
       <div className={styles.spacer} />
     </div>
+  );
+}
+
+function HighfyTop({ products, onCollection, onGo }) {
+  const [closed, setClosed] = useState(false);
+  return (
+    <>
+      <section>
+        <div className={styles.secHead}>
+          <h3 className={styles.hfH}>Categories</h3>
+          <button className={styles.hfAll} onClick={() => onGo("shop")}>View All &rsaquo;</button>
+        </div>
+        <div className={styles.hfCats}>
+          {HF_CATS.map(([name, file]) => (
+            <button key={name} className={styles.hfCat} onClick={() => onCollection(name)}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/proposals/highfy/app/cat-${file}.webp`} alt="" loading="lazy" />
+              <span>{name}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+      {!closed && (
+        <div className={styles.hfPromo}>
+          <span>
+            <strong>Hi, There</strong>
+            <small>Free shipping on all app orders</small>
+            <small>CODE: APP-FREESHIP</small>
+          </span>
+          <svg width="76" height="62" viewBox="0 0 76 62" fill="none" aria-hidden="true"><path d="M6 50 2 14l20 16L38 4l16 26 20-16-4 36z" fill="#ffb347" stroke="#ff8a1f" strokeWidth="3" strokeLinejoin="round" /><rect x="8" y="50" width="60" height="9" rx="4" fill="#ff8a1f" /></svg>
+          <button className={styles.hfX} aria-label="Dismiss" onClick={() => setClosed(true)}>&times;</button>
+        </div>
+      )}
+      <section>
+        <div className={styles.secHead}>
+          <h3 className={styles.hfH}>Special Offers</h3>
+        </div>
+        <button className={styles.hfSpecial} onClick={() => onGo("shop")}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/proposals/highfy/app/special.webp" alt="Special offer, just Rs 249 for today" />
+        </button>
+      </section>
+    </>
   );
 }
 
@@ -1065,9 +1169,9 @@ function ProductScreen({ brand, product: p, index, money, onAdd, related, onOpen
           </details>
         </div>
 
-        {profile.look && <CompleteLook brand={brand} index={index} label={profile.look} money={money} chosen={chosen} onAddAll={onAddAll} />}
+        <CompleteLook brand={brand} index={index} label={profile.look || "Frequently bought together"} money={money} chosen={chosen} onAddAll={onAddAll} />
 
-        <section className={styles.reviews} ref={reviewsRef}>
+        <section className={styles.reviews} ref={reviewsRef} data-feature="reviews">
           <div className={styles.revHead}>
             <h3 className={styles.h}>Reviews</h3>
             <span className={styles.revScore}>
@@ -1123,9 +1227,9 @@ function ProductScreen({ brand, product: p, index, money, onAdd, related, onOpen
   );
 }
 
-function CartScreen({ brand, cart, money, subtotal, onQty, onBrowse, onClear, onPlaced, onOrders, profile, store, pay }) {
+function CartScreen({ brand, cart, money, subtotal, onQty, onBrowse, onClear, onPlaced, onOrders, profile, store }) {
   const [phase, setPhase] = useState("idle");
-  const [opt, setOpt] = useState({ mode: "ship", gift: false, note: "", pay: pay === "cod" && !profile.cod ? "visa" : pay });
+  const [opt, setOpt] = useState({ mode: "ship", gift: false, note: "" });
   useEffect(() => {
     if (phase !== "busy") return;
     const t = setTimeout(() => {
@@ -1145,8 +1249,8 @@ function CartScreen({ brand, cart, money, subtotal, onQty, onBrowse, onClear, on
         </span>
         <h2>Order placed</h2>
         <p>
-          {opt.pay === "cod" ? "Pay the courier when it arrives. " : opt.mode === "pickup" ? `We will message you when it is ready at ${storesFor(brand, profile)[store]?.name}. ` : ""}
-          This is a demo, so nothing was charged. In the real app, this step opens your Shopify checkout.
+          {opt.mode === "pickup" ? `We will message you when it is ready at ${storesFor(brand, profile)[store]?.name}. ` : ""}
+          This is a demo, so nothing was charged. In the real app, checkout opens in the Shopify Checkout Sheet Kit, so payment stays with Shopify.
         </p>
         <button className={styles.buy} onClick={onBrowse}>
           Keep shopping
@@ -1212,8 +1316,9 @@ function CartScreen({ brand, cart, money, subtotal, onQty, onBrowse, onClear, on
         <strong>-{money(subtotal * 0.1)}</strong>
       </div>
       <button className={`${styles.buy} ${styles.full}`} onClick={() => (buzz(20), setPhase("busy"))} disabled={phase === "busy"}>
-        {phase === "busy" ? <span className={styles.spin} aria-label="Placing order" /> : opt.pay === "cod" ? <>Place order &middot; pay on delivery</> : opt.pay === "Google Pay" || opt.pay === "Apple Pay" ? <>Pay with {opt.pay} &middot; {money(subtotal * 0.9)}</> : <>Checkout {money(subtotal * 0.9)}</>}
+        {phase === "busy" ? <span className={styles.spin} aria-label="Placing order" /> : <>Checkout {money(subtotal * 0.9)}</>}
       </button>
+      <p className={styles.muted} style={{ textAlign: "center" }}>Secure Shopify checkout opens in the app.</p>
       <div className={styles.spacer} />
     </div>
   );
@@ -1238,7 +1343,7 @@ function Tracker({ step }) {
   );
 }
 
-function AccountScreen({ brand, money, sub, onSub, wished, onWish, orders, onOpen, toast, onShop, profile, alerts, store, setStore, pay, setPay, onAddGift }) {
+function AccountScreen({ brand, money, sub, onSub, wished, onWish, orders, onOpen, toast, onShop, profile, alerts, store, setStore, onAddGift }) {
   const products = brand.products;
   const at = (i) => products[i % Math.max(1, products.length)];
   const total = (lines) => lines.reduce((n, l) => n + (l.gift ?? (at(l.i).price || 0)) * (l.qty || 1), 0);
@@ -1288,7 +1393,6 @@ function AccountScreen({ brand, money, sub, onSub, wished, onWish, orders, onOpe
   if (sub === "rewards") return <RewardsScreen brand={brand} money={money} orders={orders} onInvite={() => onSub("invite")} toast={toast} />;
   if (sub === "invite") return <InviteScreen brand={brand} money={money} toast={toast} />;
   if (sub === "giftcards") return <GiftCardScreen brand={brand} money={money} onAdd={onAddGift} toast={toast} />;
-  if (sub === "cards") return <CardsScreen profile={profile} pay={pay} setPay={setPay} toast={toast} />;
   if (sub === "stores" && profile.stores) return <StoresScreen brand={brand} profile={profile} store={store} setStore={setStore} toast={toast} />;
 
   if (sub === "wishlist") {
@@ -1407,7 +1511,6 @@ function AccountScreen({ brand, money, sub, onSub, wished, onWish, orders, onOpe
     ["vouchers", "tag", "Vouchers", "Codes and gifts in one wallet", 3],
     ["giftcards", "gift", "Gift cards", "Send one, or add one to your wallet", null],
     ["invite", "users", "Invite friends", "Give and get a reward", null],
-    ["cards", "card", "Payment methods", profile.cod ? "Cards, wallets and cash on delivery" : "Cards and wallets", null],
     ...(profile.stores ? [["stores", "store", "Stores and pickup", "Find a store, collect your order", null]] : []),
     ["notifications", "bell", "Notifications", "Restocks, drops and price alerts", Object.keys(alerts || {}).length || null],
     ["addresses", "pin", "Addresses", "Saved for one-tap checkout", null],

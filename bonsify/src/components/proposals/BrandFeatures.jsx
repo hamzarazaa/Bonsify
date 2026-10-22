@@ -260,7 +260,7 @@ export function ChatSheet({ brand, profile, onClose, toast }) {
     setTimeout(() => setLog((l) => [...l, { who: "bot", t: a }]), 650);
   };
   return (
-    <Sheet title={wa ? "Chat on WhatsApp" : "Chat with us"} onClose={onClose}>
+    <Sheet title={`Chat with ${brand.name}`} onClose={onClose}>
       <div className={fx.chatHead}>
         <span className={fx.chatAv}>{brand.icon ? /* eslint-disable-next-line @next/next/no-img-element */ <img src={brand.icon} alt="" /> : (brand.name || "A").slice(0, 1)}</span>
         <span>
@@ -497,7 +497,7 @@ export function CompleteLook({ brand, index, label, money, chosen, onAddAll }) {
     );
   };
   return (
-    <section className={fx.look}>
+    <section className={fx.look} data-feature="fbt">
       <h3 className={base.h}>{label}</h3>
       <div className={fx.lookRow} data-lenis-prevent>{[card(index, true), ...picks.map((i) => card(i, false))]}</div>
       <button className={`${base.buy} ${base.full}`} onClick={() => onAddAll(items, chosen)}>
@@ -772,12 +772,6 @@ export function CardsScreen({ profile, pay, setPay, toast }) {
 
 /* ---------- 7, 8, 12. checkout options: gift note, delivery, payment ---------- */
 export function CheckoutOptions({ brand, profile, store, opt, setOpt, money }) {
-  const methods = [
-    { id: "visa", icon: "card", t: "Visa ending 4242", s: "Saved card" },
-    { id: "Google Pay", icon: "wallet", t: "Google Pay", s: "One tap" },
-    { id: "Apple Pay", icon: "wallet", t: "Apple Pay", s: "One tap" },
-    ...(profile.cod ? [{ id: "cod", icon: "cash", t: "Cash on delivery", s: "Pay the courier when it arrives" }] : []),
-  ];
   const st = storesFor(brand, profile)[store] || storesFor(brand, profile)[0];
   return (
     <div className={fx.co}>
@@ -802,20 +796,6 @@ export function CheckoutOptions({ brand, profile, store, opt, setOpt, money }) {
         {opt.gift && (
           <textarea className={fx.giftNote} value={opt.note} onChange={(e) => setOpt({ ...opt, note: e.target.value })} placeholder="Write a short note for the card" maxLength={160} rows={3} aria-label="Gift note" />
         )}
-      </section>
-      <section>
-        <h3 className={base.h}>Pay with</h3>
-        <ul className={fx.cards}>
-          {methods.map((m) => (
-            <li key={m.id}>
-              <button className={opt.pay === m.id ? fx.cardOn : ""} onClick={() => (buzz(14), setOpt({ ...opt, pay: m.id }))} aria-pressed={opt.pay === m.id}>
-                <Svg name={m.icon} size={22} />
-                <span><strong>{m.t}</strong><small>{m.s}</small></span>
-                <i className={fx.radio} />
-              </button>
-            </li>
-          ))}
-        </ul>
       </section>
     </div>
   );

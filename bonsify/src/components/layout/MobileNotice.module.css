@@ -1,0 +1,12 @@
+.back { position: fixed; inset: 0; z-index: 300; display: grid; align-items: end; padding: 14px; background: rgba(12, 14, 16, 0.55); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); animation: fade 0.25s ease both; }
+.card { width: min(440px, 100%); margin: 0 auto; display: grid; gap: 10px; padding: 24px 20px 18px; border-radius: 24px; background: #f6f1e6; color: #14171a; text-align: center; box-shadow: 0 24px 70px -16px rgba(0, 0, 0, 0.55); animation: rise 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.icon { width: 56px; height: 56px; margin: 0 auto; display: grid; place-items: center; border-radius: 50%; background: #14171a; color: #f6f1e6; }
+.card h2 { margin: 4px 0 0; font-size: 22px; letter-spacing: -0.02em; }
+.card p { margin: 0; font-size: 14.5px; line-height: 1.5; color: rgba(20, 23, 26, 0.74); }
+.acts { display: grid; gap: 8px; margin-top: 8px; }
+.share, .go { height: 48px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; }
+.share { border: 0; background: #14171a; color: #f6f1e6; }
+.go { border: 1.5px solid rgba(20, 23, 26, 0.22); background: transparent; color: #14171a; }
+.msg { font-size: 13px !important; color: #17502f !important; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } }

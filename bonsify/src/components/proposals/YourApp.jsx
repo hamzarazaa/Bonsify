@@ -102,7 +102,7 @@ const YourApp = forwardRef(function YourApp({ brand }, ref) {
 
       <div className={styles.stage}>
         <div className={styles.phone}>
-          <Phone statusBar label={`${brand.name} app, interactive preview`}>
+          <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app, interactive preview`}>
             <BrandApp key={run} ref={appRef} brand={brand} />
           </Phone>
           <button className={styles.fsIcon} onClick={() => setFull(true)} aria-label="Open the app full screen" title="Full screen">

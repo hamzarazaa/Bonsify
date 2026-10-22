@@ -1,22 +1,40 @@
-import { INTEGRATION_GROUPS } from "@/lib/integrations";
+import Link from "next/link";
+import { CATEGORIES, appsInCategory } from "@/lib/integrations";
+import AppLogo from "./AppLogo";
 import styles from "./Integrations.module.css";
 
-export default function IntegrationGroups() {
+// Every category with its apps as logo tiles. Each tile opens the app's page,
+// each heading opens the category page.
+export default function IntegrationGroups({ limit = 12 }) {
   return (
-    <div className={styles.grid}>
-      {INTEGRATION_GROUPS.map((g) => (
-        <section key={g.id} className={styles.group} aria-labelledby={`int-${g.id}`}>
-          <h3 id={`int-${g.id}`}>
-            {g.title}
-            <span>{g.apps.length}</span>
-          </h3>
-          <ul className={styles.chips}>
-            {g.apps.map((a) => (
-              <li key={a}>{a}</li>
-            ))}
-          </ul>
-        </section>
-      ))}
+    <div className={styles.cats}>
+      {CATEGORIES.map((c) => {
+        const apps = appsInCategory(c.id);
+        const shown = apps.slice(0, limit);
+        return (
+          <section key={c.id} className={styles.cat} aria-labelledby={`int-${c.id}`}>
+            <header>
+              <h3 id={`int-${c.id}`}>
+                <Link href={`/integration-categories/${c.id}`}>{c.title}</Link>
+              </h3>
+              <p>{c.short}</p>
+            </header>
+            <ul className={styles.tiles}>
+              {shown.map((a) => (
+                <li key={a.slug}>
+                  <Link href={`/integrations/${a.slug}`} className={styles.tile}>
+                    <AppLogo app={a} />
+                    <span>{a.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link href={`/integration-categories/${c.id}`} className={styles.more}>
+              {apps.length > shown.length ? `See all ${apps.length} apps` : `Open ${c.title}`} &rarr;
+            </Link>
+          </section>
+        );
+      })}
     </div>
   );
 }

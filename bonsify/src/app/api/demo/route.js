@@ -109,8 +109,9 @@ export async function POST(request) {
     return Response.json({ brand });
   } catch (e) {
     const m = String(e.message || "");
+    const notShopify = /does not look like a Shopify store|not a Shopify/i.test(m);
     return Response.json(
-      { error: /429|403|blocks/.test(m) ? "That store blocks automated visits. We can still build it, book a call and we will show you." : m || "Could not read that store." },
+      { code: notShopify ? "not_shopify" : undefined, error: /429|403|blocks/.test(m) ? "That store blocks automated visits. We can still build it, book a call and we will show you." : m || "Could not read that store." },
       { status: 422 }
     );
   }

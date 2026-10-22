@@ -1117,3 +1117,74 @@ button.points { background: var(--b-primary) !important; color: var(--b-on-prima
 .toast { left: 0; right: 0; margin: 0 auto; width: max-content; max-width: 88%; transform: none; white-space: normal; text-align: center; animation: none; }
 .tabFav { width: 24px; height: 24px; border-radius: 7px; object-fit: contain; background: #fff; box-shadow: 0 0 0 1px var(--b-line); opacity: 0.75; transition: opacity 0.2s, transform 0.2s; }
 .tabOn .tabFav { opacity: 1; transform: scale(1.08); box-shadow: 0 0 0 2px var(--b-primary); }
+
+/* ---------- five-tab bar with the store icon in the middle ---------- */
+.tabs { grid-template-columns: repeat(5, 1fr); overflow: visible; }
+.tab { min-width: 0; }
+.tabHome { position: relative; }
+.homeBtn {
+  width: 58px;
+  height: 58px;
+  margin-top: -28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 3px solid var(--b-primary);
+  box-shadow: 0 8px 18px -6px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: var(--b-primary);
+}
+.homeBtn img { width: 34px; height: 34px; object-fit: contain; }
+.tabOn .homeBtn { box-shadow: 0 0 0 4px var(--b-tint-2), 0 8px 18px -6px rgba(0, 0, 0, 0.35); transform: translateY(-2px); }
+.tabHome .tabOn svg, .tabHome svg { fill: none; }
+
+/* ---------- Highfy home, close to the store's own app ---------- */
+.hf { --b-tint: #f6ecf9; --b-tint-2: #ead3f1; }
+.topHf {
+  height: auto;
+  padding: 52px 14px 26px;
+  grid-template-rows: auto auto;
+  row-gap: 12px;
+  background: linear-gradient(180deg, #4b0a63 0%, #7d1f9c 60%, #9a3fb8 100%);
+  border-bottom: 0;
+  color: #fff;
+}
+.topHf .logo { filter: brightness(0) invert(1); max-height: 38px; }
+.topHf .iconBtn { color: #fff; background: rgba(255, 255, 255, 0.16); }
+.topHf .badge { background: #ff8a1f; }
+.app .hfSearch {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 14px;
+  background: #fff;
+  color: #9b6fae !important;
+  font-size: 14.5px;
+  width: 100%;
+}
+.hf .body { position: relative; z-index: 6; margin-top: -16px; background: #fff; border-radius: 22px 22px 0 0; }
+.hf .tabs { background: #faf0fc; box-shadow: 0 -8px 24px -14px rgba(75, 10, 99, 0.3); }
+.hfH { font-family: var(--b-head); font-size: 20px; font-weight: 600; letter-spacing: -0.01em; margin-right: auto; }
+.hfAll { font-size: 14px !important; font-weight: 600; color: #ff8a1f !important; }
+.hfCats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; }
+.app .hfCat { display: grid; justify-items: center; gap: 0; border-radius: 16px; background: #f1eef2; overflow: hidden; font-size: 11.5px; color: #333; text-align: center; transition: transform 0.15s; }
+.hfCat:active { transform: scale(0.96); }
+.hfCat img { width: 100%; aspect-ratio: 158 / 128; object-fit: cover; display: block; }
+.hfCat span { padding: 5px 2px 9px; font-size: 11.5px; line-height: 1.15; }
+.hfPromo { position: relative; display: flex; align-items: center; justify-content: space-between; margin: 0 -2px; padding: 18px 16px 18px 20px; border-radius: 18px; color: #fff; background: linear-gradient(100deg, #ff8a1f 0%, #f0661a 45%, #8a2aa8 100%); overflow: hidden; }
+.hfPromo span { display: grid; gap: 3px; }
+.hfPromo strong { font-size: 19px; font-weight: 600; }
+.hfPromo small { font-size: 13.5px; opacity: 0.95; }
+.hfX { position: absolute; top: 4px; right: 8px; font-size: 20px !important; line-height: 1; opacity: 0.9; }
+.app .hfSpecial { display: block; width: 100%; border-radius: 18px; overflow: hidden; }
+.hfSpecial img { width: 100%; display: block; }
+
+.app .tabs { position: relative; z-index: 9; }
+.hf .homeBtn { padding: 0; background: var(--b-primary); border-color: #fff; }
+.hf .homeBtn img { width: 100%; height: 100%; }
+.hf .tabOn .homeBtn { box-shadow: 0 0 0 4px #ead3f1, 0 8px 18px -6px rgba(0, 0, 0, 0.35); }

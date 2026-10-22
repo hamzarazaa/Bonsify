@@ -120,7 +120,7 @@ export default function ProposalShell({ brand, apps }) {
         </nav>
 
         <a className={`btn ${styles.cta}`} href={`/contact?ref=${brand.slug}`}>
-          Book a free audit
+          Get your app now
         </a>
       </header>
 

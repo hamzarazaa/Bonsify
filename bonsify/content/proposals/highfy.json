@@ -6,7 +6,7 @@
   "currency": "PKR",
   "contact": "Ali",
   "logo": "/proposals/highfy/logo.webp",
-  "icon": "/proposals/highfy/icon.webp",
+  "icon": "/proposals/highfy/icon.svg",
   "colors": {
     "primary": "#781890",
     "accent": "#ff9048",

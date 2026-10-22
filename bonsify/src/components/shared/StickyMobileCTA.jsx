@@ -33,7 +33,7 @@ export default function StickyMobileCTA() {
   return (
     <div className={`${styles.bar} ${visible ? styles.visible : ""}`}>
       <Link href="/contact" className={styles.cta}>
-        Book a free audit
+        Get your app now
       </Link>
       <button
         type="button"

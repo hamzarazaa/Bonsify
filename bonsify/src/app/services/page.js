@@ -160,7 +160,7 @@ export default function ServicesIndex() {
       <CTABand
         heading="See what going native would change"
         subtext="Tell us about your Shopify store. We'll give you a straight answer."
-        buttonText="Book a free audit"
+        buttonText="Get your app now"
         buttonHref="/contact"
       />
     </main>

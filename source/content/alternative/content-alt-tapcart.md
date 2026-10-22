@@ -89,4 +89,4 @@ review for the updated binary. There is a transition period, not a blackout.
 ---
 
 *Bonsify is a Shopify services company by FetchSky. Mobile apps, store builds,
-migrations and custom development. [Book a free audit](contact.html).*
+migrations and custom development. [Get your app now](contact.html).*

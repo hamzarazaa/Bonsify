@@ -2,6 +2,7 @@ import LabBranches from "@/components/lab/LabBranches";
 import Link from "next/link";
 import BrandMark from "@/components/shared/BrandMark";
 import { featuredCompetitors, featuredAlternatives } from "@/lib/footerLinks";
+import NewsletterPill from "./NewsletterPill";
 import styles from "./Footer.module.css";
 
 const featuredServices = [
@@ -26,6 +27,8 @@ const featuredCompare = [...featuredCompetitors, ...featuredAlternatives];
 
 export default function Footer() {
   return (
+    <>
+    <NewsletterPill />
     <footer className={`lab-footer ${styles.footer}`}>
       <LabBranches seed="bonsify-footer" strength={0.7} />
       <div className="wrap">
@@ -105,5 +108,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

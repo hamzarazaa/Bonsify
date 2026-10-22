@@ -21,7 +21,7 @@ export default function HomeHero({ proof = [] }) {
           </p>
           <div className={styles.cta}>
             <Link className="btn btn-clay" href="/contact">
-              Book a free audit
+              Get your app now
             </Link>
             <Link className={styles.ghost} href="/work">
               See the apps

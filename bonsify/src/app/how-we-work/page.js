@@ -226,7 +226,7 @@ export default function HowWeWorkPage() {
       <CTABand
         heading="Start with the audit"
         subtext="A small fixed fee, a written answer, and a quote you can hold us to."
-        buttonText="Book a free audit"
+        buttonText="Get your app now"
         buttonHref="/contact"
       />
 

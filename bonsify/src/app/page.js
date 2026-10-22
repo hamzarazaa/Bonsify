@@ -39,7 +39,7 @@ export default function Home() {
       <CTABand
         heading="Let's put your store on the home screen"
         subtext="Tell us about your Shopify store. We'll show you what going native would change."
-        buttonText="Book a free audit"
+        buttonText="Get your app now"
         buttonHref="/contact"
       />
     </main>

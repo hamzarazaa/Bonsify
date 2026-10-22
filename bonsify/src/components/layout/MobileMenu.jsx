@@ -67,11 +67,11 @@ export default function MobileMenu() {
           </Link>
         </nav>
         <Link
-          href="/contact"
+          href={process.env.NEXT_PUBLIC_LAB === "1" ? "/#start" : "/contact"}
           onClick={close}
           className={`btn btn-clay ${styles.cta}`}
         >
-          Book a free audit
+          Get your app now
         </Link>
       </div>
     </>

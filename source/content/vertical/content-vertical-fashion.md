@@ -117,4 +117,4 @@ Fixed quote after a free audit. No percentage of sales, no volume tier jumps.
 
 *Bonsify is a Shopify services company by FetchSky. Mobile apps are the specialty;
 store builds, migrations, custom development and optimization are the full stack.
-[Book a free audit](contact.html).*
+[Get your app now](contact.html).*
