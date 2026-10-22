@@ -10,3 +10,5 @@
 .cap { position: absolute; left: 0; right: 0; bottom: 12px; text-align: center; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fsc); opacity: 0.4; }
 .qr { position: absolute; left: clamp(16px, 3vw, 48px); bottom: clamp(16px, 4vh, 40px); z-index: 3; }
 @media (max-width: 900px) { .word { display: none; } }
+
+.tourBtn { position: absolute; z-index: 5; top: max(12px, env(safe-area-inset-top)); right: 92px; padding: 9px 16px; border: 0; border-radius: 999px; background: rgba(244, 239, 228, 0.92); color: #14171a; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }

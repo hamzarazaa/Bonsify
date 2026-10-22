@@ -11,7 +11,7 @@ import styles from "./FullApp.module.css";
 // The app on its own: a big phone on a quiet backdrop, the browser asked to go
 // full screen, and a QR code to carry the same app over to a real phone. On a
 // touch device the app fills the screen itself instead of sitting in a shell.
-export default function FullApp({ brand, qrPath, onClose, liveReviews = false }) {
+export default function FullApp({ brand, qrPath, onClose, liveReviews = false, appRef, onTour, children }) {
   const [touch, setTouch] = useState(false);
   const [box, setBox] = useState({ s: 1, x: 0, y: 0 });
   const entered = useRef(false);
@@ -50,7 +50,7 @@ export default function FullApp({ brand, qrPath, onClose, liveReviews = false })
     <div className={styles.fs} role="dialog" aria-label={`${brand.name} app, full screen`} style={{ "--fsc": tint }}>
       {touch ? (
         <div className={styles.fsApp} style={{ transform: `scale(${box.s})`, left: box.x, top: box.y }}>
-          <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews={liveReviews} />
+          <BrandApp key={`fs-${brand.slug}`} ref={appRef} brand={brand} liveReviews={liveReviews} />
         </div>
       ) : (
         <>
@@ -64,7 +64,7 @@ export default function FullApp({ brand, qrPath, onClose, liveReviews = false })
           </div>
           <div className={styles.shell}>
             <Phone statusBar statusTone={brand.slug === "highfy" ? "light" : "dark"} label={`${brand.name} app, full screen`}>
-              <BrandApp key={`fs-${brand.slug}`} brand={brand} liveReviews={liveReviews} />
+              <BrandApp key={`fs-${brand.slug}`} ref={appRef} brand={brand} liveReviews={liveReviews} />
             </Phone>
           </div>
           {qrPath && (
@@ -74,9 +74,15 @@ export default function FullApp({ brand, qrPath, onClose, liveReviews = false })
           )}
         </>
       )}
+      {onTour && (
+        <button className={styles.tourBtn} onClick={onTour}>
+          Take the tour
+        </button>
+      )}
       <button className={styles.close} onClick={onClose}>
         Close
       </button>
+      {children}
     </div>
   );
 }

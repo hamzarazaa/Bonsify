@@ -31,3 +31,7 @@
   .controls { justify-content: center; }
   .brand img { height: 52px; }
 }
+
+/* While the walkthrough runs, everything but the phone fades back. */
+.touring .hero, .touring .copy { opacity: 0.12; pointer-events: none; transition: opacity 0.3s; }
+.hero, .copy { transition: opacity 0.3s; }
