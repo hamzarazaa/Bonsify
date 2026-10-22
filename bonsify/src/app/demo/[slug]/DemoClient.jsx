@@ -12,7 +12,6 @@ import styles from "./demo.module.css";
 export default function DemoClient({ brand, video }) {
   const appRef = useRef(null);
   const phoneRef = useRef(null);
-  const [run, setRun] = useState(0);
   const [full, setFull] = useState(false);
   const [tour, setTour] = useState(null); // step number while the tour runs
   const tourOn = tour != null;
@@ -53,16 +52,16 @@ export default function DemoClient({ brand, video }) {
           <h2>Try the {video.who} app yourself</h2>
           <p>
             This is the same app from the video, built from your public store data: your logo, colours, products and
-            prices. Tap through products, the bag and checkout, or press play and watch it run.
+            prices. Tap through products, the bag and checkout, or press Walk me through.
           </p>
           <div className={styles.controls}>
             <button className={styles.play} onClick={tourOn ? () => setTour(null) : startTour}>
-              <span aria-hidden="true">{tourOn ? "❚❚" : "▶"}</span> {tourOn ? "Stop the tour" : "Play the tour"}
-            </button>
-            <button className={styles.ghost} onClick={() => { setTour(null); setRun((r) => r + 1); }}>
-              Restart the app
+              <span aria-hidden="true">{tourOn ? "❚❚" : "▶"}</span> {tourOn ? "Stop the walkthrough" : "Walk me through"}
             </button>
             <button className={styles.ghost} onClick={() => { setTour(null); setFull(true); }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
+              </svg>
               Full screen
             </button>
           </div>
@@ -71,7 +70,7 @@ export default function DemoClient({ brand, video }) {
         </div>
         <div className={styles.phone} ref={phoneRef}>
           <Phone statusBar label={`${brand.name} app, interactive preview`}>
-            <BrandApp key={run} ref={appRef} brand={brand} liveReviews />
+            <BrandApp ref={appRef} brand={brand} liveReviews />
           </Phone>
           <button className={styles.fsIcon} onClick={() => { setTour(null); setFull(true); }} aria-label="Open the app full screen" title="Full screen">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
