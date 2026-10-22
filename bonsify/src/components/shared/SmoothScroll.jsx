@@ -15,6 +15,7 @@ export default function SmoothScroll() {
     if (reduce) return;
 
     const lenis = new Lenis();
+    window.__lenis = lenis;
     lenis.on("scroll", ScrollTrigger.update);
 
     function raf(time) {
@@ -25,6 +26,7 @@ export default function SmoothScroll() {
 
     return () => {
       gsap.ticker.remove(raf);
+      if (window.__lenis === lenis) window.__lenis = null;
       lenis.destroy();
     };
   }, []);

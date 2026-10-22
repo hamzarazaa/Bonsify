@@ -8,9 +8,16 @@ import HomeProcess from "@/components/home/HomeProcess";
 import HomeIntegrations from "@/components/home/HomeIntegrations";
 import { getShowcaseApps } from "@/lib/showcase";
 import { pageMetadata } from "@/lib/metadata";
-import LabPage, { metadata as labMetadata } from "./lab/page";
+import LabHome from "@/components/lab/LabHome";
+import { getLabBrands } from "@/lib/lab";
 
 const LAB = process.env.NEXT_PUBLIC_LAB === "1";
+
+const labMetadata = {
+  title: "Bonsify lab",
+  description: "An interactive preview of the Bonsify site.",
+  robots: { index: false, follow: false },
+};
 
 export const metadata = LAB ? labMetadata : pageMetadata({
   title: "Bonsify - Shopify Mobile Apps, Done For You | Beyond the Browser",
@@ -20,13 +27,13 @@ export const metadata = LAB ? labMetadata : pageMetadata({
 });
 
 export default function Home() {
-  if (LAB) return <LabPage />;
   const apps = getShowcaseApps();
   // Real store-listing numbers (see showcase.js). Only shown for apps that have them.
   const proof = [
     ...(apps.find((a) => a.proof)?.proof || []),
     { big: String(apps.length), label: "apps live under Bonsify, built and maintained" },
   ];
+  if (LAB) return <LabHome brands={getLabBrands()} apps={apps} proof={proof} />;
   return (
     <main>
       <HomeHero proof={proof} />

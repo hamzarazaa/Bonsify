@@ -6,11 +6,12 @@ import { usePathname } from "next/navigation";
 import BrandMark from "@/components/shared/BrandMark";
 import ServicesDropdown from "@/components/layout/ServicesDropdown";
 import IndustriesDropdown from "@/components/layout/IndustriesDropdown";
+import IntegrationsDropdown from "@/components/layout/IntegrationsDropdown";
 import CompanyDropdown from "@/components/layout/CompanyDropdown";
 import MobileMenu from "@/components/layout/MobileMenu";
 import styles from "./Header.module.css";
 
-export default function Header({ serviceGroups, industries }) {
+export default function Header({ serviceGroups, industries, integrations }) {
   const [scrolled, setScrolled] = useState(false);
   const [onDark, setOnDark] = useState(false);
   const [labHome, setLabHome] = useState(false);
@@ -60,9 +61,9 @@ export default function Header({ serviceGroups, industries }) {
         <div className={styles.navLink}>
           <IndustriesDropdown industries={industries} />
         </div>
-        <Link className={styles.navLink} href="/integrations">
-          Integrations
-        </Link>
+        <div className={styles.navLink}>
+          <IntegrationsDropdown {...(integrations || {})} />
+        </div>
         <div className={styles.navLink}>
           <CompanyDropdown />
         </div>
@@ -71,7 +72,7 @@ export default function Header({ serviceGroups, industries }) {
         </Link>
         <Link
           className={`${styles.btn} ${styles.btnClay} ${styles.navCta}`}
-          href={labSite ? "/#start" : "/contact"}
+          href="/contact"
         >
           Get your app now
         </Link>

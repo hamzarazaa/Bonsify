@@ -5,12 +5,15 @@ const nextConfig = {
   async rewrites() {
     return [{ source: "/admin", destination: "/admin/index.html" }];
   },
-  // The lab copy of the site must never be indexed. /lab is private on the
-  // main site too.
+  // The old /lab preview is gone: everything lives on the home page now.
+  async redirects() {
+    return [{ source: "/lab", destination: "/", permanent: true }];
+  },
+  // The lab copy of the site must never be indexed.
   async headers() {
     const lab = process.env.NEXT_PUBLIC_LAB === "1";
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
-    return lab ? [{ source: "/:path*", headers: noindex }] : [{ source: "/lab", headers: noindex }];
+    return lab ? [{ source: "/:path*", headers: noindex }] : [];
   },
 };
 

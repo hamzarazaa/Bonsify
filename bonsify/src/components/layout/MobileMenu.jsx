@@ -67,7 +67,7 @@ export default function MobileMenu() {
           </Link>
         </nav>
         <Link
-          href={process.env.NEXT_PUBLIC_LAB === "1" ? "/#start" : "/contact"}
+          href="/contact"
           onClick={close}
           className={`btn btn-clay ${styles.cta}`}
         >

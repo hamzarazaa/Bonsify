@@ -1,3 +1,4 @@
+import { CATEGORIES, APPS, INTEGRATION_COUNT, appsInCategory, appBySlug } from "@/lib/integrations";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 import { Inter, Archivo } from "next/font/google";
 import Script from "next/script";
@@ -90,6 +91,12 @@ function curateNavServiceGroups(all) {
 export default function RootLayout({ children }) {
   const serviceGroups = curateNavServiceGroups(getCategoryEntries("services"));
   const industries = getCategoryEntries("industries");
+  const popularNames = ["Klaviyo", "Recharge", "Judge.me", "Yotpo", "Gorgias", "Okendo", "Smile.io", "Loop Returns"];
+  const integrationsMenu = {
+    categories: CATEGORIES.map((c) => ({ id: c.id, title: c.title, count: appsInCategory(c.id).length })),
+    popular: popularNames.map((n) => APPS.find((a) => a.name.toLowerCase() === n.toLowerCase())).filter(Boolean).map((a) => ({ name: a.name, slug: a.slug })),
+    total: INTEGRATION_COUNT,
+  };
   const protoUrls = getShowcaseApps().map((a) => a.prototype).filter(Boolean);
 
   return (
@@ -111,7 +118,7 @@ export default function RootLayout({ children }) {
           <SmoothScroll />
         </SiteChrome>
         <SiteChrome keepOnLabHome>
-          <Header serviceGroups={serviceGroups} industries={industries} />
+          <Header serviceGroups={serviceGroups} industries={industries} integrations={integrationsMenu} />
         </SiteChrome>
         <link rel="preconnect" href="https://embed.figma.com" />
         <link rel="dns-prefetch" href="https://www.figma.com" />

@@ -60,7 +60,7 @@ export default function StoreModal({ kind, values, onChange, onClose, onSubmit, 
         )}
         <label>
           <span>Your name</span>
-          <input ref={first} value={values.name} onChange={set("name")} autoComplete="name" placeholder="Ayesha Khan" />
+          <input ref={first} value={values.name} onChange={set("name")} autoComplete="name" placeholder="Jordan Rivera" />
         </label>
         <label>
           <span>Email</span>
