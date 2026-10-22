@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./MobileNotice.module.css";
 
 const KEY = "bonsify_mobile_notice";
@@ -13,8 +14,15 @@ export default function MobileNotice() {
   const [open, setOpen] = useState(false);
   const [msg, setMsg] = useState("");
   const [canShare, setCanShare] = useState(false);
+  const pathname = usePathname();
+  // Phone preview links (/try/...) are made for phones, so no note there.
+  const onTry = pathname?.startsWith("/try");
 
   useEffect(() => {
+    if (onTry) {
+      setOpen(false);
+      return;
+    }
     try {
       if (sessionStorage.getItem(KEY)) return;
     } catch {}
@@ -23,7 +31,7 @@ export default function MobileNotice() {
     setCanShare(typeof navigator.share === "function");
     const t = setTimeout(() => setOpen(true), 1200);
     return () => clearTimeout(t);
-  }, []);
+  }, [onTry]);
 
   const close = () => {
     setOpen(false);

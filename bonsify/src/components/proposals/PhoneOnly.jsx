@@ -8,11 +8,10 @@ import styles from "./PhoneOnly.module.css";
 // What a prospect sees after scanning the QR code: the app, filling their
 // phone's screen. The browser is asked for full screen on the first tap (phones
 // only allow it after a touch); where that is not possible (iPhone Safari) a
-// hint explains Add to Home Screen, which opens the app without browser bars.
+// there is no prompt; the app simply fills the screen.
 export default function PhoneOnly({ brand, liveReviews = false }) {
   const [box, setBox] = useState({ s: 1, x: 0, y: 0 });
   const [fsOn, setFsOn] = useState(false);
-  const [hint, setHint] = useState(false);
   const tried = useRef(false);
 
   useEffect(() => {
@@ -26,8 +25,6 @@ export default function PhoneOnly({ brand, liveReviews = false }) {
     window.addEventListener("resize", fit);
     window.addEventListener("orientationchange", fit);
     const off = onFullscreenChange(setFsOn);
-    const standalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone;
-    if (!standalone && !canFullscreen()) setHint(true);
     // First touch anywhere asks the browser for full screen.
     const first = () => {
       if (tried.current) return;
@@ -48,14 +45,6 @@ export default function PhoneOnly({ brand, liveReviews = false }) {
       <div className={styles.app} style={{ transform: `scale(${box.s})`, left: box.x, top: box.y }}>
         <BrandApp brand={brand} liveReviews={liveReviews} />
       </div>
-      {hint && (
-        <p className={styles.hint}>
-          For the full experience, tap Share, then Add to Home Screen.
-          <button onClick={() => setHint(false)} aria-label="Dismiss">
-            ×
-          </button>
-        </p>
-      )}
       {canFullscreen() && !fsOn && (
         <button className={styles.fsBtn} onClick={() => enterFullscreen()} aria-label="Full screen">
           Full screen
