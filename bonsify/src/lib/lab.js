@@ -53,13 +53,18 @@ const COLOUR_FIX = {
   gymshark: { primary: "#181818", accent: "#bf2e35", onPrimary: "#ffffff" },
 };
 
-export function getLabBrands() {
+// Stores made for one prospect's demo page. They open at /try/<slug> and
+// /demo/<slug> but are not offered in the lab home brand switcher.
+const HIDDEN = new Set(["gulahmed"]);
+
+export function getLabBrands({ all = false } = {}) {
   const out = [];
   const highfy = getProposal("highfy");
   if (highfy) out.push(trimBrand({ ...highfy, slug: "highfy" }));
   if (fs.existsSync(DIR)) {
     for (const f of fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort()) {
       const slug = f.replace(/\.json$/, "");
+      if (!all && HIDDEN.has(slug)) continue;
       try {
         const raw = JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8"));
         const b = trimBrand({ ...raw, slug });

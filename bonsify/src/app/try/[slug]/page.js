@@ -9,7 +9,7 @@ import { googleFontsHref } from "@/lib/proposalFonts";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [...getLabBrands().map((b) => ({ slug: b.slug })), { slug: "custom" }];
+  return [...getLabBrands({ all: true }).map((b) => ({ slug: b.slug })), { slug: "custom" }];
 }
 
 export const metadata = {
@@ -24,7 +24,7 @@ export const viewport = { viewportFit: "cover", width: "device-width", initialSc
 export default async function TryPage({ params }) {
   const { slug } = await params;
   if (slug === "custom") return <CustomTry />;
-  const brand = getLabBrands().find((b) => b.slug === slug);
+  const brand = getLabBrands({ all: true }).find((b) => b.slug === slug);
   if (!brand) notFound();
   const href = googleFontsHref(brand.fonts);
   return (
