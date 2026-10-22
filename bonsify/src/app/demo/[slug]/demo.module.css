@@ -16,9 +16,18 @@
 .copy h2 { font-size: clamp(26px, 3.6vw, 42px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 14px; }
 .copy > p { font-size: 18px; line-height: 1.5; color: rgba(20, 23, 26, 0.75); margin: 0 0 24px; max-width: 520px; }
 .small { font-size: 14px !important; margin-top: 22px !important; }
-.phone { width: min(420px, 86vw); height: min(880px, 92vw * 2.1); display: grid; place-items: center; }
+.phone { position: relative; width: min(420px, 86vw); height: min(880px, 92vw * 2.1); display: grid; place-items: center; }
+.fsIcon { position: absolute; top: 6px; right: -8px; z-index: 3; width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border-radius: 50%; border: 1px solid rgba(20, 23, 26, 0.16); background: rgba(255, 255, 255, 0.9); color: #14171a; cursor: pointer; transition: transform 0.2s; }
+.fsIcon:hover, .fsIcon:focus-visible { background: #fff; transform: scale(1.07); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 22px; }
+.play { display: inline-flex; align-items: center; gap: 10px; font: inherit; font-size: 16px; font-weight: 700; background: #8cc63f; color: #141414; border: 0; border-radius: 999px; padding: 13px 24px; cursor: pointer; }
+.play span { font-size: 12px; }
+.play:hover { filter: brightness(1.05); }
+.ghost { font: inherit; font-size: 15px; font-weight: 600; background: #fff; color: #14171a; border: 1px solid rgba(20, 23, 26, 0.2); border-radius: 999px; padding: 12px 20px; cursor: pointer; }
+.ghost:hover { background: #f4efe4; }
 @media (max-width: 860px) {
   .live { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .copy > p { margin-left: auto; margin-right: auto; }
+  .controls { justify-content: center; }
   .brand img { height: 52px; }
 }
