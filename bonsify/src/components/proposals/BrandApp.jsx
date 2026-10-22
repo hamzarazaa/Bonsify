@@ -1,5 +1,6 @@
 "use client";
 
+import { createPortal } from "react-dom";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react";
 import { sampleReviews, ago } from "@/lib/reviews";
 import { storeProfile } from "@/lib/storeProfile";
@@ -88,6 +89,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
   const [store, setStore] = useState(0);
   const [favBad, setFavBad] = useState(false);
   const scrollRef = useRef(null);
+  const [dock, setDock] = useState(null);
   const rootRef = useRef(null);
   const bagRef = useRef(null);
 
@@ -385,6 +387,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
             onAlert={() => setModal({ type: "alert", pi: productIdx })}
             onSize={(v) => setModal({ type: "size", ...v })}
             onAddAll={addMany}
+            dock={dock}
           />
         ) : tab === "home" ? (
           <HomeScreen
@@ -465,6 +468,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
         )}
         </div>
       </div>
+      <div className={styles.dock} ref={setDock} />
 
       {productIdx == null && (
         <nav className={styles.tabs} aria-label="App sections">
@@ -1038,7 +1042,7 @@ function arrival() {
   return `${f(2)} to ${f(5)}`;
 }
 
-function ProductScreen({ brand, product: p, index, money, onAdd, related, onOpen, wished, onWish, wishedAll, onWishCard, toast, live, profile, store, alert, onAlert, onSize, onAddAll }) {
+function ProductScreen({ brand, product: p, index, money, onAdd, related, onOpen, wished, onWish, wishedAll, onWishCard, toast, live, profile, store, alert, onAlert, onSize, onAddAll, dock }) {
   const [img, setImg] = useState(0);
   const opts = (p.options || []).filter((o) => o.values?.length > 1).slice(0, 2);
   const [choice, setChoice] = useState({});
@@ -1240,6 +1244,7 @@ function ProductScreen({ brand, product: p, index, money, onAdd, related, onOpen
         )}
         <div className={styles.spacerTall} />
       </div>
+      {dock && createPortal(
       <div className={styles.buyBar}>
         <button className={`${styles.wish} ${wished ? styles.wishOn : ""}`} aria-label={wished ? "Remove from wishlist" : "Save to wishlist"} aria-pressed={wished} onClick={onWish}>
           <Svg name={wished ? "heartFill" : "heart"} />
@@ -1247,7 +1252,9 @@ function ProductScreen({ brand, product: p, index, money, onAdd, related, onOpen
         <button className={styles.buy} onClick={(e) => onAdd(index, chosen, e.currentTarget)}>
           Add to cart
         </button>
-      </div>
+      </div>,
+        dock
+      )}
     </div>
   );
 }
