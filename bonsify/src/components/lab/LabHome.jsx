@@ -157,6 +157,22 @@ function Countdown() {
 }
 
 /* ---------- main ---------- */
+/* Load the images a generated app shows first, waiting at most ~5s in total. */
+function preloadBrand(b) {
+  const urls = [b.logo, b.icon, ...(b.banners || []).slice(0, 3), ...(b.products || []).slice(0, 8).map((p) => p.image)].filter(
+    (u) => typeof u === "string" && u,
+  );
+  const jobs = urls.map(
+    (u) =>
+      new Promise((res) => {
+        const im = new Image();
+        im.onload = im.onerror = () => res();
+        im.src = u;
+      }),
+  );
+  return Promise.race([Promise.all(jobs), new Promise((res) => setTimeout(res, 5000))]);
+}
+
 export default function LabHome({ brands, apps, proof }) {
   const [slug, setSlug] = useState(brands[0]?.slug);
   const [custom, setCustom] = useState(null);
@@ -677,6 +693,8 @@ export default function LabHome({ brands, apps, proof }) {
       } catch {
         made = { ...d.brand, products: d.brand.products.slice(0, 12), banners: d.brand.banners.slice(0, 3) };
       }
+      // Warm the browser cache so the logo, icon and first photos are there the moment the app shows.
+      await preloadBrand(made);
       setCustom(made);
       setSlug("yours");
       buzz([24, 50, 36]);

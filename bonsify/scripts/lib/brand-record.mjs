@@ -9,6 +9,8 @@ const sized = (u, w) => {
   if (/cdn\.shopify\.com|\/cdn\/shop\//.test(u)) {
     try {
       const x = new URL(u);
+      x.searchParams.delete('height');
+      x.searchParams.delete('crop');
       x.searchParams.set('width', String(w));
       return x.href;
     } catch {}
