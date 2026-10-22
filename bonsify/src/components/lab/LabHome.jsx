@@ -14,7 +14,6 @@ import { saveLead, brandGuess } from "@/lib/leads";
 import BonsifyLoader from "@/components/proposals/BonsifyLoader";
 import BonsaiArt from "./BonsaiArt";
 import { curateBrand } from "@/lib/curate";
-import { makeScreenTexture } from "@/lib/arTexture";
 import styles from "./LabHome.module.css";
 
 /* ---------- small helpers ---------- */
@@ -171,9 +170,6 @@ export default function LabHome({ brands, apps, proof }) {
   const [err, setErr] = useState("");
   const [needsTiltTap, setNeedsTiltTap] = useState(false);
   const [touch, setTouch] = useState(false);
-  const [arLib, setArLib] = useState(false);
-  const [arCan, setArCan] = useState(null);
-  const [arMsg, setArMsg] = useState("");
   const [fs, setFs] = useState(false);
   const [act, setAct] = useState(0);
   const [modal, setModal] = useState(null); // "intake" | "notshop"
@@ -181,6 +177,8 @@ export default function LabHome({ brands, apps, proof }) {
   const [note, setNote] = useState("");
   const [tip, setTip] = useState(false);
   const fsAppRef = useRef(null);
+  const [today, setToday] = useState("today");
+  useEffect(() => setToday(new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })), []);
   const [tour, setTour] = useState(null); // step number while the tour runs
   const leadSent = useRef(false);
 
@@ -197,7 +195,6 @@ export default function LabHome({ brands, apps, proof }) {
   const firstWipe = useRef(true);
   const lastBrand = useRef(brand.slug);
   const reduced = useRef(false);
-  const mvRef = useRef(null);
 
   useEffect(() => {
     reduced.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -568,6 +565,14 @@ export default function LabHome({ brands, apps, proof }) {
     }
   };
 
+  /* iOS asks for motion access only from a tap, so the first tap does it. */
+  useEffect(() => {
+    if (!needsTiltTap) return;
+    const once = () => enableTilt();
+    window.addEventListener("pointerdown", once, { once: true });
+    return () => window.removeEventListener("pointerdown", once);
+  }, [needsTiltTap]);
+
   /* custom cursor ring (mouse only) */
   const cursorRef = useRef(null);
   useEffect(() => {
@@ -694,65 +699,6 @@ export default function LabHome({ brands, apps, proof }) {
   const goTo = (i) => {
     buzz(14);
     goRef.current ? goRef.current(i) : rootRef.current.querySelector(`main [data-ch="${i}"]`)?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  /* AR: on phones only. Google's model-viewer loads after the page settles and
-     one hidden copy per store is used to open AR from the button. */
-  useEffect(() => {
-    if (!touch) return;
-    const t = setTimeout(() => {
-      if (customElements.get("model-viewer")) return setArLib(true);
-      const sc = document.createElement("script");
-      sc.type = "module";
-      sc.src = "https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js";
-      sc.onload = () => customElements.whenDefined("model-viewer").then(() => setArLib(true));
-      document.head.appendChild(sc);
-    }, 2500);
-    return () => clearTimeout(t);
-  }, [touch]);
-
-  useEffect(() => {
-    if (!arLib) return;
-    setArCan(null);
-    const mv = mvRef.current;
-    if (!mv) return;
-    let dead = false;
-    const ready = async () => {
-      if (dead) return;
-      if (brand.slug === "yours") {
-        try {
-          const url = await makeScreenTexture(brand);
-          const tex = await mv.createTexture(url);
-          const m = mv.model?.materials?.[1];
-          m?.pbrMetallicRoughness?.baseColorTexture?.setTexture(tex);
-          m?.emissiveTexture?.setTexture(tex);
-        } catch {}
-      }
-      // The AR mode is picked a moment after the model loads, so wait for it.
-      for (let i = 0; i < 20 && !dead && !mv.canActivateAR; i++) await new Promise((r) => setTimeout(r, 250));
-      if (!dead) setArCan(!!mv.canActivateAR);
-    };
-    mv.addEventListener("load", ready);
-    if (mv.loaded) ready();
-    return () => {
-      dead = true;
-      mv.removeEventListener("load", ready);
-    };
-  }, [arLib, brand]);
-
-  const openAr = async () => {
-    buzz(22);
-    const mv = mvRef.current;
-    if (!mv) return;
-    setArMsg("Opening AR...");
-    // Give the viewer a moment if it is still deciding which AR mode to use.
-    for (let i = 0; i < 12 && !mv.canActivateAR; i++) await new Promise((r) => setTimeout(r, 250));
-    if (mv.canActivateAR) {
-      setArMsg("");
-      mv.activateAR();
-    } else {
-      setArMsg("This phone or browser cannot open AR. On Android it needs Chrome with Google Play Services for AR installed.");
-    }
   };
 
   /* full screen app on phones */
@@ -1106,14 +1052,8 @@ export default function LabHome({ brands, apps, proof }) {
                 <button className={styles.btn} onClick={openFs} data-cursor="Go">
                   Full screen
                 </button>
-                {arLib && (
-                  <button className={styles.btnGhost} onClick={openAr}>
-                    Imagine it in your hands
-                  </button>
-                )}
               </div>
             )}
-            {arMsg && <p className={styles.arNote}>{arMsg}</p>}
 
             {!touch && custom && slug === "yours" && (
               <div className={styles.qrWrap}>
@@ -1121,11 +1061,6 @@ export default function LabHome({ brands, apps, proof }) {
               </div>
             )}
 
-            {needsTiltTap && (
-              <button className={styles.tiltBtn} onClick={enableTilt}>
-                Enable tilt
-              </button>
-            )}
           </div>
 
           <div className={styles.ribbon} aria-label="Proof from our live apps">
@@ -1223,7 +1158,7 @@ export default function LabHome({ brands, apps, proof }) {
           <div className={styles.copy}>
             <p className={styles.kicker}>09 Proof</p>
             <h2 className={styles.h2}>Real apps, real installs.</h2>
-            <p className={styles.p}>Numbers from the live store listings, checked on 20 October 2026.</p>
+            <p className={styles.p}>Numbers from the live store listings, checked on {today}.</p>
             <ul className={styles.counters}>
               {proof.map((p) => (
                 <li key={p.label}>
@@ -1261,20 +1196,6 @@ export default function LabHome({ brands, apps, proof }) {
         </section>
 
       </main>
-
-      {touch && arLib && (
-        <model-viewer
-          key={brand.slug}
-          ref={mvRef}
-          src={`/lab/phone-${brand.slug === "yours" ? "highfy" : brand.slug}.glb`}
-          alt={`${brand.name} app on a phone`}
-          ar
-          ar-modes="scene-viewer webxr quick-look"
-          ar-placement="floor"
-          loading="eager"
-          style={{ position: "fixed", left: 0, top: 0, width: 4, height: 4, opacity: 0, pointerEvents: "none" }}
-        />
-      )}
 
       {fs && (
         <div className={styles.fs} role="dialog" aria-label={`${brand.name} app, full screen`}>

@@ -12,11 +12,14 @@ import styles from "./Contact.module.css";
 const TURNSTILE_SITE_KEY =
   process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "1x00000000000000000000AA";
 
+const TOPICS = ["An app for my store", "Move to Shopify", "Fix or maintain my app", "Something else"];
+
 export default function ContactForm() {
   const formRef = useRef(null);
   const [token, setToken] = useState(null);
   const [status, setStatus] = useState("idle"); // idle | submitting | success | error
   const [errorMessage, setErrorMessage] = useState("");
+  const [topic, setTopic] = useState(TOPICS[0]);
 
   // Passed to Turnstile as callback props - kept stable (empty deps) so
   // Turnstile's effect never has a reason to think it should re-render the
@@ -62,10 +65,10 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <p className={styles.success}>
-        Thanks - we&apos;ve got your message and will reply within a day or
-        two.
-      </p>
+      <div className={styles.success}>
+        <b>Got it.</b>
+        <p>A real person will reply within a day or two. If it is urgent, email hello@bonsify.io.</p>
+      </div>
     );
   }
 
@@ -82,8 +85,17 @@ export default function ContactForm() {
       <input
         type="hidden"
         name="_subject"
-        value="New audit request - bonsify.io contact form"
+        value="New enquiry - bonsify.io contact form"
       />
+      <input type="hidden" name="topic" value={topic} />
+      <fieldset className={styles.topics}>
+        <legend>What brings you here?</legend>
+        {TOPICS.map((t) => (
+          <button key={t} type="button" className={t === topic ? styles.topicOn : ""} onClick={() => setTopic(t)} aria-pressed={t === topic}>
+            {t}
+          </button>
+        ))}
+      </fieldset>
       <div className={styles.field}>
         <label htmlFor="name">Your name</label>
         <input id="name" name="name" type="text" placeholder="Jordan Rivera" />
@@ -102,12 +114,12 @@ export default function ContactForm() {
         <input id="email" name="email" type="email" required placeholder="you@yourstore.com" />
       </div>
       <div className={styles.field}>
-        <label htmlFor="msg">What are you hoping an app fixes?</label>
+        <label htmlFor="msg">What should we know?</label>
         <textarea
           id="msg"
           name="message"
           required
-          placeholder="e.g. Most of our traffic is mobile but repeat purchases are low…"
+          placeholder="Most of our traffic is mobile but repeat purchases are low. We use Klaviyo and Judge.me."
         />
       </div>
 
@@ -125,12 +137,12 @@ export default function ContactForm() {
       )}
 
       <button
-        className="btn btn-clay"
+        className={`btn btn-clay ${styles.send}`}
         type="submit"
         disabled={status === "submitting" || !token}
-        style={{ alignSelf: "flex-start", padding: "13px 28px" }}
+        
       >
-        {status === "submitting" ? "Sending…" : "Send it over"}
+        {status === "submitting" ? "Sending..." : "Send it over"}
       </button>
     </form>
   );

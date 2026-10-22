@@ -1,4 +1,4 @@
-.wrap { position: relative; z-index: 2; background: var(--ink); padding: 40px 0 0; }
+.wrap { position: relative; z-index: 2; background: var(--ink); padding: 36px 0; }
 .pill { width: min(1100px, calc(100% - 48px)); margin: 0 auto; display: grid; grid-template-columns: 1.3fr 1fr 1fr auto; align-items: center; gap: 12px; padding: 12px 12px 12px 26px; border-radius: 999px; background: rgba(244, 239, 228, 0.07); border: 1px solid var(--line-dark); }
 .copy { display: grid; gap: 2px; color: var(--bone); }
 .copy b { font-size: 15px; font-weight: 600; }

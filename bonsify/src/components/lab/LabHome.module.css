@@ -329,7 +329,6 @@
 .spin { width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid var(--line); border-top-color: var(--ink); animation: spinning 0.7s linear infinite; }
 @keyframes spinning { to { transform: rotate(360deg); } }
 .check { min-height: 65px; }
-.tiltBtn { justify-self: start; padding: 9px 15px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--chip); color: inherit; font: inherit; font-size: 13px; font-weight: 600; }
 
 /* proof ribbon in the hero */
 .ribbon {
@@ -553,7 +552,6 @@
   .pieceIn, .ribbon > div, .shots img, .voucher::after { animation: none; }
   .shots img:first-child { opacity: 1; }
 }
-.arNote { margin: 0; font-size: 13px; line-height: 1.4; color: var(--mute); }
 
 /* subtle full-screen button beside the phone, for visitors who want to try the app without the moving pieces */
 .fsIcon { position: absolute; top: 12px; right: -44px; z-index: 3; width: 34px; height: 34px; display: grid; place-items: center; padding: 0; border-radius: 50%; border: 1px solid var(--line); background: var(--chip); color: inherit; cursor: pointer; opacity: 0.5; transition: opacity 0.2s, transform 0.2s; }

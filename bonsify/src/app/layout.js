@@ -1,3 +1,4 @@
+import ScrollToTop from "@/components/layout/ScrollToTop";
 import { Inter, Archivo } from "next/font/google";
 import Script from "next/script";
 import MobileNotice from "@/components/layout/MobileNotice";
@@ -96,9 +97,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${archivo.variable}`}
       data-lab={process.env.NEXT_PUBLIC_LAB === "1" ? "1" : undefined}
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
+        <ScrollToTop />
         <Script id="js-class" strategy="beforeInteractive">
           {`document.documentElement.classList.add('js')`}
         </Script>
