@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { normalizeStoreUrl } from "@/lib/storeUrl";
 import { saveLead } from "@/lib/leads";
 import styles from "./NewsletterPill.module.css";
 
@@ -17,8 +18,14 @@ export default function NewsletterPill() {
       setState("error");
       return setMsg("Add a valid email.");
     }
+    // The store address is optional, but when it is there it has to be a real address.
+    const store = url.trim() ? normalizeStoreUrl(url) : "";
+    if (store === null) {
+      setState("error");
+      return setMsg("That store address does not look right. Try something like yourstore.com, or leave it empty.");
+    }
     setState("busy");
-    const ok = await saveLead({ stage: "newsletter", email: email.trim(), url: url.trim(), source: "footer-pill" });
+    const ok = await saveLead({ stage: "newsletter", email: email.trim(), url: store, source: "footer-pill" });
     setState(ok ? "done" : "error");
     setMsg(ok ? "You are on the list. We will also look at your store." : "Could not send that. Try again, or email hello@bonsify.io.");
   };

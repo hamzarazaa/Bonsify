@@ -14,6 +14,7 @@ import { saveLead, brandGuess } from "@/lib/leads";
 import BonsifyLoader from "@/components/proposals/BonsifyLoader";
 import BonsaiArt from "./BonsaiArt";
 import { curateBrand } from "@/lib/curate";
+import { normalizeStoreUrl } from "@/lib/storeUrl";
 import styles from "./LabHome.module.css";
 
 /* ---------- small helpers ---------- */
@@ -633,7 +634,8 @@ export default function LabHome({ brands, apps, proof }) {
   const openIntake = (e) => {
     e.preventDefault();
     if (busy) return;
-    if (!url.trim()) return setErr("Type your store address first, like yourstore.com.");
+    const clean = normalizeStoreUrl(url);
+    if (!clean) return setErr("Type your store address first, like yourstore.com.");
     setErr("");
     setNote("");
     leadSent.current = false;
@@ -645,7 +647,7 @@ export default function LabHome({ brands, apps, proof }) {
   const closeModal = useCallback(() => {
     if (!leadSent.current) {
       leadSent.current = true;
-      saveLead({ stage: modal === "notshop" ? "not_shopify" : "abandoned", ...lead, source: "lab-home" });
+      saveLead({ stage: modal === "notshop" || modal === "blocked" ? "not_shopify" : "abandoned", ...lead, source: "lab-home" });
     }
     setModal(null);
   }, [modal, lead]);
@@ -708,7 +710,13 @@ export default function LabHome({ brands, apps, proof }) {
         saveLead({ stage: "not_shopify", ...lead, url: target, source: "lab-home" });
         setLead((l) => ({ ...l, url: target }));
         setModal("notshop");
-      } else setErr(x.name === "AbortError" ? "That store took too long to read. Try again, or book a call and we will show yours." : x.message);
+      } else {
+        // Blocked, timed out or unreachable: show the same friendly notice, never a raw error.
+        leadSent.current = true;
+        saveLead({ stage: "not_shopify", ...lead, url: target, source: "lab-home-blocked" });
+        setLead((l) => ({ ...l, url: target }));
+        setModal("blocked");
+      }
     } finally {
       clearTimeout(to);
       setBusy(false);
@@ -1253,7 +1261,7 @@ export default function LabHome({ brands, apps, proof }) {
       )}
 
       {modal && (
-        <StoreModal kind={modal === "notshop" ? "notshopify" : "intake"} values={lead} onChange={setLead} onClose={closeModal} onSubmit={submitModal} busy={busy} />
+        <StoreModal kind={modal === "notshop" ? "notshopify" : modal === "blocked" ? "blocked" : "intake"} values={lead} onChange={setLead} onClose={closeModal} onSubmit={submitModal} busy={busy} />
       )}
 
       {tourOn && <Tour step={tour} onStep={(n) => setTour(Math.max(0, Math.min(TOUR.length - 1, n)))} onClose={() => setTour(null)} inFull={fs} name={brand.name} onFull={() => { setTour(null); openFs(); }} />}

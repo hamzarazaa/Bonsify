@@ -110,9 +110,7 @@ export async function POST(request) {
   } catch (e) {
     const m = String(e.message || "");
     const notShopify = /does not look like a Shopify store|not a Shopify/i.test(m);
-    return Response.json(
-      { code: notShopify ? "not_shopify" : undefined, error: /429|403|blocks/.test(m) ? "That store blocks automated visits. We can still build it, book a call and we will show you." : m || "Could not read that store." },
-      { status: 422 }
-    );
+    // Anything else (blocked, timed out, no such site) reads the same to a visitor: we could not fetch it.
+    return Response.json({ code: notShopify ? "not_shopify" : "blocked", error: "We could not read that store." }, { status: 422 });
   }
 }

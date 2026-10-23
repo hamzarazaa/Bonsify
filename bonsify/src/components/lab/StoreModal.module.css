@@ -17,3 +17,4 @@
 @keyframes fade { from { opacity: 0; } }
 @keyframes rise { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
 @media (max-width: 520px) { .two { grid-template-columns: 1fr; } .card { padding: 24px 18px 18px; } }
+.cta { display: grid; place-items: center; text-decoration: none; }

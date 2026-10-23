@@ -2,6 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import Turnstile from "@/components/shared/Turnstile";
+import { normalizeStoreUrl } from "@/lib/storeUrl";
 import { getAttribution, track } from "@/lib/track";
 import styles from "./Contact.module.css";
 
@@ -35,10 +36,19 @@ export default function ContactForm() {
       return;
     }
 
+    const rawStore = String(new FormData(formRef.current).get("store") || "").trim();
+    const store = rawStore ? normalizeStoreUrl(rawStore) : "";
+    if (store === null) {
+      setStatus("error");
+      setErrorMessage("That store address does not look right. Try something like yourstore.com, or leave it empty.");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
 
     const formData = new FormData(formRef.current);
+    formData.set("store", store);
     formData.set("cf-turnstile-response", token);
     const att = getAttribution();
     if (att) formData.set("first_touch_source", JSON.stringify(att));
@@ -105,8 +115,12 @@ export default function ContactForm() {
         <input
           id="store"
           name="store"
-          type="url"
-          placeholder="yourstore.myshopify.com"
+          type="text"
+          inputMode="url"
+          autoCapitalize="none"
+          autoCorrect="off"
+          spellCheck={false}
+          placeholder="yourstore.com"
         />
       </div>
       <div className={styles.field}>
