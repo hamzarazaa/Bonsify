@@ -15,17 +15,18 @@ html[data-lab] {
    because that makes it the containing block for every fixed and sticky
    element inside, such as the lab phone and the sticky mobile call to action. */
 html[data-lab] .lab-page {
-  animation: labPage 0.7s var(--lab-soft) backwards;
+  animation: labPage 0.25s var(--lab-soft) backwards;
 }
 @keyframes labPage {
-  from { opacity: 0; }
+  from { opacity: 0.001; }
 }
 html[data-lab] .lab-hero > .wrap,
 html[data-lab] .lab-hero > [class*="inner"] {
-  animation: labRise 1s var(--lab-ease) backwards;
+  animation: labRise 0.5s var(--lab-ease) backwards;
 }
+/* Hero text must paint at once (it is the LCP element): move only, no fade or blur. */
 @keyframes labRise {
-  from { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+  from { transform: translateY(10px); }
 }
 
 /* Reveals. translate/filter/opacity only, never transform. */

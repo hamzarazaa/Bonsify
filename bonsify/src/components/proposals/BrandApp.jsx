@@ -796,7 +796,7 @@ function HomeScreen({ hf, onGo, brand, money, onOpen, onCollection, onSearch, au
           >
             {brand.banners.map((b, i) => (
               // eslint-disable-next-line @next/next/no-img-element
-              <img key={b} src={b} alt="" className={styles.banner} loading={i ? "lazy" : "eager"} />
+              <img key={b} src={b} alt="" className={styles.banner} loading={i ? "lazy" : "eager"} fetchPriority={i ? "auto" : "high"} />
             ))}
           </div>
           {brand.banners.length > 1 && (

@@ -11,6 +11,7 @@ const HIDDEN_CLIENT_PATHS = [
   process.env.NEXT_PUBLIC_SHOW_BACHAPARTY !== 'true' && '/work/bachaparty',
   process.env.NEXT_PUBLIC_SHOW_HIGHFY !== 'true' && '/work/highfy',
   process.env.NEXT_PUBLIC_SHOW_DOCKIFY !== 'true' && '/work/dockify',
+  process.env.NEXT_PUBLIC_SHOW_CREEDVINTAGE !== 'true' && '/work/creedvintage',
 ].filter(Boolean);
 
 module.exports = {
