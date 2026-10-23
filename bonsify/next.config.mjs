@@ -11,7 +11,8 @@ const nextConfig = {
   },
   // The lab copy of the site must never be indexed.
   async headers() {
-    const lab = process.env.NEXT_PUBLIC_LAB === "1";
+    // bonsify.io also runs the lab home and sets LAB_INDEX=1 so it stays indexable.
+    const lab = process.env.NEXT_PUBLIC_LAB === "1" && process.env.LAB_INDEX !== "1";
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
     return lab ? [{ source: "/:path*", headers: noindex }] : [];
   },
