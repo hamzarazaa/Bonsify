@@ -3,6 +3,8 @@
 // forms that were closed half way. Every call is written to the server log as
 // one JSON line and forwarded to the same inbox as the contact form, so a
 // store address is never lost, even when the visitor leaves the form.
+import { sendToSheet, formspreeOn } from "@/lib/leadSink";
+
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgyvadp";
 const STAGES = new Set(["submitted", "abandoned", "not_shopify", "newsletter", "mobile_share"]);
 
@@ -45,10 +47,11 @@ export async function POST(request) {
   body.set("_subject", `[Bonsify${rec.lab ? " lab" : ""}] ${stage}: ${url || email}`);
   for (const [k, v] of Object.entries(rec)) if (v !== "" && v !== false) body.set(k, String(v));
   if (email) body.set("_replyto", email);
-  try {
-    await fetch(FORMSPREE_ENDPOINT, { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/x-www-form-urlencoded" }, body });
-  } catch {
-    /* the log line above is the fallback record */
-  }
+  await Promise.allSettled([
+    sendToSheet({ ...rec, site: rec.lab ? "lab" : "main" }),
+    formspreeOn()
+      ? fetch(FORMSPREE_ENDPOINT, { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/x-www-form-urlencoded" }, body })
+      : null,
+  ]); // the log line above is the last-resort record
   return Response.json({ ok: true });
 }

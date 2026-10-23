@@ -1,3 +1,5 @@
+import { sendToSheet, formspreeOn } from "@/lib/leadSink";
+
 const TURNSTILE_VERIFY_URL =
   "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgyvadp";
@@ -78,6 +80,23 @@ export async function POST(request) {
   // to tell apart in the inbox.
   if (process.env.NEXT_PUBLIC_LAB === "1") forwardBody.set("_subject", "[Bonsify lab] New message");
 
+  const sheetSaved = sendToSheet({
+    stage: "contact",
+    name: String(formData.get("name") || ""),
+    email,
+    url: String(formData.get("store") || ""),
+    message: `${formData.get("topic") ? `[${formData.get("topic")}] ` : ""}${message}`,
+    source: "contact-form",
+    site: process.env.NEXT_PUBLIC_LAB === "1" ? "lab" : "main",
+  });
+
+  if (!formspreeOn()) {
+    if (!(await sheetSaved)) {
+      return Response.json({ error: "Could not send your message. Please try again or email us directly." }, { status: 502 });
+    }
+    return Response.json({ ok: true });
+  }
+
   let formspreeRes;
   try {
     formspreeRes = await fetch(FORMSPREE_ENDPOINT, {
@@ -89,13 +108,11 @@ export async function POST(request) {
       body: forwardBody,
     });
   } catch {
-    return Response.json(
-      { error: "Could not send your message. Please try again or email us directly." },
-      { status: 502 }
-    );
+    formspreeRes = null;
   }
 
-  if (!formspreeRes.ok) {
+  // One working copy is enough: the visitor only sees an error when neither the sheet nor Formspree took the message.
+  if (!formspreeRes?.ok && !(await sheetSaved)) {
     return Response.json(
       { error: "Could not send your message. Please try again or email us directly." },
       { status: 502 }
