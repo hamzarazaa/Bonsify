@@ -60,13 +60,13 @@ const SHOW_HIGHFY = false;
 
 export function getLabBrands({ all = false } = {}) {
   const out = [];
-  // Highfy is a real client, so it no longer fronts the lab. Bonzify is a made-up
-  // store (content/lab/bonzify.json) and leads the switcher. Set SHOW_HIGHFY to
+  // Highfy is a real client, so it no longer fronts the lab. Bonsify is a made-up
+  // store (content/lab/bonsify.json) and leads the switcher. Set SHOW_HIGHFY to
   // bring the real one back.
   const highfy = SHOW_HIGHFY ? getProposal("highfy") : null;
   if (highfy) out.push(trimBrand({ ...highfy, slug: "highfy" }));
   if (fs.existsSync(DIR)) {
-    for (const f of fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort((a, b) => (a.startsWith("bonzify") ? -1 : b.startsWith("bonzify") ? 1 : a.localeCompare(b)))) {
+    for (const f of fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort((a, b) => (a.startsWith("bonsify") ? -1 : b.startsWith("bonsify") ? 1 : a.localeCompare(b)))) {
       const slug = f.replace(/\.json$/, "");
       if (!all && HIDDEN.has(slug)) continue;
       try {
