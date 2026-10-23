@@ -19,7 +19,8 @@ const labMetadata = {
   robots: { index: false, follow: false },
 };
 
-export const metadata = LAB ? labMetadata : pageMetadata({
+// The lab site stays out of search. bonsify.io also runs the lab home, so it sets LAB_INDEX=1 to be indexed.
+export const metadata = LAB && process.env.LAB_INDEX !== "1" ? labMetadata : pageMetadata({
   title: "Bonsify - Shopify Mobile Apps, Done For You | Beyond the Browser",
   description:
     "Bonsify turns Shopify stores into native iOS and Android apps and PWAs. Built, launched, and maintained for you. Free audit.",
