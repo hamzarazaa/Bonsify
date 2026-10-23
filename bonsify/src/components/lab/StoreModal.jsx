@@ -18,9 +18,13 @@ export default function StoreModal({ kind, values, onChange, onClose, onSubmit, 
   const first = useRef(null);
   const set = (k) => (e) => onChange({ ...values, [k]: e.target.value });
 
+  // onClose changes on every keystroke (it closes over the form values), so keep it in a ref.
+  // Otherwise the effect below re-runs on each letter and pulls focus back to the first field.
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
   useEffect(() => {
     first.current?.focus();
-    const esc = (e) => e.key === "Escape" && onClose();
+    const esc = (e) => e.key === "Escape" && closeRef.current();
     window.addEventListener("keydown", esc);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -28,7 +32,7 @@ export default function StoreModal({ kind, values, onChange, onClose, onSubmit, 
       window.removeEventListener("keydown", esc);
       document.body.style.overflow = prev;
     };
-  }, [onClose]);
+  }, []);
 
   const notice = kind === "notshopify" || kind === "blocked";
   const submit = (e) => {
