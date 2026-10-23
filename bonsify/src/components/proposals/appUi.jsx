@@ -19,6 +19,7 @@ export const Icon = {
   heart: <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z" />,
   check: <path d="m5 12 4.5 4.5L19 7" />,
   minus: <path d="M6 12h12" />,
+  bagPlus: <path d="M6 8h12l-1 12H7zM9 8V6a3 3 0 0 1 6 0v2M12 11.5v5M9.5 14h5" />,
   plus: <path d="M12 6v12M6 12h12" />,
   gift: <path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-2-4-6-3-5 0M12 7c2-4 6-3 5 0" />,
   heartFill: <path fill="currentColor" d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z" />,

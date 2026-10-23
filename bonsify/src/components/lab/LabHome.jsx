@@ -175,7 +175,7 @@ function preloadBrand(b) {
 
 export default function LabHome({ brands, apps, proof }) {
   const [slug, setSlug] = useState(brands[0]?.slug);
-  const [custom, setCustom] = useState(null);
+  const [mine, setMine] = useState([]); // stores the visitor has added, newest last (max 3)
   const [ch, setCh] = useState(0);
   const [base, setBase] = useState(null);
   const [wipe, setWipe] = useState(null);
@@ -198,7 +198,7 @@ export default function LabHome({ brands, apps, proof }) {
   const [tour, setTour] = useState(null); // step number while the tour runs
   const leadSent = useRef(false);
 
-  const brand = (custom && slug === "yours" ? custom : brands.find((b) => b.slug === slug)) || brands[0];
+  const brand = (mine.find((b) => b.slug === slug) || brands.find((b) => b.slug === slug)) || brands[0];
   const tourOn = tour != null;
   const pal = useMemo(() => palette(brand), [brand]);
   const money = useMemo(() => moneyFor(brand.currency), [brand.currency]);
@@ -695,8 +695,9 @@ export default function LabHome({ brands, apps, proof }) {
       }
       // Warm the browser cache so the logo, icon and first photos are there the moment the app shows.
       await preloadBrand(made);
-      setCustom(made);
-      setSlug("yours");
+      const added = { ...made, mine: true, slug: `yours-${Date.now()}` };
+      setMine((m) => [...m.filter((x) => x.domain !== added.domain), added].slice(-3));
+      setSlug(added.slug);
       buzz([24, 50, 36]);
       goRef.current?.(0);
       setTip(true);
@@ -769,7 +770,7 @@ export default function LabHome({ brands, apps, proof }) {
     setTimeout(() => setTour(0), 500);
   };
 
-  const qrPath = brand.slug === "yours" ? `/try/custom?store=${encodeURIComponent(brand.domain || "")}` : `/try/${brand.slug}`;
+  const qrPath = brand.mine ? `/try/custom?store=${encodeURIComponent(brand.domain || "")}` : `/try/${brand.slug}`;
 
   const appEl = useMemo(() => <BrandApp key={brand.slug} ref={appRef} brand={brand} liveReviews />, [brand]);
 
@@ -1006,9 +1007,9 @@ export default function LabHome({ brands, apps, proof }) {
             <h1 className={styles.h1}>Your Shopify store, as an app.</h1>
             <p className={styles.lede}>Pick a store, or type yours. The phone becomes that app, and you can use it.</p>
 
-            {custom && (
+            {mine.length > 0 && (
               <div className={styles.chips} role="group" aria-label="Choose a store">
-                {brands.map((b) => (
+                {[brands.find((b) => b.slug === "bonsify") || brands[0], ...mine].filter(Boolean).map((b) => (
                   <button
                     key={b.slug}
                     className={`${styles.chip} ${slug === b.slug ? styles.chipOn : ""}`}
@@ -1022,10 +1023,6 @@ export default function LabHome({ brands, apps, proof }) {
                     {b.name}
                   </button>
                 ))}
-                <button className={`${styles.chip} ${slug === "yours" ? styles.chipOn : ""}`} onClick={() => setSlug("yours")}>
-                  <i style={{ background: custom.colors.accent || custom.colors.primary }} />
-                  {custom.name}
-                </button>
               </div>
             )}
 
@@ -1073,7 +1070,7 @@ export default function LabHome({ brands, apps, proof }) {
               </div>
             )}
 
-            {!touch && custom && slug === "yours" && (
+            {!touch && brand.mine && (
               <div className={styles.qrWrap}>
                 <AppQr path={qrPath} size={120} title="Try it on your phone" hint="Scan to open this app full screen on your own phone." />
               </div>
@@ -1237,7 +1234,7 @@ export default function LabHome({ brands, apps, proof }) {
                 <BrandApp key={`fs-${brand.slug}`} ref={fsAppRef} brand={brand} liveReviews />
               </Phone>
             </div>
-            {brand.slug === "yours" && (
+            {brand.mine && (
               <div className={styles.fsQr}>
                 <AppQr path={qrPath} tone="dark" size={124} />
               </div>

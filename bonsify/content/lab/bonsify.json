@@ -6,7 +6,7 @@
  "platform": "shopify",
  "currency": "USD",
  "logo": "/lab/bonsify/logo.svg",
- "icon": "/lab/bonsify/logo.svg",
+ "icon": "/lab/bonsify/icon.svg",
  "colors": {
   "primary": "#2F6B4F",
   "accent": "#A85A36",
@@ -21,9 +21,9 @@
   "bodyGoogle": true
  },
  "banners": [
-  "/lab/bonsify/banner-1.svg",
-  "/lab/bonsify/banner-2.svg",
-  "/lab/bonsify/banner-3.svg"
+  "/lab/bonsify/banner-1.webp",
+  "/lab/bonsify/banner-2.webp",
+  "/lab/bonsify/banner-3.webp"
  ],
  "collections": [],
  "products": [
@@ -35,11 +35,11 @@
    "price": 68,
    "compareAt": 84,
    "available": true,
-   "image": "/lab/bonsify/kaze-juniper-bonsai-1.svg",
+   "image": "/lab/bonsify/kaze-juniper-bonsai-1.webp",
    "images": [
-    "/lab/bonsify/kaze-juniper-bonsai-1.svg",
-    "/lab/bonsify/kaze-juniper-bonsai-2.svg",
-    "/lab/bonsify/kaze-juniper-bonsai-3.svg"
+    "/lab/bonsify/kaze-juniper-bonsai-1.webp",
+    "/lab/bonsify/kaze-juniper-bonsai-2.webp",
+    "/lab/bonsify/kaze-juniper-bonsai-3.webp"
    ],
    "options": [
     {
@@ -61,11 +61,11 @@
    "price": 34,
    "compareAt": null,
    "available": true,
-   "image": "/lab/bonsify/clay-drum-pot-1.svg",
+   "image": "/lab/bonsify/clay-drum-pot-1.webp",
    "images": [
-    "/lab/bonsify/clay-drum-pot-1.svg",
-    "/lab/bonsify/clay-drum-pot-2.svg",
-    "/lab/bonsify/clay-drum-pot-3.svg"
+    "/lab/bonsify/clay-drum-pot-1.webp",
+    "/lab/bonsify/clay-drum-pot-2.webp",
+    "/lab/bonsify/clay-drum-pot-3.webp"
    ],
    "options": [
     {
@@ -87,11 +87,11 @@
    "price": 42,
    "compareAt": 52,
    "available": true,
-   "image": "/lab/bonsify/moss-kokedama-trio-1.svg",
+   "image": "/lab/bonsify/moss-kokedama-trio-1.webp",
    "images": [
-    "/lab/bonsify/moss-kokedama-trio-1.svg",
-    "/lab/bonsify/moss-kokedama-trio-2.svg",
-    "/lab/bonsify/moss-kokedama-trio-3.svg"
+    "/lab/bonsify/moss-kokedama-trio-1.webp",
+    "/lab/bonsify/moss-kokedama-trio-2.webp",
+    "/lab/bonsify/moss-kokedama-trio-3.webp"
    ],
    "options": [],
    "description": "Three moss-wrapped plants, ready to hang or set on a saucer. Water by dunking once a week."
@@ -104,11 +104,11 @@
    "price": 38,
    "compareAt": 46,
    "available": true,
-   "image": "/lab/bonsify/carbon-pruning-shears-1.svg",
+   "image": "/lab/bonsify/carbon-pruning-shears-1.webp",
    "images": [
-    "/lab/bonsify/carbon-pruning-shears-1.svg",
-    "/lab/bonsify/carbon-pruning-shears-2.svg",
-    "/lab/bonsify/carbon-pruning-shears-3.svg"
+    "/lab/bonsify/carbon-pruning-shears-1.webp",
+    "/lab/bonsify/carbon-pruning-shears-2.webp",
+    "/lab/bonsify/carbon-pruning-shears-3.webp"
    ],
    "options": [],
    "description": "Hardened 7-inch blade, clay-red and green handles. Clean cuts without crushing stems."
@@ -121,11 +121,11 @@
    "price": 29,
    "compareAt": null,
    "available": true,
-   "image": "/lab/bonsify/brass-plant-mister-1.svg",
+   "image": "/lab/bonsify/brass-plant-mister-1.webp",
    "images": [
-    "/lab/bonsify/brass-plant-mister-1.svg",
-    "/lab/bonsify/brass-plant-mister-2.svg",
-    "/lab/bonsify/brass-plant-mister-3.svg"
+    "/lab/bonsify/brass-plant-mister-1.webp",
+    "/lab/bonsify/brass-plant-mister-2.webp",
+    "/lab/bonsify/brass-plant-mister-3.webp"
    ],
    "options": [],
    "description": "A fine, even mist for ferns, moss and young bonsai. Refillable and built to last."
@@ -138,11 +138,11 @@
    "price": 46,
    "compareAt": null,
    "available": true,
-   "image": "/lab/bonsify/ceramic-watering-can-1.svg",
+   "image": "/lab/bonsify/ceramic-watering-can-1.webp",
    "images": [
-    "/lab/bonsify/ceramic-watering-can-1.svg",
-    "/lab/bonsify/ceramic-watering-can-2.svg",
-    "/lab/bonsify/ceramic-watering-can-3.svg"
+    "/lab/bonsify/ceramic-watering-can-1.webp",
+    "/lab/bonsify/ceramic-watering-can-2.webp",
+    "/lab/bonsify/ceramic-watering-can-3.webp"
    ],
    "options": [],
    "description": "A one litre glazed can with a long spout for precise watering at the root."
@@ -155,11 +155,11 @@
    "price": 18,
    "compareAt": 22,
    "available": true,
-   "image": "/lab/bonsify/akadama-soil-mix-1.svg",
+   "image": "/lab/bonsify/akadama-soil-mix-1.webp",
    "images": [
-    "/lab/bonsify/akadama-soil-mix-1.svg",
-    "/lab/bonsify/akadama-soil-mix-2.svg",
-    "/lab/bonsify/akadama-soil-mix-3.svg"
+    "/lab/bonsify/akadama-soil-mix-1.webp",
+    "/lab/bonsify/akadama-soil-mix-2.webp",
+    "/lab/bonsify/akadama-soil-mix-3.webp"
    ],
    "options": [],
    "description": "The free-draining blend bonsai growers use: akadama, pumice and lava rock."
@@ -172,11 +172,11 @@
    "price": 79,
    "compareAt": 99,
    "available": true,
-   "image": "/lab/bonsify/ficus-ginseng-bonsai-1.svg",
+   "image": "/lab/bonsify/ficus-ginseng-bonsai-1.webp",
    "images": [
-    "/lab/bonsify/ficus-ginseng-bonsai-1.svg",
-    "/lab/bonsify/ficus-ginseng-bonsai-2.svg",
-    "/lab/bonsify/ficus-ginseng-bonsai-3.svg"
+    "/lab/bonsify/ficus-ginseng-bonsai-1.webp",
+    "/lab/bonsify/ficus-ginseng-bonsai-2.webp",
+    "/lab/bonsify/ficus-ginseng-bonsai-3.webp"
    ],
    "options": [
     {

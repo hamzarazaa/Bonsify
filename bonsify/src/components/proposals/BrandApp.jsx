@@ -1,13 +1,16 @@
 "use client";
 
 import { createPortal } from "react-dom";
-import { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react";
+import { createContext, forwardRef, useCallback, useContext, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react";
 import { sampleReviews, ago } from "@/lib/reviews";
 import { storeProfile } from "@/lib/storeProfile";
 import { buzz, Svg } from "./appUi";
 import { SizeSheet, AlertSheet, ChatSheet, FilterSheet, CompleteLook, StoresScreen, RewardsScreen, InviteScreen, GiftCardScreen, CheckoutOptions, Suggest, applyFilters, activeCount, pointsFor, storesFor, EMPTY_FILTERS, SORTS } from "./BrandFeatures";
 import fx from "./BrandFeatures.module.css";
 import styles from "./BrandApp.module.css";
+
+// Lets any product tile add to the bag without every screen passing it down.
+const QuickAdd = createContext(null);
 
 // The prospect's own app, drawn as real UI from their crawled store data
 // (logo, colours, fonts, products, collections, banners). One template,
@@ -301,6 +304,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
   const visibleProducts = collection ? matchCollection(products, collection) : products;
 
   return (
+    <QuickAdd.Provider value={{ products, add: (i, o, el) => addToCart(i, o, el) }}>
     <div
       className={`${styles.app} ${skin ? styles.hf : ""}`}
       style={theme}
@@ -581,6 +585,7 @@ const BrandApp = forwardRef(function BrandApp({ brand, autoSplash = true, intera
         />
       )}
     </div>
+    </QuickAdd.Provider>
   );
 });
 
@@ -664,6 +669,9 @@ function Heart({ on, onClick, label }) {
 
 function ProductCard({ p, money, onOpen, wide = false, wished, onWish }) {
   const off = p.compareAt && p.compareAt > p.price ? Math.round((1 - p.price / p.compareAt) * 100) : 0;
+  const qa = useContext(QuickAdd);
+  const gi = qa ? qa.products.indexOf(p) : -1;
+  const first = (p.options || []).filter((o) => o.values?.length > 1).slice(0, 2).map((o) => o.values[0]).join(" / ") || undefined;
   return (
     <button className={`${styles.card} ${wide ? styles.cardWide : ""}`} onClick={onOpen}>
       <span className={styles.cardImg}>
@@ -671,6 +679,9 @@ function ProductCard({ p, money, onOpen, wide = false, wished, onWish }) {
         <img src={p.image} alt="" loading="lazy" />
         {off > 0 && <span className={styles.off}>{off}% off</span>}
         {onWish && <Heart on={!!wished} onClick={onWish} label={wished ? "Remove from wishlist" : "Save to wishlist"} />}
+        {qa && gi >= 0 && p.available !== false && (
+          <AddBtn label={`Add ${p.title} to cart`} onClick={(el) => qa.add(gi, first, el)} />
+        )}
       </span>
       <span className={styles.cardTitle}>{p.title}</span>
       <span className={styles.price}>
@@ -678,6 +689,30 @@ function ProductCard({ p, money, onOpen, wide = false, wished, onWish }) {
         {off > 0 && <s>{money(p.compareAt)}</s>}
       </span>
     </button>
+  );
+}
+
+function AddBtn({ label, onClick }) {
+  return (
+    <span
+      role="button"
+      tabIndex={0}
+      aria-label={label}
+      className={styles.addBtn}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick(e.currentTarget);
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          e.stopPropagation();
+          onClick(e.currentTarget);
+        }
+      }}
+    >
+      <Svg name="bagPlus" size={17} />
+    </span>
   );
 }
 
