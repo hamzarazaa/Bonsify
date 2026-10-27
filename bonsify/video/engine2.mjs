@@ -39,6 +39,7 @@ const MODEL = process.env.TTS_MODEL || (PROVIDER === "openrouter" ? "elevenlabs/
 const VOICE = process.env.VOICE_ID || "";
 const PAD = 0.35; // seconds of air after each scene
 const W = path.join(HERE, "work", slug);
+const _t0 = Date.now(); const T = (m) => { try { fs.mkdirSync(W, { recursive: true }); fs.appendFileSync(path.join(W, "timing.txt"), `${((Date.now() - _t0) / 1000).toFixed(0)}s ${m}\n`); } catch {} };
 const CACHE = path.join(HERE, "cache");
 fs.mkdirSync(W, { recursive: true }); fs.mkdirSync(CACHE, { recursive: true }); fs.mkdirSync(OUT, { recursive: true });
 
@@ -239,6 +240,7 @@ async function record(beat, i) {
 const raws = [];
 for (let i = 0; i < beats.length; i++) { raws.push(await record(beats[i], i)); process.stdout.write(`recorded ${beats[i].id}\n`); }
 if (appS) await appS.ctx.close(); if (siteS) await siteS.ctx.close();
+T("recording done");
 
 // ---------- 3. frames: panels, bezel, avatar stage ----------
 const font = (n) => `file://${path.join(HERE, "assets", "fonts", n)}`;
@@ -354,6 +356,7 @@ const RN = path.join(HERE, "assets", "rnnoise-bd.rnnn");
 const cleanChain = `highpass=f=90,${fs.existsSync(RN) ? `arnndn=m=${RN}:mix=1,` : ""}afftdn=nr=14:nf=-45:tn=1,agate=threshold=0.015:ratio=3:attack=6:release=220:range=0.08,lowpass=f=12000`;
 const crops = { intro: { x: 120, y: 240 }, outro: { x: 120, y: 300 } };
 const find = (n) => ["mp4", "mov", "webm"].map((e) => path.join(HERE, "assets", `${n}.${e}`)).find(fs.existsSync);
+T("panels and scene clips done");
 async function avatarPart(name, states) {
   const src = find(name); if (!src) { console.log(`no video/assets/${name}.mp4, skipping`); return null; }
   const d = dur(src), cr = crops[name];
@@ -423,11 +426,13 @@ else {
     "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", final);
 }
 
+T("final video joined");
 // captions and poster
 const ts = (x) => { const h = Math.floor(x / 3600), m = Math.floor((x % 3600) / 60), s = (x % 60).toFixed(3).padStart(6, "0"); return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${s}`; };
 let v = "WEBVTT\n\n"; let n = 1;
 for (const sc of beats) for (const s of sc._shots) v += `${n++}\n${ts(offset + s.at)} --> ${ts(offset + s.at + s.d)}\n${s.text}\n\n`;
 fs.writeFileSync(path.join(OUT, `${slug}.vtt`), v);
 ff("-ss", (offset + 3).toFixed(1), "-i", final, "-frames:v", "1", "-q:v", "3", path.join(OUT, `${slug}-poster.jpg`));
+T("all done");
 console.log(`done: ${final} (${dur(final).toFixed(1)}s)`);
 console.log(`voice cost at $40 per million characters: $${((billed / 1e6) * 40).toFixed(3)} this run`);
