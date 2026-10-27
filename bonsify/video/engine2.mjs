@@ -17,7 +17,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { beatsFor, introStates, outroStates, sentences } from "./script2.mjs";
@@ -45,6 +45,9 @@ fs.mkdirSync(W, { recursive: true }); fs.mkdirSync(CACHE, { recursive: true }); 
 const sh = (cmd, args) => execFileSync(cmd, args, { stdio: ["ignore", "pipe", "pipe"] }).toString();
 const ff = (...a) => sh("ffmpeg", ["-loglevel", "error", "-y", ...a]);
 const dur = (f) => parseFloat(sh("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]));
+// ffmpeg writes its measurements to stderr, so these read that
+const probeErr = (args) => spawnSync("ffmpeg", ["-hide_banner", "-nostats", ...args], { encoding: "utf8", maxBuffer: 1 << 26 }).stderr || "";
+const lufs = (f) => { const m = /"input_i"\s*:\s*"(-?[\d.]+|-inf)"/.exec(probeErr(["-i", f, "-af", "loudnorm=I=-16:print_format=json", "-f", "null", "-"])); const v = m ? parseFloat(m[1]) : NaN; return Number.isFinite(v) ? v : null; };
 const hasAudio = (f) => sh("ffprobe", ["-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", f]).trim() !== "";
 const sha = (s) => crypto.createHash("sha1").update(s).digest("hex").slice(0, 16);
 
@@ -103,6 +106,31 @@ for (const b of beats) {
   chars += b.say.length; if (!r.cached) billed += b.say.length;
 }
 console.log(`voice: ${beats.length} beats, ${chars} characters, ${billed} newly billed (${DRY ? "dry run" : MODEL})`);
+// Where each sentence really starts in the audio. The panel text and the phone actions follow these,
+// so what is on screen matches what is being said (character counts only guess at it).
+function sentenceStarts(b) {
+  const n = b.sents.length, speech = b.len - PAD;
+  const w = b.sents.map((x) => x.length), sum = w.reduce((a, c) => a + c, 0);
+  const guess = [0]; let acc = 0; for (let k = 0; k < n - 1; k++) { acc += (speech * w[k]) / sum; guess.push(acc); }
+  if (n < 2) return { real: guess, guess };
+  const err = probeErr(["-i", b.audio, "-af", "silencedetect=noise=-36dB:d=0.16", "-f", "null", "-"]);
+  const sil = []; let st = null;
+  for (const m of err.matchAll(/silence_(start|end): (-?[\d.]+)/g)) { if (m[1] === "start") st = parseFloat(m[2]); else if (st != null) { sil.push([st, parseFloat(m[2])]); st = null; } }
+  const d = dur(b.audio), inner = sil.filter(([a, e]) => a > 0.25 && e < d - 0.05);
+  // for each expected boundary take the nearest pause, and only trust it when it is close to the guess
+  const real = [0], used = new Set();
+  for (let k = 1; k < n; k++) {
+    let best = -1, bd = 1e9;
+    inner.forEach(([a, e], i) => { const dd = Math.abs((a + e) / 2 - guess[k]); if (!used.has(i) && dd < bd) { bd = dd; best = i; } });
+    if (best < 0 || bd > Math.max(1.2, speech * 0.22)) return { real: guess, guess };
+    used.add(best); real.push(Math.max(real[k - 1] + 0.4, inner[best][1] - 0.12));
+  }
+  return { real, guess };
+}
+for (const b of beats) { const { real, guess } = sentenceStarts(b); b.starts = real; b.guess = guess; b.warp = (t) => { // guessed timeline -> real timeline, piece by piece
+  const P = [...guess, b.len], R = [...real, b.len]; t = Math.min(Math.max(t, 0), b.len);
+  for (let i = 1; i < P.length; i++) if (t <= P[i]) return R[i - 1] + ((t - P[i - 1]) / (P[i] - P[i - 1] || 1)) * (R[i] - R[i - 1]);
+  return t; }; }
 const total = beats.reduce((a, s) => a + s.len, 0);
 console.log(`demo length ${total.toFixed(1)}s`);
 
@@ -161,7 +189,7 @@ async function record(beat, i) {
   const cdp = await ctx.newCDPSession(page);
   const frames = [];
   const onFrame = async (f) => {
-    frames.push(Date.now());
+    frames.push((f.metadata?.timestamp ? f.metadata.timestamp * 1000 : Date.now()));
     fs.writeFileSync(path.join(dir, `${String(frames.length - 1).padStart(5, "0")}.jpg`), Buffer.from(f.data, "base64"));
     try { await cdp.send("Page.screencastFrameAck", { sessionId: f.sessionId }); } catch {}
   };
@@ -170,14 +198,14 @@ async function record(beat, i) {
   await cdp.send("Page.startScreencast", { format: "jpeg", quality: 92, maxWidth: 780, maxHeight: h, everyNthFrame: 1 });
   const T0 = Date.now();
   const at = async (s, fn) => { const w = s * 1000 - (Date.now() - T0); if (w > 0) await page.waitForTimeout(w); await fn(); };
-  for (const step of beat.phone.steps) await at(step.at * beat.len, () => doStep(S, step.do));
+  for (const step of beat.phone.steps) await at(beat.warp(step.at * beat.len), () => doStep(S, step.do));
   await at(beat.len, async () => {});
   await cdp.send("Page.stopScreencast"); cdp.off("Page.screencastFrame", onFrame);
   if (!frames.length) throw new Error(`no frames for beat ${beat.id}`);
   let list = "ffconcat version 1.0\n";
   frames.forEach((t, k) => {
     const end = k + 1 < frames.length ? frames[k + 1] : T0 + beat.len * 1000;
-    list += `file fr_${i}/${String(k).padStart(5, "0")}.jpg\nduration ${Math.max(0.001, (end - Math.max(t, T0)) / 1000).toFixed(4)}\n`;
+    list += `file fr_${i}/${String(k).padStart(5, "0")}.jpg\nduration ${Math.max(0.001, (end - (k === 0 ? T0 : Math.max(t, T0))) / 1000).toFixed(4)}\n`;
   });
   list += `file fr_${i}/${String(frames.length - 1).padStart(5, "0")}.jpg\n`;
   fs.writeFileSync(path.join(W, `clip_${i}.ffconcat`), list);
@@ -236,7 +264,7 @@ ${panelItems(beat, st)}</div>
 <div style="position:absolute;left:96px;bottom:64px;display:flex;gap:10px">${beats.map((b, k) => `<i style="width:46px;height:8px;border-radius:4px;background:${k === beats.indexOf(beat) ? HI : "#141414"};opacity:${k === beats.indexOf(beat) ? 1 : k < beats.indexOf(beat) ? 0.45 : 0.15}"></i>`).join("")}</div>`;
 };
 const bezelHtml = `<style>*{margin:0}body{width:1920px;height:1080px;background:transparent}
-.b{position:absolute;left:1248px;top:95px;width:424px;height:890px;border:12px solid #111;border-radius:58px;box-shadow:0 30px 60px rgba(0,0,0,.28)}
+.b{box-sizing:border-box;position:absolute;left:1248px;top:95px;width:424px;height:890px;border:12px solid #111;border-radius:58px;box-shadow:0 30px 60px rgba(0,0,0,.28)}
 .n{position:absolute;left:1460px;top:116px;width:96px;height:26px;margin-left:-48px;border-radius:14px;background:#111}</style><div class=b></div><div class=n></div>`;
 const barHtml = `<style>${css}body{width:400px;height:${BAR}px;background:#f4f4f5}</style>
 <div style="position:absolute;left:26px;top:10px;font:700 14px Inter">9:41</div>
@@ -269,11 +297,10 @@ await shot(maskHtml, path.join(W, "mask.png"), false, { width: AV, height: AV })
 
 let bg = "ffconcat version 1.0\n", last = "", t = 0; const vtt = [];
 beats.forEach((sc, si) => {
-  const ss = sc.sents, w = ss.map((s) => s.length), sum = w.reduce((a, b) => a + b, 0);
-  sc.start = t; let acc = 0; sc._shots = [];
+  const ss = sc.sents;
+  sc.start = t; sc._shots = [];
   ss.forEach((s, k) => {
-    const d = k === ss.length - 1 ? sc.len - acc : (sc.len - PAD) * (w[k] / sum);
-    acc += d;
+    const d = (k === ss.length - 1 ? sc.len : sc.starts[k + 1]) - sc.starts[k];
     last = path.join(W, `bg_${si}_${k}.png`);
     sc._shots.push({ file: last, d, text: s, at: t, k });
     t += d;
@@ -333,9 +360,10 @@ async function avatarPart(name, states) {
   });
   const hasA = lines.length === 0 && hasAudio(src);
   const mixIn = lines.map((_, k) => `[l${k}]`).join("");
+  // levels and room tone are set once over the whole film (see the final join), not per part
   const aF = lines.length
-    ? `${lineF.join(";")};[4:a]volume=1[n];[n]${mixIn}amix=inputs=${lines.length + 1}:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]`
-    : hasA ? `[0:a]aresample=48000,${cleanChain}[c];[4:a]volume=1[n];[c][n]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]` : `[4:a]anull[a]`;
+    ? `${lineF.join(";")};${mixIn}amix=inputs=${lines.length}:duration=longest:normalize=0,apad=whole_dur=${d.toFixed(3)}[a]`
+    : hasA ? `[0:a]aresample=48000,${cleanChain},apad=whole_dur=${d.toFixed(3)}[a]` : `anullsrc=r=48000:cl=stereo,atrim=0:${d.toFixed(3)}[a]`;
   ff("-i", src, "-f", "concat", "-safe", "0", "-i", path.join(W, `${name}_stage.ffconcat`), "-i", path.join(W, "ring.png"), "-i", path.join(W, "mask.png"),
     "-f", "lavfi", "-t", d.toFixed(2), "-i", "anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000", ...lineIn,
     "-filter_complex", `[0:v]crop=760:760:${cr.x}:${cr.y},scale=${AV}:${AV},fps=30,format=yuva420p[sq];[3:v]format=gray[m];[sq][m]alphamerge[c];[1:v]fps=30,format=yuv420p[sg];[sg][2:v]overlay=66:${1080 - AV - 80 - 30}[s1];[s1][c]overlay=96:${1080 - AV - 80}[v];${aF}`,
@@ -350,16 +378,27 @@ const oP = await avatarPart("outro", outroStates()); if (oP) parts.push(oP);
 await fp.close(); await browser.close();
 
 const final = path.join(OUT, `${slug}.mp4`);
-const XF = 0.7; // a slow dissolve, with the audio crossfading under it
+const XF = 0.7; // the pictures dissolve over this long
+const TARGET = -16; // LUFS for the speech of every part, so the voice stays at one level from intro to outro
 if (parts.length === 1) fs.copyFileSync(bodyN, final);
 else {
-  const ds = parts.map(dur); let vf = "[0:v]null[v0]", af = "[0:a]anull[a0]", acc = ds[0];
+  const ds = parts.map(dur); let vf = "[0:v]null[v0]", acc = ds[0]; const starts = [0];
   for (let i = 1; i < parts.length; i++) {
     vf += `;[v${i - 1}][${i}:v]xfade=transition=fade:duration=${XF}:offset=${(acc - XF).toFixed(3)}[v${i}]`;
-    af += `;[a${i - 1}][${i}:a]acrossfade=d=${XF}:c1=tri:c2=tri[a${i}]`;
-    acc += ds[i] - XF;
+    starts.push(acc - XF); acc += ds[i] - XF;
   }
-  ff(...parts.flatMap((p) => ["-i", p]), "-filter_complex", `${vf};${af}`, "-map", `[v${parts.length - 1}]`, "-map", `[a${parts.length - 1}]`,
+  // Audio is not crossfaded (two takes fading across each other dips, then swells). Each part keeps its own
+  // timeline on one track, gain-matched by measured loudness, with one continuous room tone under all of it.
+  let af = ""; const labels = [];
+  parts.forEach((p, i) => {
+    const wav = path.join(W, `join_${i}.wav`); ff("-i", p, "-vn", "-ac", "2", "-ar", "48000", wav);
+    const L = lufs(wav), g = L == null ? 0 : Math.max(-12, Math.min(12, TARGET - L));
+    console.log(`part ${i}: ${L == null ? "silent" : L.toFixed(1) + " LUFS"}, gain ${g.toFixed(1)} dB`);
+    af += `${i ? ";" : ""}[${i + parts.length}:a]volume=${g.toFixed(2)}dB,afade=t=in:d=0.04,afade=t=out:st=${(ds[i] - 0.06).toFixed(3)}:d=0.06,adelay=${Math.round(starts[i] * 1000)}:all=1[p${i}]`;
+    labels.push(`[p${i}]`);
+  });
+  af += `;anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000:duration=${acc.toFixed(2)},aformat=channel_layouts=stereo[rt];${labels.join("")}[rt]amix=inputs=${parts.length + 1}:duration=longest:normalize=0,alimiter=limit=0.89:level=false[a]`;
+  ff(...parts.flatMap((p) => ["-i", p]), ...parts.flatMap((p, i) => ["-i", path.join(W, `join_${i}.wav`)]), "-filter_complex", `${vf};${af}`, "-map", `[v${parts.length - 1}]`, "-map", "[a]", "-t", acc.toFixed(3),
     "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", final);
 }
 
