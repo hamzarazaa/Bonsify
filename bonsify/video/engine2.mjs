@@ -329,7 +329,15 @@ beats.forEach((sc, si) => {
     t += d;
   });
 });
-for (const sc of beats) for (const s of sc._shots) { await shot(frameHtml(sc, s.k), s.file); bg += `file ${s.file}\nduration ${s.d.toFixed(3)}\n`; }
+{
+  // panels are independent: shoot them on several pages at once (as many as there are cores, up to 4)
+  const jobs = []; for (const sc of beats) for (const s of sc._shots) { jobs.push({ sc, s }); bg += `file ${s.file}\nduration ${s.d.toFixed(3)}\n`; }
+  const nP = Math.max(1, Math.min(4, (await import("node:os")).cpus().length));
+  const pages = [fp]; for (let k = 1; k < nP; k++) pages.push(await browser.newPage({ viewport: { width: 1920, height: 1080 } }));
+  let next = 0;
+  await Promise.all(pages.map(async (pg) => { while (next < jobs.length) { const { sc, s } = jobs[next++]; await pg.setContent(frameHtml(sc, s.k), { waitUntil: "load" }); await pg.evaluate(() => document.fonts.ready); await pg.screenshot({ path: s.file }); } }));
+  for (const pg of pages.slice(1)) await pg.close();
+}
 bg += `file ${last}\n`;
 fs.writeFileSync(path.join(W, "bg.ffconcat"), bg);
 
