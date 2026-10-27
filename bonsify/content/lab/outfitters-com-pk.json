@@ -1,0 +1,356 @@
+{
+ "slug": "outfitters-com-pk",
+ "name": "Outfitters",
+ "url": "https://outfitters.com.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "logo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20600%20120%27%3E%3Ctext%20x%3D%27300%27%20y%3D%2782%27%20text-anchor%3D%27middle%27%20font-family%3D%27Helvetica%2CArial%2Csans-serif%27%20font-weight%3D%27700%27%20font-size%3D%2764%27%20letter-spacing%3D%276%27%20fill%3D%27%23000%27%3EOUTFITTERS%3C/text%3E%3C/svg%3E",
+ "icon": "https://outfitters.com.pk/cdn/shop/files/Frame_9_372f5388-872e-4485-ab9b-6158baac849e.png?v=1765281365&width=256",
+ "colors": {
+  "primary": "#000000",
+  "accent": "#d4202c",
+  "background": "#ffffff",
+  "text": "#000000",
+  "found": [
+   "#6016eb",
+   "#690ef5",
+   "#fc0b0b",
+   "#172351"
+  ],
+  "weights": [
+   {
+    "hex": "#6016eb",
+    "w": 444
+   },
+   {
+    "hex": "#690ef5",
+    "w": 221
+   },
+   {
+    "hex": "#fc0b0b",
+    "w": 12
+   },
+   {
+    "hex": "#172351",
+    "w": 0.6
+   }
+  ],
+  "source": "manual",
+  "onPrimary": "#ffffff"
+ },
+ "fonts": {
+  "heading": "Inter",
+  "body": "Inter",
+  "found": [
+   "Neue Haas Grotesk Display Pro",
+   "Assistant",
+   "object-fit: contain"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://outfitters.com.pk/cdn/shop/files/Main_Banner_Men_Web.jpg?v=1790943351&width=1200"
+ ],
+ "collections": [
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY ACCESSORIES",
+   "handle": "junior-boys-accessories",
+   "image": null,
+   "count": 673
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY CO-ORD SETS",
+   "handle": "juniors-boy-co-ord-sets",
+   "image": null,
+   "count": 98
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY FRAGRANCES",
+   "handle": "junior-boys-fragrances",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY JEANS",
+   "handle": "juniors-boy-jeans",
+   "image": null,
+   "count": 304
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY JEANS SALE",
+   "handle": "6-14-years-junior-boy-jeans-sale",
+   "image": null,
+   "count": 276
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY SHIRTS",
+   "handle": "juniors-boy-shirts",
+   "image": null,
+   "count": 572
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY SHOES",
+   "handle": "junior-boy-shoes",
+   "image": null,
+   "count": 229
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY SHOES SALE",
+   "handle": "6-14-years-junior-boy-shoes-sale",
+   "image": null,
+   "count": 218
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY SHORTS",
+   "handle": "junior-boy-shorts",
+   "image": null,
+   "count": 380
+  },
+  {
+   "title": "6 - 14 YEARS JUNIOR BOY SHORTS SALE",
+   "handle": "6-14-years-junior-boy-shorts-sale",
+   "image": null,
+   "count": 378
+  }
+ ],
+ "products": [
+  {
+   "title": "Crew Neck T-Shirt",
+   "handle": "f2097-106",
+   "type": "TEES",
+   "vendor": "Men",
+   "price": 1390.0,
+   "compareAt": 2890.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2097106001.jpg?v=1781178844&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2097106001.jpg?v=1781178844&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2097106001._b4b5a2f5-7161-4362-9f9d-acdb1864b39e.jpg?v=1781178844&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2097106001._4615641c-50f2-4f2e-9b1e-4a7118c86104.jpg?v=1781178844&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2097106001_3.jpg?v=1779448617&width=700"
+   ],
+   "options": [],
+   "description": "FIT : Relaxed\nComfort all the way comfortably loose fit with drop shoulders that does not hug the body. Stands in the middle of an oversized and regular fit, making movement easy\n\u00a0Composition &amp; Ca"
+  },
+  {
+   "title": "V-Neck T-Shirt",
+   "handle": "f1411-206",
+   "type": "TEES",
+   "vendor": "Women",
+   "price": 2490.0,
+   "compareAt": 4990.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1411206627_2.jpg?v=1787123310&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1411206627_2.jpg?v=1787123310&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1411206627_4.jpg?v=1787123310&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1411206627_3.jpg?v=1787123310&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1411206311_2.jpg?v=1786447115&width=700"
+   ],
+   "options": [],
+   "description": "FIT :\u00a0Boxy\nThe name says it all Oversized fit which cuts in a box shape. Falls straight at your sides giving the upper body a square silhouette\n\u00a0Composition &amp; Care \n\nMachine wash up to 30C/86F, ge"
+  },
+  {
+   "title": "Washed Out T-Shirt",
+   "handle": "f2370-106",
+   "type": "TEES",
+   "vendor": "Men",
+   "price": 1590.0,
+   "compareAt": 3290.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2370106905.jpg?v=1789543269&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2370106905.jpg?v=1789543269&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2370106905._01ce1ffa-b8ec-4bfa-a8ce-cf1480b016ee.jpg?v=1789543269&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2370106905..jpg?v=1789543269&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2370106905._3f956a44-007d-4228-a0e2-8a11417a779b.jpg?v=1789543269&width=700"
+   ],
+   "options": [],
+   "description": "FIT: Relaxed\u00a0\nComfort all the way comfortably loose fit with drop shoulders that does not hug the body. Stands in the middle of an oversized and regular fit, making movement easy\u00a0\nComposition &amp; Ca"
+  },
+  {
+   "title": "Ribbed Tank Top",
+   "handle": "f1434-206",
+   "type": "TEES",
+   "vendor": "Women",
+   "price": 790.0,
+   "compareAt": 1690.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1434206128.jpg?v=1778496865&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1434206128.jpg?v=1778496865&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1434206128..jpg?v=1778496865&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1434206128._7005c613-3344-459d-aaf8-ad9426c53c0b.jpg?v=1778496865&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1434206128._27655914-8864-4e93-94d1-8d969258d1c3.jpg?v=1778496865&width=700"
+   ],
+   "options": [],
+   "description": "Fit: SlimThe Modern Fit Cuts closer to the body, defining your body silhouette. Slims down through the chest and shoulder offering a clean neat look\n\u00a0Composition &amp; Care \n\n95% Cotton, 5% Spandex\nMa"
+  },
+  {
+   "title": "Button Up Shirt",
+   "handle": "f1106-103",
+   "type": "SHIRTS",
+   "vendor": "Men",
+   "price": 3490.0,
+   "compareAt": 6990.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1106103002.jpg?v=1789450799&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1106103002.jpg?v=1789450799&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1106103002._155ffdbb-3c09-486f-a485-75fa6e65ab08.jpg?v=1789450799&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1106103002._8e3eb54d-2509-4aef-a2cb-84d693732804.jpg?v=1789450799&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1106103002..jpg?v=1789450799&width=700"
+   ],
+   "options": [],
+   "description": "FIT: Regular\nThe name says it all the right size slightly snugs the body leaving enough room for comfort in the sleeves and waist. Does not taper down and offers a relaxed silhouette for your everyday"
+  },
+  {
+   "title": "Pack Of 3 Mid Crew Socks",
+   "handle": "f0164-219",
+   "type": "SOCKS",
+   "vendor": "Women",
+   "price": 890.0,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F0164219999_1_copy.jpg?v=1791953516&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0164219999_1_copy.jpg?v=1791953516&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0164219999_8_copy.jpg?v=1791953196&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0164219999_7_copy.jpg?v=1791953196&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0164219999_6_copy.jpg?v=1791953196&width=700"
+   ],
+   "options": [],
+   "description": "FIT:\u00a0Mid Crew\n\u00a0Composition &amp; Care \n\n100% Cotton\nMachine wash up to 30C/86F, gentle cycle\nDo not bleach\nIron up to 110C/230F\nDo not iron directly on prints/embroidery/embellishments\nDo not dry clea"
+  },
+  {
+   "title": "Graphic T-Shirt",
+   "handle": "f2026-106",
+   "type": "TEES",
+   "vendor": "Men",
+   "price": 1190.0,
+   "compareAt": 2890.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2026106636._a3832aca-f34c-452a-8911-834444247e35.jpg?v=1783576327&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2026106636._a3832aca-f34c-452a-8911-834444247e35.jpg?v=1783576327&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2026106636.jpg?v=1783576326&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2026106636_260e6250-5940-46d4-88a3-ee756c044bd0.jpg?v=1783576327&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2026106636..jpg?v=1783576326&width=700"
+   ],
+   "options": [],
+   "description": "FIT:\u00a0Regular\nThe name says it all the right size slightly snugs the body leaving enough room for comfort in the sleeves and waist. Does not taper down and offers a relaxed silhouette for your everyday"
+  },
+  {
+   "title": "Gathered T-Shirt",
+   "handle": "f1452-206",
+   "type": "TEES",
+   "vendor": "Women",
+   "price": 1190.0,
+   "compareAt": 2490.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1452206001.jpg?v=1781779823&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1452206001.jpg?v=1781779823&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1452206001._8c6513c1-2039-4985-8529-425ed7185e2f.jpg?v=1781779823&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1452206001._65e73895-1352-45d1-a8d2-c7e03c944338.jpg?v=1781779823&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1452206001..jpg?v=1781779823&width=700"
+   ],
+   "options": [],
+   "description": "FIT : Regular\nThe name says it all the right size slightly snugs the body leaving enough room for comfort in the sleeves and waist. Does not taper down and offers a relaxed silhouette for your everyda"
+  },
+  {
+   "title": "Slogan Print T-Shirt",
+   "handle": "f1987-106",
+   "type": "TEES",
+   "vendor": "Men",
+   "price": 1390.0,
+   "compareAt": 2890.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1987106706.jpg?v=1778144960&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1987106706.jpg?v=1778144960&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1987106706_97328ee9-789e-44a0-8dac-3a1c09cf2d77.jpg?v=1778144959&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1987106706..jpg?v=1778144959&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1987106706_2.jpg?v=1777871713&width=700"
+   ],
+   "options": [],
+   "description": "FIT : Relaxed\u00a0\nComfort all the way comfortably loose fit with drop shoulders that does not hug the body. Stands in the middle of an oversized and regular fit, making movement easy\n\u00a0Composition &amp; C"
+  },
+  {
+   "title": "Striped Tank Top",
+   "handle": "f1438-206",
+   "type": "TEES",
+   "vendor": "Women",
+   "price": 890.0,
+   "compareAt": 1890.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F1438206999.jpg?v=1782302166&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1438206999.jpg?v=1782302166&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1438206999..jpg?v=1782302167&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1438206999._e3347b68-d45f-418e-bf12-59fdbc82ec33.jpg?v=1782302166&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F1438206999._af4a1384-8173-457b-8edb-2d90c50b6581.jpg?v=1782302166&width=700"
+   ],
+   "options": [],
+   "description": "FIT : Slim\nThe Modern Fit Cuts closer to the body, defining your body silhouette. Slims down through the chest and shoulder offering a clean neat look\n\n Composition &amp; Care \n\n95% Cotton 5% Spandex\n"
+  },
+  {
+   "title": "Textured T-Shirt",
+   "handle": "f2102-106",
+   "type": "TEES",
+   "vendor": "Men",
+   "price": 1790.0,
+   "compareAt": 3690.0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113_56fd555d-acdc-4042-b0ab-19549ad650a8.jpg?v=1778220271&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113..jpg?v=1778220271&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113._88bc4ac8-7a4d-4fd8-9acc-e95be55dd39e.jpg?v=1778220271&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F2102106113.jpg?v=1778220271&width=700"
+   ],
+   "options": [],
+   "description": "FIT : Relaxed\nComfort all the way comfortably loose fit with drop shoulders that does not hug the body. Stands in the middle of an oversized and regular fit, making movement easy\n\u00a0Composition &amp; Ca"
+  },
+  {
+   "title": "Pack Of 3 Briefs",
+   "handle": "f0092-222",
+   "type": "UNDERWEAR",
+   "vendor": "Women",
+   "price": 2090.0,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2290/7887/files/F0092222998_thumbnail_copy2_5e7407f8-3ded-4e78-abff-b776cb817c87.jpg?v=1792391277&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0092222998_thumbnail_copy2_5e7407f8-3ded-4e78-abff-b776cb817c87.jpg?v=1792391277&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0092222998_8_copy.jpg?v=1791952456&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0092222998_11_copy.jpg?v=1791952456&width=700",
+    "https://cdn.shopify.com/s/files/1/2290/7887/files/F0092222998_7_copy.jpg?v=1791952456&width=700"
+   ],
+   "options": [],
+   "description": "\u00a0\n Composition &amp; Care \n\n\n95% Cotton 5% Lycra\n\nMachine wash up to 30C/86F, gentle cycle\nDo not bleach\nIron up to 110C/230F\nDo not iron directly on prints/embroidery/embellishments\nDo not dry clean\n"
+  }
+ ],
+ "productCount": 3825,
+ "features": [
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Searchanise",
+  "Mailchimp",
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T07:44:57.326Z",
+ "warnings": [
+  "Heading font \"Neue Haas Grotesk Display Pro\" is not on Google Fonts; a close fallback is used."
+ ]
+}
