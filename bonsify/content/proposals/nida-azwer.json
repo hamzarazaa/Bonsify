@@ -1,0 +1,579 @@
+{
+ "slug": "nida-azwer",
+ "name": "Nida Azwer",
+ "url": "https://nidaazwer.com/",
+ "platform": "shopify",
+ "currency": "USD",
+ "contact": null,
+ "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbQAAABgCAYAAAB17IfLAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAgAElEQVR42u1dCbxd07k/e597b0aJmEOaPFMQtIiZ8sxFS9Xj1UzNNSWimqoxqUepuZS20j4UoSg1JFQkJOZ5HhozESRB5tzpff/z/t/x3ZV9pnv23ufcZH2/37r73DPsvfbaa33/9c2ZjCdPnjx58lT/FPLYsPzyyx8v7Ynlllvu2RVWWGG4vNfXD48nT548eeoKFOCPAFgfAbLj5HiDtLuk3S3/3yLHYQJs/f0wefLkyZOnegezkIA2TNpb0m4SIDtEQOyn0sZIe13eu8APlSdPnjx5qmfK4k/v3r3XFRD7TIDrlO7duw+U43p9+vRZc+WVV+4lr4+Uzz7wQ+XJkydPnupZOmvAi379+p0noDVppZVWWnnZZZc9QUDs9yuuuOLl8t6Pe/Tosap8PsYPlydPnjx5qntAEwD7k6gW/9a/f/8VBMSOldc3SrtA3t9cJLXlAHh+uDx58uTJU1cAtDOkPSbANVCADCrGg6X9XP7fH+/BUcQPlydPnjx5ytS7u77Yzb4jADZNwGuk2NNW5Gc9l1lmmeXlveO9Dc2TJ0+ePHUZUBMp7DBpnwh43Q87mgDZ0fL/P/neSD9Mnjx58uSpS9CAAQN6CIjtLgD2R2mTBMQek/YXeb2vHJfxI+TJkydPnjJdJbgax759+64hwLaVeDluI20tea/RD48nT548eeqKoFbpZ548efLkyVPdZg6xzYOZJ0+ePHny5MmTJ0+ePHny5MlTpt7tEZ78HOiyN1SsJX2NWtxTkPKYVvu9rjaXPNU/47B2iKj5GMeaq8c1nQRfSJN/xuYpmIL9KaiydYoaSrRslQ86W+L8QUKpUpK8r0rvN1ugRX2vqxk4A3M/HtQyiwWDhnUKaoF5ZpmI+ZitsCW5xrJlrumwSl5UaZ/LOWe1YxCW+VzCEs0+p9Cs07DEuCXF98vl0aEXS5esHGbZOh5/C17o5zIo5eAfXZ5R6BHlLfrU03OU2J1VJBB1RyR69Y9rqaQs8h9Kto3vS+qodboILyy9fmShHSo3dhRqzEg7ybQT5f0RcjxcgtiW7UyaEvn9d6QdIO00WTwnOOc/Rd4/Bnm44l6oct7jcD0krnQbcn7h2vIgcd8DndLeVaVl6dWr10oyVj+R857OsTtDjufK8UJpv5N2ifThCjR5fRHLIZyOcuLy/34yFlvJ71eXUzUVuEY9gVu+H+i39P9muY9Ppf3dUWsstSTPd30+709lfCYwADTjSEa1ArRtpE/TpG+fSxsn7c/y/9nSTsbakLa3ZDDfBQxP3ttCXm8mbXMeN0NQq7Rt5fPt5fNd5Pd7odiivP6ZvIe19ksUY0QAbLVrTK63G/nHiVgrBdY0KhZvP2TIkKYI1VpGNloryfcOxPcKnANVkIdL3w+WsVmzxPwNWZ9rRfn+Xhgz8FDwM9OOJg86RMagX2fvXe5pE1Zo/hl4hJx3TznfDnLcBs9BXm8krzdArTBZh2sz4HiglFNZrWfPnv2R/1DeHyzv4zx7yWenyvF6aU9I+1LaHLnGWXGmp5Kx3gJjKe3X4IWYCxW0XxB79pf72zRi7IrzQObAmi439bUcZ8nxKzS8lobX8+Xkx5qdd1huQTb57R5yjselzcfg2XPz+DmKtMW5UGUAhvL86P9MHG2T92ZImyevn5Hjfxq1a9UF6MAk5JwPSluI62BMpX0jr2dj4rgNn/E7szi5PpP2Hvt2GyaELJjt5NTdCuz+a5pXDXNC7nmk9BdzaIG0djLvneuFcdcK5GVMjpGxeIlzrV3aF1iwMW2gqiYAFddJO5/dPM7Hr7hGviDYTee8dNt00z6X32F9Y85jzc3k/H7NzIWGzo6lnONu5U8Ra3om+zpbXl9rGGAHQJPPN5P2GtfjlxF8Icfc5VrPSNunxPzNvS91ubaS3zxg+FsHPsOx/Ej454YVquPtvZ+B58NzfhHxXKaxYTP5KdfiR0jUK+1dae+Tx0/DHGSf5klbxGffIp+fE9O0auBYY8PwDvncLPK4cttX5nngfl6T41iZrwfJqbuXHEfUl5Ebeo43h9YqrY2tRRgW3kPJ6y0qeCghb2xd7Ny5oHODx/O247zy3tWSm2u5mHbzAe+nv7Rx7He7Xk9fa1+kX/8wkz8WCW2VVVYZhJ0u780dy9y18VmpZpgMHup70iZL+41ZGJmEdN8V3S+ka6G/cqzxbFul7wtRHn1pd/yQsbjSMg0eJ8sz7FsPoEZAm+msy9Zy52jEnG3jfM/frzQw892q3dzIfLpYztXirCld07pesCnfn0wvcAENUpd8504BoUi+gCM/myhj871yAA3Sk7SHzZptMzy0neviBZE01qpig76P3P+/DT/Ta7VX+qyc8dNnhDl6TpyVpSkNPu5cMz8+eA9jXUGf5xOoH5W2t1k7i2MGmDDEV/ni//IGW9mBFr5uIQBcLW1AmYtRL9TEOjXYZXzG87fJ/9gJngqVZAK7+Kycf4ic/3/kms1mQJt5HxiY86nai5uRNWCM5PwjsDPitZs5hgC0J+TzX2E8IOZLOxNNPh9FBnib/P+sfD7HeaDt3Im+gIJ20tZ2waWGjPuXZpxbOHGxc1x3CfPgrGhRy3gcJWMwVecAj9hJH1QP0msEoClgYPc+Fqofqs6OKtKQ6fwI+e6B0qZwjufvF4AG9Vi19yvnW5Wqwqm2v2SQc7FupC9bc7MQOdegipTfbizfHcP1ZPlcO7VFN0Btmfk2L2BQbP7L+uwNXsP1/irPs4jnXggeBEFgrbXW6lYFmPeR82wn7S+WP3MDAYnyHDwDfR5OOwbmHfke+jHRgGFSgKbj1Qg1KAtwLnA2TejzjegbMeBUqifRhlElOko+u1P+/9yCN3kLNvgjaJPOFJPUdjcqiDazG1B0/QqDVIF9JM/IAGpmJ48d/LiknQegM5drvcz+Y6G14vpy7btkMQ9KAAzy9yv6bFRUvYKA1GoW+HWi114FDwPSIWyTaJB0AIQE4u1gd5TXv5X2tD5M07AZuEPO/YMaO+2oFL6T9PNZPttmjjUWy5lG373UARrsZVBHmTmQYx6Yf/UwJi6gkUFCNX4azABg1mV4OzaRd+BcquVRLQjONx4b9irnqK7RbtKvCzj/85snqKhgwyqxnq0qeLB8/xrDIBXQYFPaqTNripqKy7gG9P5/K1LIyjFuHHegOcJuGGbJc/yu41XoPqNusO0DWGmvn6ab/AQArQMfBKZIe9Fs7HMbc9gD0TdmxwcO9DAtV99M+Pf6wgf/W7471gB5i5HGj+EcXexZNRB0gKjP6C6NUlS7VZkQ5TerAAz0Oz3l98P5wGdDhWCuHSTkYZahxLPAqvvk+DvTrzAJJo+j3OORRsJS1dMV5iFkSjgU9MUCgzQJfbQDamhPyfs/qiGgKePeSPrxTwNount8BZuKpVBK0znQQ8bgVqt24XP7EMbusgzc6QFafsNV7vzUfmNzhvuknSd/n5CmjC0qiMM2I33bFpKgmWvt3PGXw0/yc1CAZg3avNqN5uZtabtWyBdCldQg0RrV+0twTjPfCWJYZ2tK/+5hnxcqoGETXKH26hzaqtoTArSMqTA9xPCGRQS0GUZLEZYhoa4HJxYDas1cU6+jjEyUGSyrF5f2CAcMtpu/UJxvN0yqFZPHSFflSGmg7vBcYUdglB2VIKBZ6eGvNNjmbQMQvxOUbAIzcY4wG4JFXDS/p1okLBA7EhV3AXDcj/pj3eXoLvBpqFFqpHpUT9Y9pQ+vWLUC+wfV8k+4i1+aAC2rG0S5/4eNfUntqFhTl8TE7OICNDCKGeizE1dYKOA1NKrVU63UxCPu8fIYNzMhbTP9ZEyv4zrO24IAchU6nTSC0Zpdv6pKR26//fYNFfAG5Z2rGQkNG/Zfx+RsZh2wVpc+3uQCmuNwEhZ5XtqXfrDlJgxoWeNDcbcDaJDQDtXnUKDPHTy6oeGjsKV2XtW2XQONl8v/dAGuDwmMAzYTOmn5/z7cMEFN7QDvOAgblAloJymgwZW9BoCWm7Ry7fNTArSfuYAmx6uMU0A5jjVZoyrZDgySC1nvBwB3h7EdBClLIRjjc819ttpdrzzv20xYRrCUVdYdDkO2w+hzqm9pb4qUtlwtx8UCGjdbN1YqmTAs4S3XLiPH+/BZjEw9MJqLERHONtNojy8nMw/63ogNNnlbm+764cBmQisq8eaGbe5+8rcPjVNJGNd8EjD/D2u2MYC2QaVAI/cJu/0sPZfhx7ECGqSrCECDhHZImfw/MOB4MO27VqPwmoz1D9050gHQePE58MzhpH/fIKMyrvsgtpfx0DygdR7Q7PPJGnvVM3YxM6xihFW1piiFbKh2IvVkMowb7RujXlua1I2QAO4wzz9vW9EFyUVds8wwCAdRswIAAfFkFfQnCy0NVY2LHCeD98yGN85NVmhCgV61dhna5fdxsmAUDXinOmyms1mHpmHPCpxYVILYQ53A4PUYs+3YAtr/Vglo6p28NsKL1PFMXp9Xp4CWn0OUzqc66nvwnNPd57EYoMlxNuK5OIGuZDyBZaIwxF5YQcE1D2idB7QOmwYYwKXNdXao7xtHlyAtxg3DrLSP2Qc4FHwdYXc9xwTmB0uDupEG/Nc5DrDxfGPV9nCa4Y6+d63UsXASkPYWYpUQ4F+BCSGnvgJT4v20O5vdS2joj1sNrtLQ2pSkrM0Wx0up3i5bawRbl+NsgHU6rNJikgigVr5owCEb51qLCdBseBOcAKGRQ6za8XUMaNZeexvDmXJriVh1LZ1L8mMVBWjYuQ1V/SW82GycGgfzTfnuriUenge0eACtg60T2TgiFvR5Kdmr9Nzd1FjLoNyHYN8wNhllEmAag5cSQFN140Wq0pF7f1Ce+V8ZaGzVsvMQr1MrT1CAqXi/bWgyeZT97FddddXv0IVebYMq4YxH9oqEwhJyYzt06NBGeNA6zjaYb0+V6TmdG2tooIxbeJsySPAMow4Oy9jU9QdTZQzbVEq69QxoHcKqcOpBgwZ1r3NA0/NdTOHKxkjfbMLJsgUBTQZwY7NAwZw/cFRdOOn9JotF4AEtUUCz2QNOcexWeBZvp2Sv0mwAO8DTkpMKWQmOwybIqB3zu3akEzLpvIIlGcwgjco9P2lsU8OkbckYQjfm63yT47GW41LO9QNzf3+IuBc4lRyQRigJvHuZRaKDI4pxagmK8COVMI+3u30b/M5YtFKgpHwTnpePkW9OcLJZ1BOguSaJJFXdiQAaklbQjpYHNNh+jWNIeYDGk42xAbSazkd+94siD98DWnyAZiWAXaW96XoWIldbClKaphJC8ONMTtaJ9JJdDYva2Dd0vtxaps21K5OGv/w3Aoo5LjnXYoAAvP6MrVGltHdMPtG0Aa2STOu5viFAWJ7vf5msDzkVKtf1/yC3YcLPOKT973twYXe0FOjD0ZJ5qEep8cR9yHfvoeq32fER+FzOe2I5gdVci4cxJZcNHwgT2Ch1FtCCEhq0JHhF3ICWOye9ulvtZplj3lBS5WgArYGGROwyn3CYqC7K9QuAmge0eAHNOmPcaRa07i4vq/L8ZY0rVDJC/zJqn8vwvmRu74lEr0btqIx7lsnpt6RKaWqbQLaJeaq+gnqOTHgvSBERY3OQUfkE9ZzOi84EL7rZd5glZJMUNizqhNEXmXYiEhf8rUgqvcBImTYOzToy5Zwk5PzXZ77NFhIWWgd4bvJd3ai8zQ1l3OrWuCS0kNqAMC1bckxejo08184M+bJOPNPl3IcXdduPALTQ6IuHMUrbRn4jEe/NBZiVB7QEJDSkApKxvNQEcuazHTCYOVEphLv0qXyeb0IqyXwbXgCm95Fl3OznKGRQWUKltNAwyqm6gBFcb8BgHXnvXncTgswheJ51DGiap3RF6e/FZkOrgAwPw32deniZFCoZ/EATPxsG9x4Yf7G1CRBCHJSJq/1EAcKso0kGoBuKOKgMVW9BbPASklCLAdpXJeLQQE2sboKE52NTKhfUWUALnKwnuc9QNYDCVJsNs5DjLSaFYdmAlte9IpULAq6dZKStDJbbN0If7wEtXkALjCQ0wj4HkxJmcNJ2Frm3P4GZcFLdZj0s4XGEvJ8RziFPIbZxCQW0rLFtfs1xmQzbmX6Bz+w4I1XoM5sra23HOi4CquoepCGabZLvanDr7wF2KfY9MDFwj5rNta7v3QsER+deDxw4EIHFt5ikt+fI8d8OoOVswkWkLc0QchjUy7DFoTxUQgVuS0lo6xf5bTfGb01XRz44sdQY0GxgdVOpUBGm7LpXJXEDZi9hUxO1bsoBNKtS2YOpXTqoHpF3EDaUAmW0PaDFCGiMoznMDWimA8Z2RbNRVzmmUl8JFQWe57NsduJA1OC+Ixddm6PvPmUJVDvqPEew7sMYE66N841EqlnIN5bP349wqPiN2TmH9QZo7PfD7iYFDBL1uGoR1A9NBEKHIrQUowBazlgGxva7jga8w2UdgdSovGF5BEuq/KkMd/3LOK/fQDafJL07HUBbpICG+ykixW6rKmLe16t1AGgzWBWh4JyjRAanM9Tnm+JWgkBmIghQhVT1FQEaToK8ZVA1Wi87PtiznAJ7HtCSATTYZPa21QSM2/HeZWQLryaYGsVTP+ezhBpjR5cR0wniCSOJqNrxdrMAwyWoMnXIQowzNY5T/v9hgXI7V0YA2ktGxRXUmRq1n/TtQuPZrG7yUKkeYVRyaWepCbEGzBrTtTAxwtEmz4fgiWl+cysrZJxFRttuytQ8aph/GMUvEarCeX2vUXWmAWh6r/NZpWMkKnggAwjSbuF/6R8qeDzghIq8UgeA9g2STDOwf1esE0r/hzO7zkUoP8Vk0XOsnRN5eeVc9zKHbUGv6XIBzS7MwYiFcgzcbUxBs01E8l8PaPEBmu40dzQ59PIqLFR6LRFKUY0UEmLxGrH/igi7QbDffvtBRTWcXmR2AX4MFcgSJKHpuEAqHY37VQZnSvx0GBeoF1kA1pVejyzhiFATN34wGqjVIpzB7pSPe9fgWeavhSrN0pc3HECba1TbHX5Dk8n1Zsw16/tOVMfZ8/ybuUhdkLLlgT4wnnZJ8ZRigNZupJZ8s/87av9aApryghYWHp3C/IyvUsWL/MGL3Hvh+KL02CP0rB5caqwrATRbhuGHulO3gya/vYV51exE8IAWM6ChZAer47qA9tMEAE1VZhtpZhB6HB0SpQ7N/H/g6pqsi9buqHOuNIxwibClwbOOqh21K53kZi9wSgtNssyGa+hW1pCrh3HRXI0bSj/Hu0VA4fQj97h5DaunB6p2RJVqA0SaPeIkUzUgNID2XVNTbaZqC1hzbLyjvv+a2UcyUSp8qCT5fTDnAxN8bgUBjULEF1qt2rRpzFrS5uTYrCmgRVQM6VDI0/DLNkpyzyPODBKnyY9Z0k5ZCaB1cN1Gdgp352Z2PraonQe0eAAtUyRbeivH/r9iBjSbIPRcpLjiBB3HOVJwIUtf/qble8yEftKoKbOZJcB2hqrMTDqcKxRp8lcu5iCFOCkE9RqPrXyNJz67enIEudiYFlqMyujsGgNvPi4OGgmTHFk1B2NNBpSsKTp5gMkB+JAxj2ScWmv6LCc6dpqsaqjgM0B+do8p4ZJNCdCUnyxgVpoT6Mmo7WTWU3zWcXapJaBZr/inaH6AJuMJSsPzrNaCBVfPiuBhJUsuVQpogbGVrIEKyxFVoV+yHl4e0BKR0LbHLsyWVWcMzR4x2zVsqqvnjT3sdCOFuKVGNJvIj+T7051CinC1PmsJUTfm7IVIfWR2mDdF1MIKnDio1eU30yPsn5eVmXYpDWZ0uPX+02K/UP2Ap6ecDLsgQQVlilaqKu4jmj46lHhBuRHyINhzRlLF28hnso+8/7IbBoCNozmPzmvEWn5iylFlU5bQlJ/MKRaHBqkG8XGGD9UU0NiPLxGTqfeGdGWyQdgK+Tk1F6xRayN+9Ux4CFeCFZUCWn4xY4dTKHMAxHV4q3hAS8YpBAZVE6ibL6fOjUQQ0/3lnR5kPuxkijhOpzdlKeqmaaCcuTEuKn6kiwIaYs8+NEG5+9udf9SGBJ8jeJdeojZA+SmMcw3HRTNxDLI1s4waDomMd4uxLEzV4y+B68tLv+50CpXiORxt+yifbSpr4xWtJkKVaWhiK1dj9hB7vzMoJXS4X1NFGd6SP03YjlgM0FCIeQvDxxvZTxwDgIWMwzH1Bmjy+scR/L+bVhI3/KKdqa5Gm2rciQCaXdCI6xhj4kFUZPzKxBsA0E72gBYfoDneWnm1lVG1xCWdBUx5dK1xSb8ZBQdNkb5sRGvipD4bsSfuzlfasV1Y7ZiPB4Snn8mY8pZjP3abMpssNyTzbMJvgtvIGoY2qPR/jfEw083S16z2Xi+bEKvCPdZqibT4oxMfebCqG6GKM15yoaN2bDWgBn72gGNX3ADPmevgPuOdmq0FoBUpz2Qrip9PgLCVtGsGaKaSuRb4bOK828Sx2bayzWdYREM5NtvOAlp+4BDLwd1Kh+zbiJ6X15vx5oZ5QIsN0LoZidcC2pNmwgYxqnX6G083PNdPpL0or59D0t1CDYyDBWEX2ppgPM/YGCXJmjBTZPmWe/mHYaYIGsW9P19sXNheVonXkQruMqEN2bRzUSK+xyQibzWq1AmOKrVungUZ5zfOWnsORXHJ21Ad4CojnV3ijK96Lh6gKjoD5B8jM7+R9E4HU1Z1Y4TzT70Amv19N4A7PQQb6gjQLP/XYPXDjTo+n6dW3nvXbBYzSQGaqqSgejyZxlbrAJALMMWAQvT1gBZPLke4H8PoGxFUOgYSc4zqRk3keoDGlJmYkLIbwUz/1x0w7BXfrxP1VWfdxrdlzFkHsK50bBxHhA8Y35UmcOTWOUIwmAC23al/+Ca9Z+tSooZqDbY9m9eRlZiPUo9gABzXy5cmw0QHQJOMJ0NMejK1G87S89DFfzx5CWIO90sxHrCzgJapwcax04DGgPmrnWxUzZSsLzDeq0FSElquM2DUlMiancXwKuwKSMLqAS02QNsQ2Q3ctD9I18Ns43FkbtBA+mW1+jKug+KiUG3CEE+3/KKNkvsMA7qtRoV1UReU0PIBxwhi5WJtYymSaeWOCxt2os1uclzMW5M1PjVpSObmpbDLOusX6aEu7ARTDI2qNcnNRZZxgCMZvNtiQiEuhZeiSCcHmY3DSxFrMM9UIXU5UjO0C7eZNExaSWF8CurGtAAt7mfVGUCz1UR21mxETjWFL6nxC+KKQys16DsYj6M2M4nGIQiXO6jZHtCqUznS/vKeo25cyCrjYZxSCBKwOt6UJ8CDjG1b8zqqQYLZkjvkx5w4E7x+OoWSI0kV8RyijhNcdJfCI67McdkG3yWDvMMk2dVn+Zx8tksKzNIGUO9MkHWzuzxg3NLDOn0eoTD2zY3dTzcJ9/K+RvFeANZjCtyLJiwA+H3sPI+PaC89Bxtynmu0qT8Y1jmgZUpVIKgDCa1DFQP5zokFgsOtJ3BigKY7JUhql6v3naqXGKT4LvP7eQmtugKf2EWe5qiFsHl4xagb42LaMCiPMPfxkskMXxGBGaAIpOvEgpyUXcg5xHqZ7ucUt9ywk+Oyr9kE6vlmQ6WcsPSaDyWQytVQ8zwSEc/1oXHsKrsIaObbEkOby3m+l5bakcHtNrYPJV2u11JHGGfZSBSab6HJoD/OyW6xgM97EiXqZqTdSsl5J05AK/S8eiBpAjQ/NQY0y7vXcdS/qpL/TNbaVsXGPg5A6zDwcuHJBJA2436pIrwHtM5dOzQ55O52HnSbcW2NTd3IRTTJ3MdolrkPIhK/RrUOlX1NhWsbZnB3vcQ0VQD0qyHjicY0gWFm6CrtZkwp0uymQaXXNpNRZaIpLR8mBc5Dhw5tpKOD2izaTG7WC8wmKaxgjg6kNDPBZNtIivEHZr1fLteca1Tw8yl1zuK8e7lIuEj+eah92owHJIQpuiFDKIqJ/wq7MKDBfLEGN5sPIkg7pmdVDaDp/w2MY/3aqH8V1IpKx3EBmt3lHKkZrTXoV48e0DoFaFYyOBEL1ElH9D7TJsVRgTZwak5p3+dCRYZ8hAUChosybjxrk6bI2tKg3hnaRdSOqpZCTN4rZHpfw+O0QIB5KbDXeTraZH1pNuNydELjkr++3MM2vFabk3FmgpMwOahgjh6K+UJG9mAKgKbVwndnKigFI+uMhI3H2HL6j5RuEWEL7aY6929N3cGk52wSgGZz7J6lOUjl9f11AGgdQsI0GN5RO75lAueDJAEtL8IyY3KrDar1gNYpQMun3BE1x3e1oCB3jZot4NyEynNcbK41Wd7uVY26FIzClE/RVDhzjXot7ALqxkDG+1TjwDEVeSs72X9lxFvT69OqHcEA7kxortoA6tvNddsYlgGTwQFuaftymBgzd9yh0iuClVMMcu/H4OH2iDyGnyJ0qIR6W+2JW6rUbH5vfQL2TqhEU1qApvxke4b6tDOR+J11BGi5Jve9ieaPdbLqjGQF7sXmZ5yAZgdrO7n4FOME0OYBrWxAW0zCoRfp1Sa3ngaJ3s9zxqW207HbFExWGZNc45flBjYWmhOsRXWXk04JnpNvIIVUF1E3rodKExwXeDbeXoWBPTCBv7ebuEKVXj+Q97aO2caYD0hGKSAnM0Pe8F6BBGLnXUhvwzmmXt59KUvPf1ZPTa553VS/YDQBDcWesWQ4WgXqN5UMLLDJ+2+KumvthJ0qIgFNrn1DDIBm1d3DoUbVTSs8p+sE0KLKlTWTZ6h9F7GcO0Xld1wM0JBTqwpAsx5ypxpVSkvagEYpcb5TpuPCOgC0oITaLjRMIsud5xVWn0zpbLLJ0J6NsdaU2/9ZdHoIY0jZdZbZ6apaaJFsgA42911vbvzWTnMQgsy5Tj5lIu5qYukU7E/QFFrGSw8Voq8qNylrprJgeXhZvh2R4ed149UYlKFeDg2YoDryW06mjfvSDAzHPMJzsRsDbtL/UYbEadXt+zvzVJNF/CFFdWM5EtpmFTyrwJ+YBZQAABDSSURBVIwBKsvfYGIiYwc08KYSgFYWz2Ii/OdMPT6V0q4y1dLz52pihDYSWarRfp6pfJzt7I58tdVWGwBQcapbJw1oeY9LufZ9zFLRakpLXINNWJLF+DR3pTG05wHNiMlBEcaJcWlCULP0Gc4UD6tKSAsQwisNKsiY7yMf5ybXuN2oIqZE3GOl1EhGuqdRC6lTC+7pYY5NPTqINJhExNeZkhdvmBRgTZ08t6YIGyLn+5fdsPC1VWlWu160UgZK+1xv16U6UiClWqFKwCVUjT81tcm0/2kCWsjgaGTEeM0JVp9hKgQEZab/2oQVnjtUE2EKpm4pxk82kD+vZeJB84DGUJ2K7Y3y+1PMBqotZkBrMELSP50q2zONp2lTmYk7svQynetoEpC8+ETXNJP7hxNSURQT8c9gqNVOMIeBNacEaCHdb2e6WQ/orbRDQoAWGEC4y83kATClhNZEUO2J1DmQwOA6DUYDewp3h0irM0V+s8BZnHOYxmeVmLNsBGpXketcZ3ZumEBTmY6psyqWvBMCa4VNd+5Jj6NMKqF6kdK0H72ZE+8rMzYfmUSrVUmWLIPymqOiz8UXypjdE0MxzdA8g2HGm9Jm9rmJXo0NnKONRRqy//SFjUN+/0eTr7PV2JtSVzlyc3AzGahqZp5F7GaZ6yU0ac2u5RpWNf/7pjJ1kOY9ybX3MvUPWwyggZf1wmYQzw6brqiGOnwoOivPDPx4rOM9GLeEptqMA5H6znFgW0jP5oorgmAdmOK4OgYoKn16fkMJwyBS9JtYmIUEHkzGe1EUr5M75rz7pUyK0423ka2n1BBzVWVNGDuMFVCbmT3AHjUv2Kkxqh7txPtPuHEbVc4iNiz0z+Sz55gD8UXuAN9kjB5ifqYzE8d8GtQ7pJqS1/cjUNSMWzZmRnAE7FlO35vZDxR1vA/xNyznUNG4MZD4bgYRt5rnkR8jSmp3QfdewwS9USCPYrZPUlpt0TXC18iC8pD0+RRTcbqSDd9g2npnFBmXZjn/M/Ts6mxpoKxqYuCooZoYc51WzsWncK0S7Wnmq5zKkh/a34XmfC3cIN+TSbn0jTyvE0whWtzn3ysoy6Pj2iTnOdRRAf8lxtRyZRHUdghHsCVyTNJegNAn5B/vlWgfsajpPDN3W4zmB+e6q8p1lxvbgQMHylTtN9oEqC9y5nMu1IVxb2EZG2XdZGwBHsmNXjNzobYwS88kgH6GgzGzSK650VXUaMrHTqnRm0GKFyQloTEbtiYPLZg7Tz5/XhMnxwAMmgtuM4BOZ3L6ueXTtf8AGMQ8oSgmdfeNMS8otT1sr048UX0yKrCHKtilWrC8MapcfIFrnWacZ2qlfsw740h/nnDnT0SZ+OlmXCqxM5yvmVhKjQ0KppbKklCGoX5zaQ8XWh+dma9R/dZz41opbk6sN/CLNDFgA3V2pnNFdL+r4Ue8pwOpbkzaGcTa8k430kjVz6tYnlVqAjLVpuZDAVtVZ5a49l8r2CCoavt38IyO4pkQFHDxW5jhG4F1DzBN1Tjanx6D0bsKNVDgVFi+FwwRevqkVH4iWsMLbTyuU6Dhs0fBHAyghTExP+iMf88dLMZzgm2wEyHY1GkPsz2E3SxS88BxBUUEhXntgh0aDZ/ZhBiDMrotpf9j6GgyLmLcxjHY94Zys147gHYm7hcMDmNT6Nmggi0S4ZaThDQldc+y9JybWGQ+jee8Xt+JRStHQjuKkveEYuPCOXtmCRtsyevBFoMNpbQpXOPjnPZAhW1c1DlkLMbzfkbXIpMLpCkyutel7V4hvwmMt+ONBP93bTmatO4D3sWUbObTSWhOFW2x30NjxnOj3RqHhEbMwLx9Ul4/Sp6iDZgyiZU4RlUwn0NTVPomnjt/TlbBvg0TfE3oVumOvK5tWKDQvcYEPN2pw13fRHnHPjGoclyvWGO2jbVjZJo2hczqTB6Maw2poK0H9RMWDSQxZuTIpJB7LSCj600b3gZFxg6OC4M7Y1tFyix7r0WezQacH/XiGNLAbAoF+01vriGcT5XEF0KqX9HMlaLjwrRj2SqTTXdHJg+ebx13zfO9ctu6hZrp+4BaPDT0AapiqGlNSEilawdZVNaBmt1R96ZGjBXckW0H89q+V0mL+j0SBezU2fRtET4EK4PHwlyFeQZ+qE342gZ4D6pvzo1K5zPKla3Jc+fPSb+FwRlPma6QPzDsgjXDPHny5KkmtoJiLYiZMYcp6J/DMltQw2vXon+1HLd6ve9aj0ulc6be5mgafa4qs0sX3wwGma67CU9ibgR1ONc8efLkKXGmGheY1RIUg5SbJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTJ0+ePHny5MmTp1pnY/AZITx58tTlmWcaDKweU+5Ucu40mXywFOQHrHTcgxrOzdAn//bkyScz9WPn79WPiSdPnpIl1GST2kAbo4Ap6kIlXSwT9aZQ30iuuYkcNyq3oY+oa2Rqv8XZv+6s6bctipcWaFvI51vL9zaVvvRP6nmg7pO0XeVau8t1hmbiL2xbikF3w3VRHww1sJKuUSbPFoUxt5Tj1kXGHgVlt2ENq+5JzU/0BfeOSt1cD5tqw3zFHDH10jyoefJUZ7vLbrJ4/ygL9QVp78jrf6CIXyaZCuEZVtX9ASrISnsVlWilPVdGw/dekt9MEoaycSaeyuH5cWD1cFRI/1LaBygJL+0jp+H9z4SxvSHfH5Fg9eSfyzVaWCZ+iry1TErMUyupf0eu/QgrL8+UcRmW1PzD5kmudaq0j6V9UmDcdexnoAI6CoHG+Pw79EWucbqc/w1pWAtv2SafvYzq2vL6DIAdigN7UPPkqT4oywq33xdG8hGYJ1sLSp0nXO7+YJSJJ8NuN9cu2vBdaV8IoMUFuLZ0/e5y7mbTpzZprbbJ+woyC4SpXR3zLl2ZcwCmCjDBtcBIk6zYHjUnIAVJe5aAtlD6cE4CEkmWcwGVrG/jtdr4rFsjxl7ny2Q5bh/zhkvXwvfk/OOdedlm5x+O7OuH8vqoAQMG9PCg5slTnQCaMKvfysL8ikxjIRfrffL+ajHvgq1KbRcwJmmvSHtK/n8GEht3wYvAOOT1POyU5fUT+Fza05Ai5ThRAG2jmPqWZ0Jy/3vI+eeQcc2V60zCbhwMzjT8P1G+Ayn2wJgZWWjGZ7hhoq8Ab9MENBnfNfBcOBfmSH9+lTCg3cprLZB7fhfzzxl3HfvJsvEYlcDc1PveCNdhX+ZJm4pry/UekeOL2Exxfiq4fiHfPcKrHz15ytSFuhF2o6e4ONtUQqFK7YAE1Y5gRI1sTWoTEcbxE6j8yFDeg9TE73cz32+MuSq6Atqecs35HIsZsCum7M0YGmnxVANor6YNaH369FnTABo2Fr9OENDWlTaWEuk38vryJNXdFQAaVM/nmc+7QRUrY3Et+9nC790p/69dgz578uTJkc52lQU5nQvzcTZIKQC2q1PaeeLcDVT57MVdL/ozFba2hK9fCNBmQkopcu0kgM4DWmlACxJymS8FaHrNYMiQIU3y/v1QRfJ7L2DueEDz5Kl2FJKZXAX1GhfmL4RxnQzpjP9PFoAZlOBCtXE9jQS0vQsAWphQDFJBQANTdxho0jFQHtA6AlpDirGR5Uhogc5T2BSNJgGOTft6QPPkKVO7IGphmn1lMb6uRnh4NsIZAPYLMhcYvX+WwkKtZwktipEmxVw9oBWX0JIEtlKA1sQ52sg+/0b6OkslNIQ3eEDz5Kk2YAbGmSUDn0NG8rgwrSHcfV5ERgrD900pZMaoR0D7snfv3iumHFTrAW2FFb6Gk1KmRip4B9C+kP6cmVncoWk9eR9251Z+735dOx7QPHmqDTXIgrwOtjIsSmmjJaZmBeNS/zEX60vGlhRmlh5Ag5fjxfDu0ybvjaSq6XgTBxV4QIsP0ODlSO/X0xDrZcdexuJseMfKT5KI/VoM0OD5i9AM+X9VPG8E1ct7R8txHL0xcyEN6Jvpi/dy9OQp7TQ9yHIhC/FdLsoWWaQ762fIxCHv30MG87kw1+MT3n3WI6C1klkt4BFtPuOQEOR7bAIg7wFNxp1xkPOdsZ/HsRhjNljZpADNgNXbCClAsgF5719y/ISxkGifSbtC+r2mBzNPnmqXgLhJFuY+GjCKTBTG+SPDz3+takd5fXcKoFJvgAamOhsqMG3y/yx+jowVx3kJLRFAw7gvZFzkN3bsaee9PkVAy60P2eDlGvunzwR9OlfeX7kGyao9efKU+TbFE5xBxijDhErHpPDJmMDnD7h430fwa4Jqx3oEtDnYfcv1z0Ugr7TzwMBg35HjCPl/Qw9oidjQFjCQ/kwZg9EYd479efIZbLt7JpRuKsqGtohpuB6S6z6DtFzMWoJ+zpI+Hjlo0KDuXjrz5KmGBBUJbGQG0E6ShTwUuemQBgvMWt7bT9pkNdRLG56w+37dOYX06tVrJe8Ukr5TCIArUx9OIciQ8gd5u5F5Pk9mZhtNf/apvL+/5yiePNXOftZDFuIhZB5ttBPAswyLdy6PaHCfnktbQbP8P0FBZ2lx2y8ShxZ6t/1E3favyETHoYUJOiZFOYVArXiJo7nYArZnqCPxHfn/ZmNDCz2b8eQpRUBDDjwsQuOWX7TpblR+M1uY7AaZZGwFXS0OLeMDq5f81Ffsy2WZb+PQmriGYF+eQUD7FF7BXu3oyVMNvBtRdkUW4XRjJ7qSruiwU4xi+428dxbtRc+Rsap7cmNC2TrqUUJbi59n2UKnpaVyfM1k20+6H/UkoTVG3GuYVmC1A2h56VBq8a2OZ6JZ91F6CXZpL6V58pTizh9FMVFni4sVrvqTuBAbzQ60SRMB03nk5yaTyOPGCL6kS2gzHM/PWkpoyLbfJ01JpZY2NAdE6kVCC+29w9sSc4Xfe0aOu/nAak+eUmSUsujWkkV4h6lx9SsuwIYCO39d4NNMXM6mJq9dsIQB2h4m3mmWXHsryRayAmP2VkUlY1Yz7s+KxWEagIaSOngO8t5APENxFV8DdhtkeMd7mW8DjbsqoNnyMbMh8aDQJtTjGGs0uMfjKJuylbjhqhWgNbDPB6EahHpmwhPTl5Dx5CmTWuwZFuEOTOejNqKNMoWT7yqzWRXMxjDXMyDpxbxwLaD9yADaO8IodksR0H5oAG0+a7PBq+1VNrx+UT5/HbF7JuA8bkBDgc/T6JDTRiedt3BdJI5GYw7ON5lv82zjyh7GWA/tyZTqodk4NNQg+xwZapxxf5n1yFBF+hpRwa6ddD00xykktMeePXuugrp8Roq+l+WGvJTmyVPS0pnsuJeDfcxUQZ7EnW5QjNGjGq989wimx8LChbTwH0mpHOXcP8bOGIGscIs2SV8TBzSAp9a4UvuI2/R9juGfYmbyFlyH63WK9YXjdKuMW784AY1S04s4P7xhE5JAcn0FOMm1bue1Iu/Vud/n5fV2SVSsBqDJuR9mX+AYdU3EuIZ0DrkQnsFcF9MR/uLtaJ48peAQAnuQLLizZYE+id0kQKrcxQfnCPn+XVjoqN4rarj1EqzPtiWuJdd5TI43IjYupXpsKpVcKW2SXPtfrJI8jscH2fD6IWl/l+8cmlTfoO6U898gYz7BuX6+H/I5nseDcjzMMPYgDpCBio+lhV5hhe4Dkhp32nYP0crQcq0HOe7jnHt+gHNwFNSuMYNH7jxQMaOMEuzFrEp+UMR1FPQ3k+/8gYm9MWcP8SrHrkf/BzAWY4/QWqAdAAAAAElFTkSuQmCC",
+ "icon": "https://nidaazwer.com/cdn/shop/files/fav_32x_9a368d85-647d-4446-98a4-d13197b960c9.png?v=1720072304&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#b98b6b",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#b98b6b",
+   "#ec0101",
+   "#56cfe1",
+   "#dda74f",
+   "#e81e63",
+   "#428445"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "EB Garamond",
+  "body": "Figtree",
+  "found": [
+   "Figtree",
+   "EB Garamond",
+   "SabonNextLTW04-Display",
+   "EB-Garamond"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://nidaazwer.com/cdn/shop/files/Mob_copy.webp?v=1792385980",
+  "https://nidaazwer.com/cdn/shop/files/Web_copy.webp?v=1792385980"
+ ],
+ "collections": [
+  {
+   "title": "2025 Aug",
+   "handle": "2025-aug",
+   "image": null,
+   "count": 66
+  },
+  {
+   "title": "AFSANÉ - Festive Edit ’25",
+   "handle": "nur-afsane-festive-edit-25",
+   "image": null,
+   "count": 15
+  },
+  {
+   "title": "All Jackets",
+   "handle": "all-jackets",
+   "image": null,
+   "count": 383
+  },
+  {
+   "title": "All Kalidaars",
+   "handle": "all-kalidaars",
+   "image": null,
+   "count": 197
+  },
+  {
+   "title": "All Products",
+   "handle": "all-product",
+   "image": null,
+   "count": 2507
+  },
+  {
+   "title": "Anemone",
+   "handle": "anemone",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "Annual Sale",
+   "handle": "annual-sale23",
+   "image": null,
+   "count": 96
+  },
+  {
+   "title": "Annual Sale",
+   "handle": "annual-sale",
+   "image": null,
+   "count": 66
+  },
+  {
+   "title": "Annual Sale - Ready To Wear",
+   "handle": "annual-sale-ready-to-wear",
+   "image": null,
+   "count": 22
+  },
+  {
+   "title": "Annual Sale - Stitched Lawn",
+   "handle": "annual-sale-basic-pret",
+   "image": null,
+   "count": 22
+  }
+ ],
+ "products": [
+  {
+   "title": "Asmara",
+   "handle": "asmara",
+   "type": "Luxury",
+   "vendor": "Lueur Demi Couture'26",
+   "price": 824,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A4458.jpg?v=1791456594&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A4458.jpg?v=1791456594&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A4482.jpg?v=1791456594&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A4497_b6f0a0ce-73b5-42db-bbe7-050b1c0a97db.jpg?v=1791456594&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A4524.jpg?v=1791456594&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Jacket, Blouse & Trousers"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "A distinctive silhouette meets dimensional craftsmanship in this elegant green sheesha silk ensemble. The lustrous A-line jacket with a tulip hem is covered in blooms and vines. Fine embroidery hand embellished with sequ"
+  },
+  {
+   "title": "Yuri",
+   "handle": "yuri",
+   "type": "Formals",
+   "vendor": "Tatreez Formal '26",
+   "price": 1137,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_PDPGENERATOR_3_20260916_628951.jpg?v=1790243901&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_PDPGENERATOR_3_20260916_628951.jpg?v=1790243901&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_PDPGENERATOR_2_20260916_628931.jpg?v=1790243901&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_PDPGENERATOR_3_20260916_628960.jpg?v=1790243901&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_PDPGENERATOR_1_20260916_628931.jpg?v=1790243901&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Jacket & Plain Kaftan",
+      "Jacket, Camisole & Pants",
+      "Jacket & Kalidar",
+      "Kalidar & Pants"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Built around the beauty of layers, this sage organza set glimmers with careful craft. The long jacket is adorned with ivory screen-printed tendrils that meander across the sleeves and length before culminating at the hem"
+  },
+  {
+   "title": "Kavya",
+   "handle": "kavya",
+   "type": "Formals",
+   "vendor": "Lueur Demi Couture'26",
+   "price": 1725,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A3049.jpg?v=1791456591&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A3049.jpg?v=1791456591&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A3248.jpg?v=1791456591&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A3262.jpg?v=1791456591&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A3070.jpg?v=1791456592&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Jacket, Blouse & Flared Pants"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Butter yellow organza lends a soft radiance to this delicately embellished ensemble. The long, asymmetric jacket is covered in tender blooms, carefully screen printed and layered with glimmering zardozi, crystals, and pe"
+  },
+  {
+   "title": "Melora",
+   "handle": "melora",
+   "type": "Formals",
+   "vendor": "Tatreez Formal '26",
+   "price": 855,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/WhatsAppImage2026-09-12at4.09.02PM_1__MODELIA_PDPGENERATOR_4_20260922_637692.jpg?v=1790243894&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/WhatsAppImage2026-09-12at4.09.02PM_1__MODELIA_PDPGENERATOR_4_20260922_637692.jpg?v=1790243894&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/colorfix455.jpg?v=1790243894&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/WhatsAppImage2026-09-12at4.09.02PM_1__MODELIA_PDPGENERATOR_1_20260918_633409.jpg?v=1790243894&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_PDPGENERATOR_1_20260915_627297.jpg?v=1790243894&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Kalidar & Kaftan"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "A soft botanical print finds new dimension across sheer and silken layers. The pink charmeuse silk kaftan drapes gracefully, its blooming print accented by glowing textural handwork down the neckline. A whisper-soft orga"
+  },
+  {
+   "title": "Mahalina",
+   "handle": "mahalina",
+   "type": "Luxury",
+   "vendor": "Lueur Demi Couture'26",
+   "price": 1169,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A5348.jpg?v=1791456589&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A5348.jpg?v=1791456589&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A5430.jpg?v=1791465282&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A5479.jpg?v=1791456589&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A5412.jpg?v=1791465281&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Shirt, Flared Pants & Dupatta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Warmth of copper meets cool jewel tones in this thoughtfully balanced look. The long kameez in tissue silk is richly embroidered, covered in delicate blooming tendrils and angular bands brought to life with handwork. Han"
+  },
+  {
+   "title": "Nhu",
+   "handle": "nhu",
+   "type": "Luxury",
+   "vendor": "Lueur Demi Couture'26",
+   "price": 1020,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A1196.jpg?v=1791456586&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A1196.jpg?v=1791456586&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A1546.jpg?v=1791456586&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A1214.jpg?v=1791456587&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/047A1301_70802871-1fb0-4248-bf77-b76466089690.jpg?v=1791456586&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Jacket, Blouse & Flared Pants"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "A garden of color makes this layered set alluring. Across the short trench coat, the gold tissue base blooms with bold embroidery and sparkling dimensional handwork. Intricate craftsmanship shapes meandering tendrils tha"
+  },
+  {
+   "title": "Scarlet Flair",
+   "handle": "scarlet-flair",
+   "type": "Nur Basics",
+   "vendor": "Nahar'26",
+   "price": 312,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/LastImage1.jpg?v=1789038378&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/LastImage1.jpg?v=1789038378&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/LastImage2.jpg?v=1789038380&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/WhatsAppImage2026-09-09at9.53.20AM_MODELIA_PD_MODELIA_SS_1_20260910_621979_1.jpg?v=1789136133&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/Imagesuploaded_MODELIA_SS_1_20260910_621907.jpg?v=1789136134&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Kalidar & Pants",
+      "Dupatta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "One-Size"
+     ]
+    }
+   ],
+   "description": "Graceful in silhouette and striking in contrast, the red cotton slub kalidar is animated with bold florals and leafy sprouts in white screen print. Light bands trace the neckline, while tissue silk-lined cuffs and hem in"
+  },
+  {
+   "title": "Intricate Stories",
+   "handle": "intricate-stories",
+   "type": "Nur Basics",
+   "vendor": "Zefoir Resort wear '26",
+   "price": 282,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A9263.jpg?v=1791201119&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A9263.jpg?v=1791201119&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A9348.jpg?v=1791201119&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Jacket",
+      "Shirt & Pants"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Intricate vocabulary of the suzani tradition finds home in this layered ensemble. The peach pink organza jacket carries an elaborate arrangement of floral and traditional motifs, carefully cross-stitched across its sheer"
+  },
+  {
+   "title": "Floral Escape",
+   "handle": "floral-escape",
+   "type": "Nur Basics",
+   "vendor": "Zefoir Resort wear '26",
+   "price": 190,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A6904.jpg?v=1791201106&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A6904.jpg?v=1791201106&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A7047.jpg?v=1791201106&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A7103.jpg?v=1791201106&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/0W7A7176.jpg?v=1791201107&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Jacket",
+      "Kaftan"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Shades of blue create a calming composition in this layered ensemble. The rod silk kaftan, featuring a band collar finished with a beaded drawstring, is covered in panels of blue lined with vibrant wildflowers. A long ja"
+  },
+  {
+   "title": "Zenobia",
+   "handle": "zenobia",
+   "type": "Semi Formals",
+   "vendor": "Kerbez Festive Edit '26",
+   "price": 980,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/zenobia-1.jpg?v=1783767222&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/zenobia-1.jpg?v=1783767222&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/zenobia-3.jpg?v=1783767222&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/zenobia-2.jpg?v=1783767222&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/zenobia-4.jpg?v=1783767222&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Kalidar & Pants",
+      "Dupatta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Rich shades of red create a commanding but graceful composition. The brick red sheesha silk kalidar is animated with delicate florals and poised bird motifs in sparkling zardozi and vasli across the bodice, cuffs, and le"
+  },
+  {
+   "title": "Renée",
+   "handle": "renee",
+   "type": "Semi Formals",
+   "vendor": "Sawera Eid Capsule'26",
+   "price": 490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/008A0631t.jpg?v=1776404190&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/008A0631t.jpg?v=1776404190&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/008A0718t.jpg?v=1776434058&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/008A0688t.jpg?v=1776434058&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/008A0700t.jpg?v=1776434058&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Kalidar, Camisole, Pants & Dupatta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Pastel blue rendered in layers of softness and tonal threadwork. The organza kalidar, cut in a front-open silhouette, is embroidered with French florals in matching soft blue, trailing across the length and sleeves to cr"
+  },
+  {
+   "title": "Belle",
+   "handle": "belle",
+   "type": "Semi Formals",
+   "vendor": "Lulua'26",
+   "price": 722,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/3P6A7153y.jpg?v=1767876692&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/3P6A7153y.jpg?v=1767876692&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/3P6A7171t.jpg?v=1767878941&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/3P6A7167t.jpg?v=1767878941&width=700",
+    "https://cdn.shopify.com/s/files/1/0632/6101/6293/files/3P6A7178t.jpg?v=1767876692&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Kalidar, Pants & Dupatta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "SM",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "This ensemble is celebration of masterful handwork in a traditional form. The lemon yellow organza kalidar, adorned with delicate florals clustered around the neckline, hand-embroidered and accented with zardozi, sequins"
+  }
+ ],
+ "productCount": 1891,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  }
+ ],
+ "storeApps": [
+  "Klaviyo",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:05:14.660Z",
+ "warnings": [],
+ "overrides": {}
+}

@@ -1,0 +1,538 @@
+{
+ "slug": "faiza-saqlain",
+ "name": "Faiza Saqlain",
+ "url": "https://www.faizasaqlain.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.faizasaqlain.pk/cdn/shop/files/favicon_golden_1.png?v=1684234261",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#c16452",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#c16452",
+   "#213d46",
+   "#108043",
+   "#de3618",
+   "#56ad6a",
+   "#c20000"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Jost",
+  "body": "Nunito",
+  "found": [
+   "Jost",
+   "Nunito",
+   "EB Garamond",
+   "Century Gothic",
+   "ITC Galliard"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://www.faizasaqlain.pk/cdn/shop/files/Dania-1_{width}x.jpg?v=1778739158",
+  "https://www.faizasaqlain.pk/cdn/shop/files/Myrna-1_{width}x.jpg?v=1778738955",
+  "https://www.faizasaqlain.pk/cdn/shop/files/1_b5d02e5d-07b5-4552-8737-598415899764_{width}x.jpg?v=1778737822",
+  "https://www.faizasaqlain.pk/cdn/shop/files/1_de6c2d8d-4f5c-44a8-91a0-1b78c2ead736_{width}x.jpg?v=1778738384"
+ ],
+ "collections": [
+  {
+   "title": "A Regal Dawn",
+   "handle": "a-regal-dawn",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "A Summer Tale",
+   "handle": "a-summer-tale",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Aaween",
+   "handle": "aaween",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "ADEEN",
+   "handle": "adeen",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Admir",
+   "handle": "admir",
+   "image": null,
+   "count": 13
+  },
+  {
+   "title": "Aferin",
+   "handle": "aferin",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "AFERIN",
+   "handle": "aferin-men",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Afsaneh",
+   "handle": "afsaneh",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Aleira",
+   "handle": "aleira",
+   "image": null,
+   "count": 7
+  },
+  {
+   "title": "Amirah",
+   "handle": "amirah",
+   "image": null,
+   "count": 11
+  }
+ ],
+ "products": [
+  {
+   "title": "Roel",
+   "handle": "roel",
+   "type": "Made To Order",
+   "vendor": "Faiza Saqlain",
+   "price": 28000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_22f27211-1779-4d3b-9403-5b0de4975fee.jpg?v=1772599095&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_22f27211-1779-4d3b-9403-5b0de4975fee.jpg?v=1772599095&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/2_0f2ede10-8e2c-4b59-a864-fa8c52ea4b1e.jpg?v=1772599096&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/3_6909f449-9a7e-4069-9856-e0f23daee7b6.jpg?v=1772599095&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/4_5a6b1d62-3d14-4ba8-8245-0f00c191cf79.jpg?v=1772599095&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Pale Pistachio"
+     ]
+    }
+   ],
+   "description": "Product Details: Kurta: Embroidered Karandi Trouser: Plain Karandi Description: Rooted in classic eastern tailoring, Roel presents understated sophistication through refined craftsmanship in a classic beige hue. The embr"
+  },
+  {
+   "title": "Arezou",
+   "handle": "arezou",
+   "type": "Made To Order",
+   "vendor": "Faiza Saqlain",
+   "price": 75000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1a.jpg?v=1646466689&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1a.jpg?v=1646466689&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/2_35072ed3-c201-427c-a4d1-5b26e6e122e5.jpg?v=1646466688&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/3_5be573a5-9585-4e88-b7d0-434e3c0d4389.jpg?v=1646466689&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/4_33a1b779-a1fa-4a44-91f6-00f3d6963949.jpg?v=1646466688&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Ivory"
+     ]
+    }
+   ],
+   "description": "Product Details: Three-piece stitched: Angrakha: Embroidered karandi angrakha front and back Embroidered karandi sleeves Dupatta: Embroidered net dupatta Sharara: Embroidered karandi sharara Description: An ivory tulle s"
+  },
+  {
+   "title": "Darcel",
+   "handle": "darcel",
+   "type": "Made To Order",
+   "vendor": "Faiza Saqlain",
+   "price": 85000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_622086f0-4ccd-4087-9dd5-c2a2e589faee.jpg?v=1730875294&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_622086f0-4ccd-4087-9dd5-c2a2e589faee.jpg?v=1730875294&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/2_51202f66-3383-4538-8e30-193f1aeb435b.jpg?v=1730875313&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/3_a4a5ed42-3cae-487e-8ed3-b1b9a8b57fd4.jpg?v=1730875345&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/4_63aae779-f1ef-4c19-b156-754a22a1b527.jpg?v=1730875368&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Charcoal Grey"
+     ]
+    }
+   ],
+   "description": "Product Details: Angrakha: Embroidered Velvet Churidaar: Silk Dupatta: Embroidered Chiffon Description: Embodying the subtle sophistication of classic silhouettes, Darcel is a true testament to artistic finesse. Crafted "
+  },
+  {
+   "title": "Neesa",
+   "handle": "neesa",
+   "type": "",
+   "vendor": "Faiza Saqlain",
+   "price": 58500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1_820f4ed7-2c66-4230-b352-170d065988c0.jpg?v=1646469477&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1_820f4ed7-2c66-4230-b352-170d065988c0.jpg?v=1646469477&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/2_f06f28c5-7d58-4592-9ef8-a5df4cca5462.jpg?v=1646469476&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/3_68d79b97-c0ec-4edd-a726-13aed6610579.jpg?v=1646469476&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/4_9941b468-7e78-49a0-99d4-5ee0437bea8f.jpg?v=1646469476&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Burnished gold"
+     ]
+    }
+   ],
+   "description": "Product Details: Three-piece stitched: Shirt: Embroidered shimmer silk shirt front and back Embroidered shimmer silk sleeves Dupatta: Organza dupatta Trouser: Embroidered korean raw silk trouser Description: A burnished "
+  },
+  {
+   "title": "Ezra",
+   "handle": "ezra",
+   "type": "",
+   "vendor": "faiza saqlain",
+   "price": 55000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1_2647faae-6f11-4d2a-9509-76fa96f1f263.jpg?v=1646470437&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1_2647faae-6f11-4d2a-9509-76fa96f1f263.jpg?v=1646470437&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/2_2bffb1c6-0607-438e-9e4f-f16c0b289434.jpg?v=1646470436&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Ice blue"
+     ]
+    }
+   ],
+   "description": "Product Details: Three-piece stitched: Shirt: Korean raw silk shirt Korean raw silk sleeves Dupatta: Embroidered organza dupatta Pants: Embroidered korean raw silk flared pants Description: An ice blue kameez and flared "
+  },
+  {
+   "title": "Ravza",
+   "handle": "ravza",
+   "type": "",
+   "vendor": "faiza saqlain",
+   "price": 85000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1_2d14e6a3-886a-4f4c-8296-a8e116ef8973.jpg?v=1646471425&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/1_2d14e6a3-886a-4f4c-8296-a8e116ef8973.jpg?v=1646471425&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/2_1a4fa799-81c6-400f-baa4-3e0faaac5ce0.jpg?v=1646471426&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/3_957e40d5-6343-45f6-aad2-fccf2bbeb464.jpg?v=1646471425&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/products/4_f89148af-90b8-4a57-9633-c50c3b7bcec3.jpg?v=1646471425&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Peach"
+     ]
+    }
+   ],
+   "description": "Product Details: Three-piece stitched: Shirt: Embellished badla chiffon shirt front and back Embellished chiffon sleeves Dupatta: Embroidered zari net dupatta Gharara: Embroidered jute net gharara Description: A peach gh"
+  },
+  {
+   "title": "Vevina",
+   "handle": "vevina",
+   "type": "FAIZA STYLE STARS",
+   "vendor": "Faiza Saqlain",
+   "price": 85000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_3.jpg?v=1737547458&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_3.jpg?v=1737547458&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/2_75c8ad7c-986b-4527-acb2-1ec66d78cfee.jpg?v=1737547458&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/3_3acac96b-f5d2-461a-824b-0e7d568185a8.jpg?v=1737547458&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/4_853b4a23-8f6c-4bfe-9b67-d6656e634bcb.jpg?v=1737547458&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Ruby Red"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Product Details: Pishwas: Embroidered Silk Churidaar: Silk Shawl: Embroidered Velvet Description: A true testament to opulence, Vevina reimagines the iconic pishwas silhouette on a glimmering ruby red silk canvas. Accent"
+  },
+  {
+   "title": "Moira",
+   "handle": "moira-1",
+   "type": "Ready To Ship",
+   "vendor": "Faiza Saqlain",
+   "price": 92500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_e36f54b4-e081-4685-89ca-80f41c361cf8.jpg?v=1712298903&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_e36f54b4-e081-4685-89ca-80f41c361cf8.jpg?v=1712298903&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/2_54892fe3-0269-495f-a639-66f86f1e08f9.jpg?v=1712298903&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/3_3dd709b8-f450-4e7d-b299-1f8efc5a1415.jpg?v=1712298903&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/4_7221e884-aed8-48d6-a223-8c54f1985357.jpg?v=1712298904&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Ivory Gold"
+     ]
+    }
+   ],
+   "description": "Product Details: Shirt: Embellished Kundan Zari Shirt Culottes: Embellished Cotton Silk Culottes Dupatta: Embellished Zari Net Dupatta Description: An exquisite arrangement of colour and design, Moira bedazzles. The kund"
+  },
+  {
+   "title": "Derifa",
+   "handle": "derifa-1",
+   "type": "Ready To Ship",
+   "vendor": "Faiza Saqlain",
+   "price": 38500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_b704480e-34d7-48de-b588-2d2c93784857.jpg?v=1704691781&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_b704480e-34d7-48de-b588-2d2c93784857.jpg?v=1704691781&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/2_3e49ab3b-3b59-4365-91e7-531e815acfab.jpg?v=1704691782&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/3_de390e3d-3bda-4d83-8f17-15eea130d328.jpg?v=1704691781&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/4_61fb8b37-26be-46cd-b510-5fa66ebace3d.jpg?v=1704691781&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Rose Pink"
+     ]
+    }
+   ],
+   "description": "Product Details: Kaftan: Embellished silk kaftan front and back Description: Brimming with structured finesse, Derifa showcases the fluidity of the kaftan in a delicate pink tone. The silk piece is brought to life via an"
+  },
+  {
+   "title": "Adania",
+   "handle": "adania-1",
+   "type": "Ready To Ship",
+   "vendor": "Faiza Saqlain",
+   "price": 38000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_e604d049-c230-48e8-930b-5bdbd4371873.jpg?v=1777275349&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/1_e604d049-c230-48e8-930b-5bdbd4371873.jpg?v=1777275349&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/2_96198fb8-66cb-4e3e-bf49-d4ba40a6d867.jpg?v=1777275349&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/3_48be2a94-4d6a-4d97-8a21-c068a03410ba.jpg?v=1777275350&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/4_aa74d5ea-1de4-4d23-b699-1b2989e85c95.jpg?v=1777275349&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Cream and Coral"
+     ]
+    }
+   ],
+   "description": "Product Details: Shirt : Printed &amp; Embellished Shamose Silk Shirt Shalwar : Printed Korean Raw Silk Dupatta : Printed Silk Dupatta Description: Embodying soft opulence, Adania delivers a graceful statement. Cut from "
+  },
+  {
+   "title": "Guluna",
+   "handle": "guluna",
+   "type": "FAIZA STYLE STARS",
+   "vendor": "Faiza Saqlain",
+   "price": 50000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/fs2_jpg.jpg?v=1784120327&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/fs2_jpg.jpg?v=1784120327&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/fs1_jpg.jpg?v=1784120319&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/FS3_jpg.jpg?v=1784120341&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/fs4_jpg.jpg?v=1784120338&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Magenta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Product Details: Shirt : Embroidered Lawn Flared Pants : Shamose Description: Guluna is a striking magenta lawn ensemble enriched with intricate tilla, resham, and mirror work that glistens with every detail. Paired with"
+  },
+  {
+   "title": "Haneen",
+   "handle": "haneen",
+   "type": "FAIZA STYLE STARS",
+   "vendor": "Faiza Saqlain",
+   "price": 75000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/iqraweb1_jpg.jpg?v=1774868500&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/iqraweb1_jpg.jpg?v=1774868500&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/iqraweb4_jpg.jpg?v=1774868500&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/iqraweb3_jpg.jpg?v=1774868499&width=700",
+    "https://cdn.shopify.com/s/files/1/0262/2531/1795/files/iqraweb2_jpg.jpg?v=1774868499&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Blush Patel"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Product Details: Shirt : Embroidered Korean Raw Silk Sharara : Plain Korean Raw Silk Dupatta : Embellished Organza Description: Excluding refined femininity, Haneen radiates timeless allure. Cut from blush petal Korean r"
+  }
+ ],
+ "productCount": 1986,
+ "features": [
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  }
+ ],
+ "storeApps": [
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:06:01.670Z",
+ "warnings": [],
+ "overrides": {}
+}

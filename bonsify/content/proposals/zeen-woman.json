@@ -1,0 +1,503 @@
+{
+ "slug": "zeen-woman",
+ "name": "Zeen Woman",
+ "url": "https://zeenwoman.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://zeenwoman.com/cdn/shop/files/zeenbird-01.png?crop=center&height=48&v=1792134463&width=48",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#bd091c",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#0766ff",
+   "#bd091c",
+   "#31a8e0",
+   "#24d366",
+   "#5fb7e0",
+   "#0d6efd"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Poppins",
+  "body": "Libre Baskerville",
+  "found": [
+   "Poppins",
+   "Libre Baskerville",
+   "ui-monospace"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://zeenwoman.com/cdn/shop/files/preview_images/cb099b2f1c34408781223debac994c29.thumbnail.0000000000_small.jpg?v=1792158961",
+  "https://zeenwoman.com/cdn/shop/files/preview_images/50971843a1be449f96630448fc3982f5.thumbnail.0000000000_small.jpg?v=1792158956",
+  "https://zeenwoman.com/cdn/shop/files/Desktop_2026_new_sweater.webp?v=1792838448&width=3600",
+  "https://zeenwoman.com/cdn/shop/files/preview_images/c61ee30aa03e487298315f1d2e3801a7.thumbnail.0000000000_small.jpg?v=1791542457"
+ ],
+ "collections": [
+  {
+   "title": "1 Piece Pret",
+   "handle": "1-piece-pret",
+   "image": null,
+   "count": 22
+  },
+  {
+   "title": "11.11 Sale",
+   "handle": "11-11-sale",
+   "image": null,
+   "count": 819
+  },
+  {
+   "title": "12.12 Sale",
+   "handle": "12-12-sale",
+   "image": null,
+   "count": 819
+  },
+  {
+   "title": "18% Tax",
+   "handle": "18-tax-1",
+   "image": null,
+   "count": 822
+  },
+  {
+   "title": "2 Piece Pret",
+   "handle": "2-piece-pret",
+   "image": null,
+   "count": 165
+  },
+  {
+   "title": "2 Piece Suits",
+   "handle": "factory-e-outlet-2-piece-suits",
+   "image": null,
+   "count": 70
+  },
+  {
+   "title": "2pc lawn stitched 22",
+   "handle": "2pc-lawn-stitched-22",
+   "image": null,
+   "count": 12
+  },
+  {
+   "title": "3 Piece Pret - Full Suit",
+   "handle": "3-piece-pret",
+   "image": null,
+   "count": 196
+  },
+  {
+   "title": "3 Piece Suits",
+   "handle": "factory-e-outlet-3-piece-suits",
+   "image": null,
+   "count": 99
+  },
+  {
+   "title": "3pc lawn stitched 22",
+   "handle": "3pc-lawn-stitched-22",
+   "image": null,
+   "count": 41
+  }
+ ],
+ "products": [
+  {
+   "title": "Cape Shawl",
+   "handle": "cape-shawl-wsw25-06-light-pistachio",
+   "type": "Western",
+   "vendor": "Ready To Wear",
+   "price": 9990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/1_11c28851-1ad3-44dd-98b0-4a6fb79c8c07.webp?v=1793018044&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/1_11c28851-1ad3-44dd-98b0-4a6fb79c8c07.webp?v=1793018044&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/2_e9822be1-81fa-429b-8fa2-8a6ef258e2f9.webp?v=1793018044&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/3_692690b7-c920-45e7-904d-58648e482280.webp?v=1793018044&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/4_ec1ca048-d645-4e6c-8356-235dde64abc8.webp?v=1793018045&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Pistachio"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Free Size"
+     ]
+    }
+   ],
+   "description": "Product Details The cape shawl in light pistachio adds a modern touch to a classic style. This shawl is made from yarn-dyed VPN. It provides warmth and durability, making it ideal for cooler days. Its knitted design has "
+  },
+  {
+   "title": "Sleeveless Vest Sweater",
+   "handle": "sleveless-button-down-sweater-wsw26-20-mustard",
+   "type": "Eastern Sweaters",
+   "vendor": "Ready To Wear",
+   "price": 6490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/12.webp?v=1793014666&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/12.webp?v=1793014666&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/9_2d3c3dde-c300-488a-9ca5-d7576fc5571f.webp?v=1793014666&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/11.webp?v=1793014666&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/10.webp?v=1793014666&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Dark Brown"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "STYLIZED PULLOVER SWEATER",
+   "handle": "f-s-pullover-sweater-wsw25-52-camel",
+   "type": "Western",
+   "vendor": "Ready To Wear",
+   "price": 7990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Wsw25-52c.webp?v=1792998729&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Wsw25-52c.webp?v=1792998729&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Wsw25-52b.webp?v=1792998729&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Wsw25-52a.webp?v=1792998729&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Wsw25-52.webp?v=1792998729&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Camel"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "Long Length Cardigan",
+   "handle": "long-length-cardigan-wsw26-34-blue",
+   "type": "Eastern Sweaters",
+   "vendor": "Ready To Wear",
+   "price": 9990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/14.webp?v=1792838165&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/14.webp?v=1792838165&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/13.webp?v=1792838165&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/15_c4f0d02a-d9c9-4971-92b8-f5e48880eb1e.webp?v=1792838165&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/16.webp?v=1792838165&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Blue"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "STYLIZED YARN DYED DRESS",
+   "handle": "stylized-yarn-dyed-long-dress-wsw25-44-off-white",
+   "type": "Winter Collection",
+   "vendor": "Ready To Wear",
+   "price": 11490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0015_WSW25-44.webp?v=1792763117&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0015_WSW25-44.webp?v=1792763117&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0016_WSW25-44_3.webp?v=1792763117&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0017_WSW25-44_2.webp?v=1792763117&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0018_WSW25-44_1.webp?v=1792763117&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "White"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "STYLIZED HIGH NECK",
+   "handle": "stylized-yarn-dyed-high-neck-wsw25-45-black",
+   "type": "Western",
+   "vendor": "Ready To Wear",
+   "price": 6490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0013_WSW25-45_2.webp?v=1792762953&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0013_WSW25-45_2.webp?v=1792762953&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0014_WSW25-45_1.webp?v=1792762953&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0012_WSW25-45.webp?v=1792762954&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "STYLIZED TURTLE NECK PULLOVER",
+   "handle": "s-l-turtle-neck-pullover-sweater-wsw25-27-beige",
+   "type": "Winter Collection",
+   "vendor": "Ready To Wear",
+   "price": 3990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0026_wsw25-27_3.webp?v=1792763649&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0026_wsw25-27_3.webp?v=1792763649&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0025_wsw25-27.webp?v=1792763649&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0027_wsw25-27_2.webp?v=1792763649&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0028_wsw25-27_1.webp?v=1792763649&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Beige"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "KNITTED SKIRT",
+   "handle": "skirt-wsw25-28-mocha",
+   "type": "Winter Collection",
+   "vendor": "Ready To Wear",
+   "price": 7490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0024_WSW25-28_1.webp?v=1792764452&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/Untitled-1_0024_WSW25-28_1.webp?v=1792764452&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "Knitted Cape Shawl",
+   "handle": "knitted-cape-shawl-wsw26-4-black-white",
+   "type": "Western 2026",
+   "vendor": "Ready To Wear",
+   "price": 11990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-04.jpg?v=1792152239&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-04.jpg?v=1792152239&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-04_1.jpg?v=1792152240&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-04_2.jpg?v=1792152240&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-04_7.jpg?v=1792152240&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Free Size"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "Knitted Cardigan",
+   "handle": "knitted-cardigan-wsw26-11-navy",
+   "type": "Eastern Sweaters",
+   "vendor": "Ready To Wear",
+   "price": 8490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-112.webp?v=1792762090&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-112.webp?v=1792762090&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-111.webp?v=1792762090&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-113.webp?v=1792762090&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/WSW26-114.webp?v=1792762090&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Navy"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "M (12)",
+      "L (14)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "Woven Muffler",
+   "handle": "yarn-dyed-muffler-zmi26-14-white",
+   "type": "Mufflers",
+   "vendor": "Accessories",
+   "price": 3490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/ZMI26-14_50e6bd86-4a74-4c8e-9daa-e32dc17db1cf.jpg?v=1792579133&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/ZMI26-14_50e6bd86-4a74-4c8e-9daa-e32dc17db1cf.jpg?v=1792579133&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/ZMI26-14-1_4a2bd3b0-add5-44a5-a9b4-82dd49198520.jpg?v=1792579132&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/ZMI26-14-2.jpg?v=1792579133&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "White"
+     ]
+    },
+    {
+     "name": "Fabric",
+     "values": [
+      "Polyester"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  },
+  {
+   "title": "Zipper Hoodie",
+   "handle": "knitted-zipper-hoodie-w26zhzp1-black",
+   "type": "Western 2026",
+   "vendor": "Ready To Wear",
+   "price": 5995,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/W26ZHZP1.jpg?v=1792156460&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/W26ZHZP1.jpg?v=1792156460&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/W26ZHZP1_5.jpg?v=1792156460&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/W26ZHZP1_2.jpg?v=1792156459&width=700",
+    "https://cdn.shopify.com/s/files/1/0320/4405/6716/files/W26ZHZP1_1.jpg?v=1792156460&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "S (10)",
+      "M (12)",
+      "L (14)",
+      "XL (16)"
+     ]
+    }
+   ],
+   "description": ".product-details { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: 1.35; color: #000000; font-weight: 300; } .product-details p { margin: 0 0 15px 0; } .product-details .title { font-weight: 600; co"
+  }
+ ],
+ "productCount": 1534,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:44.343Z",
+ "warnings": [],
+ "overrides": {}
+}

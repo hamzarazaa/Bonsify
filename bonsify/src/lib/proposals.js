@@ -58,7 +58,17 @@ export function getProposal(slug) {
   }
   const { overrides, warnings, ...data } = raw;
   const merged = deepMerge(data, overrides);
+  // Videos live at <base>/<slug>.mp4. The base (content/settings/video.json) is /demo until the
+  // files are on a CDN, then one edit moves every page.
+  let video = null;
+  if (merged.video && merged.video.ready !== false) {
+    let base = "/demo";
+    try { base = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content", "settings", "video.json"), "utf8")).base || base; } catch {}
+    base = base.replace(/\/$/, "");
+    video = { src: merged.video.src || `${base}/${slug}.mp4`, poster: merged.video.poster || `${base}/${slug}-poster.jpg`, captions: merged.video.captions || null };
+  }
   return {
+    video,
     ...merged,
     domain: new URL(merged.url).hostname.replace(/^www\./, ""),
     products: (merged.products || []).filter((p) => p.image),

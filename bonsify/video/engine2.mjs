@@ -52,7 +52,8 @@ const hasAudio = (f) => sh("ffprobe", ["-v", "error", "-select_streams", "a", "-
 const sha = (s) => crypto.createHash("sha1").update(s).digest("hex").slice(0, 16);
 
 // ---------- brand ----------
-const brandFile = path.join(ROOT, "content", "lab", `${slug}.json`);
+const labFile = path.join(ROOT, "content", "lab", `${slug}.json`);
+const brandFile = fs.existsSync(labFile) ? labFile : path.join(ROOT, "content", "proposals", `${slug}.json`);
 if (!fs.existsSync(brandFile)) { console.error(`No brand file at ${brandFile}`); process.exit(1); }
 const brand = JSON.parse(fs.readFileSync(brandFile, "utf8"));
 const beats = beatsFor(brand);

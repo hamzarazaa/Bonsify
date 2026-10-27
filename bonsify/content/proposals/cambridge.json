@@ -1,0 +1,557 @@
+{
+ "slug": "cambridge",
+ "name": "Cambridge",
+ "url": "https://thecambridgeshop.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://thecambridgeshop.com/cdn/shop/files/Untitled-4.png?v=1686911574&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#ec0101",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#ffb100",
+   "#ec0101",
+   "#56cfe1",
+   "#ff4e00",
+   "#e81e63",
+   "#c86800"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Poppins",
+  "body": "Poppins",
+  "found": [
+   "Poppins",
+   "Libre Baskerville"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://thecambridgeshop.com/cdn/shop/files/Main1_ad1e2dbb-27f9-4820-86dc-986f820bb4ad.webp?v=1791031919",
+  "https://thecambridgeshop.com/cdn/shop/files/Main_Des.webp?v=1791031916",
+  "https://thecambridgeshop.com/cdn/shop/files/Main-Banner-Mobile_Polo_copy_1a2649b6-4f1e-4353-a8aa-071aa1a360c7.webp?v=1791032096",
+  "https://thecambridgeshop.com/cdn/shop/files/Main_Banner-Desktop_Polos_copy_e2a8282b-45d2-48dd-945d-1050897d4bf8.webp?v=1791032091"
+ ],
+ "collections": [
+  {
+   "title": "100 ml",
+   "handle": "100-ml",
+   "image": null,
+   "count": 1
+  },
+  {
+   "title": "11 11 Sale",
+   "handle": "11-11-sale",
+   "image": null,
+   "count": 2338
+  },
+  {
+   "title": "12.12 Sale",
+   "handle": "12-12-sale",
+   "image": null,
+   "count": 2338
+  },
+  {
+   "title": "18% Tax",
+   "handle": "18-tax",
+   "image": null,
+   "count": 224
+  },
+  {
+   "title": "3 Piece Suit",
+   "handle": "3-piece-suit-for-men-in-pakistan",
+   "image": null,
+   "count": 1
+  },
+  {
+   "title": "ACCESSORIES",
+   "handle": "mens-accessories",
+   "image": null,
+   "count": 265
+  },
+  {
+   "title": "active-wear",
+   "handle": "active-wear",
+   "image": null,
+   "count": 89
+  },
+  {
+   "title": "Age Group-(3 to 6)",
+   "handle": "age-group-3-to-6",
+   "image": null,
+   "count": 9
+  },
+  {
+   "title": "Age Group-(7 to 10)",
+   "handle": "age-group-7-to-10",
+   "image": null,
+   "count": 17
+  },
+  {
+   "title": "Age Group-(T1 to T4)",
+   "handle": "age-group-t1-to-t4",
+   "image": null,
+   "count": 17
+  }
+ ],
+ "products": [
+  {
+   "title": "Black Plaid",
+   "handle": "f-s-guts-gb-348",
+   "type": "CASUAL SHIRTS",
+   "vendor": "Junior casual shirts",
+   "price": 734,
+   "compareAt": 1468.35,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Black.jpg?v=1647418404&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Black.jpg?v=1647418404&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Blackb.jpg?v=1647418405&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Blackc.jpg?v=1647418404&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "DEEP MELON",
+      "VIVID BLUE",
+      "Purple",
+      "Blue",
+      "Berry"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "2-3 years",
+      "4",
+      "5",
+      "6",
+      "Mix"
+     ]
+    }
+   ],
+   "description": "Casual Flannel Shirt with super comfort and soft feel. For ages between 2 to 6 casual flannel shirt"
+  },
+  {
+   "title": "Crystal Blue Plaid",
+   "handle": "f-s-guts-gb-348-blue",
+   "type": "CASUAL SHIRTS",
+   "vendor": "Junior casual shirts",
+   "price": 734,
+   "compareAt": 1468,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Crystal-Blued.jpg?v=1647427916&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Crystal-Blued.jpg?v=1647427916&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Crystal-Blue.jpg?v=1647427916&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Crystal-Blueb.jpg?v=1647427916&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/products/GB-348-Crystal-Bluec.jpg?v=1647427916&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Blue",
+      "BLUE"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "2-3 years",
+      "4",
+      "5",
+      "6"
+     ]
+    }
+   ],
+   "description": "Casual Flannel Shirt with super comfort and soft feel. For ages between 2 to 6 casual flannel shirt"
+  },
+  {
+   "title": "CLASSIC POLO",
+   "handle": "h-s-classic-pique-polo-ksp25-07-navyblue",
+   "type": "",
+   "vendor": "POLOS",
+   "price": 1697.5,
+   "compareAt": 3395,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/SAB03143.jpg?v=1756898836&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/SAB03143.jpg?v=1756898836&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/SAB03142.jpg?v=1756898836&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/SAB03138.jpg?v=1756898836&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/SAB03133.jpg?v=1756898836&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Navy Blue"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details: Made from 100% cotton fine knit for breathable comfort Ribbed collar with button placket for a polished look Half sleeves with ribbed cuffs for added detail Straight hem, regular fit for easy movement Ve"
+  },
+  {
+   "title": "CLASSIC BURGUNDY POLO SHIRT",
+   "handle": "h-s-classic-pique-polo-ksp25-12-burgundy",
+   "type": "",
+   "vendor": "POLOS",
+   "price": 1697.5,
+   "compareAt": 3395,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12Cabernet.jpg?v=1776488740&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12Cabernet.jpg?v=1776488740&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12Cabernetb.jpg?v=1776488740&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12Caberneta.jpg?v=1756905185&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Burgundy"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details: Burgundy polo shirt made from 100% cotton fine knit provides breathable comfort and a polished, versatile style. The ribbed collar with button placket and half sleeves with ribbed cuffs give a refined lo"
+  },
+  {
+   "title": "CLASSIC PURPLE POLO SHIRT - (ONLINE EXCLUSIVE)",
+   "handle": "half-sleeve-classic-pique-polo-s25pstc1-purple",
+   "type": "Summer 2026",
+   "vendor": "POLOS",
+   "price": 1297.5,
+   "compareAt": 2595,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DeepPurple_1.jpg?v=1770213716&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DeepPurple_1.jpg?v=1770213716&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DeepPurple_4.jpg?v=1770213716&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DeepPurple_2.jpg?v=1770213716&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DeepPurple_3.jpg?v=1770213716&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Purple"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details Shop this purple classic polo shirt crafted from 100% cotton for breathable comfort. The soft pique fabric gives structure and style, while the self collar adds a clean, minimal look. Designed with half s"
+  },
+  {
+   "title": "STRETCH POLO - BLACK (ONLINE EXCLUSIVE)",
+   "handle": "half-sleeve-polo-stretch-polo-s25psts1-black",
+   "type": "Summer 2025",
+   "vendor": "POLOS",
+   "price": 1297.5,
+   "compareAt": 2595,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Black-1_d989d8f0-9826-421a-ac13-5219e172fd73.jpg?v=1781269684&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Black-1_d989d8f0-9826-421a-ac13-5219e172fd73.jpg?v=1781269684&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Black-3_0e58b755-675a-4004-a5f3-b9a31536f74a.jpg?v=1776497348&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Black_d987aed0-df17-4e22-a33b-6b838842707a.jpg?v=1776497348&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Black-2_45c39d45-d87f-42e7-8903-0e1e90c80754.jpg?v=1776497348&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details: Made with a blend of 95% cotton and 5% spandex for added stretch Stretch pique fabric delivers flexibility and lasting comfort Self collar offers a clean and modern look Half sleeves enhance comfort with"
+  },
+  {
+   "title": "CLASSIC CHARCOAL POLO SHIRT",
+   "handle": "h-s-classic-pique-polo-ksp25-12-charcoal",
+   "type": "",
+   "vendor": "POLOS",
+   "price": 1697.5,
+   "compareAt": 3395,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12PHANTOM.jpg?v=1776488810&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12PHANTOM.jpg?v=1776488810&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12PHANTOM-1.jpg?v=1776488810&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/KSP25-12PHANTOM-2.jpg?v=1756906516&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Charcoal"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details: Upgrade your wardrobe with this charcoal polo shirt made from 100% cotton fine knit, offering breathable comfort and a versatile look. The ribbed collar with button placket and half sleeves with ribbed c"
+  },
+  {
+   "title": "Casual Leather Belt - Maroon",
+   "handle": "belts-btl25-08",
+   "type": "100% Leather",
+   "vendor": "ACCESSORIES",
+   "price": 5895,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0016_BTL25-08.jpg?v=1757595122&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0016_BTL25-08.jpg?v=1757595122&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0014_BTL25-08-2.jpg?v=1757595122&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0015_BTL25-08-1.jpg?v=1757590999&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Maroon"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+     ]
+    }
+   ],
+   "description": "Product Details: Classic belt crafted from 100% genuine leather Sleek, smooth finish for everyday casual wear Fixed square buckle for a clean, versatile look 40 mm width, perfect for pairing with jeans or chinos Ideal fo"
+  },
+  {
+   "title": "Casual Leather Belt - Black",
+   "handle": "belts-btl25-07",
+   "type": "100% Leather",
+   "vendor": "ACCESSORIES",
+   "price": 5895,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0000_BTL25-07.jpg?v=1757595122&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0000_BTL25-07.jpg?v=1757595122&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0017_BTL25-07-2.jpg?v=1757595122&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0018_BTL25-07-1.jpg?v=1757590646&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+     ]
+    }
+   ],
+   "description": "Product Details: Classic belt crafted from 100% genuine leather Sleek, smooth finish for everyday casual wear Fixed square buckle for a clean, versatile look 40 mm width, perfect for pairing with jeans or chinos Ideal fo"
+  },
+  {
+   "title": "STRETCH POLO - CHARCOAL (ONLINE EXCLUSIVE)",
+   "handle": "half-sleeve-polo-stretch-polo-s25psts1-charcoal",
+   "type": "Summer 2025",
+   "vendor": "POLOS",
+   "price": 1297.5,
+   "compareAt": 2595,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Charcoal_893d82fa-3c37-4d45-8aa7-c52016ab7b1f.jpg?v=1781269683&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Charcoal_893d82fa-3c37-4d45-8aa7-c52016ab7b1f.jpg?v=1781269683&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Charcoal-1_5442de46-e4c7-4657-b17e-b6d7d7d55f61.jpg?v=1776497349&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Charcoal-3_82cb57d1-edc5-4fcf-9356-e57e7a121a5d.jpg?v=1776497349&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/Charcoal-2_5bd77a97-8fa0-4a25-bf66-83847d98f683.jpg?v=1776497349&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Charcoal"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details: Made with a blend of 95% cotton and 5% spandex for added stretch Stretch pique fabric delivers flexibility and lasting comfort Self collar offers a clean and modern look Half sleeves enhance comfort with"
+  },
+  {
+   "title": "Casual Leather Belt - Tan",
+   "handle": "belts-btl23-19",
+   "type": "100% Leather",
+   "vendor": "ACCESSORIES",
+   "price": 5695,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0011_BTL23-19.jpg?v=1757595124&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0011_BTL23-19.jpg?v=1757595124&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0009_BTL23-19-2.jpg?v=1757595124&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/belt_0010_BTL23-19-1.jpg?v=1757591213&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Tan"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+     ]
+    }
+   ],
+   "description": "Product Details: Classic belt crafted from 100% genuine leather Sleek, smooth finish for everyday casual wear Fixed square buckle for a clean, versatile look 40 mm width, perfect for pairing with jeans or chinos Ideal fo"
+  },
+  {
+   "title": "SINGLE JERSEY T-SHIRT - ASH GREY",
+   "handle": "half-sleeve-single-jersey-crew-s26tss01-ash-grey",
+   "type": "Summer 2026",
+   "vendor": "Tees",
+   "price": 1396.5,
+   "compareAt": 1995,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DSC07019.jpg?v=1776498091&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DSC07019.jpg?v=1776498091&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DSC07024.jpg?v=1776498091&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DSC07025.jpg?v=1776498091&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/5510/0758/files/DSC07023.jpg?v=1776498091&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Ash Grey"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+     ]
+    }
+   ],
+   "description": "Product Details: Made from 100% cotton Single jersey fabric offers comfort Crew neck makes it easy to wear Half sleeves, perfect for hot summer days Regular fit for ease of movement Designed for casual occasions Size &am"
+  }
+ ],
+ "productCount": 4614,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  }
+ ],
+ "storeApps": [
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:57.413Z",
+ "warnings": [],
+ "overrides": {}
+}

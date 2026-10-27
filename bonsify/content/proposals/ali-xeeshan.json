@@ -1,0 +1,405 @@
+{
+ "slug": "ali-xeeshan",
+ "name": "Ali Xeeshan",
+ "url": "https://alixeeshanempire.com/",
+ "platform": "shopify",
+ "currency": "USD",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://alixeeshanempire.com/cdn/shop/files/monkey_32x32_458b4d8b-46b2-4336-af59-07e83998182f_32x32.png?v=1724827182",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#d02e2e",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#d02e2e",
+   "#56ad6a",
+   "#ff4f33",
+   "#8b6f47",
+   "#3fb8af",
+   "#51ab62"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Cabin",
+  "body": "object-fit: cover",
+  "found": [
+   "Cabin",
+   "object-fit: cover",
+   "Consolas"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": false
+ },
+ "banners": [
+  "https://alixeeshanempire.com/cdn/shop/files/ali-xeeshan-slider-shop-now.jpg?v=1758785984&width=2400",
+  "https://alixeeshanempire.com/cdn/shop/files/ali-xeeshan-slider-shop-now_f0ddb09d-a015-43c9-9ea3-1a145381976a.jpg?v=1758785986&width=2800",
+  "https://alixeeshanempire.com/cdn/shop/files/shop-now-slider_5d1fee97-6a7b-46cc-8050-e1cfb8c5a2d3.webp?v=1738567105&width=2400",
+  "https://alixeeshanempire.com/cdn/shop/files/purani-ashique_9fc4a944-8c6d-4d1a-affa-b17d4468c4a0.jpg?v=1740985201&width=2400"
+ ],
+ "collections": [
+  {
+   "title": "7 Sins",
+   "handle": "7-sins",
+   "image": null,
+   "count": 12
+  },
+  {
+   "title": "Ali Xeeshan Muse",
+   "handle": "ali-xeeshan-muse",
+   "image": null,
+   "count": 38
+  },
+  {
+   "title": "Amaltass",
+   "handle": "amaltass",
+   "image": null,
+   "count": 24
+  },
+  {
+   "title": "Amaltass Bridal Couture",
+   "handle": "amaltass-bridal-couture",
+   "image": null,
+   "count": 3
+  },
+  {
+   "title": "Bhaag Lagay Rain",
+   "handle": "bhaag-lagay-rain",
+   "image": null,
+   "count": 30
+  },
+  {
+   "title": "BRIDAL",
+   "handle": "bridal",
+   "image": null,
+   "count": 150
+  },
+  {
+   "title": "Celebrity Diaries",
+   "handle": "celebrity-diaries",
+   "image": null,
+   "count": 40
+  },
+  {
+   "title": "Choke",
+   "handle": "choke",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Client Diaries",
+   "handle": "client-diaries",
+   "image": null,
+   "count": 261
+  },
+  {
+   "title": "COUTURE",
+   "handle": "couture",
+   "image": null,
+   "count": 312
+  }
+ ],
+ "products": [
+  {
+   "title": "Mata Hari",
+   "handle": "mata-hari-1",
+   "type": "FORMAL",
+   "vendor": "ALIXEESHAN",
+   "price": 5978.26,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/049A0916.jpg?v=1758624783&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/049A0916.jpg?v=1758624783&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/049A0976.jpg?v=1758624855&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/049A1027.jpg?v=1758624855&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/049A0940.jpg?v=1758624855&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "The Mata Hari lehanga and choli are a pure raw silk base in ruby red, serving as a canvas to shimmery gold and silver hand embellishments, incrusted with naqshi, dabka, resham, sequins and pearls. It is paired up with an"
+  },
+  {
+   "title": "Gul-e-Rana",
+   "handle": "gul-e-rana-1",
+   "type": "Bridal",
+   "vendor": "ALIXEESHAN",
+   "price": 1721.01,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB08376.jpg?v=1724218460&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB08376.jpg?v=1724218460&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB08360.jpg?v=1724218461&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB08411.jpg?v=1724218460&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB08426.jpg?v=1724218460&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "The Gul-e-Rana one-piece is a pure raw silk base in olive green, serving as a canvas to heavenly floral patch work incrusted with hand embellishments. The modern silhouette is incrusted with sequins and pearls. It is pai"
+  },
+  {
+   "title": "Raaqs",
+   "handle": "raaqs",
+   "type": "Bridal",
+   "vendor": "ALIXEESHAN",
+   "price": 5253.62,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09322.jpg?v=1724222418&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09322.jpg?v=1724222418&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09363.jpg?v=1724222418&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09344.jpg?v=1724222417&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09337.jpg?v=1724222418&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "The Raaqs lehenga is a pure tissue base in copper gold, serving as a canvas to shimmery silver hand embellishments. The modern silhouette is incrusted with naqshi, sequins and pearls. It is paired up with a red velvet ch"
+  },
+  {
+   "title": "Pink Lemonade",
+   "handle": "pink-lemonade-1",
+   "type": "Bridal",
+   "vendor": "ALIXEESHAN",
+   "price": 4529,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09453.jpg?v=1724218307&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09453.jpg?v=1724218307&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09487.jpg?v=1724218308&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09558.jpg?v=1724218308&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/files/MTB09602.jpg?v=1724218308&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "The Pink Lemonade lehenga is a pure raw silk base in hot pink, serving as a canvas to shimmery silver hand embellishments. The modern silhouette is incrusted with swarovski crystals, naqshi, sequins and pearls. It is pai"
+  },
+  {
+   "title": "Nostalgia",
+   "handle": "nostalgia",
+   "type": "Formal",
+   "vendor": "ALIXEESHAN",
+   "price": 1575,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/21_ea9044ad-6480-4666-96ad-c789cfc5d597.jpg?v=1579000586&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/21_ea9044ad-6480-4666-96ad-c789cfc5d597.jpg?v=1579000586&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/19_1ccf30ad-5257-4f3d-8824-f9bedd0752c4.jpg?v=1579000586&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/20_39a52ff0-5352-467c-8efd-5ab185f37609.jpg?v=1579000586&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/18_46de364b-679c-4eeb-99d3-fdd1f1da4e34.jpg?v=1579000586&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "The Nostalgia piece features a digital floral print on a pure raw silk base, adorned with sequin and gota embellishments. Decorated with ruby hangings, antique oxidized tilla and traditional motifs on sleeves and front. "
+  },
+  {
+   "title": "Shidaat",
+   "handle": "shidaat",
+   "type": "Luxury Pret",
+   "vendor": "ALIXEESHAN",
+   "price": 1086.96,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/11_45f100ff-77f4-484f-9d18-819b51c9f934.jpg?v=1660634059&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/11_45f100ff-77f4-484f-9d18-819b51c9f934.jpg?v=1660634059&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/7_2f0dd5f3-ed8a-423b-b4cf-9cf62898fa8f.jpg?v=1660634059&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/8_6eeadfa8-f9ec-4ce4-8ca2-a2b773aa71f2.jpg?v=1660634059&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/9_a0578438-134d-45ad-84ba-878c6e01bfc4.jpg?v=1660634059&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Colour: Beige Product Description: A beautiful beige net pishwas with embroidery is adorned with antique dabka, naqshi, sitara, pearls and tilla motifs all over. It is paired up with a jamawar lehnga and choli along with"
+  },
+  {
+   "title": "Pink Jewel",
+   "handle": "pink-jewel",
+   "type": "Formal",
+   "vendor": "ALIXEESHAN",
+   "price": 1415,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/27_a54e2321-3dd0-4c37-86c8-0a0d84368da5.jpg?v=1579000596&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/27_a54e2321-3dd0-4c37-86c8-0a0d84368da5.jpg?v=1579000596&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/28_8e2155a6-bcb8-4167-901d-98b39c85f9f9.jpg?v=1579000596&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/26_49efabb5-5dbb-4777-8db2-0ec843bc505f.jpg?v=1579000596&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "The Pink Jewel shirt is pure raw silk, a traditional long piece finished with dabka, kora and gota embellishments. Traditional motifs of muted gold sequins and dabka work, the sleeves and borders are embellished with blu"
+  },
+  {
+   "title": "Victoria",
+   "handle": "victoria",
+   "type": "PRET",
+   "vendor": "ALIXEESHAN",
+   "price": 1630.44,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/44_0046101c-1ddc-471d-aab4-ae94901c57c1.jpg?v=1599660110&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/44_0046101c-1ddc-471d-aab4-ae94901c57c1.jpg?v=1599660110&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/33_a0fcff30-b582-4ed5-9255-1fc56869fd68.jpg?v=1599660110&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/34_24ad4a78-759b-420e-81ac-dc5281a466a0.jpg?v=1599660111&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/35_287359e6-86db-4887-83b3-6a331e31fdc5.jpg?v=1599660111&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Product Description : A white raw silk shirt with embellishment paired with a tangerine garara and a heavily embellished vintage dupatta. Color: Royal Blue &amp; White 3Pcs"
+  },
+  {
+   "title": "Husn",
+   "handle": "husn",
+   "type": "Luxury Pret",
+   "vendor": "ALIXEESHAN",
+   "price": 1086.96,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/40_6d90cde5-b9ad-437a-949d-ba0ce90b3a65.jpg?v=1660637028&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/40_6d90cde5-b9ad-437a-949d-ba0ce90b3a65.jpg?v=1660637028&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/43_21abf27f-d3fc-481e-ba9f-9fb4f22336de.jpg?v=1660637028&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/39_8c2945f0-8e31-4b0d-8443-a9ae53f8b7c8.jpg?v=1660637028&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/41_42d8fc5a-d0a8-407f-8670-ba9be9f96bb3.jpg?v=1660637026&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Colour: Pink The Husn shirt and gharara is a shocking pink raw silk piece, embellished with dabka, sitara and naqshi. It is paired up with an organza dupatta in aari embroidery, enhanced with sitara, pearls and beads. In"
+  },
+  {
+   "title": "Rebel",
+   "handle": "rebel",
+   "type": "Luxury Pret",
+   "vendor": "ALIXEESHAN",
+   "price": 3442.02,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/3_47877c58-088d-41ac-aaaa-806611170862.jpg?v=1660633723&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/3_47877c58-088d-41ac-aaaa-806611170862.jpg?v=1660633723&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/17_19ff47e1-3f7e-4785-9a3e-840407c989c9.jpg?v=1660633724&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/18_8199e6a9-5d7d-4feb-8104-b3f720a4398b.jpg?v=1660633723&width=700",
+    "https://cdn.shopify.com/s/files/1/0078/7998/3170/products/19_5bfc7a94-2397-4fa7-aa9b-4769f3f38774.jpg?v=1660633723&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Colour: Red and Bottle Green The Rebel lehnga is a pure raw silk piece, beautifully hand-rendered and enhanced with katori sitara, pearls, dabka and gota work. It is paired up with a raw silk choli with tilla motifs on t"
+  }
+ ],
+ "productCount": 883,
+ "features": [],
+ "storeApps": [
+  "Google Analytics 4",
+  "Google Tag Manager"
+ ],
+ "crawledAt": "2026-10-27T10:06:06.882Z",
+ "warnings": [],
+ "overrides": {}
+}

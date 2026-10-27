@@ -1,0 +1,484 @@
+{
+ "slug": "cross-stitch",
+ "name": "Cross Stitch",
+ "url": "https://crossstitch.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://crossstitch.pk/cdn/shop/files/favicon_32x32.png?v=1687853146",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#d20000",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#d20000",
+   "#008060",
+   "#651818",
+   "#004c3f",
+   "#d21625",
+   "#b59677"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Playfair Display",
+  "body": "Jost",
+  "found": [
+   "Playfair Display",
+   "Jost",
+   "Montserrat",
+   "Gotham-Medium",
+   "Lato",
+   "HelveticaNeue"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [],
+ "collections": [
+  {
+   "title": "AANGAN-UNSTITCHED COTTON SATIN '19",
+   "handle": "aangan-unstitched-cotton-satin-19",
+   "image": null,
+   "count": 24
+  },
+  {
+   "title": "ACCESSORIES",
+   "handle": "accessories",
+   "image": null,
+   "count": 99
+  },
+  {
+   "title": "ALL EML NET",
+   "handle": "ss-25-rtw-eml-basic-edit-5",
+   "image": null,
+   "count": 1
+  },
+  {
+   "title": "AW-21 RTS EMB JACQUARD EDIT-1",
+   "handle": "aw-21-rts-emb-jacquard-edit-1",
+   "image": null,
+   "count": 18
+  },
+  {
+   "title": "AW-21 RTW TO RTS EML JACQUARD EDIT-1",
+   "handle": "aw-21-rtw-to-rts-eml-jacquard-edit-1",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "AW-25 RTW EMB CAMBRIC EDIT -1",
+   "handle": "aw-25-rtw-emb-cambric-edit-1",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "azadisale",
+   "handle": "azadisale",
+   "image": null,
+   "count": 238
+  },
+  {
+   "title": "AZAL SATIN-21",
+   "handle": "azal-satin-21",
+   "image": null,
+   "count": 20
+  },
+  {
+   "title": "BAGS",
+   "handle": "bags",
+   "image": null,
+   "count": 44
+  },
+  {
+   "title": "Basic Pants",
+   "handle": "basic-pants",
+   "image": null,
+   "count": 84
+  }
+ ],
+ "products": [
+  {
+   "title": "COSMIC BLUE-SHAWL",
+   "handle": "cosmic-blue-shawls",
+   "type": "SCARVES",
+   "vendor": "CROSS STITCH",
+   "price": 8450,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0030_AKS08667_3e0828ee-a6b7-4a93-b00d-4d61155e62d4.jpg?v=1792644197&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0030_AKS08667_3e0828ee-a6b7-4a93-b00d-4d61155e62d4.jpg?v=1792644197&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0028_AKS08677.jpg?v=1792474147&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0032_AKS08660.jpg?v=1792474147&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0029_AKS08668.jpg?v=1792474147&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "BLUE"
+     ]
+    },
+    {
+     "name": "Fabric",
+     "values": [
+      "VELVET"
+     ]
+    }
+   ],
+   "description": "DYED AND EMBROIDERED VELVET SHAWL"
+  },
+  {
+   "title": "CAMELLIA 2",
+   "handle": "camellia-2",
+   "type": "BASIC PANTS",
+   "vendor": "CROSS STITCH",
+   "price": 1720,
+   "compareAt": 3450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0206_3.jpg?v=1736335830&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0206_3.jpg?v=1736335830&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0206_2.jpg?v=1736335830&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0206_1.jpg?v=1736335830&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "L",
+      "M",
+      "S"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "RAVEN"
+     ]
+    }
+   ],
+   "description": "KHADDAR PALIN DYED TAPERED SHALWAR"
+  },
+  {
+   "title": "SCARLET GRACE-SHAWL",
+   "handle": "scarlet-grace-shawls",
+   "type": "SCARVES",
+   "vendor": "CROSS STITCH",
+   "price": 9450,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_AKS09168.jpg?v=1792473998&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_AKS09168.jpg?v=1792473998&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0004_AKS09219.jpg?v=1792473998&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_AKS09239.jpg?v=1792473998&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0004_AKS09159.jpg?v=1792473998&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "RED"
+     ]
+    },
+    {
+     "name": "Fabric",
+     "values": [
+      "VELVET"
+     ]
+    }
+   ],
+   "description": "DYED AND EMBROIDERED VELVET SHAWL"
+  },
+  {
+   "title": "CAMELLIA 1",
+   "handle": "camellia-1",
+   "type": "BASIC PANTS",
+   "vendor": "CROSS STITCH",
+   "price": 1720,
+   "compareAt": 3450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0205_2.jpg?v=1736335874&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0205_2.jpg?v=1736335874&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0205_1.jpg?v=1736335874&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0205_3.jpg?v=1736335874&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "L",
+      "S",
+      "M"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "ANGORA"
+     ]
+    }
+   ],
+   "description": "KHADDAR PALIN DYED TAPERED SHALWAR"
+  },
+  {
+   "title": "ENCHANTED ROSE",
+   "handle": "enchanted-rose",
+   "type": "FRAGRANCE",
+   "vendor": "CROSS STITCH",
+   "price": 6950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_ChatGPTImageAug17_2026_04_39_59PM.jpg?v=1787031972&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_ChatGPTImageAug17_2026_04_39_59PM.jpg?v=1787031972&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageAug17_2026_04_39_58PM.jpg?v=1787031972&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0001_ChatGPTImageAug17_2026_04_40_01PM.jpg?v=1787031972&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_ChatGPTImageAug17_2026_04_40_11PM.jpg?v=1787031972&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "100 ML"
+     ]
+    }
+   ],
+   "description": "EAU DE PARFUM - A delicate and comforting scent a celebration of those looking to leave their mark on the world. The fragrance contrasts top notes of Rose, Ginger as well as mesmerizing middle notes of Tube Rose, Honeysu"
+  },
+  {
+   "title": "GOLDEN HOUR",
+   "handle": "golden-hour",
+   "type": "FRAGRANCES",
+   "vendor": "CROSS STITCH",
+   "price": 6500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-2_0003_Untitled-1_0000_ChatGPTImageAug12_2026_03_22_10PM.jpg?v=1786537665&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-2_0003_Untitled-1_0000_ChatGPTImageAug12_2026_03_22_10PM.jpg?v=1786537665&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageAug12_2026_03_24_49PM.jpg?v=1786536646&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0001_ChatGPTImageAug12_2026_03_22_12PM.jpg?v=1786536646&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_ChatGPTImageAug12_2026_03_22_29PM.jpg?v=1786536647&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "100ML"
+     ]
+    }
+   ],
+   "description": "Warm, glowing and softly addictive. Golden Hour begins with a bright blend of fruit, bergamot,lemon and jasmine, gradually giving way to the rich softness of balsamic notes and orris. Musk, amber, caramel and cedar creat"
+  },
+  {
+   "title": "MORNING AIR",
+   "handle": "morning-air",
+   "type": "FRAGRANCES",
+   "vendor": "CROSS STITCH",
+   "price": 6500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-2_0004_Untitled-1_0000_ChatGPTImageAug12_2026_03_16_50PM.jpg?v=1786537686&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-2_0004_Untitled-1_0000_ChatGPTImageAug12_2026_03_16_50PM.jpg?v=1786537686&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageAug12_2026_03_18_12PM.jpg?v=1786536761&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0001_ChatGPTImageAug12_2026_03_16_55PM.jpg?v=1786536761&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_ChatGPTImageAug12_2026_03_16_57PM.jpg?v=1786536761&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "100ML"
+     ]
+    }
+   ],
+   "description": "Soft, intriguing and beautifully composed. Morning Air begins with the resinous warmth of labdanum before unfolding into rose, patchouli and a subtle touch of saffron. Agarwood and sandalwood deepen the fragrance, while "
+  },
+  {
+   "title": "TULIP CHARM 2",
+   "handle": "tulip-charm-2",
+   "type": "BASIC PANTS",
+   "vendor": "CROSS STITCH",
+   "price": 1620,
+   "compareAt": 3250,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0102_3.jpg?v=1736336708&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0102_3.jpg?v=1736336708&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0102_2.jpg?v=1736336708&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBBAS0102_1.jpg?v=1736336708&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "L",
+      "M",
+      "S"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "RAVEN"
+     ]
+    }
+   ],
+   "description": "PLAIN DYED WITH PETAL CUT ON BACK TAPERED SHALWAR"
+  },
+  {
+   "title": "PETALS AT DAWN",
+   "handle": "petals-at-dawn",
+   "type": "FRAGRANCES",
+   "vendor": "CROSS STITCH",
+   "price": 6500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-2_0002_Untitled-1_0002_ChatGPTImageAug12_2026_03_35_06PM.jpg?v=1786537640&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-2_0002_Untitled-1_0002_ChatGPTImageAug12_2026_03_35_06PM.jpg?v=1786537640&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageAug12_2026_03_35_13PM.jpg?v=1786536690&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0001_ChatGPTImageAug12_2026_03_35_08PM.jpg?v=1786536690&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_ChatGPTImageAug12_2026_03_35_10PM.jpg?v=1786536690&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "100ML"
+     ]
+    }
+   ],
+   "description": "Fresh florals with a soft, romantic depth. Petals at Dawn opens with sweet pea and a bright blend of bergamot, mandarin, grapefruit and lemon. Quince, freesia, peach and gardenia bring a delicate freshness to the heart, "
+  },
+  {
+   "title": "IVORY DUO",
+   "handle": "ivory-duo-dup",
+   "type": "SCARVES",
+   "vendor": "CROSS STITCH",
+   "price": 1950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_DSC05677_462d9eb0-4a38-423d-bdf8-92caf7538467.jpg?v=1790761119&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_DSC05677_462d9eb0-4a38-423d-bdf8-92caf7538467.jpg?v=1790761119&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0004_DSC05671_5ad952ec-abc7-49e3-8a0e-d6ba38e7795e.jpg?v=1790761119&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0005_DSC05668_4d50079e-e129-41a2-9642-5514d3d35ecd.jpg?v=1790761119&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "MULTI"
+     ]
+    },
+    {
+     "name": "Fabric",
+     "values": [
+      "SILK"
+     ]
+    }
+   ],
+   "description": "SILK PRINTED DUPATTA"
+  },
+  {
+   "title": "VELIN-3",
+   "handle": "velin-3",
+   "type": "FOOTWEAR",
+   "vendor": "CROSS STITCH",
+   "price": 3950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_ChatGPTImageSep21_2026_03_25_03PM.jpg?v=1792738310&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_ChatGPTImageSep21_2026_03_25_03PM.jpg?v=1792738310&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_ChatGPTImageSep21_2026_03_26_49PM.jpg?v=1792738310&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0001_ChatGPTImageSep21_2026_03_26_09PM.jpg?v=1792738310&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageSep21_2026_03_23_11PM.jpg?v=1792738310&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "ROSEGOLD"
+     ]
+    }
+   ],
+   "description": "VELIN-3 flat shoes combine contemporary design with practical comfort features. Crafted from premium PU material, these flats showcase elegant trim embellishment detailing that elevates any ensemble. The padded insocks p"
+  },
+  {
+   "title": "HELENA-3",
+   "handle": "helena-3",
+   "type": "FOOTWEAR",
+   "vendor": "CROSS STITCH",
+   "price": 4450,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageSep19_2026_12_25_12PM.jpg?v=1791368346&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0003_ChatGPTImageSep19_2026_12_25_12PM.jpg?v=1791368346&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0001_ChatGPTImageSep19_2026_12_32_22PM.jpg?v=1791368346&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0000_ChatGPTImageSep19_2026_12_32_40PM.jpg?v=1791368346&width=700",
+    "https://cdn.shopify.com/s/files/1/0178/4492/8612/files/Untitled-1_0002_ChatGPTImageSep19_2026_12_27_15PM.jpg?v=1791368346&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "38",
+      "40",
+      "41",
+      "39",
+      "37",
+      "36"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "BROWN"
+     ]
+    }
+   ],
+   "description": "A sleek take on everyday comfort, these flat sandals feature an embellished upper with refined detailing for an elevated finish. Designed with padded insocks, they offer added cushioning and ease, making them a versatile"
+  }
+ ],
+ "productCount": 2018,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  }
+ ],
+ "storeApps": [
+  "Mailchimp",
+  "Hotjar",
+  "Google Analytics 4",
+  "TikTok Pixel"
+ ],
+ "crawledAt": "2026-10-27T10:04:46.750Z",
+ "warnings": [],
+ "overrides": {}
+}

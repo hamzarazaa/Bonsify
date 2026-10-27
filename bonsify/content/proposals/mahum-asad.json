@@ -1,0 +1,416 @@
+{
+ "slug": "mahum-asad",
+ "name": "Mahum Asad",
+ "url": "https://mahumasad.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://mahumasad.com/cdn/shop/files/fav_32x32.png?v=1791290585",
+ "colors": {
+  "primary": "#c0a060",
+  "accent": "#c60808",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#111111",
+  "found": [
+   "#c60808",
+   "#ff0000",
+   "#e81000",
+   "#007f5f",
+   "#7d5e0a",
+   "#4f3b05"
+  ],
+  "source": "logo"
+ },
+ "fonts": {
+  "heading": "Jost",
+  "body": "Cormorant Garamond",
+  "found": [
+   "Jost",
+   "Cormorant Garamond",
+   "Times"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://mahumasad.com/cdn/shop/files/afterlight_shop_now_2_{width}x.jpg?v=1791024074",
+  "https://mahumasad.com/cdn/shop/files/Slider_fd413c5e-5746-4477-97f3-e8a0aaca9321_{width}x.jpg?v=1790671669",
+  "https://mahumasad.com/cdn/shop/files/Slider-fdgfg_{width}x.jpg?v=1790671677",
+  "https://mahumasad.com/cdn/shop/files/private_hour_sliders_3_{width}x.jpg?v=1777878622"
+ ],
+ "collections": [
+  {
+   "title": "10.10 Sale Flat 25% Off",
+   "handle": "10-10-sale-flat-25-off",
+   "image": null,
+   "count": 171
+  },
+  {
+   "title": "11.11 UPTO 30% OFF",
+   "handle": "11-11-upto-30-off",
+   "image": null,
+   "count": 233
+  },
+  {
+   "title": "30% off",
+   "handle": "30-off",
+   "image": null,
+   "count": 15
+  },
+  {
+   "title": "AFTERLIGHT",
+   "handle": "afterlight",
+   "image": null,
+   "count": 7
+  },
+  {
+   "title": "ANGRAKHA",
+   "handle": "angrakha",
+   "image": null,
+   "count": 7
+  },
+  {
+   "title": "Best Sellers",
+   "handle": "best-sellers",
+   "image": null,
+   "count": 75
+  },
+  {
+   "title": "Breaking The Bar",
+   "handle": "breaking-the-bar",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Bridal",
+   "handle": "bridal",
+   "image": null,
+   "count": 2
+  },
+  {
+   "title": "Celebrity Diaries",
+   "handle": "celebrity-diaries",
+   "image": null,
+   "count": 23
+  },
+  {
+   "title": "Celebrity Style",
+   "handle": "celebrity-style-1",
+   "image": null,
+   "count": 18
+  }
+ ],
+ "products": [
+  {
+   "title": "Sweetheart",
+   "handle": "sweetheart",
+   "type": "LUXURY PRET",
+   "vendor": "Mahum Asad",
+   "price": 47145,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2454.jpg?v=1738065480&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2454.jpg?v=1738065480&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2458.jpg?v=1738065480&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2468.jpg?v=1738065480&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2478.jpg?v=1738065480&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Product Description: \"Sweetheart\" is the ultimate classic silhouette, featuring a beautifully intricate heavily worked daman. The outfit is paired with flared silk pants, and the dupatta is adorned with delicate booti wo"
+  },
+  {
+   "title": "GODDESS",
+   "handle": "goddess",
+   "type": "Basic Pret",
+   "vendor": "Mahum Asad",
+   "price": 41790,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/28_2fc95008-a727-457a-9226-00959d4ee964.jpg?v=1679398766&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/28_2fc95008-a727-457a-9226-00959d4ee964.jpg?v=1679398766&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/24_d3b4f30c-2f6c-401e-9f5e-717613c1a710.jpg?v=1679398766&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/25_28445146-de72-4756-9ff1-ea01abd761df.jpg?v=1679398766&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/26_3c399d0d-090f-42d5-958a-683337f75e9b.jpg?v=1679398766&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Price Includes: Shirt, Sharara And Dupatta Color: Ivory Fabric Details: Shirt: Silk Tissue Pants: Pk Raw Silk Dupatta: Organza Product Description: An ivory white shirt dazzled with a blend of precious colorful sequins a"
+  },
+  {
+   "title": "Exposed",
+   "handle": "exposed",
+   "type": "LUXURY PRET",
+   "vendor": "Mahum Asad",
+   "price": 44940,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF0538.jpg?v=1735275266&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF0538.jpg?v=1735275266&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF0548.jpg?v=1735275297&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF0552.jpg?v=1735275297&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF0577.jpg?v=1735275297&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Product Description: This absolute elegant black silk tissue shirt exudes timeless sophistication, featuring a beautifully embellished neckline that adds a touch of luxury and charm. The fine craftsmanship of the shirt p"
+  },
+  {
+   "title": "CRUSH",
+   "handle": "crush",
+   "type": "LUXURY PRET",
+   "vendor": "Mahum Asad",
+   "price": 48825,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/41_37ccab1d-a66c-4136-a0fa-32b673499ace.jpg?v=1679398148&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/41_37ccab1d-a66c-4136-a0fa-32b673499ace.jpg?v=1679398148&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/40_763d4dce-4d9f-475d-b8be-70f025e56f4c.jpg?v=1679398148&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/38_0ba17ba9-142d-463d-b164-f52e6c1d2869.jpg?v=1679398148&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/39_0a372b82-96ab-40da-b1a1-bb87c377c6fa.jpg?v=1679398148&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Price Includes: Kaftan Shirt , Straight Pants And Dupatta Color: Purple Fabric Details: Kaftan Shirt : Silk Tissue Pants: Pk Raw Silk Dupatta: Organza Product Description: An exquisite purple kaftan shirt ensemble with e"
+  },
+  {
+   "title": "MIHRET",
+   "handle": "mihret",
+   "type": "Formals",
+   "vendor": "Mahum Asad",
+   "price": 58800,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/3_ae3b0541-3cd6-463f-a748-202d7b9d67c2.jpg?v=1662015987&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/3_ae3b0541-3cd6-463f-a748-202d7b9d67c2.jpg?v=1662015987&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/4_ac762836-af5f-4a8a-9df4-23d137832db7.jpg?v=1662015984&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/1_c4d7b7bc-77b0-40d9-944a-fee5d95f0614.jpg?v=1662015986&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/2_49ee3c9c-3071-4dd3-bc76-8fd82fbf35f8.jpg?v=1662015986&width=700"
+   ],
+   "options": [
+    {
+     "name": "*Choose Size*",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Description: An ivory kalidar with ornamental white-on-white dabka and marori work. These hand embellishments are complemented by the subtle Pearl details, reminiscent of doves, swans and summertime festivities. Paired w"
+  },
+  {
+   "title": "Marine",
+   "handle": "marine",
+   "type": "LUXURY FORMALS",
+   "vendor": "Mahum Asad",
+   "price": 55440,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF8407.jpg?v=1723803282&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF8407.jpg?v=1723803282&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF8440.jpg?v=1723803283&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF8425.jpg?v=1723803283&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF8414.jpg?v=1723803282&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Description: A delicately crafted and embellished angrakha on Silk Tissue with embellished neckline. It is perfectly complimented with screen printed pants and a screen printed organza dupatta. Tassels crafted by hand ar"
+  },
+  {
+   "title": "Asfar",
+   "handle": "asfar",
+   "type": "Formals",
+   "vendor": "Mahum Asad",
+   "price": 39900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/46_31bcad7a-c1f5-44f9-ab9c-ed1021a0bac5.jpg?v=1663920391&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/46_31bcad7a-c1f5-44f9-ab9c-ed1021a0bac5.jpg?v=1663920391&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/1_73ef1f62-09ba-48f4-8951-5a0341e2aae8.jpg?v=1663920391&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/43.jpg?v=1663920391&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/44_40a98089-463a-44e2-881f-b08fe99e11cf.jpg?v=1663920392&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Price Includes: Shirt, Pants and Dupatta Color: Lime Yellow Fabric Details: Shirt: Organza body and Chiffon panels Pants: PK raw silk Dupatta: Net Product Description: This festive silhouette is cut from organza and chif"
+  },
+  {
+   "title": "Gloss",
+   "handle": "gloss",
+   "type": "Basic Pret",
+   "vendor": "Mahum Asad",
+   "price": 36015,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2207.jpg?v=1738063670&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2207.jpg?v=1738063670&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2218.jpg?v=1738063715&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2214.jpg?v=1738063715&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2224.jpg?v=1738063715&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Product Description: Introducing another stunning ivory long shirt, featuring vibrant multicolor embroidery on the front and sleeves. Paired with a matching multicolor chun dupatta and bootcut pants for the perfect look."
+  },
+  {
+   "title": "Nuri",
+   "handle": "nuri",
+   "type": "Formals",
+   "vendor": "Mahum Asad",
+   "price": 44100,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/24_ff12d23c-7c54-4c5c-b61d-753afe8b8525.jpg?v=1663918760&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/24_ff12d23c-7c54-4c5c-b61d-753afe8b8525.jpg?v=1663918760&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/20_5a4d86e1-3da8-4c11-8162-d717ed91021e.jpg?v=1663918760&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/21.jpg?v=1663918760&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/products/22.jpg?v=1663918761&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Price Includes: Pishwaas, Pants and Dupatta Color: Ivory and Pink Fabric Details: Pishwas: Korean Chiffon Dupatta: Net Pants: Pk Raw Silk Product Description: An exquisite chiffon pishwas with a body full embellished alo"
+  },
+  {
+   "title": "Spice",
+   "handle": "spice",
+   "type": "Basic Pret",
+   "vendor": "Mahum Asad",
+   "price": 39690,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2622.jpg?v=1738071574&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2622.jpg?v=1738071574&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2615.jpg?v=1738071574&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2625.jpg?v=1738071574&width=700",
+    "https://cdn.shopify.com/s/files/1/0283/1276/4488/files/DSCF2608.jpg?v=1738071574&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+     ]
+    }
+   ],
+   "description": "Product Description: \"Spice\" is a timeless anghrakha featuring exquisite handwork at the front, complemented by beautiful tassels. It’s paired with straight pants and a delicate silk dupatta adorned with booti work, crea"
+  }
+ ],
+ "productCount": 534,
+ "features": [],
+ "storeApps": [
+  "Mailchimp",
+  "Google Analytics 4",
+  "Google Tag Manager"
+ ],
+ "crawledAt": "2026-10-27T10:05:41.716Z",
+ "warnings": [],
+ "overrides": {}
+}

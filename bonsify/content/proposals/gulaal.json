@@ -1,0 +1,431 @@
+{
+ "slug": "gulaal",
+ "name": "Gulaal",
+ "url": "https://gulaal.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://gulaal.pk/cdn/shop/files/favicon.png?crop=center&height=32&v=1696880916&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#e60101",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#e60101",
+   "#cb9e5d",
+   "#0071ce",
+   "#eb001b",
+   "#f79e1b",
+   "#ff5f00"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "object-fit: contain",
+  "body": "object-fit: contain",
+  "found": [
+   "object-fit: contain"
+  ],
+  "headingGoogle": false,
+  "bodyGoogle": false
+ },
+ "banners": [
+  "https://gulaal.pk/cdn/shop/files/Website_Banner_Desktop_Live_Now_jpg.jpg?v=1793011243",
+  "https://gulaal.pk/cdn/shop/files/Website_Banner_Desktop_.jpg_2.jpg?v=1790842757",
+  "https://gulaal.pk/cdn/shop/files/Website_Banner_Desktop_2_jpg.jpg?v=1789986387",
+  "https://gulaal.pk/cdn/shop/files/Group_4_8f6d31bb-1afd-4f04-a488-72162f430277.png?v=1787137386"
+ ],
+ "collections": [
+  {
+   "title": "Aaniya Wedding Formals",
+   "handle": "aaniya-wedding-formals",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Aarzoo Bridal Shawls",
+   "handle": "aarzoo-bridal-shawls",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Adila by Gulaal Unstitched Luxury Formals Collection",
+   "handle": "adila-by-gulaal-luxury-formals-collection",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Aira Printed Silk",
+   "handle": "aira-printed-silk",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Alayna by Gulaal Unstitched Luxury Formals",
+   "handle": "alayna-by-gulaal-unstitched-luxury-formals-2020",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Anahi Luxury Pret",
+   "handle": "anahi-luxury-pret",
+   "image": null,
+   "count": 3
+  },
+  {
+   "title": "Aura Bridal Couture Collection",
+   "handle": "aura-bridal-couture-collection",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Ayla Luxury Chiffon",
+   "handle": "ayla-luxury-chiffon",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Ayla Luxury Chiffon-M",
+   "handle": "ayla-luxury-chiffon-m",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Azira Unstitched Luxury Formals",
+   "handle": "azira-unstitched-luxury-formals",
+   "image": null,
+   "count": 6
+  }
+ ],
+ "products": [
+  {
+   "title": "Nawazish GL-WS-23V1-39",
+   "handle": "nawazish-gl-ws-23v1-39",
+   "type": "Aaniya Wedding Formals",
+   "vendor": "Gulaal",
+   "price": 237000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/01_69f593a3-84cd-406f-8230-c85e5d570563.jpg?v=1753860636&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/01_69f593a3-84cd-406f-8230-c85e5d570563.jpg?v=1753860636&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/02_1f8146c9-1923-42a5-9f08-6cbc6207fecf.jpg?v=1753860636&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/03_9c121d9d-55db-4c70-9f30-6b997712bf91.jpg?v=1753860636&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/04_338c4af8-41de-43fa-96af-3a9c0d6035ea.jpg?v=1753860637&width=700"
+   ],
+   "options": [
+    {
+     "name": "Custom Size",
+     "values": [
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Nawazish ?(Item code GL-WS-23V1-39) Introducing a striking Red maxy that flows with grace, complemented by a separate lehnga that adds a touch of traditional charm. The ensemble is perfected with a captivating dupatta, c"
+  },
+  {
+   "title": "Shazminah GL-WS-22V1-31 (Shawl)",
+   "handle": "shazminah-gl-ws-22v1-31-shawl-zaryaab-wedding-formals-collection-by-gulaal",
+   "type": "Aarzoo Bridal Shawls",
+   "vendor": "Gulaalpk",
+   "price": 95000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/WS-31_20_2_ed7310e6-9ffd-40ae-bd8d-af56d2b48bcf.jpg?v=1753860836&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/WS-31_20_2_ed7310e6-9ffd-40ae-bd8d-af56d2b48bcf.jpg?v=1753860836&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/WS-31_20_5_39987135-78cf-4f59-9af9-e68a338c5553.jpg?v=1753860837&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/WS-31_20_4_86ccd960-9227-41fc-a79c-2ef114d3a3cf.jpg?v=1753860837&width=700"
+   ],
+   "options": [],
+   "description": "Shazminah GL-WS-22V1-31 - is a stunning deep purple, fully composed &amp; luxuriously hand-embellished and fully adda-worked bridal shawl with extensive zari detailing. The shawl is paired with a separate lehnga choli. T"
+  },
+  {
+   "title": "Ghazal GL-WS-23V1-42",
+   "handle": "ghazal-gl-ws-23v1-42",
+   "type": "Aaniya Wedding Formals",
+   "vendor": "Gulaal",
+   "price": 116000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/01_f628018e-c723-40ef-a3ac-ee76140dca69.jpg?v=1753860630&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/01_f628018e-c723-40ef-a3ac-ee76140dca69.jpg?v=1753860630&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/02_7ed55cc2-7448-485e-a99a-739d9cd556cb.jpg?v=1753860630&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/03_206fa97e-d09e-4902-95fa-6a9ef8a8da1f.jpg?v=1753860630&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/04_444cf1a5-eef8-45db-ac85-beacbbc93fca.jpg?v=1753860631&width=700"
+   ],
+   "options": [
+    {
+     "name": "Custom Size",
+     "values": [
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Ghazal (Item code GL-WS-23V1-42) a masterpiece that seamlessly intertwines tradition and luxury. The classic drape of the saree is enhanced by contemporary design elements, offering a versatile choice that resonates with"
+  },
+  {
+   "title": "Mayal GL-WS-22V1-32 (Shawl)",
+   "handle": "mayal-gl-ws-22v1-32-shawl-zaryaab-wedding-formals-collection-by-gulaal",
+   "type": "Aarzoo Bridal Shawls",
+   "vendor": "Gulaalpk",
+   "price": 116000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/Ws-32_20_1_75465e23-92ea-48dd-99d2-75a70f572058.jpg?v=1753860835&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/Ws-32_20_1_75465e23-92ea-48dd-99d2-75a70f572058.jpg?v=1753860835&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/Ws-32_20_3_ffc0216f-2978-4d0f-a82c-c455987f80f1.jpg?v=1753860835&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/products/Ws-32_20_4_0db0a1d8-8946-4661-abae-40dee0265cac.jpg?v=1753860835&width=700"
+   ],
+   "options": [],
+   "description": "Mayal (item code GL-WS-22V1-32) is a luxurious take on our signature fully composed &amp; hand-worked shawls. Rendered in an exciting combination of carefully chosen resham along with touches of gold zari, the shawl is a"
+  },
+  {
+   "title": "Shehnaz GL-WS-23V1-41",
+   "handle": "shehnaz-gl-ws-23v1-41",
+   "type": "Aaniya Wedding Formals",
+   "vendor": "Gulaal",
+   "price": 232000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/01_bc5a7904-105d-40df-9c95-65d13b31cf22.jpg?v=1753860632&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/01_bc5a7904-105d-40df-9c95-65d13b31cf22.jpg?v=1753860632&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/02_2abd8e18-9eae-440d-8746-dd2ea8100960.jpg?v=1753860632&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/03_c4b4ce64-dfef-4dc6-9c82-e9927188aa5d.jpg?v=1753860632&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/04_8a1259c4-3f4c-43aa-8397-5b748bba0408.jpg?v=1753860633&width=700"
+   ],
+   "options": [
+    {
+     "name": "Custom Size",
+     "values": [
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shehnaz (Item code GL-WS-23V1-41) Immerse yourself in the richness of Royal Blue, a color that exudes sophistication and timeless elegance. The intricate embroidery and tilla work add a touch of tradition, while the adda"
+  },
+  {
+   "title": "Bano K-02",
+   "handle": "bano-k-02-aarzoo-bridal-shawls",
+   "type": "Aarzoo Bridal Shawls",
+   "vendor": "Gulaalpk",
+   "price": 95000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/K-02-1.jpg?v=1760946751&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/K-02-1.jpg?v=1760946751&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/K-02-2.jpg?v=1760946751&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/K-02-3.jpg?v=1760946751&width=700"
+   ],
+   "options": [],
+   "description": "Rich garnet colored pure korean raw silk shawl with heavily composed shikargah composition, hand embellished pallu finished off with beautiful floral borders. Different handwork techniques have been merged together to cr"
+  },
+  {
+   "title": "Miraas",
+   "handle": "miraas",
+   "type": "Syleena Raw Silk",
+   "vendor": "Gulaalpk",
+   "price": 21450,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/57.jpg?v=1792658921&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/57.jpg?v=1792658921&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/58.jpg?v=1792658921&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/59.jpg?v=1792658921&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/60.jpg?v=1792658921&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Embroidered &amp; sequined raw silk for kalidaar panels Embroidered &amp; sequined raw silk sleeves Embroidered &amp; sequined raw silk border for front panels (A) Embroidered &amp; sequined raw silk border for back pane"
+  },
+  {
+   "title": "Rubine",
+   "handle": "rubine",
+   "type": "Syleena Raw Silk",
+   "vendor": "Gulaalpk",
+   "price": 17450,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/17_53832c34-faf2-429f-8804-3ff2fc294daf.jpg?v=1792658830&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/17_53832c34-faf2-429f-8804-3ff2fc294daf.jpg?v=1792658830&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/18_d8e525d8-b336-40f0-9d45-13e9b5dbe1dc.jpg?v=1792658831&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/19_969530ac-3634-425f-a5f6-ecd56e59ed78.jpg?v=1792658830&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/20_3748603a-36a2-4fff-b9fc-3e54e16fbc11.jpg?v=1792658830&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Embroidered &amp; sequined raw silk front bodice Embroidered &amp; sequined raw silk back bodice Embroidered &amp; sequined raw silk sleeves Embroidered &amp; sequined organza motif for back bodice Embroidered &amp; sequ"
+  },
+  {
+   "title": "Zaffre",
+   "handle": "zaffre",
+   "type": "Syleena Raw Silk",
+   "vendor": "Gulaalpk",
+   "price": 21450,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/9_578c9a7f-af3e-41a5-a9d4-8f1f1ef3d098.jpg?v=1792658732&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/9_578c9a7f-af3e-41a5-a9d4-8f1f1ef3d098.jpg?v=1792658732&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/10_e9dadc12-fc15-417a-8f04-5899ce6a6cda.jpg?v=1792658732&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/11_a7ec03fd-ea89-4b0c-9d1e-7381d1a28356.jpg?v=1792658732&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/14_9b15f5bf-2194-4452-9294-d0de1b8b829b.jpg?v=1792658732&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Embroidered &amp; sequined raw silk front bodice Embroidered &amp; sequined raw silk back bodice Embroidered &amp; sequined raw silk sleeves Embroidered &amp; sequined organza motif for back bodice Embroidered &amp; sequ"
+  },
+  {
+   "title": "Plum Noir",
+   "handle": "plum-noir",
+   "type": "Aira Printed Silk",
+   "vendor": "Gulaalpk",
+   "price": 12950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/33.webp?v=1789547424&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/33.webp?v=1789547424&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/34.webp?v=1789547425&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/35.webp?v=1789547424&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/36.webp?v=1789547424&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Printed silk shirt Printed silk trouser Printed silk dupatta Adda-worked, embroidered &amp; sequinned organza neckline for front Adda-worked, embroidered &amp; sequinned organza motifs for sleeves (2 pcs) Embroidered &am"
+  },
+  {
+   "title": "Azure",
+   "handle": "azure-1",
+   "type": "Aira Printed Silk",
+   "vendor": "Gulaalpk",
+   "price": 14750,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/1_80b6ab21-6077-42e5-be92-179a16312000.webp?v=1789547161&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/1_80b6ab21-6077-42e5-be92-179a16312000.webp?v=1789547161&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/3_c2dc7067-6618-48d0-9385-76210744de69.webp?v=1789547162&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/4_c8c6a223-7d8b-4f27-b3d7-c08d7a5dd8d2.webp?v=1789547161&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/2_55330a3c-f41b-405f-bf04-d3a2c80f10ae.webp?v=1789547162&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Printed silk front bodice Printed silk back bodice Printed silk sleeves Printed silk kalidaar panels Printed silk fabric for sharara Adda-worked, embroidered &amp; sequinned organza neckline for front bodice Adda-worked,"
+  },
+  {
+   "title": "Mosaic Muse",
+   "handle": "mosaic-muse",
+   "type": "Aira Printed Silk",
+   "vendor": "Gulaalpk",
+   "price": 14750,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/57.webp?v=1789546854&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/57.webp?v=1789546854&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/58.webp?v=1789546854&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/61.webp?v=1789546854&width=700",
+    "https://cdn.shopify.com/s/files/1/0553/2994/7720/files/59.webp?v=1789546854&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Printed silk front bodice Printed silk back bodice Printed silk sleeves Printed silk kalidaar panels Adda-worked, embroidered &amp; sequinned organza border for neckline Adda-worked, embroidered &amp; sequinned organza m"
+  }
+ ],
+ "productCount": 429,
+ "features": [
+  {
+   "id": "wishlist",
+   "label": "Wishlist"
+  },
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  }
+ ],
+ "storeApps": [
+  "Wishlist King",
+  "ReConvert",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:05:17.487Z",
+ "warnings": [
+  "Heading font \"object-fit: contain\" is not on Google Fonts; a close fallback is used."
+ ],
+ "overrides": {}
+}

@@ -1,0 +1,506 @@
+{
+ "slug": "qalamkar",
+ "name": "Qalamkar",
+ "url": "https://www.qalamkar.com.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.qalamkar.com.pk/cdn/shop/files/Favicon.png?v=1774595105&width=180",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#2db742",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#6016ec",
+   "#2db742",
+   "#213d46",
+   "#6016eb",
+   "#f5a623",
+   "#d2b9a3"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Nunito",
+  "body": "Instrument Sans",
+  "found": [
+   "Nunito",
+   "Instrument Sans",
+   "ui-monospace"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://www.qalamkar.com.pk/cdn/shop/files/pre-book-now-mobile-banners_jpg_fc6d7fb4-f6d3-4bb3-88e3-baa20dea72ba.jpg?v=1791556726",
+  "https://www.qalamkar.com.pk/cdn/shop/files/prebook-now-banner_jpg_f0f9f556-56a1-497f-bcf4-650a7d2fe575.jpg?v=1791556726",
+  "https://www.qalamkar.com.pk/cdn/shop/files/pre-book-now-mobile-banners_jpg_06ce0b70-86e7-4534-9b72-e9238e66d661.jpg?v=1790347397",
+  "https://www.qalamkar.com.pk/cdn/shop/files/prebook-now-1920x1080-banner_jpg_71e218f9-513e-443f-9644-f5c01f9b9879.jpg?v=1790347397"
+ ],
+ "collections": [
+  {
+   "title": "ALL COLLECTIONS",
+   "handle": "all-collections",
+   "image": null,
+   "count": 133
+  },
+  {
+   "title": "All Products",
+   "handle": "all",
+   "image": null,
+   "count": 249
+  },
+  {
+   "title": "Basic Pret '26",
+   "handle": "basic-pret",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "Basic Pret '26",
+   "handle": "basic-pret-26",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Best of 2025 (lawn edition)",
+   "handle": "best-of-2025-lawn-edition",
+   "image": null,
+   "count": 25
+  },
+  {
+   "title": "Best of Qalamkar",
+   "handle": "best-of-qalamkar",
+   "image": null,
+   "count": 20
+  },
+  {
+   "title": "Best Sellers",
+   "handle": "best-selling-last-month",
+   "image": null,
+   "count": 29
+  },
+  {
+   "title": "CASUAL Pret",
+   "handle": "casual-pret",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "Casual Pret '26",
+   "handle": "causal-pret-26",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Chiffon '26",
+   "handle": "chiffon-26",
+   "image": null,
+   "count": 8
+  }
+ ],
+ "products": [
+  {
+   "title": "SH-07 Nurah",
+   "handle": "nurah-sh-07",
+   "type": "LUXURY FORMALS",
+   "vendor": "Qalamkar",
+   "price": 23793,
+   "compareAt": 33990,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/047A4881copy.jpg?v=1733920918&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/047A4881copy.jpg?v=1733920918&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/047A4914copy.jpg?v=1733920918&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/047A4939copy.jpg?v=1733920918&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/047A4945copy.jpg?v=1733920918&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom size"
+     ]
+    }
+   ],
+   "description": "Shirt Gotta Embroidered Front (Hand Made) Gotta Embroidered Border (Front) (Hand Made) Gotta Embroidered Lace Side Patti Lace (Front &amp; Back) Gotta Embroidered Lace (Front &amp; Sleeves) (Hand Made) Gotta Embroidered "
+  },
+  {
+   "title": "SH-02 Raniya",
+   "handle": "raniya-sh-02",
+   "type": "LUXURY FORMALS",
+   "vendor": "Qalamkar",
+   "price": 20993,
+   "compareAt": 29990,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/WhatsAppImage2024-12-11at5.08.43PM_1.jpg?v=1734200168&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/WhatsAppImage2024-12-11at5.08.43PM_1.jpg?v=1734200168&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/WhatsAppImage2024-12-11at5.08.49PM.jpg?v=1734200168&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/WhatsAppImage2024-12-11at5.08.43PM_2.jpg?v=1733920132&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/WhatsAppImage2024-12-11at5.08.43PM.jpg?v=1733920132&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom size"
+     ]
+    }
+   ],
+   "description": "Bodice Gotta Embroidered Front Bodice (Hand Made) Embroidered Lace Bodice (Front &amp; Back) Embroidered Neckline(Hand Made) Gotta Embroidered Back Neckline (Hand Made) Gotta Embroidered Back Bodice Gotta Embroidered Sle"
+  },
+  {
+   "title": "RF-01 MUSKAAN",
+   "handle": "rf-01-muskaan",
+   "type": "LUXURY FORMALS",
+   "vendor": "QALAMKAR",
+   "price": 36990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/QALAMKAROFFICIALEDITS-1933_ca10b1f3-790b-46b2-9ae3-38f27a90b410.jpg?v=1724573216&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/QALAMKAROFFICIALEDITS-1933_ca10b1f3-790b-46b2-9ae3-38f27a90b410.jpg?v=1724573216&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/QALAMKAROFFICIALEDITS-2002_e81a648a-5bdc-4ef7-bbb7-9b1d1a6831de.jpg?v=1724573216&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/QALAMKAROFFICIALEDITS-2061_89a02d47-7ac1-4570-abf2-59e51bc16362.jpg?v=1724573216&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/QALAMKAROFFICIALEDITS-2103_545d0402-e579-476d-a79f-f9f78b949089.jpg?v=1724573216&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Bodice Embroidered Bodice Front (Hand Made) Embroidered Front Bodice Lace (Hand Made) Embroidered Lace Front Neck (Hand Made) Embroidered Back Bodice Lace Embroidered Back Neckline Embroidered Back Bodice &amp; Sleeves E"
+  },
+  {
+   "title": "EM-01 (A) IVY",
+   "handle": "em-01-a-ivy",
+   "type": "",
+   "vendor": "Qalamkar",
+   "price": 4613,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/IMG_7211_41899773-a442-4ccc-ab40-d9f8a3595644.jpg?v=1747917549&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/IMG_7211_41899773-a442-4ccc-ab40-d9f8a3595644.jpg?v=1747917549&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/IMG_7238.jpg?v=1747917549&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/IMG_7274.jpg?v=1747917549&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/IMG_7267.jpg?v=1747917549&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "CUSTOM SIZE"
+     ]
+    }
+   ],
+   "description": "Shirt Digital Printed Shirt Embroidered Neckline Embroidered Border (Front &amp; Sleeves) Dupatta Digital Printed Lawn Dupatta Trouser Dyed Trouser Fabric Details Shirt = Lawn (Printed) Dupatta = Lawn (Printed) Trouser ="
+  },
+  {
+   "title": "QPW-10 (B) Hafsa",
+   "handle": "qpw-10-b-hafsa",
+   "type": "",
+   "vendor": "Qalamkar",
+   "price": 6690,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/3_8_7e7c0b19-4a15-4827-a348-95fc556a818b.jpg?v=1791284017&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/3_8_7e7c0b19-4a15-4827-a348-95fc556a818b.jpg?v=1791284017&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/3_10.jpg?v=1791284017&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/3_9.jpg?v=1791284017&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/3_3_bc5d0d11-a3c2-4c48-955f-b6e07287b037.jpg?v=1791284017&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shirt Digital Printed Front Embroidered Front Neckline Embroidered Front Side Motifs Embroidered Front Daman &amp; Chak Lace Embroidered Back Daman &amp; Chak Lace Embroidered 3D Flowers Digital Printed Back Sleeves Digi"
+  },
+  {
+   "title": "QPW-10 (A) Mehru",
+   "handle": "qpw-10-a-mehru",
+   "type": "",
+   "vendor": "Qalamkar",
+   "price": 6690,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/4_4_095ef5c8-7704-4a83-a545-90193c457a98.jpg?v=1791283999&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/4_4_095ef5c8-7704-4a83-a545-90193c457a98.jpg?v=1791283999&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/4_10.jpg?v=1791283999&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/4_7_ca13a82a-6062-45d6-ad1a-f8d34ce4e36a.jpg?v=1791283999&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/4_6_0aa9c618-eec8-43c3-865f-2c21cad8bf9b.jpg?v=1791283999&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shirt Digital Printed Front Embroidered Front Neckline Embroidered Front Side Motifs Embroidered Front Daman &amp; Chak Lace Embroidered Back Daman &amp; Chak Lace Digital Printed Back Sleeves Digital Printed Sleeves Emb"
+  },
+  {
+   "title": "QCC-08 SONA",
+   "handle": "qcc-08-sona",
+   "type": "Chiffon-26",
+   "vendor": "Qalamkar",
+   "price": 23990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/image00006.jpg?v=1788523734&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00006.jpg?v=1788523734&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00024.jpg?v=1788523734&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00075.jpg?v=1788523735&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00042.jpg?v=1788523734&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shirt Embroidered chiffon center panel (Handmade) Embroidered chiffon left &amp; right side panel (Handmade) Embroidered front neckline (Handmade) Embroidered front &amp; back daman border (Pin pearl) Embroidered front p"
+  },
+  {
+   "title": "QCC-07 AMERA",
+   "handle": "qcc-07-amera",
+   "type": "Chiffon-26",
+   "vendor": "Qalamkar",
+   "price": 23990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/image00021.jpg?v=1788523299&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00021.jpg?v=1788523299&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00012.jpg?v=1788523299&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00045.jpg?v=1788523299&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00061.jpg?v=1788523299&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shirt Embroidered chiffon front bodice (Handmade) Embroidered chiffon front kali Plain chiffon back Embroidered back bodice Embroidered front &amp; back daman border Embroidered front bodice lace Embroidered front neckli"
+  },
+  {
+   "title": "QCC-06 WALIYA",
+   "handle": "qcc-06-waliya",
+   "type": "Chiffon-26",
+   "vendor": "Qalamkar",
+   "price": 24990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/image00009.jpg?v=1788523028&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00009.jpg?v=1788523028&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00056.jpg?v=1788523028&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00029.jpg?v=1788523028&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00014.jpg?v=1788523028&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shirt Embroidered chiffon front (Handmade) Embroidered front neckline (Handmade) Embroidered front daman border (Handmade) Embroidered back daman lace Embroidered side chak lace Embroidered back neckline lace Embroidered"
+  },
+  {
+   "title": "QCC-01 DEENA",
+   "handle": "qcc-01-deena",
+   "type": "LUXE SILK",
+   "vendor": "Qalamkar",
+   "price": 23990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/image00086.jpg?v=1788424174&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00086.jpg?v=1788424174&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00083.jpg?v=1788424174&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00022.jpg?v=1788424174&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/image00057.jpg?v=1788424174&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "Custom Size"
+     ]
+    }
+   ],
+   "description": "Shirt Embroidered chiffon center panel (Handmade) Embroidered chiffon left panel (Handmade) Embroidered chiffon right panel (Handmade) Embroidered front neckline (Handmade) Embroidered 3D flowers Embroidered front daman "
+  },
+  {
+   "title": "QSL-08 LINNEA",
+   "handle": "qsl-08-linnea",
+   "type": "LUXE SILK",
+   "vendor": "Qalamkar",
+   "price": 27990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP06803.jpg?v=1787135759&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP06803.jpg?v=1787135759&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP06833.jpg?v=1787135759&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP06813.jpg?v=1787135759&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP06856.jpg?v=1787135760&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Bodice: Embroidered Front Bodice Grip Silk (Handmade) Embroidered Front Neckline on Organza (Handmade) Embroidered Back Bodice Grip Silk Embroidered Back Neckline on Organza Embroidered Sleeves Grip Silk (Handmade) Embro"
+  },
+  {
+   "title": "QSL-07 NOA",
+   "handle": "qsl-07-noa",
+   "type": "LUXE SILK",
+   "vendor": "Qalamkar",
+   "price": 24990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP07009.jpg?v=1787135602&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP07009.jpg?v=1787135602&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP07023.jpg?v=1787135602&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP07032.jpg?v=1787135602&width=700",
+    "https://cdn.shopify.com/s/files/1/2044/1461/files/TYP07041.jpg?v=1787135602&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Shirt Front: Digital Printed Silk (Handmade) Back: Digital Printed Silk Sleeves: Digital Printed Silk (Handmade) Embroidered Front Border on Organza (Handmade) Embroidered Sleeves Border on Organza (Handmade) Embroidered"
+  }
+ ],
+ "productCount": 293,
+ "features": [
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  },
+  {
+   "id": "subscriptions",
+   "label": "Subscriptions"
+  },
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Klaviyo",
+  "Appstle Subscriptions",
+  "Omnisend",
+  "Google Analytics 4",
+  "Instafeed"
+ ],
+ "crawledAt": "2026-10-27T10:05:40.930Z",
+ "warnings": [],
+ "overrides": {}
+}

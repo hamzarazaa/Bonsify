@@ -1,0 +1,258 @@
+{
+ "slug": "coco-by-zara-shahjahan",
+ "name": "Coco by Zara Shahjahan",
+ "url": "https://www.cocobyzarashahjahan.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.cocobyzarashahjahan.com/cdn/shop/files/COCO-LOGO.svg?crop=center&height=32&v=1747993551&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#dc3545",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#dc3545",
+   "#e93636",
+   "#4600ff",
+   "#fd9a52",
+   "#279a4b",
+   "#fb9e5b"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Fira Sans",
+  "body": "Consolas",
+  "found": [
+   "Fira Sans",
+   "Consolas",
+   "Times"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [],
+ "collections": [
+  {
+   "title": "Accessories",
+   "handle": "accessories",
+   "image": null,
+   "count": 26
+  },
+  {
+   "title": "All Collections",
+   "handle": "all-collections",
+   "image": null,
+   "count": 498
+  },
+  {
+   "title": "April Basics 2024",
+   "handle": "april-basics-2024",
+   "image": null,
+   "count": 18
+  },
+  {
+   "title": "August Basics",
+   "handle": "august-basics",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "August Hand Crafted",
+   "handle": "hand-crafted",
+   "image": null,
+   "count": 41
+  },
+  {
+   "title": "Autumn Winter '20",
+   "handle": "autumn-winter-20",
+   "image": null,
+   "count": 55
+  },
+  {
+   "title": "BASICS",
+   "handle": "basics",
+   "image": null,
+   "count": 454
+  },
+  {
+   "title": "Basics New in",
+   "handle": "basics-new-in",
+   "image": null,
+   "count": 64
+  },
+  {
+   "title": "Bhopal Collection",
+   "handle": "bhopal-collection",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "Bridal 2024",
+   "handle": "bridal-2024",
+   "image": null,
+   "count": 6
+  }
+ ],
+ "products": [
+  {
+   "title": "STRINGS ATTACHED",
+   "handle": "cr26c1059",
+   "type": "Ready to Wear",
+   "vendor": "CocobyZarashahjahan",
+   "price": 9798,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_13eb33de-e590-4cde-9db4-765289c57ebb.jpg?v=1792660824&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_13eb33de-e590-4cde-9db4-765289c57ebb.jpg?v=1792660824&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/2_37db3b60-0f35-497c-bb07-479a3e391528.jpg?v=1792660824&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/3_9506686d-2fa3-45ef-b4f9-ecc2ea2602b2.jpg?v=1792660824&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/4_d90ee33e-d6e3-4647-a067-7e40e6ed8ac4.jpg?v=1792660824&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Top: Karandi Bottom: Karandi A fresh blue gingham shirt with a sharp pointed collar, a concealed placket and soft panelling that gives the relaxed fit some shape. Cross-stitch style pink roses bloom across the shoulders "
+  },
+  {
+   "title": "STEREO STAR",
+   "handle": "cr26c1058",
+   "type": "Ready to Wear",
+   "vendor": "CocobyZarashahjahan",
+   "price": 9498,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_a547a56c-6dae-4b4f-ab8d-f68a22a2d9f7.jpg?v=1792660806&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_a547a56c-6dae-4b4f-ab8d-f68a22a2d9f7.jpg?v=1792660806&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/2_37ec111e-53f1-42df-9054-c1292f2806b4.jpg?v=1792660805&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/3_05d55052-f23b-49f8-8a18-191c2c7c0ab5.jpg?v=1792660806&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/4_7fc692b3-4cdf-4332-91a4-9bd255d2fa97.jpg?v=1792660805&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Top: Karandi Bottom: Karandi A rich maroon shirt in oversized blush, lilac and ivory blooms, turned all the way up like your favourite song on a full-volume stereo. It has a band collar and a V-placket edged in ivory tri"
+  },
+  {
+   "title": "KITTY",
+   "handle": "cr26c1057",
+   "type": "Ready to Wear",
+   "vendor": "CocobyZarashahjahan",
+   "price": 8998,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_65916540-ee48-4393-a383-c43c56d77c51.jpg?v=1792660792&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_65916540-ee48-4393-a383-c43c56d77c51.jpg?v=1792660792&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/2_84893871-a9e7-45ef-9f0c-798279f86e82.jpg?v=1792660792&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/3_65daf45d-254e-4db6-871f-34afca34437b.jpg?v=1792660792&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/4_85255bf9-7199-40cb-9ecf-8cfcf988e507.jpg?v=1792660792&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Top: Karandi Bottom: Karandi A rich brown co-ord with a structured front stitch line and subtle side darts that shape a softly snatched, flattering fit. A tie-up neckline with tassels adds a playful finish, and delicate "
+  },
+  {
+   "title": "SHAB- 5A",
+   "handle": "shab-5a",
+   "type": "Unstitched",
+   "vendor": "Cocobyzarashahjahan",
+   "price": 11498,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_562a015a-f2ff-47e1-936c-b7c2b334888a.jpg?v=1791894707&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_562a015a-f2ff-47e1-936c-b7c2b334888a.jpg?v=1791894707&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/2_4f498a07-64a7-4b12-b655-966118204c62.jpg?v=1791894707&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/3_b035d4b9-6e4c-4ad4-b48d-c5fe0863bab6.jpg?v=1791894706&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/4_07b20a34-a4c4-4589-a62f-4ab9b30f4bbe.jpg?v=1791894706&width=700"
+   ],
+   "options": [],
+   "description": "PRE-ORDER This article is back in production. Order now to reserve yours. Your order will be dispatched on 5th November 2026 . Delivery time starts after dispatch. Limited pieces available. Inlays: Embroidered Cotton Nep"
+  },
+  {
+   "title": "Amelia-5A",
+   "handle": "amelia-5a",
+   "type": "Unstitched",
+   "vendor": "Cocobyzarashahjahan",
+   "price": 5498,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_6d4bf320-795b-400f-8d12-6902c42f8067.jpg?v=1789805886&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_6d4bf320-795b-400f-8d12-6902c42f8067.jpg?v=1789805886&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/2_095e507b-e3d6-44b7-9a1a-6c746b67c2ef.jpg?v=1789805886&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/3_00de324f-8f30-4134-889d-5e4e155d2b99.jpg?v=1789805886&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/4_2f4af0fe-6e93-4975-a492-7e6bfd02a950.jpg?v=1789805886&width=700"
+   ],
+   "options": [],
+   "description": "Digital Printed Linen Shirt — 3 Metres Digital Printed Linen Trouser — 2.3 Metres Digital Printed Linen Dupatta — 2.5 Metres Amelie brings together soft sage, cream, and blush pink vertical panels, layered with muted wat"
+  },
+  {
+   "title": "Mira-1B",
+   "handle": "mira-1b",
+   "type": "Unstitched",
+   "vendor": "Cocobyzarashahjahan",
+   "price": 5498,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_a362ae58-a777-4075-92ea-501454c2aed3.jpg?v=1789805811&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/1_a362ae58-a777-4075-92ea-501454c2aed3.jpg?v=1789805811&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/2_d49e0b25-6970-45a2-acb4-d104b1d181d8.jpg?v=1789805811&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/3_d4a7a73a-3596-47e4-bd2b-c5277033022c.jpg?v=1789805811&width=700",
+    "https://cdn.shopify.com/s/files/1/0886/3957/0230/files/4_48dd2024-5e2b-4092-aaa8-f79dac5aa4da.jpg?v=1789805811&width=700"
+   ],
+   "options": [],
+   "description": "Digital Printed Linen Shirt — 3 Metres Digital Printed Linen Trouser — 2.3 Metres Digital Printed Linen Dupatta — 2.5 Metres Mira is an ode to prints on prints, where every layer tells its own story. Set against a rich b"
+  }
+ ],
+ "productCount": 578,
+ "features": [
+  {
+   "id": "push",
+   "label": "Web push"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  }
+ ],
+ "storeApps": [
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:05:35.887Z",
+ "warnings": [],
+ "overrides": {}
+}

@@ -1,0 +1,494 @@
+{
+ "slug": "mausummery",
+ "name": "Mausummery",
+ "url": "https://mausummery.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://mausummery.com/cdn/shop/files/favicon_96x.svg?v=1739175251",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#c72820",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#c72820",
+   "#c4161c",
+   "#4469af",
+   "#c8232c",
+   "#00aced",
+   "#896838"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Nunito Sans",
+  "body": "Montserrat",
+  "found": [
+   "Nunito Sans",
+   "Montserrat",
+   "object-fit: cover",
+   "Lato"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://mausummery.com/cdn/shop/files/Main_Mobile_Banner_1x1.png?v=1788782726",
+  "https://mausummery.com/cdn/shop/files/main_desktop_banner_{width}x.png?v=1788782727"
+ ],
+ "collections": [
+  {
+   "title": "3 Piece",
+   "handle": "3-piece",
+   "image": null,
+   "count": 3
+  },
+  {
+   "title": "Bottoms",
+   "handle": "bottoms",
+   "image": null,
+   "count": 3
+  },
+  {
+   "title": "Flat 60% OFF",
+   "handle": "flat-60-off",
+   "image": null,
+   "count": 13
+  },
+  {
+   "title": "Limited Sizes",
+   "handle": "limited-sizes",
+   "image": null,
+   "count": 90
+  },
+  {
+   "title": "New Arrivals",
+   "handle": "new-arrivals",
+   "image": null,
+   "count": 72
+  },
+  {
+   "title": "Pre Fall 2025",
+   "handle": "pre-fall-2025",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Pret",
+   "handle": "pret",
+   "image": null,
+   "count": 109
+  },
+  {
+   "title": "Pret-2 Piece",
+   "handle": "pret-2-piece",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Pret-Embroidered",
+   "handle": "pret-embroidered",
+   "image": null,
+   "count": 15
+  },
+  {
+   "title": "Pret-Printed",
+   "handle": "printed",
+   "image": null,
+   "count": 2
+  }
+ ],
+ "products": [
+  {
+   "title": "2 Piece Printed Lawn Suit",
+   "handle": "2-piece-printed-lawn-suit-mror11",
+   "type": "Pret",
+   "vendor": "New Arrivals",
+   "price": 3850,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25OR11_3.png?v=1788954810",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25OR11_3.png?v=1788954810",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25OR11_1.png?v=1788954810",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25OR11_2.png?v=1788954810",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25OR11_4.png?v=1788954810"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "A graceful 2-piece printed lawn ensemble featuring an A-line frock with elegant lace detailing. Finished with printed sleeves enhanced with lace and button accents, and paired with a printed straight trouser for a beautifully coordinated look."
+  },
+  {
+   "title": "Alara - Embroidered Co-Ord",
+   "handle": "m26spc03",
+   "type": "Pret",
+   "vendor": "SUMMER COLLECTION",
+   "price": 5560,
+   "compareAt": 6950,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26SPC03-01.jpg?v=1782986968",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26SPC03-01.jpg?v=1782986968",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26SPC03-02.jpg?v=1782986968",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26SPC03-03.jpg?v=1782986968",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Alara.png?v=1784548723"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Meet Alara, an embroidered linen 2-piece featuring an elegant kaftan-style shirt paired with plain straight trousers. Its relaxed silhouette makes it a versatile choice for everyday dressing, family gatherings and effortlessly polished looks. Product Details• Fabric: Linen• Shirt: Embroidered kaftan-style design• Bottom: Plain straight trousers• Includes: 2 pieces"
+  },
+  {
+   "title": "Alba - Linen Co-Ord Set",
+   "handle": "alba-linen-co-ord-set-m26w11",
+   "type": "Pret",
+   "vendor": "New Arrivals",
+   "price": 4650,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26W11_2.png?v=1789641762",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26W11_2.png?v=1789641762",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26W11_3.png?v=1789641762",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M26W11_1.png?v=1789641762"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Crafted from premium linen, this stylish 2-piece co-ord features delicate stitch detailing along the neckline and sleeves, finished with adjustable folded sleeves. Paired with wide-leg trousers for a relaxed yet polished everyday look. Product Details• Fabric: Linen• Shirt: Stitch detailing on neckline and sleeves• Sleeves: Adjustable folded sleeves• Bottom: Wide-leg trousers• Includes: 2 pieces"
+  },
+  {
+   "title": "Harem Pants with Pearl Buttons",
+   "handle": "m25w16t",
+   "type": "Bottoms",
+   "vendor": "Winter Collection",
+   "price": 2760,
+   "compareAt": 3450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W16T-1.jpg?v=1761569038",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W16T-1.jpg?v=1761569038",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W16T-2.jpg?v=1761569038",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W16T-3.jpg?v=1761569038",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W16T-4.jpg?v=1761569038"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Stand Alone Linen Harem Pants With Pearl Loop Buttons"
+  },
+  {
+   "title": "Harem Pants",
+   "handle": "m25w17t",
+   "type": "Bottoms",
+   "vendor": "Winter Collection",
+   "price": 2760,
+   "compareAt": 3450,
+   "available": false,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W17T-1.jpg?v=1761569048",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W17T-1.jpg?v=1761569048",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W17T-2.jpg?v=1761569048",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W17T-3.jpg?v=1761569047",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25W17T-4.jpg?v=1761569048"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Stand Alone Linen Harem Pants"
+  },
+  {
+   "title": "Aqua - Embroidered Co-Ord",
+   "handle": "m25spc75",
+   "type": "Pret",
+   "vendor": "Eid Collection",
+   "price": 5000,
+   "compareAt": 12500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC75-4.jpg?v=1750499222",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC75-4.jpg?v=1750499222",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC75-1.jpg?v=1750499222",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC75-3.jpg?v=1750499222",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC75-2.jpg?v=1750499222"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Aqua"
+     ]
+    }
+   ],
+   "description": "Crafted from premium lawn, this embroidered 2-piece features a beautifully embroidered front with handcrafted hanging details, paired with a classic plain farshi shalwar. Designed for effortless elegance and everyday comfort."
+  },
+  {
+   "title": "Aurelia - Embroidered 2 Piece Suit",
+   "handle": "m25spc106",
+   "type": "Pret",
+   "vendor": "Formals",
+   "price": 17500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC106-1.jpg?v=1759403618",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC106-1.jpg?v=1759403618",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC106-2.jpg?v=1759403618",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC106-3.jpg?v=1759463227",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC106-5.jpg?v=1759463227"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Beige"
+     ]
+    },
+    {
+     "name": "Fabric",
+     "values": [
+      "Raw Silk"
+     ]
+    }
+   ],
+   "description": "Meet Aurelia, an elegant beige raw-silk two-piece featuring a kaftan-style shirt adorned with handcrafted adda work and embroidered sleeves. Paired with graceful flared trousers, it's a refined choice for festive occasions, family gatherings and formal celebrations. Product Details• Fabric: Raw silk• Colour: Beige• Shirt: Kaftan style with handcrafted adda work• Sleeves: Embroidered• Bottom: Flare"
+  },
+  {
+   "title": "Aveline - 2 Piece Suit",
+   "handle": "khaddar-2-piece-suit-m25pr100",
+   "type": "Pret",
+   "vendor": "New Arrivals",
+   "price": 4850,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_Design_-_2026-09-30T204834.859.png?v=1790839311",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_Design_-_2026-09-30T204834.859.png?v=1790839311",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_Design_-_2026-09-30T205028.031.png?v=1790839311",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_Design_-_2026-09-30T210519.026.png?v=1790839311"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Crafted for refined everyday dressing, Aveline is a polished stitched 2-piece featuring a long straight-cut shirt paired with matching straight trousers. The shirt is designed with a neat mandarin collar, statement loop-button detailing along the front and relaxed full sleeves with subtle cuff accents for a clean, contemporary finish. The soft mint tone gives the outfit a fresh, elegant feel, maki"
+  },
+  {
+   "title": "Azalea - Linen 2 Piece",
+   "handle": "azalea-linen-2-piece-m26w07",
+   "type": "Pret",
+   "vendor": "New Arrivals",
+   "price": 4650,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T133056.392.png?v=1789722668",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T133056.392.png?v=1789722668",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T133342.294.png?v=1789722668",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T141039.231.png?v=1789722668"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Crafted from premium linen, this elegant 2-piece features a straight-cut shirt with a refined mandarin collar and delicate loop-button detailing along the front. Paired with wide-leg trousers for a sophisticated yet relaxed everyday look. Product Details• Fabric: Linen• Shirt: Straight cut• Neckline: Mandarin collar• Details: Front loop buttons• Bottom: Wide-leg trousers• Includes: 2 pieces"
+  },
+  {
+   "title": "Blush Rose - Embroidered 3 Piece Suit",
+   "handle": "m25spc84",
+   "type": "Pret",
+   "vendor": "Formals",
+   "price": 13500,
+   "compareAt": 13500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC84-1.jpg?v=1759403679",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC84-1.jpg?v=1759403679",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC84-2.jpg?v=1759462889",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC84-6.jpg?v=1759462889",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SPC84-3.jpg?v=1759462889"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Deep Red"
+     ]
+    },
+    {
+     "name": "Fabric",
+     "values": [
+      "Raw Silk"
+     ]
+    }
+   ],
+   "description": "Crafted from premium raw silk, this elegant 3-piece features a beautifully tailored plain shirt, a classic farshi shalwar, and an embroidered organza dupatta. A graceful ensemble designed for festive occasions and timeless style."
+  },
+  {
+   "title": "Celeste - Linen 2 Piece",
+   "handle": "celeste-linen-2-piece-m26w05",
+   "type": "Pret",
+   "vendor": "New Arrivals",
+   "price": 4650,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T115918.089.png?v=1789715237",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T115918.089.png?v=1789715237",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T120454.112.png?v=1789715237",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/Untitled_design_-_2026-09-18T120640.906.png?v=1789715237"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Crafted from premium linen, this elegant stitched 2-piece features a straight-cut shirt with a mandarin collar and loop-button detailing along the front. Paired with wide-leg trousers for a relaxed yet polished look. Product Details• Fabric: Linen• Shirt: Straight cut with mandarin collar• Details: Front loop buttons• Bottom: Wide-leg trousers• Includes: 2 pieces"
+  },
+  {
+   "title": "Cleo - Digital Printed Kurta",
+   "handle": "m25sp46",
+   "type": "Pret",
+   "vendor": "Printed",
+   "price": 1650,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SP46-1.jpg?v=1744880099",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SP46-1.jpg?v=1744880099",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SP46-2.jpg?v=1744880099",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SP46-3.jpg?v=1744880099",
+    "https://cdn.shopify.com/s/files/1/0683/5365/4955/files/M25SP46-4.jpg?v=1744880099"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "A lightweight digital printed lawn kurta featuring a beautifully detailed print across the front, sleeves, and back. Designed with an effortless silhouette, making it a versatile choice for comfortable everyday wear."
+  }
+ ],
+ "productCount": 155,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "Omnisend",
+  "Hotjar",
+  "Microsoft Clarity",
+  "Google Analytics 4",
+  "Google Tag Manager",
+  "TikTok Pixel"
+ ],
+ "crawledAt": "2026-10-27T10:04:59.217Z",
+ "warnings": [],
+ "overrides": {}
+}

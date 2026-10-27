@@ -1,0 +1,543 @@
+{
+ "slug": "generation",
+ "name": "Generation",
+ "url": "https://generation.com.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://generation.com.pk/cdn/shop/files/1_db0d7fbb-af5b-416f-98b7-77c8a45dc34d.png?crop=center&height=32&v=1660134833&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#ff0000",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#ff0000",
+   "#6016eb"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Nunito Sans",
+  "body": "Assistant",
+  "found": [
+   "Assistant",
+   "Nunito Sans",
+   "galanogrotesque-suploadedfile"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://generation.com.pk/cdn/shop/files/preview_images/594f7ca4e52f42f8b1d5f27ba596dfc0.thumbnail.0000000000_1600x.jpg?v=1793006863",
+  "https://generation.com.pk/cdn/shop/files/preview_images/ddd1cb33bc5546e38a7497edafe12a74.thumbnail.0000000000_1600x.jpg?v=1793006876",
+  "https://generation.com.pk/cdn/shop/files/formals_desktop_option_1_c0f5af96-0e6e-4057-ab6c-ce8f2fcaa839.png?v=1793001680&width=3840",
+  "https://generation.com.pk/cdn/shop/files/formals_mobile.png?v=1793001678&width=3840"
+ ],
+ "collections": [
+  {
+   "title": "1 Piece Eid Sale",
+   "handle": "1-piece-eid-sale",
+   "image": null,
+   "count": 46
+  },
+  {
+   "title": "2 PC SETS",
+   "handle": "2-pc-sets",
+   "image": null,
+   "count": 395
+  },
+  {
+   "title": "2 Piece Eid Sale",
+   "handle": "2-piece-eid-sale",
+   "image": null,
+   "count": 112
+  },
+  {
+   "title": "20% OFF",
+   "handle": "20-off",
+   "image": null,
+   "count": 132
+  },
+  {
+   "title": "2nd Further Reductions",
+   "handle": "2nd-further-reductions",
+   "image": null,
+   "count": 22
+  },
+  {
+   "title": "30% OFF",
+   "handle": "30-off",
+   "image": null,
+   "count": 65
+  },
+  {
+   "title": "50 Percent Sale",
+   "handle": "50-percent-sale",
+   "image": null,
+   "count": 9
+  },
+  {
+   "title": "50% OFF",
+   "handle": "50-off",
+   "image": null,
+   "count": 371
+  },
+  {
+   "title": "50% Sale",
+   "handle": "50-sale",
+   "image": null,
+   "count": 2
+  },
+  {
+   "title": "60% OFF",
+   "handle": "60-off",
+   "image": null,
+   "count": 26
+  }
+ ],
+ "products": [
+  {
+   "title": "Embroidered Floral Whisper Set",
+   "handle": "w26t2082",
+   "type": "Lappan",
+   "vendor": "Winter 2026-27",
+   "price": 10998,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26T2082_Mehndi_Coverr.jpg?v=1792501607&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26T2082_Mehndi_Coverr.jpg?v=1792501607&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26T2082_Mehndi_1.jpg?v=1792501607&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26T2082_Mehndi_2.jpg?v=1792501607&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26T2082_Mehndi_3.jpg?v=1792501607&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Mehndi"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Hand-embroidered, regular-fit kurta with a low band neckline and front placket adorned with delicate embroidery highlighted with aina detailing. The neckline and sleeve hems are further enhanced with refined embroidery. "
+  },
+  {
+   "title": "Phool Blossom Embroidered Set",
+   "handle": "w25f2545",
+   "type": "Beige Blossom",
+   "vendor": "Summer 2026",
+   "price": 8250,
+   "compareAt": 16500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W25F2545_Moongia_Cover.jpg?v=1774533575&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W25F2545_Moongia_Cover.jpg?v=1774533575&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W25F2545_Moongia_2.jpg?v=1774533575&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W25F2545_Moongia_1.jpg?v=1774533575&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W25F2545_Moongia_3.jpg?v=1774533512&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Moongia"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Embroidered classic-fit paneled shirt with a round neckline and V-slit, adorned with delicate buttons along the front slit. Lace detailing enhances the neckline and panel seams, while floral embroidery accents the side p"
+  },
+  {
+   "title": "Artisan Woven Saree",
+   "handle": "s26t6180",
+   "type": "Artisan Fusion",
+   "vendor": "Summer 2026",
+   "price": 10750,
+   "compareAt": 21500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26T6180_RubyRed_3.jpg?v=1785242892&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26T6180_RubyRed_3.jpg?v=1785242892&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26T6180_RubyRed_Cover.jpg?v=1785242892&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26T6180_RubyRed_1.jpg?v=1785242892&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26T6180_RubyRed_2.jpg?v=1785242892&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Ruby Red"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Hand-embroidered classic fit blouse with a round neckline, designed in a fitted silhouette. Paired with a coordinated yarn-dyed saree featuring refined woven checks. Styled with a matching petticoat for added comfort and"
+  },
+  {
+   "title": "Titli Embroidered Suit",
+   "handle": "s26c5021",
+   "type": "Jungle Tea Party",
+   "vendor": "Summer 2026",
+   "price": 7999,
+   "compareAt": 15998,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5021_SpectraYellow_Cover.jpg?v=1773769428&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5021_SpectraYellow_Cover.jpg?v=1773769428&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5021_SpectraYellow_1.jpg?v=1773769197&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5021_SpectraYellow_2.jpg?v=1773769198&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5021_SpectraYellow_3.jpg?v=1773769197&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Spectra Yellow",
+      "Lapis Blue"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Embroidered relaxed-fit shirt featuring batwing sleeves with turned-up hems and stitching detail along hemline. It features a round neckline with a V-slit, accented with tassel detailing. Finished with a rounded hemline."
+  },
+  {
+   "title": "Threads Of Opulence Ensemble",
+   "handle": "s26f7140",
+   "type": "Pastel Collage",
+   "vendor": "Summer 2026",
+   "price": 9999,
+   "compareAt": 19998,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7140_RoseGold_Cover.jpg?v=1784802014&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7140_RoseGold_Cover.jpg?v=1784802014&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7140_RoseGold_1.jpg?v=1784802014&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7140_RoseGold_2.jpg?v=1784802014&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7140_RoseGold_3.jpg?v=1784802014&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Rose Gold"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Embroidered classic-fit shirt featuring a boat neckline and soft balloon sleeves, finished with cuffed sleeve hems. Intricate embroidery, enhanced with delicate sequin detailing, adds a festive touch. Paired with coordin"
+  },
+  {
+   "title": "Floral Reverie Co-Ord Set",
+   "handle": "w26b1207",
+   "type": "Cottage Bloom",
+   "vendor": "Winter 2026-27",
+   "price": 5098,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1207_Mehndi_Cover.jpg?v=1792500934&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1207_Mehndi_Cover.jpg?v=1792500934&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1207_Mehndi_1.jpg?v=1792500934&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1207_Mehndi_2.jpg?v=1792500934&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1207_Mehndi_3.jpg?v=1792500934&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Mehndi",
+      "Jet Black",
+      "Gold"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Classic printed shirt with a round neckline and V-shaped slit, adorned with pleated detailing and tassel accents. Designed in a regular fit with full-length sleeves finished with neat scalloped hems and practical side po"
+  },
+  {
+   "title": "White Reverie Angrakha Set",
+   "handle": "s26c5012",
+   "type": "White Reverie",
+   "vendor": "Summer 2026",
+   "price": 9499,
+   "compareAt": 18998,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5012_White_1.jpg?v=1775802919&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5012_White_1.jpg?v=1775802919&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5012_White_Cover.jpg?v=1775802919&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5012_White_2.jpg?v=1773769734&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5012_White_3.jpg?v=1773769734&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "White",
+      "Off White"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Angrakha-style embroidered shirt in soft mulmul muslin, adorned with tassel detailing along the slit. Soft gathers at the empire waist for a flared silhouette, complemented by cuffed sleeve hems. Comes with an inner for "
+  },
+  {
+   "title": "Floral Story Printed Set",
+   "handle": "s26w8360",
+   "type": "Chaoon",
+   "vendor": "Summer 2026",
+   "price": 3499,
+   "compareAt": 6998,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26W8360_MangoYellow_Cover.jpg?v=1784714494&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26W8360_MangoYellow_Cover.jpg?v=1784714494&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26W8360_MangoYellow_4.jpg?v=1784714494&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26W8360_MangoYellow_1.jpg?v=1784714494&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26W8360_MangoYellow_2.jpg?v=1784714494&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Mango Yellow"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Relaxed-fit kurta with a round neckline and loop buttons along the front slit. Designed with drop shoulders and wide sleeves for an easy silhouette. Paired with coordinated printed culottes, creating a contemporary and e"
+  },
+  {
+   "title": "Golden Reverie Co-Ord Set",
+   "handle": "w26b1246",
+   "type": "Raw Rhythm",
+   "vendor": "Winter 2026-27",
+   "price": 5498,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1246_Falsa_Cover.jpg?v=1792501252&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1246_Falsa_Cover.jpg?v=1792501252&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1246_Falsa_1.jpg?v=1792501252&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1246_Falsa_2.jpg?v=1792501252&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26B1246_Falsa_3.jpg?v=1792501251&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Falsa",
+      "Burgundy"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Classic-fit solid kurta with a round neckline and V-shaped slit, adorned with delicate embroidery along the neckline and sleeve hems. Paired with coordinated culottes for a refined look. MODEL DETAILS: Model is wearing s"
+  },
+  {
+   "title": "Mehr Nur Mughal 3-Piece Suit",
+   "handle": "s26c5079",
+   "type": "Mughal Aura",
+   "vendor": "Summer 2026",
+   "price": 9250,
+   "compareAt": 18500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5079_Bronze_Cover.jpg?v=1774357401&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5079_Bronze_Cover.jpg?v=1774357401&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5079_Bronze_1.jpg?v=1774357332&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5079_Bronze_2.jpg?v=1774357333&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26C5079_Bronze_3.jpg?v=1774357332&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Bronze"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Classic-fit shirt with a round neckline and soft pleat detailing, finished with loop buttons along the front slit. Adorned with delicate embroidery on the shirt and sleeves, complemented by jacquard borders. Comes with a"
+  },
+  {
+   "title": "Gulnar Embroidered Gharara Ensemble",
+   "handle": "s26f7148",
+   "type": "Pastel Collage",
+   "vendor": "Summer 2026",
+   "price": 12499,
+   "compareAt": 24998,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7148_HoneyPeach_Cover.jpg?v=1784721565&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7148_HoneyPeach_Cover.jpg?v=1784721565&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7148_HoneyPeach_1.jpg?v=1784721557&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7148_HoneyPeach_4.jpg?v=1784721550&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/S26F7148_HoneyPeach_2.jpg?v=1784644369&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Honey Peach"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Embroidered classic fit shirt with a round neckline with a subtle V-slit, adorned with delicate floral embroidery enhanced with sequins detailing and tassel accents along neckline. Comes with an inner for added comfort a"
+  },
+  {
+   "title": "Gul-e-Rang Embroidered Set",
+   "handle": "w26f2561",
+   "type": "Tajak Phool",
+   "vendor": "Winter 2026-27",
+   "price": 24000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26F2561_Burnt_Orange_Cover.jpg?v=1792501423&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26F2561_Burnt_Orange_Cover.jpg?v=1792501423&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26F2561_Burnt_Orange_1.jpg?v=1792501422&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26F2561_Burnt_Orange_2.jpg?v=1792501423&width=700",
+    "https://cdn.shopify.com/s/files/1/0650/8249/1105/files/W26F2561_Burnt_Orange_3.jpg?v=1792501422&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Burnt Orange"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+     ]
+    }
+   ],
+   "description": "Delicately embroidered, classic-fit panelled shirt with a round neckline and V-slit, adorned with vibrant embroidery throughout. Paired with a coordinated pegged shalwar with buttons along side slits for a refined look. "
+  }
+ ],
+ "productCount": 5000,
+ "features": [
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  }
+ ],
+ "storeApps": [
+  "Microsoft Clarity",
+  "Google Analytics 4",
+  "Google Tag Manager"
+ ],
+ "crawledAt": "2026-10-27T10:04:47.336Z",
+ "warnings": [],
+ "overrides": {}
+}

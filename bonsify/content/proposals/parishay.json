@@ -1,0 +1,459 @@
+{
+ "slug": "parishay",
+ "name": "Parishay",
+ "url": "https://parishay.pk/",
+ "platform": "shopify",
+ "currency": "USD",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://parishay.pk/cdn/shop/files/favicon_32x32.png?v=1650012873",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#25a799",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#f4ca13",
+   "#25a799",
+   "#f54337",
+   "#42a5f6",
+   "#ff7143",
+   "#f8dc68"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "SFMono-Regular",
+  "body": "Jost",
+  "found": [
+   "SFMono-Regular",
+   "Jost"
+  ],
+  "headingGoogle": false,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://parishay.pk/cdn/shop/files/39.png?v=1792317663&width=1800",
+  "https://parishay.pk/cdn/shop/files/27.png?v=1792317663&width=800",
+  "https://parishay.pk/cdn/shop/files/15_891d377a-91f3-41c0-a8e5-7d8895145812.png?v=1791452351&width=1800",
+  "https://parishay.pk/cdn/shop/files/11_bcaa737a-d0ae-4ce1-9cf4-848c614be020.png?v=1791452351&width=800"
+ ],
+ "collections": [
+  {
+   "title": "all a",
+   "handle": "all-a",
+   "image": null,
+   "count": 309
+  },
+  {
+   "title": "All sale",
+   "handle": "all-sale",
+   "image": null,
+   "count": 66
+  },
+  {
+   "title": "all sale products",
+   "handle": "all-sale-products",
+   "image": null,
+   "count": 277
+  },
+  {
+   "title": "Azadi Sale - A",
+   "handle": "azadi-sale-a",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Azadi Sale - B",
+   "handle": "azadi-sale-b",
+   "image": null,
+   "count": 36
+  },
+  {
+   "title": "Azadi Sale - C",
+   "handle": "azadi-sale-c",
+   "image": null,
+   "count": 18
+  },
+  {
+   "title": "Azmir Printed Lawn '26",
+   "handle": "azmir-printed-lawn-26",
+   "image": null,
+   "count": 14
+  },
+  {
+   "title": "Best Sellers 2026",
+   "handle": "best-sellers-2026",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "Cindrella Luxury Formals",
+   "handle": "cindrella-luxury-formals",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Dastak (Gobi Crepe)",
+   "handle": "dastak-gobi-crepe",
+   "image": null,
+   "count": 12
+  }
+ ],
+ "products": [
+  {
+   "title": "AARZOO",
+   "handle": "aarzoo",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 47,
+   "compareAt": 73,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/AARZOO_3.jpg?v=1760050857",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/AARZOO_3.jpg?v=1760050857",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/AARZOO_5.jpg?v=1760050857",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/AARZOO_10.jpg?v=1760050857",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/AARZOO_2.jpg?v=1760050857"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Note: Stitched Option Delivery Time: 15 Days Design Details: Embroidered Organza Front (01 Pc)Embroidered Organza Front Neckline (01 Pc)Embroidered Organza Back Neckline (01 Pc)Embroidered Organza Front Border (0.85 Meter)Embroidered Organza Back Border (0.85 Meter)Embroidered Organza Daman (01 Pc)Plain Dyed Organza Back (0.85 Meter)Embroidered Organza Sleeves (0.55 Meter)Embroidered Organza Sleev"
+  },
+  {
+   "title": "ANG-01 | 3 PC LAWN",
+   "handle": "ang-01-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/IMG_3329_JPG.jpg?v=1773048750",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/IMG_3329_JPG.jpg?v=1773048750"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 01 PCSDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT DAMAN 01 PCSEMB SLEEVE LACE 0.90 MTRDUPATTAEMD NET DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-02 | 3 PC LAWN",
+   "handle": "ang-02-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7425.jpg?v=1772020733",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7425.jpg?v=1772020733",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7475.jpg?v=1772021279",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7471.jpg?v=1772287655",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7488.jpg?v=1772287655"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 01 PCSDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT DAMAN 01 PCSEMB SLEEVE BORDER 0.90 MTRDUPATTAEMB VOIL DUPATTA 2.50 MTREMB DUPATTA PALLU 2 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-05 | 3 PC LAWN",
+   "handle": "ang-05-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7534.jpg?v=1772021264",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7534.jpg?v=1772021264",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7573.jpg?v=1772021264",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7519.jpg?v=1772287621",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7561.jpg?v=1772287621"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 01 PCSDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB FRONT DAMAN 01 SETEMD SLEEVE LACE 0.90 MTRDUPATTAEMB VOIL DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-06 | 3 PC LAWN",
+   "handle": "ang-06-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7773.jpg?v=1772021257",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7773.jpg?v=1772021257",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7798.jpg?v=1772021257",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7783.jpg?v=1772287603",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7748.jpg?v=1772287603"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 0.84 MTRDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT DAMAN 01 PCSEMB SLEEVE LACE 0.90 MTRDUPATTAEMB MUNAAR DUPATTA 2.50 MTREMB DUPATTA PALLU 02 PCSTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-10 | 3 PC LAWN",
+   "handle": "ang-10-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7814.jpg?v=1772021604",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7814.jpg?v=1772021604",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7840.jpg?v=1772021604",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7850.jpg?v=1772021605",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7827.jpg?v=1772021604"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 01 PCSDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT PATCH 02 PCSEMB FRONT PATCH 02 01 PCSEMB FRONT LACE 0.84 MTREMB SLEEVE LACE 0.90 MTRDUPATTAPRINTED DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-11 | 3 PC LAWN",
+   "handle": "ang-11-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7025.jpg?v=1772021727",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7025.jpg?v=1772021727",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7067.jpg?v=1772021727",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7063.jpg?v=1772287524",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A7070.jpg?v=1772287524"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 0.84 MTRDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT LACE 0.84 MTREMB SLEEVE LACE 0.90 MTRDUPATTAPRINTED DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-12 | 3 PC LAWN",
+   "handle": "ang-12-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6808.jpg?v=1772021816",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6808.jpg?v=1772021816",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6857.jpg?v=1772021816",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6840.jpg?v=1772287447",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6853.jpg?v=1772287447"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 01 PCSDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT DAMAN 01 PCSEMB SLEEVE LACE 0.90 MTRDUPATTAPRINTED DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-13 | 3 PC LAWN",
+   "handle": "ang-13-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6929.jpg?v=1772021912",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6929.jpg?v=1772021912",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6965.jpg?v=1772021912",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6981.jpg?v=1772287428",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A6990.jpg?v=1772287428"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 0.84 MTRDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT LACE 0.84 MTREMB SLEEVE LACE 0.90 MTRDUPATTAPRINTED DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "ANG-15 | 3 PC LAWN",
+   "handle": "ang-15-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 22,
+   "compareAt": 33,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A8011.jpg?v=1772022239",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A8011.jpg?v=1772022239",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A8028.jpg?v=1772022239",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A8009_d242b475-eeb9-4ea2-b981-a5f27fbedcf9.jpg?v=1772287414",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1L8A8026.jpg?v=1772287414"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "SHIRTEMB FRONT LAWN 01 PCSDYED BACK LAWN 0.84 MTREMB SLEEVE LAWN 0.55 MTREMB NECKLINE 01 PCSEMB FRONT PATCH 02 PCSEMB FRONT PATCH 02 01 PCSEMB FRONT LACE 0.84 MTREMB SLEEVE LACE 0.90 MTRDUPATTAPRINTED DUPATTA 2.50 MTRTROUSERDYED CAMBRIC TROUSER 2.50 MTR"
+  },
+  {
+   "title": "BLOOM-13 | 3 PC Lawn",
+   "handle": "bloom-13-3-pc-lawn",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 21,
+   "compareAt": 29,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/BLOOM-13_5.jpg?v=1744980419",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/BLOOM-13_5.jpg?v=1744980419",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/BLOOM-13_6.jpg?v=1744980419",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/BLOOM-13_3.jpg?v=1744980419",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/BLOOM-13_1.jpg?v=1744980419"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Shirt Printed Embroidered Lawn Front (1 Pc) Printed Lawn Back & Sleeves (1.40 Meters) Embroidered Neckline (1 Pc) Embroidered Front Border (0.75 Meter) Embroidered Sleeve Border (0.90 Meter) Dupatta Printed Monark Dupatta (2.50 Meters) Trouser Printed Cambric Trouser (2.50 Meters)"
+  },
+  {
+   "title": "CHE-01 | 3 PC CORDUROY",
+   "handle": "che-01-3-pc-corduroy",
+   "type": null,
+   "vendor": "Parishay",
+   "price": 40,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1E6A5030.jpg?v=1791380828",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1E6A5030.jpg?v=1791380828",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1E6A5060.jpg?v=1791380828",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1E6A5087.jpg?v=1791380827",
+    "https://cdn.shopify.com/s/files/1/0330/8257/2933/files/1E6A5116.jpg?v=1791380828"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED"
+     ]
+    }
+   ],
+   "description": "Shirt Embroidered Corduroy Front — 1 Pc Dyed Corduroy Back — 0.84 Mtr Embroidered Corduroy Sleeves — 0.55 Mtr Embroidered Front Lace — 0.83 Mtr Embroidered Sleeve Lace — 0.90 Mtr Shawl Palachi Shawl — 2.25 Mtr Trouser Dyed Corduroy Trouser — 2.25 Mtr Fabric: CorduroyIncludes: Embroidered Shirt, Palachi Shawl & Dyed Corduroy Trouser"
+  }
+ ],
+ "productCount": 122,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "Microsoft Clarity",
+  "Google Analytics 4",
+  "Google Tag Manager",
+  "Instafeed"
+ ],
+ "crawledAt": "2026-10-27T10:05:44.559Z",
+ "warnings": [
+  "Heading font \"SFMono-Regular\" is not on Google Fonts; a close fallback is used."
+ ],
+ "overrides": {}
+}

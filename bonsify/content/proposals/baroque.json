@@ -1,0 +1,448 @@
+{
+ "slug": "baroque",
+ "name": "Baroque",
+ "url": "https://baroque.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://baroque.pk/cdn/shop/files/favicon.png?v=1644307443&width=180",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#d14444",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#f3cccc",
+   "#d14444",
+   "#ef4444",
+   "#6366f1",
+   "#e60023",
+   "#ff0000"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Figtree",
+  "body": "Syne",
+  "found": [
+   "Figtree",
+   "Syne",
+   "Cabin",
+   "ui-monospace",
+   "Futura"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://baroque.pk/cdn/shop/files/26_b2af5d41-db84-4ae0-837b-1b8ac64cd327.jpg?v=1792585378&width=3200",
+  "https://baroque.pk/cdn/shop/files/27_3310f75b-1d62-4ddd-a7ea-5251fd27a1e1.jpg?v=1792588591&width=3200"
+ ],
+ "collections": [
+  {
+   "title": "BOTTOMS",
+   "handle": "bottoms",
+   "image": null,
+   "count": 180
+  },
+  {
+   "title": "Collection sort",
+   "handle": "collection-sort",
+   "image": null,
+   "count": 108
+  },
+  {
+   "title": "DUPATTAS",
+   "handle": "dupattas",
+   "image": null,
+   "count": 134
+  },
+  {
+   "title": "ENSEMBLES",
+   "handle": "ensembles",
+   "image": null,
+   "count": 83
+  },
+  {
+   "title": "ESSENTIALS",
+   "handle": "essentials",
+   "image": null,
+   "count": 433
+  },
+  {
+   "title": "Essentials Demo",
+   "handle": "essentials-demo",
+   "image": null,
+   "count": 433
+  },
+  {
+   "title": "READY TO WEAR",
+   "handle": "pret",
+   "image": null,
+   "count": 1109
+  },
+  {
+   "title": "SHAWLS",
+   "handle": "shawls",
+   "image": null,
+   "count": 74
+  },
+  {
+   "title": "SPECIAL PRICES",
+   "handle": "special-prices",
+   "image": null,
+   "count": 396
+  },
+  {
+   "title": "STITCHED",
+   "handle": "stitched",
+   "image": null,
+   "count": 875
+  }
+ ],
+ "products": [
+  {
+   "title": "EMBROIDERED CHIFFON PR-1413",
+   "handle": "embroidered-chiffon-pr-1413",
+   "type": "FORMAL",
+   "vendor": "PRET",
+   "price": 39950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/132_cc9489bd-8589-4b9f-b23c-4136b5dccc9b.jpg?v=1792742443&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/132_cc9489bd-8589-4b9f-b23c-4136b5dccc9b.jpg?v=1792742443&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/137_48ba8ab5-7b93-44f9-9a45-b3c0219560f0.jpg?v=1792742444&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/133_de6fd649-5cc1-47d7-a06d-fb2b135f84a7.jpg?v=1792742444&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/135_367b40ef-7351-44d3-abcf-33df2afc3195.jpg?v=1792742443&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Premium three-piece ensemble featuring an intricately embroidered chiffon frock with elegant velvet border detailing. Paired with a comfortable grip trouser and a coordinating chiffon dupatta adorned with embroidered acc"
+  },
+  {
+   "title": "EMBROIDERED KHADDAR SF-4586",
+   "handle": "embroidered-khaddar-sf-4586",
+   "type": "WINTER",
+   "vendor": "STITCHED",
+   "price": 17950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/210_4149d932-e52a-49c0-bfc4-c33029e7af94.jpg?v=1792408197&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/210_4149d932-e52a-49c0-bfc4-c33029e7af94.jpg?v=1792408197&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/211_9216ba77-0e6d-4637-8bfa-a150154569dc.jpg?v=1792408197&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/214_b9ee2866-1f81-4231-ac73-f4b25ac0881e.jpg?v=1792408197&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/215_c65ae4dc-9515-4f66-847a-289d5df30c0e.jpg?v=1792408197&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "STITCHED"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elevate your wardrobe with this stunning embroidered ensemble. The front features intricate embroidery on premium khaddar fabric, while coordinating embroidered sleeves add refined detail. The back and matching trouser a"
+  },
+  {
+   "title": "EMBROIDERED NET PR-1101",
+   "handle": "embroidered-net-pr-1101",
+   "type": "FORMAL",
+   "vendor": "PRET",
+   "price": 29950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/1_1ee30953-9431-4cc4-818f-0ec0f4815cf0.jpg?v=1784801389&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/1_1ee30953-9431-4cc4-818f-0ec0f4815cf0.jpg?v=1784801389&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/2_bc86154c-e14c-4cd0-9598-e73fa13c48af.jpg?v=1784801389&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/4_362d760d-7dc6-4b2b-85c1-318febd6fc87.jpg?v=1784801389&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/6_07c7e173-9afd-4792-a548-ecc73cc438cb.jpg?v=1784801389&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Elegant three-piece ensemble featuring exquisite embroidered net craftsmanship. The frock showcases intricate embroidery on premium net fabric, paired with a comfortable grip trouser for effortless wear. Includes a match"
+  },
+  {
+   "title": "EMBROIDERED KHADDAR SF-4596",
+   "handle": "embroidered-khaddar-sf-4596",
+   "type": "WINTER",
+   "vendor": "STITCHED",
+   "price": 18950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/176_69866c5c-b4ec-4c6c-aeb8-d2ac311b589f.jpg?v=1792408853&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/176_69866c5c-b4ec-4c6c-aeb8-d2ac311b589f.jpg?v=1792408853&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/179_77ce7328-6113-4d2a-b554-32dc01af5bd3.jpg?v=1792408853&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/178_385f4fb6-4f21-42e1-851e-189ace4a0869.jpg?v=1792408853&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/173_8dfe64d8-26b1-4589-b06d-ef683a6b8447.jpg?v=1792408852&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "STITCHED"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elevate your wardrobe with this exquisite embroidered khaddar ensemble. The intricately embroidered front and sleeves showcase detailed craftsmanship, complemented by ornate embroidered borders on both the front and orga"
+  },
+  {
+   "title": "SOLID VELVET SUIT PR-576",
+   "handle": "merlin",
+   "type": "VELVET",
+   "vendor": "ENSEMBLES",
+   "price": 12950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/products/63_fff90d84-4a8b-4eba-87c0-eaa0938e4c7a.jpg?v=1632834975&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/products/63_fff90d84-4a8b-4eba-87c0-eaa0938e4c7a.jpg?v=1632834975&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/products/64.jpg?v=1632834976&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "This 2-piece suit from is crafted from premium velvet, creating a sophisticated ensemble. The velvet fabric provides a rich, soft texture that elevates the overall look, making it perfect for formal night time events or "
+  },
+  {
+   "title": "EMBROIDERED CHIFFON PR-1414",
+   "handle": "embroidered-chiffon-pr-1414",
+   "type": "FORMAL",
+   "vendor": "PRET",
+   "price": 39950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/145_17b51f4f-e716-4348-945f-c3f4c19aad4d.jpg?v=1792742265&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/145_17b51f4f-e716-4348-945f-c3f4c19aad4d.jpg?v=1792742265&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/148_d6dbab6f-c8b8-4f83-a4bf-2a85d84d3ac7.jpg?v=1792742265&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/146_38c93e63-da80-4158-a4af-e3078f840a44.jpg?v=1792742265&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/150_778949ec-7af4-491b-b9ad-e49e8901c1c5.jpg?v=1792742265&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Premium three-piece ensemble featuring an intricately embroidered chiffon frock with elegant velvet border detailing. Paired with a comfortable grip trouser and a coordinating chiffon dupatta adorned with embroidered acc"
+  },
+  {
+   "title": "EMBROIDERED KHADDAR SF-4594",
+   "handle": "embroidered-khaddar-sf-4594",
+   "type": "WINTER",
+   "vendor": "STITCHED",
+   "price": 19950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/183_85105a06-5870-436c-812f-4acd3b36a13c.jpg?v=1792408437&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/183_85105a06-5870-436c-812f-4acd3b36a13c.jpg?v=1792408437&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/186_bc4d9328-8607-4ffa-9fbd-8036d05890d0.jpg?v=1792408437&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/184_25c0bd42-5b81-4f3c-b115-6a0fc8b534fb.jpg?v=1792408438&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/188_7f64054c-4b4f-4c5a-8f5f-26bdf744a880.jpg?v=1792408437&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "STITCHED"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Exquisite three-piece ensemble featuring meticulously embroidered khaddar front and sleeves, enhanced by delicate embroidered organza borders across the front, back, and sleeve details. The ensemble is completed with a d"
+  },
+  {
+   "title": "EMBROIDERED VELVET PR-1384",
+   "handle": "embroidered-velvet-pr-1384",
+   "type": "VELVET",
+   "vendor": "PRET",
+   "price": 24950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/144_3ace67c1-ab6a-4bf2-ac93-c12620e3dc7c.jpg?v=1789732957&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/144_3ace67c1-ab6a-4bf2-ac93-c12620e3dc7c.jpg?v=1789732957&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/145_4ef1c50b-1345-47d6-b813-fa0f50949826.jpg?v=1789732957&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/146_f2cff01c-9ce8-49e3-8c96-adfa9a720023.jpg?v=1789732957&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Elegant three-piece ensemble featuring luxurious embroidered blue velvet shirt paired with coordinating velvet trousers. The set includes a gracefully draped dupatta with embroidered chiffon border, adding sophistication"
+  },
+  {
+   "title": "EMBROIDERED VELVET PR-1407",
+   "handle": "embroidered-velvet-pr-1407",
+   "type": "VELVET",
+   "vendor": "PRET",
+   "price": 29950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/1_e9965abc-5acf-4ff3-b39b-f6ae3c303dc7.jpg?v=1792652624&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/1_e9965abc-5acf-4ff3-b39b-f6ae3c303dc7.jpg?v=1792652624&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/3_87d33a5d-51f7-46ae-b0f4-0b0d8581c145.jpg?v=1792652624&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/4_62de3888-8628-49ca-986a-33b8b09ad104.jpg?v=1792652624&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/5_137309da-416e-4953-9a77-888838b76c2a.jpg?v=1792652624&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Elevate your wardrobe with this exquisite three-piece ensemble featuring premium embroidered velvet. The shirt showcases intricate hand embellishments on the sleeves and back neckline, crafted from luxurious embroidered "
+  },
+  {
+   "title": "EMBROIDERED CHIFFON DUPATTA 73",
+   "handle": "embroidered-chiffon-dupatta-73",
+   "type": "DUPATTAS",
+   "vendor": "DUPATTAS",
+   "price": 6950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/142_73fe24a6-14cf-44ee-b7c1-39e4d83d403b.jpg?v=1744447739&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/142_73fe24a6-14cf-44ee-b7c1-39e4d83d403b.jpg?v=1744447739&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/137_e742d80b-d3f9-452f-84d6-a8bcca33638f.jpg?v=1744447739&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/138_42d4c670-95b2-4002-8c85-44475bbc6e56.jpg?v=1744447739&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/139_4e5ab006-82a9-4eec-acdc-888bd974eef3.jpg?v=1744447739&width=700"
+   ],
+   "options": [],
+   "description": "Elevate your wardrobe with this exquisite embroidered chiffon dupatta, a timeless piece that brings elegance to any ensemble. Crafted from lightweight, breathable chiffon, it drapes beautifully while offering comfort thr"
+  },
+  {
+   "title": "EMBROIDERED CHIFFON DUPATTA 70",
+   "handle": "embroidered-chiffon-dupatta-70",
+   "type": "DUPATTAS",
+   "vendor": "DUPATTAS",
+   "price": 6950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/115_5d0e8471-8572-4a19-94fa-839041983628.jpg?v=1744447640&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/115_5d0e8471-8572-4a19-94fa-839041983628.jpg?v=1744447640&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/118_17dffbb8-419a-4878-aa7d-d233d66634cd.jpg?v=1744447642&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/116_fe53f478-4c3c-4d57-811b-7944568cd85f.jpg?v=1744447642&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/120_4bb38547-0c69-48ca-8119-1ef499e727cb.jpg?v=1744447640&width=700"
+   ],
+   "options": [],
+   "description": "Elevate your wardrobe with this exquisite embroidered chiffon dupatta, a timeless piece that brings elegance to any ensemble. Crafted from lightweight, breathable chiffon, it drapes beautifully while offering comfort thr"
+  },
+  {
+   "title": "EMBROIDERED CHIFFON DUPATTA 74",
+   "handle": "embroidered-chiffon-dupatta-74",
+   "type": "DUPATTAS",
+   "vendor": "DUPATTAS",
+   "price": 6950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/2277/5269/files/149_8642fd50-1418-44a5-9d39-e9eb7c422d4b.jpg?v=1744447773&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/149_8642fd50-1418-44a5-9d39-e9eb7c422d4b.jpg?v=1744447773&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/145_51c13d00-d8bb-4ed7-8ff9-dfb7e08754f0.jpg?v=1744447773&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/146_a9683626-4c33-45df-ac19-caab04189c73.jpg?v=1744447773&width=700",
+    "https://cdn.shopify.com/s/files/1/2277/5269/files/147_22b66578-798b-4ed4-b19e-175b8b7df9b3.jpg?v=1744447773&width=700"
+   ],
+   "options": [],
+   "description": "Elevate your wardrobe with this exquisite embroidered chiffon dupatta, a timeless piece that brings elegance to any ensemble. Crafted from lightweight, breathable chiffon, it drapes beautifully while offering comfort thr"
+  }
+ ],
+ "productCount": 798,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  }
+ ],
+ "storeApps": [
+  "Microsoft Clarity",
+  "Google Analytics 4",
+  "Google Tag Manager",
+  "Instafeed"
+ ],
+ "crawledAt": "2026-10-27T10:04:50.234Z",
+ "warnings": [],
+ "overrides": {}
+}

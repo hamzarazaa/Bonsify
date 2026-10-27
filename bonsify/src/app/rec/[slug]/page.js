@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getLabBrands } from "@/lib/lab";
+import { getAnyBrand } from "@/lib/lab";
 import RecApp from "./RecApp";
 
 // Recording harness for the video engine (video/engine.mjs). It shows the bare
@@ -11,7 +11,7 @@ export const metadata = { robots: { index: false, follow: false } };
 export default async function Rec({ params }) {
   if (process.env.REC_ROUTE !== "1") notFound();
   const { slug } = await params;
-  const brand = getLabBrands({ all: true }).find((b) => b.slug === slug);
+  const brand = getAnyBrand(slug);
   if (!brand) notFound();
   return <RecApp brand={brand} />;
 }

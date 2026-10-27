@@ -1,0 +1,462 @@
+{
+ "slug": "ego",
+ "name": "EGO",
+ "url": "https://wearego.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://wearego.com/cdn/shop/files/ego_favicon_32x32.png?v=1790937489",
+ "colors": {
+  "primary": "#ff8020",
+  "accent": "#d20000",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#d20000",
+   "#ffd937",
+   "#06b608",
+   "#1cb5b5",
+   "#f48920",
+   "#007aff"
+  ],
+  "source": "logo"
+ },
+ "fonts": {
+  "heading": "Almarai",
+  "body": "Consolas",
+  "found": [
+   "Almarai",
+   "Consolas"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://wearego.com/cdn/shop/files/Main_website_19a38cc9-eaf7-44d1-a085-485e1a2d92f4.jpg?v=1793010527&width=2200",
+  "https://wearego.com/cdn/shop/files/2ndry_main_web_banner_d8b9c9e8-538b-4ee3-8267-155c05975d41.jpg?v=1792225169&width=2200",
+  "https://wearego.com/cdn/shop/files/Main_website_option_2.jpg?v=1793010641&width=2200",
+  "https://wearego.com/cdn/shop/files/Main_website_cc7647b9-5c22-400a-b130-4274e916e4ae.jpg?v=1789452953&width=2200"
+ ],
+ "collections": [
+  {
+   "title": "1 Piece",
+   "handle": "1-piece",
+   "image": null,
+   "count": 102
+  },
+  {
+   "title": "Accessories",
+   "handle": "accessories",
+   "image": null,
+   "count": 132
+  },
+  {
+   "title": "All Casuals",
+   "handle": "all-casuals",
+   "image": null,
+   "count": 324
+  },
+  {
+   "title": "ALL EGO",
+   "handle": "all-ego",
+   "image": null,
+   "count": 488
+  },
+  {
+   "title": "All Luxury",
+   "handle": "all-luxury",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "All Tops",
+   "handle": "all-tops-1",
+   "image": null,
+   "count": 1882
+  },
+  {
+   "title": "All Tops Full Price",
+   "handle": "all-tops-full-price",
+   "image": null,
+   "count": 5558
+  },
+  {
+   "title": "BLACK",
+   "handle": "black",
+   "image": null,
+   "count": 15
+  },
+  {
+   "title": "BOHO",
+   "handle": "boho",
+   "image": null,
+   "count": 113
+  },
+  {
+   "title": "Bottoms",
+   "handle": "bottoms",
+   "image": null,
+   "count": 71
+  }
+ ],
+ "products": [
+  {
+   "title": "Colossal 2 piece",
+   "handle": "colossal-2-piece-e07337-sb0-rtw",
+   "type": "RTW",
+   "vendor": "Wear ego",
+   "price": 7990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07337-SB0-1.jpg?v=1792831136&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07337-SB0-1.jpg?v=1792831136&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07337-SB0.jpg?v=1792831136&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07337-SB0-2.jpg?v=1792831137&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07337-SB0-3.jpg?v=1792831136&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Sky blue kurta with bold black floral prints, V-neckline, and matching trousers for an elegant everyday look. Fabric : Ayudia Color : Sky Blue Embellishment: Hand Screen Print Cut : Straight Cut Length : 46 inches"
+  },
+  {
+   "title": "Melody 2 Piece",
+   "handle": "melody-2-piece-e06910-ph0-signature",
+   "type": "RTW",
+   "vendor": "Wear ego",
+   "price": 6354,
+   "compareAt": 10590,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E06910-PH0-5_1_6f18c851-67f3-48c9-82ad-57c56cf70593.jpg?v=1768389518&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E06910-PH0-5_1_6f18c851-67f3-48c9-82ad-57c56cf70593.jpg?v=1768389518&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E06910-PH0-8_1.jpg?v=1768389518&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E06910-PH0_2.jpg?v=1768389518&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E06910-PH0-1_1.jpg?v=1768389518&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "This intricated embroidered kurta paired with sleek shalwar will give effortless elegance for any occasion. Fabric : 100% Cotton Color : Peach Embellishment: Embroidery Cut : Straight Cut Length : 36 inches"
+  },
+  {
+   "title": "Ensemble 3 piece",
+   "handle": "ensemble-3-piece-e07156-cr0-rtw",
+   "type": "RTW",
+   "vendor": "Wear ego",
+   "price": 12990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07156-CR0-3.jpg?v=1792831176&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07156-CR0-3.jpg?v=1792831176&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07156-CR0.jpg?v=1792831176&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07156-CR0-5.jpg?v=1792831176&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07156-CR0-4.jpg?v=1792831176&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Cream embroidered kurta set with vibrant pink floral details, scalloped edges, and a matching dupatta for an elegant look. Fabric : 100% Cotton Color : Cream Embellishment: Embroidery Cut : Straight Cut Length : 32 inche"
+  },
+  {
+   "title": "Safari 2 piece",
+   "handle": "safari-2-piece-u00860-pk0-unstitched",
+   "type": "UNSTITCHED",
+   "vendor": "Unstitched",
+   "price": 3490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00860-PK0-3.jpg?v=1792048291&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00860-PK0-3.jpg?v=1792048291&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00860-PK0_1.jpg?v=1792048291&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00860-PK0-4.jpg?v=1792048290&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00860-PK0-2.jpg?v=1792048291&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED"
+     ]
+    }
+   ],
+   "description": "Beautiful pink cambric two-piece unstitched featuring a charming elephant print on shirt, paired with turquoise printed trousers. A vibrant and comfortable outfit, perfect for everyday wear. Fabric : Cambric Color : Pink"
+  },
+  {
+   "title": "Sync 2 piece",
+   "handle": "sync-2-piece-u00859-bp0-unstitched",
+   "type": "UNSTITCHED",
+   "vendor": "Unstitched",
+   "price": 3490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00859-BP0.jpg?v=1792048610&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00859-BP0.jpg?v=1792048610&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00859-BP0-2.jpg?v=1792048610&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00859-BP0-4.jpg?v=1792048610&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00859-BP0-3.jpg?v=1792048610&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED"
+     ]
+    }
+   ],
+   "description": "Elevate your wadrobe with this soft baby pink two-piece unstitched ensemble. Perfect a causal and confortable long day. Fabric : Cambric Color : Baby Pink Embellishment: Digital Print Cambric Shirt : 1.75 | 60 inches wid"
+  },
+  {
+   "title": "Forever 3 piece",
+   "handle": "forever-3-piece-u00858-rs0-unstitched",
+   "type": "UNSTITCHED",
+   "vendor": "Unstitched",
+   "price": 4490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00858-RS0.jpg?v=1792048711&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00858-RS0.jpg?v=1792048711&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00858-RS0-2.jpg?v=1792048711&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00858-RS0-3.jpg?v=1792048711&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/U00858-RS0-5.jpg?v=1792048711&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UNSTITCHED"
+     ]
+    }
+   ],
+   "description": "This rust three-piece unstitched ensemble design offers a graceful blend of traditional charm and contemporary elegance, making it perfect for casual wear, daytime gatherings, and seasonal occasions. Fabric : Cambric Col"
+  },
+  {
+   "title": "Blended 2 piece",
+   "handle": "blended-2-piece-ks0494-bp0-little-ego",
+   "type": "Little EGO",
+   "vendor": "Little EGO",
+   "price": 4490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0494-BP0.jpg?v=1791191033&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0494-BP0.jpg?v=1791191033&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0494-BP0-2.jpg?v=1791191033&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0494-BP0-3.jpg?v=1791191033&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0494-BP0-4.jpg?v=1791191033&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2-3Y",
+      "3-4Y",
+      "4-5Y",
+      "5-6Y",
+      "6-7Y",
+      "7-8Y"
+     ]
+    }
+   ],
+   "description": "A charming blush-pink two-piece outfit featuring a sleeveless ruffled top and relaxed-fit pants, finished with delicate red trim for a playful touch. Fabric : 100% Cotton Color : Baby Pink Embellishment: Solid Cut : Stra"
+  },
+  {
+   "title": "Stream 2 piece",
+   "handle": "stream-2-piece-ks0493-pr0-little-ego",
+   "type": "Little EGO",
+   "vendor": "Little EGO",
+   "price": 4890,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0493-PR0-1.jpg?v=1791191047&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0493-PR0-1.jpg?v=1791191047&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0493-PR0.jpg?v=1791191047&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0493-PR0-2.jpg?v=1791191047&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0493-PR0-3.jpg?v=1791191047&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2-3Y",
+      "3-4Y",
+      "4-5Y",
+      "5-6Y",
+      "6-7Y",
+      "7-8Y"
+     ]
+    }
+   ],
+   "description": "A stylish purple two-piece girls’ outfit featuring a sleeveless tunic with button detailing and colorful trim, paired with matching cropped wide-leg pants. A comfortable and playful choice for casual outings Fabric : 100"
+  },
+  {
+   "title": "Pears 2 piece",
+   "handle": "pears-2-piece-ks0492-ll0-little-ego",
+   "type": "Little EGO",
+   "vendor": "Little EGO",
+   "price": 4990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0492-LL0.jpg?v=1791191067&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0492-LL0.jpg?v=1791191067&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0492-LL0-3.jpg?v=1791191067&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0492-LL0-1.jpg?v=1791191066&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/KS0492-LL0-4.jpg?v=1791191067&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2-3Y",
+      "3-4Y",
+      "4-5Y",
+      "5-6Y",
+      "6-7Y",
+      "7-8Y"
+     ]
+    }
+   ],
+   "description": "A playful lilac two-piece girls’outfit featuring a tunic-style top with dark decorative accents and matching pants. The relaxed silhouette and soft color create a comfortable, stylish look for casual wear or special occa"
+  },
+  {
+   "title": "Sand 3 piece",
+   "handle": "sand-3-piece-s00273-bg0-soul",
+   "type": "SOUL",
+   "vendor": "Wear ego",
+   "price": 14175,
+   "compareAt": 18900,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/S00273-BG0.jpg?v=1770709882&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/S00273-BG0.jpg?v=1770709882&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/S00273-BG0-5.jpg?v=1770709882&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/S00273-BG0-4.jpg?v=1770709882&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/S00273-BG0-6.jpg?v=1770709882&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Designed for timeless appeal, this elegant embroidered kurta , dupatta paired with pants os perfect for elevated festive wear. Fabric : 100% Premium Cotton Color : Beige Embellishment: Embroidery Cut : Straight Cut Lengt"
+  },
+  {
+   "title": "Marigold 2 piece",
+   "handle": "marigold-2-piece-e07305-ph0-rtw",
+   "type": "VALUE",
+   "vendor": "Wear ego",
+   "price": 6990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07305-PH0.jpg?v=1791181831&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07305-PH0.jpg?v=1791181831&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07305-PH0-2.jpg?v=1791181832&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07305-PH0-4.jpg?v=1791181832&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07305-PH0-3.jpg?v=1791181901&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "A relaxed printed co-ord set featuring a straight-cut kurta with 3/4 sleeves paired with finished in a warm floral motif. Fabric : Cambric Color : Peach Embellishment: Digital Print Cut : Straight Cut Length : 42 inches"
+  },
+  {
+   "title": "Rosier 2 piece",
+   "handle": "rosier-2-piece-e07304-cg0-rtw",
+   "type": "VALUE",
+   "vendor": "Wear ego",
+   "price": 7690,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07304-CG0-3.jpg?v=1791181698&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07304-CG0-3.jpg?v=1791181698&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07304-CG0-2.jpg?v=1791181698&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07304-CG0-4.jpg?v=1791181698&width=700",
+    "https://cdn.shopify.com/s/files/1/0568/3308/1529/files/E07304-CG0.jpg?v=1791181698&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "An effortlessly stylish printed kurta set with a relaxed silhouette, wide-leg trousers, and delicate border detailing. Fabric : Cambric Color : Charcoal Grey Embellishment: Digital Print Cut : A-Line Cut Length : 31 inch"
+  }
+ ],
+ "productCount": 781,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Microsoft Clarity",
+  "Google Analytics 4",
+  "Google Tag Manager"
+ ],
+ "crawledAt": "2026-10-27T10:04:36.046Z",
+ "warnings": [],
+ "overrides": {}
+}

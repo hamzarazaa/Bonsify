@@ -1,0 +1,575 @@
+{
+ "slug": "borjan-shoes",
+ "name": "Borjan Shoes",
+ "url": "https://www.borjan.com.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.borjan.com.pk/cdn/shop/files/B_4009ca56-cfdd-4a1d-a209-80be724d37ef.png?crop=center&height=32&v=1776145831&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#ff0000",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#6016eb",
+   "#ff0000",
+   "#2cb742",
+   "#ff4438",
+   "#308fff"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Lato",
+  "body": "Lato",
+  "found": [
+   "Lato",
+   "GT America Trial Rg",
+   "GT America Trial Bl",
+   "GT America Trial Md",
+   "GT America Trial U Lt",
+   "GT America Trial Bd"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://www.borjan.com.pk/cdn/shop/files/New-Web-Banner-1600x820-2_2.png?v=1792952079&width=3840",
+  "https://www.borjan.com.pk/cdn/shop/files/NEW-Mob-Banner-500x950_4.png?v=1792952105&width=375",
+  "https://www.borjan.com.pk/cdn/shop/files/New-Web-Banner--11600x820_1.png?v=1792405690&width=3840",
+  "https://www.borjan.com.pk/cdn/shop/files/NEW-Mob-Banner-1-500x950.png?v=1792392672&width=375"
+ ],
+ "collections": [
+  {
+   "title": "100 ml - Men",
+   "handle": "100-ml-men",
+   "image": null,
+   "count": 13
+  },
+  {
+   "title": "100 ml - Women",
+   "handle": "100-ml-women",
+   "image": null,
+   "count": 9
+  },
+  {
+   "title": "15 ml - Men",
+   "handle": "15ml-men",
+   "image": null,
+   "count": 4
+  },
+  {
+   "title": "15 ml - Women",
+   "handle": "15-ml-women",
+   "image": null,
+   "count": 2
+  },
+  {
+   "title": "30%",
+   "handle": "30",
+   "image": null,
+   "count": 169
+  },
+  {
+   "title": "40%",
+   "handle": "40",
+   "image": null,
+   "count": 46
+  },
+  {
+   "title": "Accessories",
+   "handle": "accessories",
+   "image": null,
+   "count": 47
+  },
+  {
+   "title": "All Men Footwear",
+   "handle": "all-men-footwear",
+   "image": null,
+   "count": 403
+  },
+  {
+   "title": "All Women Footwear",
+   "handle": "all-women-footwear",
+   "image": null,
+   "count": 626
+  },
+  {
+   "title": "Athleisure",
+   "handle": "athleisure",
+   "image": null,
+   "count": 61
+  }
+ ],
+ "products": [
+  {
+   "title": "Women Platform Slipper-IVORY",
+   "handle": "bw11263-ivory-women-platform-slipper",
+   "type": "Women Platform Slipper",
+   "vendor": "Borjan",
+   "price": 3900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_a94c1ce2-9688-4db3-b1ef-3482da16b32b.png?v=1775719809&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_a94c1ce2-9688-4db3-b1ef-3482da16b32b.png?v=1775719809&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_faab928b-2635-4db4-a55f-a269662d37f5.png?v=1775719809&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_70bc578f-5c0a-4a77-82fd-99224f06d57b.png?v=1775719809&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_b3b8988f-f5a0-4049-ac71-23a8589350bc.png?v=1775719809&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "IVORY"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Our Women Platform Slipper. The elevated platform sole provides extra cushioning and support, making these slippers perfect for all-day wear. Designed with a modern silhouette, they complement any casual outfit while kee"
+  },
+  {
+   "title": "Women Comfort Slipper-TAN",
+   "handle": "bw10285-tan-women-comfort-slipper",
+   "type": "Women Comfort Slipper",
+   "vendor": "Borjan",
+   "price": 3990,
+   "compareAt": 5700,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/B14SS0037-TAN.png?v=1757098498&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/B14SS0037-TAN.png?v=1757098498&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_8ff72f06-84d6-4785-b4d2-2cd5945a4791.png?v=1757098498&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_47aaac41-e21c-404d-b215-4304ae8ae828.png?v=1757098498&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_d748888a-3fde-4fd6-9a29-e4e3de277b70.png?v=1757098498&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "TAN"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43"
+     ]
+    }
+   ],
+   "description": "This women's comfort slipper features advanced cushioning technology that adapts to your foot's contours throughout the day. The ergonomic design reduces pressure points and promotes proper alignment, while the premium s"
+  },
+  {
+   "title": "Women Comfort Slipper-BEIGE",
+   "handle": "bw11235-beige-women-comfort-slipper",
+   "type": "Women Comfort Slipper",
+   "vendor": "Borjan",
+   "price": 4200,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_93cab67c-c385-417d-bdeb-ea7900c9eeed.png?v=1774510593&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_93cab67c-c385-417d-bdeb-ea7900c9eeed.png?v=1774510593&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_ee3cd2f6-7786-489d-a8a9-1f0d75752702.png?v=1774510593&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_5cca9260-068d-4a91-8d3a-0937ecdf39bd.png?v=1774510593&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_d2cae9d9-0bf2-454e-b261-ecf9040c4bfe.png?v=1774510593&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "BEIGE"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+     ]
+    }
+   ],
+   "description": "Our Women Comfort Slipper, designed for everyday wear around the home. Featuring a soft, cushioned sole that provides gentle support for your feet, these slippers offer the perfect blend of coziness and durability. The l"
+  },
+  {
+   "title": "Women Slipper-MINT",
+   "handle": "bw10282-mint-women-slipper",
+   "type": "Women Comfort Slipper",
+   "vendor": "Borjan",
+   "price": 3420,
+   "compareAt": 5700,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/B14SS0033---MINT.png?v=1757097974&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/B14SS0033---MINT.png?v=1757097974&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_c273ddc1-9f5a-487c-a77f-e0a6f1c25253.png?v=1757097974&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_d0ac1c1d-cf70-4e65-b353-a0622e36d454.png?v=1757097974&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_8cab06ed-21e6-44bf-92b0-e15a23060453.png?v=1757097974&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "MINT"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43"
+     ]
+    }
+   ],
+   "description": "Step into luxurious comfort with Women Slipper. Made with a soft padded material and durable design, these slippers provide ultimate relaxation for your feet. Say goodbye to discomfort and hello to indulgence."
+  },
+  {
+   "title": "Men Slipper-NAVY",
+   "handle": "bm7403-navy-men-slipper",
+   "type": "Men Slipper",
+   "vendor": "Borjan",
+   "price": 8300,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_fca2cb20-2a1d-4d62-b918-dab8fc6ddc9f.png?v=1774673256&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_fca2cb20-2a1d-4d62-b918-dab8fc6ddc9f.png?v=1774673256&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_b0d6b5e2-9112-4b31-83aa-5bafde60ebaf.png?v=1774673256&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_cb75130f-48c0-4d27-bc3e-77395baf9353.png?v=1774673256&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_dfe42089-99d8-4678-9217-2cdbd2095377.png?v=1774673256&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "NAVY"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Designed for everyday wear, these slippers feature a soft, cushioned sole that provides support for all-day comfort. The breathable upper keeps your feet cool, while the durable construction ensures long-lasting wear. Pe"
+  },
+  {
+   "title": "Women Comfort Slipper-TEA PINK",
+   "handle": "bw10423-tea-pink-women-comfort-slipper",
+   "type": "Women Slipper",
+   "vendor": "Borjan",
+   "price": 2750,
+   "compareAt": 5500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/B14006467--TEA-PINK.png?v=1757097771&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/B14006467--TEA-PINK.png?v=1757097771&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_6d62d64e-3990-4549-9293-7b1a3d3dbdb0.png?v=1757097771&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_7bc988d6-5e4e-4949-981c-234194a8d036.png?v=1757097771&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_a7871dec-74ff-4872-89d5-018600f949b2.png?v=1757097771&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "TEA PINK"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "These Women Comfort Slippers provide a comfortable and stylish option for women seeking functional indoor footwear. Made with quality materials and designed for comfort, these slippers are perfect for everyday wear. Avai"
+  },
+  {
+   "title": "Women Platform Slipper-BEIGE",
+   "handle": "bw11263-beige-women-platform-slipper",
+   "type": "Women Platform Slipper",
+   "vendor": "Borjan",
+   "price": 3900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_2e4f5c58-0650-40bd-b742-d99a29a60eda.png?v=1775719803&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_2e4f5c58-0650-40bd-b742-d99a29a60eda.png?v=1775719803&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_501d63cb-e29a-48e0-b392-a12ffd7373f2.png?v=1775719803&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_000db80f-8d7a-4fa0-bfef-8f03488ee703.png?v=1775719803&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_b9dd88c9-4cf7-428e-9be6-f62cbdfb85a6.png?v=1775719803&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "BEIGE"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Our Women Platform Slipper. The elevated platform sole provides extra cushioning and support, making these slippers perfect for all-day wear. Designed with a modern silhouette, they complement any casual outfit while kee"
+  },
+  {
+   "title": "Men Moccasin-CHOCO",
+   "handle": "bm6733-choco-men-moccasin",
+   "type": "Men Moccasin",
+   "vendor": "Borjan",
+   "price": 5800,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_10289496-e0eb-434d-8c23-009407de84df.jpg?v=1760521510&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_10289496-e0eb-434d-8c23-009407de84df.jpg?v=1760521510&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_82caf05d-7f55-44df-a4a3-baa03701134b.jpg?v=1760521511&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_8ed207aa-6278-4ccb-926a-2b0484f028a2.jpg?v=1760521510&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_5bbdf943-c868-434c-a768-80dd61a83734.jpg?v=1760521510&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "CHOCO"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Our Men Moccasin, designed for effortless everyday wear. Crafted with soft, supple materials, these moccasins offer a relaxed fit that molds to your foot for all-day comfort. Perfect for casual outings, lounging at home,"
+  },
+  {
+   "title": "Men Moccasin-COFFEE",
+   "handle": "bm6728-coffee-men-moccasin",
+   "type": "Men Moccasin",
+   "vendor": "Borjan",
+   "price": 6000,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_94b3fac6-831b-4dbe-ae49-e8a40e9aed4a.png?v=1757414011&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_94b3fac6-831b-4dbe-ae49-e8a40e9aed4a.png?v=1757414011&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_e9800f82-3a8b-4f53-ac13-7d49a765fc53.png?v=1757414011&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_0d237ff1-b800-44bd-80d4-febd29a1a13e.png?v=1757414011&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_11c9533e-114a-4c4b-8687-356a52862cf2.png?v=1757414011&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "COFFEE"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Our Men Moccasin, designed for effortless everyday wear. Crafted with soft, supple materials, these moccasins offer a relaxed fit that molds to your foot for all-day comfort. Perfect for casual outings, lounging at home,"
+  },
+  {
+   "title": "Men Slip On-BLACK",
+   "handle": "bm7251-black-men-slip-on",
+   "type": "Men Slip On",
+   "vendor": "Borjan",
+   "price": 12400,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_9e75d11a-2ac2-4526-828d-2ad35867030b.png?v=1775202473&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_9e75d11a-2ac2-4526-828d-2ad35867030b.png?v=1775202473&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_73f7b280-06c9-4e51-a4e2-e390306e0e4f.png?v=1775202473&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_cfece268-8fd9-433b-9b65-89075bd6fd12.png?v=1775202473&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_c34ec6fd-b168-43ab-bba2-63130d7f242c.png?v=1775202473&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "BLACK"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "This men's slip-on shoe, designed for the modern professional who values efficiency. The laceless construction eliminates morning delays while maintaining a sophisticated appearance suitable for both casual and semi-form"
+  },
+  {
+   "title": "Men Slip On-COFFEE",
+   "handle": "bm7207-coffee-men-slip-on",
+   "type": "Men Slip On",
+   "vendor": "Borjan",
+   "price": 12400,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_19cf7fb2-ab9d-4928-abd6-ab310bdd7433.jpg?v=1762943177&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_19cf7fb2-ab9d-4928-abd6-ab310bdd7433.jpg?v=1762943177&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_9cfc54bb-f5d7-4548-9344-21f56a4f2973.jpg?v=1762943177&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_acb10a78-6223-48b7-98a1-410b929d6da5.jpg?v=1762943177&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_e9513e97-8e3b-48f5-8f26-3f7e4fbd4191.jpg?v=1762943177&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "COFFEE"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Effortless comfort meets everyday style with this men's slip-on design. Engineered for quick, hassle-free wear without compromising on support or durability. The streamlined silhouette works seamlessly across casual and "
+  },
+  {
+   "title": "Women Moccasin-TAUPE",
+   "handle": "bw10780-taupe-women-moccasin",
+   "type": "Women moccasin",
+   "vendor": "Borjan",
+   "price": 3100,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_d320dfd1-79b0-491d-8cef-aa30d177c163.jpg?v=1760525244&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/1_d320dfd1-79b0-491d-8cef-aa30d177c163.jpg?v=1760525244&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/2_b37732fc-bf09-4174-956c-50a979d63360.jpg?v=1760525244&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/3_74ec92cc-30df-4a1c-b9ac-831088bba36b.jpg?v=1760525244&width=700",
+    "https://cdn.shopify.com/s/files/1/0083/8405/3305/files/4_0f401809-b411-45d6-9147-595817a33d8f.jpg?v=1760525244&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "TAUPE"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "The Women Moccasins combine traditional craftsmanship with modern comfort. Designed to offer a snug and flexible fit, these moccasins feature high-quality materials that ensure durability and support. Their timeless styl"
+  }
+ ],
+ "productCount": 4987,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  },
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "Google Analytics 4",
+  "Instafeed"
+ ],
+ "crawledAt": "2026-10-27T10:04:25.516Z",
+ "warnings": [],
+ "overrides": {}
+}

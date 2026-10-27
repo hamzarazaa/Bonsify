@@ -1,0 +1,491 @@
+{
+ "slug": "zellbury",
+ "name": "Zellbury",
+ "url": "https://zellbury.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/logo_black_tint_512.png?v=1792051511",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#1e2e46",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#1e2e46",
+   "#d1d275",
+   "#924a62",
+   "#bae6fd",
+   "#38bdf8",
+   "#76d0ca"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Plus Jakarta Sans",
+  "body": "Space Grotesk",
+  "found": [
+   "Plus Jakarta Sans",
+   "Space Grotesk",
+   "Playfair Display",
+   "Montserrat",
+   "Georgia",
+   "Cormorant Garamond"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://zellbury.com/cdn/shop/files/Banner_-_Desk_west_jpg.jpg?v=1793089849&width=3840",
+  "https://zellbury.com/cdn/shop/files/Banner_-_Desk_outw_jpg.jpg?v=1793080522&width=3840",
+  "https://zellbury.com/cdn/shop/files/shawls_shawls_10122026_desktop.jpg?v=1791801319&width=3840",
+  "https://zellbury.com/cdn/shop/files/winter-pret_winterpret_10162026_desktop.jpg?v=1792145580&width=3840"
+ ],
+ "collections": [
+  {
+   "title": "1 Piece Essential Summer Pret",
+   "handle": "1-piece-essential-summer-pret",
+   "image": null,
+   "count": 271
+  },
+  {
+   "title": "1 Piece Signature Summer Pret",
+   "handle": "1-piece-signature-summer-pret",
+   "image": null,
+   "count": 12
+  },
+  {
+   "title": "2 Piece Essential Summer Pret KD",
+   "handle": "2-piece-essential-summer-pret-kd",
+   "image": null,
+   "count": 120
+  },
+  {
+   "title": "2 Piece Essential Summer Pret KT",
+   "handle": "2-piece-essential-summer-pret-kt",
+   "image": null,
+   "count": 201
+  },
+  {
+   "title": "2 Piece Signature Summer Pret KD",
+   "handle": "2-piece-signature-summer-pret-kd",
+   "image": null,
+   "count": 1
+  },
+  {
+   "title": "2 Piece Signature Summer Pret KT",
+   "handle": "2-piece-signature-summer-pret-kt",
+   "image": null,
+   "count": 56
+  },
+  {
+   "title": "3 Piece Essential Summer Pret",
+   "handle": "3-piece-essential-summer-pret",
+   "image": null,
+   "count": 211
+  },
+  {
+   "title": "3 Piece Luxury Summer Pret",
+   "handle": "3-piece-luxury-summer-pret",
+   "image": null,
+   "count": 14
+  },
+  {
+   "title": "3 Piece Signature Summer Pret",
+   "handle": "3-piece-signature-summer-pret",
+   "image": null,
+   "count": 91
+  },
+  {
+   "title": "Accessories",
+   "handle": "accessories",
+   "image": null,
+   "count": 102
+  }
+ ],
+ "products": [
+  {
+   "title": "Embroidered Kurta - 2579",
+   "handle": "kurta-wps2612579",
+   "type": "Essential Pret",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 2190,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2612579_-_6.png?v=1791286469&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2612579_-_6.png?v=1791286469&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2612579_-_3.png?v=1791286464&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2612579_-_5.png?v=1791286466&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2612579_-_7.png?v=1791286483&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elegant embroidered kurta crafted from premium lawn fabric, designed for the modern woman. This ready-to-wear piece features intricate embroidery detailing in a rich maroon shade, perfect for casual gatherings and everyd"
+  },
+  {
+   "title": "Embroidered Kurta Dupatta Trouser - 2712",
+   "handle": "kurta-dupatta-trouser-wps2632712",
+   "type": "Essential Pret",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 4490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2632712_-_6.png?v=1792232605&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2632712_-_6.png?v=1792232605&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2632712_-_1.png?v=1792232597&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2632712_-_4.png?v=1792232607&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2632712_-_3.png?v=1792232606&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elegant embroidered kurta dupatta trouser set crafted from premium cross slub fabric. This sophisticated pret piece features intricate embroidery detailing, perfect for women seeking timeless style. The soft blue hue com"
+  },
+  {
+   "title": "Kurta Trouser - 1402",
+   "handle": "kurta-trouser-wpcq121402",
+   "type": "Essential Pret",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 3390,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPCQ121402_5.png?v=1790923175&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPCQ121402_5.png?v=1790923175&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPCQ121402_2.png?v=1790923174&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPCQ121402_6.png?v=1790923175&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPCQ121402_4.png?v=1790923174&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elevate your everyday wardrobe with this printed kurta trouser set crafted from premium cambric fabric. Perfect for the modern woman, this pret piece features a stunning blue design that transitions effortlessly from cas"
+  },
+  {
+   "title": "Oversized T-Shirt - D117",
+   "handle": "oversized-t-shirt-mgt26d117",
+   "type": "T-Shirts",
+   "vendor": "ZELLBURY MEN",
+   "price": 1390,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D117_-_Blue_-_4.png?v=1792996331&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D117_-_Blue_-_4.png?v=1792996331&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D117_-_Blue_-_3.png?v=1792996332&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D117_-_Blue_-_5.png?v=1792996333&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D117_-_Blue_-_2.png?v=1792996333&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Over Size Drop Shoulder Graphic T-Shirt by Zellbury brings an easygoing shape with extra room through the chest and sleeves. A casual essential for a laid-back day."
+  },
+  {
+   "title": "Oversized T-Shirt - D080",
+   "handle": "oversized-t-shirt-mgt26d080",
+   "type": "T-Shirts",
+   "vendor": "ZELLBURY MEN",
+   "price": 1390,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D080_-_Olive_-_2_207ff74b-9358-4046-a47b-ae84dc47fe68.png?v=1793094678&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D080_-_Olive_-_2_207ff74b-9358-4046-a47b-ae84dc47fe68.png?v=1793094678&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D080_-_Olive_-_2.png?v=1792996335&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D080_-_Olive_-_4.png?v=1792996335&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D080_-_Olive_-_5.png?v=1792996336&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Over Size Drop Shoulder Graphic T-Shirt by Zellbury brings an easygoing shape with extra room through the chest and sleeves. A casual essential for a laid-back day."
+  },
+  {
+   "title": "Oversized T-Shirt - D073",
+   "handle": "oversized-t-shirt-mgt26d073",
+   "type": "T-Shirts",
+   "vendor": "ZELLBURY MEN",
+   "price": 1390,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D073_-_Mocha_-_2_f40d8fd9-f42d-4b31-88a8-2d0cffa9a366.png?v=1793094677&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D073_-_Mocha_-_2_f40d8fd9-f42d-4b31-88a8-2d0cffa9a366.png?v=1793094677&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D073_-_Mocha_-_2.png?v=1792996335&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D073_-_Mocha_-_3.png?v=1792996335&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/MGT26D073_-_Mocha_-_4.png?v=1792996335&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Over Size Drop Shoulder Graphic T-Shirt by Zellbury brings an easygoing shape with extra room through the chest and sleeves. A casual essential for a laid-back day."
+  },
+  {
+   "title": "Embroidered Kurta Trouser - 3338",
+   "handle": "kurta-trouser-wps2623338",
+   "type": "Signature Pret",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 4990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623338-7.png?v=1793022389&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623338-7.png?v=1793022389&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623338-3.png?v=1793022386&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623338-1.png?v=1793022394&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623338-5.png?v=1793022392&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elegant embroidered kurta trouser in rich rust tones, crafted from premium cross slub fabric for a refined finish. This ready-to-wear piece combines traditional design with contemporary comfort, perfect for everyday soph"
+  },
+  {
+   "title": "Embroidered Kurta Trouser - 3324",
+   "handle": "kurta-trouser-wps2623324",
+   "type": "Signature Pret",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 4490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623324-4.png?v=1793022392&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623324-4.png?v=1793022392&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623324-3.png?v=1793022393&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623324-1.png?v=1793022389&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2623324-2.png?v=1793022391&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elegant embroidered kurta trouser set in premium cambric fabric. Designed for the modern woman, this pret piece features intricate embroidery details in a rich maroon shade. Perfect for casual gatherings and everyday wea"
+  },
+  {
+   "title": "Embroidered Kurta Dupatta Trouser - 3734",
+   "handle": "kurta-dupatta-trouser-wps2633734",
+   "type": "Signature Pret",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 5990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2633734-2.png?v=1793022391&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2633734-2.png?v=1793022391&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2633734-3.png?v=1793022392&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2633734-5.png?v=1793022393&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WPS2633734-4.png?v=1793022392&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Elegant embroidered kurta dupatta trouser set crafted from luxurious textured lawn fabric. This pret collection piece features intricate embroidery detailing, perfect for women seeking traditional charm with contemporary"
+  },
+  {
+   "title": "Co-Ord Set - 2527",
+   "handle": "co-ord-set-2527",
+   "type": "",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 3890,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWS252527_2.jpg?v=1770470282&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWS252527_2.jpg?v=1770470282&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWS252529_1_aa2bc62b-4dae-4702-bb40-244c8df49d35.jpg?v=1778934106&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Grey",
+      "White"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "Co-Ord Set Trouser - 1027",
+   "handle": "co-ord-set-trouser-1027",
+   "type": "",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 1790,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWB261028_-_5.png?v=1792575385&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWB261028_-_5.png?v=1792575385&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWB261027_-_5.png?v=1792575384&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Green"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "Co-Ord Set Shirt - 1027",
+   "handle": "co-ord-set-shirt-1027",
+   "type": "",
+   "vendor": "ZELLBURY WOMEN",
+   "price": 1490,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWS261027_-_3.png?v=1792575383&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWS261027_-_3.png?v=1792575383&width=700",
+    "https://cdn.shopify.com/s/files/1/0595/3260/7535/files/WWS261028_-_2.png?v=1792575384&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Green"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": ""
+  }
+ ],
+ "productCount": 5000,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  },
+  {
+   "id": "cod",
+   "label": "Cash on delivery"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:09.855Z",
+ "warnings": [],
+ "overrides": {}
+}

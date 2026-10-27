@@ -1,0 +1,486 @@
+{
+ "slug": "azure",
+ "name": "Azure",
+ "url": "https://www.azureofficial.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.azureofficial.pk/cdn/shop/files/azure-favicon-02.png?crop=center&height=32&v=1756706486&width=32",
+ "colors": {
+  "primary": "#60e0ff",
+  "accent": "#e40202",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#111111",
+  "found": [
+   "#e40202",
+   "#ebdbcb",
+   "#ffa000",
+   "#e52123",
+   "#e64943",
+   "#339703"
+  ],
+  "source": "logo"
+ },
+ "fonts": {
+  "heading": "Inter",
+  "body": "Playfair Display",
+  "found": [
+   "Inter",
+   "Playfair Display",
+   "Bebas Neue",
+   "Courier new",
+   "Consolas",
+   "Times"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://www.azureofficial.pk/cdn/shop/files/vqcrxritncbqne2foan9.webp?v=1792753793&width=2000",
+  "https://www.azureofficial.pk/cdn/shop/files/MOBILE_BANNER_1.webp?v=1792757874&width=750",
+  "https://www.azureofficial.pk/cdn/shop/files/WEB_BANNER_LIVE_NOW.webp?v=1790939100&width=2000",
+  "https://www.azureofficial.pk/cdn/shop/files/mobile_size_ensembles_updated.webp?v=1791364758&width=750"
+ ],
+ "collections": [
+  {
+   "title": "10% to 20% OFF",
+   "handle": "10-to-20",
+   "image": null,
+   "count": 19
+  },
+  {
+   "title": "20% OFF",
+   "handle": "20-percent-off",
+   "image": null,
+   "count": 52
+  },
+  {
+   "title": "25%",
+   "handle": "25-percent-off",
+   "image": null,
+   "count": 72
+  },
+  {
+   "title": "25% OFF",
+   "handle": "25-off",
+   "image": null,
+   "count": 15
+  },
+  {
+   "title": "26% to 30% OFF",
+   "handle": "26-to-31",
+   "image": null,
+   "count": 39
+  },
+  {
+   "title": "30% OFF",
+   "handle": "30-percent-off",
+   "image": null,
+   "count": 64
+  },
+  {
+   "title": "35% to 40% OFF",
+   "handle": "35-to-40",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "40% OFF",
+   "handle": "40-percent-off",
+   "image": null,
+   "count": 33
+  },
+  {
+   "title": "50%",
+   "handle": "50-percent-off",
+   "image": null,
+   "count": 35
+  },
+  {
+   "title": "50% OFF",
+   "handle": "50-off",
+   "image": null,
+   "count": 29
+  }
+ ],
+ "products": [
+  {
+   "title": "Pearl Whisper",
+   "handle": "pearl-whisper",
+   "type": "Embroidered 3pcs",
+   "vendor": "AZURE",
+   "price": 8587.5,
+   "compareAt": 11450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/PEARL-WHISPER-1.webp?v=1758523000&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/PEARL-WHISPER-1.webp?v=1758523000&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/PEARL-WHISPER-7.webp?v=1758523000&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/PEARL-WHISPER-2.webp?v=1758523000&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/PEARL-WHISPER-3.webp?v=1758523000&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Pearl Whisper – A timeless white chiffon ensemble that radiates understated elegance . The look is elevated with a sequin embroidered chiffon dupatta , adding a subtle sparkle to the outfit , while chic culottes complete"
+  },
+  {
+   "title": "Celeste",
+   "handle": "celeste-2",
+   "type": "Embroidered 3pcs",
+   "vendor": "AZURE",
+   "price": 11812.5,
+   "compareAt": 15750,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/CELESTE-10.webp?v=1761126384&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/CELESTE-10.webp?v=1761126384&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/CELESTE-1.webp?v=1761568869&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/CELESTE-3.webp?v=1761568869&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/CELESTE-4.webp?v=1761568869&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Celeste — Luxe Collection Softly enchanting and endlessly elegant, Celeste embodies refined sophistication in a serene tea blue hue. Crafted from luxurious chiffon, the ensemble features intricate hand embellishments on "
+  },
+  {
+   "title": "Emerald Galaxy",
+   "handle": "emerald-galaxy",
+   "type": "Ready To Wear",
+   "vendor": "AZURE",
+   "price": 7837.5,
+   "compareAt": 10450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/EMERALD-GALAXY-2.webp?v=1785492868&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/EMERALD-GALAXY-2.webp?v=1785492868&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/EMERALD-GALAXY-9.webp?v=1785492868&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/EMERALD-GALAXY-4.webp?v=1785492868&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/EMERALD-GALAXY-3.webp?v=1785492868&width=700"
+   ],
+   "options": [
+    {
+     "name": "Select",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Designed in premium summer-friendly lawn fabric, Emerald Galaxy pairs a striking black long shirt silhouette with contemporary sophistication. It offers a refined aesthetic with graceful movement and everyday ease. Paire"
+  },
+  {
+   "title": "Day Dream",
+   "handle": "day-dream-1",
+   "type": "Embroidered Lawn",
+   "vendor": "AZURE",
+   "price": 9562.5,
+   "compareAt": 12750,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/49_7615fdee-62bf-4864-b62a-d7bd581d3cde.webp?v=1771329544&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/49_7615fdee-62bf-4864-b62a-d7bd581d3cde.webp?v=1771329544&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/43_48121fc8-401b-4120-9bf2-16092e539b8f.webp?v=1771329544&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/42_dc85fc7a-7e30-45a9-8162-91d782a91f1d.webp?v=1771329544&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/48_a2ea69a1-54ed-48ff-a6ec-3fe665449410.webp?v=1771329544&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Daydream in light blue lawn radiates calm, airy charm. The soft chiffon dupatta adds gentle movement and refined elegance. Ideal for summer soirées."
+  },
+  {
+   "title": "Sea Breeze",
+   "handle": "sea-breeze-1",
+   "type": "Embroidered Lawn",
+   "vendor": "AZURE",
+   "price": 9415,
+   "compareAt": 13450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/60_072b32d5-39b8-4db6-9fe5-6c38007cc82a.webp?v=1771329676&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/60_072b32d5-39b8-4db6-9fe5-6c38007cc82a.webp?v=1771329676&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/65_0c2c18a5-ef74-488c-8e27-50db13f0e2f4.webp?v=1771329857&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/62_63d6c764-e2ec-441e-8aae-1da529d6dd71.webp?v=1771329857&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/67_ed6abf78-8505-4faa-b50a-f79e45649be9.webp?v=1771329857&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Sea Breeze in teal green lawn captures tranquil elegance. Paired with a flowing viscose silk dupatta that moves gracefully. A beautiful choice for Eid gatherings and casual summer outings."
+  },
+  {
+   "title": "Blueberry",
+   "handle": "blueberry",
+   "type": "Embroidered Lawn",
+   "vendor": "AZURE",
+   "price": 9765,
+   "compareAt": 13950,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/21_7b44418f-0fac-4b73-a991-7e3d47c8b967.webp?v=1771330833&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/21_7b44418f-0fac-4b73-a991-7e3d47c8b967.webp?v=1771330833&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/19_5965533f-ece9-4d14-b90c-2459354575ff.webp?v=1771330833&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/20_5c78d980-0f02-46dc-a419-f7b0ef3f716b.webp?v=1771330833&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/24_fdf86731-6d4d-4159-bf8f-f51c11db108b.webp?v=1771330833&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Blueberry in dark blue lawn exudes serene sophistication. Paired with a soft chiffon dupatta for flowing elegance and poise. Perfect for summer occasions or refined evening events."
+  },
+  {
+   "title": "Matte Sass",
+   "handle": "matte-sass",
+   "type": "Ready To Wear",
+   "vendor": "AZURE",
+   "price": 6265,
+   "compareAt": 8950,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/Matte-Sass-8.jpg?v=1756726438&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/Matte-Sass-8.jpg?v=1756726438&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/Matte-Sass-7.jpg?v=1756726438&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/Matte-Sass-3.jpg?v=1756726438&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/Matte-Sass-1.jpg?v=1756726438&width=700"
+   ],
+   "options": [
+    {
+     "name": "Select",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "description": "Matte Sass , an embroidered matching coord set in classic black, designed for a sleek and versatile everyday look. Paired with chic culottes and tailored from our premium in-house blended fabric , it blends timeless eleg"
+  },
+  {
+   "title": "Wisteria",
+   "handle": "wisteria-1",
+   "type": "Embroidered 3pcs",
+   "vendor": "AZURE",
+   "price": 8715,
+   "compareAt": 12450,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/WISTERIA3.webp?v=1770034714&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/WISTERIA3.webp?v=1770034714&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/42_6bb8ef2c-a015-4e5f-8a28-e438cbaf2334.webp?v=1770034714&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/37_9dc5dbc5-7de4-4f5d-b1c4-4dab1eb32be2.webp?v=1770034714&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/39_9e4e09c7-f867-4e78-ad1f-dcb2307cda7f.webp?v=1770034714&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Wisteria is a soft lilac chiffon three-piece, exuding delicate charm and grace. Featuring a hand-embellished neckline and paired with flowing raw silk culottes for effortless elegance. A dreamy silhouette designed to cap"
+  },
+  {
+   "title": "Lune",
+   "handle": "lune",
+   "type": "Ready To Wear",
+   "vendor": "AZURE",
+   "price": 13950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/5A_c79901b4-cf05-41f7-9699-c7bbf66f533d.webp?v=1792562986&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/5A_c79901b4-cf05-41f7-9699-c7bbf66f533d.webp?v=1792562986&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/5B_427da7dc-9af1-4ffb-88d5-085fda2141b3.webp?v=1792562987&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/5C_1386ca0a-352e-4148-a905-294a299a9dee.webp?v=1792562987&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/5D_34518e75-57a7-40f1-961c-a60d2e85be88.webp?v=1792562986&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Crafted in luxurious raw silk in a rich teal-blue hue, this elegant long shirt features intricate hand embellishment along the neckline, flowing gracefully down the centre front in a wave-inspired design. Delicate scallo"
+  },
+  {
+   "title": "Neptune Green",
+   "handle": "neptune-green",
+   "type": "AZUREMAN",
+   "vendor": "AZURE",
+   "price": 11375,
+   "compareAt": 17500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/116.webp?v=1772614724&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/116.webp?v=1772614724&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/115.webp?v=1772614724&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/117.webp?v=1772614724&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/122.webp?v=1772614724&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "This Neptune green kurta features exquisite embroidered detailing that enhances its sophisticated appeal. Paired with tailored straight pants, to strike a perfect balance of tradition and modern grace."
+  },
+  {
+   "title": "Slate Blue",
+   "handle": "slate-blue",
+   "type": "AZUREMAN",
+   "vendor": "AZURE",
+   "price": 10075,
+   "compareAt": 15500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/78_f41fd822-7a81-49ee-8efa-795a976314fa.webp?v=1772614885&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/78_f41fd822-7a81-49ee-8efa-795a976314fa.webp?v=1772614885&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/72_8a13a7e2-e02a-4354-93f6-ddc33c94df6d.webp?v=1772614885&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/76_00778b60-afea-4a2f-8688-f1d870d05138.webp?v=1772614885&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/75_847da9e0-d1fe-4a5c-8823-10902d1a4b83.webp?v=1772614885&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "This graceful slate blue kurta is adorned with delicate embroidered accents and exudes understated sophistication. Complemented by tailored straight pants to make an ideal choice for formal festivities."
+  },
+  {
+   "title": "Shadow Grey",
+   "handle": "shadow-grey",
+   "type": "AZUREMAN",
+   "vendor": "AZURE",
+   "price": 10725,
+   "compareAt": 16500,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/69_8eecf348-30c4-4a3e-a5f6-3a2ac8f18ac1.webp?v=1772615071&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/69_8eecf348-30c4-4a3e-a5f6-3a2ac8f18ac1.webp?v=1772615071&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/61_820d15a5-c5f6-4fed-96a1-6d2a6a03dce2.webp?v=1772615071&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/60_394e4ef4-abc1-4429-90d1-045340cb5557.webp?v=1772615071&width=700",
+    "https://cdn.shopify.com/s/files/1/0569/2404/5469/files/68_a73369d6-8994-4173-b918-84898464cf3a.webp?v=1772615071&width=700"
+   ],
+   "options": [
+    {
+     "name": "SIZE",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "This premium grey cotton kurta is adorned with detailed embroidery for a refined appeal, paired with chic boot-cut pants for a contemporary silhouette perfect for festive gatherings and special moments."
+  }
+ ],
+ "productCount": 648,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  }
+ ],
+ "storeApps": [
+  "Klaviyo",
+  "Judge.me",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:54.749Z",
+ "warnings": [],
+ "overrides": {}
+}

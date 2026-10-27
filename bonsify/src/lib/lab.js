@@ -79,3 +79,11 @@ export function getLabBrands({ all = false } = {}) {
   }
   return out;
 }
+
+// Any store the app can show: a lab crawl first, then a private proposal page's record.
+export function getAnyBrand(slug) {
+  const lab = getLabBrands({ all: true }).find((b) => b.slug === slug);
+  if (lab) return lab;
+  const prop = getProposal(slug);
+  return prop ? trimBrand({ ...prop, slug }, 12, 3) : null;
+}

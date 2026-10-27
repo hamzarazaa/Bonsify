@@ -1,0 +1,572 @@
+{
+ "slug": "ndure",
+ "name": "Ndure",
+ "url": "https://www.ndure.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAa8AAABgCAYAAACqov3UAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAgAElEQVR42u19B7gU1fn+md1LRxBpCth7xR6MXewtamKJ0diNBTWKiSVGsSHG3tHEhoqNWGNDsWCJMYqIXdQQLAEFREDksruzv5ln3/O/r/PfMjPnm9mZy5zn+Z5Lubszc+ac87X3ez+lspGNbGQjG9lIzsjhZ29HRjjynCP3OfKgI+MdOSubomxkIxvZyEaShoWfnR051JFLHTnNkUMc+Y0jp+DffpFNVTaykY1sZCNpXtevHLnXkZMd2dKRHR35mSPrOnK0I09mU5WNbGQjG9lIkuLq6MhjUGAbO3KTI+McucWRKx3pDm8sG9nIRjaykY2mjzx+bqcq+a0NHNnWkWsc2cORnaHEVnNk2Wy6spGNbGQjG0lSXq7H9TdH1nZkc0fuduRpR+5x5Bz8znLZdGUjG9nIRjaS5nmNgee1tSNXO3KiquS/bsbvrLKkTlKLgeSb8ELD3GMeMWRLtSF4spGNbGRDJTTf1RF/7qIqYcOtAda4zJGh+PvfHVnfkf1VSChjLiZJ8qFrpey5LSi2Dh7Flo1sZCMbSYDH858PUJXQ4W8dWceRfo50U5Uc2AmOPLwkTtDSjhzmyPGOHOvI73zKsXBdD4VlENfYzZHjcP1jSFy46JGOHK4q9Q+/dGRPuNybOrKGI30aeIqWx0uLev7zTZAkWphxPXuOjKz8EiS5LOqQqnPZfVfr4Uxei/btfqoSJrzIkQNx9o7Ev/08DIzRTZSd4cjtjlyCLxslLBc7cpWqJOjcA7pXFQ0dRnG1QHPPduQbR2Y4MtOn/A8/X3OkqyM7qQp083rc818MZRTcY9faGA0F5I4XcZ8zqtyv/jf33r5y5AtH/uvI54584sgUR1515BFHbnTkT44cjO9eusY7bolBkWUjG3EfkHlPWD1TaslxKFxn4Amcy3siOqRwzrpG+F5wIFyDfRdHVsR7DHyhrviS9x0pOPIdZK6QzHHkB0dmOfJXVSlM6yAwSTps5nom3zpSDigl/HwM3zkIisu9z0W49+9DivvZBXju11BN3hlz/VWIe/VKkebUVW4fOPKKI3c4MlxVYsndqigySSXWyZEVHFkJiy8OGURx9CRsUvdnX1VBUa0ZoayOawzEGnINzs0c2agdyYaODIbFviYS+MvjWZfBczdav7kIow65TGoKR0Us6JNWRxbDsPaePd0Bje+H92o03HDU3qpS5VwWFBs/56AIbRXhw8fCwna9psuhNGwopkZSxL25SvskOhx/78h0gWef58i1qoKw6Q632PXEFpLy9CM2SaNruovla0feUpVE6JmqAk31bkIJj3coFPMLjjyPn1HKREfGOrKUodcuWXy5LKC+bzryEu4xCnG/+2142oPBDzcZXvg/25G8hmd6GRGK58GD9wQS/repSo3QhapCK+TmUbZwZEAdZZONeMc+jnyG82gavZt6IV+RcPDuOMzL8MJKhlLAd93gCWtFcfC4WvwP8BqDejFfYIO4RXM9EPZbSP9v+xStEBfgmfvDirwGG3OuoFFQTcF5f28WDr/LQMfSscoBHDYscLywoeNHnktI3kvPnesRPR7j818KOp0HmzD3SREddZhBEYe/w3g9HB6cJWSs8eiNkNdaEXvZaZM1sCaHwriaTGfUyzXSGZZHlAQevx9yUxxWM/W6yqimzlMyL4oEocLh/AwpzaDyFjwwN482KcQ86GeegEW+GizIODa17VFq3v9/E4nSzWm+gm5s/btu2HcTVanXeMvjSdoCws8wFwWNIxAiTlJsvxeANXc58h86XEsCog2hbxHaPhdeV1eAftyc56cBvfi0id+IgxY3JP+UIxcgGtPF0GC26Hw8EZGpR4CMy6RNHsf58gNFgGzgKLrHtRk7oXCsmgIKq7wWIwcT9dB5tFHIO/lVPLZH2e2APM7jdBgFyaG5z/tnbJxL6BpFAYMgrHfG//4CLNR+Ap5wHobJ+IjCzZ/iIFovYq/dFA68DA63DwT2DX/ejYKcDQ/POzoj6f2FkLGZVKln3BQpMuL93CTsw009OcowHnYnAK/KmfjyjPU7ORvrNFKUqEWeywmCykt//kAKWVkRV3NfQKHDUggvcSd4X48G/A6t5D5WFTTNenSYLW7ygip5lPBshEbXEFIKGyKvKXFw6/l20aOn1lEYKmHko3mUP5RDeAzV1qL7jg6qEW7hSMNFAY2s9iqlGsba8yiA7WFwLnYAau5uIH9tOqRLmfy/88Ubedkfcxep8soRCuQMWgy2gBYuA4LezyDXEmShjSb31Q54YLYiAbwuPJQgh0KRPJvB8OBaE2YVe73Mp4FaCxt/5rDjs54FbOp13AIgkaINoBIKD9b3th5KHkzeuV5Howgx2lKl8FOXQewiZDS0N2+NIx0LkA/vJ/C+XeTwh+3c25WQVqQWIidP0AplAOW8ikLWkAYObB+TBf0UHdBBldcXoCrZCTVVYcKG96sKxPdAIQ82KivVpvDK1gR5Dcv08QCBfGzD9TIblfgqJYWp+v7WptxXyUBxt5JRUW2/MOpz10x51Z1PjnqcryqlDWHOIIaCH5fgvZ2EOdf5xwFx7F+tvNYBRb1kGEJ/z8P4fhURaEMhNDA5ROhG3+NrCBkeQfVYQUOP1wJhMzzhi5tDLJ/A41QhFVgHgFRMPS/9Ht6A56pSBnfelMKnJQPl/ZGqoNsaeXu6RjPzAupLgX6eRvnxoGAli4hm/5fNe91c+7+QK4w83K8PrCE4wMsGiL16+aRREYUPWfl+GUJp6Ge9Fwiysxz5MSDoQ//ZTVL2hBJL+uK2PQfmGgHfjV6US1EuoCRg6DyC+rg0KC/2jnY3tMj18z9BEGOrATXaqCznFWiPf0It58MgbbXy+ipTXjXPkwIiMS1xhA31l++EQ0h6M+gX/ANcbktYI2vluwuxbdgh8wwdAWYIcghxzuwoVWFCeFjYCIhjwU2gPIsVwBpdA0XZpp6mfg83Un+ftCivblT7ZhsesFcRxLie8upHNV+F7PD0vU/vRmg/jKGmwNHXmoUNa4L0FgE4FzlhOH/xrx2ZH5FFoQ+m91SlGFgyn6GV1zBVQRoGCRny7x2H0OM9AZWXfravsbDXR+hLK7RGzBm2IUJNKsG9CPB+P4uOQQM70xzYAh76eUQbY6Wk1Xl/FBGbGH56zw1DyCXXQHkNonWWeV7+53eaJ6calF3mxGwu6yqvhSAXz8WpvKRqvBodUI8Jh4W08roW3l1Y5bUTLP4nQ8LkJwP8sC2FL0sBFUgBUhRCfAZ9P/MBrsk32NxaeXVCvZFdp+YmyMFSgveqUqa8VkaoJKwXxPO2u0+I8doAQ0mRCiRB4gATaDRr5wBnUI6o9C7JQoZ15/cH0OFZUZMm5yhvMTJiV9iml34zscvnhRTwE0AXlULC5DcASeg/QyqvpxBC2xteTBk/C1WkGLBGqxSjZfok8naNlJeCh3SFgPIqUn3XXilRXDzWM/SCeOOvVUdxcch9h3aGeuPC46jWPJe0bEzelF8DeXUwqmSh2tpr+EuQdkce9tcvZQWqIi/G8ICzUFOmhNqjdAV5aSkk0nAarOd9AF4Io7xuRyinHw7gPQBl3s0je+D/f4m6keNBonspyEcnAHJdrIEQtCPOf7kGwK98Fpa7Rs8/PNyOJvkeF7q/VcryXQqW5kxDpKENVpFlfOS7uqC9UFnAa7FTAiqSNNA+Rjshv8azXoubUQ1oQbCwOs0UXl56uklBW5yYKq8NQ1AimW6WD+ClmHhfOqa6Eqz2sEjDl5G3OCkgDJYPjitqEFE2OgA7IkHfF8+xIYgufwuFNp5ykeWIFViRvK9lfRyifYjMuSSgvB5GkbhKaPPJWsprX89GDpNzLOJdd/FxiPZCUtxkv/J9jkEu5wTsgTjkZLDD/wFUTqMQkXHPoXeJHLssGFYsUaeLswOCkxRSC1Mzz6umUe1GsB6KK3KiN8MOwObHqbxsMDOsGdLStigpuDUxa4Q5NO+CArkYFflBkYZleJJ54RfXC9aea2XfSdZ9VDF3LpTdrcbzcEhrLSFqKL3mrgdaMw3KK0dekEm+mPOdowms0YhQYIzhIerNs1lN6F2VR36vCwy/5WG87QoA1a1KpgdeNc7Vq3xGfvj/DqbzoWR4H98g4jM9hfKFp0uGVl4LYHDHun/38zBjxxUfbUW4bamQtRd6ExzhsdSCWmLnYxPdGhImv4gQTNVo//1IvgHSb3nw542PGKqrn+m6Gt4XNwPdUZiM9syE9OwKijS8zPBAK+Gdno512CjRvaoyr8m0ibl/nYTOcX8QSU8SOpd4nf4thPI6XSjcugDG7qF4vsNSKCfgjPiYnus7FM6rqEOH/FKOJc+l2AR0ymkh2nTwgT+KYOl2iIP6EGpfHUZ5fQ3yzijavXgPssFQst9FpMCKVLi8SR3l1RXIQNM1w/d/cAqRhqujwN00lLQIa8hPqcJgrDkJaP675O3mQhpeEuL1yHjsha7hZcH83p0BlZcbBbnSMIypP/MfiS7CCdkDx1OqZSZRAebjUl7nRhyOapQvckMD24QoHNQewIOE4rNDLKYtEYp5LeAGKRLQYJsID13L0267DxT23AgUmFeZ5Ksg3RTCPJcKKC+93r4nWqg0Ka/N0AHYVHl9Dw+oUX2Xzr0UhUiAHzbg/IsjJ6/v6S5ivpGoJ7zD51rLkbc71pC7UoMaXqbvtVIqeQph30JKeeU4AFcMk7++SegjfqGvIEwQVPl2Bkw5aG2U/j033LgKDqEpAedAH1aPozg56pfGi2Zp5OiiCCEWCYTS3/NczPDwkIDyKpIHsFEKCXl3or5aRYM9MBVIw0Yw+c7k8doCjB6XN6CjavbQ4afDBTgFea7+6lN56f22OZDApu95EfKVaePurKU/3DD3MaqNl7RDHGtJX9wlo71PGNUTJmFdRsK6p8/iNos0/8wQ9643wGfwZPYPwQpeoI2wQoyJyhZ69hsjUF4F6gq9fg3ltQLKE8pCMPl/hOBXTALS8NcG7W9salUzococV9uvy1CkRMJoOB4hLCvhymt72p+mnlfBA9jw8673pHYoJsprPlhkVFyQ8phKRR4FAlbFSci7CVB/zaSZ4cV4jM8OnDpOvmlIeqIiweR7IBn7TUiY/MVUdB3XwauvszGeIYpuAF+BiLTaYtwg4Hz54TQcmDLl1RFQbxOkoU3AJeUDabgi6gGlkIa70CGaROWlz6ktYWiWBZhc5sIAUAGM5MMpTG9SiD4H9ElpV16JcPt2Rc4m6EuRpnXhfk6be5LHtfJdHdA7K8x96Ge9DfDkq1UbaCUom/xJcbnLNfjWDhUO+5Zojg6psmZyhDQ0vaa+1h+o420uJXunN8Jupj28FqCbQT3PXV9z/RDNUmtd90fQTCV5tBDx9jQBVGcZ4I/f+VhrvJfP8LAEhZ3zmTjf0lAOkvgN+FuK2ZcMgRdSFv/LxPxs1fG6XITgn0LSExWpjYmiXmZBkYYFlBo0A2igr7WaqrQSKQtCihm+3sWz2RhpWBLyuA+KoE4uTqRh0RCuvm+DA03PyRYCZS06N/xxgsEaXs/LhWDPEAKpTAbTTSPvh7vMX2dorOnPfB5DZ/klZpwa0OPghVCgz0grsGvpJdfqJtsdnpPOG4TJee2P8M/EkGzyX1JorVnhq84ReF9FSuj382z03sSFKYE0nA9C47QhDbcwDNnaFG3YsI7y4vnY27D7Axt641NQV6fn+hpl1nqHqaY4l5v3iQsYK+B1lXDOtKSQvzORybZRIT2OWXihDwlD7Jlh/ESy+qtZKT2wGOwQIU/9582wON8JiTR8A3m3Zi1GZrv4RND7KhJ10Koe5TWIQD4FgWtMJVqoNO2fPSgPUzTwbj+pY6jxv+UF2tDbhMy9EV50LqEHKecWXzVMVfDnxlCdVc6H8voZIQ1LhmHasZnXJQeTvzOk8poBcMW2VGVdEFZg00FTpGrUGg0IGfIsUa6hN5LBU0MiDR82oLiS3OB9wQ0n9R6KhAIc7LFS3TDl64KItwlUH5IWiLwC08A8A6ShnoOJPvcrcxqWBBjcT0G+N+lIw10pZGgLNMU9K2CN136GHJ42MVCMTEC+qxYBQipGntzhR0MW5n5CcfrfCXF+VXPxx9PhmfO8gE2o/YgdIuY/DZ7db0K09i4SjdLABCivrlRvIZGH1ArwRVieXiLnGYJIw1saEAEn0fBTyAeaIA21NX53g2fX874KUIkSrCYlGIYtCZxz7gXVCXWUBSFjbAoRgud8kCDo822mgPL6GlR2zVZeuToGWWqUl4t6eSngS9G/9yrlevqioFUSwMEEvtfS4ZanUMJ+IQ8Orbwm4nv+jLyD3+/yAhp6JmARWGD5KArlvfRh8S8QH/Oi30Uov1YkpGHPlCmvnsjDhJ2DElnjIxocaPrf3fD0c0Iw+XkI1SYpZMg0UWwgzBeM5twHo72RAuE5Oc+QDIDBGlsnBGm4Bc7PldPqee0LZoMwyushgtlaCJ2Njyj/9R0WcSc6QLqDEzEMxF8nrG/Dd91OxL52wJzZoQlKwK5KLARSyutt4iuzAA45Rkh56c8eQO/WSsneWZ3yfiWDtT2jQd2PRYf5UCqULRgiST9Fcb5FfIrNFO/oA6NmhsBa5qazpwbkNOwAEgIJRO0UtD1qVpSGKZ3GIV+/e1qV1wkhW9ZrVok+9H15TxW8dPjwYzRwVMQ0cH2IjcwJax37Hh+wkSW3VtgpQe53f8CAJeZfz+k7xDlo4Z1fKNBbzCZC2p9XyWcmfe9shZCqKdJwOp7fD9LwACqULRky2kxIaJHs8mCzuNYQVVnNw3cp6Ib4VB76/5ej1Iqp8nreU3YSl2FgeTzssxGu/hz5xFSFDi1yh+eFLMwdRd12c/RCjsV3lgTDh/p7ngWzg7YeJoT0vHTC+gBs4LcDhjy52HGTBCmvvoJsKex5bUfXWAmkpqbAEJ7DVVX6wE77oqGqqfL6AOjNWgcqr6nfCyANS8To0RWgrW4xSneEXPtgD68OTssd0LfuJtUGnpJst+PKOaQ8LJ9GymZURlMyNNLGqOYDYPai+X0SDD2pQT/yS7spYAdYLsw9uUZyswXfW4ygA+piHJzd4GW8HlJ56WfYGIfxf0OCVl4npKGVgHfaG+hHSeX1BjHmK9THvCQIk38lRWAN5UnizxLwDF5o4HVahAz+i0BLDl0T+TQiL6chlBaHnAYatrNBqXY9OkL8U7W1eKkWdZHwul4NWNLSQkjD9wz2FFNSXYfynkFQ3HHJ8shvHkalHbqn2YppUl76JrsRK0PQwtxZICSttdH64WC3I2rhfQ4suNNh0YRhk58H6PHWIfJE+tAel5CXb1Eo9T4huLz+/EQkdxVxzE0ThMnfCqWbNpj8CIM2QmyN3+Vzv66M342zbVGz2soXIqA5OzZgXlXP+zDVhkQuGvYtnAhg202osYtDblCV3P6bVeblAgJK5dKU71qZYvZBPY4PqP4qVycn8JUw+0aJCGN3xbXuxn0VAyINP8XnjwyINKzFPmElRHk9IKS89DM+RaEFBZjxIoFDtEBoze4paYOi13oX6mEUFu2qmTXOb3B4MNLwWWEKsFITpFhHomqsenPAchZehyOFy4CaLbx2jm/QySCxysv1ON4KWds0gWp/cnWu4Vot30bUJ2wy3O9eQEz6CTNwvus53PsllBi2Ax4+w3DwJils+KjQAac/f79qQ5V2RKipLNCawos0tFIE1liFohYmMPkvwFZej2OPCbTfbXL3hzRJgUL7awTMS/Pv3CWIrNWUes2QoueMXID8V6pqvVqoD9HUkMrrbiRa6yGk9GTcTNyJkgCOVsD1FVg+/HQV1guoFeEqBU9lUQikYRlJ+w4Jevl9gWiSVF6jqVeZ69ldJEjIW/DRQSCJyuvnlMQ3CSV9pNrAMI3qfg4hQzBTXv4U1zRicA+yvnIE1x/fpEa9UXteH1PNmZU2mPzwEJ1J9e9dRWzUjfoP9aUWDpIKrATr4TwqZlzQ4Br6cwsJJv9yQJh8iZgRtkzYu11WECpfol5ly6i2OrLbBQl5Z1I4x0rR3vmVaqMLMuE0nNSg7ofnZLhBjm1JEZsUly5BaAlhGDGTzBvtSHGxYmfkduqQhpep8DD5M1Gs6reF9jYEK7aFPbDvkX/rAI/QD13UfNSMdQzR4I55F1dNyMHL3Y2/Fm5VMpwS3ZsatkJn689GSKeHUqkj5D3FgC6I5/aZBp4759iuamceQBTd2PW8/BuKpyUkg0hLle7JpXamvP6aNqQhv8T7QsLky+gB5rdKPU/Q4unCYQ993+8j/zUQsNtGSvJ7QL4HAr0Yxu3+VwK9hk0DMoX4YfY/lL5/JwHmei4Sv0e1sXunCWl4qaqUbZhwGi4GVFn5UF6DYJhlXld9pVUCkm8VwzB0NaRhqZ3Ml36OERRRSRVMvivlRoLC5GdTI7cg1+wIcMQPKhoKqbFYrLsQy4dXgdlEybM0Yr7zQyIN708Y0tC14H8hzDk428MgchCouiRYzUuA6nZOcEuOauu4A4pNTZGGc3wgDfW/bwIvLct3/RR0xXP/Jgyt5QRACFaV6JTdTuZO//kIIplIFdJwVcTbg4TxtLv5LmDwQR7aIhb7eyPKfy1GiKsLONG8BaRcczYZ93QUlKkdosZrZIIIeRVQjycJgzXepYS3QqGpFPKqBBBCh5QoL713BqLA1xRp+F90B/aDNNyTWGBKS7jC8j7/28hfb0Qh2JyQhz02gma7za6h017/zmlFGm4DpFOY/lXPhEz06QnajkJ70t7XTHhefRE+WOyp7dIJ3SdVWyPOoEXO+mD/HRSllRDl1Sck12O9d/0IMYh4GR5Mrb/F4JnLpQyssSkxu5gQ8rqGwY4+ldcxQrnMtCgq2xNe9v7OAoDAzsV5slSddh9hPeylqQ62vSENp6mf1m6qNCmvg4kSKajyukO10ejnQxyyOdCUfCkcBmG6odVRm/S0x3KzgRIcjXu5H88VhqFjT1h6SVFeyxvCt2sVYfdXbZyGYwSRht/gntOGNNzPMImvP/Nag3ITHudg3UooL1tQog5tscyDl3UXOB6HEJBI1WGnD/ue16bu6lIci3FLrTP8Jap9Sx1M/iyqGQkKk7+E2OSDLhbuhXRmyEaSfhnve8A1/tBz4M4DrZQFC7oUQHkx1ctGpLiSsAA2EuLa44V/HKFKN6NeUkWBfNebCSnwDrp3Tg1RYlJN/kEeQz2YvOYKLS8hyqtMpSifg5PwXpwXu1GJjrdljCX8nnelOli7HXixrLzuVPXJoFWSEVM3Biwc5t85ybD3kkW5g7sEWmvUIg7+PeWBuJndLFAcdfTQV9kBYfIDEpTv6oSeUBKlCNwufUe61m4GtU3V8pPjEtrFt9FcX2EAOmJ0780+kYb9UYxfjklpNBNIsBDejkvWeyVy0kPAw1ptfnIRGinDKFRrt5P51ev1/LQhDXk8EjARyb/zK8NEn+XxFqQT0QVKiO+Lzc81Ml8DJj+IQjF2iJBPrwQdqG5x8tXCbPIuoGcd9VOGh2+EYPKLkG9soXbvaYHJjzUIJTEp9IgGe4gLZZ8X2iOLkOt+Bzm3sDIF3zFPOGf9Pxid9cpuol4v+jC/EiU1psrrewDEXoQX+QqIEaKSiZBXsIen0Z7Wz3F4ipq//uQme/ishaqVp9hOEIragtzR3IgIfF/C5l+V8l+fwurYPkStjobn3kXFtUnwvAarNp5KKeV1C9WxueOPAqErvd4WgBA5nxLLj+mCXhSAyU8Dy3m9fFeeiJDfEVJeHyFR3xv5xoEhRNdT9kGd3kJhEM8DhBpsUeELjU3HAwa1fPyZF4gHtjdSJj0ilKUgPVA2sBfWLK+doWlDGuaoffknIWubJsNbknhoi1qznE5WuXTS9x4smC2gfN/GdY8lsEaQg91GfVLXJiPlvB12beHmfcdSuKazMMPD90C85gKCfpqd79rY07g0LBDmLepgm/fR7fwLgWaIZeQsOwquva09zDkS624mkLyqCWuDy05eFeidVka+rm+TFcWqtIamE1pcpQ2ssQ31Ywpa2/QUQadzwovlfg83mZT39SOUTQ51Nf9QbSwJQVsx6NzcUXC7m6m8coQyvEHI67Kpcd5mdK0VKVwmYWG7YKHVKNmuUoLSPYjoxEyQhi6v3HoNiK31OD8gjVu93mF3ekJwYdvKc+juOmHibc1e06sJBz73TvtMyHi+jgyGFoM5D/uetPd6A9bPa0QLlTqk4WFgmAjjeY2OAKXCUO/3BDuoegtCj8S1NkR91oOEfAua9NyxieEM77xtj1CoJET+aQBS9DU2F0AasgX7ISWM04Q0PM8A0cl7bVwDYmuek9sMPV5m9LhY0KPJEwr1TWHvay7QhXF7X/paQ6mUxzY0nP/YxBAd5wkPx969J2Wdy3/yYs4nip+gQIWzySKSVF7aStghAjqWEgEQtqKC27cCKkqGya/R5Befo/zlRYJItBKR8Xan6+xFbPWmyquInGsuhZyG9xjkQXidXesTadiDaKEkDLijhRWCvvcLDL3DavtsKgzaOL1z7WEfZ9iHkAEoRzQZ1ce9/rZBCLElbWFDPXl3GiRZD4sQpdKCRO3p6LclSR/FLN498SJnhKhzs1F70myvwaIQ8CQhr6tESLiNPdc5mixRU7BGAe9BpQyssYzHw7ANShDO8Glorqva2Dxsw/f6XoDeYUEN4g2AdJMoe7GJTGBUzPssH7LjRq05f7tOx3nVJC8sddB4fvnjq0An/Rz+RXoRUSwoXezbFfmVVkEIvU1AgauAzlsYcA40t9qLqq1wt5mHaU9sMikQhVZ+T1RRzmcJMDxwE9FxKVJe2krdMUSuuNr8fo6avHrPr6+5u2oDRJQMQ7X/phY+OeE9q6CQvxP2vmairCWO8Dw/yzhDAgXeSxs1CXxS7/lS6XUtrdpaiQe1ImZ4kIZWxIjI1yMozLTxHOMo/BO0hfeYJpLJ8rz/MkQnbD/e6RjLoi4AAA+1SURBVJFIMPOzXSGgJPV7XIRSA5UypOG51D7H5EB7GZ2/6z1/C7URkkIaPkHoUSuCPbs2OEPLwoQDN8UU5rLonbxpuM5LRKWXJCaLVCuv1YlVohwCJr9aDJOg73UfVbu1ielBvTDg9zEzxAVNLK7lrgAPCM0Nb7bPaLPlqX3OHcLKa0yKPC+dc5kg4HXqVjorNQBr6HV1EdVAmiivIijToj4QTyQFL0VjNQe56nzE3kOOmH++EqjvKiPs2TWtTBZJU17bo0dTGOX1uKp06o1aeTFf4Jl0vyUVLfGnX4aCw5uENMxTX7RLUegreUiU0OYl77mey1Dyd0Hl1QqkZxo2tL6/IYIHGs+x1UAZ3E37zzZE742IcO/q71yNWh6VBL2ve2NoP6TfyVYhAG31qPRUprxk4vZHh2CzKBBCKq7mi5wkv1U4/2VyAP9IxbVxKi++1uEhOgL4USpfgg4q5ykeXsUTDrIFABvjUxLG0OvwKkMmiSLB1Y8IULz/vBBMfpqq1CZGFarl9/gbQYNTr5kfUNSdj3DdtFAp0TyBOf8W5AHZEHoxI7EQwvSvOjVmSiTmdntamMA3rMzBYR6nJcWhkh08XJBSdTWLiSjWImSSgkJ7VpCt3kbeNemM8jnyJqYasqkXqfh2W5/dk9ekd216kL5DHbFbIp6vFag2rSTY6uihiCM/eYL9LzTYXwWa86FpzjUlBfyRozqVRSH7V+2v4iVz5AnaB1DfZjXj04fWhzF3T7Y8hcKvV8lTSTzXtCqoqBYiT35BmMFjNpo6JpVhQ3ufbjH7NUQLZgpXv5V6mOUaHKI7haBxq3XdiUSy3BJD7mvvEC2X/NQHHky8h1ZE938vIj2myusp2lNZyNDwpVhYxMUAG5ETvlt7vitOpete75QICpiDhruej9HysOgQdeuu3ohAcek2FNfUIE1WYFB4SVB5adDGnxPaRZlzrrujnY5puFT/+RQfyK8W6p78pRDS8BEgjaM+SPV3DwAtkpSxqRXCBEDnVYTtUN7wdF4P6yneRjRM+XakTzoiD96XDInIlVdP1JiEZZNftcnhm344ZMvCFFJhUHL5mBRXFw/5aUnJN+6cQijSXJVDVFJ58bv7AKzXSQqrsFGyTpVGpiZhLy4Stnys91GCwIHRMcGl+bu3Rp2WJG2UNgA6Cz8Ltxb6wiC/y5+5mNIs7cHz0s+wiaqUL/zJRxRBLNm/eoj+NHrjvUvt4JsxekDLrwcrsixI4Ot348wnxFY+4gr4HGi4jqV3VoyAMsvtbXZyjWdqoXYrzwsqL77+5Xi3Sejp5VVcrwrzRd7kc7Pre7hfqCWHG604J8ZaH4vax4wSXDf6O95Ah4goKOqGEIrX1GA4Pu31VTXuX5OAP9ig5EM09LQzIaaCLphHVYVSqVksz79QFdj8KogjTxU+TP0sSNcKPjQCbrgcKS0LSnojUtIlYS+TQ8H3EeO1VSP3sibx60WB9tStV3JNUmJ83Ty8oynCOb4CGOkbHWbcGXuiIcJT3/t/CGkYtwewAXUjliykv1AQPMbktQcAUWwbAmTmUdPePPZ0S8pFYQ3r6N1liAxFqrw0Lf4xIcAa2ru5uknNF/WkHAV3/nL8fX9aKKWYlNe3CIWYKC+trPSC8M7lYIR4vqMkdSmi55kE0ESt59H/NgjGSxTF4nqNnekJseRjCG95u/L2gYcyJwJv4RnwFDba6Pr/VhIAaxTpPe8ec+6FUxUXRDCfHxBVnSVkQHZEKKzVIMrBIeKtVPsaezjyMa3J4VF7lhZp/pEIQxRDwuS7xgyR5OucBq9xOuqc8sSmHjV83qYmbjo31IEOv0ZSS1EpyuUd4sjDqpJbXEx5IennKlLdz9E+IdvdQeZcjgAsw2CYRxFP9yrQFgFC0Zznu/hddIdh9yYZC8UIvMsuPjY6F8pOFygK14pzcBOAAxaxwfwngsLl0VR3mhMIF3dGUXjBYO+xcj0FXeIPgrGdRnE90WE4m2bT883GmRW5M2PBqhhLm9MOuPn2I767Zigv5tZ7Ax5Qf7B+RJn/sj2eSjeB5+qN+z8FYbsPYO23RuDdVNtYOneX8xnCcsdfarT2kDQOWlF8fbMH2VrLY/IaCLWMB6tOSOtc1F7NpfkpCc/36+D987PRtXI5HIaMhLEwFl5l3GFD/axd4FlLcx7+lwiOJc6kzmjVI2E0LsYB/w0iNmkWPpv0mn4/Trb8jthEYeq7CggvxR0v555G93ru60lANdcWbMTYyDN4GvezHA6+davIBshXbQEW8l+CXPXPQEo+gj5iU4HEWlSjiDcqxVVGwrW/z4WnD4WTI6DpqmUkLADH4uPoHzeUmueZrP/lseHOxnt4HxvTjmD++XuODICO08rrEhUcXFXL8LwqAb3TBgC5aQu2TCmD33N5Ia9yEBSi3WQihCSKXSUMvlnUyovj+dNDNKC0ccgOasLirwcYcEOIV+L/96Mka1RegctKcguudzlCTP/Gz7dIJoEVYQo8qk9RqzMLh7JdBzoe1YYpeazwNatQTjV6BxLNKIMcSmXKM34IJvb78c7PQpjvQNzXzlBwO0I57YuQxknwMG9A2MO1qj/Cd9oRGw06EvBkAFYIjmrcB8PGFDiwEP3xmtnJV8upEaBlv6HaOcvg/nIw0FsjWM/tRbw1bCtFDdbQL2aDEBBQHWJ8kwocVRMorbZHaMcLF/+aeOIuiygnU6IY71nIdU0SrHWK2sJjxfUwNZn0u9mZxX5cTAXi9Q7shVA+06CIpsBY0MbDZCTLp8Jo+K7OgRSVp6vnfBbovHIhWnK8amiI6c9+Ca6+ZjdOtZCfmhyQJMGPYfmcagPD5EPeWwcYweXM6/K1L0eSTrCiXDQtQBsFDRlq5fUQcj3Nav9xiAcazyzo78Ni6g/+PVt4AXI91AEI/3xR5V5sz33VkjhDEnz4PU5ufpAFx793ZowIz7JnLu0Efl+jDX5OQCoji8LS04Te/aSEdPLV1x6OKIbEHi1RDvcKMtStkHm5M2Isv0mj8J4fFjXbEqNojiOFFFR5XYmXGzeVj0WH5uwqC17/eTxAEJsT/6E0nPtzKMmBhh1Wm7HQHia0WZjFZhEC7l8xF4jXat0SROIyGPgaD2BNBgE45YjDco7Q+38CxNZJUV4D4TFLz/mnQPYFfU79bpZy5PYmru00Ka8F8FJVHMqrO/o/2QFejD4kCtCynZrIQ3ct3bdd47C4CL97nCBKi7/jPYAGtooYESjlXeg83Vgwq5j0FOIWHedEiDpsL1apS6W1VggOzBaKNHwvRMh7OxRGEiiK9DyMMWwvUwtI8DShKvMB76mXMAVaexQ9L1OpM0IshYLjAnpeDPncvQnNFy1CiT1YJ5+lLesf0e8nhw3bKvziXsF3/zahC9yrTP+nKsSovQKAM/y8j/Wot1cxyw/8ZE3aWCebh/QA8mSsLRJisb/eswZUAtoyDUc+sCxMMP0DjPTOHqCIn3W9siEJ8pIg2oF4Pg5vnpGGb4VUXgtxYOWaxKyxAllEtSw15l9cDfD5icLw0HGqrS170pSX7YH0f0x8hUqIrYI/v4tqKzpdkhUYP3crcq6DQ7QdsTzMGh8JhDv1ATxGEEpuun70nJwVYXf0BUCidqUzy2ow5x0BailnMHlfyusOKPtI15RFGyKoVWFTIeCycTcfo0kZAsXb6N61MrkF+bnDBKr6eUNcjUV+f8KUFyuuuQidbOrpSSVtULjz8GvVxnheXIKRVzbm4Q7UMgVRXJan8acLOvqrEKikROHu/ZvRQLDGc/aBMVqIiK1Fe2DHwOPMVfHCvMCO9YGozkKG/tbUxcRzGzlMfsuAIANOjDOrRDOU129QsNpICfFz7YED9i6hLrSzUdjaDWGhJCxyLyDhU9TRtNABakUczj2QinwLS4jF6uWb/Az1ZLmQlmgeXsJg4VIE/o5/A8yQa5L31QKDcl2EnBdHCHji7xyDEqFunv3AlHlDALXPwoXB2PI7RA3WUNgYx4fwurTyeqsJ7drZpb+Okrsln27tY6pSU3IqJb5LhvU6Z2IT/LOJyksrCQ7VzVAV6qYVPBx+cVjS7nV+piq1OzZxApbaqdVZoGf7EXyP64aYd96bv0C4cT7lmIuCUqD7fYyIpXMx5qx3RKnG97RPC8LP6X3mxcTuPgHdIJYmcMbe6Co/h8K+hUx+IqUaKZS9okYa5qi52sQQB65Nif/lY2rXzhaRwkZ736eVVqIF+zLu+XjDxDCHIW7E819PG7AYAyFwLWb5L0EhtLbn8MzFaGDo6/VGony+J4yb9nyYTc/B//4kDuTOIWuL9Dtai7g54xC3VvGEGJupKhiR4xLwLjlPcxQhkjPxx7LEhN5DogpDc++VLvA+TMJmrWDEjvtwXBshuqBKZxH1TbpagHVDf+4dVSkeda22pyJkWC+R9WhX+X93Tk4EMKUzHZy5JrMndAMj/M2wdr35yIKKh1FEav69CkuXHeyMvE3eYN65GPk4sMNcgFxCFHIhjIs/BCAIVoJNZI9DdOAiGFxxykUoYN6VIkj7Yw8/i5/PZPL/yYvAO3ijWq8gRxip9+6GJP5IfaEKId1vG1b+jjHxo62G/NIHPmvS9IHzNurRNG/fAdR7pmAYgigh7HIPNoBberAPwjA/NlBi1Zg3ql2nlpJuxYK5EE0SB1FrjWYm4WvlV3uByWOEqqA/63kzzVRmXkVVa/5fR23b5vAiWkJ6W7XyXd0RzuoZsSyNQtwWFX9xclzPWO/ZO9H76o6IVCa1ZQAo4U4hRpQyWsasHJXycmuyfo/Q2Y+Cm/0btDFfOSIl1g2W0hSPS1+PKLJE8dkRsPK2URXE1oyIDr3JYInvBLbwWR732pQvbxZYLP4Gr9nldVyD2BqqIbhUQtqE8730Qj7oIIRcJ9cxRuw6Cr1UZW79EKDWMhQaKcxZsMgvQl5kTaqTUkI1c9nIRlrG0ohgacDfBVG213G9j/Nw+I0G4OF6Q3G/41b8XEtYeVnUjsCEEucA1dYH6UZA5m8QeHaegxuRpB9ehevPj7TCE/5KVWp5XgFv5A1omXIkaqhc8twVKcyhEuZp+VVg2rsYBGDHgTAy7oMym9XkMOE8eOdPozB4GMJL66PdThxzb8UsqslQ+WZKEu8pyaKV088on310gPY+gceasNRXREx9gJAMxPcuFdEmWAbhwhGQ8yEjfIjbUHAV1cZ+vhoOzAHCshxQfStTse65sEbOx0/95/OgkM6EB3UCGPD3B5R/KBbFOvju7j7Rl2kZtbyTnlhH24IfbRhCoqPBB/gsQnXvoU5vBhT+D1D+i6t4ZRpdtgg1ebNhIHwKT/51fO8DyMmNRHTiIITDN8S77ZAyYyEb2YgDdNMdiM2piGxFkj76P+XHNYLxaRMZAAAAAElFTkSuQmCC",
+ "icon": "https://www.ndure.com/cdn/shop/files/720-x-720-Pixles.png?crop=center&height=32&v=1784617808&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#ac0e0e",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#ac0e0e",
+   "#213d46",
+   "#ffd700",
+   "#007aff",
+   "#ffc617",
+   "#6016eb"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "HelveticaNeueCyr",
+  "body": "HelveticaNeueCyr",
+  "found": [
+   "HelveticaNeueCyr",
+   "HelveticaNeue",
+   "Nunito",
+   "Akira",
+   "object-fit: contain"
+  ],
+  "headingGoogle": false,
+  "bodyGoogle": false
+ },
+ "banners": [
+  "https://www.ndure.com/cdn/shop/files/Web-Banner-1920-x-1080-2.jpg?v=1792039424",
+  "https://www.ndure.com/cdn/shop/files/Web-Banner-1920-x-1080-1_37e1305d-35bb-4119-a0d0-744136e5651d.jpg?v=1792039537",
+  "https://www.ndure.com/cdn/shop/files/Web-Banner-1920-x-1080-3.jpg?v=1792039619",
+  "https://www.ndure.com/cdn/shop/files/Web-Banner-1920-x-1080-kids.jpg?v=1792056201"
+ ],
+ "collections": [
+  {
+   "title": "1MRK",
+   "handle": "1mrk",
+   "image": null,
+   "count": 242
+  },
+  {
+   "title": "Accessories",
+   "handle": "accessories",
+   "image": null,
+   "count": 56
+  },
+  {
+   "title": "ALL SHOES",
+   "handle": "all-shoes",
+   "image": null,
+   "count": 1860
+  },
+  {
+   "title": "All Sneakers",
+   "handle": "all-sneakers",
+   "image": null,
+   "count": 756
+  },
+  {
+   "title": "AW'25",
+   "handle": "aw25-1",
+   "image": null,
+   "count": 367
+  },
+  {
+   "title": "AW'25 - Men",
+   "handle": "aw25-men",
+   "image": null,
+   "count": 182
+  },
+  {
+   "title": "AW26 + SS26",
+   "handle": "new-in",
+   "image": null,
+   "count": 641
+  },
+  {
+   "title": "AW26 - All",
+   "handle": "aw26-all",
+   "image": null,
+   "count": 282
+  },
+  {
+   "title": "Belts",
+   "handle": "belts",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "Boys - All Shoes",
+   "handle": "boys-all-shoes",
+   "image": null,
+   "count": 372
+  }
+ ],
+ "products": [
+  {
+   "title": "Men’s Colorblock High-Top Sneakers",
+   "handle": "mens-colorblock-high-top-sneakers-m-sn-urb-0012-nvy-tan",
+   "type": "Mens Footwear",
+   "vendor": "Ndure",
+   "price": 5499,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_c5e6f588-8136-441b-a619-05456d4bc1f2.jpg?v=1789965056&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_c5e6f588-8136-441b-a619-05456d4bc1f2.jpg?v=1789965056&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_15447c74-a5b6-4a6c-98fc-5b9d295e9341.jpg?v=1789965057&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_29ef8e84-999c-421b-a39d-89c9a9abfc95.jpg?v=1789965056&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_dcdfdbe5-f8c7-4004-973a-e575133e11a3.jpg?v=1789965056&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "39/5",
+      "40/6",
+      "41/7",
+      "42/8",
+      "43/9",
+      "44/10"
+     ]
+    },
+    {
+     "name": "color",
+     "values": [
+      "NVY/TAN"
+     ]
+    }
+   ],
+   "description": "High-top sneakers featuring a structured silhouette with contrast panels. Designed with a clean, modern profile. Upper Material: Polyurethane Sole Material: Man-Made Sole/Thermoplastic Fashion Silhouette: High-Top Sneake"
+  },
+  {
+   "title": "Women’s Contrast Panel Platform Sneakers",
+   "handle": "womens-contrast-sneakers-w-sn-asd-0001-wht-blk",
+   "type": "Womens Footwear",
+   "vendor": "Ndure",
+   "price": 4999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_5ab1e77d-6338-4fef-9ac3-4477d6d2c5cf.jpg?v=1790054463&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_5ab1e77d-6338-4fef-9ac3-4477d6d2c5cf.jpg?v=1790054463&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_4412d743-eacd-478c-b639-84cf3fe22dd3.jpg?v=1790054463&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_5771cb2c-81b6-4f5f-a910-515cafaf853a.jpg?v=1790054464&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_cf84f2f4-50b2-49bf-bde1-0364f36a18a0.jpg?v=1790054463&width=700"
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "36/4",
+      "37/5",
+      "38/6",
+      "39/7",
+      "40/8",
+      "41/9"
+     ]
+    },
+    {
+     "name": "color",
+     "values": [
+      "WHT/BLK"
+     ]
+    }
+   ],
+   "description": "White &amp; Black Platform sneakers featuring soft tonal contrasts and a clean, structured sole. A modern essential that combines everyday comfort with effortless style. Upper Material: Polyurethane Sole Material: Polyur"
+  },
+  {
+   "title": "Women's Color-Combination Sneakers",
+   "handle": "womens-color-combination-sneakers-w-sn-don-0024-beige",
+   "type": "Womens Footwear",
+   "vendor": "Ndure",
+   "price": 3699,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_185ad594-9b14-4363-b385-2a2b019857d9.jpg?v=1790139847&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_185ad594-9b14-4363-b385-2a2b019857d9.jpg?v=1790139847&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_02e2a370-52d1-49ab-a50d-664391aaff1e.jpg?v=1790139847&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_bf164614-a20e-4223-8970-793f42cae551.jpg?v=1790139847&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_5d61889b-3f84-4568-a365-a387a059573e.jpg?v=1790139847&width=700"
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "36/4",
+      "37/5",
+      "38/6",
+      "39/7",
+      "40/8",
+      "41/9"
+     ]
+    },
+    {
+     "name": "color",
+     "values": [
+      "BEIGE"
+     ]
+    }
+   ],
+   "description": "Women’s beige low top sneakers with a sleek, low profile silhouette and all textured finish. Versatile for everyday wear and easy to style. Upper Material: Mesh with Synthetic Sole Material: Man-Made Sole/Thermoplastic F"
+  },
+  {
+   "title": "Women's Everyday Sneakers",
+   "handle": "womens-everyday-sneakers-w-pr-tor-0008-burgundi",
+   "type": "Womens Footwear",
+   "vendor": "Ndure",
+   "price": 3999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_3c3418d8-d2f0-497d-8f30-a595f2ae6d89.jpg?v=1790054389&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_3c3418d8-d2f0-497d-8f30-a595f2ae6d89.jpg?v=1790054389&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_f976276a-7180-48ca-81a1-15faa85d2f41.jpg?v=1790054389&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_02ee5ce6-2aa7-4866-9f60-dd1c7efc3d20.jpg?v=1790054389&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_7e0148da-f7f2-41bf-8a8f-1669562ab5c5.jpg?v=1790054389&width=700"
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "36/4",
+      "37/5",
+      "38/6",
+      "39/7",
+      "40/8",
+      "41/9"
+     ]
+    },
+    {
+     "name": "color",
+     "values": [
+      "BURGUNDI"
+     ]
+    }
+   ],
+   "description": "Sleek slip-on sneakers with an engineered knit upper for a streamlined finish. Designed for versatile style and everyday wear. Upper Material: Flyknit Sole Material: PVC Silhouette: Slip-on Sneakers"
+  },
+  {
+   "title": "Men’s Classic Dress Loafers",
+   "handle": "mens-classic-dress-shoes-m-bf-fab-0003-black",
+   "type": "Mens Footwear",
+   "vendor": "Ndure",
+   "price": 6999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_89f3bfa4-49ff-43d0-b46c-526240757953.jpg?v=1790243719&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_89f3bfa4-49ff-43d0-b46c-526240757953.jpg?v=1790243719&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_b46a533a-c1f2-4bea-aae5-bdfc92a9fa31.jpg?v=1790243719&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_2c06406b-cce1-4206-b041-49fcbe70f7f7.jpg?v=1790243719&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_9761ac59-20f9-40a1-b16d-b321c0df634a.jpg?v=1790243719&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "39/5",
+      "40/6",
+      "41/7",
+      "42/8",
+      "43/9",
+      "44/10",
+      "45/11"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "BLACK"
+     ]
+    }
+   ],
+   "description": "Elevate your formal and semi-formal wardrobe with these black penny loafers, featuring a refined croc-embossed vamp and a sleek, tapered toe. The easy slip-on design makes them effortless to wear while keeping you comfor"
+  },
+  {
+   "title": "Men's Mesh Slip-On Sneakers",
+   "handle": "mens-mesh-slip-on-sneakers-m-pr-alp-0001-black",
+   "type": "Mens Footwear",
+   "vendor": "Ndure",
+   "price": 3999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_33e1c078-64e4-47df-b971-e4ac32f824cb.jpg?v=1787125280&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_33e1c078-64e4-47df-b971-e4ac32f824cb.jpg?v=1787125280&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_3747f397-f46d-4cf5-92fd-8db8b30bda3f.jpg?v=1787125280&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_a2b4e307-f218-4756-af98-b88e4cbe4047.jpg?v=1787125280&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_352bf66d-63d2-4902-94cb-939caafe09b2.jpg?v=1787125280&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "BLACK"
+     ]
+    }
+   ],
+   "description": "Men's mesh slip-on sneakers with a minimal, streamlined design and a lightweight breathable knit upper. A pull tab at the heel adds easy on-off convenience, while a chunky contrast-tone outsole adds a bold finish to the "
+  },
+  {
+   "title": "Girls’ Leopard Print Sneakers",
+   "handle": "girls-contrast-sneakers-g-sn-cld-0008-cheetah",
+   "type": "Girls Footwear",
+   "vendor": "Ndure",
+   "price": 4299,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_88d0e800-eeba-47bc-b5eb-843a4bfc2b79.jpg?v=1785303837&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_88d0e800-eeba-47bc-b5eb-843a4bfc2b79.jpg?v=1785303837&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_5e60d129-7d52-4a9c-8878-5ccb92f39a95.jpg?v=1785303837&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_18d977c8-1b23-4753-935c-8c24aa6fc529.jpg?v=1785303837&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_1faad6f1-9961-461a-a1da-e853dfa360f8.jpg?v=1785303838&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "CHEETAH"
+     ]
+    }
+   ],
+   "description": "Girls' lace-up sneakers designed with a sleek, low-profile silhouette and a leopard-print overlay for a playful, statement look. The lace-up fastening provides a secure, adjustable fit, ensuring lasting comfort throughou"
+  },
+  {
+   "title": "Boys' Ankle Boots",
+   "handle": "boys-ankle-boots-b-cl-jak-0017-brn-blk",
+   "type": "Boys Footwear",
+   "vendor": "Ndure",
+   "price": 2799,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_f479a15f-4dd8-4793-9097-441b1322517c.jpg?v=1784868924&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_f479a15f-4dd8-4793-9097-441b1322517c.jpg?v=1784868924&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_a32117a6-a63a-463a-8943-3cbc71a042fd.jpg?v=1784868924&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_76bf4bc0-6727-46b8-88ad-b12c75ded55f.jpg?v=1784868924&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_293ec22f-b584-417a-b1bc-e1aa7d17bbda.jpg?v=1784868924&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "BRN/BLK"
+     ]
+    }
+   ],
+   "description": "Boys' ankle boots designed in a structured silhouette with layered panel detailing and a contrast padded collar. Featuring a hook-and-loop strap with lace detailing for easy, secure wear, they're finished with a bold sol"
+  },
+  {
+   "title": "Girls' Contrast Stripe Sneakers",
+   "handle": "girls-contrast-stripe-sneakers-g-sn-ste-0008-wht-blk",
+   "type": "Girls Footwear",
+   "vendor": "Ndure",
+   "price": 4299,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_8bdebfa8-bb21-43bd-b830-c16fa57867ca.jpg?v=1788502109&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/5_8bdebfa8-bb21-43bd-b830-c16fa57867ca.jpg?v=1788502109&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_93fff388-d173-40d8-a1d8-5dfbd8af7937.jpg?v=1788502109&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_8e5470a7-672a-4506-aea8-8b7ba621ea14.jpg?v=1788502108&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_f5316ce7-fb5e-49bf-a606-63e243a5153c.jpg?v=1788502109&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "WHT/BLK"
+     ]
+    }
+   ],
+   "description": "Girls’ sneakers featuring contrast side stripes and a clean, round-toe silhouette for a timeless, refined look. Finished with a contrast sole for a modern touch, these versatile sneakers are easy to style with everyday o"
+  },
+  {
+   "title": "Boys’ NRG+ Sneakers",
+   "handle": "boys-sports-sneakers-b-sn-kno-0006-navy",
+   "type": "Boys Footwear",
+   "vendor": "Ndure",
+   "price": 4799,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_f786d155-34d7-48e2-9e39-8be538ee6ecc.jpg?v=1786527745&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_f786d155-34d7-48e2-9e39-8be538ee6ecc.jpg?v=1786527745&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_61a6852f-c734-499c-907b-7d1d64aeec7f.jpg?v=1786527745&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_afa24ec0-3ae0-415d-a2bb-cb97c7101e51.jpg?v=1786527745&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_55d27ffa-6c14-4159-8cd7-6b15be54110d.jpg?v=1786527745&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "NAVY"
+     ]
+    }
+   ],
+   "description": "Boys' NRG+ Sneakers made for active days and relaxed outings, offering enhanced breathability and a modern, sporty look. Lightweight and flexible with a secure lace-up fit, they deliver lasting comfort and ease of moveme"
+  },
+  {
+   "title": "Boys' Double Strap Ankle Boots",
+   "handle": "boys-double-strap-ankle-boots-b-bt-mun-0007-tan",
+   "type": "Boys Footwear",
+   "vendor": "Ndure",
+   "price": 3999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_f04df5c6-3007-49f3-8594-9b96eb64f550.jpg?v=1788505759&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_f04df5c6-3007-49f3-8594-9b96eb64f550.jpg?v=1788505759&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_b0bf230c-8aa6-4ef1-a14e-0dd57bf24502.jpg?v=1788505759&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_2113ebf4-46da-4e39-bdb4-f2ef9f7d34b8.jpg?v=1788505759&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_3980431f-e656-4318-a030-7c32a71de37e.jpg?v=1788505759&width=700"
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31"
+     ]
+    },
+    {
+     "name": "color",
+     "values": [
+      "TAN"
+     ]
+    }
+   ],
+   "description": "Classic brown ankle boots designed for comfort and durability. Featuring double-strap closure, contrast stitching, and a cushioned collar — perfect for active boys and everyday adventures. Upper Material: Polyurethane So"
+  },
+  {
+   "title": "Girls' Contrast Sneakers",
+   "handle": "girls-contrast-sneakers-g-sn-qnt-0007-blk-lil",
+   "type": "Girls Footwear",
+   "vendor": "Ndure",
+   "price": 3499,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_2d902782-83ab-42fb-aa82-68dee9a857fa.jpg?v=1788507002&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/1_2d902782-83ab-42fb-aa82-68dee9a857fa.jpg?v=1788507002&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/3_7bac4f78-4fe3-41c6-a707-97846b1b2e00.jpg?v=1788507002&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/2_fcbb9983-ec84-47d9-add6-c1ee0dfb9745.jpg?v=1788507002&width=700",
+    "https://cdn.shopify.com/s/files/1/0371/5416/0772/files/4_393e9b92-0a5a-4ac7-a947-901d807c2e02.jpg?v=1788507002&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31"
+     ]
+    },
+    {
+     "name": "color",
+     "values": [
+      "BLK/LIL"
+     ]
+    }
+   ],
+   "description": "Girls' contrast sneakers with a playful color block design. Crafted in mesh with synthetic overlays for a breathable and lightweight feel, making them ideal for everyday wear. Upper Material: Mesh witth Synthetic Sole Ma"
+  }
+ ],
+ "productCount": 2251,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  }
+ ],
+ "storeApps": [
+  "Loox",
+  "Omnisend",
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:33.354Z",
+ "warnings": [
+  "Heading font \"HelveticaNeueCyr\" is not on Google Fonts; a close fallback is used."
+ ],
+ "overrides": {}
+}

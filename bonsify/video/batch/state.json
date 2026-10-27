@@ -1,0 +1,1568 @@
+{
+ "mushq": {
+  "n": 3,
+  "name": "Mushq",
+  "url": "https://mushq.com",
+  "brand": {
+   "slug": "mushq",
+   "name": "Mushq",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 415,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://mushq.com/cdn/shop/files/Website_logo.png?v=1760954922&width=300",
+    "mode": "as-is",
+    "w": 400,
+    "h": 91
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#e95144"
+   },
+   "apps": [
+    "Google Analytics 4",
+    "Instafeed"
+   ],
+   "banners": 4
+  }
+ },
+ "zellbury": {
+  "n": 2,
+  "name": "Zellbury",
+  "url": "https://zellbury.com",
+  "brand": {
+   "slug": "zellbury",
+   "name": "Zellbury",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://zellbury.com/cdn/shop/files/zellbury_logo_white_2.png?v=1776142797&width=500",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 54
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#1e2e46"
+   },
+   "apps": [
+    "Judge.me",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "sana-safinaz": {
+  "n": 1,
+  "name": "Sana Safinaz",
+  "url": "https://sanasafinaz.com",
+  "brand": {
+   "slug": "sana-safinaz",
+   "name": "Sana Safinaz",
+   "ok": true,
+   "flags": [],
+   "products": 6,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://sanasafinaz.com/cdn/shop/files/Sana_Safinaz-1_1.png?format=webp&height=104&v=1770731884",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 44
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#1e3c32"
+   },
+   "apps": [
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "afrozeh": {
+  "n": 4,
+  "name": "Afrozeh",
+  "url": "https://afrozeh.com",
+  "brand": {
+   "slug": "afrozeh",
+   "name": "Afrozeh",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 493,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.afrozeh.com/cdn/shop/files/Layer_1.svg?v=1776165974&width=2005",
+    "mode": "as-is",
+    "w": 400,
+    "h": 161
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#108474"
+   },
+   "apps": [
+    "Judge.me",
+    "ReConvert",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "edenrobe": {
+  "n": 6,
+  "name": "Edenrobe",
+  "url": "https://edenrobe.com",
+  "brand": {
+   "slug": "edenrobe",
+   "name": "Edenrobe",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://edenrobe.com/cdn/shop/files/logo.webp?v=1698911329",
+    "mode": "as-is",
+    "w": 400,
+    "h": 74
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#530c0c"
+   },
+   "apps": [
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "j-junaid-jamshed": {
+  "n": 5,
+  "name": "J. Junaid Jamshed",
+  "url": "https://junaidjamshed.com",
+  "brand": {
+   "slug": "j-junaid-jamshed",
+   "name": "J. Junaid Jamshed",
+   "ok": false,
+   "flags": [
+    "logo is square or tall"
+   ],
+   "products": 6,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.junaidjamshed.com/cdn/shop/files/logo_black_-_wania_saleem.svg?v=1765460151&width=100",
+    "mode": "as-is",
+    "w": 400,
+    "h": 701
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#b31f1f"
+   },
+   "apps": [
+    "Judge.me",
+    "Boost AI",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "lulusar": {
+  "n": 7,
+  "name": "Lulusar",
+  "url": "https://lulusar.com",
+  "brand": {
+   "slug": "lulusar",
+   "name": "Lulusar",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 2782,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.lulusar.com/cdn/shop/files/LOGO_Lulusar_for_website_100x.png?v=1725270554",
+    "mode": "as-is",
+    "w": 400,
+    "h": 60
+   },
+   "colors": {
+    "primary": "#604080",
+    "accent": "#613883"
+   },
+   "apps": [
+    "Klaviyo",
+    "LoyaltyLion",
+    "Swym Wishlist",
+    "Boost AI",
+    "Elevar"
+   ],
+   "banners": 4
+  }
+ },
+ "beechtree": {
+  "n": 8,
+  "name": "Beechtree",
+  "url": "https://beechtree.pk",
+  "brand": {
+   "slug": "beechtree",
+   "name": "Beechtree",
+   "ok": true,
+   "flags": [],
+   "products": 11,
+   "productCount": 1554,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://cdn.shopify.com/s/files/1/0488/9201/8848/files/logo_UHD_60474f28-144e-4cbd-9151-c7a78f8cbd1b.png?v=1636350495",
+    "mode": "as-is",
+    "w": 400,
+    "h": 57
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#f70000"
+   },
+   "apps": [
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 0
+  }
+ },
+ "borjan-shoes": {
+  "n": 9,
+  "name": "Borjan Shoes",
+  "url": "https://borjan.com.pk",
+  "brand": {
+   "slug": "borjan-shoes",
+   "name": "Borjan Shoes",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 4987,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.borjan.com.pk/cdn/shop/files/200-x-100-px_275f4c30-848c-456c-8815-f6f614f7e92f.png?v=1759384800&width=600",
+    "mode": "as-is",
+    "w": 400,
+    "h": 74
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ff0000"
+   },
+   "apps": [
+    "Judge.me",
+    "Google Analytics 4",
+    "Instafeed"
+   ],
+   "banners": 4
+  }
+ },
+ "sania-maskatiya": {
+  "n": 10,
+  "name": "Sania Maskatiya",
+  "url": "https://saniamaskatiya.com",
+  "brand": {
+   "slug": "sania-maskatiya",
+   "name": "Sania Maskatiya",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 1468,
+   "currency": "USD",
+   "logo": {
+    "from": "https://saniamaskatiya.com/cdn/shop/files/Group_1697.svg?v=1767787086&width=130",
+    "mode": "as-is",
+    "w": 400,
+    "h": 127
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ec0101"
+   },
+   "apps": [
+    "Klaviyo",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "hush-puppies-pakistan": {
+  "n": 12,
+  "name": "Hush Puppies Pakistan",
+  "url": "https://hushpuppies.com.pk",
+  "brand": {
+   "slug": "hush-puppies-pakistan",
+   "name": "Hush Puppies Pakistan",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 248,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.hushpuppies.com.pk/cdn/shop/files/HP_logo_cropped-Picsart-BackgroundRemover.png?v=1744109441&width=1585",
+    "mode": "as-is",
+    "w": 400,
+    "h": 119
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ff5a5f"
+   },
+   "apps": [
+    "Findify",
+    "Mailchimp",
+    "Google Analytics 4"
+   ],
+   "banners": 3
+  }
+ },
+ "khazanay": {
+  "n": 11,
+  "name": "Khazanay",
+  "url": "https://khazanay.pk",
+  "brand": {
+   "slug": "khazanay",
+   "name": "Khazanay",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.khazanay.pk/cdn/shop/files/khazanay_logo_black_1.png?v=1717564008&width=175",
+    "mode": "as-is",
+    "w": 400,
+    "h": 62
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ec0101"
+   },
+   "apps": [
+    "Judge.me",
+    "Growave",
+    "Searchanise",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "PageFly"
+   ],
+   "banners": 4
+  }
+ },
+ "metro-shoes": {
+  "n": 13,
+  "name": "Metro Shoes",
+  "url": "https://metroshoes.com",
+  "brand": {
+   "slug": "metro-shoes",
+   "name": "Metro Shoes",
+   "ok": false,
+   "flags": [
+    "only 0 products"
+   ],
+   "products": 0,
+   "productCount": 0,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://kxadmin.metroshoes.com/banner/Metro_logo.webp",
+    "mode": "white-cut",
+    "w": 400,
+    "h": 49
+   },
+   "colors": {
+    "primary": "#c02020",
+    "accent": "#fbb03b"
+   },
+   "apps": [
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "ndure": {
+  "n": 14,
+  "name": "Ndure",
+  "url": "https://ndure.com",
+  "brand": {
+   "slug": "ndure",
+   "name": "Ndure",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 2251,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.ndure.com/cdn/shop/files/logo_2_8576e595-38de-4ceb-a299-52968609c0b7.svg?v=1696359047&width=500",
+    "mode": "as-is",
+    "w": 400,
+    "h": 89
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ac0e0e"
+   },
+   "apps": [
+    "Loox",
+    "Omnisend",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "breakout": {
+  "n": 17,
+  "name": "Breakout",
+  "url": "https://breakout.com.pk",
+  "brand": {
+   "slug": "breakout",
+   "name": "Breakout",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 12,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://cdn.shopify.com/oxygen-v2/54813/134045/274674/4810263/assets/BreakoutLogoSVGWhite-DN4ogOnx.svg",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 90
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#4caf50"
+   },
+   "apps": [
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "ego": {
+  "n": 16,
+  "name": "EGO",
+  "url": "https://wearego.com",
+  "brand": {
+   "slug": "ego",
+   "name": "EGO",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 781,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://wearego.com/cdn/shop/files/ego_logo_for_web_170x.png?v=1788949340",
+    "mode": "as-is",
+    "w": 400,
+    "h": 188
+   },
+   "colors": {
+    "primary": "#ff8020",
+    "accent": "#d20000"
+   },
+   "apps": [
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "uniworth": {
+  "n": 15,
+  "name": "Uniworth",
+  "url": "https://uniworthshop.com",
+  "brand": {
+   "slug": "uniworth",
+   "name": "Uniworth",
+   "ok": true,
+   "flags": [],
+   "products": 6,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://uniworthshop.com/cdn/shop/files/Logo_Uniworth_navy-01_225x.svg?v=1786794324",
+    "mode": "as-is",
+    "w": 400,
+    "h": 50
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#c81118"
+   },
+   "apps": [
+    "Judge.me",
+    "ReConvert",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Instafeed"
+   ],
+   "banners": 4
+  }
+ },
+ "engine": {
+  "n": 18,
+  "name": "Engine",
+  "url": "https://engine.com.pk",
+  "brand": {
+   "slug": "engine",
+   "name": "Engine",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://engine.com.pk/cdn/shop/files/Engine_New_Logo-2026_white.png?v=1783411421&width=2445",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 85
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#f77b08"
+   },
+   "apps": [],
+   "banners": 2
+  }
+ },
+ "zeen-woman": {
+  "n": 20,
+  "name": "Zeen Woman",
+  "url": "https://zeenwoman.com",
+  "brand": {
+   "slug": "zeen-woman",
+   "name": "Zeen Woman",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 1534,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://zeenwoman.com/cdn/shop/files/Zeen_Logo_8e16d022-8842-41aa-ab83-ee9077979ef9.png?v=1792134517&width=240",
+    "mode": "as-is",
+    "w": 400,
+    "h": 163
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#bd091c"
+   },
+   "apps": [
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "cross-stitch": {
+  "n": 21,
+  "name": "Cross Stitch",
+  "url": "https://crossstitch.pk",
+  "brand": {
+   "slug": "cross-stitch",
+   "name": "Cross Stitch",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 2018,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://crossstitch.pk/cdn/shop/files/cross-stitch-logo-black_300x300.png?v=1685012628",
+    "mode": "as-is",
+    "w": 400,
+    "h": 37
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#d20000"
+   },
+   "apps": [
+    "Mailchimp",
+    "Hotjar",
+    "Google Analytics 4",
+    "TikTok Pixel"
+   ],
+   "banners": 0
+  }
+ },
+ "generation": {
+  "n": 19,
+  "name": "Generation",
+  "url": "https://generation.com.pk",
+  "brand": {
+   "slug": "generation",
+   "name": "Generation",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://generation.com.pk/cdn/shop/files/center_for_image_svg.svg?v=1780664112&width=600",
+    "mode": "as-is",
+    "w": 400,
+    "h": 61
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ff0000"
+   },
+   "apps": [
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "baroque": {
+  "n": 22,
+  "name": "Baroque",
+  "url": "https://baroque.pk",
+  "brand": {
+   "slug": "baroque",
+   "name": "Baroque",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 798,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://baroque.pk/cdn/shop/files/LOGO_PNG_V01.png?v=1689675712&width=805",
+    "mode": "as-is",
+    "w": 400,
+    "h": 80
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#d14444"
+   },
+   "apps": [
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Instafeed"
+   ],
+   "banners": 2
+  }
+ },
+ "dari-mooch": {
+  "n": 24,
+  "name": "Dari Mooch",
+  "url": "https://darimooch.com",
+  "brand": {
+   "slug": "dari-mooch",
+   "name": "Dari Mooch",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 119,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.darimooch.com/cdn/shop/files/DM_LOGO_-_NEW-01.png?height=106&v=1776151943",
+    "mode": "as-is",
+    "w": 400,
+    "h": 110
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#cb2027"
+   },
+   "apps": [
+    "Judge.me",
+    "Swym Wishlist",
+    "Hotjar",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Meta Pixel",
+    "TikTok Pixel",
+    "Consentmo"
+   ],
+   "banners": 4
+  }
+ },
+ "azure": {
+  "n": 23,
+  "name": "Azure",
+  "url": "https://azureofficial.pk",
+  "brand": {
+   "slug": "azure",
+   "name": "Azure",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 648,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.azureofficial.pk/cdn/shop/files/Azure_Logo_Final_Outlined-01.webp?v=1755865984&width=600",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 345
+   },
+   "colors": {
+    "primary": "#60e0ff",
+    "accent": "#e40202"
+   },
+   "apps": [
+    "Klaviyo",
+    "Judge.me",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "lawrencepur": {
+  "n": 25,
+  "name": "Lawrencepur",
+  "url": "https://lawrencepur.com",
+  "brand": {
+   "slug": "lawrencepur",
+   "name": "Lawrencepur",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 1064,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://lawrencepur.com/cdn/shop/files/Lawrencepur_Logo.png?v=1741671790&width=160",
+    "mode": "as-is",
+    "w": 400,
+    "h": 68
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ec0101"
+   },
+   "apps": [
+    "Judge.me",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Instafeed"
+   ],
+   "banners": 2
+  }
+ },
+ "kayseria": {
+  "n": 27,
+  "name": "Kayseria",
+  "url": "https://kayseria.com",
+  "brand": {
+   "slug": "kayseria",
+   "name": "Kayseria",
+   "ok": false,
+   "flags": [
+    "only 0 products",
+    "no usable logo (name will be shown as text)"
+   ],
+   "products": 0,
+   "productCount": 0,
+   "currency": "PKR",
+   "logo": null,
+   "colors": {
+    "primary": "#1d3686",
+    "accent": "#8b0000"
+   },
+   "apps": [],
+   "banners": 0
+  }
+ },
+ "cambridge": {
+  "n": 26,
+  "name": "Cambridge",
+  "url": "https://thecambridgeshop.com",
+  "brand": {
+   "slug": "cambridge",
+   "name": "Cambridge",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 4614,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://thecambridgeshop.com/cdn/shop/files/white-new-logo.png?v=5995425496145466413",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 65
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ec0101"
+   },
+   "apps": [
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "mausummery": {
+  "n": 28,
+  "name": "Mausummery",
+  "url": "https://mausummery.com",
+  "brand": {
+   "slug": "mausummery",
+   "name": "Mausummery",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 155,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://mausummery.com/cdn/shop/files/m-logo_200x.png?v=1761305838",
+    "mode": "as-is",
+    "w": 400,
+    "h": 270
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#c72820"
+   },
+   "apps": [
+    "Judge.me",
+    "Omnisend",
+    "Hotjar",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "TikTok Pixel"
+   ],
+   "banners": 2
+  }
+ },
+ "faiza-saqlain": {
+  "n": 29,
+  "name": "Faiza Saqlain",
+  "url": "https://faizasaqlain.pk",
+  "brand": {
+   "slug": "faiza-saqlain",
+   "name": "Faiza Saqlain",
+   "ok": false,
+   "flags": [
+    "no usable logo (name will be shown as text)"
+   ],
+   "products": 12,
+   "productCount": 1986,
+   "currency": "PKR",
+   "logo": null,
+   "colors": {
+    "primary": "#141414",
+    "accent": "#c16452"
+   },
+   "apps": [
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "tena-durrani": {
+  "n": 31,
+  "name": "Tena Durrani",
+  "url": "https://tenadurrani.com",
+  "brand": {
+   "slug": "tena-durrani",
+   "name": "Tena Durrani",
+   "ok": true,
+   "flags": [],
+   "products": 6,
+   "productCount": 168,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://tenadurrani.com/cdn/shop/files/td_logo_origami_500x_5f18065b-9552-4074-8de5-bc868897e5f9_590x.png?v=1631600635",
+    "mode": "as-is",
+    "w": 400,
+    "h": 46
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#5d68bf"
+   },
+   "apps": [
+    "Mailchimp",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Instafeed"
+   ],
+   "banners": 0
+  }
+ },
+ "republic-womenswear": {
+  "n": 30,
+  "name": "Republic Womenswear",
+  "url": "https://republicwomenswear.com",
+  "brand": {
+   "slug": "republic-womenswear",
+   "name": "Republic Womenswear",
+   "ok": true,
+   "flags": [],
+   "products": 6,
+   "productCount": 1424,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://cdn.shopify.com/s/files/1/0264/6795/8858/files/republicArtboard_1.svg?1310",
+    "mode": "as-is",
+    "w": 400,
+    "h": 82
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#dc3545"
+   },
+   "apps": [
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Meta Pixel"
+   ],
+   "banners": 4
+  }
+ },
+ "ethnc": {
+  "n": 33,
+  "name": "Ethnc",
+  "url": "https://ethnc.com",
+  "brand": {
+   "slug": "ethnc",
+   "name": "Ethnc",
+   "ok": false,
+   "flags": [
+    "only 0 products"
+   ],
+   "products": 0,
+   "productCount": 0,
+   "currency": "USD",
+   "logo": {
+    "from": "inline-svg",
+    "mode": "as-is",
+    "w": 400,
+    "h": 84
+   },
+   "colors": {
+    "primary": "#ff0000",
+    "accent": "#172351"
+   },
+   "apps": [],
+   "banners": 0
+  }
+ },
+ "house-of-charizma": {
+  "n": 32,
+  "name": "House of Charizma",
+  "url": "https://houseofcharizma.com",
+  "brand": {
+   "slug": "house-of-charizma",
+   "name": "House of Charizma",
+   "ok": true,
+   "flags": [],
+   "products": 9,
+   "productCount": 982,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://houseofcharizma.com/cdn/shop/files/Untitled_design_10_90x.svg?v=1714373826",
+    "mode": "white-cut",
+    "w": 400,
+    "h": 51
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#108474"
+   },
+   "apps": [
+    "Judge.me",
+    "Boost AI",
+    "Global-e"
+   ],
+   "banners": 4
+  }
+ },
+ "ali-xeeshan": {
+  "n": 37,
+  "name": "Ali Xeeshan",
+  "url": "https://alixeeshanempire.com",
+  "brand": {
+   "ok": false,
+   "flags": [
+    "crawl failed: Node.js v22.22.0"
+   ]
+  }
+ },
+ "bin-ilyas": {
+  "n": 35,
+  "name": "Bin Ilyas",
+  "url": "https://binilyas.com",
+  "brand": {
+   "slug": "bin-ilyas",
+   "name": "Bin Ilyas",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 917,
+   "currency": "USD",
+   "logo": {
+    "from": "https://binilyas.com/cdn/shop/files/1000x400_1.png?v=1690443707&width=400",
+    "mode": "as-is",
+    "w": 400,
+    "h": 164
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#c20000"
+   },
+   "apps": [
+    "Judge.me",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "mahnur": {
+  "n": 34,
+  "name": "Mahnur",
+  "url": "https://mahnur.pk",
+  "brand": {
+   "slug": "mahnur",
+   "name": "Mahnur",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 887,
+   "currency": "USD",
+   "logo": {
+    "from": "https://mahnur.pk/cdn/shop/files/Mahnur-Logo_1_copy.png?v=1757664165&width=330",
+    "mode": "as-is",
+    "w": 400,
+    "h": 113
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#dd3327"
+   },
+   "apps": [
+    "Judge.me",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "TikTok Pixel"
+   ],
+   "banners": 4
+  }
+ },
+ "nida-azwer": {
+  "n": 36,
+  "name": "Nida Azwer",
+  "url": "https://nidaazwer.com",
+  "brand": {
+   "slug": "nida-azwer",
+   "name": "Nida Azwer",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 1891,
+   "currency": "USD",
+   "logo": {
+    "from": "https://nidaazwer.com/cdn/shop/files/nida-azwer-logo_text_white.svg?v=1716888947&width=220",
+    "mode": "recoloured",
+    "w": 400,
+    "h": 88
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#b98b6b"
+   },
+   "apps": [
+    "Klaviyo",
+    "Google Analytics 4"
+   ],
+   "banners": 2
+  }
+ },
+ "maryam-hussain": {
+  "n": 38,
+  "name": "Maryam Hussain",
+  "url": "https://maryamhussain.pk",
+  "brand": {
+   "slug": "maryam-hussain",
+   "name": "Maryam Hussain",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 81,
+   "currency": "USD",
+   "logo": {
+    "from": "https://maryamhussain.pk/cdn/shop/files/4_300x_e8978ed7-9fb0-4ec7-a80f-e00ade792c39.png?v=1707224389&width=1445",
+    "mode": "as-is",
+    "w": 400,
+    "h": 276
+   },
+   "colors": {
+    "primary": "#a08040",
+    "accent": "#f26c4f"
+   },
+   "apps": [],
+   "banners": 4
+  }
+ },
+ "gulaal": {
+  "n": 39,
+  "name": "Gulaal",
+  "url": "https://gulaal.pk",
+  "brand": {
+   "slug": "gulaal",
+   "name": "Gulaal",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 429,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://gulaal.pk/cdn/shop/files/gulaal_logo_c9fcb64c-1bbd-4f00-a847-e7828568d9bf.png?v=1723186321&width=600",
+    "mode": "as-is",
+    "w": 400,
+    "h": 77
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#e60101"
+   },
+   "apps": [
+    "Wishlist King",
+    "ReConvert",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "chester-bernard": {
+  "n": 41,
+  "name": "Chester Bernard",
+  "url": "https://chesterbernard.com",
+  "brand": {
+   "slug": "chester-bernard",
+   "name": "Chester Bernard",
+   "ok": true,
+   "flags": [],
+   "products": 9,
+   "productCount": 168,
+   "currency": "PKR",
+   "logo": {
+    "from": "page-screenshot header [class*=logo i] img",
+    "mode": "as-is",
+    "w": 400,
+    "h": 43
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#e84e4e"
+   },
+   "apps": [
+    "Judge.me",
+    "Mailchimp",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "brumano": {
+  "n": 40,
+  "name": "Brumano",
+  "url": "https://shopbrumano.com",
+  "brand": {
+   "slug": "brumano",
+   "name": "Brumano",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 2762,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://shopbrumano.com/cdn/shop/files/brumano-logo_97949354-f4f5-497a-90e1-fb861164ab65.png?format=webp&v=1764595346&width=400",
+    "mode": "as-is",
+    "w": 400,
+    "h": 93
+   },
+   "colors": {
+    "primary": "#c0a060",
+    "accent": "#f54337"
+   },
+   "apps": [
+    "Judge.me",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 3
+  }
+ },
+ "workmenwear": {
+  "n": 42,
+  "name": "Workmenwear",
+  "url": "https://workmenwear.com",
+  "brand": {
+   "slug": "workmenwear",
+   "name": "Workmenwear",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 1171,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://workmenwear.com/cdn/shop/files/WMW_LOGO-05.png?v=1729658646&width=330",
+    "mode": "as-is",
+    "w": 400,
+    "h": 39
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#d0473e"
+   },
+   "apps": [
+    "Judge.me",
+    "ReConvert",
+    "Google Analytics 4"
+   ],
+   "banners": 2
+  }
+ },
+ "rashid-textiles": {
+  "n": 43,
+  "name": "Rashid Textiles",
+  "url": "https://rashidtex.com",
+  "brand": {
+   "slug": "rashid-textiles",
+   "name": "Rashid Textiles",
+   "ok": true,
+   "flags": [],
+   "products": 7,
+   "productCount": 927,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://rashidtex.com/cdn/shop/files/RTI_LOGO_black_8efb90cb-dfc1-4be3-984b-d254d4bb08d6.png?v=1756464018&width=600",
+    "mode": "as-is",
+    "w": 400,
+    "h": 75
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#141414"
+   },
+   "apps": [
+    "ReConvert",
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "khuda-baksh": {
+  "n": 44,
+  "name": "Khuda Baksh",
+  "url": "https://khudabaksh.com",
+  "brand": {
+   "slug": "khuda-baksh",
+   "name": "Khuda Baksh",
+   "ok": true,
+   "flags": [],
+   "products": 10,
+   "productCount": 616,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://khudabaksh.com/cdn/shop/files/KB_Logo_1200x1200px.png?v=1763816930",
+    "mode": "as-is",
+    "w": 400,
+    "h": 259
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#e84e4e"
+   },
+   "apps": [
+    "Tidio",
+    "ReConvert",
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "faisal-fabrics": {
+  "n": 45,
+  "name": "Faisal Fabrics",
+  "url": "https://faisalfabrics.pk",
+  "brand": {
+   "slug": "faisal-fabrics",
+   "name": "Faisal Fabrics",
+   "ok": true,
+   "flags": [],
+   "products": 9,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://faisalfabrics.pk/cdn/shop/files/logo_Faisal_Fabrics-1.png?v=1613538354",
+    "mode": "as-is",
+    "w": 400,
+    "h": 120
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#e2066d"
+   },
+   "apps": [
+    "Judge.me",
+    "Omnisend",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "salitex": {
+  "n": 47,
+  "name": "Salitex",
+  "url": "https://salitexonline.com",
+  "brand": {
+   "slug": "salitex",
+   "name": "Salitex",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 1276,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://salitexonline.com/cdn/shop/files/salitex_logo_1b0ddb09-4425-4c67-a62b-27d77534a49f.png?crop=center&height=92&v=1776690709&width=340",
+    "mode": "as-is",
+    "w": 400,
+    "h": 79
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#ab8c52"
+   },
+   "apps": [
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "coco-by-zara-shahjahan": {
+  "n": 48,
+  "name": "Coco by Zara Shahjahan",
+  "url": "https://cocobyzarashahjahan.com",
+  "brand": {
+   "slug": "coco-by-zara-shahjahan",
+   "name": "Coco by Zara Shahjahan",
+   "ok": true,
+   "flags": [],
+   "products": 6,
+   "productCount": 578,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.cocobyzarashahjahan.com/cdn/shop/files/website-logo.png?v=1769516677",
+    "mode": "as-is",
+    "w": 400,
+    "h": 123
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#dc3545"
+   },
+   "apps": [
+    "Microsoft Clarity",
+    "Google Analytics 4"
+   ],
+   "banners": 0
+  }
+ },
+ "al-fatah-fabrics": {
+  "n": 46,
+  "name": "Al Fatah Fabrics",
+  "url": "https://alfatahfabrics.com",
+  "brand": {
+   "slug": "al-fatah-fabrics",
+   "name": "Al Fatah Fabrics",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 5000,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://alfatahfabrics.com/cdn/shop/files/2-1-9-e1721721987885-2048x508.png?v=1737637977&width=200",
+    "mode": "as-is",
+    "w": 400,
+    "h": 93
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#198754"
+   },
+   "apps": [],
+   "banners": 2
+  }
+ },
+ "zara-shahjahan": {
+  "n": 49,
+  "name": "Zara Shahjahan",
+  "url": "https://zarashahjahan.com",
+  "brand": {
+   "slug": "zara-shahjahan",
+   "name": "Zara Shahjahan",
+   "ok": true,
+   "flags": [],
+   "products": 9,
+   "productCount": 1019,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://zarashahjahan.com/cdn/shop/files/ZSJ_logo_3f401257-835a-41ba-bda1-c02108d9b08e.png?v=1718884468",
+    "mode": "as-is",
+    "w": 400,
+    "h": 42
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#de3618"
+   },
+   "apps": [
+    "Mailchimp",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "qalamkar": {
+  "n": 50,
+  "name": "Qalamkar",
+  "url": "https://qalamkar.com.pk",
+  "brand": {
+   "slug": "qalamkar",
+   "name": "Qalamkar",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 293,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.qalamkar.com.pk/cdn/shop/files/logo_1.png?v=1748268287&width=4000",
+    "mode": "as-is",
+    "w": 400,
+    "h": 70
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#2db742"
+   },
+   "apps": [
+    "Klaviyo",
+    "Appstle Subscriptions",
+    "Omnisend",
+    "Google Analytics 4",
+    "Instafeed"
+   ],
+   "banners": 4
+  }
+ },
+ "mahum-asad": {
+  "n": 51,
+  "name": "Mahum Asad",
+  "url": "https://mahumasad.com",
+  "brand": {
+   "slug": "mahum-asad",
+   "name": "Mahum Asad",
+   "ok": true,
+   "flags": [],
+   "products": 10,
+   "productCount": 534,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://mahumasad.com/cdn/shop/files/small_logo_600x.png?v=1791290671",
+    "mode": "as-is",
+    "w": 400,
+    "h": 180
+   },
+   "colors": {
+    "primary": "#c0a060",
+    "accent": "#c60808"
+   },
+   "apps": [
+    "Mailchimp",
+    "Google Analytics 4",
+    "Google Tag Manager"
+   ],
+   "banners": 4
+  }
+ },
+ "xenia-formals": {
+  "n": 52,
+  "name": "Xenia Formals",
+  "url": "https://xeniaformals.com",
+  "brand": {
+   "slug": "xenia-formals",
+   "name": "Xenia Formals",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 409,
+   "currency": "PKR",
+   "logo": {
+    "from": "https://www.xeniaformals.com/cdn/shop/files/xenia_logo_24MP.png?v=1787940607&width=320",
+    "mode": "as-is",
+    "w": 400,
+    "h": 87
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#c31818"
+   },
+   "apps": [
+    "Google Analytics 4"
+   ],
+   "banners": 4
+  }
+ },
+ "parishay": {
+  "n": 53,
+  "name": "Parishay",
+  "url": "https://parishay.pk",
+  "brand": {
+   "slug": "parishay",
+   "name": "Parishay",
+   "ok": true,
+   "flags": [],
+   "products": 12,
+   "productCount": 122,
+   "currency": "USD",
+   "logo": {
+    "from": "https://parishay.pk/cdn/shop/files/Parishay-Black_Logo-1_cb2066b0-52eb-49bd-bd51-860248b6d95e.png?v=1674577513",
+    "mode": "as-is",
+    "w": 400,
+    "h": 93
+   },
+   "colors": {
+    "primary": "#141414",
+    "accent": "#25a799"
+   },
+   "apps": [
+    "Judge.me",
+    "Microsoft Clarity",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Instafeed"
+   ],
+   "banners": 4
+  }
+ }
+}

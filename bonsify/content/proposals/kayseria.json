@@ -1,0 +1,55 @@
+{
+ "slug": "kayseria",
+ "name": "Kayseria",
+ "url": "https://www.kayseria.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": null,
+ "icon": null,
+ "colors": {
+  "primary": "#141414",
+  "accent": "#1d3686",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#1d3686",
+   "#8b0000",
+   "#006400",
+   "#3ed660",
+   "#ee9441"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Inter",
+  "body": "Inter",
+  "found": [
+   "Inter"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [],
+ "collections": [
+  {
+   "title": "Home page",
+   "handle": "frontpage",
+   "image": null,
+   "count": 0
+  }
+ ],
+ "products": [],
+ "productCount": 0,
+ "features": [],
+ "storeApps": [],
+ "crawledAt": "2026-10-27T10:02:37.261Z",
+ "warnings": [
+  "No logo found in the header; using the site icon. Check and replace if needed.",
+  "No products could be read (feed and sitemap both unavailable). Re-run later or add them under \"overrides\".",
+  "only 0 products",
+  "no usable logo (name will be shown as text)"
+ ],
+ "overrides": {}
+}

@@ -1,0 +1,585 @@
+{
+ "slug": "sania-maskatiya",
+ "name": "Sania Maskatiya",
+ "url": "https://saniamaskatiya.com/",
+ "platform": "shopify",
+ "currency": "USD",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://saniamaskatiya.com/cdn/shop/files/fav_1.jpg?v=1767282211&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#ec0101",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#ec0101",
+   "#005b69",
+   "#e81e63",
+   "#428445",
+   "#e0b252",
+   "#eb001b"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Cormorant",
+  "body": "Raleway",
+  "found": [
+   "Raleway",
+   "Cormorant",
+   "Playfair Display"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://saniamaskatiya.com/cdn/shop/files/Rectangle_197_9616885a-05f4-473e-85d8-bcc3f25e1a90.webp?v=1771569787",
+  "https://saniamaskatiya.com/cdn/shop/files/Rectangle_199.webp?v=1771569856",
+  "https://saniamaskatiya.com/cdn/shop/files/Rectangle_200_c3d19670-2b5c-4c00-9315-9c5e0b2154f6.webp?v=1771569890",
+  "https://saniamaskatiya.com/cdn/shop/files/Rectangle_197.webp?v=1771569936"
+ ],
+ "collections": [
+  {
+   "title": "Alara Collection",
+   "handle": "alara",
+   "image": null,
+   "count": 53
+  },
+  {
+   "title": "Alara Formals",
+   "handle": "alara-formals",
+   "image": null,
+   "count": 12
+  },
+  {
+   "title": "All-Products",
+   "handle": "all-products",
+   "image": null,
+   "count": 447
+  },
+  {
+   "title": "Alyssa",
+   "handle": "alyssa",
+   "image": null,
+   "count": 7
+  },
+  {
+   "title": "Amara",
+   "handle": "amara",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "Angrakha - Bridals",
+   "handle": "angrakha-bridals",
+   "image": null,
+   "count": 3
+  },
+  {
+   "title": "Angrakha - Ready to deliver",
+   "handle": "angarkha-ready-to-deliver",
+   "image": null,
+   "count": 1
+  },
+  {
+   "title": "Arezu Bridals",
+   "handle": "arezu-bridals",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Arezu Collection",
+   "handle": "arezu-2021",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Arezu Formals",
+   "handle": "arezu-formals",
+   "image": null,
+   "count": 15
+  }
+ ],
+ "products": [
+  {
+   "title": "Lima",
+   "handle": "lima",
+   "type": "Semi Formals",
+   "vendor": "Cira Formals'25",
+   "price": 1255,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/untitled-09554.jpg?v=1744881500&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/untitled-09554.jpg?v=1744881500&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/untitled-09620.jpg?v=1744881500&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/untitled-09566.jpg?v=1744881500&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/untitled-09585.jpg?v=1744881500&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Full Set",
+      "Cape & Tube",
+      "Trousers"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "Exuding quiet luxury, this ivory ensemble features intricate tonal embroidery with delicate cutwork, sequins, and pearls. A pure rawsilk tube top is complemented by a sheer organza cape and matching rawsilk trousers, bot"
+  },
+  {
+   "title": "Creme Khaddi Silk",
+   "handle": "creme-khaddi-silk-full-set",
+   "type": "Semi Formals",
+   "vendor": "Alara",
+   "price": 1157,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.53.03AM_dcd6343c-08e8-4164-9a0b-40b032656246.jpg?v=1663572547&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.53.03AM_dcd6343c-08e8-4164-9a0b-40b032656246.jpg?v=1663572547&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.53.03AM_2_96213847-b058-4015-8ab7-11d67d936541.jpg?v=1663572547&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.53.03AM_1_c11e8e57-f059-41d7-98d2-418f4904e7a3.jpg?v=1663572547&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.53.03AM_3_8fd1fafd-fa90-45d3-8a5f-7304c0e85b39.jpg?v=1663572547&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Shirt & Dupatta",
+      "Full Set",
+      "Lehnga"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "An outfit crafted with utmost attention to detail a festive look that is perfect for a mehndi bride This front open peshwas is cut from a creme khaddi silk that is rendered with a pretty hydrangea print and worked heavil"
+  },
+  {
+   "title": "Pinar",
+   "handle": "pinar",
+   "type": "Formals",
+   "vendor": "Cira Formals'25",
+   "price": 1353,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SMLUXURYOFFICIALSELECTIONSINLAYS-6139.jpg?v=1744881499&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SMLUXURYOFFICIALSELECTIONSINLAYS-6139.jpg?v=1744881499&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/MEHLUMSELECTIONSEXTRAFILES-6149.jpg?v=1744881499&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/MEHLUMSELECTIONSEXTRAFILES-6172.jpg?v=1744881499&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SMLUXURYOFFICIALSELECTIONSINLAYS-6157.jpg?v=1744881499&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Full Set",
+      "Jacket & Tube",
+      "Skirt"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "Reminiscent of a romantic escape, a statement lace jacket in an ethereal ivory hue drapes over a blush pink charmeuse tube top and waterfall skirt. Silver stones and pearls are meticulously embroidered along the lace pan"
+  },
+  {
+   "title": "Gold Lame Sari And Gold Tissue Sari",
+   "handle": "gold-lame-sari-and-gold-tissue-sari",
+   "type": "Formals",
+   "vendor": "Alara",
+   "price": 1863,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at12.13.01PM_3_06b36e7d-eaa1-49cd-819c-98fb437f267d.jpg?v=1663573744&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at12.13.01PM_3_06b36e7d-eaa1-49cd-819c-98fb437f267d.jpg?v=1663573744&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at12.13.01PM_2_291fb529-501e-4c21-b8cf-7a1cb201be85.jpg?v=1663573744&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at12.13.01PM_1_445a3f55-7357-436b-b42f-921b40c18767.jpg?v=1663573744&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at12.13.01PM_22fd4c72-9916-472c-bf83-aa1d8c09098a.jpg?v=1663573744&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Gold Tissue Sari",
+      "Gold Lame Sari"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "A beautiful heirloom worthy festive piece to be loved and cherished for seasons to come a regal gold lame sari decorated with silver zardoze resham and crystals with 3D bird motifs is paired with a gold tissue blouse Int"
+  },
+  {
+   "title": "Niv",
+   "handle": "niv",
+   "type": "Formals",
+   "vendor": "Cira Formals'25",
+   "price": 647,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/008A8751_tt_e91b9572-2d88-4ebc-8643-8a5ef9827dfe.jpg?v=1764765567&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/008A8751_tt_e91b9572-2d88-4ebc-8643-8a5ef9827dfe.jpg?v=1764765567&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/008A8725tt_4b3d6887-8027-4d3e-92b8-440e86eddee0.jpg?v=1764765567&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/3P6A4200tt.jpg?v=1764765567&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/3P6A4154tt2_6b1b9f8f-f545-4825-813d-6bdb9f110854.jpg?v=1764765567&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Shirt",
+      "Pant",
+      "Full Set"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "A regal front open column shirt is crafted from a lustrous self jamawar fabric in a soft champagne hue. The intricate floral and avian detailing, enriched with delicate resham work and subtle sequin embellishments, adds "
+  },
+  {
+   "title": "Syra",
+   "handle": "syra",
+   "type": "Semi Formals",
+   "vendor": "Cira Formals'25",
+   "price": 1157,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/008A2357t.jpg?v=1744881495&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/008A2357t.jpg?v=1744881495&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/3P6A5090t.jpg?v=1744881495&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/3P6A5086t.jpg?v=1744881495&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/3P6A5130t.jpg?v=1744881496&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Full Set"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "Radiating luxury in a soft ivory hue, a french tulle and khaddi silk peshwas is a vision of timeless glamour. The flared silhouette is adorned with intricate resham floral embroidery and gold sequin detailing. Zardoze em"
+  },
+  {
+   "title": "Tangerine Cotton Net Dress",
+   "handle": "tangerine-cotton-net-dress-full-set",
+   "type": "Luxe Pret",
+   "vendor": "Alara",
+   "price": 351,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.48.30AM_1_7781c6bc-dff1-4f5e-adae-7fe38ebdfb39.jpg?v=1663573767&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.48.30AM_1_7781c6bc-dff1-4f5e-adae-7fe38ebdfb39.jpg?v=1663573767&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.48.30AM_149aa51b-61f4-429e-8238-6027e6e0c879.jpg?v=1663573767&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.48.30AM_2_137fed84-5ee5-4c73-925e-f9d542b7cc51.jpg?v=1663573767&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.48.30AM_3_6a8e209e-0506-44ca-8d8f-ded1f637becb.jpg?v=1663573767&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Kurta & Dupatta",
+      "Kurta & Shalwar",
+      "Panwar"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "A bright painterly print in hues of tangerine and forest green on a creme cotton net base is enhanced with pleating zardozee and gota work a side slit neckline and sleeves with tassel details elevate the ensemble Paired "
+  },
+  {
+   "title": "Pistachio Short Angarkha with Tulip Shalwar",
+   "handle": "pistachio-short-angarkha-with-tulip-shalwar-full-set",
+   "type": "Luxe Pret",
+   "vendor": "Alara",
+   "price": 1275,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.40.04AM_2_1d4801c9-a53b-4954-92ab-5db72acad8e8.jpg?v=1749713742&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.40.04AM_2_1d4801c9-a53b-4954-92ab-5db72acad8e8.jpg?v=1749713742&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.40.04AM_3_4385b6b5-b80d-4392-98ee-f357e08f80d2.jpg?v=1749713742&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-15at11.40.04AM_74ba1586-9667-40c3-a6f6-e48e2d0b35ab.jpg?v=1749713742&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Angrakha",
+      "Full Set",
+      "Tulip Shalwar"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "Shades of pistachio celadon lilac and creme all come together in a beautiful floral print embellished with gota and zardoze work in this intricately embellished short angharkha paired with a beautifully composed organza "
+  },
+  {
+   "title": "Cotton Net Front Open Kurta with Dupatta",
+   "handle": "cotton-net-front-open-kurta",
+   "type": "Luxe Pret",
+   "vendor": "Alara",
+   "price": 312,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-08at5.02.30PM_3_0bee309d-0c98-47a2-8ef2-3887a2690de6.jpg?v=1663579723&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-08at5.02.30PM_3_0bee309d-0c98-47a2-8ef2-3887a2690de6.jpg?v=1663579723&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-08at5.02.30PM_2_53e18ac9-877a-4eb1-8c39-bb73ac40abc7.jpg?v=1663579723&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-08at5.02.30PM_1_aab4fa65-f615-41dd-95ce-752ae807b2ef.jpg?v=1663579723&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/products/WhatsAppImage2021-06-08at5.02.30PM_7ef5c395-314a-4534-b53b-d60fa1b8eef5.jpg?v=1663579723&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Shirt & Dupatta",
+      "Dhaka Pajama",
+      "Full Set"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "All in the details this gorgeous festive silhouette is cut from pure cotton net in a refreshing lemon hue and is detailed with gota and zardoze work with tiny tassel details on the sleeves and neckline this short kurta a"
+  },
+  {
+   "title": "Reva",
+   "handle": "reva",
+   "type": "Bridals",
+   "vendor": "Amara'24",
+   "price": 3235,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1268_367e85b4-dc46-40de-b193-65b0e7abd0f1.jpg?v=1734160680&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1268_367e85b4-dc46-40de-b193-65b0e7abd0f1.jpg?v=1734160680&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-4047_8e801b84-3155-47b5-92f9-4b1d1f659e00.jpg?v=1734160680&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-0855_3656df6a-432a-486d-a186-1aa3070d79ae.jpg?v=1734160680&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-4026_2ead1c2a-f834-49d2-b8f2-3986f8b68183.jpg?v=1734160680&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Full Set",
+      "Peshwas",
+      "Lehnga",
+      "Dupatta",
+      "Pouch"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized",
+      "One Size"
+     ]
+    }
+   ],
+   "description": "Embrace the vivacious vibe of wedding festivities in a copper hued front open peshwas detailed with a multi-hued bodice and chattapatti applique details on the cascading hem. Fully embroidered with resham, aari, zardoze,"
+  },
+  {
+   "title": "Faris",
+   "handle": "faris",
+   "type": "Menswear",
+   "vendor": "Amara'24",
+   "price": 2333,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1338_1a0101d3-941c-4c8c-b14f-d930e20db311.jpg?v=1754988015&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1338_1a0101d3-941c-4c8c-b14f-d930e20db311.jpg?v=1754988015&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1354_3fea7148-5ed1-41d9-94d0-6650829a6edb.jpg?v=1754988015&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1376_c80e676e-3a34-488d-af10-0b8ed20cfaf4.jpg?v=1754988015&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-4088_6d9cfdb0-0932-4931-9e47-94eb01e927ad.jpg?v=1754988015&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Sherwani & Pants"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "A regal ivory hued sherwani, cut from pure rawsilk, is an artisanal delight with hand embroidered aari details adorning the entire canvas. Lined with the finest medium silk featuring our quintessential print. Paired with"
+  },
+  {
+   "title": "Azlan",
+   "handle": "azlan",
+   "type": "Menswear",
+   "vendor": "Amara'24",
+   "price": 373,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1665.jpg?v=1754988010&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1665.jpg?v=1754988010&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1676.jpg?v=1754988010&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-1692.jpg?v=1754988011&width=700",
+    "https://cdn.shopify.com/s/files/1/0588/3661/5221/files/SANIAMASKTAIYA2024BRIDALS-4519.jpg?v=1754988011&width=700"
+   ],
+   "options": [
+    {
+     "name": "Item",
+     "values": [
+      "Sherwani & Pants"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL",
+      "Customized"
+     ]
+    }
+   ],
+   "description": "Crafted from a deep hued ebony pure rawsilk, this sherwani exudes understated luxury with its textured embroidered pattern. Lined in the finest medium silk with our signature print, it features sophisticated pleated deta"
+  }
+ ],
+ "productCount": 1468,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  }
+ ],
+ "storeApps": [
+  "Klaviyo",
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:27.134Z",
+ "warnings": [],
+ "overrides": {}
+}

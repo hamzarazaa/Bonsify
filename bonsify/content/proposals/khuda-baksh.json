@@ -1,0 +1,448 @@
+{
+ "slug": "khuda-baksh",
+ "name": "Khuda Baksh",
+ "url": "https://khudabaksh.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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lQIgSoIpCbIdkuSRPJJHSjk6/JKSlPKS5JE8yvFgK3SeXpnGsdcoKVsXNsrtssJSUgkpz7L1TSxWGfJSWMf6Alytr1y58qoqVaqsrlq16mqu44qND6aJF5Yor87BvMGwoMQr31+XoFSrVs3I1soNllOW9LRVUraUVZUqVSqifRbqI6ULCXAJKNY5kRBvxP6m8V0KcEvL82dLsM7lIThE3YkTJ7rjx48350ceecT917/+FRP9njx5svvUU0+Z3/fdd587YcKEuKIyHn74YZNHcv/99ydMq3STJk2Km0b3eOihh8x9JePGjTNhSquzyubNZffee+91R48e7d56660mzZNPPmnK9NdRdXrwwQdNHp31O1GdlFf1oh0c3vBR+yxP0ftiXmMVX3HFFc5HH33k7Lfffg6/HQBT4swyhUOlnE8++cS55ZZbTBhvdThPPPGE8+yzzzqUZcLoRHOWADxz7t27t/P55587p556aiyOj004H3/8sXPllVeWuI8VW47u9c477zi8VRKL45sEzttvv+288sorzuuvv27kjTfeML95SIcvpDiwb9xy/WWzEGzqPnv2bIc9TQnTW9Gz87Kms27dOufcc891jj76aIeP6DvHHHOMEf0+4YQTnOuvv975v//7P5M2nvz222/mrPoeeuihpr5r1qxJmH7YsGHOEUcc4SxatMj8Li4uLhG/YsUK55xzznH4pLVzzz33lLjHwoULnUsvvdThZQmH1QGHHRNOhw4dTLv/8MMPW9SJweDwwqozffr0EuF++fXXXx0+WOv069dPv4v5CJswtFQMtcADlPPoo4+6OnjzdQsW0hbY//znPyYe0Lmswptw/ZUXlXJpDC2wxpjBjmhUiTkPHjzY5OUhYnF0gAkDkLH7BRlG51dffdWk23PPPWNxGv06ioqK3NWrV7s8oDlv3LjRdRzHxH377bcuIDHpg2xq7zVo0CDXHo899ljctH55//33Tdply5a52A0mjEHlen+F5u62224lnl+jX8eGDRtcOiYmmzZtMuF89DWWViM+mNam4wVUk+aDDz4wv/Wc69evN9c///yzy0c4TDyvdLlLly41eXU899xzpk6KU315+9nlBdZYX2mR/IUXXjBp165da85XXXWViROb6dB9gvX58ccfzfOyA0P5HN2XPMtKAEoUroNRZgrEDomBaerUqSaOEaXXuGON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",
+ "icon": "https://khudabaksh.com/cdn/shop/files/Charkha_Logo.png?crop=center&height=180&v=1726739935&width=180",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#e84e4e",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#e84e4e",
+   "#da3f3f",
+   "#9a84c8",
+   "#49a594",
+   "#8f0000",
+   "#007aff"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "M-Heading-Font",
+  "body": "M-Body-Font",
+  "found": [
+   "M-Heading-Font",
+   "M-Body-Font"
+  ],
+  "headingGoogle": false,
+  "bodyGoogle": false
+ },
+ "banners": [
+  "https://khudabaksh.com/cdn/shop/files/F-170_Khuda_Baksh_7_16x7.5_Banner.jpg?v=1751361216",
+  "https://khudabaksh.com/cdn/shop/files/Wedding_Collection_16x7.5_web_banner_desktop.jpg?v=1769509220&width=3840",
+  "https://khudabaksh.com/cdn/shop/files/Wedding_Collection_1_16x10_web_banner_mobile.jpg?v=1771781243&width=1100",
+  "https://khudabaksh.com/cdn/shop/files/P-267_Turquoise_Banner_16x7.5.jpg?v=1734423504&width=3840"
+ ],
+ "collections": [
+  {
+   "title": "Accessories",
+   "handle": "accessories-1",
+   "image": null,
+   "count": 59
+  },
+  {
+   "title": "All Products",
+   "handle": "all-products",
+   "image": null,
+   "count": 430
+  },
+  {
+   "title": "Basics",
+   "handle": "basics",
+   "image": null,
+   "count": 23
+  },
+  {
+   "title": "Dupatta | Shawl",
+   "handle": "shawls",
+   "image": null,
+   "count": 22
+  },
+  {
+   "title": "Eid Sale",
+   "handle": "eid-sale",
+   "image": null,
+   "count": 28
+  },
+  {
+   "title": "Featured",
+   "handle": "featured",
+   "image": null,
+   "count": 93
+  },
+  {
+   "title": "Jewellery",
+   "handle": "jewellery",
+   "image": null,
+   "count": 14
+  },
+  {
+   "title": "Limited Stock",
+   "handle": "limited-stock",
+   "image": null,
+   "count": 19
+  },
+  {
+   "title": "Luxury Pret",
+   "handle": "luxury-pret",
+   "image": null,
+   "count": 257
+  },
+  {
+   "title": "Mega Sale",
+   "handle": "mega-sale",
+   "image": null,
+   "count": 16
+  }
+ ],
+ "products": [
+  {
+   "title": "P-296",
+   "handle": "p-296",
+   "type": "Luxury Pret",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 16269,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-296KhudaBakshbyRashidSidhu_1.jpg?v=1763996406&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-296KhudaBakshbyRashidSidhu_1.jpg?v=1763996406&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-296KhudaBakshbyRashidSidhu_2.jpg?v=1763996406&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-296KhudaBakshbyRashidSidhu_3.jpg?v=1763996405&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-296KhudaBakshbyRashidSidhu_4.jpg?v=1763996406&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Royal Indigo",
+      "Magenta"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large",
+      "X-Large"
+     ]
+    }
+   ],
+   "description": "READY TO WEAR What’s Included: Shirt (with attached sleeves) Dupatta Bottoms (elasticised waistband) Fabric Details: Shirt: Crinkle Chiffon (Embellished with Gotta n Sequins along with Velvet 3d flowers) Sleeves: Same as"
+  },
+  {
+   "title": "P-318",
+   "handle": "p-318",
+   "type": "Luxury Pret",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 39479,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-316KhudaBakshbyRashidSidhu_3.jpg?v=1792397363&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-316KhudaBakshbyRashidSidhu_3.jpg?v=1792397363&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-316KhudaBakshbyRashidSidhu_2.jpg?v=1792397363&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-316KhudaBakshbyRashidSidhu_4.jpg?v=1792397363&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-316KhudaBakshbyRashidSidhu_1.jpg?v=1792397363&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "White"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large",
+      "X-Large"
+     ]
+    }
+   ],
+   "description": "Ready to Wear A vision in ivory — this floor-length, flowing circle-cut chiffon shirt is adorned with shimmering kamdani (mukesh) work, catching the light with every movement. Layered over it is a regal short jacket, han"
+  },
+  {
+   "title": "P-232",
+   "handle": "p-232",
+   "type": "Ready to Wear",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 17479,
+   "compareAt": 20779,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/products/P-232_11.jpg?v=1704359534&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/products/P-232_11.jpg?v=1704359534&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/products/P-232_2.jpg?v=1704359540&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/products/P-232_1.jpg?v=1704359545&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/products/P-232_4.jpg?v=1704359548&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Mustard Yellow"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large",
+      "X-Large"
+     ]
+    }
+   ],
+   "description": "READY TO WEAR Explore the enchantment of our Pure Crinkle Chiffon masterpiece! The hand-embroidered shirt is a celebration of sophisticated splendor, embellished with Kora, Dabka, mirrors, and Kaam Dani (Mukesh). Mirrore"
+  },
+  {
+   "title": "P-317",
+   "handle": "p-317",
+   "type": "Luxury Pret",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 32879,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-317KhudaBakshbyRashidSidhu_20.jpg?v=1792076894&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-317KhudaBakshbyRashidSidhu_20.jpg?v=1792076894&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-317KhudaBakshbyRashidSidhu_14.jpg?v=1792076894&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-317KhudaBakshbyRashidSidhu_17.jpg?v=1792076894&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-317KhudaBakshbyRashidSidhu_25.jpg?v=1792076894&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Violet-Magenta",
+      "Red-Orange"
+     ]
+    },
+    {
+     "name": "Style",
+     "values": [
+      "Short Shirt",
+      "Long Shirt"
+     ]
+    }
+   ],
+   "description": "Ready to Wear Imported Velvet Ensemble Crafted from luxurious imported velvet, this ensemble is a tribute to timeless artistry. Each shirt features exquisite hand embroidery — kora, dabka and zardozi — meticulously handc"
+  },
+  {
+   "title": "F-164",
+   "handle": "f-164",
+   "type": "Ready to Wear",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 15279,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/F-164KhudaBaksh_2_0fd88419-85b7-442d-9279-455fabd4f8a0.jpg?v=1738761937&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/F-164KhudaBaksh_2_0fd88419-85b7-442d-9279-455fabd4f8a0.jpg?v=1738761937&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/F-164KhudaBaksh_1_e91d1461-d00a-4f0e-b7ea-9025af812393.jpg?v=1738761937&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/F-164KhudaBaksh_3_6bf150c6-b51a-4b69-8deb-d54eec497017.jpg?v=1738760244&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/F-164KhudaBaksh_4_5c89971c-3c54-4ac4-b2f0-6c5ccd491609.jpg?v=1738760244&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Off White",
+      "Lavender",
+      "Rock Blue"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large",
+      "X-Large"
+     ]
+    }
+   ],
+   "description": "READY TO WEAR What's Included: Shirt Sleeves Attached Trousers ( Elasticized waistband) Inner Shirt Dupatta Fabric Details: Shirt: Cotton Chikan (3D embroidered, Crochet ) Sleeves: Organza Karandi Dupatta: Net (Kaamdani "
+  },
+  {
+   "title": "P-249",
+   "handle": "p-249",
+   "type": "Ready to Wear",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 29579,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-249_1.jpg?v=1704360205&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-249_1.jpg?v=1704360205&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-249_8.jpg?v=1704360207&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-249_3.jpg?v=1704360210&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-249_4.jpg?v=1704360213&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Golden Brown"
+     ]
+    },
+    {
+     "name": "Option",
+     "values": [
+      "with Trousers",
+      "with Sharara"
+     ]
+    }
+   ],
+   "description": "READY TO WEAR Unveiling elegance woven in tradition and styled for today! Embrace the fusion of heritage embroidery based on Kora, Dabka, Gotta and 3D work on Mesuri on top part and embellishment of Gotta and Laces on Ne"
+  },
+  {
+   "title": "P-258",
+   "handle": "p-258",
+   "type": "Dresses",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 21879,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-258KhudaBaksh_4.jpg?v=1733056256&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-258KhudaBaksh_4.jpg?v=1733056256&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-258KhudaBaksh_1.jpg?v=1733056258&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-258KhudaBaksh_2.jpg?v=1733056260&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-258KhudaBaksh_3.jpg?v=1733056262&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Mauve",
+      "Beige"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large",
+      "X-Large"
+     ]
+    }
+   ],
+   "description": "READY TO WEAR What's Included: Hand Embroidered Shirt Sleeves Attached Trousers ( Elasticized waistband) Dupatta Inner shirt Fabric Details: Shirt: Organza (Hand Embroidered with Kora, Dabka, applique work etc) Sleeves: "
+  },
+  {
+   "title": "P-257",
+   "handle": "p-257",
+   "type": "Dresses",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 26279,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-257KhudBaksh_11.jpg?v=1733056208&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-257KhudBaksh_11.jpg?v=1733056208&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-257KhudBaksh_9.jpg?v=1733056209&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-257KhudBaksh_5_1.jpg?v=1733056211&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-257KhudBaksh_7_1.jpg?v=1733056213&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Green",
+      "Orange"
+     ]
+    },
+    {
+     "name": "Dupatta",
+     "values": [
+      "with Net Mukesh Dupatta",
+      "with Banarasi Dupatta"
+     ]
+    }
+   ],
+   "description": "READY TO WEAR Shine in style with our stunning outfit! The pure crinkle chiffon shirt and sleeves feature intricate hand embroidery, complemented by optional net dupatta with gotta and laces or Banarsi dupatta. The silk "
+  },
+  {
+   "title": "DUPATTA | P-287",
+   "handle": "dupatta-p-287",
+   "type": "Accessories",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 8789,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-287KhudaBakshbyRashidSidhu_10.jpg?v=1761488549&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-287KhudaBakshbyRashidSidhu_10.jpg?v=1761488549&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/p-281_KhudaBaksh_by_RashidSidhu_3.jpg?v=1769525847&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-287KhudaBakshbyRashidSidhu_2.jpg?v=1769525847&width=700",
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/p-281_KhudaBaksh_by_RashidSidhu_4.jpg?v=1769525847&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black"
+     ]
+    }
+   ],
+   "description": "Dupatta: Net(Gota &amp; Squins hand embellished) Disclaimer: Please note that product colors may vary slightly due to photographic lighting and individual device settings. Actual colors may differ from those displayed on"
+  },
+  {
+   "title": "DUPATTA | P-283",
+   "handle": "dupatta-p-283",
+   "type": "Accessories",
+   "vendor": "KhudaBaksh by Rashid Sidhu",
+   "price": 7150,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-283KhudaBakshbyRahsidSidhu_4.jpg?v=1760537943&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0275/9874/9765/files/P-283KhudaBakshbyRahsidSidhu_4.jpg?v=1760537943&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black-Red"
+     ]
+    }
+   ],
+   "description": "Dupatta: Silk ( two layers) ( one side red other black) Disclaimer: Please note that product colors may vary slightly due to photographic lighting and individual device settings. Actual colors may differ from those displ"
+  }
+ ],
+ "productCount": 616,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  }
+ ],
+ "storeApps": [
+  "Tidio",
+  "ReConvert",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:05:29.461Z",
+ "warnings": [
+  "Heading font \"M-Heading-Font\" is not on Google Fonts; a close fallback is used."
+ ],
+ "overrides": {}
+}

@@ -1,0 +1,338 @@
+{
+ "slug": "rashid-textiles",
+ "name": "Rashid Textiles",
+ "url": "https://rashidtex.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://rashidtex.com/cdn/shop/files/RTI_LOGO_black_1312.png?crop=center&height=32&v=1756464083&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#141414",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Jost",
+  "body": "Jost",
+  "found": [
+   "Jost",
+   "adobe-caslon-pro"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://rashidtex.com/cdn/shop/files/Web_banner_b2e8b352-48b7-4658-b6b2-8f939beacede.webp?v=1792051482",
+  "https://rashidtex.com/cdn/shop/files/Web_1_c370daac-93f4-4471-ab5a-9d213be7f37a.webp?v=1790942079",
+  "https://rashidtex.com/cdn/shop/files/Web_banner_709ede4b-72b3-43f5-bfa2-e9e75db28dc1.webp?v=1789797544",
+  "https://rashidtex.com/cdn/shop/files/preview_images/7339aaa243774524906c2523970e67fd.thumbnail.0000000000_small.jpg?v=1785136434"
+ ],
+ "collections": [
+  {
+   "title": "2PC CEREN LAWN",
+   "handle": "2pc-ceren-lawn",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "2PC VITA",
+   "handle": "2pc-vita",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "AABRO",
+   "handle": "aabro",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "AADAB KHADDAR",
+   "handle": "aadab-khaddar",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Aarzu Embroidered Dhanak Wool",
+   "handle": "aarzu-embroidered-dhanak-wool",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Aarzu Embroidered Wool",
+   "handle": "aarzu-embroidered-wool",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Airah Camp",
+   "handle": "airah-camp",
+   "image": null,
+   "count": 345
+  },
+  {
+   "title": "Airah Embroidered Lawn",
+   "handle": "airah-embroidered-lawn",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "All Season",
+   "handle": "all-season",
+   "image": null,
+   "count": 81
+  },
+  {
+   "title": "ALLURE",
+   "handle": "allure",
+   "image": null,
+   "count": 10
+  }
+ ],
+ "products": [
+  {
+   "title": "3 Piece - Luxury Embroidered Lawn - 3710",
+   "handle": "3-piece-luxury-embroidered-lawn-3710",
+   "type": "Embroidered",
+   "vendor": "Summer",
+   "price": 7144.5,
+   "compareAt": 8024.5,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D10-G1.webp?v=1776944385&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D10-G1.webp?v=1776944385&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D10-F.webp?v=1776944385&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D10-B.webp?v=1776944385&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D10-G2.webp?v=1776944385&width=700"
+   ],
+   "options": [
+    {
+     "name": "Shirt Fabric",
+     "values": [
+      "Lawn"
+     ]
+    },
+    {
+     "name": "Dupatta Fabric",
+     "values": [
+      "Chiffon"
+     ]
+    }
+   ],
+   "description": "Ivory Serenity, an ode to understated luxury, this embroidered lawn ensemble in soft ivory radiates effortless elegance. The intricately embroidered shirt, adorned with delicate motifs, brings depth and subtle texture to"
+  },
+  {
+   "title": "3 Piece - Embroidered Lawn Karandi  - 3918",
+   "handle": "3-piece-embroidered-lawn-karandi-3918",
+   "type": "Embroidered",
+   "vendor": "All Season",
+   "price": 6985,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/2.4_f6b01bef-fab9-4a69-a823-03d9caac7d46.webp?v=1791020241&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/2.4_f6b01bef-fab9-4a69-a823-03d9caac7d46.webp?v=1791020241&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/2.1_9d6b080f-0ccc-44a4-9e0d-ba8408a8a243.jpg?v=1791020241&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/2.3_f6ec0a62-e064-42eb-8202-b4bb40b6241b.webp?v=1791020241&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/2.1_dff4a718-7840-441e-92e2-3ae92b9b998b.webp?v=1791020241&width=700"
+   ],
+   "options": [
+    {
+     "name": "Shirt Fabric",
+     "values": [
+      "Lawn Karandi"
+     ]
+    },
+    {
+     "name": "Dupatta Fabric",
+     "values": [
+      "Chiffon"
+     ]
+    }
+   ],
+   "description": "Shirt : Premium Digitally Printed Embroidered Lawn Karandi (3 Mtr) (2 Yard Embroidered Patch) Dupatta : Digitally Printed Bemberg Chiffon (2.5 Mtr) Trouser : High Quality Dyed Lawn Karandi (2.5 Mtr)"
+  },
+  {
+   "title": "3 Piece - Luxury Embroidered Lawn - 3709",
+   "handle": "3-piece-luxury-embroidered-lawn-3709",
+   "type": "Embroidered",
+   "vendor": "Summer",
+   "price": 7144.5,
+   "compareAt": 8024.5,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D9-F.webp?v=1776944384&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D9-F.webp?v=1776944384&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D9-G4_7d822d29-b3cc-4f65-bb4c-5d7e6faea200.webp?v=1777036098&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D9-G5.webp?v=1777035062&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/GR-D9-G6.webp?v=1777035094&width=700"
+   ],
+   "options": [
+    {
+     "name": "Shirt Fabric",
+     "values": [
+      "Lawn"
+     ]
+    },
+    {
+     "name": "Dupatta Fabric",
+     "values": [
+      "Chiffon"
+     ]
+    }
+   ],
+   "description": "Plum Royale, a rich expression of timeless elegance, this embroidered lawn ensemble in deep plum exudes refined charm. The beautifully detailed shirt, adorned with delicate motifs, adds richness and intricate detailing t"
+  },
+  {
+   "title": "3 Piece - Digitally Printed Luxury Silk - 3910",
+   "handle": "3-piece-digitally-printed-luxury-silk-3910",
+   "type": "Digital Print",
+   "vendor": "All Season",
+   "price": 4944.5,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/8.1.webp?v=1789715363&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/8.1.webp?v=1789715363&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/8.3.webp?v=1789715371&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/8.2.webp?v=1789715371&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/8.4.webp?v=1789715371&width=700"
+   ],
+   "options": [
+    {
+     "name": "Shirt Fabric",
+     "values": [
+      "Luxury Silk"
+     ]
+    },
+    {
+     "name": "Dupatta Fabric",
+     "values": [
+      "Tissue Silk"
+     ]
+    }
+   ],
+   "description": "Shirt: Digitally Printed Luxury Silk Dupatta: Digitally Printed Soft Tissue Silk Trouser: Fine Quality Premium Cotton Satin Dyed"
+  },
+  {
+   "title": "3 Piece - Digitally Printed Luxury Silk - 3909",
+   "handle": "3-piece-digitally-printed-luxury-silk-3909",
+   "type": "Digital Print",
+   "vendor": "All Season",
+   "price": 4944.5,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/7.1.webp?v=1789715280&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/7.1.webp?v=1789715280&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/7.3.webp?v=1789715280&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/7.2.webp?v=1789715280&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/7.44.webp?v=1789715280&width=700"
+   ],
+   "options": [
+    {
+     "name": "Shirt Fabric",
+     "values": [
+      "Luxury Silk"
+     ]
+    },
+    {
+     "name": "Dupatta Fabric",
+     "values": [
+      "Tissue Silk"
+     ]
+    }
+   ],
+   "description": "Shirt: Digitally Printed Luxury Silk Dupatta: Digitally Printed Soft Tissue Silk Trouser: Fine Quality Premium Cotton Satin Dyed"
+  },
+  {
+   "title": "3 Piece - Digitally Printed Luxury Silk - 3908",
+   "handle": "3-piece-digitally-printed-luxury-silk-3908",
+   "type": "Digital Print",
+   "vendor": "All Season",
+   "price": 4944.5,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/9.1.webp?v=1789715235&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/9.1.webp?v=1789715235&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/9.3.webp?v=1789715235&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/9.2.webp?v=1789715235&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/9.4_5858341a-085d-4238-ae06-a6b5ffd6ae9b.webp?v=1789715235&width=700"
+   ],
+   "options": [
+    {
+     "name": "Shirt Fabric",
+     "values": [
+      "Luxury Silk"
+     ]
+    },
+    {
+     "name": "Dupatta Fabric",
+     "values": [
+      "Tissue Silk"
+     ]
+    }
+   ],
+   "description": "Shirt: Digitally Printed Luxury Silk Dupatta: Digitally Printed Soft Tissue Silk Trouser: Fine Quality Premium Cotton Satin Dyed"
+  },
+  {
+   "title": "Stitched 2 Piece – Solid Co-ord – 1015",
+   "handle": "stitched-2-piece-solid-co-ord-1015",
+   "type": "Solids",
+   "vendor": "All Season",
+   "price": 5142.5,
+   "compareAt": 6050,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/Solid-D5-Fcopy.webp?v=1725452285&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/Solid-D5-Fcopy.webp?v=1725452285&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/Solid-D5-G1copy.webp?v=1725452285&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/Solid-D5-Bcopy.webp?v=1725452285&width=700",
+    "https://cdn.shopify.com/s/files/1/0749/5929/0650/files/Solid-D5-G2copy.webp?v=1725452285&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    },
+    {
+     "name": "Piece",
+     "values": [
+      "2 Piece"
+     ]
+    }
+   ],
+   "description": "Description Shirt: High Quality Dyed Italian Blend Trouser: High Quality Dyed Italian Blend Features •⁠ ⁠Italian Blend •⁠ ⁠Great for Summers •⁠ ⁠Crease Resistant •⁠ ⁠Smooth, Breezy &amp; Breathable •⁠ ⁠Wrinkle Free &amp;"
+  }
+ ],
+ "productCount": 927,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  }
+ ],
+ "storeApps": [
+  "ReConvert",
+  "Microsoft Clarity",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:05:24.499Z",
+ "warnings": [],
+ "overrides": {}
+}

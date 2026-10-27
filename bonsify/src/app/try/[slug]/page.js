@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import PhoneOnly from "@/components/proposals/PhoneOnly";
 import CustomTry from "@/components/proposals/CustomTry";
-import { getLabBrands } from "@/lib/lab";
+import { getLabBrands, getAnyBrand } from "@/lib/lab";
+import { getProposalSlugs } from "@/lib/proposals";
 import { getDemo, getDemoSlugs } from "@/lib/demoPages";
 import { googleFontsHref } from "@/lib/proposalFonts";
 
@@ -10,7 +11,7 @@ import { googleFontsHref } from "@/lib/proposalFonts";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const slugs = new Set([...getLabBrands({ all: true }).map((b) => b.slug), ...getDemoSlugs()]);
+  const slugs = new Set([...getLabBrands({ all: true }).map((b) => b.slug), ...getDemoSlugs(), ...getProposalSlugs()]);
   return [...[...slugs].map((slug) => ({ slug })), { slug: "custom" }];
 }
 
@@ -26,7 +27,7 @@ export const viewport = { viewportFit: "cover", width: "device-width", initialSc
 export default async function TryPage({ params }) {
   const { slug } = await params;
   if (slug === "custom") return <CustomTry />;
-  const brand = getLabBrands({ all: true }).find((b) => b.slug === slug) || getDemo(slug)?.brand;
+  const brand = getAnyBrand(slug) || getDemo(slug)?.brand;
   if (!brand) notFound();
   const href = googleFontsHref(brand.fonts);
   return (

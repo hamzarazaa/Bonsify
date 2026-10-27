@@ -7,11 +7,13 @@ import OurApps from "./OurApps";
 import YourApp from "./YourApp";
 import styles from "./ProposalShell.module.css";
 
-const TABS = [
+const BASE_TABS = [
   { id: "deck", label: "Proposal" },
   { id: "apps", label: "Our apps" },
   { id: "app", label: "Your app" },
 ];
+
+const VIDEO_TABS = [{ id: "video", label: "Video" }, ...BASE_TABS];
 
 // Holds the three tabs and the controls everything else drives:
 //  - deep links: /for/<brand>?tab=apps&app=highfy&screen=2  or  ?tab=deck&slide=plan
@@ -19,7 +21,9 @@ const TABS = [
 //    move between the deck and the app in time with the narration.
 // All three tabs stay mounted, so the prospect's cart survives tab switches.
 export default function ProposalShell({ brand, apps }) {
-  const [tab, setTab] = useState("deck");
+  const hasVideo = !!brand.video?.src;
+  const TABS = hasVideo ? VIDEO_TABS : BASE_TABS;
+  const [tab, setTab] = useState(hasVideo ? "video" : "deck");
   const deckRef = useRef(null);
   const appsRef = useRef(null);
   const appRef = useRef(null);
@@ -125,6 +129,23 @@ export default function ProposalShell({ brand, apps }) {
       </header>
 
       <main className={styles.main}>
+        {hasVideo && (
+          <section id="panel-video" role="tabpanel" aria-labelledby="tab-video" hidden={tab !== "video"} className={styles.panel}>
+            <div className={styles.videoWrap}>
+              <p className={styles.videoKick}>A short video for the {brand.name} team</p>
+              <h1 className={styles.videoTitle}>You asked what an app could look like. We built it.</h1>
+              <div className={styles.videoPlayer}>
+                <video controls playsInline preload="metadata" poster={brand.video.poster} src={brand.video.src}>
+                  Your browser cannot play this video.
+                </video>
+              </div>
+              <div className={styles.videoActions}>
+                <button className={styles.videoBtn} onClick={() => switchTab("app")}>Try your app <span aria-hidden="true">→</span></button>
+                <a className={styles.videoGhost} href={`/contact?ref=${brand.slug}`}>Get your app now</a>
+              </div>
+            </div>
+          </section>
+        )}
         <section id="panel-deck" role="tabpanel" aria-labelledby="tab-deck" hidden={tab !== "deck"} className={styles.panel}>
           <Deck ref={deckRef} brand={brand} apps={apps} onShowApps={showApp} />
         </section>

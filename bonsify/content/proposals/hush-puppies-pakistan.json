@@ -1,0 +1,575 @@
+{
+ "slug": "hush-puppies-pakistan",
+ "name": "Hush Puppies Pakistan",
+ "url": "https://www.hushpuppies.com.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.hushpuppies.com.pk/cdn/shop/files/favicon-hp-new.png?v=1744281809&width=180",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#ff5a5f",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#ff5a5f",
+   "#8c0000",
+   "#f8c67a",
+   "#d15031",
+   "#12481a"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Nunito",
+  "body": "Instrument Sans",
+  "found": [
+   "Nunito",
+   "Instrument Sans",
+   "basset-bold-new",
+   "ui-monospace"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://www.hushpuppies.com.pk/cdn/shop/files/Website-Mobile_Banner_new1600_x_550_jpg_66e62f37-6bcf-480d-a69d-eb7c25594a01.jpg?v=1792385830&width=1600",
+  "https://www.hushpuppies.com.pk/cdn/shop/files/premium-shoes-1600x550_jpg.jpg?v=1776632290&width=1600",
+  "https://www.hushpuppies.com.pk/cdn/shop/files/Women-Desktop_5be13736-ae3f-4c0b-b742-29cc2e5fc60c.jpg?v=1774902189&width=1600"
+ ],
+ "collections": [
+  {
+   "title": "11.11 ALL",
+   "handle": "11-11-all",
+   "image": null,
+   "count": 347
+  },
+  {
+   "title": "11.11 KIDS",
+   "handle": "11-11-kids",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "11.11 MEN",
+   "handle": "11-11-men",
+   "image": null,
+   "count": 195
+  },
+  {
+   "title": "11.11 WOMEN",
+   "handle": "11-11-women",
+   "image": null,
+   "count": 163
+  },
+  {
+   "title": "150+ Comfort Styles",
+   "handle": "150-comfort-styles",
+   "image": null,
+   "count": 508
+  },
+  {
+   "title": "23rd March 2025 Sale All",
+   "handle": "23rd-march-sale-2025-all",
+   "image": null,
+   "count": 31
+  },
+  {
+   "title": "23rd March 2025 Women Sale",
+   "handle": "23rd-march-2025-women-sale",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "23rd march Men Sale",
+   "handle": "23rd-march-men-sale",
+   "image": null,
+   "count": 20
+  },
+  {
+   "title": "Accessories All",
+   "handle": "accessories-all",
+   "image": null,
+   "count": 18
+  },
+  {
+   "title": "Accessories Men",
+   "handle": "accessories",
+   "image": null,
+   "count": 15
+  }
+ ],
+ "products": [
+  {
+   "title": "Cairo RP 04",
+   "handle": "cairo-rp-04",
+   "type": "Casual",
+   "vendor": "HUSH PUPPIES-MEN",
+   "price": 11999.2,
+   "compareAt": 14999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/Cairo_RP_04_BLACK.jpg?v=1770721445&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/Cairo_RP_04_BLACK.jpg?v=1770721445&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/76_c4309450-e3c9-4297-80b7-3179db3333ab.jpg?v=1770721445&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/77_92602bfa-4ba1-42b1-b14b-91e847589994.jpg?v=1770721445&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/78_07b35f74-6ef4-4759-adf1-009bb94b556c.jpg?v=1770721445&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Tan",
+      "Coffee"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Treat yourself with weather-friendly casuals designed to keep your feet comfortable , no matter the conditions. Curated with lightweight cushioning give you premium experience with every step. Out sole provides excellent"
+  },
+  {
+   "title": "HD-MN-0033",
+   "handle": "hd-mn-0033",
+   "type": "Slides",
+   "vendor": "HUSH PUPPIES-MEN",
+   "price": 2099.3,
+   "compareAt": 2999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_5988.jpg?v=1757509570&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_5988.jpg?v=1757509570&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_5990_30315dc5-84c7-4634-9230-54c7e5662808.jpg?v=1757509570&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_5686.jpg?v=1757509569&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_5688.jpg?v=1757509569&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Blue",
+      "Brown",
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Vamp Slide for Men"
+  },
+  {
+   "title": "Trendy SIA Birken Slippers",
+   "handle": "sia-birken",
+   "type": "Slipper",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 5599.3,
+   "compareAt": 7999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/women_slipper.jpg?v=1770638773&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/women_slipper.jpg?v=1770638773&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/1_07c48714-6e86-4875-bbce-94108f80d727.jpg?v=1770638773&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/4_d77bb3f5-4546-42e2-99ec-26b6f3a0a0c3.jpg?v=1770638773&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/2_b76f2e2f-adf1-4a86-8c23-f15a4d2bc244.jpg?v=1770638773&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Rust",
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Your new go-to for everyday chic! Designed for comfort seekers, these double-strap slides come with matching metal buckles for that extra touch of finesse. Available in pink &amp; grey, because one pair is never enough! "
+  },
+  {
+   "title": "Maisie LMT",
+   "handle": "maisie-lmt",
+   "type": "Casual",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 5499,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_2351.jpg?v=1757509298&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_2351.jpg?v=1757509298&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_2353.jpg?v=1757509298&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_2355.jpg?v=1757509298&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_2361.jpg?v=1757509298&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Golden",
+      "Black",
+      "Maroon",
+      "Brown"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "These moccs are made for comfort, featuring soft cushioned insoles that keep your feet happy and supported from morning to night. Slip resistant outsoles give you the confident to lead your day. Perfect for on-the-go day"
+  },
+  {
+   "title": "HD-MN-0022-F",
+   "handle": "hd-mn-0022-f",
+   "type": "Slides",
+   "vendor": "HUSH PUPPIES-MEN",
+   "price": 1799.4,
+   "compareAt": 2999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9244.jpg?v=1757509793&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9244.jpg?v=1757509793&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9246.jpg?v=1757509793&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9254.jpg?v=1757509793&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9256_ba1338a5-d6f8-40a6-8ed1-a2e553667681.jpg?v=1757509793&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Navy",
+      "Black"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Pair up these classy slides, designed for casual wear, made with lightweight rubber material featuring a single strap gives strong grip to your feet."
+  },
+  {
+   "title": "Comfy Hoka Sendai Slippers",
+   "handle": "hoka-sendai",
+   "type": "Slipper",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 4199.3,
+   "compareAt": 5999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/GREEN_SLIPPER_COMFORT.jpg?v=1770646658&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/GREEN_SLIPPER_COMFORT.jpg?v=1770646658&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/1_7ab07398-d4c3-414e-af4d-3219e4e98abc.jpg?v=1770646658&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/2_6c06b348-9069-40f0-b49f-1ec6745e6c84.jpg?v=1770646658&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/4_019f02ab-7494-4f41-8d23-a4fb94f6c706.jpg?v=1770646658&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Pistachio",
+      "Tan",
+      "Beige"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "These slippers are designed for all day comfort with every step. • Cushioned footbed: For soft, supported steps • Non-slip outsoles: For steady movement • Lightweight: Perfect for all-day wear"
+  },
+  {
+   "title": "Luna LEPF",
+   "handle": "luna-lepf",
+   "type": "Casual",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 4999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/DSC00957.jpg?v=1757509301&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/DSC00957.jpg?v=1757509301&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/DSC00958.jpg?v=1757509301&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/DSC00961.jpg?v=1757509301&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/DSC00962.jpg?v=1757509301&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Beige",
+      "Navy"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Start your day with these comfy mules, featuring cushioned insoles and flexible anti-slip outsoles that make these shoes adjusted to your natural steps. Perfect for busy days and casual outings."
+  },
+  {
+   "title": "HD-MN-0021-F",
+   "handle": "hd-mn-0021-f",
+   "type": "Slides",
+   "vendor": "HUSH PUPPIES-MEN",
+   "price": 2099.3,
+   "compareAt": 2999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_9223_1.jpg?v=1771835895&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_9223_1.jpg?v=1771835895&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_9224_991bf187-f241-4b27-9ca1-c323b73e7987_1.jpg?v=1771835895&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_9229_435611c7-06d0-4530-8b35-99e863953eef_1.jpg?v=1771835895&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_9228_90320623-3996-4648-b141-ce1fb4baea49_1.jpg?v=1771835895&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Navy",
+      "Brown"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ]
+    }
+   ],
+   "description": "Pair up these trendy slides, designed for casual wear, made with lightweight rubber material featuring a single strap, which gives strong grip to your feet. Available in 2 colors."
+  },
+  {
+   "title": "Cushioned Pump Kinder Slippers",
+   "handle": "pump-kinder",
+   "type": "Slipper",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 4199.3,
+   "compareAt": 5999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/model_slipper_tan.jpg?v=1770606477&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/model_slipper_tan.jpg?v=1770606477&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/1_59718e13-ff1a-4f95-863c-bf95cd234253.jpg?v=1770606477&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/2_908c9f28-ad0e-4e3f-b778-b7e5d756a59c.jpg?v=1770216895&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/4_1e9bd0d2-9b6f-4143-a3ef-206f27720aed.jpg?v=1770216895&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Tan",
+      "Pink"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Your new go-to for everyday chic! Designed for comfort seekers, these double-strap slides come with matching metal buckles for that extra touch of finesse. Available in pink &amp; grey, because one pair is never enough! "
+  },
+  {
+   "title": "Mia Stella",
+   "handle": "mia-stella",
+   "type": "Mule Shoes",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 4999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_1993.jpg?v=1757509326&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_1993.jpg?v=1757509326&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_1995.jpg?v=1757509326&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_1997.jpg?v=1757509326&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/IMG_1998_c4e267d2-46ed-4b7f-9f17-b5b462cee59f.jpg?v=1757509326&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Beige"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Slip into effortless style and comfort with these mules. Featuring a sleek synthetic upper and soft EVA cushioned insoles, these mules are perfect for all-day wear, whether you're lounging at home or running errands. The"
+  },
+  {
+   "title": "Peshawari Sleek",
+   "handle": "peshawari-sleek",
+   "type": "Sandals",
+   "vendor": "HUSH PUPPIES-MEN",
+   "price": 4919.4,
+   "compareAt": 8199,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9001.jpg?v=1757509824&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9001.jpg?v=1757509824&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9003.jpg?v=1757509824&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9005.jpg?v=1757509824&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_9007.jpg?v=1757509824&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Choco Brown"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "39",
+      "41",
+      "42",
+      "43",
+      "45",
+      "46"
+     ]
+    }
+   ],
+   "description": "Leather Close Toe Sandal The peshawari chappal re-invented: Hushpuppies take on the must-have shoe combines supple leather with a soft, tech-heavy sole to give you extra comfort while keeping your look traditional. Avail"
+  },
+  {
+   "title": "Comfy Mink Sendai Sandals",
+   "handle": "mink-sendai",
+   "type": "Sandal",
+   "vendor": "HUSH PUPPIES-WOMEN",
+   "price": 4199.3,
+   "compareAt": 5999,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/BLACK_SANDLE.jpg?v=1770647502&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/BLACK_SANDLE.jpg?v=1770647502&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/1_14ef38d6-9945-4bfc-b471-6a5f93cbdd1a.jpg?v=1770647502&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/2_6662c566-38d7-4898-960e-1a44d10d9e6d.jpg?v=1770647502&width=700",
+    "https://cdn.shopify.com/s/files/1/0016/0074/9623/files/4_c809e329-5a5c-4a8e-ad5b-fe83d45b1099.jpg?v=1770647502&width=700"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "Tan"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    }
+   ],
+   "description": "Step into summer bliss with Mink sandals – your ultimate companions for shopping sprees and outdoor activities alike. Perfectly paired with your favourite summer dresses, these sandals offer all-day comfort and effortles"
+  }
+ ],
+ "productCount": 248,
+ "features": [
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  },
+  {
+   "id": "cod",
+   "label": "Cash on delivery"
+  }
+ ],
+ "storeApps": [
+  "Findify",
+  "Mailchimp",
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-27T10:04:30.489Z",
+ "warnings": [],
+ "overrides": {}
+}

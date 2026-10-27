@@ -1,0 +1,486 @@
+{
+ "slug": "afrozeh",
+ "name": "Afrozeh",
+ "url": "https://www.afrozeh.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.afrozeh.com/cdn/shop/files/Afrozeh_logo_400x172_1_3d1585b4-c1a3-4bf4-a2d6-23c0d81f3ebd.png?v=1749728102&width=180",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#108474",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#108474",
+   "#2563eb",
+   "#fffb8c",
+   "#a8703e",
+   "#ff3b30",
+   "#6366f1"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Poppins",
+  "body": "ui-monospace",
+  "found": [
+   "Poppins",
+   "ui-monospace"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": false
+ },
+ "banners": [
+  "https://www.afrozeh.com/cdn/shop/files/launching_soon.jpg?v=1792992632&width=1800",
+  "https://www.afrozeh.com/cdn/shop/files/web_live_now_banner.jpg?v=1792135007&width=1800",
+  "https://www.afrozeh.com/cdn/shop/files/live_now_de3e3898-cd19-48f1-b82e-0de1370f133b.jpg?v=1789550614&width=1800",
+  "https://www.afrozeh.com/cdn/shop/files/shehnai_live_now_web_banner.jpg?v=1788077961&width=1800"
+ ],
+ "collections": [
+  {
+   "title": "01-07-2024",
+   "handle": "01-07-2024",
+   "image": null,
+   "count": 48
+  },
+  {
+   "title": "10%",
+   "handle": "10",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "20%",
+   "handle": "20",
+   "image": null,
+   "count": 137
+  },
+  {
+   "title": "25%",
+   "handle": "25",
+   "image": null,
+   "count": 55
+  },
+  {
+   "title": "30%",
+   "handle": "30",
+   "image": null,
+   "count": 23
+  },
+  {
+   "title": "40%",
+   "handle": "40",
+   "image": null,
+   "count": 16
+  },
+  {
+   "title": "A Lawn '26",
+   "handle": "a-lawn-26-luxury-lawn-dresses-online",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Afrozeh Brides’22",
+   "handle": "afrozeh-brides-22",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "Afrozeh Collection",
+   "handle": "afrozeh-collection",
+   "image": null,
+   "count": 20
+  },
+  {
+   "title": "Afrozeh Lawn'25",
+   "handle": "afrozehlawn",
+   "image": null,
+   "count": 10
+  }
+ ],
+ "products": [
+  {
+   "title": "ROUGE",
+   "handle": "rouge",
+   "type": "Pret",
+   "vendor": "Afrozeh",
+   "price": 14900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/web_resize_0051_1E6A1309.jpg?v=1778914779&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/web_resize_0051_1E6A1309.jpg?v=1778914779&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/web_resize_0047_1E6A1317.jpg?v=1778914778&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/web_resize_0050_1E6A1343.jpg?v=1778914782&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/web_resize_0048_1E6A1451.jpg?v=1778914779&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Extra Small",
+      "Small",
+      "Medium",
+      "Large",
+      "Extra Large"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "Twilight Muse",
+   "handle": "twilight-muse",
+   "type": "Pret",
+   "vendor": "Afrozeh",
+   "price": 6950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_bc78b353-fed3-4d13-9872-33867ca6e230.jpg?v=1777546403&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_bc78b353-fed3-4d13-9872-33867ca6e230.jpg?v=1777546403&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/5_52494761-36a9-4536-ba83-b60763c9284b.jpg?v=1777546403&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/3_825a470d-671d-4372-9b4f-bca416616e83.jpg?v=1777546403&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_c8356515-494f-4b32-82cb-39a1abf702b4.jpg?v=1777546403&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Extra Small",
+      "Small",
+      "Medium",
+      "Large",
+      "Extra Large"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "Monochrome Mood",
+   "handle": "monochrome-mood",
+   "type": "Pret",
+   "vendor": "Afrozeh",
+   "price": 6950,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_a70ea1f1-ccc8-4d7f-949d-5220d29ec0bc.jpg?v=1777545706&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_a70ea1f1-ccc8-4d7f-949d-5220d29ec0bc.jpg?v=1777545706&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/5_281eed81-2841-4994-8951-2a615ebb837c.jpg?v=1777545706&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_deeeac31-6ef6-4f7b-be60-94e7a309d031.jpg?v=1777545705&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/4_dd7e8745-c092-4d10-aa84-45c475f8981e.jpg?v=1777545706&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Extra Small",
+      "Small",
+      "Medium",
+      "Large",
+      "Extra Large"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "Suhana",
+   "handle": "suhana",
+   "type": "Festive",
+   "vendor": "Afrozeh",
+   "price": 26900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1638.jpg?v=1755197653&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1638.jpg?v=1755197653&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1665.jpg?v=1755197653&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1648.jpg?v=1755197653&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1656.jpg?v=1755197653&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "ÊORGANZA HAND EMBELLISHED EMBROIDERED FRONT BODY (2 PCS)Ê ÊORGANZA EMBROIDERED FRONT BUSTIER (0.55 M)Ê ÊORGANZA EMBROIDERED BACK BODY (1 PC)Ê ÊORGANZA HAND EMBELLISHED EMBROIDERED FRONT RIGHT PANEL A (1 PC)Ê ÊORGANZA HAN"
+  },
+  {
+   "title": "Parizaad",
+   "handle": "parizaad",
+   "type": "Lawn",
+   "vendor": "Afrozeh",
+   "price": 16900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/3_bbdd5cca-dc39-4538-94b3-f7b5d9a92759.jpg?v=1776584479&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/3_bbdd5cca-dc39-4538-94b3-f7b5d9a92759.jpg?v=1776584479&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/5_353f39ec-528b-4b82-b6c7-67e70eca9878.jpg?v=1776584479&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_9c30c39e-c097-4773-a5ab-68ffd06508eb.jpg?v=1776584479&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_d58d89c1-9d8a-47fd-824c-528fbe54f685.jpg?v=1776584479&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "DYED LAWN BLACK EMBROIDERED FRONT + BACK BODY 2 PCS DYED LAWN BLACK EMBROIDERED FRONT + BACK PANELS 12 PCS DYED LAWN BLACK EMBROIDERED SLEEVES 2 PCS CHIFFON BLACK EMBROIDERED DUPATTA 2.60 M CHIFFON BLACK EMBROIDERED DUPA"
+  },
+  {
+   "title": "Noori",
+   "handle": "noori-1",
+   "type": "Festive",
+   "vendor": "Afrozeh",
+   "price": 19900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/047A5309_6aba96c7-b8ca-4518-9d64-8f0410188324.jpg?v=1755197944&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/047A5309_6aba96c7-b8ca-4518-9d64-8f0410188324.jpg?v=1755197944&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/047A5335_c296d207-7f75-4dad-96ac-1a237a4e6176.jpg?v=1755197944&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "ORGANZA EMBROIDERED FRONT RIGHT PANEL (1 PC) EMBROIDERED FRONT LEFT PANEL (1 PC) EMBROIDERED FRONT PANEL BORDER (2.63 M) EMBROIDERED BACK (0.90 M) EMBROIDERED BACK NECKLINE (1 PC) EMBROIDERED FRONT+BACK BORDER (1.97 M) E"
+  },
+  {
+   "title": "Haya",
+   "handle": "haya",
+   "type": "Lawn",
+   "vendor": "Afrozeh",
+   "price": 14900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_83852b66-bc8a-4367-9799-309c438cbc53.jpg?v=1776584192&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_83852b66-bc8a-4367-9799-309c438cbc53.jpg?v=1776584192&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/3_b522d929-1b73-47fe-8011-21eb473232d8.jpg?v=1776584192&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_26c35a15-2cbe-4f19-9991-21d6df03bcf8.jpg?v=1776584192&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/4_51352d4d-41a8-43e5-b8e2-77890f4e4e41.jpg?v=1776584000&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "DYED LAWN MAROON EMBROIDERED FRONT RIGHT PANEL 1 PC DYED LAWN MAROON EMBROIDERED FRONT LEFT PANEL 1 PC DYED LAWN MAROON EMBROIDERED BACK 0.98 M DYED LAWN MAROON EMBROIDERED SLEEVES 2 PCS ORGANZA MAROON EMBROIDERED NECK P"
+  },
+  {
+   "title": "Fiora",
+   "handle": "fiora",
+   "type": "Festive",
+   "vendor": "Afrozeh",
+   "price": 16900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1465.jpg?v=1755197822&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1465.jpg?v=1755197822&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1493.jpg?v=1755197822&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1511.jpg?v=1755197822&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A1477.jpg?v=1755197822&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "Stitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Net Embroidered Front Body (1 Pc) Net Embroidered Back Body (1 Pc) Net Embroidered Front+Back Panels (14 Pcs) Net Embroidered Front+Back Border (5.25 M) Net Embroidered Sleeves (0.65 M) Net Embroidered Sleeves Border (0."
+  },
+  {
+   "title": "Deedar",
+   "handle": "deedar",
+   "type": "Lawn",
+   "vendor": "Afrozeh",
+   "price": 13900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_dbdd5821-20d8-4a15-a8a3-5799934c46b6.jpg?v=1776579763&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2_dbdd5821-20d8-4a15-a8a3-5799934c46b6.jpg?v=1776579763&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1_582142f1-1665-40ec-a7cd-e1d97de17398.jpg?v=1776579763&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/3_e559e0ca-6899-4b77-a764-353573e40cbd.jpg?v=1776579671&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/4_e303b40a-6ecf-4690-a3be-672dc44b91d1.jpg?v=1776579671&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "DYED LAWN APPLE GREEN INNER SHIRT 1.82 M ORGANZA APPLE GREEN EMBROIDERED FRONT RIGHT PANEL 1 PC ORGANZA APPLE GREEN EMBROIDERED FRONT LEFT PANEL 1 PC ORGANZA APPLE GREEN EMBROIDERED SHOULDER PATCH 2 PCS ORGANZA APPLE GRE"
+  },
+  {
+   "title": "Hayal",
+   "handle": "hayal",
+   "type": "bridal",
+   "vendor": "Afrozeh",
+   "price": 28900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/products/14.jpg?v=1755198011&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/products/14.jpg?v=1755198011&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/products/11_d2b56f6a-b972-4d64-ad12-d9e58f99dedc.jpg?v=1755198011&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/products/10.jpg?v=1755198011&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/products/12_9db93398-4042-440e-89f6-4dcc9cba05a6.jpg?v=1755198011&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "Velvet Embellished +ÊEmbroidered Front + BackÊBody (0.66 Meters) Velvet Embroidered Sleeves (1.30 Meters) Raw Silk Embellished +ÊEmbroidered Front + Back Panels (A) (14 PCS) Raw Silk Embellished +ÊEmbroidered Front + Bac"
+  },
+  {
+   "title": "Claude",
+   "handle": "claude",
+   "type": "bridal",
+   "vendor": "Afrozeh",
+   "price": 36900,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2C5A2524.jpg?v=1755197619&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2C5A2524.jpg?v=1755197619&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2C5A2542.jpg?v=1755197619&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2C5A2472.jpg?v=1755197619&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/2C5A2523.jpg?v=1755197619&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "Stitched"
+     ]
+    }
+   ],
+   "description": "ORGANZA HAND EMBELLISHED EMBROIDERED FRONT BODY (L+R) (2 PCS) ORGANZA EMBROIDERED BACK BODY (1 PC) ORGANZA HAND EMBELLISHED EMBROIDERED FRONT UPPER PANELS (4 PCS) ORGANZA HAND EMBELLISHED EMBROIDERED FRONT LOWER PANELS ("
+  },
+  {
+   "title": "Lavinia",
+   "handle": "lavinia",
+   "type": "bridal",
+   "vendor": "Afrozeh",
+   "price": 31500,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A7948.jpg?v=1755197866&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A7948.jpg?v=1755197866&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A7994.jpg?v=1755197866&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A7927.jpg?v=1755197867&width=700",
+    "https://cdn.shopify.com/s/files/1/0052/2030/2897/files/1O9A7980.jpg?v=1755197867&width=700"
+   ],
+   "options": [
+    {
+     "name": "Type",
+     "values": [
+      "Unstitched",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+     ]
+    }
+   ],
+   "description": "NET EMBROIDERED+HAND EMBELLISHED FRONT BODY (1 PC) NET EMBROIDERED BACK BODY (1 PC) NET EMBROIDERED+HAND EMBELLISHED FRONT PANELS A (4 PCS) NET EMBROIDERED+HAND EMBELLISHED FRONT PANELS B (4 PCS) NET EMBROIDERED BACK PAN"
+  }
+ ],
+ "productCount": 493,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "push",
+   "label": "Web push"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  },
+  {
+   "id": "cod",
+   "label": "Cash on delivery"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "ReConvert",
+  "Google Analytics 4",
+  "Google Tag Manager"
+ ],
+ "crawledAt": "2026-10-27T10:04:12.763Z",
+ "warnings": [],
+ "overrides": {}
+}

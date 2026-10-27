@@ -1,0 +1,319 @@
+{
+ "slug": "j-junaid-jamshed",
+ "name": "J. Junaid Jamshed",
+ "url": "https://www.junaidjamshed.com/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://www.junaidjamshed.com/cdn/shop/files/favicon.svg?crop=center&height=48&v=1765461191&width=48",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#b31f1f",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#b31f1f",
+   "#213d46",
+   "#0766ff",
+   "#bd091c",
+   "#31a8e0",
+   "#24d366"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Poppins",
+  "body": "Libre Baskerville",
+  "found": [
+   "Poppins",
+   "Libre Baskerville",
+   "Maison Neue",
+   "Nunito",
+   "Maison Neue Book",
+   "ui-monospace"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://www.junaidjamshed.com/cdn/shop/files/desktop_BANNER1_c2aef60b-9f0c-44a9-b806-5b39db202cd4.webp?v=1793017948&width=1800",
+  "https://www.junaidjamshed.com/cdn/shop/files/12_c54f610e-905a-490b-a202-ef3846820908.webp?v=1792504431&width=400",
+  "https://www.junaidjamshed.com/cdn/shop/files/13_d2fcedf2-e01e-4306-809c-b4324047da26.webp?v=1792504780&width=400",
+  "https://www.junaidjamshed.com/cdn/shop/files/10_23362e02-1531-47a5-b8ab-d47205780303.webp?v=1792504430&width=400"
+ ],
+ "collections": [
+  {
+   "title": "Accessories",
+   "handle": "syncc-women-accessories",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Air Freshener",
+   "handle": "fragrances-collection-air-freshener",
+   "image": null,
+   "count": 7
+  },
+  {
+   "title": "Air Freshener",
+   "handle": "fragrances-other-air-freshener",
+   "image": null,
+   "count": 7
+  },
+  {
+   "title": "Apparel",
+   "handle": "anniversary-bogo-apparel",
+   "image": null,
+   "count": 96
+  },
+  {
+   "title": "AROMA OIL & DIFFUSERS",
+   "handle": "aroma-oil-diffusers",
+   "image": null,
+   "count": 17
+  },
+  {
+   "title": "Artisanal Jewellery",
+   "handle": "womens-featured-collection-artisanal-jewellery",
+   "image": null,
+   "count": 33
+  },
+  {
+   "title": "Attar",
+   "handle": "fragrances-for-men-attar",
+   "image": null,
+   "count": 28
+  },
+  {
+   "title": "Autograph Series",
+   "handle": "mens-featured-collection-autograph-collection",
+   "image": null,
+   "count": 24
+  },
+  {
+   "title": "Bags",
+   "handle": "womens-bags",
+   "image": null,
+   "count": 23
+  },
+  {
+   "title": "Bahareh - Women Unstitched",
+   "handle": "womens-featured-collection-bahareh-women-unstitched",
+   "image": null,
+   "count": 94
+  }
+ ],
+ "products": [
+  {
+   "title": "GOLDEN ORB",
+   "handle": "multicolor-ring-arrn26015",
+   "type": "Women Division",
+   "vendor": "Women Ring",
+   "price": 1990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-rn-26-015-11_1_42ca9b1c-8a93-4c8c-964a-5b3538689e1e.jpg?v=1777087467&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-rn-26-015-11_1_42ca9b1c-8a93-4c8c-964a-5b3538689e1e.jpg?v=1777087467&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-rn-26-015-1_f96286ef-182b-4751-afc9-d5fc25353f52.jpg?v=1777087467&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-rn-26-015-11_2_9753a5be-8a8c-404d-8d89-6ef5d7fc4ccf.jpg?v=1777087467&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "1 Piece"
+     ]
+    },
+    {
+     "name": "Style",
+     "values": [
+      "AR-RN-26-015"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "MULTICOLOR LAWN EMBROIDERED UNSTITCHED 3PC",
+   "handle": "multicolor-lawn-embroidered-unstitched-3pc-jlu263733u",
+   "type": "Women Division",
+   "vendor": "Women Unstitched 3 Piece",
+   "price": 4590,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/26-3733_1_fc1bc454-2bee-48f9-bd67-23a105fecf11.jpg?v=1776975347&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/26-3733_1_fc1bc454-2bee-48f9-bd67-23a105fecf11.jpg?v=1776975347&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/26-3733_2_d8a212d3-41c0-4dec-8f8a-ae1bba953537.jpg?v=1776975347&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/26-3733_3_9c23fd0d-53c8-4f00-9fcc-177020774959.jpg?v=1776975347&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/26-3733_4_d4ae571e-cec8-42bc-877c-0a9e69cfd838.jpg?v=1776975347&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "3 Piece"
+     ]
+    },
+    {
+     "name": "Color",
+     "values": [
+      "Multicolor"
+     ]
+    }
+   ],
+   "description": "ZARIYA | Embroidered 3 Piece Embroidered Printed Lawn Shirt: 1.75 Meters Printed Lawn Dupatta: 2.5 Meters Dyed Lawn Trouser: 1.8 Meters Add-On: 1 Meter Embroidered Border * The stitch style and decorative accessories fea"
+  },
+  {
+   "title": "LUXE CUBE CUFF",
+   "handle": "multicolor-bracelet-arhcb26008",
+   "type": "Women Division",
+   "vendor": "Women Bracelet",
+   "price": 3990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-hcb-26-008-1111_2_290c454c-106e-4b74-a7a3-ce63caf573e9.jpg?v=1777087459&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-hcb-26-008-1111_2_290c454c-106e-4b74-a7a3-ce63caf573e9.jpg?v=1777087459&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-hcb-26-008_1_1532ad7b-c901-4b9a-9a1d-25f8ae8d839b.jpg?v=1777087459&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/ar-hcb-26-008-1111_1_346d4d75-e04d-4b83-ba24-0cf75064992e.jpg?v=1777087459&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "1 Piece"
+     ]
+    },
+    {
+     "name": "Style",
+     "values": [
+      "AR-HCB-26-008"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "White Plain Kameez Shalwar",
+   "handle": "white-plain-kameez-shalwar-jjiks40219r18ap",
+   "type": "Men Division",
+   "vendor": "Infants Kameez Shalwar",
+   "price": 2790,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/40219_fd3a5344-39c1-4869-97e7-1f3c93c440b6.jpg?v=1790320004&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/40219_fd3a5344-39c1-4869-97e7-1f3c93c440b6.jpg?v=1790320004&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "8 M",
+      "12 M",
+      "18 M"
+     ]
+    },
+    {
+     "name": "Style",
+     "values": [
+      "JJIKS-A-40219-R18-AP/S26/JJ10575-PN"
+     ]
+    }
+   ],
+   "description": ""
+  },
+  {
+   "title": "White Cotton Formal Short Kurta Trousers",
+   "handle": "white-cotton-formal-short-kurta-trousers-jtshkpa20116",
+   "type": "Men Division",
+   "vendor": "Teens Kurta Trouser",
+   "price": 5990,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/JTKS-39813_2_157554a0-5721-4f35-ade5-ff478fda0444.jpg?v=1789206260&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/JTKS-39813_2_157554a0-5721-4f35-ade5-ff478fda0444.jpg?v=1789206260&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/JTKS-39813_1_c661d5d0-5ccd-43ba-b69e-eaa2b70262f9.jpg?v=1789206260&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "12 Y",
+      "14 Y",
+      "16 Y",
+      "18 Y"
+     ]
+    },
+    {
+     "name": "Style",
+     "values": [
+      "JTSHKP-A-20116/S26/JJ11071-FL"
+     ]
+    }
+   ],
+   "description": "Semi-formal kurta trousers crafted in cotton fabric, designed in white and styled with a rich traditional finish."
+  },
+  {
+   "title": "Black Plain Kameez Shalwar",
+   "handle": "black-plain-kameez-shalwar-jcksa35842r26ap",
+   "type": "Men Division",
+   "vendor": "Boys Kameez Shalwar",
+   "price": 4090,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/35842_9d68e841-040e-45fc-8d4d-45b0d92fcc08.jpg?v=1788413268&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/35842_9d68e841-040e-45fc-8d4d-45b0d92fcc08.jpg?v=1788413268&width=700",
+    "https://cdn.shopify.com/s/files/1/0702/2487/1584/files/35842-1_b09206f0-e3af-4028-832d-dde41aef5da9.jpg?v=1788413268&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "2 Y",
+      "4 Y",
+      "6 Y",
+      "8 Y",
+      "10 Y"
+     ]
+    },
+    {
+     "name": "Style",
+     "values": [
+      "JCKS-A-35842-R26-AP/S26/JJ11062-PN"
+     ]
+    }
+   ],
+   "description": "A classic black boys' kameez shalwar designed with a neat and versatile traditional appeal. The blended fabric ensures comfort and durability."
+  }
+ ],
+ "productCount": 5000,
+ "features": [
+  {
+   "id": "reviews",
+   "label": "Product reviews"
+  },
+  {
+   "id": "bnpl",
+   "label": "Pay in instalments"
+  }
+ ],
+ "storeApps": [
+  "Judge.me",
+  "Boost AI",
+  "Microsoft Clarity",
+  "Google Analytics 4",
+  "Google Tag Manager"
+ ],
+ "crawledAt": "2026-10-27T10:04:20.370Z",
+ "warnings": [
+  "logo is square or tall"
+ ],
+ "overrides": {}
+}

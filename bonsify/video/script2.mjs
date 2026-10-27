@@ -49,7 +49,7 @@ export const sentences = (t) => t.split(/(?<=[.!?])\s+/).map((s) => s.trim()).fi
 export function beatsFor(brand) {
   const name = brand.name;
   const n = brand.productCount || brand.products?.length || 0;
-  const cn = n >= 100 ? n.toLocaleString("en-US") : "";
+  const cn = n >= 5000 ? "over 5,000" : n >= 100 ? n.toLocaleString("en-US") : "";
   const cur = money[brand.currency] || "your currency";
   const rows = detect(brand.storeApps);
   const gen = !rows.length;

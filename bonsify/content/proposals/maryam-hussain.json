@@ -1,0 +1,384 @@
+{
+ "slug": "maryam-hussain",
+ "name": "Maryam Hussain",
+ "url": "https://maryamhussain.pk/",
+ "platform": "shopify",
+ "currency": "USD",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://maryamhussain.pk/cdn/shop/files/fav.png?crop=center&height=180&v=1614286106&width=180",
+ "colors": {
+  "primary": "#a08040",
+  "accent": "#f26c4f",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#f26c4f",
+   "#a58750",
+   "#d02e2e",
+   "#3d7f4e",
+   "#28a745",
+   "#dc3545"
+  ],
+  "source": "logo"
+ },
+ "fonts": {
+  "heading": "Figtree",
+  "body": "object-fit: contain",
+  "found": [
+   "Figtree",
+   "object-fit: contain",
+   "Arapey",
+   "Consolas"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": false
+ },
+ "banners": [
+  "https://maryamhussain.pk/cdn/shop/files/Winter_26-11.jpg?crop=center&height=1024&v=1792398759&width=1024",
+  "https://maryamhussain.pk/cdn/shop/files/Winter_26-9.jpg?crop=center&height=1024&v=1792398759&width=1024",
+  "https://maryamhussain.pk/cdn/shop/files/Winter_26-12.jpg?crop=center&height=1024&v=1792399021&width=1024",
+  "https://maryamhussain.pk/cdn/shop/files/Winter_26-10.jpg?crop=center&height=1024&v=1792399022&width=1024"
+ ],
+ "collections": [
+  {
+   "title": "Best Sellers",
+   "handle": "best-sellers",
+   "image": null,
+   "count": 89
+  },
+  {
+   "title": "Bridals",
+   "handle": "bridals",
+   "image": null,
+   "count": 6
+  },
+  {
+   "title": "Camellia Luxury Pret",
+   "handle": "camellia-luxury-pret",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Camellia '24",
+   "handle": "camellia-24",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Chloe",
+   "handle": "chloe",
+   "image": null,
+   "count": 19
+  },
+  {
+   "title": "Festive Eid '21",
+   "handle": "festive-eid-collection",
+   "image": null,
+   "count": 8
+  },
+  {
+   "title": "Festive Lawn '20",
+   "handle": "festive-lawn-20",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Festive Lawn '21",
+   "handle": "festive-lawn-21",
+   "image": null,
+   "count": 12
+  },
+  {
+   "title": "Formals",
+   "handle": "formals",
+   "image": null,
+   "count": 10
+  },
+  {
+   "title": "Gulaab '22",
+   "handle": "gulaab-22",
+   "image": null,
+   "count": 16
+  }
+ ],
+ "products": [
+  {
+   "title": "LARA",
+   "handle": "lara",
+   "type": "Camellia Luxury Pret",
+   "vendor": "Maryam Hussain",
+   "price": 102,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer8_75121c1c-0c70-41a9-9f07-38cd6aa1bd02.jpg?v=1752580246&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer8_75121c1c-0c70-41a9-9f07-38cd6aa1bd02.jpg?v=1752580246&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer3_2aa447e7-260f-449c-862f-ca98a73e7462.jpg?v=1752580275&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer1_abf40947-74d6-42e0-aa6a-c0b40d8bd1bb.jpg?v=1752580275&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer2_b7193470-634b-4d05-a4bd-bcc805febc92.jpg?v=1752580275&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    }
+   ],
+   "description": "Embroiderd cutwork shirt on lawn Cutwork organza dupatta Cotton trouser with laces same as model When you place an order at our website on COD, you make a commitment to pay. Please do not refuse to accept the order when "
+  },
+  {
+   "title": "Sonya Red x MH",
+   "handle": "sonya-red-x-mh",
+   "type": "Chloe",
+   "vendor": "Maryam Hussain",
+   "price": 173,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/9_5d52f95d-73e3-4a91-b70a-2f013be06a5b.jpg?v=1792413535&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/9_5d52f95d-73e3-4a91-b70a-2f013be06a5b.jpg?v=1792413535&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/8_7c97e928-1dd8-4a53-98e0-51dcf6acea56.jpg?v=1792413535&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/5_7d1d85e5-89bc-42a7-b10f-ee0c391b4153.jpg?v=1792413536&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/6_64c683cc-0c34-4e1c-ac95-fb854cca7c9b.jpg?v=1792413535&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Unstitched",
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    }
+   ],
+   "description": "Embroiderd shafoon Pishwas Embroiderd shafon duptta Note: Orders will be dispatched within 7 working days. Delivery as shown in pictures"
+  },
+  {
+   "title": "Hania Amir x MH",
+   "handle": "hania-amir-x-mh",
+   "type": "Chloe",
+   "vendor": "Maryam Hussain",
+   "price": 155,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Pink3.jpg?v=1736153296&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Pink3.jpg?v=1736153296&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Pink4.jpg?v=1730131904&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Pink5.jpg?v=1730131904&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Pink6.jpg?v=1730131904&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    },
+    {
+     "name": "Sleeves",
+     "values": [
+      "Full Sleeves Fitted",
+      "Mid Sleeves like Model"
+     ]
+    }
+   ],
+   "description": "Ready to wear 3 piece suit Pure raw silk hand embellished shirt with crystals Pure raw silk embroidered shalwar Hand applied crystals on organza duppta Perfect outfit for wedding season Note: Orders will be dispatched wi"
+  },
+  {
+   "title": "Sooraj  x MH",
+   "handle": "sooraj-x-mh",
+   "type": "Chloe",
+   "vendor": "Maryam Hussain",
+   "price": 122,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/1_15ae8ff3-525b-4a91-8717-613725385a58.jpg?v=1790086218&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/1_15ae8ff3-525b-4a91-8717-613725385a58.jpg?v=1790086218&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/3_4b69319f-4baf-411e-98d9-217f29968277.jpg?v=1790086218&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/1_3d0c92f9-5b10-49c2-a38a-d2f281c44e4f.jpg?v=1790086751&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/3_e6e8ec6b-b43a-405f-bb08-47f5b77c4ca1.jpg?v=1790086751&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    }
+   ],
+   "description": "Organza hand embellished shirt On organza fabric Organza embroidered dupatta Embroidered Trouser Cotton silk Inner 4 piece Note: Orders will be dispatched within 7 working days. Delivery as shown in pictures"
+  },
+  {
+   "title": "Riya",
+   "handle": "riya-1",
+   "type": "Winter Shawl '25",
+   "vendor": "Maryam Hussain",
+   "price": 48,
+   "compareAt": 69,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/9_00506cc8-d709-4d41-a402-ce6cc8933934.jpg?v=1762603642&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/9_00506cc8-d709-4d41-a402-ce6cc8933934.jpg?v=1762603642&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/13.jpg?v=1762603642&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/12.jpg?v=1762603642&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/11_08f3d947-d9cf-444f-8f63-470743ca9dc7.jpg?v=1762603642&width=700"
+   ],
+   "options": [],
+   "description": "Embroiderd front on khaddar fabric Embroiderd sleeves on khaddar fabric Embroiderd sleeves motif on organza fabric Embroiderd daman border on organza fabric Embroiderd trouser border on organza fabric Embroiderd side pal"
+  },
+  {
+   "title": "Zuri",
+   "handle": "zuri",
+   "type": "Wedding Collection '25",
+   "vendor": "Maryam Hussain",
+   "price": 118,
+   "compareAt": 168,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer19_a479ead3-3802-4005-910e-2ca5256f56be.jpg?v=1758964379&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer19_a479ead3-3802-4005-910e-2ca5256f56be.jpg?v=1758964379&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer24_57096e4d-0194-4225-9c80-f46b211c5c86.jpg?v=1758972997&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer22_30cd250d-0fb5-4f08-b889-e82e76183d26.jpg?v=1758972997&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer23_544f441c-9c94-4470-8dd8-e52e5e2b9000.jpg?v=1758972997&width=700"
+   ],
+   "options": [],
+   "description": "Embroiderd hand embellished front panels on organza fabric Embroiderd sequinc right and left panels on organza Embroiderd front daman border Embroiderd hand embellished sleeves on organza Plan back organza Embroidere sle"
+  },
+  {
+   "title": "Hazel",
+   "handle": "hazel",
+   "type": "Winter Shawl '24",
+   "vendor": "Maryam Hussain",
+   "price": 53,
+   "compareAt": 76,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer1_28bab490-4114-4dee-97a8-6cdad5bb5117.jpg?v=1757520473&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer1_28bab490-4114-4dee-97a8-6cdad5bb5117.jpg?v=1757520473&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer3_24a0b13a-20ab-4f6d-b667-5640956763a7.jpg?v=1757520473&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer2_f3825827-a94d-445f-aa4d-6674ecdff36c.jpg?v=1757520473&width=700"
+   ],
+   "options": [],
+   "description": "Embroidered Front panels (L &amp; R) on Khaddar fabric Embroidered sleeve on khaddar fabric Embroidered daman border on khaddar fabric Embroidered sleeve border on khaddar Embroidered jacquard shawl Plain dyed back Plain"
+  },
+  {
+   "title": "Sonam Bajwa x MH",
+   "handle": "sonam-bajwa",
+   "type": "",
+   "vendor": "Maryam Hussain",
+   "price": 288,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/products/DSC09844.jpg?v=1704718772&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/products/DSC09844.jpg?v=1704718772&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/products/DSC09862.jpg?v=1704718772&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/products/DSC09867.jpg?v=1704718772&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/products/DSC09835.jpg?v=1704718772&width=700"
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    }
+   ],
+   "description": "Dazzling like a shooting star in a dark night, sonam outshines in this black pure rawsilk formal attire with breathtaking intricate zari details paired with an olive organza heavily embroidered duppata adds that extra da"
+  },
+  {
+   "title": "Mausam",
+   "handle": "mausam",
+   "type": "Winter Shawl '25",
+   "vendor": "Maryam Hussain",
+   "price": 48,
+   "compareAt": 69,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/5_ee4efefe-6ecb-41ff-becd-1aeb43916aa5.jpg?v=1762604893&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/5_ee4efefe-6ecb-41ff-becd-1aeb43916aa5.jpg?v=1762604893&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/6_acae9f72-b706-470d-9a69-d3f7d9c05081.jpg?v=1762604893&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/8_83d79025-cdbb-4279-8dc7-ebf6663e8bc2.jpg?v=1762604893&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/7_d0012dea-c42d-4a8d-a7be-e2f4cb0d99b5.jpg?v=1762604648&width=700"
+   ],
+   "options": [],
+   "description": "Embroiderd front panel on khaddar fabric Embroiderd side panels on khaddar fabric Embroiderd sleeves on khaddar fabric Embroiderd daman on khaddar fabric Digital print dupatta Plain dyed Khaddar back Plain dyed khaddar t"
+  },
+  {
+   "title": "Opal",
+   "handle": "opal",
+   "type": "Winter Shawl '24",
+   "vendor": "Maryam Hussain",
+   "price": 48,
+   "compareAt": 69,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer7_e8cc5407-84d7-4112-9c24-733b96871066.jpg?v=1757520470&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer7_e8cc5407-84d7-4112-9c24-733b96871066.jpg?v=1757520470&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer8_6f5b3946-737f-427f-867c-acba906f3d87.jpg?v=1757520470&width=700"
+   ],
+   "options": [],
+   "description": "Embroidered Front on Khaddar fabric Embroidered sleeve on khaddar fabric Embroidered daman border on khaddar fabric Embroidered sleeve border on khaddar Embroidered velvet shawl Plain dyed back Plain dyed trousers"
+  },
+  {
+   "title": "Rose",
+   "handle": "rose-1",
+   "type": "Winter Shawl '24",
+   "vendor": "Maryam Hussain",
+   "price": 53,
+   "compareAt": 76,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer5_329d0ec2-5c48-4a85-811a-23c4604dc54b.jpg?v=1757520474&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer5_329d0ec2-5c48-4a85-811a-23c4604dc54b.jpg?v=1757520474&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer6_4608613f-ea50-4e04-a360-e6a3180dd429.jpg?v=1757520474&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/Layer4_8a777994-1252-4599-9664-fedd3bd44a36.jpg?v=1757520474&width=700"
+   ],
+   "options": [],
+   "description": "Embroidered Front Khaddar fabric Embroidered sleeve on khaddar fabric Embroidered daman border on khaddar fabric Embroidered sleeve border on khaddar Embroidered jacquard shawl Plain dyed back Plain dyed trouser"
+  },
+  {
+   "title": "Soz",
+   "handle": "soz",
+   "type": "Winter Shawl '25",
+   "vendor": "Maryam Hussain",
+   "price": 48,
+   "compareAt": 69,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/4_83d9bbb6-29cb-4a25-9106-065e208a36a0.jpg?v=1762602399&width=700",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/4_83d9bbb6-29cb-4a25-9106-065e208a36a0.jpg?v=1762602399&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/2_6ae3451f-1278-4ae5-b89d-2416d17ab89b.jpg?v=1762602399&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/3_3dc1876d-6448-43a7-b60f-4a542635a42f.jpg?v=1762602399&width=700",
+    "https://cdn.shopify.com/s/files/1/0409/6072/1045/files/1_990362ee-8ef2-4210-bf8c-be6b531f07b0.jpg?v=1762602389&width=700"
+   ],
+   "options": [],
+   "description": "Embroiderd front on khaddar Fabric Embroiderd side panels on khadar Embroiderd front daman on khaddar Fabric Embroiderd sleeves border 2 Embroiderd woolen shawl Plain dyed khaddar back Plain dyed khaddar Trouser"
+  }
+ ],
+ "productCount": 81,
+ "features": [
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  }
+ ],
+ "storeApps": [],
+ "crawledAt": "2026-10-27T10:05:15.510Z",
+ "warnings": [],
+ "overrides": {}
+}
