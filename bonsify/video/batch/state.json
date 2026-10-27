@@ -1162,6 +1162,12 @@
     "Global-e"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 113,
+   "took": 533,
+   "mb": 9.4
   }
  },
  "ali-xeeshan": {
@@ -1173,6 +1179,12 @@
    "flags": [
     "crawl failed: Node.js v22.22.0"
    ]
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 434,
+   "mb": 9.1
   }
  },
  "bin-ilyas": {
@@ -1203,6 +1215,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 119,
+   "took": 475,
+   "mb": 10
   }
  },
  "mahnur": {
@@ -1235,6 +1253,12 @@
     "TikTok Pixel"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 118,
+   "took": 516,
+   "mb": 9.2
   }
  },
  "nida-azwer": {
@@ -1264,6 +1288,12 @@
     "Google Analytics 4"
    ],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 119,
+   "took": 458,
+   "mb": 9.6
   }
  },
  "maryam-hussain": {
@@ -1290,6 +1320,12 @@
    },
    "apps": [],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 110,
+   "took": 420,
+   "mb": 8.5
   }
  },
  "gulaal": {
@@ -1320,6 +1356,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 113,
+   "took": 419,
+   "mb": 9.4
   }
  },
  "chester-bernard": {
@@ -1351,6 +1393,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 123,
+   "took": 445,
+   "mb": 8.9
   }
  },
  "brumano": {
@@ -1381,6 +1429,12 @@
     "Google Analytics 4"
    ],
    "banners": 3
+  },
+  "render": {
+   "ok": true,
+   "seconds": 120,
+   "took": 426,
+   "mb": 8.7
   }
  },
  "workmenwear": {
@@ -1411,6 +1465,12 @@
     "Google Analytics 4"
    ],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 120,
+   "took": 431,
+   "mb": 9.1
   }
  },
  "rashid-textiles": {
@@ -1441,6 +1501,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 398,
+   "mb": 8.2
   }
  },
  "khuda-baksh": {
@@ -1471,6 +1537,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 117,
+   "took": 417,
+   "mb": 9
   }
  },
  "faisal-fabrics": {
