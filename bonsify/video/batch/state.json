@@ -1574,6 +1574,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 123,
+   "took": 455,
+   "mb": 9.8
   }
  },
  "salitex": {
@@ -1602,6 +1608,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 406,
+   "mb": 8.4
   }
  },
  "coco-by-zara-shahjahan": {
@@ -1631,6 +1643,12 @@
     "Google Analytics 4"
    ],
    "banners": 0
+  },
+  "render": {
+   "ok": true,
+   "seconds": 115,
+   "took": 413,
+   "mb": 8.4
   }
  },
  "al-fatah-fabrics": {
@@ -1657,6 +1675,12 @@
    },
    "apps": [],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 423,
+   "mb": 9.6
   }
  },
  "zara-shahjahan": {
@@ -1687,6 +1711,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 119,
+   "took": 433,
+   "mb": 8.7
   }
  },
  "qalamkar": {
@@ -1719,6 +1749,12 @@
     "Instafeed"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 121,
+   "took": 446,
+   "mb": 9.5
   }
  },
  "mahum-asad": {
@@ -1749,6 +1785,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 118,
+   "took": 443,
+   "mb": 8.1
   }
  },
  "xenia-formals": {
@@ -1777,6 +1819,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 112,
+   "took": 418,
+   "mb": 9
   }
  },
  "parishay": {
