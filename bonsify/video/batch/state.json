@@ -672,6 +672,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 115,
+   "took": 449,
+   "mb": 8.2
   }
  },
  "cross-stitch": {
@@ -703,6 +709,12 @@
     "TikTok Pixel"
    ],
    "banners": 0
+  },
+  "render": {
+   "ok": true,
+   "seconds": 117,
+   "took": 433,
+   "mb": 8.8
   }
  },
  "generation": {
@@ -733,6 +745,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 456,
+   "mb": 8.8
   }
  },
  "baroque": {
@@ -764,6 +782,12 @@
     "Instafeed"
    ],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 118,
+   "took": 427,
+   "mb": 8.7
   }
  },
  "dari-mooch": {
@@ -799,6 +823,12 @@
     "Consentmo"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 119,
+   "took": 435,
+   "mb": 8.6
   }
  },
  "azure": {
@@ -829,6 +859,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 122,
+   "took": 459,
+   "mb": 9.6
   }
  },
  "lawrencepur": {
@@ -860,6 +896,12 @@
     "Instafeed"
    ],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 123,
+   "took": 478,
+   "mb": 9.1
   }
  },
  "kayseria": {
@@ -912,6 +954,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 411,
+   "mb": 8.2
   }
  },
  "mausummery": {
@@ -1014,6 +1062,12 @@
     "Instafeed"
    ],
    "banners": 0
+  },
+  "render": {
+   "ok": true,
+   "seconds": 122,
+   "took": 435,
+   "mb": 8.3
   }
  },
  "republic-womenswear": {
@@ -1044,6 +1098,12 @@
     "Meta Pixel"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 116,
+   "took": 436,
+   "mb": 8.6
   }
  },
  "ethnc": {
