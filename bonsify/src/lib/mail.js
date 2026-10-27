@@ -1,18 +1,22 @@
 // Sends the short automatic replies to people who write to us. Server-side only.
 //
-// Provider: Resend's HTTP API (no package needed). Nothing is sent unless
-// RESEND_API_KEY is set, so a missing key can never break a form.
-//   MAIL_FROM      sender, default "Bonsify <hello@bonsify.io>"
-//   MAIL_REPLY_TO  where replies go, default hello@bonsify.io
-//   RESEND_API_KEY from resend.com once the bonsify.io domain is verified there
+// Plain SMTP through nodemailer (Zoho Mail). Nothing is sent unless SMTP_USER
+// and SMTP_PASS are set, so missing settings can never break a form.
+//   SMTP_HOST      default smtp.zoho.com (EU accounts: smtp.zoho.eu, India: smtp.zoho.in)
+//   SMTP_PORT      default 465 (SSL). 587 uses STARTTLS.
+//   SMTP_USER      the mailbox login, hello@bonsify.io
+//   SMTP_PASS      its password, or an app-specific password when 2FA is on
+//   MAIL_FROM      default "Bonsify <hello@bonsify.io>". Zoho only lets you send as
+//                  the logged-in mailbox or one of its aliases.
+//   MAIL_REPLY_TO  default hello@bonsify.io
+// All are read when a request arrives, never baked into the build.
 //
 // The two on/off switches live in content/settings/emails.json and are edited
 // in /admin under Settings. The file is bundled at build time, and a change in
 // /admin is a commit, so the new value goes live when Vercel redeploys.
+import nodemailer from "nodemailer";
 import settings from "../../content/settings/emails.json";
 
-export const MAIL_FROM = process.env.MAIL_FROM || "Bonsify <hello@bonsify.io>";
-export const MAIL_REPLY_TO = process.env.MAIL_REPLY_TO || "hello@bonsify.io";
 
 // Strictly true turns it on, so a missing or odd value stays off.
 export const autoReplyOn = (key) => settings?.[key] === true;
@@ -52,32 +56,41 @@ export function contactReply({ name }) {
   };
 }
 
-// Never throws. Returns true when the provider accepted the message.
+// Never throws. Returns true when the server accepted the message. Callers await
+// it so the work finishes before the serverless function is frozen; the timeouts
+// keep a slow mail server from holding the form up for long.
 export async function sendAutoReply(to, { subject, lines }) {
-  const key = process.env.RESEND_API_KEY;
-  if (!key) {
-    console.log("BONSIFY_AUTOREPLY_SKIPPED no RESEND_API_KEY");
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  if (!user || !pass) {
+    console.log("BONSIFY_AUTOREPLY_SKIPPED no SMTP_USER or SMTP_PASS");
     return false;
   }
   try {
-    const res = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from: MAIL_FROM,
-        to: [to],
-        reply_to: MAIL_REPLY_TO,
-        subject,
-        text: lines.join("\n\n"),
-        html: lines.map((l) => `<p>${esc(l)}</p>`).join(""),
-        headers: { "Auto-Submitted": "auto-replied" },
-      }),
-      signal: AbortSignal.timeout(8000),
+    const port = Number(process.env.SMTP_PORT) || 465;
+    const transport = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp.zoho.com",
+      port,
+      secure: port === 465,
+      requireTLS: port !== 465,
+      auth: { user, pass },
+      connectionTimeout: 8000,
+      greetingTimeout: 8000,
+      socketTimeout: 8000,
     });
-    if (!res.ok) console.log("BONSIFY_AUTOREPLY_FAILED " + res.status);
-    return res.ok;
+    await transport.sendMail({
+      from: process.env.MAIL_FROM || "Bonsify <hello@bonsify.io>",
+      to,
+      replyTo: process.env.MAIL_REPLY_TO || "hello@bonsify.io",
+      subject,
+      text: lines.join("\n\n"),
+      html: lines.map((l) => `<p>${esc(l)}</p>`).join(""),
+      headers: { "Auto-Submitted": "auto-replied" },
+    });
+    transport.close();
+    return true;
   } catch (e) {
-    console.log("BONSIFY_AUTOREPLY_FAILED " + (e?.message || "error"));
+    console.log("BONSIFY_AUTOREPLY_FAILED " + (e?.code || e?.message || "error"));
     return false;
   }
 }
