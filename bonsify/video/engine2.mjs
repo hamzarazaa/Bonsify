@@ -160,6 +160,12 @@ async function openSite() {
   const page = await ctx.newPage();
   try { await page.goto(brand.url, { waitUntil: "domcontentloaded", timeout: 45000 }); } catch (e) { console.log("site load:", e.message.slice(0, 80)); }
   await page.waitForTimeout(3500);
+  // some stores paint late or blank: wait for real content, reload once if it never shows
+  const painted = () => page.evaluate(() => (document.body?.innerText || "").trim().length > 150 && document.images.length > 2).catch(() => false);
+  for (let t = 0; t < 2 && !(await painted()); t++) {
+    for (let k = 0; k < 10 && !(await painted()); k++) await page.waitForTimeout(1500);
+    if (!(await painted()) && t === 0) { try { await page.reload({ waitUntil: "domcontentloaded", timeout: 45000 }); } catch {} await page.waitForTimeout(3500); }
+  }
   // popups, cookie bars and chat bubbles hide the store, so take them off the recording
   const clean = async () => page.evaluate(() => {
     const kill = (el) => { el.style.setProperty("display", "none", "important"); };

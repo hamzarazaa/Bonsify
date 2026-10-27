@@ -211,6 +211,12 @@
     "Elevar"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 474,
+   "mb": 8
   }
  },
  "beechtree": {
