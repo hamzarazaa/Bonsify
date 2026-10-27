@@ -66,8 +66,8 @@
   "render": {
    "ok": true,
    "seconds": 120,
-   "took": 491,
-   "mb": 9.2
+   "took": 448,
+   "mb": 9.3
   }
  },
  "sana-safinaz": {
@@ -213,8 +213,8 @@
   "render": {
    "ok": true,
    "seconds": 119,
-   "took": 441,
-   "mb": 8.3
+   "took": 440,
+   "mb": 8.6
   }
  },
  "lulusar": {
