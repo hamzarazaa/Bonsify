@@ -65,7 +65,8 @@
               h("div", { style: { margin: "4px 0", height: 30, overflow: "hidden" } }, p.title),
               h("button", { type: "button", onClick: function () { this.removeProduct(i); }.bind(this), style: { fontSize: 11, cursor: "pointer" } }, "Remove"));
           }, this)));
-        kids.push(h("p", { style: { color: "#555", marginTop: 12 } }, "The page will live at /for/" + (b.slug || "name") + " after you Publish."));
+        var base = (this.props.field && this.props.field.get && this.props.field.get("page_base")) || "/for/";
+        kids.push(h("p", { style: { color: "#555", marginTop: 12 } }, "The page will live at " + base + "<page address> after you Publish."));
       }
       return h("div", { style: box }, kids);
     }

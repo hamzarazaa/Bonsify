@@ -1,4 +1,5 @@
 import { sendToSheet, formspreeOn } from "@/lib/leadSink";
+import { autoReplyOn, contactReply, replyAllowed, sendAutoReply } from "@/lib/mail";
 
 const TURNSTILE_VERIFY_URL =
   "https://challenges.cloudflare.com/turnstile/v0/siteverify";
@@ -90,10 +91,19 @@ export async function POST(request) {
     site: process.env.NEXT_PUBLIC_LAB === "1" ? "lab" : "main",
   });
 
+  // Optional automatic thank-you, off unless switched on in /admin (Settings).
+  // Sent only once the message itself is safely received (see the returns below).
+  const autoReply = async () => {
+    if (autoReplyOn("autoEmailContactEnquiry") && replyAllowed(email, (ip || "unknown").split(",")[0].trim())) {
+      await sendAutoReply(email, contactReply({ name: String(formData.get("name") || "") }));
+    }
+  };
+
   if (!formspreeOn()) {
     if (!(await sheetSaved)) {
       return Response.json({ error: "Could not send your message. Please try again or email us directly." }, { status: 502 });
     }
+    await autoReply();
     return Response.json({ ok: true });
   }
 
@@ -119,5 +129,6 @@ export async function POST(request) {
     );
   }
 
+  await autoReply();
   return Response.json({ ok: true });
 }

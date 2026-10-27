@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import PhoneOnly from "@/components/proposals/PhoneOnly";
 import CustomTry from "@/components/proposals/CustomTry";
 import { getLabBrands } from "@/lib/lab";
+import { getDemo, getDemoSlugs } from "@/lib/demoPages";
 import { googleFontsHref } from "@/lib/proposalFonts";
 
 // A lab demo store opened on its own, for a real phone. The QR code on the lab
@@ -9,7 +10,8 @@ import { googleFontsHref } from "@/lib/proposalFonts";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [...getLabBrands({ all: true }).map((b) => ({ slug: b.slug })), { slug: "custom" }];
+  const slugs = new Set([...getLabBrands({ all: true }).map((b) => b.slug), ...getDemoSlugs()]);
+  return [...[...slugs].map((slug) => ({ slug })), { slug: "custom" }];
 }
 
 export const metadata = {
@@ -24,7 +26,7 @@ export const viewport = { viewportFit: "cover", width: "device-width", initialSc
 export default async function TryPage({ params }) {
   const { slug } = await params;
   if (slug === "custom") return <CustomTry />;
-  const brand = getLabBrands({ all: true }).find((b) => b.slug === slug);
+  const brand = getLabBrands({ all: true }).find((b) => b.slug === slug) || getDemo(slug)?.brand;
   if (!brand) notFound();
   const href = googleFontsHref(brand.fonts);
   return (

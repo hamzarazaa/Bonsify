@@ -33,10 +33,11 @@ export default function DemoClient({ brand, video }) {
   return (
     <main className={`${styles.page} ${tourOn ? styles.touring : ""}`}>
       <section className={styles.hero}>
-        <p className={styles.chip}>A short video for {video.who}</p>
-        <h1>You asked what an app could look like. We built it.</h1>
+        <p className={styles.chip}>A short video for {video.contact || video.who}</p>
+        <h1>{video.headline}</h1>
         <div className={styles.player}>
           <video controls playsInline preload="metadata" poster={video.poster} src={video.src}>
+            {video.captions && <track kind="captions" src={video.captions} srcLang="en" label="English" default />}
             Your browser cannot play this video.
           </video>
         </div>

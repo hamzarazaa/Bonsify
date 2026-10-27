@@ -1,0 +1,13 @@
+{
+  "slug": "gulahmed",
+  "published": true,
+  "brandName": "Gul Ahmad",
+  "storeUrl": "https://www.gulahmedshop.com/",
+  "video": {
+    "src": "/demo/gulahmed.mp4",
+    "poster": "/demo/gulahmed-poster.jpg"
+  },
+  "headline": "You asked what an app could look like. We built it.",
+  "contact": "",
+  "notes": "Original demo page. Store data comes from content/lab/gulahmed.json."
+}

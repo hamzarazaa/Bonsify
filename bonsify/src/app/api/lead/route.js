@@ -4,6 +4,7 @@
 // one JSON line and forwarded to the same inbox as the contact form, so a
 // store address is never lost, even when the visitor leaves the form.
 import { sendToSheet, formspreeOn } from "@/lib/leadSink";
+import { autoReplyOn, homeReply, replyAllowed, sendAutoReply } from "@/lib/mail";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgyvadp";
 const STAGES = new Set(["submitted", "abandoned", "not_shopify", "newsletter", "mobile_share"]);
@@ -53,5 +54,11 @@ export async function POST(request) {
       ? fetch(FORMSPREE_ENDPOINT, { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/x-www-form-urlencoded" }, body })
       : null,
   ]); // the log line above is the last-resort record
+
+  // Optional automatic thank-you, off unless switched on in /admin (Settings).
+  // Only for the home page enquiry, never for the footer newsletter or half-finished forms.
+  if (email && (stage === "submitted" || stage === "not_shopify") && rec.source.startsWith("lab-home") && autoReplyOn("autoEmailHomeEnquiry") && replyAllowed(email, ip)) {
+    await sendAutoReply(email, homeReply({ name, brandName, url }));
+  }
   return Response.json({ ok: true });
 }
