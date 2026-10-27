@@ -431,6 +431,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 124,
+   "took": 489,
+   "mb": 8.5
   }
  },
  "breakout": {
@@ -850,6 +856,12 @@
     "TikTok Pixel"
    ],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 124,
+   "took": 499,
+   "mb": 9
   }
  },
  "faiza-saqlain": {
@@ -875,6 +887,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 115,
+   "took": 471,
+   "mb": 8.4
   }
  },
  "tena-durrani": {

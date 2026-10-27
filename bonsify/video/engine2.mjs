@@ -218,7 +218,7 @@ async function record(beat, i) {
   fs.writeFileSync(path.join(W, `clip_${i}.ffconcat`), list);
   const raw = path.join(W, `raw_${i}.mp4`);
   const vf = beat.phone.mode === "site" ? `fps=30,scale=400:${866 - BAR},format=yuv420p` : "fps=30,scale=400:866,format=yuv420p";
-  ff("-f", "concat", "-safe", "0", "-i", path.join(W, `clip_${i}.ffconcat`), "-vf", vf, "-t", beat.len.toFixed(3), "-c:v", "libx264", "-crf", "18", raw);
+  ff("-f", "concat", "-safe", "0", "-i", path.join(W, `clip_${i}.ffconcat`), "-vf", vf, "-t", beat.len.toFixed(3), "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", raw);
   fs.rmSync(dir, { recursive: true, force: true });
   return raw;
 }
@@ -322,7 +322,7 @@ fs.writeFileSync(path.join(W, "bg.ffconcat"), bg);
 const clipFiles = beats.map((b, i) => {
   if (b.phone.mode !== "site") return raws[i];
   const out = path.join(W, `clipb_${i}.mp4`);
-  ff("-i", raws[i], "-i", path.join(W, "bar.png"), "-filter_complex", `[0:v]pad=400:866:0:${BAR}:color=white[a];[a][1:v]overlay=0:0,format=yuv420p`, "-c:v", "libx264", "-crf", "18", out);
+  ff("-i", raws[i], "-i", path.join(W, "bar.png"), "-filter_complex", `[0:v]pad=400:866:0:${BAR}:color=white[a];[a][1:v]overlay=0:0,format=yuv420p`, "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out);
   return out;
 });
 fs.writeFileSync(path.join(W, "clips.ffconcat"), `ffconcat version 1.0\n${clipFiles.map((f) => `file ${path.basename(f)}`).join("\n")}\n`);
@@ -374,7 +374,7 @@ async function avatarPart(name, states) {
   ff("-i", src, "-f", "concat", "-safe", "0", "-i", path.join(W, `${name}_stage.ffconcat`), "-i", path.join(W, "ring.png"), "-i", path.join(W, "mask.png"),
     "-f", "lavfi", "-t", d.toFixed(2), "-i", "anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000", ...lineIn,
     "-filter_complex", `[0:v]crop=760:760:${cr.x}:${cr.y},scale=${AV}:${AV},fps=30,format=yuva420p[sq];[3:v]format=gray[m];[sq][m]alphamerge[c];[1:v]fps=30,format=yuv420p[sg];[sg][2:v]overlay=66:${1080 - AV - 80 - 30}[s1];[s1][c]overlay=96:${1080 - AV - 80}[v];${aF}`,
-    "-map", "[v]", "-map", "[a]", "-ac", "2", "-t", d.toFixed(2), "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "160k", out);
+    "-map", "[v]", "-map", "[a]", "-ac", "2", "-t", d.toFixed(2), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "160k", out);
   return out;
 }
 const parts = [];
