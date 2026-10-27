@@ -348,7 +348,7 @@ const body = path.join(W, "body.mp4");
 ff("-f", "concat", "-safe", "0", "-i", path.join(W, "bg.ffconcat"), "-f", "concat", "-safe", "0", "-i", path.join(W, "clips.ffconcat"),
   "-i", path.join(W, "bezel.png"), "-f", "concat", "-safe", "0", "-i", path.join(W, "aud.ffconcat"),
   "-filter_complex", `[0:v]fps=30,format=yuv420p[bg];[1:v]fps=30,format=yuv420p[ph];[bg][ph]overlay=1260:107[o];[o][2:v]overlay=0:0,fade=t=in:d=0.3,fade=t=out:st=${(total - 0.3).toFixed(2)}:d=0.3,format=yuv420p[v];[3:a]loudnorm=I=-16:TP=-1.5:LRA=11,afade=t=in:d=0.1,afade=t=out:st=${(total - 0.25).toFixed(2)}:d=0.25[a]`,
-  "-map", "[v]", "-map", "[a]", "-t", total.toFixed(3), "-r", "30", "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", body);
+  "-map", "[v]", "-map", "[a]", "-t", total.toFixed(3), "-r", "30", "-c:v", "libx264", "-crf", "12", "-preset", "veryfast", "-c:a", "aac", "-b:a", "192k", body); // intermediate: near-lossless, the final encode below is the only lossy step
 
 // ---------- 5. intro and outro: avatar in a circle, audio cleaned ----------
 const RN = path.join(HERE, "assets", "rnnoise-bd.rnnn");
@@ -391,7 +391,7 @@ async function avatarPart(name, states) {
   ff("-i", src, "-f", "concat", "-safe", "0", "-i", path.join(W, `${name}_stage.ffconcat`), "-i", path.join(W, "ring.png"), "-i", path.join(W, "mask.png"),
     "-f", "lavfi", "-t", d.toFixed(2), "-i", "anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000", ...lineIn,
     "-filter_complex", `[0:v]crop=760:760:${cr.x}:${cr.y},scale=${AV}:${AV},fps=30,format=yuva420p[sq];[3:v]format=gray[m];[sq][m]alphamerge[c];[1:v]fps=30,format=yuv420p[sg];[sg][2:v]overlay=66:${1080 - AV - 80 - 30}[s1];[s1][c]overlay=96:${1080 - AV - 80}[v];${aF}`,
-    "-map", "[v]", "-map", "[a]", "-ac", "2", "-t", d.toFixed(2), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "160k", out);
+    "-map", "[v]", "-map", "[a]", "-ac", "2", "-t", d.toFixed(2), "-c:v", "libx264", "-preset", "veryfast", "-crf", "12", "-c:a", "aac", "-b:a", "192k", out);
   return out;
 }
 const parts = [];
@@ -423,7 +423,7 @@ else {
   });
   af += `;anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000:duration=${acc.toFixed(2)},aformat=channel_layouts=stereo[rt];${labels.join("")}[rt]amix=inputs=${parts.length + 1}:duration=longest:normalize=0,alimiter=limit=0.89:level=false[a]`;
   ff(...parts.flatMap((p) => ["-i", p]), ...parts.flatMap((p, i) => ["-i", path.join(W, `join_${i}.wav`)]), "-filter_complex", `${vf};${af}`, "-map", `[v${parts.length - 1}]`, "-map", "[a]", "-t", acc.toFixed(3),
-    "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", final);
+    "-c:v", "libx264", "-crf", "19", "-preset", "fast", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", final);
 }
 
 T("final video joined");
