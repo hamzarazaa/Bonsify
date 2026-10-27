@@ -35,7 +35,7 @@ const DRY = !!flag("dry", false);
 const PROVIDER = flag("provider", process.env.TTS_PROVIDER || "eleven");
 const BASE = flag("base", "http://localhost:3100");
 const OUT = path.resolve(ROOT, flag("out", "video/out"));
-const MODEL = process.env.TTS_MODEL || (PROVIDER === "openrouter" ? "elevenlabs/eleven-v4-turbo" : "eleven_v4_turbo");
+const MODEL = process.env.TTS_MODEL || (PROVIDER === "openrouter" ? "elevenlabs/eleven-v4-turbo" : "eleven_v4");
 const VOICE = process.env.VOICE_ID || "";
 const PAD = 0.45; // seconds of air after each scene
 const W = path.join(HERE, "work", slug);
@@ -170,10 +170,16 @@ const bezelHtml = `<style>*{margin:0}body{width:1920px;height:1080px;background:
 .n{position:absolute;left:1460px;top:116px;width:96px;height:26px;margin-left:-48px;border-radius:14px;background:#111}</style><div class=b></div><div class=n></div>`;
 const lowerHtml = `<style>${css}body{background:transparent}.l{position:absolute;left:96px;bottom:110px;padding:20px 34px;border-radius:40px;background:rgba(246,241,230,.94);font:600 34px Inter;color:#1F4A37;box-shadow:0 10px 30px rgba(0,0,0,.2)}.l b{color:${col.accent}}</style><div class=l>Made for <b>${esc(brand.name)}</b></div>`;
 
+const stageHtml = `<style>${css}body{background:linear-gradient(160deg,#F6F1E6,#ECE5D5)}
+.ring{position:absolute;left:920px;top:140px;width:920px;height:800px;border-radius:50%;background:#fff;opacity:.55}
+.brand{position:absolute;left:900px;top:300px;font:600 46px Fraunces;color:#1F4A37}.t{position:absolute;left:900px;top:380px;width:900px;font:600 96px/1.04 Fraunces;color:#1F4A37}
+.s{position:absolute;left:900px;top:700px;width:860px;font:400 40px/1.4 Inter;opacity:.7}</style>
+<div class=ring></div><div class=brand>Bonsify</div><div class=t>${esc(brand.name)}, as a mobile app</div><div class=s>A walkthrough built on your real products.</div>`;
 const fp = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
 const shot = async (html, file, transparent) => { await fp.setContent(html, { waitUntil: "load" }); await fp.evaluate(() => document.fonts.ready); await fp.screenshot({ path: file, omitBackground: !!transparent }); };
 await shot(bezelHtml, path.join(W, "bezel.png"), true);
 await shot(lowerHtml, path.join(W, "lower.png"), true);
+await shot(stageHtml, path.join(W, "stage.png"));
 let bg = "ffconcat version 1.0\n", last = "", t = 0; const vtt = [];
 scenes.forEach((sc, si) => {
   const ss = sentences(sc.say), w = ss.map((s) => s.length), sum = w.reduce((a, b) => a + b, 0);
@@ -204,28 +210,42 @@ ff("-f", "concat", "-safe", "0", "-i", path.join(W, "bg.ffconcat"), "-f", "conca
   "-map", "[v]", "-map", "[a]", "-t", total.toFixed(3), "-r", "30", "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", body);
 
 // ---------- 5. intro and outro ----------
+const isPortrait = (f) => { const [w, h] = sh("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", f]).trim().split(",").map(Number); return h > w; };
 const norm = (src, dst, lower) => {
-  const silent = !hasAudio(src), d = dur(src);
+  const silent = !hasAudio(src), d = dur(src), portrait = isPortrait(src);
   const args = ["-i", src];
-  if (lower) args.push("-i", path.join(W, "lower.png"));
-  if (silent) args.push("-f", "lavfi", "-t", d.toFixed(2), "-i", "anullsrc=r=48000:cl=stereo");
-  const v = `[0:v]scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=#F6F1E6,fps=30,setsar=1,format=yuv420p[b]`;
-  const vf = lower ? `${v};[b][1:v]overlay=0:0:enable='between(t,1.2,${Math.min(6, d - 0.5).toFixed(1)})'[v]` : v.replace("[b]", "[v]");
-  const aIdx = silent ? (lower ? 2 : 1) : 0;
-  ff(...args, "-filter_complex", `${vf};[${aIdx}:a]aresample=48000,loudnorm=I=-16:TP=-1.5:LRA=11[a]`, "-map", "[v]", "-map", "[a]", "-ac", "2", "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "160k", dst);
+  let n = 1, stageIdx = -1, lowerIdx = -1, silIdx = -1;
+  if (portrait) { args.push("-loop", "1", "-t", d.toFixed(2), "-i", path.join(W, "stage.png")); stageIdx = n++; }
+  if (lower) { args.push("-i", path.join(W, "lower.png")); lowerIdx = n++; }
+  if (silent) { args.push("-f", "lavfi", "-t", d.toFixed(2), "-i", "anullsrc=r=48000:cl=stereo"); silIdx = n++; }
+  let f = portrait
+    ? `[0:v]scale=-2:1080,fps=30,setsar=1[av];[${stageIdx}:v]fps=30,setsar=1[sg];[sg][av]overlay=190:0,format=yuv420p[b]`
+    : `[0:v]scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=#F6F1E6,fps=30,setsar=1,format=yuv420p[b]`;
+  f += lower ? `;[b][${lowerIdx}:v]overlay=0:0:enable='between(t,1.2,${Math.min(6, d - 0.5).toFixed(1)})'[v]` : ";[b]null[v]";
+  const aIn = silent ? `[${silIdx}:a]` : "[0:a]";
+  ff(...args, "-filter_complex", `${f};${aIn}aresample=48000,loudnorm=I=-16:TP=-1.5:LRA=11[a]`, "-map", "[v]", "-map", "[a]", "-ac", "2", "-t", d.toFixed(2), "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "160k", dst);
   return dst;
 };
 const parts = [];
 const intro = ["mp4", "mov", "webm"].map((e) => path.join(HERE, "assets", `intro.${e}`)).find(fs.existsSync);
 const outro = ["mp4", "mov", "webm"].map((e) => path.join(HERE, "assets", `outro.${e}`)).find(fs.existsSync);
 let offset = 0;
-if (intro) { parts.push(norm(intro, path.join(W, "intro_n.mp4"), true)); offset = dur(parts[0]); } else console.log("no video/assets/intro.mp4, skipping the intro");
+if (intro) { parts.push(norm(intro, path.join(W, "intro_n.mp4"), true)); offset = dur(parts[0]) - 0.6; } else console.log("no video/assets/intro.mp4, skipping the intro");
 const bodyN = path.join(W, "body_n.mp4"); fs.copyFileSync(body, bodyN); parts.push(bodyN);
 if (outro) parts.push(norm(outro, path.join(W, "outro_n.mp4"), false)); else console.log("no video/assets/outro.mp4, skipping the outro");
 const final = path.join(OUT, `${slug}.mp4`);
+const XF = 0.6; // the avatar fades out into the demo (and back in for the outro); the same cloned voice carries across
 if (parts.length === 1) fs.copyFileSync(bodyN, final);
-else ff(...parts.flatMap((p) => ["-i", p]), "-filter_complex", `${parts.map((_, i) => `[${i}:v][${i}:a]`).join("")}concat=n=${parts.length}:v=1:a=1[v][a]`,
-  "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", final);
+else {
+  const ds = parts.map(dur); let vf = "[0:v]null[v0]", af = "[0:a]anull[a0]", acc = ds[0];
+  for (let i = 1; i < parts.length; i++) {
+    vf += `;[v${i - 1}][${i}:v]xfade=transition=fade:duration=${XF}:offset=${(acc - XF).toFixed(3)}[v${i}]`;
+    af += `;[a${i - 1}][${i}:a]acrossfade=d=${XF}[a${i}]`;
+    acc += ds[i] - XF;
+  }
+  ff(...parts.flatMap((p) => ["-i", p]), "-filter_complex", `${vf};${af}`, "-map", `[v${parts.length - 1}]`, "-map", `[a${parts.length - 1}]`,
+    "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", final);
+}
 
 // captions and poster
 const ts = (x) => { const h = Math.floor(x / 3600), m = Math.floor((x % 3600) / 60), s = (x % 60).toFixed(3).padStart(6, "0"); return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${s}`; };
