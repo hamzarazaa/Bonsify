@@ -169,6 +169,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 113,
+   "took": 412,
+   "mb": 7.6
   }
  },
  "j-junaid-jamshed": {
@@ -203,6 +209,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 119,
+   "took": 441,
+   "mb": 8.3
   }
  },
  "lulusar": {
