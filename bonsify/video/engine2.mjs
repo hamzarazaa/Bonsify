@@ -166,6 +166,11 @@ async function openSite() {
     for (let k = 0; k < 10 && !(await painted()); k++) await page.waitForTimeout(1500);
     if (!(await painted()) && t === 0) { try { await page.reload({ waitUntil: "domcontentloaded", timeout: 45000 }); } catch {} await page.waitForTimeout(3500); }
   }
+  // splash-only home pages: show the biggest collection instead
+  if (!(await painted())) {
+    const col = [...(brand.collections || [])].filter((c) => c.count >= 12 && !/^(all|frontpage)$/i.test(c.handle)).sort((a, b) => b.count - a.count)[0];
+    if (col) { try { await page.goto(new URL(`/collections/${col.handle}`, page.url()).href, { waitUntil: "domcontentloaded", timeout: 45000 }); } catch {} await page.waitForTimeout(4000); console.log("site fallback to collection", col.handle); }
+  }
   // popups, cookie bars and chat bubbles hide the store, so take them off the recording
   const clean = async () => page.evaluate(() => {
     const kill = (el) => { el.style.setProperty("display", "none", "important"); };
@@ -173,7 +178,12 @@ async function openSite() {
     // sticky bars along the bottom (notification prompts, cookie strips) cover the store
     document.querySelectorAll("body *").forEach((el) => { const cs = getComputedStyle(el); if (cs.position !== "fixed") return; const r = el.getBoundingClientRect(); if (r.width > 300 && r.height < 240 && r.bottom >= innerHeight - 6) kill(el); });
     document.querySelectorAll("div,section,aside,p,span").forEach((el) => { if (el.children.length > 12 || !/allow me|no thanks/i.test(el.textContent || "") || (el.textContent || "").length > 220) return; let n = el; while (n && n !== document.body) { const pos = getComputedStyle(n).position; if (pos === "fixed" || pos === "sticky" || pos === "absolute") { kill(n); return; } n = n.parentElement; } kill(el); });
+    // full-screen overlays: preloaders, dimmed backdrops, newsletter or language pickers, open menus
+    document.querySelectorAll("body *").forEach((el) => { const cs = getComputedStyle(el); if (cs.position !== "fixed" && cs.position !== "absolute") return; const r = el.getBoundingClientRect(); if (r.width * r.height > innerWidth * innerHeight * 0.22 && (cs.position === "fixed" || parseInt(cs.zIndex || "0", 10) >= 50) && !/^(header|nav)$/i.test(el.tagName) && r.top < 80) kill(el); });
+    document.querySelectorAll("[class*=overlay i],[class*=backdrop i],[class*=newsletter i],[class*=subscribe i],[class*=preloader i],[class*=loader i],[id*=preloader i]").forEach((el) => { const cs = getComputedStyle(el); const r = el.getBoundingClientRect(); if ((cs.position === "fixed" || cs.position === "absolute") && r.width > 200 && r.height > 80) kill(el); });
     document.body.style.setProperty("overflow", "auto", "important");
+    document.body.style.setProperty("position", "static", "important");
+    document.body.style.setProperty("opacity", "1", "important");
     document.documentElement.style.setProperty("overflow", "auto", "important");
   }).catch(() => {});
   await clean(); await page.waitForTimeout(500); await clean();
@@ -204,9 +214,11 @@ async function record(beat, i) {
   const h = beat.phone.mode === "site" ? (844 - BAR) * 2 : 1688;
   await cdp.send("Page.startScreencast", { format: "jpeg", quality: 92, maxWidth: 780, maxHeight: h, everyNthFrame: 1 });
   const T0 = Date.now();
+  const tick = S.clean ? setInterval(() => S.clean(), 700) : null;
   const at = async (s, fn) => { const w = s * 1000 - (Date.now() - T0); if (w > 0) await page.waitForTimeout(w); await fn(); };
   for (const step of beat.phone.steps) await at(beat.warp(step.at * beat.len), () => doStep(S, step.do));
   await at(beat.len, async () => {});
+  if (tick) clearInterval(tick);
   await cdp.send("Page.stopScreencast"); cdp.off("Page.screencastFrame", onFrame);
   if (!frames.length) throw new Error(`no frames for beat ${beat.id}`);
   let list = "ffconcat version 1.0\n";

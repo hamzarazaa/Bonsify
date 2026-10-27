@@ -282,6 +282,12 @@
     "Google Tag Manager"
    ],
    "banners": 0
+  },
+  "render": {
+   "ok": true,
+   "seconds": 115,
+   "took": 416,
+   "mb": 8.2
   }
  },
  "borjan-shoes": {
@@ -312,6 +318,12 @@
     "Instafeed"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 123,
+   "took": 445,
+   "mb": 9.1
   }
  },
  "sania-maskatiya": {
@@ -342,6 +354,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 120,
+   "took": 445,
+   "mb": 9.3
   }
  },
  "hush-puppies-pakistan": {
@@ -372,6 +390,12 @@
     "Google Analytics 4"
    ],
    "banners": 3
+  },
+  "render": {
+   "ok": true,
+   "seconds": 118,
+   "took": 442,
+   "mb": 8.6
   }
  },
  "khazanay": {
@@ -406,6 +430,12 @@
     "PageFly"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 124,
+   "took": 456,
+   "mb": 9.6
   }
  },
  "metro-shoes": {
@@ -471,7 +501,7 @@
   "render": {
    "ok": true,
    "seconds": 124,
-   "took": 489,
+   "took": 453,
    "mb": 8.5
   }
  },
@@ -501,6 +531,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 109,
+   "took": 406,
+   "mb": 8
   }
  },
  "ego": {
@@ -531,6 +567,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 422,
+   "mb": 8.3
   }
  },
  "uniworth": {
@@ -563,6 +605,12 @@
     "Instafeed"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 123,
+   "took": 459,
+   "mb": 8.8
   }
  },
  "engine": {
@@ -589,6 +637,12 @@
    },
    "apps": [],
    "banners": 2
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 420,
+   "mb": 8.2
   }
  },
  "zeen-woman": {
