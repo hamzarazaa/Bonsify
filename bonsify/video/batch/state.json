@@ -26,6 +26,12 @@
     "Instafeed"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 117,
+   "took": 449,
+   "mb": 9.2
   }
  },
  "zellbury": {
@@ -56,6 +62,12 @@
     "Google Analytics 4"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 120,
+   "took": 491,
+   "mb": 9.2
   }
  },
  "sana-safinaz": {
@@ -86,6 +98,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 114,
+   "took": 470,
+   "mb": 9
   }
  },
  "afrozeh": {
@@ -117,6 +135,12 @@
     "Google Tag Manager"
    ],
    "banners": 4
+  },
+  "render": {
+   "ok": true,
+   "seconds": 119,
+   "took": 454,
+   "mb": 9.4
   }
  },
  "edenrobe": {
