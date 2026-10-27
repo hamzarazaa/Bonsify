@@ -148,9 +148,9 @@ export function beatsFor(brand) {
 // Intro and outro: the recorded lines, shown as headings timed to what is said.
 export function introStates(brand) {
   return [
-    { t: 0, kicker: `${brand.name} x Bonsify`, title: `Hi ${brand.name} team`, sub: "Shopify stores, turned into mobile apps" },
-    { t: 7.8, kicker: `${brand.name} x Bonsify`, title: "Your app, built on your real products", sub: "Your catalogue, your colours, your logo" },
-    { t: 13.4, kicker: `${brand.name} x Bonsify`, title: "A quick walkthrough", sub: "Let us dive in" },
+    { t: 0, kicker: "Welcome", title: `Hi ${brand.name} team`, sub: "Shopify stores, turned into mobile apps" },
+    { t: 7.8, kicker: "Your app", title: "Your app, built on your real products", sub: "Your catalogue, your colours, your logo" },
+    { t: 13.4, kicker: "Walkthrough", title: "A quick walkthrough", sub: "Let us dive in" },
   ];
 }
 export function outroStates() {

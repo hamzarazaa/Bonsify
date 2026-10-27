@@ -62,6 +62,7 @@ const PRIMARY = brand.colors?.primary || "#111111", ACCENT = brand.colors?.accen
 const lum = (h) => { const [r, g, b] = hex(h).map((v) => v / 255); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
 const INK = lum(PRIMARY) < 0.5 ? PRIMARY : "#111111";
 const HI = lum(ACCENT) < 0.62 ? ACCENT : INK;
+const GLOW = brand.colors?.glow || HI; // tint for the background blobs and the disc behind the phone
 
 // ---------- 1. voice ----------
 async function speak(text) {
@@ -117,10 +118,10 @@ const browser = await chromium.launch(exe ? { executablePath: exe } : {});
 const IPHONE = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1";
 const BAR = 64; // height of the phone browser bar on the "today" scene
 async function openApp() {
-  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, userAgent: IPHONE });
   const page = await ctx.newPage();
   await page.goto(`${BASE}/rec/${slug}`, { waitUntil: "networkidle", timeout: 60000 });
-  await page.addStyleTag({ content: "nextjs-portal,[data-nextjs-toast]{display:none!important}" });
+  await page.addStyleTag({ content: "nextjs-portal,[data-nextjs-toast]{display:none!important}*{scrollbar-width:none!important}::-webkit-scrollbar{display:none!important;width:0!important}html,body{overflow-x:hidden!important}" });
   await page.waitForFunction(() => window.__app?.current, null, { timeout: 15000 });
   await page.waitForTimeout(600);
   return { ctx, page, mode: "app" };
@@ -134,6 +135,9 @@ async function openSite() {
   const clean = async () => page.evaluate(() => {
     const kill = (el) => { el.style.setProperty("display", "none", "important"); };
     document.querySelectorAll("dialog,[role=dialog],[aria-modal=true],[class*=cookie i],[id*=cookie i],[class*=consent i],[class*=popup i],[class*=modal i]:not(html):not(body),[class*=klaviyo],[class*=privy],[id*=shopify-pc__banner]").forEach((el) => { const r = el.getBoundingClientRect(); if (r.width > 120 && r.height > 40) kill(el); });
+    // sticky bars along the bottom (notification prompts, cookie strips) cover the store
+    document.querySelectorAll("body *").forEach((el) => { const cs = getComputedStyle(el); if (cs.position !== "fixed") return; const r = el.getBoundingClientRect(); if (r.width > 300 && r.height < 240 && r.bottom >= innerHeight - 6) kill(el); });
+    document.querySelectorAll("div,section,aside,p,span").forEach((el) => { if (el.children.length > 12 || !/allow me|no thanks/i.test(el.textContent || "") || (el.textContent || "").length > 220) return; let n = el; while (n && n !== document.body) { const pos = getComputedStyle(n).position; if (pos === "fixed" || pos === "sticky" || pos === "absolute") { kill(n); return; } n = n.parentElement; } kill(el); });
     document.body.style.setProperty("overflow", "auto", "important");
     document.documentElement.style.setProperty("overflow", "auto", "important");
   }).catch(() => {});
@@ -189,16 +193,28 @@ if (appS) await appS.ctx.close(); if (siteS) await siteS.ctx.close();
 
 // ---------- 3. frames: panels, bezel, avatar stage ----------
 const font = (n) => `file://${path.join(HERE, "assets", "fonts", n)}`;
+const dataUri = (f) => `data:image/png;base64,${fs.readFileSync(f).toString("base64")}`;
+const BON_LOGO = dataUri(path.join(HERE, "assets", "bonsify-logo.png"));
+const BONG = "#2d6b4f"; // the green of the Bonsify bag
 const css = `
 @font-face{font-family:Inter;src:url(${font("inter-latin-wght-normal.woff2")});font-weight:100 900}
+@font-face{font-family:Fraunces;src:url(${font("fraunces-latin-wght-normal.woff2")});font-weight:100 900}
 *{box-sizing:border-box;margin:0}body{width:1920px;height:1080px;position:relative;overflow:hidden;font-family:Inter,sans-serif;color:#141414}
-.bg{position:absolute;inset:0;background:radial-gradient(1200px 800px at 30% 20%,${mix(PRIMARY, 0.97)},${mix(PRIMARY, 0.9)})}
-.top{position:absolute;left:96px;right:96px;top:56px;display:flex;align-items:center;justify-content:space-between}
-.bon{font:800 34px Inter;letter-spacing:-.02em;color:#141414}.bon i{display:inline-block;width:12px;height:12px;border-radius:50%;background:${HI};margin-left:6px}
-.for{display:flex;align-items:center;gap:14px;font:600 20px Inter;color:#555}.for img{height:44px;max-width:240px;object-fit:contain}
-.kick{display:inline-block;padding:9px 18px;border-radius:999px;font:800 17px Inter;letter-spacing:.14em;text-transform:uppercase;color:${HI};background:${mix(HI, 0.86)}}`;
-const logoImg = brand.logo ? `<img src="${esc(brand.logo)}">` : `<b>${esc(brand.name)}</b>`;
-const topBar = `<div class=top><div class=bon>bonsify<i></i></div><div class=for>for ${logoImg}</div></div>`;
+.bg{position:absolute;inset:0;background:
+ radial-gradient(900px 700px at 100% 0%,${mix(GLOW, 0.7)},transparent 70%),
+ radial-gradient(800px 700px at 0% 100%,${mix(GLOW, 0.82)},transparent 70%),
+ radial-gradient(500px 400px at 52% 50%,${mix(GLOW, 0.88)},transparent 70%),
+ ${mix(GLOW, 0.95)}}
+.dots{position:absolute;inset:0;background-image:radial-gradient(${mix(PRIMARY, 0.8)} 2px,transparent 2.5px);background-size:36px 36px;opacity:.55;-webkit-mask-image:linear-gradient(100deg,transparent 0,#000 40%,#000 100%);mask-image:linear-gradient(100deg,transparent 0,#000 40%,#000 100%)}
+.disc{position:absolute;left:1460px;top:540px;width:860px;height:860px;margin:-430px 0 0 -430px;border-radius:50%;background:${mix(GLOW, 0.78)}}
+.disc2{position:absolute;left:1460px;top:540px;width:1060px;height:1060px;margin:-530px 0 0 -530px;border-radius:50%;border:3px solid ${mix(GLOW, 0.55)}}
+.top{position:absolute;left:96px;top:48px;display:flex;align-items:center;gap:22px;padding:12px 30px 12px 20px;border-radius:26px;background:#fff;box-shadow:0 10px 34px rgba(0,0,0,.1)}
+.top .b{height:76px;width:auto;display:block}.top .x{font:300 36px Inter;color:#9a9a9a}.top .bl{height:44px;max-width:230px;object-fit:contain;display:block}.top .bn{font:800 32px Inter}
+.kick{display:inline-block;padding:10px 20px;border-radius:999px;font:800 17px Inter;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:${HI}}
+.h{font-family:Fraunces,serif;font-weight:600;letter-spacing:-.02em}`;
+const brandMark = brand.logo ? `<img class=bl src="${esc(brand.logo)}">` : `<span class=bn>${esc(brand.name)}</span>`;
+const topBar = `<div class=top><img class=b src="${BON_LOGO}"><span class=x>×</span>${brandMark}</div>`;
+const decor = `<div class=bg></div><div class=dots></div>`;
 
 const panelItems = (beat, st) => {
   const p = beat.panel, n = st.show ?? 0;
@@ -211,10 +227,10 @@ const panelItems = (beat, st) => {
 const frameHtml = (beat, si) => {
   const st = beat.states[si], ti = beat.titlesBy[si];
   const sub = beat.subs ? beat.subs[Math.min(si, beat.subs.length - 1)] ?? "" : "";
-  return `<style>${css}</style><div class=bg></div>${topBar}
-<div style="position:absolute;left:96px;top:170px;width:1040px;height:760px;display:flex;flex-direction:column;justify-content:center">
+  return `<style>${css}</style>${decor}<div class=disc></div><div class=disc2></div>${topBar}
+<div style="position:absolute;left:96px;top:190px;width:1040px;height:760px;display:flex;flex-direction:column;justify-content:center">
 <div><span class=kick>${esc(beat.kicker)}</span></div>
-<div style="font:800 80px/1.04 Inter;letter-spacing:-.03em;margin-top:26px;color:#141414">${esc(beat.titles[ti])}</div>
+<div class=h style="font-size:82px;line-height:1.05;margin-top:26px;color:#141414">${esc(beat.titles[ti])}</div>
 ${sub ? `<div style="font:500 34px/1.35 Inter;color:#4a4a4a;margin-top:22px;max-width:900px">${esc(sub)}</div>` : ""}
 ${panelItems(beat, st)}</div>
 <div style="position:absolute;left:96px;bottom:64px;display:flex;gap:10px">${beats.map((b, k) => `<i style="width:46px;height:8px;border-radius:4px;background:${k === beats.indexOf(beat) ? HI : "#141414"};opacity:${k === beats.indexOf(beat) ? 1 : k < beats.indexOf(beat) ? 0.45 : 0.15}"></i>`).join("")}</div>`;
@@ -235,12 +251,11 @@ const maskHtml = `<style>*{margin:0}body{width:${AV}px;height:${AV}px;background
 // intro / outro stage states
 let qrData = "";
 try { qrData = await require("qrcode").toDataURL(TRY_URL, { margin: 1, width: 360, color: { dark: "#141414", light: "#ffffff" } }); } catch (e) { console.log("no qrcode module, outro will skip the code"); }
-const stageHtml = (s, kind) => `<style>${css}</style><div class=bg></div>${topBar}
+const stageHtml = (s, kind) => `<style>${css}</style>${decor}${topBar}
 <div style="position:absolute;left:0;right:0;top:${s.qr ? 150 : 200}px;text-align:center">
 <div><span class=kick>${esc(s.kicker)}</span></div>
-<div style="font:800 ${s.title.length > 34 ? 70 : 84}px/1.06 Inter;letter-spacing:-.03em;margin:28px auto 0;max-width:1300px">${esc(s.title)}</div>
+<div class=h style="font-size:${s.title.length > 34 ? 74 : 92}px;line-height:1.06;margin:28px auto 0;max-width:1300px">${esc(s.title)}</div>
 ${s.sub ? `<div style="font:500 36px Inter;color:#4a4a4a;margin-top:20px">${esc(s.sub)}</div>` : ""}
-${!s.qr && brand.logo ? `<div style="margin-top:46px"><img src="${esc(brand.logo)}" style="height:110px;max-width:520px;object-fit:contain;background:#fff;padding:18px 30px;border-radius:22px;box-shadow:0 8px 30px rgba(0,0,0,.1)"></div>` : ""}
 ${s.qr && qrData ? `<div style="margin-top:36px"><div style="display:inline-block;background:#fff;padding:20px;border-radius:26px;box-shadow:0 14px 40px rgba(0,0,0,.16)"><img src="${qrData}" style="width:300px;height:300px;display:block"></div></div>` : ""}
 ${s.cta ? `<div style="margin-top:30px"><span style="display:inline-block;padding:20px 44px;border-radius:999px;background:${PRIMARY};color:${lum(PRIMARY) < 0.55 ? "#fff" : "#111"};font:800 32px Inter">Get your app now</span></div>` : ""}
 </div>`;
@@ -304,10 +319,25 @@ async function avatarPart(name, states) {
   sc += `file ${lastF}\n`;
   fs.writeFileSync(path.join(W, `${name}_stage.ffconcat`), sc);
   const out = path.join(W, `${name}_n.mp4`);
-  const hasA = hasAudio(src);
-  const aF = hasA ? `[0:a]aresample=48000,${cleanChain}[c];[4:a]volume=1[n];[c][n]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]` : `[4:a]anull[a]`;
+  // Shujaat's lines in the cloned voice (video/assets/voice, made once and reused for every brand),
+  // each trimmed of silence and stretched a touch to land on the sentence it replaces in the recording.
+  const VD = path.join(HERE, "assets", "voice"); const vj = path.join(VD, "voice.json");
+  const lines = fs.existsSync(vj) ? (JSON.parse(fs.readFileSync(vj, "utf8"))[name] || []).filter((l) => fs.existsSync(path.join(VD, l.file))) : [];
+  const lineIn = [], lineF = [];
+  lines.forEach((l, k) => {
+    const w = path.join(W, `${name}_line${k}.wav`);
+    ff("-i", path.join(VD, l.file), "-af", "aresample=48000,silenceremove=start_periods=1:start_threshold=-42dB:start_silence=0.04,areverse,silenceremove=start_periods=1:start_threshold=-42dB:start_silence=0.04,areverse", "-ac", "1", w);
+    const span = l.end - l.start, ratio = Math.min(1.25, Math.max(0.85, dur(w) / span));
+    lineIn.push("-i", w);
+    lineF.push(`[${5 + k}:a]atempo=${ratio.toFixed(4)},adelay=${Math.round(l.start * 1000)}:all=1[l${k}]`);
+  });
+  const hasA = lines.length === 0 && hasAudio(src);
+  const mixIn = lines.map((_, k) => `[l${k}]`).join("");
+  const aF = lines.length
+    ? `${lineF.join(";")};[4:a]volume=1[n];[n]${mixIn}amix=inputs=${lines.length + 1}:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]`
+    : hasA ? `[0:a]aresample=48000,${cleanChain}[c];[4:a]volume=1[n];[c][n]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]` : `[4:a]anull[a]`;
   ff("-i", src, "-f", "concat", "-safe", "0", "-i", path.join(W, `${name}_stage.ffconcat`), "-i", path.join(W, "ring.png"), "-i", path.join(W, "mask.png"),
-    "-f", "lavfi", "-t", d.toFixed(2), "-i", "anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000",
+    "-f", "lavfi", "-t", d.toFixed(2), "-i", "anoisesrc=color=pink:amplitude=0.0007:sample_rate=48000", ...lineIn,
     "-filter_complex", `[0:v]crop=760:760:${cr.x}:${cr.y},scale=${AV}:${AV},fps=30,format=yuva420p[sq];[3:v]format=gray[m];[sq][m]alphamerge[c];[1:v]fps=30,format=yuv420p[sg];[sg][2:v]overlay=66:${1080 - AV - 80 - 30}[s1];[s1][c]overlay=96:${1080 - AV - 80}[v];${aF}`,
     "-map", "[v]", "-map", "[a]", "-ac", "2", "-t", d.toFixed(2), "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "160k", out);
   return out;

@@ -1,0 +1,17 @@
+{
+  "voice_id": "qREDZhi8J1uvY1jmr1Z8",
+  "model": "eleven_v4",
+  "note": "Shujaat's intro and outro lines in the cloned voice, each fitted to the matching sentence of the recorded take (start/end are seconds in the recording). Rendered once; the engine reuses them for every brand.",
+  "intro": [
+    { "file": "i1.mp3", "text": "Hi, this is Shujaat from Bonsify.", "start": 0.55, "end": 3.0 },
+    { "file": "i2.mp3", "text": "We turn Shopify stores into mobile apps.", "start": 3.46, "end": 6.12 },
+    { "file": "i3.mp3", "text": "I've put together a quick walkthrough to show you how your app could potentially look like.", "start": 6.7, "end": 11.72 },
+    { "file": "i4.mp3", "text": "What you're about to see is running on your real products.", "start": 12.84, "end": 15.8 },
+    { "file": "i5.mp3", "text": "It will take only a few moments, so let's dive into it.", "start": 16.58, "end": 19.64 }
+  ],
+  "outro": [
+    { "file": "o1.mp3", "text": "And that's your app.", "start": 0.5, "end": 2.2 },
+    { "file": "o2.mp3", "text": "Scroll down and scan the QR code to experience it on your phone.", "start": 2.88, "end": 6.64 },
+    { "file": "o3.mp3", "text": "We are Bonsify and we'd love to hear from you.", "start": 7.18, "end": 9.9 }
+  ]
+}
