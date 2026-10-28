@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "file": "c0929b7d91826a4a.mp3",
+  "text": "First, here is Forth Lighting as a customer sees it on a phone today. It is a good store, with a catalogue of 181 products. But it lives in a browser tab. Every visit starts cold, with no icon on the home screen, no push notifications, and nothing to bring a customer back once they leave.",
+  "brands": [
+   "forth-lighting"
+  ]
+ },
+ {
+  "file": "3796f408590653d3.mp3",
+  "text": "Browsing is fast. Search, filter and sort across your full catalogue of 181 products.",
+  "brands": [
+   "forth-lighting"
+  ]
+ },
+ {
+  "file": "f76e08cb3652a9e9.mp3",
+  "text": "We also looked at what your store already runs. Judge.me for reviews. Those ratings show up inside the app on every product. Instafeed. Your Instagram feed gets its own place in the app. Hotjar and GA4 for analytics. App events flow into the reports you already read. Nothing gets replaced and nothing needs to be rebuilt.",
+  "brands": [
+   "forth-lighting"
+  ]
+ }
+]

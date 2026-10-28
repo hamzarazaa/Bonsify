@@ -405,7 +405,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
     next: (
       <div className={`${styles.slide} ${styles.closing}`}>
         <Lockup brand={brand} onDark size={1.35} />
-        <h2 className={styles.mega} style={megaStyle}>
+        <h2 className={styles.mega} style={brand.name.length >= 12 && !megaStyle ? { fontSize: "7.6cqw" } : megaStyle}>
           Let&rsquo;s build
           <br />
           {brand.name}&rsquo;s app.

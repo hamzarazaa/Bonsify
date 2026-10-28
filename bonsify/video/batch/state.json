@@ -1864,5 +1864,13 @@
    "took": 312,
    "mb": 10.3
   }
+ },
+ "forth-lighting": {
+  "render": {
+   "ok": true,
+   "seconds": 123,
+   "took": 489,
+   "mb": 10
+  }
  }
 }

@@ -1,0 +1,384 @@
+{
+ "slug": "optus-store",
+ "name": "Optus Store",
+ "url": "https://optusstore.pk/",
+ "platform": "shopify",
+ "currency": "PKR",
+ "contact": null,
+ "logo": "data:image/png;base64,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",
+ "icon": "https://optusstore.pk/cdn/shop/files/optus_logo.png?crop=center&height=32&v=1788529250&width=32",
+ "colors": {
+  "primary": "#141414",
+  "accent": "#eb1f24",
+  "background": "#ffffff",
+  "text": "#141414",
+  "onPrimary": "#ffffff",
+  "found": [
+   "#eb1f24",
+   "#d40000",
+   "#ff6600",
+   "#7f0b0e",
+   "#172351"
+  ],
+  "source": "ink"
+ },
+ "fonts": {
+  "heading": "Assistant",
+  "body": "Assistant",
+  "found": [
+   "Assistant",
+   "Poppins"
+  ],
+  "headingGoogle": true,
+  "bodyGoogle": true
+ },
+ "banners": [
+  "https://optusstore.pk/cdn/shop/files/SKIP_Smart_Accessories_Hero_Banner.png?v=1792399754&width=3840",
+  "https://optusstore.pk/cdn/shop/files/1_5.png?v=1793101307&width=3840",
+  "https://optusstore.pk/cdn/shop/files/2_5.png?v=1793101359&width=3840",
+  "https://optusstore.pk/cdn/shop/files/4_3.png?v=1793101504&width=3840"
+ ],
+ "collections": [
+  {
+   "title": "Adapter",
+   "handle": "adapter",
+   "image": null,
+   "count": 4
+  },
+  {
+   "title": "Amazfit",
+   "handle": "amazfit",
+   "image": null,
+   "count": 12
+  },
+  {
+   "title": "Android Cable",
+   "handle": "micro-usb-cables",
+   "image": null,
+   "count": 5
+  },
+  {
+   "title": "Anker",
+   "handle": "anker",
+   "image": null,
+   "count": 166
+  },
+  {
+   "title": "Apple",
+   "handle": "apple",
+   "image": null,
+   "count": 36
+  },
+  {
+   "title": "Apple Ipads",
+   "handle": "apple-ipads",
+   "image": null,
+   "count": 9
+  },
+  {
+   "title": "Audio",
+   "handle": "audio",
+   "image": null,
+   "count": 278
+  },
+  {
+   "title": "Aukey",
+   "handle": "aukey",
+   "image": null,
+   "count": 47
+  },
+  {
+   "title": "Aux",
+   "handle": "aux",
+   "image": null,
+   "count": 3
+  },
+  {
+   "title": "Beats",
+   "handle": "beatsstudio",
+   "image": null,
+   "count": 4
+  }
+ ],
+ "products": [
+  {
+   "title": "Anker 2-in-1 USB-C to USB-C Braided Cable (140W),",
+   "handle": "anker-2-in-1-usb-c-to-usb-c-braided-cable-140w",
+   "type": null,
+   "vendor": "Anker Official",
+   "price": 5999,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Anker_Braided_USB-C_Multi-Cable_Product_Shot.png?v=1791891380",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Anker_Braided_USB-C_Multi-Cable_Product_Shot.png?v=1791891380",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/2_57a2ab3f-2f03-4bc4-854b-9e7341be5177.webp?v=1789812239",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/3_b5d1e49f-5bca-4fc3-90d0-f0cc306eff88.webp?v=1789812239",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/4_294bb13f-e919-4d2c-8c0b-dea8c92ee0b0.webp?v=1789812239"
+   ],
+   "options": [],
+   "description": "2-in-1 Charging Cable: Charge your smartphone and tablet simultaneously with one convenient cable, perfect for travel and business trips. Designed to minimize clutter. One Port, 140W Max Charging: Supercharge your 16-inch MacBook Pro (M3 Pro) to 50% in just 20 minutes with a single 140W USB-C port, designed for maximum power delivery and optimal charging speeds. Smart Power Management: Enhance you"
+  },
+  {
+   "title": "Anker 322 USB-C to USB-C Cable MFi certified",
+   "handle": "anker-322-usb-c-to-usb-c-cable",
+   "type": null,
+   "vendor": "Anker Official",
+   "price": 1549,
+   "compareAt": 0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Anker_322_USB-C_to_USB-C_Cable_MFi_certified.jpg?v=1780760257",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Anker_322_USB-C_to_USB-C_Cable_MFi_certified.jpg?v=1780760257",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/A81F5021_TD02_V1_3838x_ad8563bf-628f-4aa0-ab44-d0d2bbeb0e38.webp?v=1780760258",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/A81F5021_TD04_V1_3838x_963e0f12-16c5-4adb-bf93-c2cbf387f2e7.webp?v=1780760257",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/A81F5021_TD05_V1_3838x_4a9a17f4-613f-4fb7-855d-869d0376801b.webp?v=1780760257"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Black",
+      "White"
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      "3ft",
+      "6ft"
+     ]
+    }
+   ],
+   "description": "The Anker Advantage: Join the 80 million+ powered by our leading technology. High-Speed Compatible: Charge a Samsung S23 to 55% in just 30 minutes when paired up with a compatible Power Delivery charger (charger not included). Built to Last: Proven in strict laboratory tests to withstand up to 12,000 bends. Reliable Charging: USB-IF compliant for safe, reliable charging for virtually any USB-C dev"
+  },
+  {
+   "title": "Anker 523 Charger (Nano 3, 47W)",
+   "handle": "anker-523-charger-nano-3-47w",
+   "type": null,
+   "vendor": "Anker Official",
+   "price": 6399,
+   "compareAt": 0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-121a21s2.jpg?v=1780760336",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-121a21s2.jpg?v=1780760336",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-2_0003_Layer2.jpg?v=1780760336",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-2_0004_Layer1.jpg?v=1780760336",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-2_0002_Layer3.jpg?v=1780760336"
+   ],
+   "options": [],
+   "description": "Charge 2 Devices at Once With 27W from one USB-C port, and 20W from the other, you can fast charge your iPhone and your iPad at the same time. High-Speed Charging Utilize either USB-C port to provide up to 45W of power to charge a MacBook Air or other USB-C notebooks at impressive speeds. Advanced Safety with ActiveShield 2.0 Anker's proprietary technology intelligently monitors temperature over 3"
+  },
+  {
+   "title": "Anker Soundcore AeroClip Open-Ear Clip-On Earbuds with Adaptive Comfort",
+   "handle": "anker-soundcore-aeroclip-open-ear-clip-on-earbuds-with-adaptive-comfort",
+   "type": null,
+   "vendor": "Optus Solutions",
+   "price": 26499,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/1.webp?v=1788340049",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/1.webp?v=1788340049",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/5_434cb7b7-8f56-45df-a80b-137e4341c4d8.webp?v=1788340088",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/2_09052448-e496-4ee6-8a38-f494aea60122.webp?v=1788340088",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/3_a4ba547b-5472-40af-8f1d-36cba97c63c7.webp?v=1788340088"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Midnight Black",
+      "Champagne Mist"
+     ]
+    }
+   ],
+   "description": "Adaptive Ultra-Comfort: Designed to relieve in-ear discomfort, soundcore AeroClip open-ear clip-on earbuds let you enjoy music pressure-free for every outdoor venture. Flexible, Secure Fit: soundcore AeroClip clip-on earbuds boast an adaptive open-ring design that endures 20,000 bends. Feather-light and flexible, they stay secure for all-day wear. Clearer Audio, Richer Bass: Enjoy ultra-clear, ric"
+  },
+  {
+   "title": "Anker Soundcore V40i Comfortable Fit and Clear Sound, Lidless Case",
+   "handle": "anker-soundcore-v40i-comfortable-fit-and-clear-sound-lidless-case",
+   "type": null,
+   "vendor": "Optus Solutions",
+   "price": 14799,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/shopify.png?v=1789025810",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/shopify.png?v=1789025810",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/2_c3fd5e93-37b6-4869-8274-a0317bead1b8.webp?v=1788342634",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/3_0f23cb97-bcf9-4bdc-9d52-e53def4a7df7.webp?v=1788342635",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/4_f026fcd0-384a-4250-b523-3b37abf19ec6.webp?v=1788342635"
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "White"
+     ]
+    }
+   ],
+   "description": "Sleek, Lid-Free Case Design : V40i's clear case features powerful magnets to prevent accidental loss and a light bar to keep you informed. Compact, portable, and futuristic—enjoy your music in style wherever you go. Practical lid-free case design provides quick access for your convenience. Stay Comfortable, Stay Connected: V40i's open-ear design frees you from in-ear pressure and tight clamping, e"
+  },
+  {
+   "title": "Aukey AiPower Rona Motion Sensor Night Light Pack Of 2 (KR-NL01)",
+   "handle": "aukey-aipower-rona-motion-sensor-night-light-pack-of-2-kr-nl01",
+   "type": null,
+   "vendor": "Tech Nation.pk",
+   "price": 3999,
+   "compareAt": 0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/KR-NL01.jpg?v=1695294721",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/KR-NL01.jpg?v=1695294721",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/1625218571_Aukey_KR-NL01_4.jpg?v=1695294721",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/1625218571_Aukey_KR-NL01_3.jpg?v=1695294721"
+   ],
+   "options": [],
+   "description": "2-Packs Design Award - If Design Award 2020 Winner. Sensitive Motion Sensor with a Broader Range - Advanced infrared light sensor chip equips NL01 with stronger sensitivity to quickly capture motion in the dark and light up immediately. Motion Sensor Range can be reached 5-7m in front, with a detection angle of 120°, 2-3m on side. Easy Installation - Simple to install, no wiring and no punching. W"
+  },
+  {
+   "title": "Aukey Circlet 60w 1m Nylon Braided Usb-C to Usb C Cable (CB-NCC1)",
+   "handle": "aukey-1m-nylon-braided-usb-c-to-c-cable-cb-ncc1",
+   "type": null,
+   "vendor": "Aukey Pakistan",
+   "price": 1149,
+   "compareAt": 0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-NCC1BLACK_1.jpg?v=1708784352",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-NCC1BLACK_1.jpg?v=1708784352",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-NCC1BLACK_8.jpg?v=1708784352",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-NCC1BLACK_6.jpg?v=1708784352",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-NCC1BLACK_7.jpg?v=1708784352"
+   ],
+   "options": [],
+   "description": "Premium braided nylon cable, durable, wear-resistant and able to withstand daily use. Resistant to bending up to 10 times, the charging cable is made of Hard PVC, strong and highly flexible. Aluminum frame with Anodic oxidation technology for heat dissipation, which is faster than similar cables Supports all devices that use a USB-C connector including Smartphones, Tablets, Laptops, iPad, other de"
+  },
+  {
+   "title": "Aukey Circlet Blink 240W Silicone USB-C to USB-C Cable 1.8m (CB-SCC242)",
+   "handle": "aukey-circlet-blink-240w-silicone-usb-c-to-usb-c-cable-1-8m-cb-scc242",
+   "type": null,
+   "vendor": "Optus Solutions",
+   "price": 2749,
+   "compareAt": null,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/aukey.webp?v=1788350292",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/aukey.webp?v=1788350292",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/1_1b2de163-a694-4c8a-afb6-514fadce668e.webp?v=1788350292",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/2_c29d5a51-ef71-4a71-b07c-b6826f99c19a.webp?v=1788350292",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/3_40fe5c4b-f0ff-43a8-8747-f79284d8c050.webp?v=1788350292"
+   ],
+   "options": [],
+   "description": "Product Highlights: Charging and Data Transfer: Safely charge your 16-inch MacBook Pro at up to 5A and transfer data between the MacBook Pro and a USB-C phone at up to 480Mbps. Supports up to 240W USB Power Delivery: Extensive Compatibility: When used with the original charger (or equivalent), this cable charges your 16-inch MacBook Pro or MacBook with USB-C. It also fast charges your Google Pixel"
+  },
+  {
+   "title": "Anker Nano Charger (45W, Smart Display, 180° Foldable)",
+   "handle": "anker-nano-charger-45w-smart-display-180-foldable",
+   "type": "Product",
+   "vendor": "Anker Official",
+   "price": 7599,
+   "compareAt": 0,
+   "available": false,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-112a1sf213as2.jpg?v=1789223613",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-112a1sf213as2.jpg?v=1789223613",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Untitled-123as12.jpg?v=1789223613",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/A121D111_A121D121_A121D131_A121D1O1_MRC_PRC_Rich_image_EN_V3_1_fef3d2b9-1f14-4f60-b165-381fa9a41712.webp?v=1789223605",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/A121D111_A121D121_A121D131_A121D1O1_Rich_image_TD05_US_V3_51d1b75b-73d6-4b99-9285-afc8aeec1dae.webp?v=1789223605"
+   ],
+   "options": [
+    {
+     "name": "Colors",
+     "values": [
+      "Black",
+      "White"
+     ]
+    }
+   ],
+   "description": "Smart iPhone Recognition with Care Mode Automatically recognizes your iPhone and adjusts charging accordingly for smarter, safer power delivery. 45W Max Fast Charging with Smart Power Adjustment Delivers up to 45W of high-speed charging while adapting output based on your battery level. Charge iPhone 17 Pro to 50% in just 20 minutes. (Note: Data based on internal lab testing. Actual performance ma"
+  },
+  {
+   "title": "Aukey Braided Nylon MFi USB-C to Lightning Cable 3.95ft (CB-CL1)",
+   "handle": "aukey-braided-nylon-mfi-usb-c-to-lightning-cable-3-95ft-cb-cl1",
+   "type": null,
+   "vendor": "Tech Nation.pk",
+   "price": 3199,
+   "compareAt": 0,
+   "available": false,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_8.png?v=1695294712",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_8.png?v=1695294712",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_2_fd644a8b-6b6a-4ebe-911d-8442fad5932f.png?v=1695294712",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_1_03c8967e-9a00-4775-b46b-2f41256ecd08.png?v=1695294712"
+   ],
+   "options": [],
+   "description": "Product Description: High quality cables designed to handle your everyday bends and strains Apple Certified, when used with the power adapter that supports USB Power Delivery, this cable can fast charge your iPhone 8 / 8 Plus / X / XR / XS / XS Max and iPad Pro Transfer data up to 480Mbps To be flexible enough with braided nylon material Specifications Model Number: CB-CL1 Type: USB-C to Lightning"
+  },
+  {
+   "title": "Aukey Braided Nylon USB 3.1 Gen 1 A to C Cable (3.95ft) (CB-AC1)",
+   "handle": "aukey-braided-nylon-usb-3-1-gen-1-a-to-c-cable-3-95ft-cb-ac1",
+   "type": null,
+   "vendor": "Tech Nation.pk",
+   "price": 1899,
+   "compareAt": 0,
+   "available": false,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-AC1.png?v=1695291492",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/CB-AC1.png?v=1695291492",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_9.png?v=1695291492",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_2.png?v=1695291492",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/products/Screenshot_4.png?v=1695291492"
+   ],
+   "options": [],
+   "description": "USB 3.1 Gen 1 to USB-C Specifications Model Number: CB-AC1 Technology: USB 3.1 Gen 1 Type: USB-A to C Material: Nylon Length: 3.95ft / 1.2m FAQ What is USB-C? The next generation of USB tech - small reversible connector designed to support a new wave of faster, more efficient power delivery, 10x faster data transfer and sync speeds than USB 2.0. Warranty: 12 Months Warranty."
+  },
+  {
+   "title": "Anker 7-in-1 USB-C Hub",
+   "handle": "anker-7-in-1-usb-c-hub",
+   "type": null,
+   "vendor": "Anker Official",
+   "price": 12099,
+   "compareAt": 0,
+   "available": true,
+   "image": "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Anker_7-in-1_USB-C_Hub.jpg?v=1780760316",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/Anker_7-in-1_USB-C_Hub.jpg?v=1780760316",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/81Mb9Zrib5L._AC_SL1500.jpg?v=1780760317",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/81lxC3ed74L._AC_SL1500.jpg?v=1780760316",
+    "https://cdn.shopify.com/s/files/1/0730/8030/8007/files/715_ZXj1xL._AC_SL1500.jpg?v=1780760316"
+   ],
+   "options": [],
+   "description": "Powerful 7-in-1 Hub Designed for the multitasker, this 7-in-1 USB-C hub features everything from ultra-fast data transfer to high-definition video output. See More, Do More Easily extend your workspace across two screens with 1080p@60Hz resolution, ideal for enhancing productivity and multitasking capabilities. Blazing-Fast 10Gbps Data Transfer Dramatically reduce transfer times with a 10Gbps port"
+  }
+ ],
+ "productCount": 109,
+ "features": [
+  {
+   "id": "chat",
+   "label": "Live chat / WhatsApp"
+  },
+  {
+   "id": "multicurrency",
+   "label": "Multi-currency"
+  },
+  {
+   "id": "cod",
+   "label": "Cash on delivery"
+  }
+ ],
+ "storeApps": [
+  "Google Analytics 4"
+ ],
+ "crawledAt": "2026-10-28T10:57:54.880Z",
+ "warnings": [],
+ "overrides": {},
+ "video": {
+  "ready": true,
+  "src": "/demo/optus-store.mp4",
+  "poster": "/demo/optus-store-poster.jpg",
+  "captions": "/demo/optus-store.vtt"
+ }
+}

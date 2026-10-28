@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+video/out
+video/work
+video/cache
+public/demo/*.mp4
+public/decks
+*.patch
+_stage
+_to_delete
