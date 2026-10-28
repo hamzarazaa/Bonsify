@@ -71,6 +71,11 @@ async function preflight() {
     await run("node", ["-e", `const {createRequire}=require("module");const r=createRequire(process.cwd()+"/");let pw;for(const s of ["playwright","/opt/node22/lib/node_modules/playwright"]){try{pw=r(s);break}catch{}}
       if(!pw)throw new Error("playwright not installed");(async()=>{const b=await pw.chromium.launch();const p=await b.newPage();await p.setContent("<p>ok</p>");await b.close()})().catch(e=>{console.error(e.message);process.exit(1)})`]);
   });
+  await need("intro/outro assets", async () => {
+    const A = path.join(ROOT, "video", "assets");
+    for (const n of ["intro", "outro"]) if (!["mp4", "mov", "webm"].some((e) => fs.existsSync(path.join(A, `${n}.${e}`)))) throw new Error(`video/assets/${n}.mp4 is missing from the image`);
+    if (!fs.existsSync(path.join(A, "voice", "voice.json"))) throw new Error("video/assets/voice/voice.json is missing");
+  });
   if (!DRY) {
     await need("ELEVENLABS_API_KEY", async () => { if (!process.env.ELEVENLABS_API_KEY) throw new Error("not set"); });
     await need("storage bucket (media)", async () => { if (!BUCKET_DIR || !PUBLIC_BASE) throw new Error("BUCKET_DIR and PUBLIC_BASE must be set"); const f = path.join(BUCKET_DIR, ".preflight"); fs.mkdirSync(BUCKET_DIR, { recursive: true }); fs.writeFileSync(f, String(Date.now())); fs.rmSync(f); });
