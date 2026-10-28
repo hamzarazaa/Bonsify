@@ -31,5 +31,6 @@ await Promise.all(Array.from({ length: 4 }, async () => {
     console.log(`${++done}/${files.length} ${f}`);
   }
 }));
+fs.mkdirSync(path.join(ROOT, "content", "settings"), { recursive: true });
 fs.writeFileSync(path.join(ROOT, "content", "settings", "video.json"), JSON.stringify({ base }, null, 2) + "\n");
 console.log(`\nDone. Base URL: ${base}\ncontent/settings/video.json updated: commit it and deploy.`);
