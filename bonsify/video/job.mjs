@@ -61,6 +61,34 @@ function run(cmd, args, opts = {}) {
   });
 }
 
+// Everything the run needs, checked in seconds, before any minutes are spent. A run either passes this or stops here.
+async function preflight() {
+  const problems = [];
+  const need = async (name, fn) => { try { await fn(); } catch (e) { problems.push(`${name}: ${String(e.message || e).split("\n")[0].slice(0, 200)}`); } };
+  await need("ffmpeg", async () => { await run("ffmpeg", ["-version"]); await run("ffprobe", ["-version"]); });
+  await need("python Pillow (deck PDF)", async () => { await run("python3", ["-c", "import PIL"]); });
+  await need("Chromium", async () => {
+    await run("node", ["-e", `const {createRequire}=require("module");const r=createRequire(process.cwd()+"/");let pw;for(const s of ["playwright","/opt/node22/lib/node_modules/playwright"]){try{pw=r(s);break}catch{}}
+      if(!pw)throw new Error("playwright not installed");(async()=>{const b=await pw.chromium.launch();const p=await b.newPage();await p.setContent("<p>ok</p>");await b.close()})().catch(e=>{console.error(e.message);process.exit(1)})`]);
+  });
+  if (!DRY) {
+    await need("ELEVENLABS_API_KEY", async () => { if (!process.env.ELEVENLABS_API_KEY) throw new Error("not set"); });
+    await need("storage bucket (media)", async () => { if (!BUCKET_DIR || !PUBLIC_BASE) throw new Error("BUCKET_DIR and PUBLIC_BASE must be set"); const f = path.join(BUCKET_DIR, ".preflight"); fs.mkdirSync(BUCKET_DIR, { recursive: true }); fs.writeFileSync(f, String(Date.now())); fs.rmSync(f); });
+    await need("narration cache", async () => { if (!CACHE_DIR) throw new Error("CACHE_DIR not set"); const f = path.join(CACHE_DIR, ".preflight"); fs.mkdirSync(CACHE_DIR, { recursive: true }); fs.writeFileSync(f, "1"); fs.rmSync(f); });
+    await need("GitLab token", async () => {
+      if (!process.env.GITLAB_TOKEN) throw new Error("not set");
+      const project = encodeURIComponent(process.env.GITLAB_PROJECT || "hamzaraza/bonsify.io");
+      const r = await fetch(`https://gitlab.com/api/v4/projects/${project}`, { headers: { "PRIVATE-TOKEN": process.env.GITLAB_TOKEN }, signal: AbortSignal.timeout(20000) });
+      if (!r.ok) throw new Error(`GitLab answered ${r.status}`);
+      const j = await r.json();
+      const lvl = Math.max(j.permissions?.project_access?.access_level || 0, j.permissions?.group_access?.access_level || 0);
+      if (lvl < 30) throw new Error(`token role too low (${lvl}), needs Developer or Maintainer`);
+    });
+  }
+  if (problems.length) throw new Error(`preflight failed: ${problems.join(" | ")}`);
+  log("preflight passed");
+}
+
 let server;
 async function startApp() {
   // dev server: new brand files are picked up without a rebuild
@@ -101,6 +129,8 @@ async function gitlabCommit(files) {
 }
 
 try {
+  await preflight();
+  if (flag("check", false)) { log("check only, stopping here"); process.exit(0); }
   if (!SKIP_CRAWL) {
     log(`crawling ${URL_}`);
     const line = (await run("node", ["video/make-brand.mjs", URL_, "--name", NAME, "--slug", SLUG])).trim().split("\n").pop();
@@ -112,13 +142,7 @@ try {
   log("starting app");
   await startApp();
   await warm();
-  log("app ready, rendering video");
-
-  const engineArgs = ["video/engine2.mjs", SLUG, "--out", "video/out/job", "--base", APP, ...(DRY ? ["--dry"] : [])];
-  await run("node", engineArgs, { env: { VOICE_ID: process.env.VOICE_ID || "qREDZhi8J1uvY1jmr1Z8" }, echo: false });
-  log("video rendered");
-
-  log("making deck PDF");
+  log("making the deck PDF first, so a problem shows up in seconds");
   const pdf = path.join(outDir, "decks", `${SLUG}-deck.pdf`);
   let pdfOk = false;
   for (let attempt = 1; attempt <= 2 && !pdfOk; attempt++) {
@@ -127,6 +151,13 @@ try {
     pdfOk = fs.existsSync(pdf);
     if (!pdfOk) log(`deck PDF attempt ${attempt} failed: ${out.trim().split("\n").slice(-3).join(" | ").slice(0, 500)}`);
   }
+
+  if (!pdfOk) throw new Error("deck PDF could not be made, stopping before the render");
+  log("deck PDF ok, rendering video");
+
+  const engineArgs = ["video/engine2.mjs", SLUG, "--out", "video/out/job", "--base", APP, ...(DRY ? ["--dry"] : [])];
+  await run("node", engineArgs, { env: { VOICE_ID: process.env.VOICE_ID || "qREDZhi8J1uvY1jmr1Z8" }, echo: false });
+  log("video rendered");
 
   const files = { mp4: path.join(outDir, `${SLUG}.mp4`), poster: path.join(outDir, `${SLUG}-poster.jpg`), vtt: path.join(outDir, `${SLUG}.vtt`) };
   for (const f of Object.values(files)) if (!fs.existsSync(f)) throw new Error(`missing output ${f}`);
