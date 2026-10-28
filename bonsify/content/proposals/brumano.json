@@ -531,5 +531,8 @@
  ],
  "crawledAt": "2026-10-27T10:05:22.969Z",
  "warnings": [],
- "overrides": {}
+ "overrides": {},
+ "video": {
+  "ready": true
+ }
 }

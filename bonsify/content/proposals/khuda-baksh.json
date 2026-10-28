@@ -444,5 +444,8 @@
  "warnings": [
   "Heading font \"M-Heading-Font\" is not on Google Fonts; a close fallback is used."
  ],
- "overrides": {}
+ "overrides": {},
+ "video": {
+  "ready": true
+ }
 }

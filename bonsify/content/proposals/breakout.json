@@ -529,5 +529,8 @@
   "Heading font \"plus-jakarta-sans\" is not on Google Fonts; a close fallback is used.",
   "No products could be read (feed and sitemap both unavailable). Re-run later or add them under \"overrides\"."
  ],
- "overrides": {}
+ "overrides": {},
+ "video": {
+  "ready": true
+ }
 }

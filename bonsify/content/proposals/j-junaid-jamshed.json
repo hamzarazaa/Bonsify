@@ -315,5 +315,8 @@
  "warnings": [
   "logo is square or tall"
  ],
- "overrides": {}
+ "overrides": {},
+ "video": {
+  "ready": true
+ }
 }
