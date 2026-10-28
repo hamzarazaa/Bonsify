@@ -2,6 +2,8 @@
 
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import BrandApp from "./BrandApp";
+import BrandMark from "@/components/shared/BrandMark";
+import QrCode from "@/components/shared/QrCode";
 import Phone from "./Phone";
 import { INTEGRATION_COUNT } from "@/lib/integrations";
 import styles from "./Deck.module.css";
@@ -11,7 +13,10 @@ import styles from "./Deck.module.css";
 // apps their site already runs) instead of generic claims. Slide ids are
 // stable so the video recorder can say "go to plan" rather than "go to 4".
 
-export const SLIDE_IDS = ["cover", "today", "why", "plan", "apps", "work", "process", "next"];
+export const SLIDE_IDS = ["cover", "today", "why", "plan", "try", "apps", "work", "process", "next"];
+
+// Slides with a dark or brand-coloured background, where the lockup is drawn in light ink.
+const ON_DARK = new Set(["why", "plan", "try", "apps", "work", "next"]);
 
 const FEATURE_NOTES = {
   reviews: "Your product reviews show on every product page",
@@ -35,6 +40,25 @@ function formatCount(n) {
 function proposalDate(brand) {
   const d = new Date(brand.date || brand.crawledAt || Date.now());
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+}
+
+// "Bonsify x <brand>" lockup: our mark and name, a multiplication sign, then the brand's own logo.
+function Lockup({ brand, onDark = false, size = 1 }) {
+  return (
+    <span className={`${styles.lockup} ${onDark ? styles.lockOnDark : ""}`} style={{ "--k": size }}>
+      <BrandMark variant={onDark ? "light" : "dark"} className={styles.lockMark} />
+      <span className={styles.lockName}>Bonsify</span>
+      <span className={styles.lockX} aria-hidden="true">
+        &times;
+      </span>
+      {brand.logo ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={brand.logo} alt={brand.name} className={styles.lockBrand} />
+      ) : (
+        <span className={styles.lockName}>{brand.name}</span>
+      )}
+    </span>
+  );
 }
 
 const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
@@ -125,6 +149,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           <span>{proposalDate(brand)}</span>
         </header>
         <div className={styles.coverBody}>
+          <Lockup brand={brand} size={1.35} />
           <h1 className={styles.mega}>
             An app
             <br />
@@ -240,6 +265,44 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
         <p className={styles.note}>Built, launched and maintained by Bonsify. No developers to hire on your side.</p>
       </div>
     ),
+    try: (
+      <div className={`${styles.slide} ${styles.brandSlide} ${styles.trySlide}`}>
+        <div className={styles.tryMain}>
+          <h2 className={styles.title}>Your app, ready to try.</h2>
+          <ol className={styles.trySteps}>
+            {[
+              ["Scan the code", `Point your phone camera at the code. The ${brand.name} app opens full screen, no download.`],
+              ["Browse your store", `Your collections, products, prices and photos from ${brand.domain} are already in.`],
+              ["Add to cart and check out", "Open a product, pick options, add it to the cart and walk through checkout."],
+            ].map(([h, p], n) => (
+              <li key={h}>
+                <b>{n + 1}</b>
+                <div>
+                  <h3>{h}</h3>
+                  <p>{p}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div className={styles.tryKeys}>
+            <h3>What the full app adds</h3>
+            <ul>
+              {[...featureNotes, "Push alerts for drops and restocks", "Order tracking and account tab", "Your banners, collections and offers, run from a portal", "Store links and an install prompt on your website"]
+                .filter((t, n, a) => a.indexOf(t) === n)
+                .slice(0, 6)
+                .map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+            </ul>
+          </div>
+        </div>
+        <div className={styles.tryQr}>
+          <QrCode value={`https://bonsify.io/try/${brand.slug}`} size={190} label={`QR code to try the ${brand.name} app`} />
+          <b>Try it on your phone</b>
+          <span>bonsify.io/try/{brand.slug}</span>
+        </div>
+      </div>
+    ),
     apps: (
       <div className={`${styles.slide} ${styles.brandSlide} ${styles.appsSlide}`}>
         <div className={styles.headRow}>
@@ -338,6 +401,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
     ),
     next: (
       <div className={`${styles.slide} ${styles.closing}`}>
+        <Lockup brand={brand} onDark size={1.35} />
         <h2 className={styles.mega}>
           Let&rsquo;s build
           <br />
@@ -356,6 +420,10 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
               <a href={`mailto:hello@bonsify.io?subject=${encodeURIComponent(`${brand.name} app`)}`}>hello@bonsify.io</a>
               <span>+92 313 5988352</span>
             </span>
+            <span className={styles.closeQr}>
+              <QrCode value={`https://bonsify.io/try/${brand.slug}`} size={118} label={`QR code to try the ${brand.name} app`} />
+              <small>Scan to try your app</small>
+            </span>
           </div>
         </div>
       </div>
@@ -369,6 +437,11 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
       <div className={styles.stageWrap} ref={stageRef}>
         <div className={styles.stage} id={`slide-${id}`} key={id} aria-roledescription="slide" aria-label={`${i + 1} of ${count}`}>
           {slides[id]}
+          {!["cover", "next"].includes(id) && (
+            <div className={styles.slideMark}>
+              <Lockup brand={brand} onDark={ON_DARK.has(id)} size={0.62} />
+            </div>
+          )}
         </div>
       </div>
       <div className={styles.controls}>
@@ -391,7 +464,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           {i + 1} / {count}
         </span>
         {brand.deckPdf && (
-          <a className={styles.pdfLink} href={brand.deckPdf} download>
+          <a className={styles.pdfLink} href={brand.deckPdf} download={`Bonsify x ${brand.name}.pdf`}>
             Download PDF
           </a>
         )}
