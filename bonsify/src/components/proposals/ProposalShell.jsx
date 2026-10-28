@@ -142,7 +142,6 @@ export default function ProposalShell({ brand, apps }) {
               <div className={styles.videoActions}>
                 <button className={styles.videoBtn} onClick={() => switchTab("app")}>Try your app <span aria-hidden="true">→</span></button>
                 <a className={styles.videoGhost} href={`/contact?ref=${brand.slug}`}>Get your app now</a>
-                {brand.deckPdf && <a className={styles.videoGhost} href={brand.deckPdf} download>Download pitch deck (PDF)</a>}
               </div>
             </div>
           </section>

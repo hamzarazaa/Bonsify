@@ -25,12 +25,6 @@ const FEATURE_NOTES = {
   cod: "Cash on delivery kept as a checkout option",
 };
 
-// A short reference built from the crawl date, e.g. 1020 for 20 October.
-function proposalRef(brand) {
-  const d = new Date(brand.date || brand.crawledAt || Date.now());
-  return `${String(d.getUTCMonth() + 1).padStart(2, "0")}${String(d.getUTCDate()).padStart(2, "0")}`;
-}
-
 function formatCount(n) {
   if (!n) return null;
   return n >= 5000 ? `${n.toLocaleString("en")}+` : n.toLocaleString("en");
@@ -120,7 +114,6 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
   const productLabel = formatCount(brand.productCount || brand.products.length);
   const addressee = brand.contact ? `${brand.contact} and the ${brand.name} team` : `the ${brand.name} team`;
 
-  const ref_ = `BON-${brand.slug.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 10)}-${proposalRef(brand)}`;
   const productNums = brand.productCount || brand.products.length;
 
   const slides = {
@@ -130,7 +123,6 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
           <span>App proposal for {brand.name}</span>
           <span>Prepared for {addressee}</span>
           <span>{proposalDate(brand)}</span>
-          <span>Ref {ref_}</span>
         </header>
         <div className={styles.coverBody}>
           <h1 className={styles.mega}>

@@ -110,7 +110,7 @@
 
 .docHead {
   display: grid;
-  grid-template-columns: 1.4fr 1.4fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1.4fr 1fr;
   gap: 2cqw;
   padding-bottom: 1.2cqw;
   margin-right: 37cqw;

@@ -70,7 +70,7 @@ export function getProposal(slug) {
   return {
     ...merged,
     video,
-    deckPdf: video ? `${video.src.slice(0, video.src.lastIndexOf("/"))}/${slug}-deck.pdf?download=1` : null,
+    deckPdf: fs.existsSync(path.join(process.cwd(), "public", "decks", `${slug}-deck.pdf`)) ? `/decks/${slug}-deck.pdf` : null,
     domain: new URL(merged.url).hostname.replace(/^www\./, ""),
     products: (merged.products || []).filter((p) => p.image),
     collections: merged.collections || [],
