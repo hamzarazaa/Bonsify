@@ -119,8 +119,14 @@ try {
   log("video rendered");
 
   log("making deck PDF");
-  await run("node", ["video/make-deck-pdfs.mjs", SLUG], { env: { ORIGIN: APP, OUT: path.join(outDir, "decks"), FORCE: "1", PAR: "1" } });
   const pdf = path.join(outDir, "decks", `${SLUG}-deck.pdf`);
+  let pdfOk = false;
+  for (let attempt = 1; attempt <= 2 && !pdfOk; attempt++) {
+    let out = "";
+    try { out = await run("node", ["video/make-deck-pdfs.mjs", SLUG], { env: { ORIGIN: APP, OUT: path.join(outDir, "decks"), FORCE: "1", PAR: "1" } }); } catch (e) { out = e.message; }
+    pdfOk = fs.existsSync(pdf);
+    if (!pdfOk) log(`deck PDF attempt ${attempt} failed: ${out.trim().split("\n").slice(-3).join(" | ").slice(0, 500)}`);
+  }
 
   const files = { mp4: path.join(outDir, `${SLUG}.mp4`), poster: path.join(outDir, `${SLUG}-poster.jpg`), vtt: path.join(outDir, `${SLUG}.vtt`) };
   for (const f of Object.values(files)) if (!fs.existsSync(f)) throw new Error(`missing output ${f}`);
@@ -130,7 +136,7 @@ try {
     const dest = path.join(BUCKET_DIR, "videos");
     fs.mkdirSync(dest, { recursive: true });
     for (const f of Object.values(files)) fs.copyFileSync(f, path.join(dest, path.basename(f)));
-    fs.copyFileSync(pdf, path.join(dest, `${SLUG}-deck.pdf`));
+    if (pdfOk) fs.copyFileSync(pdf, path.join(dest, `${SLUG}-deck.pdf`));
     video = { ready: true, src: `${PUBLIC_BASE}/videos/${SLUG}.mp4`, poster: `${PUBLIC_BASE}/videos/${SLUG}-poster.jpg`, captions: `${PUBLIC_BASE}/videos/${SLUG}.vtt` };
     log("uploaded to bucket");
   } else {
@@ -145,12 +151,12 @@ try {
     const sub = (process.env.GIT_SUBDIR || "bonsify").replace(/\/$/, "");
     commit = await gitlabCommit([
       { path: `${sub}/content/proposals/${SLUG}.json`, buf: fs.readFileSync(recFile) },
-      { path: `${sub}/public/decks/${SLUG}-deck.pdf`, buf: fs.readFileSync(pdf) },
+      ...(pdfOk ? [{ path: `${sub}/public/decks/${SLUG}-deck.pdf`, buf: fs.readFileSync(pdf) }] : []),
     ]);
     log(`committed to GitLab: ${commit}`);
   }
 
-  const result = { ok: true, slug: SLUG, name: NAME, page: `https://bonsify.io/for/${SLUG}`, video: video.src, seconds: Math.round((Date.now() - t0) / 1000), committed: !!commit };
+  const result = { ok: true, slug: SLUG, name: NAME, page: `https://bonsify.io/for/${SLUG}`, video: video.src, deckPdf: pdfOk, seconds: Math.round((Date.now() - t0) / 1000), committed: !!commit };
   fs.writeFileSync(path.join(outDir, `${SLUG}.result.json`), JSON.stringify(result, null, 1));
   if (BUCKET_DIR && !DRY) { fs.mkdirSync(path.join(BUCKET_DIR, "results"), { recursive: true }); fs.writeFileSync(path.join(BUCKET_DIR, "results", `${SLUG}.json`), JSON.stringify(result, null, 1)); }
   log(`DONE ${JSON.stringify(result)}`);
