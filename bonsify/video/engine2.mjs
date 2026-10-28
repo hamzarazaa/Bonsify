@@ -238,9 +238,16 @@ async function record(beat, i) {
   return raw;
 }
 const raws = [];
-for (let i = 0; i < beats.length; i++) { raws.push(await record(beats[i], i)); process.stdout.write(`recorded ${beats[i].id}\n`); }
-if (appS) await appS.ctx.close(); if (siteS) await siteS.ctx.close();
-T("recording done");
+// With enough cores the panels below are drawn while the phone is still being recorded (recording is real time,
+// so on a big machine this hides the panel work inside it). On small machines they stay in sequence so
+// the recording is never starved of CPU.
+const OVERLAP = process.env.OVERLAP ? process.env.OVERLAP === "1" : (await import("node:os")).cpus().length >= 6;
+const recordingP = (async () => {
+  for (let i = 0; i < beats.length; i++) { raws.push(await record(beats[i], i)); process.stdout.write(`recorded ${beats[i].id}\n`); }
+  if (appS) await appS.ctx.close(); if (siteS) await siteS.ctx.close();
+  T("recording done");
+})();
+if (!OVERLAP) await recordingP; else recordingP.catch(() => {});
 
 // ---------- 3. frames: panels, bezel, avatar stage ----------
 const font = (n) => `file://${path.join(HERE, "assets", "fonts", n)}`;
@@ -341,6 +348,7 @@ beats.forEach((sc, si) => {
 bg += `file ${last}\n`;
 fs.writeFileSync(path.join(W, "bg.ffconcat"), bg);
 
+await recordingP; // the phone clips must be finished before they are placed
 // ---------- 4. the demo body ----------
 // each clip gets its own bezel position; the "today" scenes get the browser bar on top
 const clipFiles = beats.map((b, i) => {
