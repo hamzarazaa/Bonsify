@@ -569,10 +569,8 @@
    "banners": 4
   },
   "render": {
-   "ok": true,
-   "seconds": 114,
-   "took": 422,
-   "mb": 8.3
+   "ok": false,
+   "error": " Node.js v22.22.0"
   }
  },
  "uniworth": {
@@ -747,10 +745,8 @@
    "banners": 4
   },
   "render": {
-   "ok": true,
-   "seconds": 114,
-   "took": 456,
-   "mb": 8.8
+   "ok": false,
+   "error": " Node.js v22.22.0"
   }
  },
  "baroque": {
@@ -898,10 +894,8 @@
    "banners": 2
   },
   "render": {
-   "ok": true,
-   "seconds": 123,
-   "took": 478,
-   "mb": 9.1
+   "ok": false,
+   "error": " Node.js v22.22.0"
   }
  },
  "kayseria": {
@@ -1027,10 +1021,8 @@
    "banners": 4
   },
   "render": {
-   "ok": true,
-   "seconds": 115,
-   "took": 471,
-   "mb": 8.4
+   "ok": false,
+   "error": " Node.js v22.22.0"
   }
  },
  "tena-durrani": {
@@ -1064,10 +1056,8 @@
    "banners": 0
   },
   "render": {
-   "ok": true,
-   "seconds": 122,
-   "took": 435,
-   "mb": 8.3
+   "ok": false,
+   "error": " Node.js v22.22.0"
   }
  },
  "republic-womenswear": {
@@ -1100,10 +1090,8 @@
    "banners": 4
   },
   "render": {
-   "ok": true,
-   "seconds": 116,
-   "took": 436,
-   "mb": 8.6
+   "ok": false,
+   "error": " Node.js v22.22.0"
   }
  },
  "ethnc": {
