@@ -78,10 +78,10 @@ async function startApp() {
 }
 async function warm() {
   // first request to each route compiles it; do that now so the recording does not wait on it
-  for (const p of [`/for/${SLUG}`, `/try/${SLUG}`, `/rec/${SLUG}`]) {
-    const r = await fetch(`${APP}${p}`, { signal: AbortSignal.timeout(180000) });
+  await Promise.all([`/for/${SLUG}`, `/try/${SLUG}`, `/rec/${SLUG}`, `/for/${SLUG}?tab=deck&record=1`].map(async (p) => {
+    const r = await fetch(`${APP}${p}`, { signal: AbortSignal.timeout(240000) });
     if (!r.ok) throw new Error(`${p} returned ${r.status}`);
-  }
+  }));
 }
 
 async function gitlabCommit(files) {

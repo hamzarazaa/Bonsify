@@ -44,6 +44,8 @@ async function worker() {
     try {
       await page.goto(`${ORIGIN}/for/${slug}?tab=deck&record=1`, { waitUntil: "load", timeout: 60000 });
       await page.waitForSelector("[id^=slide-]", { timeout: 30000 });
+      // the slide hook is attached after the page hydrates, which can be slow on a cold dev server
+      await page.waitForFunction(() => window.__proposal && typeof window.__proposal.slide === "function", null, { timeout: 90000 });
       await page.addStyleTag({ content: "[id^=slide-]{border-radius:0!important;box-shadow:none!important}" });
       for (let n = 0; n < IDS.length; n++) {
         await page.evaluate((k) => window.__proposal.slide(k), IDS[n]);
