@@ -140,6 +140,9 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
 
   const productNums = brand.productCount || brand.products.length;
 
+  // Long names would wrap to four lines and push the cover text off the slide, so the big headlines shrink a little.
+  const megaStyle = brand.name.length >= 20 ? { fontSize: "6.4cqw" } : brand.name.length >= 15 ? { fontSize: "7.8cqw" } : undefined;
+
   const slides = {
     cover: (
       <div className={`${styles.slide} ${styles.cover}`}>
@@ -150,7 +153,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
         </header>
         <div className={styles.coverBody}>
           <Lockup brand={brand} size={1.35} />
-          <h1 className={styles.mega}>
+          <h1 className={styles.mega} style={megaStyle}>
             An app
             <br />
             for {brand.name}.
@@ -402,7 +405,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
     next: (
       <div className={`${styles.slide} ${styles.closing}`}>
         <Lockup brand={brand} onDark size={1.35} />
-        <h2 className={styles.mega}>
+        <h2 className={styles.mega} style={megaStyle}>
           Let&rsquo;s build
           <br />
           {brand.name}&rsquo;s app.
