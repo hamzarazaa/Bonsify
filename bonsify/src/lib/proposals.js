@@ -68,8 +68,9 @@ export function getProposal(slug) {
     video = { src: merged.video.src || `${base}/${slug}.mp4`, poster: merged.video.poster || `${base}/${slug}-poster.jpg`, captions: merged.video.captions || null };
   }
   return {
-    video,
     ...merged,
+    video,
+    deckPdf: video ? `${video.src.slice(0, video.src.lastIndexOf("/"))}/${slug}-deck.pdf?download=1` : null,
     domain: new URL(merged.url).hostname.replace(/^www\./, ""),
     products: (merged.products || []).filter((p) => p.image),
     collections: merged.collections || [],

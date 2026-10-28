@@ -19,9 +19,9 @@ const dir = path.resolve(ROOT, process.argv[2] || "video/out/final");
 if (!process.env.BLOB_READ_WRITE_TOKEN) { console.error("Set BLOB_READ_WRITE_TOKEN first."); process.exit(1); }
 const { put } = await import("@vercel/blob");
 
-const files = fs.readdirSync(dir).filter((f) => /\.(mp4|jpg|vtt)$/.test(f));
+const files = fs.readdirSync(dir).filter((f) => /\.(mp4|jpg|vtt|pdf)$/.test(f));
 let base = null, done = 0;
-const type = { mp4: "video/mp4", jpg: "image/jpeg", vtt: "text/vtt" };
+const type = { mp4: "video/mp4", jpg: "image/jpeg", vtt: "text/vtt", pdf: "application/pdf" };
 const queue = [...files];
 await Promise.all(Array.from({ length: 4 }, async () => {
   while (queue.length) {

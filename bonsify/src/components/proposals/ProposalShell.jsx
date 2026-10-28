@@ -9,8 +9,8 @@ import styles from "./ProposalShell.module.css";
 
 const BASE_TABS = [
   { id: "deck", label: "Proposal" },
-  { id: "apps", label: "Our apps" },
   { id: "app", label: "Your app" },
+  { id: "apps", label: "Our app" },
 ];
 
 const VIDEO_TABS = [{ id: "video", label: "Video" }, ...BASE_TABS];
@@ -142,6 +142,7 @@ export default function ProposalShell({ brand, apps }) {
               <div className={styles.videoActions}>
                 <button className={styles.videoBtn} onClick={() => switchTab("app")}>Try your app <span aria-hidden="true">→</span></button>
                 <a className={styles.videoGhost} href={`/contact?ref=${brand.slug}`}>Get your app now</a>
+                {brand.deckPdf && <a className={styles.videoGhost} href={brand.deckPdf} download>Download pitch deck (PDF)</a>}
               </div>
             </div>
           </section>

@@ -362,7 +362,7 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
             </a>
             <span className={styles.contact}>
               <a href={`mailto:hello@bonsify.io?subject=${encodeURIComponent(`${brand.name} app`)}`}>hello@bonsify.io</a>
-              <span>+1 (251) 277-9302</span>
+              <span>+92 313 5988352</span>
             </span>
           </div>
         </div>
@@ -398,6 +398,11 @@ const Deck = forwardRef(function Deck({ brand, apps, onShowApps }, ref) {
         <span className={styles.counter}>
           {i + 1} / {count}
         </span>
+        {brand.deckPdf && (
+          <a className={styles.pdfLink} href={brand.deckPdf} download>
+            Download PDF
+          </a>
+        )}
         <button className={styles.arrow} onClick={() => goTo(i + 1)} disabled={i === count - 1} aria-label="Next slide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="m9 5 7 7-7 7" /></svg>
         </button>
