@@ -160,8 +160,7 @@ export default function LeadCentre() {
       <div className={s.app}>
         <div className={s.gate}>
           <h1 className={s.h1}>Lead Centre</h1>
-          <p className={s.mute}>Sign in to the content manager first. It uses the same GitLab login, then come back here.</p>
-          <a className={`${s.btn} ${s.primary}`} href="/admin/" style={{ textDecoration: "none" }}>Go to /admin</a>
+          <a className={`${s.btn} ${s.primary}`} href="/admin/" style={{ textDecoration: "none" }}>Log in</a>
         </div>
       </div>
     );
