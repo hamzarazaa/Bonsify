@@ -1,4 +1,5 @@
 import crypto from "node:crypto";
+import { detectName } from "../../../../scripts/lib/detect-name.mjs";
 
 // Starts and watches a render on the Google Cloud Run Job (crawl, video, deck PDF, publish).
 // Only people who can push to the content repo may use it, checked with the same GitLab
@@ -32,11 +33,24 @@ function safeUrl(input) {
   } catch { return null; }
 }
 
+// Vercel's text box can turn the key's \n into real line breaks (or add quotes), which breaks JSON.parse.
+// Accept the JSON as pasted, base64 of it, or the same with broken line breaks.
+function parseKey(raw) {
+  let t = String(raw).trim();
+  if (t.startsWith('"') && t.endsWith('"')) { try { t = JSON.parse(t); } catch { t = t.slice(1, -1); } }
+  if (!t.startsWith("{") && /^[A-Za-z0-9+/=\s]+$/.test(t)) { try { t = Buffer.from(t, "base64").toString("utf8"); } catch {} }
+  try { return JSON.parse(t); } catch {}
+  const email = t.match(/"client_email"\s*:\s*"([^"]+)"/)?.[1];
+  const pem = t.match(/-----BEGIN PRIVATE KEY-----[\s\S]*?-----END PRIVATE KEY-----/)?.[0];
+  if (!email || !pem) throw new Error("GCP_SA_KEY on Vercel is not a valid service account key");
+  const body = pem.replace(/-----(BEGIN|END) PRIVATE KEY-----/g, "").replace(/\\n|\s/g, "");
+  return { client_email: email, private_key: `-----BEGIN PRIVATE KEY-----\n${body.match(/.{1,64}/g).join("\n")}\n-----END PRIVATE KEY-----\n` };
+}
 const b64 = (b) => Buffer.from(b).toString("base64url");
 async function googleToken() {
   const raw = process.env.GCP_SA_KEY;
   if (!raw) throw new Error("GCP_SA_KEY is not set on Vercel");
-  const key = JSON.parse(raw);
+  const key = parseKey(raw);
   const now = Math.floor(Date.now() / 1000);
   const head = b64(JSON.stringify({ alg: "RS256", typ: "JWT" }));
   const claim = b64(JSON.stringify({ iss: key.client_email, scope: "https://www.googleapis.com/auth/cloud-platform", aud: "https://oauth2.googleapis.com/token", iat: now, exp: now + 3000 }));
@@ -59,10 +73,10 @@ export async function POST(request) {
   let body;
   try { body = await request.json(); } catch { return Response.json({ error: "Send a store URL and a brand name." }, { status: 400 }); }
   const url = safeUrl(String(body?.url || "").trim());
-  const name = String(body?.name || "").trim().slice(0, 80);
+  let name = String(body?.name || "").trim().slice(0, 80);
   const contact = String(body?.contact || "").trim().slice(0, 80);
   if (!url) return Response.json({ error: "That does not look like a public store address." }, { status: 400 });
-  if (!name) return Response.json({ error: "Add the brand name." }, { status: 400 });
+  if (!name) name = (await detectName(url)).slice(0, 80);
   const slug = name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   if (!slug) return Response.json({ error: "The brand name needs letters or numbers." }, { status: 400 });
   const args = ["--url", url, "--name", name, ...(contact ? ["--contact", contact] : [])];

@@ -26,11 +26,13 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(HERE, "..");
 const argv = process.argv.slice(2);
 const flag = (n, d) => { const i = argv.indexOf(`--${n}`); if (i < 0) return d; const v = argv[i + 1]; return v == null || v.startsWith("--") ? true : v; };
-const URL_ = flag("url"), NAME = flag("name");
+const URL_ = flag("url");
+let NAME = flag("name");
+if (!NAME && URL_) { const { detectName } = await import("../scripts/lib/detect-name.mjs"); NAME = await detectName(URL_); console.log(`brand name from the address: ${NAME}`); }
 const SLUG = flag("slug") || (NAME || "").toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const CONTACT = flag("contact", "");
 const DRY = !!flag("dry", false), SKIP_CRAWL = !!flag("skip-crawl", false);
-if (!SLUG || (!SKIP_CRAWL && (!URL_ || !NAME))) { console.error('usage: node video/job.mjs --url https://store.com --name "Brand" [--slug x] [--contact "Name"]'); process.exit(1); }
+if (!SLUG || (!SKIP_CRAWL && (!URL_ || !NAME))) { console.error('usage: node video/job.mjs --url https://store.com --name "Brand" [--slug x]  (--name is optional: it is read from the store) [--contact "Name"]'); process.exit(1); }
 
 const BUCKET_DIR = process.env.BUCKET_DIR || "";
 const PUBLIC_BASE = (process.env.PUBLIC_BASE || "").replace(/\/$/, "");

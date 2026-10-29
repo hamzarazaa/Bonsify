@@ -17,7 +17,31 @@
   var btn = { background: "#14171A", color: "#fff", border: 0, borderRadius: 4, padding: "9px 16px", fontWeight: 600, cursor: "pointer" };
 
   var Control = createClass({
-    getInitialState: function () { return { url: "", busy: false, error: "" }; },
+    getInitialState: function () { return { url: "", busy: false, error: "", run: "", runMsg: "", contact: "" }; },
+    makeVideo: function () {
+      var self = this, b = parse(this.props.value);
+      if (!this.state.url.trim()) { this.setState({ runMsg: "Paste the store address first.", run: "err" }); return; }
+      this.setState({ run: "busy", runMsg: "Starting..." });
+      fetch("/api/engine", { method: "POST", headers: { "Content-Type": "application/json", Authorization: "Bearer " + token() },
+        body: JSON.stringify({ url: this.state.url.trim(), name: (b && b.name) || "", contact: this.state.contact.trim() }) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (!res.ok) throw new Error(res.j.error || "Could not start.");
+          var t0 = Date.now(), slug = res.j.slug;
+          clearInterval(self.timer);
+          self.timer = setInterval(function () {
+            fetch("/api/engine?execution=" + encodeURIComponent(res.j.execution), { headers: { Authorization: "Bearer " + token() } })
+              .then(function (r) { return r.json(); }).then(function (j) {
+                var secs = Math.round((Date.now() - t0) / 1000);
+                if (j.error) { clearInterval(self.timer); self.setState({ run: "err", runMsg: j.error }); return; }
+                if (j.state === "running") { self.setState({ run: "busy", runMsg: "Working, " + secs + " seconds so far. About 4 minutes in all." }); return; }
+                clearInterval(self.timer);
+                if (j.state === "done") self.setState({ run: "ok", runMsg: "Done in " + secs + " seconds. The page goes live about a minute after the site redeploys: /for/" + slug });
+                else self.setState({ run: "err", runMsg: "The render failed. Run " + res.j.execution + " has the details in Google Cloud." });
+              }).catch(function () {});
+          }, 8000);
+        }).catch(function (e) { self.setState({ run: "err", runMsg: e.message }); });
+    },
     set: function (brand) { this.props.onChange(brand ? JSON.stringify(brand) : ""); },
     fetchStore: function () {
       var self = this;
@@ -48,6 +72,14 @@
             style: { flex: 1, padding: "9px 10px", border: "1px solid #c8c8cf", borderRadius: 4 } }),
           h("button", { type: "button", style: btn, disabled: s.busy, onClick: this.fetchStore }, s.busy ? "Reading the store, about 20 seconds..." : (b ? "Fetch again" : "Fetch from store")))
       ];
+      kids.push(h("div", { style: { margin: "14px 0 0", paddingTop: 12, borderTop: "1px solid #eee" } },
+        h("p", { style: { margin: "0 0 8px", color: "#555" } }, "Or let the engine do everything: reads the store, records the narrated video, builds the deck and publishes the page itself. Do not press Publish on this entry afterwards."),
+        h("div", { style: { display: "flex", gap: 8 } },
+          h("input", { type: "text", placeholder: "Contact person (optional)", value: s.contact,
+            onChange: function (e) { this.setState({ contact: e.target.value }); }.bind(this),
+            style: { flex: 1, padding: "9px 10px", border: "1px solid #c8c8cf", borderRadius: 4 } }),
+          h("button", { type: "button", style: btn, disabled: s.run === "busy", onClick: this.makeVideo }, "Make video and deck")),
+        s.runMsg ? h("p", { style: { margin: "10px 0 0", color: s.run === "err" ? "#b3261e" : s.run === "ok" ? "#1b5e20" : "#555" } }, s.runMsg) : null));
       if (s.error) kids.push(h("p", { style: { color: "#b3261e", margin: "10px 0 0" } }, s.error));
       if (b) {
         kids.push(h("div", { style: { display: "flex", gap: 14, alignItems: "center", margin: "16px 0 8px" } },
