@@ -8,8 +8,18 @@ const BUSY = new Set(["queued", "deck"]);
 
 export const inProgress = (lead) => !!lead.engine?.execution && BUSY.has(lead.pageStatus);
 
-async function repoRecord(slug, token) {
+// True when the file was committed after `since`. A page from an earlier run of the same brand must not count as finished.
+async function changedSince(path, since, token) {
+  const q = new URLSearchParams({ ref_name: "main", path, since, per_page: "1" });
+  const r = await fetch(`https://gitlab.com/api/v4/projects/${encodeURIComponent(PROJECT)}/repository/commits?${q}`, { headers: { Authorization: `Bearer ${token}` }, cache: "no-store", signal: AbortSignal.timeout(5000) });
+  if (!r.ok) throw new Error(`GitLab ${r.status}`);
+  const list = await r.json().catch(() => []);
+  return Array.isArray(list) && list.length > 0;
+}
+
+async function repoRecord(slug, token, since) {
   const file = encodeURIComponent(`${SUB}/content/proposals/${slug}.json`);
+  if (since && !(await changedSince(`${SUB}/content/proposals/${slug}.json`, since, token))) return null;
   const r = await fetch(`https://gitlab.com/api/v4/projects/${encodeURIComponent(PROJECT)}/repository/files/${file}/raw?ref=main`, { headers: { Authorization: `Bearer ${token}` }, cache: "no-store", signal: AbortSignal.timeout(5000) });
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`GitLab ${r.status}`);
@@ -27,11 +37,11 @@ export async function refreshStatus(lead, token) {
     const age = Date.now() - new Date(lead.engine.startedAt).getTime();
     deck = age > 2000; video = run.state === "done";
   } else {
-    try { const rec = await repoRecord(slug, token); deck = !!rec; video = !!rec?.video?.ready; } catch { return null; }
+    try { const rec = await repoRecord(slug, token, lead.engine.startedAt); deck = !!rec; video = !!rec?.video?.ready; } catch { return null; }
   }
   let next = lead.pageStatus;
   if (video || (run.state === "done" && deck)) next = "ready";
-  else if (run.state === "failed") next = "failed";
+  else if (run.state === "failed" || (run.state === "done" && !engineMock())) next = "failed";
   else if (deck) next = "deck";
   const out = {};
   if (next !== lead.pageStatus) out.pageStatus = next;
