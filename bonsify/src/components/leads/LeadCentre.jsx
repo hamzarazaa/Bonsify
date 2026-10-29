@@ -37,6 +37,17 @@ export default function LeadCentre() {
 
   const say = useCallback((m) => { setToast(m); clearTimeout(toastTimer.current); toastTimer.current = setTimeout(() => setToast(""), 5000); }, []);
 
+  const [syncing, setSyncing] = useState(false);
+  const syncPages = async () => {
+    setSyncing(true);
+    try {
+      const r = await api("PATCH", { syncPages: true });
+      say(r.added || r.linked ? `${r.added} page${r.added === 1 ? "" : "s"} added as leads${r.linked ? `, ${r.linked} linked` : ""}` : "Every existing page is already a lead");
+      await load(true);
+    } catch (e) { say(e.message || "Could not sync the pages."); }
+    setSyncing(false);
+  };
+
   const load = useCallback(async (silent) => {
     if (!token()) { setState((p) => ({ ...p, status: "signin" })); return; }
     try {
@@ -190,6 +201,7 @@ export default function LeadCentre() {
           <h1 className={s.h1}>Leads</h1>
           <span className={s.count}>{leads.length}</span>
           <div className={s.spacer}>
+            <button className={s.btn} onClick={syncPages} disabled={syncing} title="List the brand pages that were built before as leads">{syncing ? "Syncing..." : "Sync existing pages"}</button>
             <button className={`${s.btn} ${s.primary}`} onClick={() => setAdding({ stage: "" })}><Icon d={ICONS.plus} size={16} />Add lead</button>
           </div>
         </header>

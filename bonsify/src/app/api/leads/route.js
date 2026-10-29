@@ -4,6 +4,7 @@ import { detectName } from "../../../../scripts/lib/detect-name.mjs";
 import { newLead, applyPatch, cleanSettings, slugFromName } from "../../../lib/crm/schema.js";
 import { startRun } from "../../../lib/engine.js";
 import { refreshStatus, inProgress } from "../../../lib/crm/status.js";
+import { listPages } from "../../../lib/crm/pages.js";
 
 // Lead Centre API. Only people who can push to the content repo may use it.
 //   GET                                  -> { leads, settings, me }   (also refreshes page and video progress)
@@ -14,6 +15,7 @@ import { refreshStatus, inProgress } from "../../../lib/crm/status.js";
 //          { id, render: true }          -> start the page, deck and video render
 //          { id, readName: true }        -> read the brand name from the store
 //          { settings }                  -> stages, sources, saved views
+//          { syncPages: true }           -> list the brand pages that already exist in the content repo as leads
 //   DELETE { id } | { ids }              -> remove
 export const maxDuration = 60;
 
@@ -129,6 +131,32 @@ export async function PATCH(request) {
       if (r.error) return bad(r.error);
       await st.setSettings(r.settings);
       return Response.json({ settings: r.settings });
+    }
+
+    // Bring in the pages that were built before (or outside) the Lead Centre.
+    if (body?.syncPages) {
+      const pages = await listPages(bearer(request));
+      const existing = await st.list();
+      const byId = new Map(existing.map((l) => [l.id, l]));
+      const added = [], linked = [], skipped = [];
+      const label = "Existing page";
+      for (const p of pages) {
+        const r = newLead({ url: p.url, brand: p.name, source: label }, { by: "Import", stages: settings.stages, sources: [...settings.sources, label] });
+        if (r.error) { skipped.push(p.slug); continue; }
+        const pageStatus = p.videoReady ? "ready" : "deck";
+        const cur = byId.get(r.lead.id);
+        if (cur) {
+          if (cur.pageSlug || inProgress(cur)) continue;
+          const patch = { pageSlug: p.slug, pageStatus, deckReady: p.deckReady, updatedAt: new Date().toISOString() };
+          await st.update(cur.id, patch); linked.push(cur.id); continue;
+        }
+        const when = p.crawledAt && !Number.isNaN(Date.parse(p.crawledAt)) ? new Date(p.crawledAt).toISOString() : r.lead.createdAt;
+        const lead = { ...r.lead, pageSlug: p.slug, pageStatus, deckReady: p.deckReady, createdAt: when, updatedAt: when, lastTouch: when,
+          notes: [{ at: when, by: "Import", text: `Brought in from the existing page /for/${p.slug}`, system: true }] };
+        if (await st.create(lead)) { added.push(lead.id); byId.set(lead.id, lead); }
+      }
+      if (added.length && !settings.sources.includes(label)) { const c = cleanSettings({ sources: [...settings.sources, label] }, settings); if (c.settings) await st.setSettings(c.settings); }
+      return Response.json({ added: added.length, linked: linked.length, skipped: skipped.length, total: pages.length });
     }
 
     // Edit many leads at once.
