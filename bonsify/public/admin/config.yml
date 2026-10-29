@@ -10,6 +10,8 @@ public_folder: "/images/uploads"
 
 publish_mode: simple
 
+logo_url: /images/logos/bonsify-login.svg
+
 collections:
   - name: "blog"
     label: "Blog Posts"
@@ -176,36 +178,6 @@ collections:
           default: 10,
           hint: "Lower numbers appear earlier in the rotation.",
         }
-
-  - name: "proposals"
-    label: "Brand Proposals"
-    description: "One entry per brand. Paste the store address, press Fetch from store, then Publish. The page appears at /for/<name> after the site redeploys (about a minute)."
-    folder: "bonsify/content/proposals"
-    create: true
-    extension: "json"
-    format: "json"
-    slug: "{{fields.name}}"
-    identifier_field: "name"
-    summary: "/for/{{name}}  |  contact: {{contact}}"
-    sortable_fields: ["name", "contact", "commit_date", "commit_author"]
-    view_filters:
-      - { label: "Has a contact person", field: "contact", pattern: ".+" }
-      - { label: "Fetched from /admin", field: "brandJson", pattern: "^\\{" }
-    fields:
-      - label: "Page address (e.g. glow-co gives /for/glow-co)"
-        name: "name"
-        widget: "string"
-        pattern: ["^[a-z0-9]+(-[a-z0-9]+)*$", "Lowercase letters, numbers and single hyphens only, e.g. glow-co"]
-      - { label: "Contact person", name: "contact", widget: "string", required: false }
-      - { label: "Store", name: "brandJson", widget: "brandJson" }
-      - label: "Hand fixes (optional)"
-        name: "overrides"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - { label: "Brand name shown on the page (if the store name is wrong)", name: "name", widget: "string", required: false }
-          - { label: "Main colour (hex)", name: "primary", widget: "string", required: false }
 
   - name: "settings"
     label: "Settings"

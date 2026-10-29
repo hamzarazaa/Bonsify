@@ -159,6 +159,8 @@ export default function LeadCentre() {
     return (
       <div className={s.app}>
         <div className={s.gate}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logos/bonsify-login.svg" alt="Bonsify" width={110} height={174} style={{ display: "block" }} />
           <h1 className={s.h1}>Lead Centre</h1>
           <a className={`${s.btn} ${s.primary}`} href="/admin/" style={{ textDecoration: "none" }}>Log in</a>
         </div>
