@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import s from "./leads.module.css";
+import { OWNERS } from "../../lib/crm/schema.js";
 import { AddableSelect, Icon, ICONS, api, ago, initials, tileOf, tint, pageUrl, deckUrl, rendering } from "./shared";
 
 function Field({ id, label, value, onSave, type = "text", placeholder, list }) {
@@ -108,8 +109,13 @@ export default function Panel({ lead, settings, owners, stageColor, addStage, ad
             <Field id="dbrand" label="Brand name" value={lead.brand} onSave={(v) => patch(lead.id, { brand: v })} />
             <button className={s.linkBtn} onClick={readName} disabled={busy === "name"}>{busy === "name" ? "Reading..." : "Read the name from the store"}</button>
           </div>
-          <Field id="downer" label="Owner" value={lead.owner} list="owners" onSave={(v) => patch(lead.id, { owner: v })} />
-          <datalist id="owners">{owners.map((o) => <option key={o} value={o} />)}</datalist>
+          <div className={s.fld}>
+            <label className={s.lbl} htmlFor="downer">Owner</label>
+            <select id="downer" className={s.sel} value={lead.owner} onChange={(e) => patch(lead.id, { owner: e.target.value })}>
+              {!OWNERS.includes(lead.owner) && <option value={lead.owner}>{lead.owner || "No owner"}</option>}
+              {OWNERS.map((o) => <option key={o} value={o}>{o}</option>)}
+            </select>
+          </div>
           <Field id="dpoc" label="Contact person" value={lead.poc} onSave={(v) => patch(lead.id, { poc: v })} />
           <Field id="dphone" label="Phone" value={lead.pocPhone} onSave={(v) => patch(lead.id, { pocPhone: v })} />
           <Field id="demail" label="Email" value={lead.pocEmail} type="email" onSave={(v) => patch(lead.id, { pocEmail: v })} />

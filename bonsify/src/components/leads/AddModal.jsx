@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import s from "./leads.module.css";
 import { AddableSelect, Icon, ICONS, api } from "./shared";
 import { parseImport, classify, summarize } from "../../lib/crm/import.js";
-import { hostOf, idFromHost } from "../../lib/crm/schema.js";
+import { hostOf, idFromHost, DEFAULT_OWNER } from "../../lib/crm/schema.js";
 
 const blankRow = (stage, source) => ({ url: "", brand: "", poc: "", stage, source });
 const STATUS = {
@@ -106,7 +106,7 @@ export default function AddModal({ settings, me, leads, presetStage, addStage, a
                 );
               })}
               <div><button type="button" className={s.btn} onClick={() => setRows((p) => [...p, blankRow(p[p.length - 1].stage, p[p.length - 1].source)])}><Icon d={ICONS.plus} size={16} />Add another</button></div>
-              <p className={s.mute} style={{ margin: 0 }}>Press Enter in the address box to add another row. Owner is set to {me?.name || "you"}.</p>
+              <p className={s.mute} style={{ margin: 0 }}>Press Enter in the address box to add another row. Owner is set to {DEFAULT_OWNER}.</p>
             </>
           )}
 

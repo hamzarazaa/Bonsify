@@ -139,7 +139,7 @@ export async function PATCH(request) {
       const existing = await st.list();
       const byId = new Map(existing.map((l) => [l.id, l]));
       const added = [], linked = [], skipped = [];
-      const label = "Existing page";
+      const label = "Self-added";
       for (const p of pages) {
         const r = newLead({ url: p.url, brand: p.name, source: label }, { by: "Import", stages: settings.stages, sources: [...settings.sources, label] });
         if (r.error) { skipped.push(p.slug); continue; }

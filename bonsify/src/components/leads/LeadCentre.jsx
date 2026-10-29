@@ -6,7 +6,7 @@ import Board from "./Board";
 import AddModal from "./AddModal";
 import Panel from "./Panel";
 import { Icon, ICONS, PAGE, Confirm, api, token, keep, initials, tileOf, tint, ago, niceDate, pageUrl, deckUrl, rendering } from "./shared";
-import { isDue } from "../../lib/crm/schema.js";
+import { isDue, OWNERS } from "../../lib/crm/schema.js";
 
 // Lead Centre: table and board views, add one or many (paste or CSV), edit in a side panel, bulk actions,
 // saved views and the page, deck and video render. Uses the GitLab token the /admin editor already holds;
@@ -19,7 +19,7 @@ export default function LeadCentre() {
   const [fSource, setFSource] = useState("");
   const [fOwner, setFOwner] = useState("");
   const [fDue, setFDue] = useState(false);
-  const [view, setView] = useState("table");
+  const [view, setView] = useState("board");
   const [sort, setSort] = useState({ key: "lastTouch", dir: -1 });
   const [activeView, setActiveView] = useState("");
   const [savingView, setSavingView] = useState(false);
@@ -31,22 +31,11 @@ export default function LeadCentre() {
   const [toast, setToast] = useState("");
   const toastTimer = useRef(null);
 
-  useEffect(() => { setView(keep.get("view", "table")); const sv = keep.get("sort", null); if (sv?.key) setSort(sv); }, []);
-  useEffect(() => { keep.set("view", view); }, [view]);
+  useEffect(() => { setView(keep.get("view2", "board")); const sv = keep.get("sort", null); if (sv?.key) setSort(sv); }, []);
+  useEffect(() => { keep.set("view2", view); }, [view]);
   useEffect(() => { keep.set("sort", sort); }, [sort]);
 
   const say = useCallback((m) => { setToast(m); clearTimeout(toastTimer.current); toastTimer.current = setTimeout(() => setToast(""), 5000); }, []);
-
-  const [syncing, setSyncing] = useState(false);
-  const syncPages = async () => {
-    setSyncing(true);
-    try {
-      const r = await api("PATCH", { syncPages: true });
-      say(r.added || r.linked ? `${r.added} page${r.added === 1 ? "" : "s"} added as leads${r.linked ? `, ${r.linked} linked` : ""}` : "Every existing page is already a lead");
-      await load(true);
-    } catch (e) { say(e.message || "Could not sync the pages."); }
-    setSyncing(false);
-  };
 
   const load = useCallback(async (silent) => {
     if (!token()) { setState((p) => ({ ...p, status: "signin" })); return; }
@@ -201,8 +190,7 @@ export default function LeadCentre() {
           <h1 className={s.h1}>Leads</h1>
           <span className={s.count}>{leads.length}</span>
           <div className={s.spacer}>
-            <button className={s.btn} onClick={syncPages} disabled={syncing} title="List the brand pages that were built before as leads">{syncing ? "Syncing..." : "Sync existing pages"}</button>
-            <button className={`${s.btn} ${s.primary}`} onClick={() => setAdding({ stage: "" })}><Icon d={ICONS.plus} size={16} />Add lead</button>
+            <button className={s.iconBtn} style={{ background: "var(--clay)", borderColor: "var(--clay)", color: "#fff" }} onClick={() => setAdding({ stage: "" })} aria-label="Add lead" title="Add lead"><Icon d={ICONS.plus} size={20} /></button>
           </div>
         </header>
 
@@ -213,29 +201,29 @@ export default function LeadCentre() {
 
         <section className={s.bar}>
           <div className={s.tabs} role="tablist" aria-label="View">
-            <button role="tab" aria-selected={view === "table"} className={`${s.tab} ${view === "table" ? s.tabOn : ""}`} onClick={() => { setActiveView(""); setView("table"); }}>Table</button>
-            <button role="tab" aria-selected={view === "board"} className={`${s.tab} ${view === "board" ? s.tabOn : ""}`} onClick={() => { setActiveView(""); setView("board"); }}>Board</button>
+            <button role="tab" aria-selected={view === "table"} className={`${s.tab} ${view === "table" ? s.tabOn : ""}`} onClick={() => { setActiveView(""); setView("table"); }} aria-label="Table view" title="Table view"><Icon d={ICONS.table} size={18} /></button>
+            <button role="tab" aria-selected={view === "board"} className={`${s.tab} ${view === "board" ? s.tabOn : ""}`} onClick={() => { setActiveView(""); setView("board"); }} aria-label="Board view" title="Board view"><Icon d={ICONS.board} size={18} /></button>
           </div>
           <label className={s.visually} htmlFor="q">Search leads</label>
           <input id="q" className={`${s.input} ${s.search}`} placeholder="Search brand, contact, address" autoComplete="off" value={q} onChange={touchFilter(setQ)} />
           <select aria-label="Filter by stage" className={s.sel} value={fStage} onChange={touchFilter(setFStage)}><option value="">Stage: any</option>{settings.stages.map((x) => <option key={x.name}>{x.name}</option>)}</select>
           <select aria-label="Filter by source" className={s.sel} value={fSource} onChange={touchFilter(setFSource)}><option value="">Source: any</option>{settings.sources.map((x) => <option key={x}>{x}</option>)}</select>
-          <select aria-label="Filter by owner" className={s.sel} value={fOwner} onChange={touchFilter(setFOwner)}><option value="">Owner: anyone</option>{owners.map((x) => <option key={x}>{x}</option>)}</select>
-          {filtered && <button className={s.btn} onClick={clearFilters}>Clear</button>}
+          <select aria-label="Filter by owner" className={s.sel} value={fOwner} onChange={touchFilter(setFOwner)}><option value="">Owner: anyone</option>{OWNERS.map((x) => <option key={x}>{x}</option>)}</select>
+          {filtered && <button className={s.iconBtn} onClick={clearFilters} aria-label="Clear filters" title="Clear filters"><Icon d={ICONS.close} size={18} /></button>}
           <span style={{ marginLeft: "auto", display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
             {(settings.views || []).length > 0 && (
               <select aria-label="Saved views" className={s.sel} value={activeView} onChange={(e) => (e.target.value ? applyView(e.target.value) : setActiveView(""))}>
                 <option value="">Saved views</option>{settings.views.map((v) => <option key={v.name}>{v.name}</option>)}
               </select>
             )}
-            {activeView && <button className={s.btn} onClick={deleteView} aria-label={`Remove saved view ${activeView}`}>Remove view</button>}
+            {activeView && <button className={s.iconBtn} onClick={deleteView} aria-label={`Remove saved view ${activeView}`} title="Remove this saved view"><Icon d={ICONS.trash} size={18} /></button>}
             {savingView ? (
               <>
                 <label className={s.visually} htmlFor="vname">Name this view</label>
                 <input id="vname" className={s.input} placeholder="Name this view" value={viewName} autoFocus autoComplete="off" onChange={(e) => setViewName(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") saveView(); if (e.key === "Escape") setSavingView(false); }} />
-                <button className={`${s.btn} ${s.primary}`} onClick={saveView}>Save</button>
+                <button className={s.iconBtn} style={{ background: "var(--clay)", borderColor: "var(--clay)", color: "#fff" }} onClick={saveView} aria-label="Save view" title="Save view"><Icon d={ICONS.check} size={18} /></button>
               </>
-            ) : <button className={s.btn} onClick={() => setSavingView(true)}>Save this view</button>}
+            ) : <button className={s.iconBtn} onClick={() => setSavingView(true)} aria-label="Save this view" title="Save this view"><Icon d={ICONS.save} size={18} /></button>}
           </span>
         </section>
 
@@ -248,11 +236,11 @@ export default function LeadCentre() {
             </select>
             <label className={s.visually} htmlFor="bowner">Set the owner of selected leads</label>
             <select id="bowner" className={s.sel} value="" onChange={(e) => e.target.value && bulkPatch({ owner: e.target.value }, `Owner set to ${e.target.value}`)}>
-              <option value="">Set owner...</option>{[...new Set([state.me?.name, ...owners].filter(Boolean))].map((o) => <option key={o}>{o}</option>)}
+              <option value="">Set owner...</option>{OWNERS.map((o) => <option key={o}>{o}</option>)}
             </select>
-            <button className={s.btn} onClick={bulkRender}>Make page, deck and video</button>
-            <button className={s.btn} style={{ color: "#8C1D18" }} onClick={() => askDelete(sel)}>Delete</button>
-            <button className={s.btn} style={{ marginLeft: "auto" }} onClick={() => setSelected(new Set())}>Clear selection</button>
+            <button className={s.iconBtn} onClick={bulkRender} aria-label="Make page, deck and video" title="Make page, deck and video"><Icon d={ICONS.play} size={18} /></button>
+            <button className={s.iconBtn} style={{ color: "#8C1D18" }} onClick={() => askDelete(sel)} aria-label="Delete selected" title="Delete selected"><Icon d={ICONS.trash} size={18} /></button>
+            <button className={s.iconBtn} style={{ marginLeft: "auto" }} onClick={() => setSelected(new Set())} aria-label="Clear selection" title="Clear selection"><Icon d={ICONS.close} size={18} /></button>
           </section>
         )}
 
@@ -287,7 +275,7 @@ export default function LeadCentre() {
                       <span className={s.cell} role="cell">{l.poc || <span className={s.mute}>Not set</span>}</span>
                       <span className={`${s.cell} ${s.mute}`} role="cell">{l.source}</span>
                       <span className={s.cell} role="cell"><span className={s.dot} style={{ background: ps[1] }} />{ps[0].split(",")[0]}
-                        {live && <> <a className={s.miniLink} href={pageUrl(l)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Page</a><a className={s.miniLink} href={deckUrl(l)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Deck</a></>}
+                        {live && <> <a className={s.miniLink} style={{ display: "inline-flex", verticalAlign: "middle" }} href={pageUrl(l)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} aria-label="Open the page" title="Open the page"><Icon d={ICONS.page} size={14} /></a><a className={s.miniLink} style={{ display: "inline-flex", verticalAlign: "middle" }} href={deckUrl(l)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} aria-label="Open the deck PDF" title="Open the deck PDF"><Icon d={ICONS.deck} size={14} /></a></>}
                       </span>
                       <span className={s.cell} role="cell" style={due ? { color: "#B3261E", fontWeight: 600 } : { color: "#5C5A52" }}>{l.nextFollowUp ? niceDate(l.nextFollowUp) : ""}</span>
                       <span className={`${s.cell} ${s.mute}`} role="cell">{ago(l.lastTouch)}</span>

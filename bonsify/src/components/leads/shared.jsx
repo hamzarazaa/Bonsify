@@ -68,6 +68,12 @@ export const ICONS = {
   table: "M3 5h18v14H3zM3 10h18M9 5v14",
   board: "M4 4h5v16H4zM10 4h5v10h-5zM16 4h4v13h-4z",
   upload: "M12 16V4M7 9l5-5 5 5M4 20h16",
+  save: "M5 4h11l3 3v13H5zM8 4v5h7V4M8 20v-6h8v6",
+  check: "M5 12l5 5 9-11",
+  trash: "M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6",
+  page: "M14 4h6v6M20 4l-9 9M18 14v6H4V6h6",
+  deck: "M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7",
+  play: "M7 4l13 8-13 8z",
 };
 
 // A select with a "+ New..." entry that lets you type a new value (stage or source).

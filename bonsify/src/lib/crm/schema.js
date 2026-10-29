@@ -10,6 +10,9 @@ export const DEFAULT_STAGES = [
   { name: "Dead / DNR", color: "#7A2A25" },
 ];
 export const DEFAULT_SOURCES = ["Self-added", "Homepage enquiry", "Contact page", "Import"];
+export const OWNERS = ["Shujaat Ameer", "Ali Khoja", "Hamza Raza"];
+export const DEFAULT_OWNER = OWNERS[0];
+export const ownerOf = (v) => OWNERS.find((o) => o.toLowerCase() === String(v ?? "").trim().toLowerCase()) || "";
 export const EXTRA_COLORS = ["#5B6FA8", "#A8527A", "#2E8B8B", "#8A6D2F", "#6A4C93", "#3F7D20"];
 
 export const PAGE_STATES = ["none", "queued", "deck", "ready", "failed"];
@@ -57,7 +60,7 @@ export function newLead(input, { by = "", stages = DEFAULT_STAGES, sources = DEF
       poc: clip(input?.poc, 80),
       pocEmail: clip(input?.pocEmail, 120),
       pocPhone: clip(input?.pocPhone, 40),
-      owner: clip(input?.owner, 60) || by,
+      owner: ownerOf(input?.owner) || DEFAULT_OWNER,
       note: clip(input?.note, 600),
       nextFollowUp: clip(input?.nextFollowUp, 20),
       pageStatus: "none",
@@ -76,6 +79,11 @@ export function applyPatch(patch, { stages = DEFAULT_STAGES, now = new Date() } 
   for (const [k, max] of Object.entries(EDITABLE)) {
     if (patch?.[k] === undefined) continue;
     out[k] = clip(patch[k], max);
+  }
+  if (out.owner !== undefined) {
+    const o = ownerOf(out.owner);
+    if (!o) return { error: `Owner must be ${OWNERS.join(", ")}.` };
+    out.owner = o;
   }
   if (out.brand === "") return { error: "A lead needs a name." };
   if (out.stage !== undefined && !stages.some((s) => s.name === out.stage)) return { error: `Unknown stage "${out.stage}".` };
