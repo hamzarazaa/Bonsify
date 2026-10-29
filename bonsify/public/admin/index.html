@@ -9,5 +9,31 @@
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script src="/admin/proposal-widget.js"></script>
+    <script>
+      // Lead Centre link in the content manager's top bar (same GitLab login).
+      // Decap has no link API in this version, so a Leads link is copied from the Media button and placed after it.
+      (function () {
+        function add() {
+          try {
+            if (document.getElementById("lead-centre-link")) return;
+            var media = Array.prototype.find.call(document.querySelectorAll("button"), function (b) { return /^\s*Media\s*$/.test(b.textContent) && /AppHeader/.test(b.className); });
+            if (!media || !media.parentNode) return;
+            var a = document.createElement("a");
+            a.id = "lead-centre-link";
+            a.className = media.className;
+            a.href = "/leads";
+            a.style.textDecoration = "none";
+            a.innerHTML = media.innerHTML;
+            var svg = a.querySelector("svg");
+            if (svg) svg.outerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>';
+            var walker = document.createTreeWalker(a, NodeFilter.SHOW_TEXT), n;
+            while ((n = walker.nextNode())) { if (n.nodeValue.trim()) { n.nodeValue = "Leads"; break; } }
+            media.parentNode.insertBefore(a, media.nextSibling);
+          } catch (e) {}
+        }
+        new MutationObserver(add).observe(document.documentElement, { childList: true, subtree: true });
+        add();
+      })();
+    </script>
   </body>
 </html>

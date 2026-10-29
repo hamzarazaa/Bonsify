@@ -119,7 +119,7 @@ async function warm() {
   }));
 }
 
-async function gitlabCommit(files) {
+async function gitlabCommit(files, message) {
   const token = process.env.GITLAB_TOKEN;
   const project = encodeURIComponent(process.env.GITLAB_PROJECT || "hamzaraza/bonsify.io");
   const api = `https://gitlab.com/api/v4/projects/${project}/repository`;
@@ -129,7 +129,7 @@ async function gitlabCommit(files) {
     const r = await fetch(`${api}/files/${encodeURIComponent(f.path)}?ref=main`, { method: "HEAD", headers });
     actions.push({ action: r.ok ? "update" : "create", file_path: f.path, content: f.buf.toString("base64"), encoding: "base64" });
   }
-  const res = await fetch(`${api}/commits`, { method: "POST", headers, body: JSON.stringify({ branch: "main", commit_message: `Add ${NAME || SLUG}: demo page, video and deck (engine)`, actions }) });
+  const res = await fetch(`${api}/commits`, { method: "POST", headers, body: JSON.stringify({ branch: "main", commit_message: message || `Add ${NAME || SLUG}: demo page, video and deck (engine)`, actions }) });
   const body = await res.json();
   if (!res.ok) throw new Error(`GitLab commit failed: ${res.status} ${JSON.stringify(body).slice(0, 300)}`);
   return body.web_url || body.id;
@@ -160,6 +160,22 @@ try {
   }
 
   if (!pdfOk) throw new Error("deck PDF could not be made, stopping before the render");
+
+  let phase1 = false;
+  // Phase 1: publish the page and the deck now. The video tab appears when phase 2 lands.
+  if (process.env.GITLAB_TOKEN && !DRY) {
+    try {
+      const sub1 = (process.env.GIT_SUBDIR || "bonsify").replace(/\/$/, "");
+      const early = JSON.parse(fs.readFileSync(recFile, "utf8"));
+      delete early.video;
+      const c1 = await gitlabCommit([
+        { path: `${sub1}/content/proposals/${SLUG}.json`, buf: Buffer.from(JSON.stringify(early, null, 1) + "\n") },
+        { path: `${sub1}/public/decks/${SLUG}-deck.pdf`, buf: fs.readFileSync(pdf) },
+      ], `Add ${NAME || SLUG}: demo page and deck (engine, phase 1)`);
+      phase1 = true;
+      log(`phase 1 published (page and deck): ${c1}`);
+    } catch (e) { log(`phase 1 publish failed, continuing: ${e.message}`); }
+  }
   log("deck PDF ok, rendering video");
 
   const engineArgs = ["video/engine2.mjs", SLUG, "--out", "video/out/job", "--base", APP, ...(DRY ? ["--dry"] : [])];
@@ -189,8 +205,8 @@ try {
     const sub = (process.env.GIT_SUBDIR || "bonsify").replace(/\/$/, "");
     commit = await gitlabCommit([
       { path: `${sub}/content/proposals/${SLUG}.json`, buf: fs.readFileSync(recFile) },
-      ...(pdfOk ? [{ path: `${sub}/public/decks/${SLUG}-deck.pdf`, buf: fs.readFileSync(pdf) }] : []),
-    ]);
+      ...(pdfOk && !phase1 ? [{ path: `${sub}/public/decks/${SLUG}-deck.pdf`, buf: fs.readFileSync(pdf) }] : []),
+    ], `Add ${NAME || SLUG}: video (engine, phase 2)`);
     log(`committed to GitLab: ${commit}`);
   }
 

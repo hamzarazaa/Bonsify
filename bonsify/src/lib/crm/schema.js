@@ -109,5 +109,31 @@ export function cleanSettings(input, current) {
     outSources.push(name);
   }
   if (!outSources.length) return { error: "Keep at least one source." };
-  return { settings: { stages: outStages.slice(0, 20), sources: outSources.slice(0, 20) } };
+  const rawViews = Array.isArray(input?.views) ? input.views : current.views || [];
+  const seenV = new Set();
+  const outViews = [];
+  for (const v of rawViews) {
+    const name = clip(v?.name, 40);
+    if (!name || seenV.has(name.toLowerCase())) continue;
+    seenV.add(name.toLowerCase());
+    outViews.push({
+      name,
+      view: v?.view === "board" ? "board" : "table",
+      q: clip(v?.q, 80),
+      stage: clip(v?.stage, 40),
+      source: clip(v?.source, 40),
+      owner: clip(v?.owner, 60),
+      due: !!v?.due,
+      sortKey: clip(v?.sortKey, 20) || "lastTouch",
+      sortDir: v?.sortDir === 1 ? 1 : -1,
+    });
+  }
+  return { settings: { stages: outStages.slice(0, 20), sources: outSources.slice(0, 20), views: outViews.slice(0, 20) } };
 }
+
+// Today as YYYY-MM-DD in the team's timezone (Pakistan) so "due today" matches the calendar they see.
+export function todayKey(now = new Date(), tz = "Asia/Karachi") {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
+}
+export const isDue = (lead, today = todayKey()) =>
+  !!lead.nextFollowUp && lead.nextFollowUp <= today && !["Converted", "Dead / DNR"].includes(lead.stage);

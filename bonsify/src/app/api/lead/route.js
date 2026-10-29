@@ -4,6 +4,7 @@
 // one JSON line and forwarded to the same inbox as the contact form, so a
 // store address is never lost, even when the visitor leaves the form.
 import { sendToSheet, formspreeOn } from "@/lib/leadSink";
+import { recordEnquiry } from "@/lib/crm/intake";
 import { autoReplyOn, homeReply, replyAllowed, sendAutoReply } from "@/lib/mail";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgyvadp";
@@ -54,6 +55,11 @@ export async function POST(request) {
       ? fetch(FORMSPREE_ENDPOINT, { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/x-www-form-urlencoded" }, body })
       : null,
   ]); // the log line above is the last-resort record
+
+  // Also drop real enquiries into the Lead Centre. Never blocks or fails the form (3 second cap).
+  if (url && (stage === "submitted" || stage === "not_shopify") && rec.source.startsWith("lab-home")) {
+    await Promise.race([recordEnquiry({ kind: "home", url, name, email, brandName }), new Promise((r) => setTimeout(r, 3000))]);
+  }
 
   // Optional automatic thank-you, off unless switched on in /admin (Settings).
   // Only for the home page enquiry, never for the footer newsletter or half-finished forms.

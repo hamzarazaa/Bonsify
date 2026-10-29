@@ -60,7 +60,7 @@ const firestore = {
   },
   async remove(id) { await fs_("DELETE", `/leads/${encodeURIComponent(id)}`); },
   async getSettings() {
-    try { const d = unfields(await fs_("GET", "/meta/settings")); return { stages: d.stages, sources: d.sources }; }
+    try { const d = unfields(await fs_("GET", "/meta/settings")); return { stages: d.stages, sources: d.sources, views: d.views || [] }; }
     catch (e) { if (e.status === 404) return null; throw e; }
   },
   async setSettings(s) { await fs_("PATCH", "/meta/settings", { fields: fields(s) }); },
@@ -84,5 +84,5 @@ export const store = () => (process.env.CRM_STORE === "file" && process.env.NODE
 
 export async function loadSettings(st = store()) {
   const s = await st.getSettings();
-  return { stages: s?.stages?.length ? s.stages : DEFAULT_STAGES, sources: s?.sources?.length ? s.sources : DEFAULT_SOURCES };
+  return { stages: s?.stages?.length ? s.stages : DEFAULT_STAGES, sources: s?.sources?.length ? s.sources : DEFAULT_SOURCES, views: s?.views || [] };
 }

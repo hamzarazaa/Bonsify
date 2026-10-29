@@ -1,4 +1,5 @@
 import { sendToSheet, formspreeOn } from "@/lib/leadSink";
+import { recordEnquiry } from "@/lib/crm/intake";
 import { autoReplyOn, contactReply, replyAllowed, sendAutoReply } from "@/lib/mail";
 
 const TURNSTILE_VERIFY_URL =
@@ -91,6 +92,16 @@ export async function POST(request) {
     site: process.env.NEXT_PUBLIC_LAB === "1" ? "lab" : "main",
   });
 
+  // Also drop it into the Lead Centre when a store address was given. Never blocks or fails the form.
+  const toCrm = async () => {
+    const store = String(formData.get("store") || "");
+    if (!store) return;
+    await Promise.race([
+      recordEnquiry({ kind: "contact", url: store, name: String(formData.get("name") || ""), email, phone: String(formData.get("phone") || ""), message, topic: String(formData.get("topic") || "") }),
+      new Promise((r) => setTimeout(r, 3000)),
+    ]);
+  };
+
   // Optional automatic thank-you, off unless switched on in /admin (Settings).
   // Sent only once the message itself is safely received (see the returns below).
   const autoReply = async () => {
@@ -103,6 +114,7 @@ export async function POST(request) {
     if (!(await sheetSaved)) {
       return Response.json({ error: "Could not send your message. Please try again or email us directly." }, { status: 502 });
     }
+    await toCrm();
     await autoReply();
     return Response.json({ ok: true });
   }
@@ -129,6 +141,7 @@ export async function POST(request) {
     );
   }
 
+  await toCrm();
   await autoReply();
   return Response.json({ ok: true });
 }
